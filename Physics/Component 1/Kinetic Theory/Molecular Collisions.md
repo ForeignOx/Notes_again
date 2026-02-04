@@ -1,0 +1,3 @@
+Making the simple assumption that the [[Kinetic Energy]] of the molecules of a gas depends upon the temperature of the gas, and with the observation that gas in a cylinder doesn't spontaneously cool down below room temperature, we must conclude that the intermolecular collisions must be [[Elastic Collisions|elastic]] - at least on average - meaning that there is no loss in kinetic energy
+
+#Physics #Kinetic_theory 

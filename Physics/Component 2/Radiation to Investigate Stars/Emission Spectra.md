@@ -1,0 +1,7 @@
+When elements are heated to high temperatures, they emit specific frequencies of [[Electromagnetic Radiation]] which is very different from [[Black Body]] radiation, these are the [[Line Spectra]] for different elements, these act as a fingerprint to identify elements. These are also known as Fraunhofer lines
+___
+In a hot cloud of atomic hydrogen, which is heated by absorbing radiation from a nearby star, some of the atoms will be excited, i.e. they will be in [[Atomic Energy Levels|energy levels]] above the ground state. This may also happen as a result of inter-atomic collisions, when some of the [[Kinetic Energy]] of the colliding atoms is lost. If the electron in such an atom falls into a lower energy state, it gives out a photon of e-m radiation, of energy equal to difference in [[Energy]] of the two states
+## Investigating and Displaying Atomic Spectra
+The simplest way to see the emission spectrum of a gas is to use a gas discharge tube. This consists of a sealed glass tube containing a low pressure gas and two high electrical terminals. When a high [[Potential Difference|voltage]] is applied, the gas partially ionises allowing electrons to pass through it These collide with the gas atoms and raise them to a range of excited energy states: they then drop down to the lower energy states and emit [[Photoelectric Effect|photons]] as they do. The lamp can then be viewed through a [[Diffraction Gratings|diffraction grating]] to get the spectrum
+
+#Physics #Stars #Definition

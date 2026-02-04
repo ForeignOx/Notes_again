@@ -1,0 +1,3 @@
+$H$ is called the Hessian [[Matrices|matrix]], defined as a [[Functional Matrices|functional matrix]]. For a [[Functions|function]] of $n$ variables $f(x_{1},x_{2},\dots,x_{n})$ then $H_{ij}=\frac{ \partial^{2}f }{ \partial x_{i}\partial y_{j} }$. Because order of differentiation doesn't matter, $H_{ij}=H_{ji}$, so $H$ is [[Symmetric and Anti-Symmetric Matrices|symmetric]], hence [[Diagonalisation|diagonalisable]]
+
+#Mathematics #Calculus #Definition 

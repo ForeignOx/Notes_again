@@ -1,0 +1,5 @@
+[[Covalent bond|Covalent bonds]] can become polar if the atoms attached to it have a difference in [[Electronegativity]], the bigger the difference in electronegativity, the more polar the bond will be. The more electronegative element will pull the elements closer to itself, to show polarity, we put a $\delta+$ next to the least electronegative element and a $\delta-$ next to the most electronegative.
+Atoms bounded with the same element or one of similar electronegativity value are not considered polar, the shared electrons remain in the middle. [[Hydrocarbons]] are classed as non-polar. 
+Uneven distribution of charge in a molecule leads to that molecule being classed as polar. Water is a common example. If however, the polar bonds are arranged symmetrically, then you have no overall polarity.
+
+#Chemistry #Physical #Bonding #Definition 

@@ -1,0 +1,2 @@
+Let $\left\{ V,(,) \right\}$ be a [[Real Numbers|real]] or [[Complex Numbers|complex]] [[Inner Product|inner product]] [[Inner Product Spaces|space]], and $\lvert \lvert . \rvert \rvert$ be the induced [[Norms|norm]]
+A set of [[Vectors|vectors]] in [[Vectorspaces|$V$]], $\left\{ \underline{v}_{1},\dots,\underline{v}_{k} \right\}$ is mutually [[Orthogonality|orthogonal]] if $(\underline{v}_{i},\underline{v}_{j})=0\forall i\neq j=1\dots k$ 

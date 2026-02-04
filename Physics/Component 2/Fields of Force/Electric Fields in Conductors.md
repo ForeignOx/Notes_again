@@ -1,0 +1,4 @@
+Since [[Potential Difference]] acts on [[Uniform Electric Field|uniform electric fields]], and also in [[Electrical Conductors|conductors]], it is reasonable to assume that there is an [[Electric Fields|electric field]] inside any conductor with a potential difference across it. Hence the forces experienced by the mobile [[Electric Charge|charge]] carriers in it, making them drift through the conductor
+If there is no movement of charge in a conductor, there can't be any macroscopic electric field in it or the free charges would be moving. Since $\delta V=-E\delta x$, and $E$ is zero throughout the conductor, there is no potential difference between any points in the conductor, even if it carries a static charge
+
+#Physics #Fields 

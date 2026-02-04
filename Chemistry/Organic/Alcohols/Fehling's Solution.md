@@ -1,0 +1,3 @@
+Fehling's solution can be used to distinguish betwen [[Aldehydes]] and [[Ketones]] as it is is an [[Oxidising Agents|oxidising agent]], so will oxidise aldehydes, but not ketones, as these are hard to oxidise further. Fehling's solution is blue, as it contains $\ce{ Cu^2+ }$ [[Ions]]. Add warm to aldehydes, and it goes from a blue solution to a brick-red precipitate of $\ce{ Cu_{2}O }$
+
+#Chemistry #Organic #Alcohols #Test

@@ -1,0 +1,3 @@
+Each [[Quarks|quark]] has a quark number of $Q=1$, and each antiquark has a quark number of $Q=-1$. In an interaction, quark number must be conserved. More specifically, the individual quark numbers, $U$ (up) and $D$ (down) are also conserved, with the usual convention that an antiquark has a value of $-1$. Individual quark numbers are conserved in [[Strong Force|strong]] and [[Electromagnetic Force|e-m]] interactions, but can be changed by $\pm 1$ in [[Weak Force|weak]] interactions
+
+#Physics #Particles 

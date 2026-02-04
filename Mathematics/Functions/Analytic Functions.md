@@ -1,0 +1,1 @@
+A [[Functions|function]] $f(x)$ is called analytic at $x=x_{0}$ if the function $f(x)$ can be representeed faithfully in a neighbourhood of $x_{0}$ by its [[Taylor Series|Taylor series]] there

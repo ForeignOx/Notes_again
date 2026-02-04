@@ -1,0 +1,3 @@
+For the first generation of [[Leptons]], we assign each of them a number, which we call the electron lepton number, $\ce{ L_{e} }$. The value of $\ce{ L_{e} }$ for all other particles is zero. We find experimentally that lepton number is always conserved. If a proposed reaction would violate the conservation of $\ce{ L_{e} }$, we can be sure that it is impossible as if it violated a law. Other generations of leptons have their own lepton numbers such as $\ce{ L_{\mu} }$ and $\ce{ L_{\tau} }$ which are also conserved
+
+#Physics #Particles 

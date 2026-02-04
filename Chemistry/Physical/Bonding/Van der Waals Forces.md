@@ -1,0 +1,5 @@
+Van der Waals (induced dipole-dipole) forces exist between atoms and molecules. They occur from an instantaneous dipole being created (electrons moving from one end to another) when multiple atoms do this, they can form an induced dipole-dipole intermolecular bond from the charged sides of the atoms. Van der Waals forces can hold some molecules in crystal structures
+The bigger the molecule, the more Van der Waals forces, as they have larger electron shells, so there are more possibilities for dipoles to form
+Longer, straight chain [[Hydrocarbons]] have more Van der Waals forces as they can be closer together, so more energy is needed to overcome these forces. This means they have higher boiling points. Hydrocarbons with branches means they can't pack together as close
+
+#Chemistry #Physical #Bonding #Definition

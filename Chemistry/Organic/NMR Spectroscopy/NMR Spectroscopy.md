@@ -1,0 +1,15 @@
+Nuclear Magnetic Resonance (NMR) spectroscopy is used to help determine the structure of a molecule
+There are two main types: [[Carbon 13 NMR]] and [[Proton NMR]]
+If an atomic nucleus has an odd number of nucleons, then it has a nuclear spin. This nuclear spin creates a weak [[Magnetic Fields|magnetic field]]. NMR detects how these magnetic fields are affected by a larger external magnetic field
+Normally, nuclei spin in random directions, however, when an external magnetic field is applied, they align in 2 directions, either with the magnetic field, or against it. Those that spin in the direction of the magnetic field have lower energy
+The NMR machine will then fire out [[Electromagnetic Radiation|radio waves]]. At a specific frequency, the nuclei that are aligned with the magnetic field [[Photon Absorption|absorb]] the energy and flip to the higher [[Atomic Energy Levels|energy level]]. Those with higher energy can also drop to lower energy levels by [[Spontaneous Photon Emission|emitting]] radio waves
+Initially, there are more nuclei aligned with the magnetic field, so overall, more energy is absorbed than emitted. NMR measures the amount of energy absorbed. The energy absorbed by nuclei is dependent on the environment it is in. A nucleus can be shielded from an external magnetic field from electrons surrounding the nucleus. Atoms and groups of atoms adjacent to the nucleus affect the level of electron shielding. For example, an [[Electronegativity|electronegative]] element such as oxygen near a carbon atom will reduce the electron shielding on the carbon atom as it will draw electrons towards it. The magnetic field will be felt by the nuclei differentl depending on the environment it is in, as they absorb different amounts of energy at various frequencies. It is this difference that NMR spectroscopy picks up
+The environment is determined by the groups of atoms that exist near to the nuclei being examined. We look along the full chain, not just the atoms immediately bonded to the atom being examined. For an atom to be in the same environment as another, it must be bonded to an atom or group of atoms that are identical 
+As nuclei absorb different amounts of energy at different frequencies, it is difficult to measure the magnitude of these without a reference or standard chemical to measure against. The standard we use is tetramethylsilane (TMS):
+```smiles
+[Si](C)(C)(C)C
+```
+TMS has 12 hydrogens, all in identical environments. This will produce a large, single peak well away from sample peaks. It is also inert, non-toxic, and volatile, so easy to remove from your sample
+The difference between the TMS peak and peaks producedd by the substance under test is called the chemical shift ($\delta$). We measure chemical shift is parts per million ($\pu{ ppm}$). Because it is used as a standard to measure against, we assign the TMS peak having $\delta=0$
+
+#Chemistry #Organic #NMR 

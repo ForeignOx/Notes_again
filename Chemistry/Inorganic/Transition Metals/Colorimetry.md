@@ -1,0 +1,12 @@
+[[Transition Metals|Transition metal]] complexes can be analysed using colorimetry. The colours we see are compliments of the [[d-Orbital Splitting|colours absorbed]] by the solution. White light is made of all the colours in the rainbow. When light hits a transition metal solution, some [[Frequency|frequencies]] are absorbed. Any frequencies which are not absorbed are reflected or transmitted. The combination of all these frequencies create a complimentary colour that we observe. Essentially, if we miss the complimentary colour and the absorbed colour, we get white light
+Colorimetry is used to measure the concentration of transition metal [[Ions]] in solution. A colorimeter measures the absorbance of light by a coloured sample. The more concentrated a sample is, the darker it's colour and hence the more light absorbed
+1. The colorimeter must be set to zero. To do this, we measure the absorbance of a blank sample. A blank sample is normally the solvent you are using to dissolve your transition metal ion (normally water)
+2. White light is filtered into a narrow range of frequencies. Monochromatic light is produced. The choice of filter is important. The colour produced from the filter must be absorbed by the meta ion solution
+3. The monochromatic light passes through the sample and some light is absorbed. The sample is held in a vessel called a cuvette
+    ![[Pasted image 20240430094350.png]]
+4. Light not absorbed travels to the detector. The detector will measure the level of absorbance by comparing it to the absorbance in the blank sample
+We use a calibration graph to measure the concentration of a transition metal solution
+![[Pasted image 20240430095006.png]]
+First we have to plot a calibration curve. This is created by making up a range of known different concentrations of the transition metal solution. The absorption is measured for each one and the results are plotted. We make samples by diluting different concentrations of the metal ion. We must use the same metal ion and solvent as the one to be tested. Furthermore, we use a pipette to ensure accurate volumes are used. We then test the sample we want to know the concentration of by measuring the absorption. We then use the calibration graph and absorbance to find out the concentration of the metal ion in solution
+
+#Chemistry #Inorganic #Transition_Metals 

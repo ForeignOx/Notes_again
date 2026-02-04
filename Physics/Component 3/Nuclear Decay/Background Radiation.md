@@ -1,0 +1,3 @@
+In the context of laboratory investigations into [[Nuclear Radiation|radioactive]] sources, background radiation is the nuclear radiation which is detected in the absence of the source under investigation. To corrector background radiation when [[Detecting and Measuring Nuclear Radiation]], simply subtract the background count from the count with the source present (over the same period of time)
+
+#Physics #Radiation #Definition

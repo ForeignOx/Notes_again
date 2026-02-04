@@ -1,0 +1,6 @@
+![[Pasted image 20240403212446.png]]
+The first 3 [[Period 3 Elements Reacting with Oxygen|oxides]] ($\ce{ Na_{2}O, MgO }$ and $\ce{ Al_{2}O_{3} }$) all have high melting points as they from [[Ionic compounds|giant ionic lattices]] which have many attractive forces which require lots of [[Energy]] to break the bonds. Magnesium oxide has a higher melting point than sodium oxide as magnesium forms 2+ [[Ions]] which are more strongly attracted to the oxygen. Aluminium oxide has a lower melting point than magnesium oxide as the $\ce{ Al^3+ }$ ions distort the electron cloud of oxygen. This means that there is some [[Covalent Character]] as well as the expected [[Ionic bonding|ionic]] interactions. This means less energy is required to break the bonds
+Silicon dioxide has a higher melting point than the rest of the non metal oxides. $\ce{ SiO_{2} }$ forms a [[Giant Covalent Structures|giant covalent structure]]. It has many, strong [[Covalent bond|covalent bonds]] that require lots of energy to break
+$\ce{ P_{4}O_{10}, SO_{2} }$ and $\ce{ SO_{3} }$ have much lower melting points as they form simple molecular structures so have weaker [[Van der Waals Forces]] which means less energy is required to break the bonds. The smaller the molecule, the lower the melting point
+
+#Chemistry #Inorganic #Period3 

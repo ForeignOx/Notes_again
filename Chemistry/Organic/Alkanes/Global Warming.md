@@ -1,0 +1,3 @@
+Burning of fossil fuels can lead to global warming. This is partially because burning fossil fuels produces carbon dioxide, which is a greenhouse gas. Carbon dioxide absorbs [[Electromagnetic Radiation|infrared radiation]] (heat) from the sun, but emits some of it back to Earth. This is known as the greenhouse effect. Other gases that contribute to the greenhouse effect - known as greenhouse gases - include methane and water vapour. These all absorb radiation in their covalent bonds. Most scientists argue that increasing amount of carbon dioxide is increasing global temperatures. This phenomenon is known as global warming
+
+#Chemistry #Organic #Alkanes 

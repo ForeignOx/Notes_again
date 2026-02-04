@@ -1,0 +1,3 @@
+Gamma ($\gamma$) decay is [[Nuclear Decay]] by the emission of a [[Photoelectric Effect|photon]]. Gamma radiation is the most penetrating type of [[Nuclear Radiation]] (out of [[Alpha Decay|$\alpha$]], [[Beta Decay|$\beta$]] and $\gamma$). The daughter nucleus from an $\alpha$ or $\beta$ decay is often formed in an excited state. That means either a proton or a neutron has a vacant lower energy state to drop down into. When it does this, the [[Energy]] is carried away by a high energy photon which is indicated by $\gamma$. The proton and nucleon numbers (Z and A) of the nucleus are unchanged in the process
+
+#Physics #Radiation 

@@ -1,0 +1,3 @@
+Almost all normal matter in the universe (ignoring [[Dark Matter]]) is composed of heavy protons and neutrons and the much lighter electrons. We infer the existence of other almost massless particles called neutrinos and notice that, if we collide protons and neutrons together, we produce intermediate mass particles, which we call [[Mesons]]. When cosmic ray particles collide with atoms in the upper atmosphere, they produce showers of particles, called muons, which form part of the [[Background Radiation]]. We now know that the electrons, muons and neutrinos are [[Elementary Particles]], which we call [[Leptons]]. The other particles, the heavy ones, are called [[Hadrons]], and are not elementary - they are composed of combinations of [[Quarks]]
+
+#Physics #Particles 

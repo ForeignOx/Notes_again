@@ -1,0 +1,6 @@
+![[Pasted image 20240319123924.png]]
+The first 3 elements are metals, so undergo [[Metallic Bonding]]. There is a general increase in melting points as the metal [[Ions]] have an increasing positive charge, increasing the number of delocalised electrons and a smaller ionic radius
+Silicon has the highest melting point, it has a [[Giant Covalent Structures|giant covalent structure]] meaning that strong [[Covalent bond|covalent bonds]] that hold the silicon atoms together. A large amount of [[Energy]] is needed to overcome the strong covalent bonds
+Next Phosphorus has the formula $\ce{ P_{4} }$, and is a simple molecule so experiences [[Van der Waals Forces]] which are much weaker than covalent or metallic bonds. Sulfur has the formula $\ce{ S_{8} }$ and it has a higher melting point than phosphorus due to a larger simple molecular structure, meaning stronger Van der Waals forces. Chlorine has the formula $\ce{ Cl_{2} }$ and so also experiences Van der Waals forces and has a lower melting point as it is a small molecule. Then argon exists as $\ce{ Ar }$ so is an even smaller molecule again, so has the weakest Van der Waals forces and hence the lowest melting point
+
+#Chemistry #Inorganic #Periodicity #Period3

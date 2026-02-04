@@ -1,0 +1,4 @@
+Permanent dipole-dipole interactions exist in molecules with a polarity. This is because there are weak electrostatic forces that exist between between molecules with a polarity. Unlike [[Van der Waals Forces]], dipole-dipole interactions involve molecules with a permanent dipole, and so are stronger, note that molecules with a permanent dipole also experience Van der Waals forces 
+Polar molecules can be tested by placing a charged rod near a steady stream of a polar liquid. You should see the liquid bend towards the rod as the molecules  align to face the oppositely charged rod
+
+#Chemistry #Physical #Bonding #Definition

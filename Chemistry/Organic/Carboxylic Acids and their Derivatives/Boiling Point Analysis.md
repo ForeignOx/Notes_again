@@ -1,0 +1,4 @@
+Measuring the boiling point of your substance can help to detect impurities. We can determine the boiling point of the liquid by using [[Distillation]]; if we gently heat the sample, we can measure the temperature at which it distills using the thermometer - this is the boiling point. Compare this against the data book value. Your sample contains impurities if your boiling point is higher than what is recorded in the data book, and if your sample boils over a range of temperatures
+Various organic compounds have the same boiling points however, so other analytical techniques such as [[High Resolution Mass Spectrometry]] need to be used
+
+#Chemistry #Organic #Carboxylic_Acids 

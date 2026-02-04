@@ -1,0 +1,4 @@
+Infrared spectroscopy uses [[Electromagnetic Radiation|infrared radiation]] to increase the vibrational energy of [[Covalent bond|covalent bonds]] in a sample. The frequency of infrared radiation absorbed by a covalent bond depends on the atoms that are either side of the bond and the position of the bond in the molecule (e.g. $\ce{ O-H }$ in [[Alcohols]] or $\ce{ O-H }$ in [[Carboxylic Acids]])
+The spectrum produced by infrared spectroscopy will have a series of peaks which correspond to various bonds in the molecule, and also a 'fingerprint region' which is unique to every molecule and allows us to identify specific molecules. The fingerprint region lies between $500\pu{ cm-1}$ and $1500\pu{ cm-1}$. You can compare the fingerprint region generated against a known library of spectra to identify the molecule. Extra peaks in the fingerprint region indicates that you have impurities in your sample
+
+#Chemistry #Organic #Organic_Analysis 

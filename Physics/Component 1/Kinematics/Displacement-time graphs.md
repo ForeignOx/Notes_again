@@ -1,0 +1,4 @@
+Displacement-time graphs are a way of representing motion in 1-dimension over time, they are similar to [[Velocity-time graphs]] 
+![[Displacement-time graphs 2024-02-06 15.46.21.excalidraw]]An upwards slope (between O and B) represents an increase in $s$ with time, a downwards slope (between C and D), if a line is horizontal (between B and C), the body is stationary. The gradient of the graph represents [[Velocity]], if the gradient is constant, the velocity is constant. The mean velocity between O and C can be calculated by finding the gradient of the line between them.  The instantaneous velocity at X can be found by measuring the gradient of the tangent line at X
+
+#Physics #Kinematics

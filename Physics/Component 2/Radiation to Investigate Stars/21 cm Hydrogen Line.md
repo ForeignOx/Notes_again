@@ -1,0 +1,3 @@
+In its ground state, the electron of atomic hydrogen can either have its spin parallel or antiparallel (in the opposite direction) to that of the nucleus. As the atom flips between these states it either absorbs or emits radiation with the specific [[Wavelength]] of $21.1\pu{ cm}$. Radiation with this wavelength indicates the presence of atomic hydrogen and the sensitivity of radio telescopes enables astronomers to detect very tenuous hydrogen clouds on the edges of galaxies - and their [[Orbital Velocity]] can be measured using the Doppler shift and provides evidence for dark matter
+
+#Physics #Stars

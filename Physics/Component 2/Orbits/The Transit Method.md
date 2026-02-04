@@ -1,0 +1,3 @@
+We can use the Transit method to find [[Exoplanet|exoplanets]], [[Brown Dwarf|brown dwarves]] or other low mass 'companions' orbiting stars instead of the [[Doppler Effect]]. If the observer is more or less in the plane of the orbit of the companion, the starlight will dim periodically as the planet passes in front of the stellar disk . The duration of the eclipse and its depth provide information about the speed of the companion and its diameter. Both these properties depend upon knowledge of the diameter of the star itself. In conjunction with Doppler measurements, which deliver the mass of the planet, the mean density and therefore its nature can be investigated
+
+#Physics #Orbits 

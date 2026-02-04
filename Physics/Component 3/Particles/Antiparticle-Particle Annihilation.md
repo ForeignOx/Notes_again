@@ -1,0 +1,4 @@
+When a particle and its antiparticle interact, they annihilate each other; that is, they disappear, and their [[Mass-Energy]] manifests itself as two [[Photoelectric Effect|photons]] of [[Electromagnetic Radiation]] given the symbol $\gamma$ (they are at the very high energy end of the spectrum). The total energy of the photons is equal to the sum of the mass-energy and [[Kinetic Energy]] of the annihilating particles. The two photons are emitted in opposite directions to conserve [[Momentum]]
+The opposite process can also happen: if it possesses enough [[Energy]], a high energy photon can create an [[Leptons|electron-positron]] pair. It also needs to interact with another particle (usually an atomic nucleus) to enable [[Principle of Conservation of Energy|energy]] and [[Law of Conservation of Momentum|momentum]] to be simultaneously conserved
+
+#Physics #Particles 

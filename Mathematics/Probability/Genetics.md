@@ -1,0 +1,11 @@
+Inherited characteristics are determined by genes. The mechanism governing inheritance is random and so the laws of [[Probabilities|probability]] are crucial to understanding genetics.
+
+Your cells contain $\hspace{0pt}23$ pairs of chromosomes, each containing many genes (while $\hspace{0pt}23$ pairs is specific to humans, the idea is similar for all animals and plants). The genes take different forms called allels and this is one reason why people differ (there are also environmental factors). Of the $\hspace{0pt}23$ pairs of chromosomes, $\hspace{0pt}22$ pairs are homologuous (each of the pair has an allele for any gene located on this pair). People with different allels are grouped by visible characteristics into phenotypes; often one allele, $A$ say is dominant, and another $a$, is recessive, in which case $AA$ and $Aa$ are of the same phenotype, whereas $aa$ is distinct. Sometimes, the recessive gene is rare and the corresponding phenotype is harmful, for example haemophilia or sickle-cell anaemia
+With sickle-cell anaemia, allele $A$ produces normal red blood cells, but $a$ produces deformed cells. Genotype $aa$ is fatal, but $Aa$ provides protection against malarial infection (which is often fatal) and so allele $a$ is common in some areas of high malaria risk
+
+The final chromosome pair are the sex chromosomes. Each may be $X$, a long chromosom, or $Y$, a short chromosome. Most of the genes on $X$ do not occur on $Y$. Your sex is determined as $XX$ (female) or $XY$ (male), but $YY$ is not possible ($X,XXX,XXY$ and $XYY$ can occur, but are very rare)
+
+The basic principle of genetics is that for each gene on a homologuous chromosome, a child receives one allele from each parent, where each allele received is chosen [[Independence|independently]] and at random from each parent's two alleles for that gene
+It is extremely important to note that genotypes of siblings are dependent if not conditioned on parental genotypes. For example, if two black mice (which may each be $BB$ or $Bb$) have $\hspace{0pt}100$ black offsping, you may conclude that the next offspring is overwhelmingly likely to also be black, because it is very likely that at least one parent is $B B$
+## Example
+A gene has alleles $A$, $a$, but $a$ is recessive and harmful, so genotype $aa$ does not reproduce, while $A A$, $Aa$ are indistinguishable

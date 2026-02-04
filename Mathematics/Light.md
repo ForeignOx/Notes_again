@@ -1,0 +1,1 @@
+In mechanics, when something is described as 'light', it is considered to have no mass

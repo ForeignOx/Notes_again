@@ -1,0 +1,3 @@
+If a [[Bipartite Graphs|bipartite]] [[Graphs|graph]] $G$ is [[Simple Graphs|simple]], and if for the [[Set Partition|partition]] $V_{1},V_{2}$ as above we have $u\in V_{1}$, $u\in V_{2}\implies uv\in E$, then $G$ is a complete bipartite graph. Where $\left| V_{1} \right|=m$ and $\left| V_{2} \right|=n$, then $G$ is denoted $K_{m,n}$. The graph $K_{m,n}$ has $m\times n$ edges
+
+#Mathematics #Graphs #Definition 

@@ -1,0 +1,3 @@
+A chemical mechanism shows the movement of electrons during a chemical reaction. We use curly arrows to show the movement of a pair of electrons. They always start from an area which electrons, such as a bond or lone pair. Free radical mechanisms don't require curly arrows. THey end where you are moving the electrons to, or in the formation of a [[Covalent bond]]
+
+#Chemistry #Organic #Intro_to_Organic 

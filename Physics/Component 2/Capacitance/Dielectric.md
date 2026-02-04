@@ -1,0 +1,3 @@
+Most [[Capacitor|capacitors]] used in electronics have solid dielectrics, such as films of tantalum(V) oxide, thin sheets of polypropene or thin slices of ceramic material. A dielectric does more than maintain the insulating gap between the plates, it makes the [[Capacitance]] more than it would be if the gap had nothing inside it. A dielectric increases capacitance because of an effect called 'dielectric polarisation', a temporary shift in the positions of nuclei and electrons within the dielectric's molecules
+
+#Physics #Capacitance 

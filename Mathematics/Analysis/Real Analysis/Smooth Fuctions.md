@@ -1,0 +1,1 @@
+A [[Functions|function]] is smooth if it is infinitely [[Differentiation|differentiable]] on an [[Intervals|interval]]
