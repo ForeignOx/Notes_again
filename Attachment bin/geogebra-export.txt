@@ -1,0 +1,48 @@
+\documentclass[10pt]{article}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.15}
+\usepackage{mathrsfs}
+\usetikzlibrary{arrows}
+\pagestyle{empty}
+\begin{document}
+\definecolor{zzttqq}{rgb}{0.6,0.2,0}
+\definecolor{ududff}{rgb}{0.30196078431372547,0.30196078431372547,1}
+\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1cm,y=1cm]
+\begin{axis}[
+x=1cm,y=1cm,
+axis lines=middle,
+ymajorgrids=true,
+xmajorgrids=true,
+xmin=-18.439999999999998,
+xmax=18.439999999999998,
+ymin=-16.109999999999996,
+ymax=11.690000000000001,
+xtick={-18,-17,...,18},
+ytick={-16,-15,...,11},]
+\clip(-18.44,-16.11) rectangle (18.44,11.69);
+\fill[line width=2pt,color=zzttqq,fill=zzttqq,fill opacity=0.10000000149011612] (5.24,5.59) -- (3.96,2.39) -- (9.52,1.73) -- (8.3,5.07) -- (7.5,3.13) -- cycle;
+\draw [line width=2pt,color=zzttqq] (5.24,5.59)-- (3.96,2.39);
+\draw [line width=2pt,color=zzttqq] (3.96,2.39)-- (9.52,1.73);
+\draw [line width=2pt,color=zzttqq] (9.52,1.73)-- (8.3,5.07);
+\draw [line width=2pt,color=zzttqq] (8.3,5.07)-- (7.5,3.13);
+\draw [line width=2pt,color=zzttqq] (7.5,3.13)-- (5.24,5.59);
+\begin{scriptsize}
+\draw [fill=ududff] (5.24,5.59) circle (2.5pt);
+\draw[color=ududff] (5.4,6.02) node {$A$};
+\draw [fill=ududff] (3.96,2.39) circle (2.5pt);
+\draw[color=ududff] (4.12,2.82) node {$B$};
+\draw [fill=ududff] (9.52,1.73) circle (2.5pt);
+\draw[color=ududff] (9.68,2.16) node {$C$};
+\draw [fill=ududff] (8.3,5.07) circle (2.5pt);
+\draw[color=ududff] (8.46,5.5) node {$D$};
+\draw [fill=ududff] (7.5,3.13) circle (2.5pt);
+\draw[color=ududff] (7.66,3.56) node {$E$};
+\draw[color=zzttqq] (4.38,4.34) node {$a$};
+\draw[color=zzttqq] (6.78,1.98) node {$b$};
+\draw[color=zzttqq] (9.28,3.74) node {$c$};
+\draw[color=zzttqq] (7.68,4.46) node {$d$};
+\draw[color=zzttqq] (6.68,4.82) node {$e$};
+\end{scriptsize}
+\end{axis}
+\end{tikzpicture}
+\end{document}
