@@ -37,7 +37,7 @@ Let $D$ be a domain. Then $f$ is conformal on $D$ iff $f$ is holomorphic on $D$ 
 ## Corollary
 Any conformal map maps orthogonal grids in the $xy$-plane to orthogonal grids
 ### Example
-Let us show the validity for $f(z)=z^{2}$ when $z\neq 0$ and orthogonal lineas that are parallel to the axes
+Let us show the validity for $f(z)=z^{2}$ when $z\neq 0$ and orthogonal lines that are parallel to the axes
 We find that we can write $f=u+iv$ as
 $$
 u(x,y)=x^{2}-y^{2},v(x,y)=2xy

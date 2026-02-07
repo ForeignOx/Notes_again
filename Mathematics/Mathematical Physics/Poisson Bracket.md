@@ -43,3 +43,6 @@ $$
 \left\{ fg,h \right\}=f\left\{ g,h \right\}+g\left\{ f,h \right\}
 $$
 - The poisson bracket obeys the Jacobi identity for the sum of the cyclic permutations
+$$
+\left\{ \left\{ f,g \right\},h \right\}+\left\{ \left\{ h,f \right\},g \right\}+\left\{ \left\{ g,h \right\},f \right\}=0
+$$

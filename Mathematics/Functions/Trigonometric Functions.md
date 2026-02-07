@@ -103,7 +103,7 @@ $$
  \sin(z)=\sin(x)\cosh(y)+i\cos(x)\sinh(y)
 $$
 $$
- \cosh(z)=\cos(iz)=\cosh(x)\cos(y)+\sinh(x)\sin(y)
+ \cosh(z)=\cos(iz)=\cosh(x)\cos(y)+i\sinh(x)\sin(y)
 $$
 $$
  \sinh(z)=-i\sin(iz)=\sinh(x)\cos(y)+i\cosh(x)\sin(y)

@@ -35,7 +35,7 @@ $$
 \gamma(t)=\mathfrak{R}(\gamma(t))+\mathfrak{I}(\gamma(t))
 $$
 ## Definition
-A curve in $\mathbb{C}$ is said to be continuously differentiable, or $C^{1}$ if its real and imagynary parts are continuouslly differentiable on $[0,1]$
+A curve in $\mathbb{C}$ is said to be continuously differentiable, or $C^{1}$ if its real and imaginary parts are continuouslly differentiable on $[0,1]$
 At the end point $0$ and $1$, this means that real and imaginary parts have right-sided derivatives at $0$ and left-sided derivatives at $1$, and the derivatives are continuous from the right at $\hspace{0pt}0$ and from the left at 1
 In that case, we define
 $$
@@ -56,5 +56,5 @@ We say a subset $A\subseteq \mathbb{C}$ is $C^{1}$ [[Path Connectedness|path con
 ___
 We say that $A$ is piecewise $C^{1}$ path connected if for every pair of points $z,w\in A$ there exists a contour that starts at $z$ and ends at $w$ such that $\gamma(t)\in A$ for all $t\in[0,1]$
 ## Remark
-It is straightforward to see that $C^{1}$ curves are harder to find that their nomrmal versions. Consequently, if a set is $C^{1}$ path connected or piecewise $C^{1}$ connected
+It is straightforward to see that $C^{1}$ curves are harder to find that their normal versions. Consequently, if a set is $C^{1}$ path connected or piecewise $C^{1}$ connected
 ## Examples
