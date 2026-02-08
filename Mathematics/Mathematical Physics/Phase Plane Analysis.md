@@ -68,4 +68,60 @@ A=\begin{pmatrix}
 -mg\ell & 0
 \end{pmatrix}
 $$
-This matrix has purely imaginary eigenvalues $\lambda_{1}=i\sqrt{ \frac{g}{\ell} },\lambda_{2}=-\\i\sqrt{ g\ell }$ with corresponding eige v
+This matrix has purely imaginary eigenvalues $\lambda_{1}=i\sqrt{ \frac{g}{\ell} },\lambda_{2}=-\\i\sqrt{ g\ell }$ with corresponding eige vectors
+$$
+\underline{v}_{1}=\begin{pmatrix}
+1 \\
+\text{im}(\sqrt{ \ell^{3} }g)
+\end{pmatrix},~\underline{v}_{2}=\begin{pmatrix}
+1 \\
+-\text{im}(\sqrt{ \ell^{3}g })
+\end{pmatrix}
+$$
+Since $\theta$ and $p_{{\theta}}$ are real, it is more consistent to write $e^{ \lambda_{1}t }$ and $e^{ \lambda_{2}t }$ in terms of sines and cosines:
+$$
+e^{ \lambda_{1}t }\underline{v}_{1}=\begin{pmatrix}
+\cos(\omega t) \\
+-m\ell^{2}\omega \sin(\omega t)
+\end{pmatrix}+i\begin{pmatrix}
+\sin(\omega t) \\
+m\ell^{2}\omega \cos(\omega t)
+\end{pmatrix}
+$$
+Where we have defined $\omega:=\sqrt{  \frac{g}{\ell} }$ and 
+$$
+e^{ \lambda_{2} t}\underline{v}_{2}=\overline{e^{ \lambda_{1}t }\underline{v}_{2}}=\begin{pmatrix}
+\cos(\omega t) \\
+-m\ell\omega \sin(\omega t)
+\end{pmatrix}-i\begin{pmatrix}
+\sin(\omega t) \\
+m\ell^{2}\omega \cos(\omega t)
+\end{pmatrix}
+$$
+Our system of differential equations is real and linear, so the real and imaginary components of these expressions are solutions of the equations of motion themselves and we finally find
+$$
+\begin{pmatrix}
+q \\
+p 
+\end{pmatrix}=c_{1}\begin{pmatrix}
+\cos(\omega t) \\
+-m\ell^{2}\omega \sin(\omega t)
+\end{pmatrix}+c_{2}\begin{pmatrix}
+\sin(\omega t) \\
+m\ell^{2}\omega \cos(\omega t)
+\end{pmatrix}
+$$
+With $c_{1}$ and $c_{2}$ depending on the initial condition of the system, or in terms of amplitude $\mathcal{A}$ and a phase delay $\phi$
+$$
+\begin{pmatrix}
+q \\
+p 
+\end{pmatrix}=\mathcal{A}\begin{pmatrix}
+\cos(\omega t+\phi) \\
+-m\ell^{2}\omega \sin(\omega t+\phi)
+\end{pmatrix}
+$$
+With $c_{1}=\mathcal{A}\cos(\phi),c_{2}=\mathcal{A}\sin(\phi)$
+So we see that the [[Phase Portrait|phase portrait]] of the pendulum, in the approximation of small oscillations is given by concentric ellipses in phase space
+___
+Note that similar to normal nodes, other possibilites exist depending on the eigenvalues of $$
