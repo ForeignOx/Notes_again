@@ -153,5 +153,55 @@ This is indeed the case, as we now show for the class of conserved charges
 ## Theroem
 Assume that we have a function $Q(\underline{q},\underline{p},t)$ of the form
 $$
-Q(\underline{q},\underline{p},t)
+Q(\underline{q},\underline{p},t)=\left( \sum_{i=1}^{n}a_{i}(\underline{q})p_{i} \right)-F(\underline{q},t)
+$$
+Such that 
+$$
+\frac{d Q}{dt} -\left\{ Q,H \right\}+\frac{ \partial Q }{ \partial t } =0
+$$
+Then [[Hamiltonian Flow|$\Phi_{Q}^{(\varepsilon)}(L)=L+\varepsilon \frac{d F}{dt}+\mathcal{O}(\varepsilon^{2})$]], so $Q$ generates a symmetry, whose Noether charge is $Q$
+### Proof
+Let's start by proving auxiliary results. Note first that
+$$
+\left\{ q_{i},Q \right\}=\frac{ \partial Q }{ \partial p_{i} } =a_{i}(\underline{q})
+$$
+Which implies, in particular, that
+$$
+\frac{ \partial \left\{ q_{i},Q \right\} }{ \partial t } =\frac{ \partial a_{i}(\underline{q}) }{ \partial t } =0
+$$
+Note also that since $Q$ is conserved, and the only explicit time dependence of $Q$ is via $F$, we have
+$$
+\left\{ Q,H \right\}=\frac{d Q}{dt} -\frac{ \partial Q }{ \partial t } =-\frac{ \partial Q }{ \partial t } =\frac{ \partial F }{ \partial t } 
+$$
+So
+$$
+-\left\{ \left\{ Q,H \right\},q_{i} \right\}=\left\{ q_{i},\left\{ Q, H\right\} \right\}=\frac{ \partial \left\{ Q,H \right\} }{ \partial p_{i} } =\frac{ \partial  }{ \partial p_{i} } \left( \frac{ \partial F(\underline{q},t) }{ \partial t }  \right)=0
+$$
+Using these two results we find that
+$$
+\frac{d \left\{ q_{i},Q \right\}}{dt} =\frac{ \partial \left\{ q_{i},Q \right\} }{ \partial t } +\left\{ \left\{ q_{i},Q \right\},H \right\} 
+$$
+$$
+= \left\{ \left\{ q_{i},Q \right\},H \right\} = -\left\{ \left\{ H,q_{i} \right\},Q \right\}-\left\{ \left\{ Q,H \right\},q_{i} \right\} = \left\{ \left\{ q_{i},H \right\},Q \right\}
+$$
+Where we have used Jacobi's identity for [[Poisson Bracket|Poisson brackets]] in the third equality
+[[Hamiltonian|Hamilton's equations]] then imply that
+$$
+\frac{d \left\{ q_{i},Q \right\}}{dt} =\left\{ \dot{q}_{i},Q \right\}
+$$
+Using these results it is straightforward to compute the change in the Lagrangian due to $Q$
+The Lagrangian in Hamiltonian coordinates is
+$$
+L(\underline{q},\underline{p},t)=\sum_{i=1}^{n}\dot{q}_{i}(\underline{q},\underline{p}),p_{i}-H(\underline{q},\underline{p},t)
+$$
+Since $Q$ is conseved, we have
+$$
+\left\{ L,Q \right\}= \sum_{i=1}^{n}(\left\{ \dot{q}_{i},Q \right\}p_{i}+\dot{q}_{i}\left\{ p_{i},Q \right\}) +\left\{ Q,H \right\} 
+$$
+$$
+= \sum_{i=1}^{n}(\left\{ \dot{q}_{i},Q \right\}p_{i}+\dot{q}_{i}\left\{ p_{i},Q \right\})-\frac{ \partial Q }{ \partial t } 
+$$
+Which becomes, using the results above:
+$$
+\left\{ L,Q \right\}=()
 $$
