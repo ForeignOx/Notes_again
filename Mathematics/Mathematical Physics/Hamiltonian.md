@@ -131,6 +131,6 @@ $$
 \frac{ \partial L(\underline{q},\dot{\underline{q}}(\underline{q},\underline{p},t),t) }{ \partial t } \Bigg{|}_{\underline{q},\underline{p}} =\frac{ \partial L(\underline{q},\dot{\underline{q}},t) }{ \partial t } \Bigg{|}_{\underline{q},\dot{\underline{q}}} +\sum_{i=1}^{n}\frac{ \partial L(\underline{q},\dot{\underline{q}},t) }{ \partial \dot{q}_{i} } \Bigg{|}_{\underline{q}} \frac{ \partial \dot{q}_{i}(\underline{q},\underline{p},t) }{ \partial t } \Bigg{|}_{\underline{q},\underline{p}} 
 $$
 $$
-\implies\frac{ \partial H(\underline{q},\underline{p},t) }{ \partial t } \Bigg{|}_{\underline{q},\underline{p}} =-\frac{ \partial L(\underline{q},\dot{\underline{q}},t) }{ \partial t } \Bigg{|}_{\underline{q},\dot{\underline{q}}} 
+\implies\frac{ \partial H(\underline{q},\underline{p},t) }{ \partial t } \Bigg{|}_{\underline{q},\underline{p}} =-\frac{ \partial L(\underline{q},\dot{\underline{q}},t) }{ \partial t } \Bigg{|}_{\underline{q},\dot{\underline{q}}} +\sum_{i=1}^{n}\left( p_{i}-\frac{ \partial L() }{ \partial \dot{q}_{i} }  \right)
 $$
 
