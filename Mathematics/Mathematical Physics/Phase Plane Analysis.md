@@ -1,4 +1,50 @@
 The [[Hamiltonian|Hamiltonian]] analogue to [[Normal Modes|normal mode]] techniques is phase plane analysis and helps develop intuition for the behavior of dynamic systems
 This generalises to arbitrary numbers of dimensions, but to aid visualisation, we'll consider systems with $\hspace{0pt}1$ degree of freedom where [[Phase Spaces|phase space]] is 2-dimensional and can be parametrised by a single coordinate $q$ with associated [[Generalised Momentum|generalised momentum]] $p$.
-Recall that each point in space fully specifies all the data needed to determine the time evolution of the system. So if we know that at time $t=t_{0}$ the system is at $(q(t_{0}),p(t_{0}))$ in phase space, then we can fully determine the values of $(q(t),p(t))$ for all $t$
-
+Recall that each point in space fully specifies all the data needed to determine the time evolution of the system. So if we know that at time $t=t_{0}$ the system is at $(q(t_{0}),p(t_{0}))$ in phase space, then we can fully determine the values of $(q(t),p(t))$ for all $t$, this is known as the [[State Trajectories|state trajectory]].
+## Example
+Consider a pendulum, its Lagrangian is given by
+$$
+L=\frac{1}{2}m\ell^{2}\dot{\theta}^{2}+mg\ell \cos\theta
+$$
+So the [[Hamiltonian|Hamiltonian]] is 
+$$
+H=\frac{1}{2m\ell^{2}}p_{\theta}^{2}-mg\ell \cos\theta
+$$
+Giving rise to Hamilton's equations:
+$$
+\dot{\theta}=\frac{ \partial H }{ \partial p_{\theta} } =\frac{1}{m\ell^{2}}p_{\theta}
+$$
+$$
+ \dot{p}_{\theta}=-\frac{ \partial H }{ \partial \theta } =-mg\ell \sin\theta
+$$
+Clearly $\theta=p_{\theta}=0$ is an equilibrium point of this system
+Computing the state trajectories amounts to solving Hamilton's equations for arbitrary initial condition, which is equivalent to solving the [[Euler-Lagrange Equations|Euler Lagrange equations]] for the system
+In this case we still cannot find a solution in terms of elementary functions, but as we do when considering normal modes, we can understand the bahaviour around the equilibrium point for small oscillarions by linearising the problem
+## Method
+Consider a system with equilibrium point $(q,p)=(0,0)$ (One can always place any equilibrium point of interest at the origin by redefining coordinates if necessary)
+The fact that there is an equilibrium point at the origin implies that when we expand $\frac{ \partial H }{ \partial q }$ and $\frac{ \partial H }{ \partial p }$ around the origin, we have no constant term in the [[Taylor Series|Taylor expansion]]:
+$$
+\frac{ \partial H }{ \partial p } =aq+bp+\dots ,~-\frac{ \partial H }{ \partial q } =cq+dp+\dots
+$$
+For some constant real numbers $a,b,c,d$, which in the case of Hamilton's equations,
+$$
+a=-d=\frac{ \partial^{2}H }{ \partial p\partial q }\Bigg{|}_{(0.0)} ,~b=\frac{ \partial^{2}H }{ \partial p^{2} }\Bigg{|}_{(0,0)}  ,~c=\frac{ \partial^{2}H }{ \partial q^{2} } \Bigg{|}_{(0,0)}  
+$$
+But phase plane analysis extends beyond Hamiltonian systems, so we'll leave them as generic numbers which we write in Matrix form
+$$
+\frac{d}{dt}\begin{pmatrix}
+q \\
+p
+\end{pmatrix}=A\begin{pmatrix}
+q \\
+p
+\end{pmatrix}
+$$
+Where
+$$
+A:=\begin{pmatrix}
+a & b \\
+c & d
+\end{pmatrix}
+$$
+We can solve this system very similarly to how we solved normal modes problems; dente by $\lambda_{1}$ and $\lambda_{2}$ the two [[Eigenvalues|eigenvalues]] of $A$, which we will assume to be distinct for simplicity, and $\underline{v}_{1},\underline{v}_{2}$ to be corresponding [[eig]]

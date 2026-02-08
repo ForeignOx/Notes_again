@@ -6,3 +6,5 @@ $$
 $$
 Then [[Hamiltonian|Hamilton]]'s equations of motion then imply that $\dot{q}=\dot{p}=0$ and therefore $q(t)=q_{0}$ and $p(t)=p_{0}$ for all $t$
 We refer to such points as equilibrium points
+
+
