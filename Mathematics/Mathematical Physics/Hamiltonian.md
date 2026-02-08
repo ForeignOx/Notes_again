@@ -227,5 +227,15 @@ $$
 H= \frac{e^{ -bt }p^{2}}{2}+\frac{e^{ bt }w^{2}x^{2}}{2}
 $$
 Notice that $H$ explicitly depends on time; this implies that it is not conserved, as we'd expect for the damped harmonic oscillator, whose motion dies away to nothing
-
-
+Hamilton's equation of motion are
+$$
+\dot{x}=\frac{ \partial H }{ \partial p } =e^{ -bt }p
+$$
+$$
+ \dot{p}=-\frac{ \partial H }{ \partial x } =-w^{2}e^{ bt }x
+$$
+Differentiating the first equation with respect to $t$, we see that
+$$
+\ddot{x}=-be^{ -bt }+e^{ -bt }\dot{p}=-b\dot{x}-w^{2}x
+$$
+Which is indeed the equation for a damped harmonic oscillator yippeee

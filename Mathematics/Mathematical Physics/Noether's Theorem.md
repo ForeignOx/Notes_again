@@ -147,3 +147,4 @@ $$
  0=\frac{ \partial L }{ \partial y } -\frac{d }{dt} \left( \frac{ \partial L }{ \partial \dot{y} }  \right)=-\dot{x}-m\ddot{y}=-\frac{d }{dt} (x+m\dot{y})=-\frac{d Q}{dt} 
 $$
 So we see that the second gives us our Noether charge being conserved
+## Relation with Hamiltonian Things
