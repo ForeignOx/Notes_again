@@ -47,4 +47,25 @@ a & b \\
 c & d
 \end{pmatrix}
 $$
-We can solve this system very similarly to how we solved normal modes problems; dente by $\lambda_{1}$ and $\lambda_{2}$ the two [[Eigenvalues|eigenvalues]] of $A$, which we will assume to be distinct for simplicity, and $\underline{v}_{1},\underline{v}_{2}$ to be corresponding [[eig]]
+We can solve this system very similarly to how we solved normal modes problems; dente by $\lambda_{1}$ and $\lambda_{2}$ the two [[Eigenvalues|eigenvalues]] of $A$, which we will assume to be distinct for simplicity, and $\underline{v}_{1},\underline{v}_{2}$ to be corresponding [[eigenvectors|eigenvectors]]
+Then the general solution of the linear system is
+$$
+\begin{pmatrix}
+q(t) \\
+p(t)
+\end{pmatrix}=C_{1}e^{ \lambda_{1} t }\underline{v}_{1}+C_{2}e^{ \lambda_{2}t }\underline{v}_{2}
+$$
+Where $C_{1},C_{2}$ are constants that depend on the initial conditions
+## Example
+If we continue the pendulum example and study small oscillations around the equilibrium point, we have an effective [[Linear|linear]] Hamiltonian system given by
+$$
+\dot{\theta}=\frac{1}{m\ell^{2}}p_{\theta},~\dot{p}_{\theta}=-mg\ell\theta
+$$
+Using $\sin\theta \approx \theta$ for $\left| \theta \right|\ll 1$, our matrix $A$ is therefore
+$$
+A=\begin{pmatrix}
+0 & \frac{1}{m\ell^{2}} \\
+-mg\ell & 0
+\end{pmatrix}
+$$
+This matrix has purely imaginary eigenvalues $\lambda_{1}=i\sqrt{ \frac{g}{\ell} },\lambda_{2}=-\\i\sqrt{ g\ell }$ with corresponding eige v
