@@ -170,5 +170,31 @@ $$
 $$
 The Hamiltonian is given by 
 $$
-H=p_{r}\dot{r}+p_{\theta}\dot{\theta}-\left( \frac{1}{2}(\dot{r}^{2}) \right)
+H=p_{r}\dot{r}+p_{\theta}\dot{\theta}-\left( \frac{1}{2}(\dot{r}^{2}+r^{2}\dot{\theta}^{2})-\frac{r^{2}}{2} \right) 
 $$
+$$
+= p_{r}^{2}+p_{\theta}\left( \frac{p_{\theta}}{r^{2}} \right)-\frac{1}{2}\left( p_{r}^{2}+r^{2}\left( \frac{p_{\theta}}{r^{2}} \right)^{2}-\frac{r^{2}}{2} \right)
+$$
+$$
+=\frac{1}{2}\left( p_{r}^{2}+\frac{p_{\theta}^{2}}{r^{2}} \right)+\frac{r^{2}}{2}
+$$
+So Hamilton's Equations of motion tell us
+$$
+\dot{r}=\frac{ \partial H }{ \partial p_{r} } =p_{r}
+$$
+$$
+ \dot{\theta}=\frac{ \partial H }{ \partial p_{\theta} } =\frac{p_{\theta}}{r^{2}}
+$$
+$$
+ \dot{p}_{r}=-\frac{ \partial H }{ \partial r } =\frac{p_{\theta}^{2}}{r^{3}}-r 
+$$
+$$
+ \dot{p}_{\theta}=-\frac{ \partial H }{ \partial \theta } =0
+$$
+Note that the first two equations here simply reproduce the results of expressing the $\underline{q}$ in terms of $\underline{p}$
+This is always the case when we derive the Hamiltonian system from a Lagrangian system
+The last equation shows that $p_{\theta}$ is conserved as a result of the Hamiltonian being independent of $\theta$
+The concept of an [[Ignorable Coordinates|ignorable coordinate]] goes over completerly from the Lagrangian idea to the Hamiltonian idea
+The interesting part of the dynamics is in the remaining e
+
+
