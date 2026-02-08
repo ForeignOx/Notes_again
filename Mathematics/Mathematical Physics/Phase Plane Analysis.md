@@ -124,4 +124,8 @@ $$
 With $c_{1}=\mathcal{A}\cos(\phi),c_{2}=\mathcal{A}\sin(\phi)$
 So we see that the [[Phase Portrait|phase portrait]] of the pendulum, in the approximation of small oscillations is given by concentric ellipses in phase space
 ___
-Note that similar to normal nodes, other possibilites exist depending on the eigenvalues of $$
+Note that similar to normal nodes, other possibilites exist depending on the eigenvalues of $A$
+If both eigenvalues are real and negative, we have stable nodes; if both eigenvalues are real and positive, we have unstable modes, If both eigenvalues recoplex, and thus complex sonjugate to each other (since the characteristic equation is real) then:
+- If they are purely imaginary, we have marginal stability around a centre point
+- If the complex eigenvalues have a negative real part, we have a stable focus
+- If the eigenvalues have a negative real part, we have unstable focus
