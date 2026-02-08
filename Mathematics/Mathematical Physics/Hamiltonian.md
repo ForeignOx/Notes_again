@@ -119,4 +119,14 @@ $$
 $$
 Using the fact that the Poisson bracket is antisymmetric. We see that if time does not appear explicitly in the expression for the Hamiltonian, then energy is conserved
 ## Remark
-A small variation of this last equation is sometimes included as part of Hamilton's equations. From the definition of the Hamiltonian
+A small variation of this last equation is sometimes included as part of Hamilton's equations. From the definition of the Hamiltonian we have that
+$$
+\frac{ \partial H(\underline{q},\underline{p},t) }{ \partial t } \Bigg{|}_{\underline{q},\underline{p}}=\frac{ \partial  }{ \partial t } \left( \left( \sum_{i=1}^{n}\dot{q}_{i}(\underline{q},\underline{p},t)p_{i} \right)-L(\underline{q},\dot{\underline{q}}(\underline{q},\underline{p},t),t) \right)\Bigg{|}_{\underline{q},\underline{p}} 
+$$
+$$
+= \left( \sum_{i=1}^{n}p_{i}\frac{ \partial \dot{q}_{i}(\underline{q},\underline{p},t) }{ \partial t } \Bigg{|}_{\underline{q},\underline{p}}  \right)-\frac{ \partial L(\underline{q},\dot{\underline{q}}(\underline{q},\underline{p},t),t) }{ \partial t } \Bigg{|}_{\underline{q},\underline{p}} 
+$$
+Now note that $L$ can have an explicit dependence on $t$ through $\underline{\dot{q}}$, so we use the chain rule:
+$$
+\frac{ \partial L(\underline{q},\dot{\underline{q}}(\underline{q},\underline{p},t),t) }{ \partial t } \Bigg{|}_{\underline{q},\underline{p}} =\frac{ \partial L(\underline{q},\dot{\underline{q}}),t }{ \partial t } \Bigg{|}_{\underline{q},\dot{\underline{q}}} 
+$$
