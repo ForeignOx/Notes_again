@@ -1,7 +1,7 @@
 ## Definition
 A [[Transformations of Configuration Spaces|transformation]] $q_{i}\to \phi_{i}$ is a symmetry if there exists some [[Functions|function]] $F(\underline{q},t)$ such that
 $$
-L'=L(\phi_{1},\dots,\phi_{N})-L(q_{1},\dots,q_{N})=\varepsilon \frac{d F(\underline{q},t)}{dt} +\mathcal{O}(\varepsilon^{2})
+\delta L=L'(\phi_{1},\dots,\phi_{N})-L(q_{1},\dots,q_{N})=\varepsilon \frac{d F(\underline{q},t)}{dt} +\mathcal{O}(\varepsilon^{2})
 $$
 ## Remark
 If some $F(\underline{q},t)$ exists such that the transformation is a symmetry, then $F+c$ with $c$ a constant also makes the transformation a symmetry, in fact, for the transformation to be a symmetry, this has to hold without the equations of motion
