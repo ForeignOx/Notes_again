@@ -147,4 +147,11 @@ $$
  0=\frac{ \partial L }{ \partial y } -\frac{d }{dt} \left( \frac{ \partial L }{ \partial \dot{y} }  \right)=-\dot{x}-m\ddot{y}=-\frac{d }{dt} (x+m\dot{y})=-\frac{d Q}{dt} 
 $$
 So we see that the second gives us our Noether charge being conserved
-## Relation with Hamiltonian Things
+## Charge iff Symmetry?
+We can now close the circle of ideass that has been developed. We have seen that every symmetry implies the existence of a conserved Noether charge $Q$, and we have alsol shown that the Noether charge associated to a symmetry generates the right transformations on the generalised coodinates. It is natural to ask whether any conserved charge generate a symmetry transformation?
+This is indeed the case, as we now show for the class of conserved charges
+## Theroem
+Assume that we have a function $Q(\underline{q},\underline{p},t)$ of the form
+$$
+Q(\underline{q},\underline{p},t)
+$$
