@@ -131,6 +131,22 @@ $$
 \frac{ \partial L(\underline{q},\dot{\underline{q}}(\underline{q},\underline{p},t),t) }{ \partial t } \Bigg{|}_{\underline{q},\underline{p}} =\frac{ \partial L(\underline{q},\dot{\underline{q}},t) }{ \partial t } \Bigg{|}_{\underline{q},\dot{\underline{q}}} +\sum_{i=1}^{n}\frac{ \partial L(\underline{q},\dot{\underline{q}},t) }{ \partial \dot{q}_{i} } \Bigg{|}_{\underline{q}} \frac{ \partial \dot{q}_{i}(\underline{q},\underline{p},t) }{ \partial t } \Bigg{|}_{\underline{q},\underline{p}} 
 $$
 $$
-\implies\frac{ \partial H(\underline{q},\underline{p},t) }{ \partial t } \Bigg{|}_{\underline{q},\underline{p}} =-\frac{ \partial L(\underline{q},\dot{\underline{q}},t) }{ \partial t } \Bigg{|}_{\underline{q},\dot{\underline{q}}} +\sum_{i=1}^{n}\left( p_{i}-\frac{ \partial L() }{ \partial \dot{q}_{i} }  \right)
+\implies\frac{ \partial H(\underline{q},\underline{p},t) }{ \partial t } \Bigg{|}_{\underline{q},\underline{p}} =-\frac{ \partial L(\underline{q},\dot{\underline{q}},t) }{ \partial t } \Bigg{|}_{\underline{q},\dot{\underline{q}}} +\sum_{i=1}^{n}\left( p_{i}-\frac{ \partial L(\underline{q},\dot{\underline{q}},t) }{ \partial \dot{q}_{i} } \Bigg{|}_{\underline{q}}  \right)\frac{ \partial \dot{q}_{i}(\underline{q},\underline{p},t) }{ \partial t } \Bigg{|}_{\underline{q},\underline{p}} 
 $$
+The second term vanishes due to the definition of the generalised momentum, so
+$$
+\frac{ \partial H(\underline{q},\underline{p},t) }{ \partial t } \Bigg{|}_{\underline{q},\underline{p}}=-\frac{ \partial L(\underline{q},\dot{\underline{q}},t) }{ \partial t }\Bigg{|}_{\underline{q},\dot{\underline{q}}}  
+$$
+In particular, this is compatible with our Lagrangian understanding of energy
+## Remark
+More generally, assume that we have a function $Q(\underline{q},\underline{p},t)$ on phase space. We have $Q$ is conserved if 
+$$
+\frac{d Q}{dt} =\left\{ Q,H \right\}+\frac{ \partial Q }{ \partial t } =0
+$$
+In particular, if $Q$ does not depend explicitly on time, $Q=Q(\underline{q},\underline{p})$, we have that $Q$ is conserved iff $\left\{ Q,H \right\}=0$
+By antisymmetry of the Poisson bracket, we can also read this consition as
+$$
+\left\{ H,Q \right\}=0
+$$
+Which can be interpreted 
 
