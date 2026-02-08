@@ -1,0 +1,1 @@
+The [[Hamiltonian|Hamiltonian]] analogue to [[Normal Modes|normal mode]] techniques often helps developing intuiting

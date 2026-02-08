@@ -203,5 +203,28 @@ $$
 $$
 Which becomes, using the results above:
 $$
-\left\{ L,Q \right\}=()
+\left\{ L,Q \right\}=\sum_{ i=1} ^{ n}  \left( p_{i}\frac{d}{dt} \left\{ q_{i},Q \right\}+\dot{q}_{i}\left\{ p_{i},Q \right\} \right)-\frac{ \partial Q }{ \partial t } 
 $$
+$$
+= \sum_{ i=1} ^{ n}  \left( \frac{d}{dt} (\left\{ q_{i},Q \right\}p_{i})-\dot{p}_{i}\left\{ q_{i},Q \right\}+\dot{q}_{i}\left\{ p_{i},Q \right\} \right)-\frac{ \partial Q }{ \partial t } 
+$$
+$$
+= \sum_{ i=1} ^{ n}  \left( \frac{d}{dt} (\left\{ q_{i},Q \right\}p_{i})-\dot{p}_{i}\frac{ \partial Q }{ \partial p_{i} } -\dot{q}_{i}\frac{ \partial Q }{ \partial q_{i} }  \right)-\frac{ \partial Q }{ \partial t } 
+$$
+$$
+= \frac{d}{dt} \left( \sum_{ i=1} ^{ n}  \left\{ q_{i},Q \right\}p_{i} \right)-\frac{d Q}{dt} 
+$$
+Finally, we find that
+$$
+\sum_{ i=1} ^{ n}\left\{ q_{i},Q \right\}p_{i}\sum_{ i=1} ^{ n}  q_{i}p_{i}=Q+F
+$$
+Which implies
+$$
+\left\{ L,Q \right\}=\frac{d (Q+F-Q)}{dt} =\frac{d F}{dt} 
+$$
+
+Recalling the definition of the Hamiltonian flow operator, this gives
+$$
+\Phi_{Q}^{(\varepsilon)}(L)=L+\varepsilon \left\{ L ,Q\right\}+\mathcal{O}(\varepsilon^{2})=L+\varepsilon \frac{d F}{dt} +\mathcal{O}(\varepsilon^{2})
+$$
+And we are done
