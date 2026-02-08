@@ -195,6 +195,37 @@ Note that the first two equations here simply reproduce the results of expressin
 This is always the case when we derive the Hamiltonian system from a Lagrangian system
 The last equation shows that $p_{\theta}$ is conserved as a result of the Hamiltonian being independent of $\theta$
 The concept of an [[Ignorable Coordinates|ignorable coordinate]] goes over completerly from the Lagrangian idea to the Hamiltonian idea
-The interesting part of the dynamics is in the remaining e
+The interesting part of the dynamics is in the remaining equation for $\dot{p}_{r}$
+Given that $p_{\theta}$ is a contant and that $p_{r}=\dot{r}$, it can be read as
+$$
+\ddot{r}=\frac{p_{\theta}^{2}}{r^{3}}-r
+$$
+___
+Suppose we start instead with a Hamiltonian:
+$$
+H=\frac{p^{2}}{2}+xp
+$$
+Hamilton's equations are
+$$
+\dot{x}=\frac{ \partial H }{ \partial p } =p+x
+$$
+$$
+ \dot{p}=-\frac{ \partial H }{ \partial x }=-p
+$$
+Solving the second equation, we have that $p=Ae^{ -t }$. Substituting this into the first equation we find
+$$
+\dot{x}-x=Ae^{ -t }
+$$
+Multiplying through by the integrating factor we find
+$$
+\frac{d}{dt} (xe^{ -t })=Ae^{ -2t }
+$$
+Which can be integrated to give $x=Ce^{ t }-\frac{Ae^{ -t }}{2}$
+___
+The following is a Hamiltonian for the damped [[Simple Harmonic Motion|harmonic oscillator]]:
+$$
+H= \frac{e^{ -bt }p^{2}}{2}+\frac{e^{ bt }w^{2}x^{2}}{2}
+$$
+Notice that $H$ explicitly depends on time; this implies that it is not conserved, as we'd expect for the damped harmonic oscillator, whose motion dies away to nothing
 
 
