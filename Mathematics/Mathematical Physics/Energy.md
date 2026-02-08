@@ -221,6 +221,14 @@ With the $K_{ij}(\underline{q})$ and $V(\underline{q})$ arbitrary functions on a
 $$
 E=T+V
 $$
+# In the Hamiltonian Formalism
+In the [[Hamiltonian|Hamiltonian]] formalism, the energy is simply equal to the Hamiltonian itself:
+$$
+H=\left( \sum_{i=1}^{n}p_{i}\dot{q}_{i}(\underline{q},\underline{p},t) \right)-L(\underline{q},\underline{\dot{q}}(\underline{q},\underline{p},t),t)
+$$
+
+
+
 
 
 #Mathematics #Dynamics #Physics #Energy #Definition

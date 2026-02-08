@@ -111,3 +111,12 @@ $$
 = \frac{ \partial f }{ \partial t } +\sum_{i=1}^{n}\left( \frac{ \partial f }{ \partial q_{i} } \frac{ \partial H }{ \partial p_{i} } -\frac{ \partial f }{ \partial p_{i} } \frac{ \partial H }{ \partial q_{i} }  \right)=\frac{ \partial f }{ \partial t } +\left\{ f,H \right\}
 $$
 Where we have used Hamilton's equations in going to the second line
+## Remark
+We can apply this corollary to give a very neat proof of [[Principle of Conservation of Energy|conservation of energy]]
+Energy in the Hamiltonian formalism is simply equal to the Hamiltonian itself. So the equation for energy conservation can be written as:
+$$
+\frac{d H}{dt} =\frac{ \partial H }{ \partial t } +\left\{ H,H \right\}=\frac{ \partial H }{ \partial t } 
+$$
+Using the fact that the Poisson bracket is antisymmetric. We see that if time does not appear explicitly in the expression for the Hamiltonian, then energy is conserved
+## Remark
+A small variation of this last equation is sometimes included as part of Hamilton's equations. From the definition of the Hamiltonian
