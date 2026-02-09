@@ -18,7 +18,7 @@ S[u+\delta u]=S[u]+\mathcal{O}((\delta u)^{2})
 $$
 This is also the integral of the [[Lagrangian Density|Lagrangian density]]:
 $$
-\int \int \mathcal{L}(u+\delta u,u_{x}+\delta u_{x},u_{t}+\delta u_{t}) \, dx  \, dt 
+S[u+\delta u]=\int \int \mathcal{L}(u+\delta u,u_{x}+\delta u_{x},u_{t}+\delta u_{t}) \, dx  \, dt 
 $$
 $$
 = \int \int \mathcal{L}(u,u_{x},u_{t})+\delta u \frac{ \partial \mathcal{L} }{ \partial u } +\delta u_{x}\frac{ \partial \mathcal{L} }{ \partial u_{t} } +\delta u_{t}\frac{ \partial \mathcal{L} }{ \partial u_{t} }  \, dx  \, dt  
@@ -28,4 +28,7 @@ $$
 $$
 $$
 = \int \int \mathcal{L}(u,u_{x},u_{t})+\delta u\frac{ \partial \mathcal{L} }{ \partial u } +\frac{ \partial  }{ \partial x } \left( \delta u\frac{ \partial \mathcal{L} }{ \partial u_{x} }  \right) \, dx  \, dx 
+$$
+$$
+=\dots= S+\int \int \delta u\left( \frac{ \partial \mathcal{L} }{ \partial u } -\frac{ \partial  }{ \partial x } \left( \frac{ \partial \mathcal{L} }{ \partial u_{x} }  \right)-\frac{ \partial  }{ \partial t } \left( \frac{ \partial \mathcal{L} }{ \partial u_{t} }  \right) \right)+\mathcal{O}() \, dx  \, dt 
 $$
