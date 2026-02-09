@@ -64,3 +64,4 @@ $$
  \iff \tau u_{xx}=\rho u_{tt} \iff  u_{tt}=c^{2}u_{x x}
 $$
 Which is the wave equation!!
+
