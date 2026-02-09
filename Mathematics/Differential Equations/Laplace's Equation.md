@@ -122,5 +122,21 @@ $$
 $$
 - The function $U(z)=\tilde{U}\circ \varphi(z)$ is a holomorphic function on $D$ and as such its real part $u(x,y)$ is harmonic. Moreover, we notice that for any $x\in\mathbb{R}$,
 $$
-U(\varphi ^{-1}(x,0))=\mathfrak{R}(U(\varphi ^{-1}(x,0)))
+U(\varphi ^{-1}(x,0))=\mathfrak{R}(U(\varphi ^{-1}(x,0)))=\mathfrak{R}(\tilde{U}(\varphi(\varphi ^{-1}(x,0))))
+$$
+$$
+= \mathfrak{R}(\tilde{U}(x,0))=\tilde{u}(x,0)=\tilde{g}(x)=g(\phi ^{-1}(x,0))
+$$
+    Since $\varphi ^{-1}(\partial \mathbb{H})=\partial D$, we must have that $u=g$ on $\partial D$ and we found a solution to the Dirichlet problem on D!
+### Example
+The map
+$$
+f(z)= \frac{z-i}{z+i}
+$$
+Is holomorphic in $\mathbb{C}\setminus \left\{ -i \right\}$ and takes $\mathbb{H}$ to $\mathbb{D}$. Consequently, we can use the above method to solve the PDE
+$$
+\begin{cases}
+u_{x x}+u_{yy}=0 & x^{2}+y^{2}<1 \\
+u(\cos\theta,\sin\theta)-g(\theta) & \theta \in (-\pi,\pi]
+\end{cases}
 $$
