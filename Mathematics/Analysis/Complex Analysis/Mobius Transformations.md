@@ -91,3 +91,12 @@ $$
 f(z)=\frac{1}{r}e^{ -i\theta }
 $$
 The map, thus inverrts the distance from the origin and reflects it with respect to the real axis. We see that, much line $z^{n}$, the map takes segments of circles centred at the origin to segments of circle centred at the origin but going in an opposite direction
+![[Pasted image 20260209232413.png]]
+Similarly, segments of [[rays|rays]] of angle $\theta$, without the origin, become segments of rays of angle $-\theta$, though the length gets inverted
+![[Pasted image 20260209232531.png]]
+Using the above, we can conclude the following:
+## Lemma
+- The map $\frac{1}{z}$ [[Injective Functions|injectively]] takes the set $\mathbb{D}\setminus \left\{ 0 \right\}=\left\{ z\in\mathbb{C}:\middle|:0<\left| z \right|<1 \right\}$ to $\mathbb{D}^{c}=\left\{ z\in\mathbb{C}:\middle|:\left| z \right|>1 \right\}$. When considering $\frac{1}{z}$ over $\hat{\mathbb{C}}$, we find that it injectively takes $\mathbb{D}$ to $\mathbb{D}\cup \left\{ \infty \right\}$. Similarly, $\frac{1}{z}$ injectively takes the set $\mathbb{D}^{c}$ to $\mathbb{D}\setminus \left\{ 0 \right\}$ and on $\hat{\mathbb{C}}$ it takes $\mathbb{D}^{c}\cup \infty$ to $\mathbb{D}$
+- The map $\frac{1}{z}$ injectively takes the ray at angle $\theta$ (without the origin) to the ray at angle $-\theta$ (without the origin). On $\hat{\mathbb{C}}$, the statement remains the same by adding the origin and $\infty$ to the rays
+![[Pasted image 20260209233033.png]]
+## Differentiability :o
