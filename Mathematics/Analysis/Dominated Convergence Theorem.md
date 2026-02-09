@@ -34,6 +34,24 @@ $$
 \mathbb{P}(X>k)\leq \frac{\mathbb{E}(X^{2})}{k^{2}}
 $$
 Implied by [[Markov's Inequality|Markov's inequality]]
+___
+Let $X$ be a random variable, and 
+$$
+X_{n}=\frac{n\sin\left( \frac{X}{n} \right)}{X(1+X^{2})}
+$$
+For $n\geq 1$, we want to find $\lim_{ n \to \infty }\mathbb{E}(X_{n})$
+The function $\sin y$ satisfies:
+$$
+\lim_{ y \to 0 }  \frac{\sin(y)}{y}=1
+$$
+so
+$$
+X_{n}= \frac{\sin\left( \frac{X}{n} \right)}{\frac{X}{n}(1+X^{2})}
+$$
+$$
+\implies \left| X_{n} \right| =\left| \frac{\sin\left( \frac{X}{n} \right)}{\frac{X}{n}} \right| \left| \frac{1}{1+X^{2}} \right| \leq 1\cdot \frac{1}{1+X^{2}}\leq 1
+$$
+So $X_{n}\to \frac{1}{1+X^{2}}$ almost surely as $n$
 # For Sequences
 ## Theorem
 Let [[Convergence#Sequences of Multiple Indices|$(a_{m,n})_{m,n\in\mathbb{N}}$]], $(a_{m})_{m\in\mathbb{N}}$ and $(b_{m})_{m\in\mathbb{N}}$ be collections of numbers such that for every fixed $m\in\mathbb{N}$, we have
