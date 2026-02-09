@@ -1,4 +1,4 @@
-Laplace's equation is a [[Second Order Partial Differential Equations|second order]] [[Linear Partial Differential Equations|linear PDE]] of the form:
+ Laplace's equation is a [[Second Order Partial Differential Equations|second order]] [[Linear Partial Differential Equations|linear PDE]] of the form:
 $$
 u_{x x}+u_{yy}=0
 $$
@@ -92,4 +92,17 @@ $$
 ## Holomorphic Functions in the study of Harmonic Functions
 Solving Laplace's equation in a domain $D$ with boundary conditions i.e. information on the solution on $\partial D$ is a fairly complicated problem
 There are a few simply connected domains in which we are able to find an explicit solution by using various intuition and techniques (such as symmetry)
-For instance the solution to Laplace's equation with [[Dirichlet Boundary Conditions|Dirichlet boundary conditions]] 
+For instance the solution to Laplace's equation with [[Dirichlet Boundary Conditions|Dirichlet boundary conditions]] in the upper half plane:
+$$
+\begin{cases}
+u_{x x }+u_{yy} & x\in \mathbb{R},y>0 \\
+u(x,0)=g(x) & x\in \mathbb{R}
+\end{cases}
+$$
+With a continuous and bounded function $g$ is given by
+$$
+u(x,y)=\frac{y}{\pi}\int_{-\infty}^{\infty} \frac{g(t)}{(x-t)^{2}+y^{2}} \, dt 
+$$
+But what would happen if we wanted to solve the same provlem in the unit disc $\mathbb{D}$? In the upper unit disc? In a wedge of angular opening $\frac{\pi}{4}$?
+Here the power of complex analysis shines
+The idea is that since being harmonic in a simple connected domain is essentially being holomorphic, if a given simple connected domain $D$ is "holomorphically equivalent" to $\mathbb{H}$, i.e. we can move from $D$ to $\mathbb{H}$, and vice versa by a holomorphic [[Bijective Functions|bijection]], then
