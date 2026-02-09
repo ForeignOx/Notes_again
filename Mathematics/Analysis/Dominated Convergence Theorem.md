@@ -51,7 +51,8 @@ $$
 $$
 \implies \left| X_{n} \right| =\left| \frac{\sin\left( \frac{X}{n} \right)}{\frac{X}{n}} \right| \left| \frac{1}{1+X^{2}} \right| \leq 1\cdot \frac{1}{1+X^{2}}\leq 1
 $$
-So $X_{n}\to \frac{1}{1+X^{2}}$ almost surely as $n$
+So $X_{n}\to \frac{1}{1+X^{2}}$ almost surely as $n\to \infty$, and $\left| X_{n} \right|\leq 1$
+So by dominated convergence theorem $\mathbb{E}(X_{n})\to \mathbb{E}\left(  \frac{1}{1+X^{2}} \right)$ 
 # For Sequences
 ## Theorem
 Let [[Convergence#Sequences of Multiple Indices|$(a_{m,n})_{m,n\in\mathbb{N}}$]], $(a_{m})_{m\in\mathbb{N}}$ and $(b_{m})_{m\in\mathbb{N}}$ be collections of numbers such that for every fixed $m\in\mathbb{N}$, we have
