@@ -34,5 +34,21 @@ $$
 v_{x x}(x,y)+v_{yy}(x,y)=-u_{xy}(x,y)+u_{yx}(x,y)=0
 $$
 We conclude the result
-___
-While the requirement that $u$ and $v$ belong to $C^{2}(D)$ seem restricting, it is in
+### Remark
+While the requirement that $u$ and $v$ belong to $C^{2}(D)$ seem restricting, it is in fact redundant. This is due to one of the fundamental theorems of complex analysis: If $f$ is a holomorphic function in a domain $D$, then it is complex differentiable on $D$ infinitely many times
+With that, our proposition above can be reformulated as:
+    The real part and imaginary part of a holomorphic function in a domain $D$ are harmonic functions
+A testament to the power of complex analysis is that the converse is mostly true
+### Theorem
+Let $D$ be a [[Connectedness|simply connected]] domain and let $u:D\to \mathbb{R}$ be a harmonic function. Then there exists a harmonic function $v:D\to \mathbb{R}$ such that $f=u+iv$ is holomorphic on $D$ The function $v$ is calle a harmonic conjugate of $u$ and it is unique up to an addition of a real constant
+### Corollary
+Let $D$ be a simply connected domain and let $u:D\to \mathbb{R}$ be harmonic, then $u\in C^{\infty}(D)$ (we can actually say more, it is in fact [[Analytic Functions|analytic]] in $D$)
+### Method to Find Harmonic Conjugates
+Consider a harmonic function $u$ in a simply connected set $D$
+1. Since $f=u+iv$ is a holomorphic function, $u$ and $v$ need to satisfy the Cauchy-Riemann equations, i.e. $u_{x}=v_{y},u_{y}=-v_{x}$
+2. Choose one of the Cauchy-Riemann equations and integrate it to find an expression for $v$ that involves a function of the variable which was kept fixed in the partial derivative; for instance if we consider the equation $u_{x}=v_{y}$, then we can say that:
+$$
+v(x,y)=\int u_{x}(x,y) \, dy +\psi(x)
+$$
+    Where $\int u_{x} \, dy$ is the [[Integration#Indefinite Integrals (or Anti- Differentiation Derivative s)|indefinite integral]] of $u_{x}$ with respect to $y$. We choose the Cauchy-Riemann equation that is easier to integrate in this stem
+3. Use the second Cauchy-Riemann equation to find an ordinary differential equation for the additio
