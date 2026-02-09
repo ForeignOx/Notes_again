@@ -58,5 +58,9 @@ $$
 0=\frac{ \partial \mathcal{L} }{ \partial u } -\frac{ \partial  }{ \partial x } \left( \frac{ \partial \mathcal{L} }{ \partial u_{x} }  \right)-\frac{ \partial  }{ \partial t } \left( \frac{ \partial \mathcal{L} }{ \partial u }  \right)
 $$
 $$
-= \tau \frac{ \partial u_{x} }{ \partial x } -\rho \frac{ \partial u_{t} }{ \partial x } 
+= \tau \frac{ \partial u_{x} }{ \partial x } -\rho \frac{ \partial u_{t} }{ \partial t } =\tau u_{xx}-\rho u_{tt}
 $$
+$$
+ \iff \tau u_{xx}=\rho u_{tt} \iff  u_{tt}=c^{2}u_{x x}
+$$
+Which is the wave equation!!
