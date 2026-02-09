@@ -105,4 +105,22 @@ u(x,y)=\frac{y}{\pi}\int_{-\infty}^{\infty} \frac{g(t)}{(x-t)^{2}+y^{2}} \, dt
 $$
 But what would happen if we wanted to solve the same provlem in the unit disc $\mathbb{D}$? In the upper unit disc? In a wedge of angular opening $\frac{\pi}{4}$?
 Here the power of complex analysis shines
-The idea is that since being harmonic in a simple connected domain is essentially being holomorphic, if a given simple connected domain $D$ is "holomorphically equivalent" to $\mathbb{H}$, i.e. we can move from $D$ to $\mathbb{H}$, and vice versa by a holomorphic [[Bijective Functions|bijection]], then
+The idea is that since being harmonic in a simple connected domain is essentially being holomorphic, if a given simple connected domain $D$ is "holomorphically equivalent" to $\mathbb{H}$, i.e. we can move from $D$ to $\mathbb{H}$, and vice versa by a holomorphic [[Bijective Functions|bijection]], then we can compose the holomorphic function which is associated to Laplace's equation in $\mathbb{H}$ with this bijection to get the appropriate holomorphic function in $D$
+More precisely:
+- Assume that $D$ is a simply connected domain such that there exists a bijection $\varphi:D\to \mathbb{H}$ that is holomorphic and whose inverse is also holomorphic. Moreover, assume that $\varphi$ is a continuous bijection from $\overline{D}$ to $\overline{\mathbb{H}}$ and that it inverse is also continuous. Note that this implies that $\varphi(\partial D)=\partial \mathbb{H}$ and $\varphi ^{-1}(\partial \mathbb{H})=\partial D$
+- Consider Laplace's equation:
+$$
+\begin{cases}
+u_{xx }+u_{yy}=0 & (x,y)\in  D \\
+u=g & (x,y)\in \partial D
+\end{cases}
+$$
+    With a [[Continuity|continuous]] and [[Boundedness|bounded]] function $g$ and define $\tilde{g}(x)=g(\varphi ^{-1}(x,0))$ for any $x\in \mathbb{R}$
+- Let $\tilde{U}(z)$ be the holomorphic function in $\mathbb{H}$ that is also continuous on $\overline{\mathbb{H}}$ and whose real part is given by
+$$
+\tilde{u}(x,y)=\frac{y}{\pi}\int_{-\infty}^{\infty} \frac{\tilde{g}(t)}{(x-t)^{2}+y^{2}} \, dt 
+$$
+- The function $U(z)=\tilde{U}\circ \varphi(z)$ is a holomorphic function on $D$ and as such its real part $u(x,y)$ is harmonic. Moreover, we notice that for any $x\in\mathbb{R}$,
+$$
+U(\varphi ^{-1}(x,0))=\mathfrak{R}(U(\varphi ^{-1}(x,0)))
+$$
