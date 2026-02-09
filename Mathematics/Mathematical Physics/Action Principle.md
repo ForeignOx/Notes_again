@@ -67,3 +67,6 @@ Which is the wave equation!!
 $$
 
 $$
+$$
+
+$$

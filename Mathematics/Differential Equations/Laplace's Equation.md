@@ -90,4 +90,6 @@ $$
 =(x+iy)^{2}+3(x+iy)+iC=z^{2}+3z+iC
 $$
 ## Holomorphic Functions in the study of Harmonic Functions
-Solving Laplace's equation in a domain $D$ with boundary conditions i.e. information on the solution on $\partial$
+Solving Laplace's equation in a domain $D$ with boundary conditions i.e. information on the solution on $\partial D$ is a fairly complicated problem
+There are a few simply connected domains in which we are able to find an explicit solution by using various intuition and techniques (such as symmetry)
+For instance the solution to Laplace's equation with [[Dirichlet Boundary Conditions|Dirichlet boundary conditions]] 
