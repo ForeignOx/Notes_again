@@ -10,4 +10,26 @@ $$
 f^{-1}(z)=\frac{z-b}{a}
 $$
 ___
-$f(z)=e^{ z }$ is not biholomorphic from $\mathbb{C}$ to $\mathbb{C}^{*}$ as it is not injective. It is, however, a biholomorphism between $\left\{ z\in\mathbb{C}se| \right\}$
+[[Exponential Functions|$f(z)=e^{ z }$]] is not biholomorphic from $\mathbb{C}$ to $\mathbb{C}^{*}$ as it is not injective. It is, however, a biholomorphism between $\left\{ z\in\mathbb{C}:\middle|: c<\mathfrak{I}(z)<c+2\pi \right\}$ and [[rays|$\mathbb{C}\setminus R_{c}$]] for any $c\in\mathbb{R}$
+The inverse in that case is the appropriate branch of [[Logarithms|$\log z$]]
+One natural example is the case when $c=-\pi$, in which we get the principal logarithm $\mathrm{Log}$ as the inverse
+Note that $e^{ z }$ is a holomorphic bijection from $\left\{ z\in\mathbb{C}:\middle|:c<\mathfrak{I}(z)\leq c+2\pi \right\}$ to $\mathbb{C}^{*}$ but it has no holomorphic inverse in that case
+___
+$f(z)=z^{2}$ is not biholomorphic from $\mathbb{C}$ to $\mathbb{C}$. It is biholomorphic from $\mathbb{H}_{R}$ to $\mathbb{C}\setminus \mathbb{R}_{\leq 0}$
+The inverse is the "positive" [[roots|root]] function $z^{\frac{1}{2}}$. Changeing $\mathbb{H}_{R}$ to $\mathbb{H}_{L}$ gives the "negative" root function as the holomorphic inverse
+## Remark
+The desire for our biholomorphic map to be also defined on the boundary and that it maps $\partial D$ to $\partial D'$ is far from trivial:
+- The map $f(z)=e^{ z }$ takes $D=\left\{ z\in\mathbb{C}:\middle|:-\pi<\mathfrak{I}(z)<2\pi \right\}$ to $D'=\mathbb{C}^{*}$. It is not injective so the map is not biholomorphic. Boundary is not mapped to boundary in this case as
+$$
+\partial D=\left\{ z\in \mathbb{C}:\middle|:\mathfrak{I}(z)=-\pi \right\}\cup \left\{ z\in \mathbb{C}:\middle|:\mathfrak{I}(z)=2\pi \right\}=\mathbb{R}\setminus \left\{ 0 \right\}
+$$
+    while
+$$
+\partial f(D)=\partial D'=\left\{ 0 \right\}\neq \mathbb{R}\setminus \left\{ 0 \right\}=f(\partial D)
+$$
+- The map $f(z)=e^{ z }$ takes $D=\left\{ z\in\mathbb{C}:\middle|:-\pi<\mathfrak{I}(z)<\pi \right\}$ biholomorphically to $D'=\mathbb{C}\setminus \mathbb{R}_{\leq 0}$. While the boundary is mapped to the boundary in this case, every point in $\partial D'=\mathbb{R}_{\leq 0}$ is achieved twce from the $\partial D$: once from $\left\{ z\in\mathbb{C}:\middle|: \mathfrak{I}(z)=-\pi \right\}$ and once from $\left\{ z\in\mathbb{C}:\middle|: \mathfrak{I}(z)=\pi \right\}$
+## Remark
+We can compose biholomorphic maps to create new biholomorphic maps. In particular, we have that the set of biholomorphic maps from a set to itself has a nice structure:
+## Lemma
+Automorphism [[Groups|Groups]]
+Let $D\subset \mathbb{C}$ be a domain
