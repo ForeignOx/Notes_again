@@ -54,4 +54,40 @@ $$
 M_{T}:\mathbb{C}\setminus \left\{ -\frac{d}{c} \right\}\to \mathbb{C}\setminus \left\{ \frac{a}{c} \right\}
 $$
     is a [[Bijective Functions|bijection]] with an inverse $M_{T^{-1}}$
-- When $c=0$
+- When $c=0$:
+$$
+M_{T}:\mathbb{C}\to \mathbb{C}
+$$
+    is a bijection with inverse $M_{T^{-1}}$
+Recalling that we use the [[Riemann Sphere|Riemann sphere]] denoted y $\hat{\mathbb{C}}=\mathbb{C}\cup \left\{ \infty \right\}$ where $\infty$ is understood to be an infinite circle, we notice that when $c\neq 0$,
+$$
+\lim_{ z \to \frac{d}{c} } \left| \frac{az+b}{cz+d} \right| =\infty 
+$$
+$$
+ \lim_{ \left| z \right|  \to \infty }  \frac{az+b}{cz+d}=\frac{a}{c}
+$$
+We can conclude the following:
+We can extend the definition of Mobius transformation to bijections from $\hat{\mathbb{C}}$ to $\hat{\mathbb{C}}$:
+Given $a,b,c,d\in\mathbb{C}$ such that $ad-bc \neq 0$, we define $M:\hat{\mathbb{C}}\to \hat{\mathbb{C}}$ by
+$$
+M(z)=\begin{cases}
+ \frac{az+b}{cz+d} & z\neq -\frac{d}{c},\infty  \\
+\infty & z=-\frac{d}{c} \\
+\frac{a}{c} & z=000
+\end{cases}
+$$
+When $c\neq 0$, and
+$$
+M(z):=\begin{cases}
+ \frac{az+b}{d} & z\neq \infty \\
+\infty & z=\infty
+\end{cases}
+
+$$
+When $c=0$
+## Example
+The map $f(z)=\frac{1}{z}$ corresponds to $T=\begin{pmatrix}0&1\\1&0 \end{pmatrix}$. Using polar coordinates, we see that
+$$
+f(z)=\frac{1}{r}e^{ -i\theta }
+$$
+The map, thus inverrts the distance from the origin and reflects it with respect to the real axis. We see that, much line $z^{n}$, the map takes segments of circles centred at the origin to segments of circle centred at the origin but going in an opposite direction
