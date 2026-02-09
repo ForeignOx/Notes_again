@@ -9,6 +9,33 @@ $$
  \left| X_{n}(\omega) \right| \leq Y(\omega)~\forall n\geq 1
 $$
 Then if [[Expectation|$\mathbb{E}(Y)<\infty$]], then $\mathbb{E}(X_{n})\to \mathbb{E}(X)$ as $n\to\infty$
+### Proof
+We know $X_{n}\overset{a.s.}\to X$ and $\left| X_{n} \right|\leq Y$ and $\mathbb{E}(Y)<\infty$ so 
+$$
+\lim_{ n \to \infty } \left| X_{n} \right| =\left| X \right| \leq Y
+$$
+We pick $\varepsilon>0$, we want $\left| \mathbb{E}(X_{n})-\mathbb{E}(X) \right|\leq\varepsilon$ for all large $n$. Define two special events:
+$$
+A=\left\{ \left| X_{n}-X \right| \leq \frac{\varepsilon}{3} \right\}
+$$
+$$
+ B=\left\{ \left| X_{n}-X \right| > \frac{\varepsilon}{3} \right\}
+$$
+Then
+$$
+\left| \mathbb{E}(X_{n})-\mathbb{E}(X) \right| \leq \mathbb{E}(\left| X_{n}-X \right| )=\mathbb{E}(\left| X_{n}-X \right| \mathbb{1}_{A})+\mathbb{E}(\left| X_{n}-X \right| \mathbb{1}_{B})
+$$
+For the first term we have
+$$
+\left| X_{n}-X \right| \mathbb{1}_{A}\leq \frac{\varepsilon}{3}\mathbb{1}_{A}
+$$
+$$
+\implies \mathbb{E}(\left| X_{n}-X \right| \mathbb{1}_{A})\leq \frac{\varepsilon}{3}\mathbb{P}(A)\leq \frac{\varepsilon}{3}
+$$
+For the second term we have
+$$
+\left| X_{n}-X \right| \leq(\left| X_{n} \right| +\left| X \right| )\mathbb{1}_{B}\leq 2
+$$
 ## Remark
 As with the [[Monotone Convergence Theorem|monotone convergence theorem]], the result holds if the assumptions are relaxed to their [[Almost Sure Convergence|almost sure]] versions:
 $$
