@@ -1,3 +1,10 @@
+## Definition
+Given a [[Sequences|sequence]] of [[Real Numbers|real numbers]] $(a_{k})_{k\in\mathbb{N}}$, the function
+$$
+G(s)=G_{a}(s):=\sum_{k=0}^{\infty}a_{k}s ^{k}
+$$
+Is called the generating function of $(a_{k})_{k\in\mathbb{N}}$
+## Use For Discrete
 Generating [[Functions|functions]] provide a powerful general method of solving counting problems. They encode combinatorial information in a convenient analytical form
 For example that:
 $$

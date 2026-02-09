@@ -1,0 +1,1 @@
+A probability generating function is 
