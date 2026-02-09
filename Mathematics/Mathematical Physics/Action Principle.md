@@ -24,5 +24,8 @@ $$
 = \int \int \mathcal{L}(u,u_{x},u_{t})+\delta u \frac{ \partial \mathcal{L} }{ \partial u } +\delta u_{x}\frac{ \partial \mathcal{L} }{ \partial u_{t} } +\delta u_{t}\frac{ \partial \mathcal{L} }{ \partial u_{t} }  \, dx  \, dt  
 $$
 $$
-= \int \int \mathcal{L}(u,u_{x},u_{t})+\delta u\frac{ \partial \mathcal{L} }{ \partial u } +\left( \frac{ \partial  }{ \partial x } (\delta u) \right)\frac{ \partial \mathcal{L} }{ \partial u_{x} } +\left( \frac{ \partial  }{ \partial t } (\delta u) \right) \, dx  \, dx   
+= \int \int \mathcal{L}(u,u_{x},u_{t})+\delta u\frac{ \partial \mathcal{L} }{ \partial u } +\left( \frac{ \partial  }{ \partial x } (\delta u) \right)\frac{ \partial \mathcal{L} }{ \partial u_{x} } +\left( \frac{ \partial  }{ \partial t } (\delta u) \right)\frac{ \partial \mathcal{L} }{ \partial u_{t} }  \, dx  \, dt 
+$$
+$$
+= \int \int \mathcal{L}(u,u_{x},u_{t})+\delta u\frac{ \partial \mathcal{L} }{ \partial u } +\frac{ \partial  }{ \partial x } \left( \delta u\frac{ \partial \mathcal{L} }{ \partial u_{x} }  \right) \, dx  \, dx 
 $$
