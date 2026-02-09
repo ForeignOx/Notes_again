@@ -4,6 +4,13 @@ $$
 G(s)=G_{a}(s):=\sum_{k=0}^{\infty}a_{k}s ^{k}
 $$
 Is called the generating function of $(a_{k})_{k\in\mathbb{N}}$
+## Remark
+If the generating function $G_{a}(s)$ of $(a_{n})_{n\in\mathbb{N}}$ is [[Analytic Functions|analytic]] near the origin (e.g. it is finite for all complex $s$ satisfying $\left| s \right|<R$ for some [[Cauchy-Hadamard Theorem|radius of convergence]] $R>0$)
+Then there is a one-to one corresponece between $G_{a}(s)$ and $(a_{n})_{n\in\mathbb{N}}$, namely, $a_{k}$ can be recovered via:
+$$
+a_{k}=\frac{1}{k!}\frac{d ^{k}}{ds ^{k}} G_{a}(s)\Bigg{|}_{s=0} 
+$$
+
 ## Use For Discrete
 Generating [[Functions|functions]] provide a powerful general method of solving counting problems. They encode combinatorial information in a convenient analytical form
 For example that:
