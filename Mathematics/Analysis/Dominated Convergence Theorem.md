@@ -34,8 +34,37 @@ $$
 $$
 For the second term we have
 $$
-\left| X_{n}-X \right| \leq(\left| X_{n} \right| +\left| X \right| )\mathbb{1}_{B}\leq 2
+\left| X_{n}-X \right| \leq(\left| X_{n} \right| +\left| X \right| )\mathbb{1}_{B}\leq 2Y\mathbb{1}_{B}
 $$
+$$
+ \mathbb{E}(\left| X_{n}-X \right| \mathbb{1}_{B})\leq 2\mathbb{E}(Y\mathbb{1}_{B})
+$$
+$$
+\mathbb{P}(B)=\mathbb{P}\left( \left| X_{n}-X \right| >\frac{\varepsilon}{3} \right)\to 0\text{ as }n\to \infty
+$$
+Since $X_{n}\overset{a.s.}\to X\implies X_{n}\overset{p}\to X$ as well
+Let
+$$
+\delta_{n}=\mathbb{P}(B)\to 0
+$$
+For $\delta \geq 0$, we let
+$$
+M_{\delta}=\sup \left\{ \mathbb{E}(Y\mathbb{1}_{E})\text{ where }E\text{ is any event satisfying }\mathbb{P}(E)\leq\delta \right\}
+$$
+In particular,
+$$
+\mathbb{E}(Y\mathbb{1}_{B})\leq M_{\delta_{n}}\to 0\text{ as }n\to\infty
+$$
+We have a lemma, since $\mathbb{E}(Y)<\infty$, then
+$$
+\lim_{ \delta \to 0 } M_{\delta}=0
+$$
+This follows from monotone convergence theorem
+So for all large $n$, $M_{\delta_{n}}\leq \frac{\varepsilon}{3}$, then the second term is $\leq \frac{2\varepsilon}{3}$, soo
+$$
+\left| \mathbb{E}(X_{n})-\mathbb{E}(X) \right| \leq \mathbb{E}(\left| X_{n} -X\right|\mathbb{1}_{A} )+\mathbb{E}(\left| X_{n}-X \right| \mathbb{1}_{B})<\frac{\varepsilon}{3}+ \frac{2\varepsilon}{3}
+$$
+Yayyy
 ## Remark
 As with the [[Monotone Convergence Theorem|monotone convergence theorem]], the result holds if the assumptions are relaxed to their [[Almost Sure Convergence|almost sure]] versions:
 $$
