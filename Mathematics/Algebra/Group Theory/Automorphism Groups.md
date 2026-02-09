@@ -1,0 +1,2 @@
+## Definition
+Let $D\subset \mathbb{C}$ be a [[domains|domain]]. The set of all [[Biholomorphic Maps|biholomorphic]] [[Functions|maps]] $f:D \tilde{\to}D$ from $D$ to itself forms a [[groups|group]] under [[Composition of Functions|composition]]. We call this group the automorphism group of $D$ and denote it by $\mathrm{Aut}(D)$

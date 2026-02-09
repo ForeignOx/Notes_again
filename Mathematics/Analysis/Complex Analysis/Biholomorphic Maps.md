@@ -29,7 +29,4 @@ $$
 $$
 - The map $f(z)=e^{ z }$ takes $D=\left\{ z\in\mathbb{C}:\middle|:-\pi<\mathfrak{I}(z)<\pi \right\}$ biholomorphically to $D'=\mathbb{C}\setminus \mathbb{R}_{\leq 0}$. While the boundary is mapped to the boundary in this case, every point in $\partial D'=\mathbb{R}_{\leq 0}$ is achieved twce from the $\partial D$: once from $\left\{ z\in\mathbb{C}:\middle|: \mathfrak{I}(z)=-\pi \right\}$ and once from $\left\{ z\in\mathbb{C}:\middle|: \mathfrak{I}(z)=\pi \right\}$
 ## Remark
-We can compose biholomorphic maps to create new biholomorphic maps. In particular, we have that the set of biholomorphic maps from a set to itself has a nice structure:
-## Lemma
-Automorphism [[Groups|Groups]]
-Let $D\subset \mathbb{C}$ be a domain
+We can compose biholomorphic maps to create new biholomorphic maps. In particular, we have that the set of biholomorphic maps from a set to itself has a nice structure, it is that of [[Automorphism Groups|automorphism groups]]
