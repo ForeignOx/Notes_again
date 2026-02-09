@@ -10,7 +10,7 @@ Then there is a one-to one corresponece between $G_{a}(s)$ and $(a_{n})_{n\in\ma
 $$
 a_{k}=\frac{1}{k!}\frac{d ^{k}}{ds ^{k}} G_{a}(s)\Bigg{|}_{s=0} 
 $$
-
+As a result, one has the uniqueness property of generating functions; if the generating functions $G_{a}(s)$ and $G_{b}(s)$ of the sequences $(a_{n})_{n\in\mathbb{N}}$ and $(b_{n})_{n\in\mathbb{N}}$ coincide on a disk of positive radius $r$ i.e. $G_{a}(s)=G_{b}(s)$ for $\left| s \right|<r$, then $a_{n}=b_{n}$ for all $n\geq 0$
 ## Use For Discrete
 Generating [[Functions|functions]] provide a powerful general method of solving counting problems. They encode combinatorial information in a convenient analytical form
 For example that:
