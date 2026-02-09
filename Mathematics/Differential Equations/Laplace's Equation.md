@@ -51,4 +51,43 @@ $$
 v(x,y)=\int u_{x}(x,y) \, dy +\psi(x)
 $$
     Where $\int u_{x} \, dy$ is the [[Integration#Indefinite Integrals (or Anti- Differentiation Derivative s)|indefinite integral]] of $u_{x}$ with respect to $y$. We choose the Cauchy-Riemann equation that is easier to integrate in this stem
-3. Use the second Cauchy-Riemann equation to find an ordinary differential equation for the additio
+3. Use the second Cauchy-Riemann equation to find an ordinary differential equation for the additional one variable function we found in the previous step to conclude the closed form of $v$; following from the above example, we have
+$$
+u_{y}(x,y)=-v_{x}(x,y)=-\frac{ \partial  }{ \partial x } \left( \int u_{x}(x,y) \, dt  \right)-\psi'(x)
+$$
+    which implies that
+$$
+\psi'(x)=-u_{y}(x,y)-\frac{ \partial  }{ \partial x } \int u_{x}(x,y) \, dy 
+$$
+    which will give us $v$ up to a constant
+### Example
+Consider the harmonic function $u=x^{2}-y^{2}+3x$ on $\mathbb{C}$ and find its harmonic cconjugate
+Firstly we note that $\mathbb{C}$ is a domain "with no holes", so it is simply connected. Moreover,
+$$
+u_{x x}+u)_{yy}=2-2=0
+$$
+So $u$ is indeed harmonic. We follow the steps above to find $v$. As $u$ is fairly simple, we can choose any of the Cauchy-Riemann equations to work with. We'll consider $u_{x}=v_{y}$:
+$$
+v_{y}=u_{x}=2x+3
+$$
+$$
+ v=2xy+3y+\psi(x)
+$$
+Using the second Cauchy-Riemann equation, we get
+$$
+2y+\psi'(x)=v_{x}=-u_{y}=2y
+$$
+From which we conclude that $\psi'(x)=0$
+This implies that $\psi(x)=C$ where $C$ is a real constant. We consclude that
+$$
+v=2xy+2y+C
+$$
+We can even recover our holomorphic function $f$!
+$$
+f(z)=f(x+iy)=x^{2}-y^{2}+3x+2xyi+iy+iC
+$$
+$$
+=(x+iy)^{2}+3(x+iy)+iC=z^{2}+3z+iC
+$$
+## Holomorphic Functions in the study of Harmonic Functions
+Solving Laplace's 
