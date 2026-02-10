@@ -212,15 +212,41 @@ Consequently, $M(z)$ is always of the forms we previously discussed, as such is 
 Any Mobius transformation is compositions of the following two maps:
 - $z\to az+b$ for some $a\in\mathbb{C}^{*},b\in\mathbb{C}$
 - $z\to \frac{1}{z}$
-
-
-
-
-
+___
 The three points theorem is more than an abstract mathematical theorem; its proof is constructive, giving us a recipe to build the unique Mobius tranformation that takes $\left\{ z_{1},z_{2},z_{3} \right\}$ to $\left\{ w_{1},w_{2},w_{3} \right\}$. This recipe involves the cross ratio, emphasising its geometric importtance in the world of Mobius transformations. The following observation shows that the cross ratio is not only useful in constructing a Mobius transformation, it is also invariant under them:
 ## Lemma
 The cross ratio is invariant under Mobius transformation. In other words, if $M:\hat{\mathbb{C}}\to \hat{\mathbb{C}}$ is a Mobius transformation, then
 $$
 (M(z_{0}),M(z_{1});M(z_{2}),M(z_{3}))=(z_{0},z_{1};z_{2},z_{3})
 $$
-There are several ways to prove 
+### Proof
+From the Corollary of the building blocks of the Mobius transform we see that it is enough to show that the cross ratio is preserved under the maps $f_{1}(z)=az+b$ with $a\in\mathbb{C}^{*},b\in\mathbb{C}$ and $f_{2}(z)=\frac{1}{z}$ since every Mobius transformation is a composition of these maps/
+Since
+$$
+f_{1}(z)-f_{1}(w)=a(z-w)
+$$
+We see that
+$$
+\frac{f_{1}(z_{0})-f_{1}(z_{2})}{f_{1}(z_{0})-f_{1}(z_{3})}=\frac{z_{0}-z_{2}}{z_{0}-z_{3}}
+$$
+And similarly
+$$
+\frac{f_{1}(z_{1})-f_{1}(z_{2})}{f_{1}(z_{1})-f_{1}(z_{3})}= \frac{z_{1}-z_{2}}{z_{1}-z_{3}}
+$$
+Which shows the desired invariance (including the case where one of the $z$'s is infinite since the corresponding $f_{1}(z)$ is also infinity in this case)
+Let us consider $f_{2}$ and assume, to begin with that $z_{i}\neq 0$ for $i\in\overline{3}_{0}$. We have that
+$$
+\frac{f_{1}(z_{0})-f_{1}(z_{2})}{f_{1}(z_{0})-f_{1}(z_{3})}=\frac{\frac{1}{z_{0}}-\frac{1}{z_{2}}}{\frac{1}{z_{0}}-\frac{1}{z_{3}}}=\frac{z_{3}}{z_{2}} \frac{z_{2}-z_{0}}{z_{3}-z_{0}}
+$$
+Similarly
+$$
+\frac{f_{2}(z_{1})-f_{2}(z_{2})}{f_{2}(z_{1})-f_{2}(z_{3})}=\frac{z_{3}}{z_{2}} \frac{z_{2}-z_{1}}{z_{3}-z_{1}}
+$$
+Dividing the two gives us:
+$$
+(f_{2}(z_{0}),f_{2}(z_{1});f_{2}(z_{2}),f_{2}(z_{3}))=\frac{\frac{f_{1}(z_{0})-f_{1}(z_{2})}{f_{1}(z_{0})-f_{2}(z_{3})}}{\frac{f_{2}(z_{1})-f_{2}(z_{2})}{f_{2}(z_{1})-f_{2}(z_{3})}}=\frac{z_{2}-z_{0}}{z_{3}-z_{0}} \frac{z_{3}-z_{1}}{z_{2}-z_{1}}=\frac{(z_{0}-z_{2})(z_{1}-z_{3})}{(z_{0}-z_{3})(z_{1}-z_{2})}=(z_{0},z_{1};z_{2},z_{3})
+$$
+Next we consider the case where one of the $z$'s, say $z_{0}$ without loss of generality, is zero. In that case, $f_{2}(z_{0})=\infty$ and
+$$
+(f_{2}(z_{0}),f_{2}(z_{1});f_{2}(z_{2}),f_{2}(z_{3}))=
+$$
