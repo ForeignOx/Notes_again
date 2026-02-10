@@ -24,3 +24,18 @@ If $X$ and $Y$ are [[Independence|independent]] random variables with values in 
 $$
 G_{Z}(s)=G_{X+Y}(s)=G_{X}(s)G_{Y}(s)
 $$
+### Proof
+Recall that if $X$ and $Y$ are discrete random variables and $f,g:\mathbb{N}_{0}\to \mathbb{R}$ are arbitrary functions, then $f(X)$ and $g(Y)$ are independent random variables and 
+$$
+\mathbb{E}(f(X) g(Y))=\mathbb{E}(f(X))\mathbb{E}(g(Y))
+$$
+Taking $f(X)=s^{X}$ and $g(Y)=s^{Y}$, we are done
+### Example
+Let $X\sim Po(\lambda)$ and $Y\sim Po(\mu)$ be independent. Then $Z=X+Y$ is $Po(\lambda+\mu)$
+By the example above for the Poisson distribution and the theorem above, we get
+$$
+G_{Z}(s)=G_{X}(s)G_{Y}(s)=e^{ \lambda(s-1) }e^{ \mu(s-1) }=e^{ (\lambda+\mu)(s-1) }
+$$
+The result follows by uniqueness
+___
+If $(X_{k})_{k=1}^{n}$ are [[Independent and Identically Distributed|independent and identically distributed]] with values in $\mathbb{N}_{0}$, 
