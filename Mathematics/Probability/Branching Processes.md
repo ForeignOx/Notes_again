@@ -1,2 +1,3 @@
 Informally, a branching process is described as follows:
-Let $\left\{ p_{k} \right\}_{k\geq 0}$ be a fixed [[Probabilities|probability]] mas function in $\mathbb{N}_{0}$. A population starts with a single ancestr who forms generation number $\hspace{0pt}0$.This initial individual splits into $k$ offspring with probability $p_{k}$: the resulting offspring constitute the first generation. Each of the offspring in the fist generation splits 
+Let $\left\{ p_{k} \right\}_{k\geq 0}$ be a fixed [[Probabilities|probability]] mas function in $\mathbb{N}_{0}$. A population starts with a single ancestr who forms generation number $\hspace{0pt}0$
+This initial individual splits into $k$ offspring with probability $p_{k}$: the resulting offspring constitute the first generation. Each of the offspring in the fist generation splits independentl
