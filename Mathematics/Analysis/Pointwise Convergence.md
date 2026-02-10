@@ -52,4 +52,21 @@ $$
 \infty & \left| z \right| >\infty
 \end{cases}
 $$
-Indeed for $z\in\mathbb{C}$ such that $\left| z \right|$
+Indeed for $z\in\mathbb{C}$ such that $\left| z \right|<1$, we have that
+$$
+0\leq \left| f_{n}(z) \right| =\left| z \right| ^{n}\to{0}
+$$
+Using the [[Squeeze Theorem|squeeze theorem]] we conclude that $\left\{ \left| f_{n}(z) \right| \right\}_{n\in\mathbb{N}}$ converges to $\hspace{0pt}0$, and consequently so does $\left\{ f_{n}(z) \right\}_{n\in\mathbb{N}}$
+Notice that if we use the $\varepsilon,N$ definition, we get that for any $z\neq 0$,
+$$
+\left| f_{n}(z)-0 \right| =\left| z \right| ^{n}<\varepsilon \iff n>\frac{\log\varepsilon}{\log(\left| z \right| )}
+$$
+i.e. $N(\varepsilon,z)=\frac{\log \varepsilon}{\log \left| z \right|}$ which goes to infinity as $\left| z \right|$ goes to $1$. Turning our attention to $z=1$, we see
+$$
+f_{n}(1)=1\to 1
+$$
+Next we consider the case $\left| z \right|>1$ and find that
+$$
+\left| f_{n}(z) \right| =\left| z \right| ^{n}\to \infty
+$$
+So by definition in $\hat{\mathbb{C}}$ we have that $\left\{ f_{n}(z) \right\}_{n\in\mathbb{N}}$

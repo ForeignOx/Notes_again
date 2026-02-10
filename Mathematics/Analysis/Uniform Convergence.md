@@ -1,3 +1,5 @@
+# Real Functions
+## Definition
 A [[Sequences of Functions|sequence of functions]] $f_{n}$ [[Convergence|converges]] to a [[Functions|function]], $f$ on an [[Intervals|interval]] $I$, if
 $$
 \forall\varepsilon>0\exists N>0:\forall x\in I\forall n\geq N,\left| f_{n}(x)-f(x) \right|<\varepsilon 
@@ -96,3 +98,16 @@ $$
 f_{n}'(x)=\frac{n\cos(nx)}{n}=\cos(nx)
 $$
 Which doesn't even converge pointwise (for most $x$)
+# Complex Functions
+## Definition
+Let $D\subseteq C$ be a given set and let $\left\{ f_{n} \right\}:D\to \mathbb{C}$ be a sequence of functions. We say that $\left\{ f_{n} \right\}_{n\in\mathbb{N}}$ converges uniformly to the limit function $f:D\to \mathbb{C}$ on $D$ if we have that
+$$
+\sup_{z\in  D}\left| f_{n}(z)-f(z) \right| \to 0
+$$
+In other words, for any $\varepsilon>0$ there exists $N(\varepsilon)\in\mathbb{N}$ such that if $n>N(\varepsilon)$
+$$
+\left| f_{n}(z)-f(z) \right| <\varepsilon~\forall z\in  D
+$$
+Note that here $N(\varepsilon)$ does not depend on the specific choice of $z\in D$ - the same $N$ works for all of them
+___
+We say that the series $\sum_{n=1}^{\infty}f_{n}(z)$ c
