@@ -155,4 +155,10 @@ If $z\in B_{R}(0)$, then
 $$
 \left| f_{n}(z)-f(z) \right| \leq \frac{R}{n}=s_{n}(R)
 $$
-$s_{n}(R)>0$, it is independent of $z$ and $s_{n}(R)\to 0$
+$s_{n}(R)>0$, it is independent of $z$ and $s_{n}(R)\to 0$, so nby our theorem, $f_{n}$ converges uniformly on $B_{R}(0)$
+It does not necessary bound $z$ uniformly on $\mathbb{C}$, indeed, choosing $z_{n}=n$, we see that
+$$
+\left| f_{n}(z_{n})-e^{ z_{n} } \right| = \frac{\left| z_{n} \right| }{n}=1
+$$
+Which shows that the convergence is not uniform according to the sequence part of the above lemma
+By choosing $s_{n}=1$
