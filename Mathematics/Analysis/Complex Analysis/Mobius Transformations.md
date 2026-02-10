@@ -280,11 +280,24 @@ So we conclude that
 $$
 M(z)= \frac{-iz+i}{z+1}
 $$
-## Image of Special Domains under Mobius Trnasformations
-Since any Mobius transformation is a biholomorphism from $\hat{\mathbb{C}}$ to itself, we would like to find particular domains that are biholomorphic under such transformations. Towards that end, we have the following important lemma:
-### Lemma
+## Lemma
 Let $M:\hat{\mathbb{C}}\to \hat{\mathbb{C}}$ be a Mobiuis transformation. For any open set $D\subseteq \mathbb{C}$ we have that
 $$
 M\left( \partial D\setminus \left\{ -\frac{d}{c} \right\} \right)=\partial M(D)\setminus \left\{ \infty \right\}
 $$
-When $c=0$, we consider $-\frac{d}{c}$ as $\infty$, which is outside of $\mathbb{C}$ and consequently, $A\setminus \left\{ \infty  \right\}=A$
+When $c=0$, we consider $-\frac{d}{c}$ as $\infty$, which is outside of $\mathbb{C}$ and consequently, $A\setminus \left\{ \infty  \right\}=A$ for any $A\subseteq \mathbb{C}$
+## Remark
+We can extend the above to $\hat{\mathbb{C}}$ by including $-\frac{d}{c}$ and $\infty$
+## Image of Special Domains under Mobius Transformations
+Since any Mobius transformation is a biholomorphism from $\hat{\mathbb{C}}$ to itself, we would like to find particular domains that are biholomorphic under such transformations. Towards that end, we use the lemma above.
+An immediate application is the following strategy to understand the image of a given (general) domain $D\subseteq \mathbb{C}$ by a Mobius transformation $M$
+1. Find the image $M(\partial D)$ of the boundary of $D$
+2. Find the image $M(z_{0})$ of a point $z_{0}\in D$
+3. $M(D)$ is the set whose boundary is $M(\partial D)$ and contains $M(z_{0})$. Moreover,
+$$
+M:D \tilde{\to}M(D)
+$$
+The general strategy relies on being able to map the boundary of a omain with a Mobius tranformation
+A remarkable feature of Mobius transformations is the following:
+### Proposition
+Mobius transformations map circles and lines in $\hat{\mathbb{C}}$ to circles and lines in $\hat{\mathbb{C}}$, where
