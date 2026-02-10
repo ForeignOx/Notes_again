@@ -195,7 +195,23 @@ $$
 f(z)=az+b=\left| a \right| e^{ i\mathrm{Arg}(a) }z+b
 $$
 Which is a composition of a rotation, dilation and shift
-
+Following on this, we see that for any $\alpha,\beta,c,d\in\mathbb{C}$ with $\beta,c\neq 0$, the map
+$$
+g(z)=\alpha+\frac{\beta}{cz+d}=\beta\left( \frac{1}{cz+d} \right)+\alpha
+$$
+Is a composition of rotation, dilation, shift, inversion and then rotation, dilation and shift again
+Given $a,b,c,d\in\mathbb{C}$ with $ad-bc\neq 0$, we have that $M(z)=\frac{az+b}{cz+d}$ satisfies:
+$$
+M(z)=\begin{cases}
+\frac{\frac{a(cz+d)}{c}-\frac{ad}{c}+b}{cz+d}=\frac{a}{c}+\frac{bc-ad}{c^{2}z+cd} & c\neq 0 \\
+\frac{a}{d}z+\frac{b}{d} & c=0
+\end{cases}
+$$
+Consequently, $M(z)$ is always of the forms we previously discussed, as such is a composition of the four geometric maps
+## Corollary
+Any Mobius transformation is compositions of the following two maps:
+- $z\to az+b$ for some $a\in\mathbb{C}^{*},b\in\mathbb{C}$
+- $z\to \frac{1}{z}$
 
 
 
