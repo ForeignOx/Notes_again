@@ -94,6 +94,9 @@ G_{a}(s)-1=qsG_{a}(s)+p\sum_{n=1}^{\infty}s^{n}-psG_{a}(s)=(q-p)sG_{a}(s)+ \frac
 $$
 And after rearranging,
 $$
-G_{a}(s)=\frac{\left( 1+\frac{ps}{1-s} \right)}{1-(q-p)s}=\frac{1}{2}\left( \frac{1}{1-s}+\frac{1}{1-(q)} \right)
+G_{a}(s)=\frac{\left( 1+\frac{ps}{1-s} \right)}{1-(q-p)s}=\frac{1}{2}\left( \frac{1}{1-s}+\frac{1}{1-(q-p)s} \right)=\frac{1}{2}\sum_{n=0}^{\infty}(q-p)^{n}s^{n}
 $$
+As a result $a_{n}=\frac{1+(q-p)^{n}}{2}$
+___
+A biased coin is tossed repeatedly; on each toss, it shows heads with probability $p$. Let $r_{n}$
 
