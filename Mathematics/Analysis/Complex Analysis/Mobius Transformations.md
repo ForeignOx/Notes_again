@@ -248,5 +248,35 @@ $$
 $$
 Next we consider the case where one of the $z$'s, say $z_{0}$ without loss of generality, is zero. In that case, $f_{2}(z_{0})=\infty$ and
 $$
-(f_{2}(z_{0}),f_{2}(z_{1});f_{2}(z_{2}),f_{2}(z_{3}))=
+(f_{2}(z_{0}),f_{2}(z_{1});f_{2}(z_{2}),f_{2}(z_{3}))=(\infty,f_{2}(z_{1});f_{2}(z_{2}),f_{2}(z_{3}))=\frac{f_{2}(z_{1})-f_{2}(z_{3})}{f_{2}(z_{1})-f_{2}(z_{3})}
+$$
+$$
+= \frac{z_{2}}{z_{3}} \frac{z_{1}-z_{3}}{z_{1}-z_{2}}=(0,z_{1};z_{2},z_{3})=(z_{0},z_{1};z_{2},z_{3})
+$$
+Yay
+___
+The invariance of the cross ratio allows us to explicitly find a Mobius transfomation that takes $\hspace{0pt}3$ distinct points $\left\{ z_{1},z_{2},z_{3} \right\}$ to three other distinct points $\left\{ w_{1},w_{2},w_{3} \right\}$
+For any $z\in\mathbb{C}$, the Mobius tranformation $M$ must satisfy
+$$
+(M(z),w_{1};w_{2},w_{3})=(z,z_{1};z_{2},z_{3}) 
+$$
+or
+$$
+\frac{M(z)-w_{2}}{M(z)-w_{3}} \frac{w_{1}-w_{3}}{w_{1}-w_{2}}=\frac{z-z_{2}}{z-z_{3}} \frac{z_{1}-z_{3}}{z_{1}-z_{2}}
+$$
+Rearranging this gives us a way to find $M(z)$
+Notice that if we know that one of the points goes to infinity, the ratio on the left becomes simpler
+## Example
+FInd the Mobius transformation that takes the points $\left\{ 1,-1,i \right\}$ to $\left\{ 0,1,\infty \right\}$ respectively
+We remove the terms that have $w_{2}=\infty$ in them to find that
+$$
+\frac{0-1}{M(z)-1}= \frac{z+1}{z-i} \frac{1-i}{1+i}
+$$
+which is equivalent to
+$$
+M(z)-1=\frac{2}{1-i}  \frac{i-z}{z+1}=(1+i) \frac{i-z}{z+1}
+$$
+So we conclude that
+$$
+M(z)= \frac{-iz+i}{z+1}
 $$
