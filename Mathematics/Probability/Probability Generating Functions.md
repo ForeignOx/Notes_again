@@ -48,5 +48,20 @@ If sequences $(a_{k})_{k\in\mathbb{N}},(b_{m})_{m\in\mathbb{N}}$ and $(c_{n})_{n
 $$
 G_{c}(s)=G_{a}(s)G_{b}(s)
 $$
+# Applications of Generating Functions
 ## Example
-Let $(X_{k})_{k\in\mathbb{N}}$ be independent and identically distributed variables with values in $\mathbb{N}_{0}$, and let $N\geq 0$ be an integer valued random variable independent of $\left\{ X_{k} \right\}_{k\in\mathbb{N}}$. Then 
+Let $(X_{k})_{k\in\mathbb{N}}$ be independent and identically distributed variables with values in $\mathbb{N}_{0}$, and let $N\geq 0$ be an integer valued random variable independent of $\left\{ X_{k} \right\}_{k\in\mathbb{N}}$. Then $S_{N}=\sum_{k=1}^{N}X_{k}$ has generating function
+$$
+G_{S_{N}}(s)=G_{N}(G_{X}(s))
+$$
+This is a straightforward application of the partition theorem for expectations. Alternatively, the result follows from the standard properties of conditional expectations:
+$$
+\mathbb{E}(z^{S_{N}})=\mathbb{E}(\mathbb{E}(z^{S_{N}}|N))=\mathbb{E}((G_{X}(z))^{N})=G_{N}(G_{X}(z))
+$$
+___
+### Recurrence Relations
+Generating functions are very useful in solving [[Recurrence Relations|recurrence relations]] using the fact that
+$$
+\frac{b}{a-x}=\frac{b}{a}\sum_{k=0}^{\infty}\left( \frac{x}{a} \right)^{k}=\sum_{k=0}^{\infty} \frac{b}{a^{k+1}}x^{k}
+$$
+Generating functions of sums of random variables
