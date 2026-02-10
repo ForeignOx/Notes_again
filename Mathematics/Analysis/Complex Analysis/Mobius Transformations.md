@@ -280,3 +280,11 @@ So we conclude that
 $$
 M(z)= \frac{-iz+i}{z+1}
 $$
+## Image of Special Domains under Mobius Trnasformations
+Since any Mobius transformation is a biholomorphism from $\hat{\mathbb{C}}$ to itself, we would like to find particular domains that are biholomorphic under such transformations. Towards that end, we have the following important lemma:
+### Lemma
+Let $M:\hat{\mathbb{C}}\to \hat{\mathbb{C}}$ be a Mobiuis transformation. For any open set $D\subseteq \mathbb{C}$ we have that
+$$
+M\left( \partial D\setminus \left\{ -\frac{d}{c} \right\} \right)=\partial M(D)\setminus \left\{ \infty \right\}
+$$
+When $c=0$, we consider $-\frac{d}{c}$ as $\infty$, which is outside of $\mathbb{C}$ and consequently, $A\setminus \left\{ \infty  \right\}=A$
