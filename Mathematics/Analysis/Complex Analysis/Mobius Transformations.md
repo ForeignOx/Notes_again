@@ -137,6 +137,24 @@ A Mobius transformation $M$ is [[Conformal Maps|conformal]] at all $z\in\mathbb{
 In fact, we can extend the notion of holomorphicity to $\hat{\mathbb{C}}$ and find that
 ## Proposition
 A Mobius transformation $M$ is a biholomorphism of $\hat{\mathbb{C}}$ to itself. Moreover, any biholomorphism between $\hat{ \mathbb{C}}$ and itself must be a Mobiius transformation
+## Fixed Point Theorem for Mobius Transformations
+Let $M:\hat{\mathbb{C}}\to \hat{\mathbb{C}}$ be a Mobius transformation that is not the identity map. Then $M$ has at most $\hspace{0pt}2$ [[Fixed Points|fixed points]] in $\hat{ \mathbb{C}}$. In other words, if a Mobius transformation has three fixed points in $\hat{\mathbb{C}}$, then it is the identity
+## Proof
+Let $a,b,c,d\in\mathbb{C}$ be such that $ad-bc\neq 0$ and
+$$
+M(z)=\frac{az+b}{cz+d}
+$$
+We have that $M(z)=z$ for $z\in\mathbb{C}$ iff $az+b=z(cz+d)$ i.e.
+$$
+cz^{2}+(d-a)z-b=0
+$$
+We have three options:
+- $c\neq 0$: in this case we have a quadratic equation which has at most two solutions
+- $c=0$ and $d\neq a$: in this case we have the unique solution $z=\frac{b}{d-a}$
+- $c=0$ and $d=a$, in that case $b=0$ and our map is
+$$
+M(\xi)=\frac{a\xi}{}
+$$
 # Three Points Theorem
 The fact that any Mobius transformation can be represented by a $2\times 2$ matrix $T\in GL_{2}(\mathbb{C})$ and the fact that $M_{kT}=M_{T}$ for any $k\in\mathbb{C}^{*}$, implies that we can fix one of the entries of $T$ to be, for example $\hspace{0pt}1$ (for instance, if $a\neq 0$, then the matrix $T'=\frac{1}{a}T$ satisfies $M_{T}=M_{T'}$)
 Consequently, any Mobius transformation requires only three complex numbers to be determined uniquely
