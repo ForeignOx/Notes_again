@@ -74,6 +74,14 @@ If $X$ and $Y$ are jointly discfrete, then $A\subseteq Z$, where $\mathbb{P}((X,
 $$
 \mathbb{P}((X,Y)\in A)=\sum_{(x,y)\in A}p(x,y)
 $$
-### Independce
+## Adding Random Variables
+If $X$ and $Y$ are independentr variables in $\mathbb{N}_{0}$ and $Z=X+Y$, then for each $n\geq 0$,
+$$
+\mathbb{P}(Z=n)=\mathbb{P}(X+Y=n)=\sum_{k=0}^{n}\mathbb{P}(X=k)\mathbb{P}(Y=n-k)
+$$
+I.e. the distribution of the independent sum $Z=X+Y$ is the convuolution
+
+
+
 
 #Mathematics #Probability #Functions

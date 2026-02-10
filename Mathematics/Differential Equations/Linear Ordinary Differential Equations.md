@@ -33,7 +33,7 @@ $$
 \implies \tilde{y}(p)=\frac{\tilde{f}(p)}{ip+3}=\tilde{f}(p)\tilde{g}(p)
 $$
 Where $\tilde{g}(p)=\frac{1}{ip+3}$
-So if I can find $g(x)$ such that $\tilde{g}(p)=\frac{1}{ip+3}$, then using the [[Convolution of Functions|convolution]] theorem, we find that the fourier transform of $f*g$ is $\tilde{f}(p)\tilde{g}(p)$ i.e. we can take $y=f*g$
+So if I can find $g(x)$ such that $\tilde{g}(p)=\frac{1}{ip+3}$, then using the [[Convolution|convolution]] theorem, we find that the fourier transform of $f*g$ is $\tilde{f}(p)\tilde{g}(p)$ i.e. we can take $y=f*g$
 The one-sided exponential 
 $$
 g(x)=\begin{cases}

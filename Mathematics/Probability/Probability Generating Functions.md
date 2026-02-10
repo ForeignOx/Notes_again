@@ -38,4 +38,8 @@ G_{Z}(s)=G_{X}(s)G_{Y}(s)=e^{ \lambda(s-1) }e^{ \mu(s-1) }=e^{ (\lambda+\mu)(s-1
 $$
 The result follows by uniqueness
 ___
-If $(X_{k})_{k=1}^{n}$ are [[Independent and Identically Distributed|independent and identically distributed]] with values in $\mathbb{N}_{0}$, 
+If $(X_{k})_{k=1}^{n}$ are [[Independent and Identically Distributed|independent and identically distributed]] with values in $\mathbb{N}_{0}$, and $S_{n}=X_{1}+X_{2}+\dots+X_{n}$, then 
+$$
+G_{S_{n}}(s)=G_{X_{1}}(s)\dots G_{X_{n}}(s)=(G_{X}(s))^{n}
+$$
+Which follows from our theorem by induction

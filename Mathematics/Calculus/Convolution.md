@@ -1,3 +1,11 @@
+# Of Sequences
+## Definition
+A [[Sequences|sequence]] $(c_{n})_{n\in\mathbb{N}}$ is the convolution of $(a_{k})_{k\in\mathbb{N}}$ and $(b_{k})_{k\in\mathbb{N}}$, we write $c=a\star b$ if
+$$
+c_{n}=\sum_{k=0}^{n}a_{k}b_{n-k}
+$$
+# Of Functions
+## Definition
 Let $f(x),g(x)$ be two [[Functions|functions]], then the convolution of $f$ and $g$ is defined to be:
 $$
     (f*g)(x)=\int_{-\infty}^{\infty} f(t)g(x-t) \, dt 

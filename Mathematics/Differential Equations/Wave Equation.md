@@ -147,7 +147,7 @@ Next we consider
 $$
 \frac{\tilde{S}(p)\sin(pct)}{pc}=\tilde{S}(p)\tilde{g}(p)
 $$
-If we can find $g(x)$ with Fourier Transform $\tilde{g}(p)$, then by the [[Convolution of Functions|convolution]] theorem, $S(x)*g(x)$ will have this fourier transform. We can recall that the fourier transform of:
+If we can find $g(x)$ with Fourier Transform $\tilde{g}(p)$, then by the [[Convolution|convolution]] theorem, $S(x)*g(x)$ will have this fourier transform. We can recall that the fourier transform of:
 $$
 F(x)=\begin{cases}
 1 & \left| x \right| <1\\0 & \left| x \right| >1

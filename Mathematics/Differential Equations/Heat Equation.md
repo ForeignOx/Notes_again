@@ -123,7 +123,7 @@ $$
 $$
 \implies \tilde{u}(p,t)=\tilde{R}(p)e^{ -k^{2}p^{2}t }=\tilde{R}(p)\tilde{g}(p)
 $$
-Which is a [[Gaussian Integral|gaussian]] in $p$. By the [[Convolution of Functions|convolution]] theorem, $u(x,t)=R(x)*g(x)$, we need to find $g(x,t)$ with fourier transform $\tilde{g}(p,t)=e^{ -k^{2}p^{2}t }$. Recall that
+Which is a [[Gaussian Integral|gaussian]] in $p$. By the [[Convolution|convolution]] theorem, $u(x,t)=R(x)*g(x)$, we need to find $g(x,t)$ with fourier transform $\tilde{g}(p,t)=e^{ -k^{2}p^{2}t }$. Recall that
 $$
 g(x,t)=\Lambda e^{ -bx^{2}-cx }
 $$

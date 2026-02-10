@@ -1,4 +1,4 @@
-If we have two [[Series|series]] $\sum_{k=0}^{\infty} a_{k}$ and $\sum_{k=0}^{\infty} b_{k}$ that are both [[Absolute Convergence|absolutely convergent]] with limits $a$ and $b$ respectively. We set
+If we have two [[Series|series]] $\sum_{k=0}^{\infty} a_{k}$ and $\sum_{k=0}^{\infty} b_{k}$ that are both [[Absolute Convergence|absolutely convergent]] with limits $a$ and $b$ respectively. We consider the [[Convolution|convolution]] of the sequencs $(a_{k})_{k\in\mathbb{N}}$ and $(b_{k})_{k\in\mathbb{N}}$:
 $$
 c_{n}=\sum_{k=0}^{n}a_{k}b_{n-k}=a_{0}b_{n}+a_{1}b_{n-1}+\dots+a_{n}b_{0}
 $$

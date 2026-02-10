@@ -150,7 +150,7 @@ We assume $\lim_{ \left| x \right| \to \infty }f(x)=0$ which is necessary for th
 $$
 =ip \int_{-\infty}^{\infty} f(x)e^{ -ipx } \, dx =ip \tilde{f}(p)
 $$
-### [[Convolution of Functions|Convolution]] Thorem
+### [[Convolution|Convolution]] Thorem
 Let $f(x)$ have fourier transform $\tilde{f}(p)$ and $g(x)$ have fourier transform $\tilde{g}(p)$, then if $F(x)=(f*g)(x)$, then
 $$
 \tilde{F}(p)=\tilde{f}(p)\tilde{g}(p)
