@@ -153,8 +153,10 @@ We have three options:
 - $c=0$ and $d\neq a$: in this case we have the unique solution $z=\frac{b}{d-a}$
 - $c=0$ and $d=a$, in that case $b=0$ and our map is
 $$
-M(\xi)=\frac{a\xi}{}
+M(\xi)=\frac{a\xi}{a}=\xi
 $$
+    which contradicts our initial assumption
+Lastly, we notice that $M(\infty)=\infty$ only when $c=0$, adding another fixed point to the second (and third) cases above
 # Three Points Theorem
 The fact that any Mobius transformation can be represented by a $2\times 2$ matrix $T\in GL_{2}(\mathbb{C})$ and the fact that $M_{kT}=M_{T}$ for any $k\in\mathbb{C}^{*}$, implies that we can fix one of the entries of $T$ to be, for example $\hspace{0pt}1$ (for instance, if $a\neq 0$, then the matrix $T'=\frac{1}{a}T$ satisfies $M_{T}=M_{T'}$)
 Consequently, any Mobius transformation requires only three complex numbers to be determined uniquely
@@ -176,4 +178,11 @@ The map $M=G^{-1}\circ F$, which is well defined, is a Mobius transformation tha
 $$
 M(z_{1})=G^{-1}(1)=w_{1},M(z_{2})=G^{-1}(0)=w_{2},M(z_{3})=G^{-1}(\infty)=w_{3}
 $$
-To prove the uniqueness
+To prove the uniqueness we assue that there exist two Mobius transformations $M_{1},M_{2}$ that take $\left\{ z_{1},z_{2},z_{3} \right\}$ to $\left\{ w_{1},w_{2},w_{3} \right\}$, then $M_{1}\circ M_{2}^{-1}$ is also a Mobius transformation is also a Mobius transformation that takes the ordered distinct points $\left\{ z_{1},z_{2},z_{3} \right\}$ to themselves. According to the fixed point theorem for Mobius transformations, this is possible only if
+$$
+M_{1}\circ M_{2}^{-1}=I \iff M_{1}=M_{2}
+$$
+# Geometric Properties
+The three points theorem is more than an abstract mathematical theorem; its proof is constructive, giving us a recipe to build the unique Mobius tranformation that takes $\left\{ z_{1},z_{2},z_{3} \right\}$ to $\left\{ w_{1},w_{2},w_{3} \right\}$. This recipe involves the cross ratio, emphasising its geometric importtance in the world of Mobius transformations. The following observation shows that the cross ratio is not only useful in constructing a Mobius transformation, it is also invariant under them:
+## Lemma
+The cross ratio is invariant under Mobius transformation. In other words, if $M:\hat{\mathbb{C}}\to \hat{C}$
