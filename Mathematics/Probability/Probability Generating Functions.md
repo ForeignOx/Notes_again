@@ -1,4 +1,4 @@
-## Definition
+2## Definition
 If $X$ is a [[Discrete Random Variables|discrete]] [[Random Variables|random variable]], with values in $\mathbb{N}_{0}$, then it's [[Probabilities|probability]] [[Generating Functions|generating function]] is
 $$
 G(s)\equiv G_{X}(s):= \mathbb{E}(s ^{X})=\sum_{k=0}^{\infty}s ^{k}\mathbb{P}(X=k)
@@ -98,5 +98,5 @@ G_{a}(s)=\frac{\left( 1+\frac{ps}{1-s} \right)}{1-(q-p)s}=\frac{1}{2}\left( \fra
 $$
 As a result $a_{n}=\frac{1+(q-p)^{n}}{2}$
 ___
-A biased coin is tossed repeatedly; on each toss, it shows heads with probability $p$. Let $r_{n}$
+A biased coin is tossed repeatedly; on each toss, it shows heads with probability $p$. Let $r_{n}$ be the probability that a sequence of $$
 
