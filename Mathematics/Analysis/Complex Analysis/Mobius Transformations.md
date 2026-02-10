@@ -131,4 +131,15 @@ M_{T}'(z)=\begin{cases}
 \frac{a}{d} & c=0
 \end{cases}
 $$
-Which is never zero in its domain of definition. 
+Which is never zero in its domain of definition. We conclude that
+## Corollary
+A Mobius transformation $M$ is [[Conformal Maps|conformal]] at all $z\in\mathbb{C}$ with $M(z)\neq \infty$
+In fact, we can extend the notion of holomorphicity to $\hat{\mathbb{C}}$ and find that
+## Proposition
+A Mobius transformation $M$ is a biholomorphism of $\hat{\mathbb{C}}$ to itself. Moreover, any biholomorphism between $\hat{ \mathbb{C}}$ and itself must be a Mobiius transformation
+# Three Points Theorem
+The fact that any Mobius transformation can be represented by a $2\times 2$ matrix $T\in GL_{2}(\mathbb{C})$ and the fact that $M_{kT}=M_{T}$ for any $k\in\mathbb{C}^{*}$, implies that we can fix one of the entries of $T$ to be, for example $\hspace{0pt}1$ (for instance, if $a\neq 0$, then the matrix $T'=\frac{1}{a}T$ satisfies $M_{T}=M_{T'}$)
+Consequently, any Mobius transformation requires only three complex numbers to be determined uniquely
+It turns out that these numbers can be determined by three points in the image of $M$
+## Theorem
+Let $\left\{ z_{1},z_{2},z_{3} \right\}$ and $\left\{ w_{1},w_{2},w_{3} \right\}$ be two [[sets|sets]] of three [[Ordered Pairs|ordered]] distinct points in $\hat{\mathbb{C}}$. Then there exists a unique Mobius transformation $M$ such that $M(z_{i})=w_{i}$ for $i\in\overline{ 3}$
