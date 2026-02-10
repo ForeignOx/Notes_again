@@ -43,3 +43,10 @@ $$
 G_{S_{n}}(s)=G_{X_{1}}(s)\dots G_{X_{n}}(s)=(G_{X}(s))^{n}
 $$
 Which follows from our theorem by induction
+## Convolution Theorem
+If sequences $(a_{k})_{k\in\mathbb{N}},(b_{m})_{m\in\mathbb{N}}$ and $(c_{n})_{n\in\mathbb{N}}$ are such that [[Convolution|$c=a\star b$]], then their respective generating functions $G_{c}(s),G_{a}(s),G_{b}(s)$ satisfy
+$$
+G_{c}(s)=G_{a}(s)G_{b}(s)
+$$
+## Example
+Let $(X_{k})_{k\in\mathbb{N}}$ be independent and identically distributed variables with values in $\mathbb{N}_{0}$, and let $N\geq 0$ be 

@@ -1,8 +1,10 @@
-2Let $X:\Omega\to \mathbb{R}$ be a [[Random Variables|random variable]] then the meent generating function of $X$ is defined and denoted by:
+## Definition
+Let $X:\Omega\to \mathbb{R}$ be a [[Random Variables|random variable]] then the moment generating function of $X$ is defined and denoted by:
 $$
 M_{X}(t)=\mathbb{E}(x^{tx}),t\in \mathbb{R}
 $$
 Note that the mgf may not always exist
+This is the [[Probability Generating Functions|probability generating function]] with $s=e^{ t }$, $M_{X}(t)=G_{X}(e^{ t })$
 $e^{ tx }\geq 0$, hence from the monotonicity of expectaittions, we know that $M_{X}\geq 0$
 By LoTUS,
 $$
@@ -59,6 +61,9 @@ $$
 \lim_{ n \to \infty } F_{X_{n}}(x)=F_{X}(x)
 $$
 For all $x\in\mathbb{R}$, where $F_{X}(\cdot)$ is continuous. We say "$X_{n}$ converges in distribution to $X$"
+## Example
+If [[Poisson Distribution|$X\sim Po(\lambda)$]], we have $G_{X}(s)=e^{ \lambda(s-1) }$. Therefore $M_{X}(t)\equiv G_{X}(e^{ t })=\exp(\lambda(e^{ t }-1))$
+
 
 
 #Mathematics #Probability #Definition 

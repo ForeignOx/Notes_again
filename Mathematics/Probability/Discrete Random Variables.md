@@ -79,7 +79,7 @@ If $X$ and $Y$ are independentr variables in $\mathbb{N}_{0}$ and $Z=X+Y$, then 
 $$
 \mathbb{P}(Z=n)=\mathbb{P}(X+Y=n)=\sum_{k=0}^{n}\mathbb{P}(X=k)\mathbb{P}(Y=n-k)
 $$
-I.e. the distribution of the independent sum $Z=X+Y$ is the convuolution
+I.e. the distribution of the independent sum $Z=X+Y$ is the [[Convolution|convolution]] of $X$ and $Y$
 
 
 
