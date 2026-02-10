@@ -315,5 +315,11 @@ $$
 $$
 Which is equivalent to 
 $$
-\beta w \overline{w}-\alpha w-\overline{\alpha}\overline{w}
+\beta w \overline{w}-\alpha w-\overline{\alpha}\overline{w}+\gamma=0
+$$
+This is again an equation of a circle or a line, we have two options:
+- $\beta=0$, in this case since $\left| \alpha \right|^{2}-\beta\gamma>0$, we must have that $\alpha \neq 0$, and a such the image of the circle under the inversion is a line
+- $\beta \neq 0$: in this case we define $\gamma'=\beta,\alpha'=\overline{\alpha}$ and $\beta'=\gamma$ and notice that
+$$
+\gamma'w\overline{w}-\alpha'\overline{w}-\overline{\alpha'}w+\beta'-\beta w\overline{w}-\overline{\alpha}w-\alpha \overline{w}+\gamma=0
 $$
