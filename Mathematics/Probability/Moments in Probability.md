@@ -16,7 +16,12 @@ We can rearrange a factorial moment to obtain the normal or polynomial moments, 
 $$
 \mathbb{E}(X^{2})=G''_{X}(1)+G'_{X}(1)
 $$
-
+## Remark
+We also have
+$$
+\lim_{ s\nearrow 1 } \mathbb{E}(s^{X})=\mathbb{P}(X<\infty)
+$$
+This allows us to check whether a variable is finite, if we don't know this a priory
 
 
 #Mathematics #Probability  #Definition 

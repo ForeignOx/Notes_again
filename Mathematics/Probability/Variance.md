@@ -14,7 +14,10 @@ $$
 \mathbb{V}\mathrm{ar}(X)=\mathbb{E}(X^{2})-\mathbb{E}(X)^{2}
 $$
 It is useful to note that variance is the square of the [[Standard Deviation|standard deviation]], $\mathbb{V}\mathrm{ar}(X)=\sigma^{2}$
-We can calculate it 
+We can calculate it using the [[Probability Generating Functions|probability generating function]] obtaining [[Moments in Probability|moments]]:
+$$
+\mathbb{V}\mathrm{ar}(X)=G''_{X}(1)+G'_{X}(1)-(G'_{X}(1))^{2}
+$$
 ___
 By LOTUS, taking $g(x)=(X-\mathbb{E}(x))^{2}$, for discrete,
 $$
