@@ -100,3 +100,35 @@ Using the above, we can conclude the following:
 - The map $\frac{1}{z}$ injectively takes the ray at angle $\theta$ (without the origin) to the ray at angle $-\theta$ (without the origin). On $\hat{\mathbb{C}}$, the statement remains the same by adding the origin and $\infty$ to the rays
 ![[Pasted image 20260209233033.png]]
 ## Differentiability :o
+## Lemma
+Let $M$ be a mobius transformation which is represented by the matrix $T=\begin{pmatrix}a & b\\c & d\end{pmatrix}\in GL_{2}(\mathbb{C})$. If $c\neq 0$, then the Mobius transformation $M=M_{T}$ is a [[Biholomorphic Maps|biholomorphism]]:
+$$
+M:\mathbb{C} \setminus \left\{ -\frac{d}{c}\right\}\tilde{\to}\mathbb{C}\setminus \left\{ \frac{a}{c} \right\}
+$$
+And when $c=0$, the Mobiius transformation is a biholomorphism:
+$$
+M:\mathbb{C} \tilde{\to}\mathbb{C}
+$$
+### Proof
+If $c\neq 0$, we dee that for any $z\neq -\frac{d}{c}$
+$$
+M'(z)=\frac{a(cz+d)-c(az+b)}{(cz+d)^{2}}=\frac{ad-bc}{(cz+d)^{2}}=\frac{\det T}{(cz+d)^{2}}
+$$
+Where we have used the [[Leibniz Rule|quotient rule]] for the [[Differentiation|derivative]]
+Consequently, $M$ is complex differentiable on $\mathbb{C}\setminus \left\{ -\frac{d}{c} \right\}$ i.e. it is [[Holomorphicity|holomorphic]] in this [[Domains|domain]]
+Since $M^{-1}=(M_{T})^{-1}=M_{T^{-1}}$ which is a Mobius transformation defined on $\mathbb{C}\setminus \left\{ \frac{a}{c} \right\}$, we find that the inverse is also holomorphic and conclude the result in this case.
+For the case $c=0$, we see that from the condition $ad-bc\neq 0$ we must have that $a\neq 0$ and $d\neq 0$, consequently,
+$$
+M(z)=\frac{az+b}{d}=\frac{a}{d}z+\frac{b}{d}
+$$
+And both $M$ and its inverse are holomorphic on $\mathbb{C}$ showing the desired result
+___ 
+## Derivative of Mobius Transforom
+In the above proof we've shown that
+$$
+M_{T}'(z)=\begin{cases}
+\frac{\det T}{(cz+d)^{2}} & c\neq 0 \\
+\frac{a}{d} & c=0
+\end{cases}
+$$
+Which is never zero in its domain of definition. 
