@@ -1,4 +1,4 @@
-Let $f_{n}$ be a [[Sequences of Functions|sequence]] of [[Functions|functions]] with [[Continuity|continuous]] [[Differentiation|derivatives]] $f_{n}'(x)$. Assume that $f_{n}\to f$ [[Pointwise Limit|pointwise]] and $f_{n}'\to g$ [[Uniform Convergence|uniformly]] for some function $g(x)$. Then $f(x)$ is differentiable and $f'(x)=g(x)=\lim_{ n \to \infty }f_{n}'(x)$
+Let $f_{n}$ be a [[Sequences of Functions|sequence]] of [[Functions|functions]] with [[Continuity|continuous]] [[Differentiation|derivatives]] $f_{n}'(x)$. Assume that $f_{n}\to f$ [[Pointwise Convergence|pointwise]] and $f_{n}'\to g$ [[Uniform Convergence|uniformly]] for some function $g(x)$. Then $f(x)$ is differentiable and $f'(x)=g(x)=\lim_{ n \to \infty }f_{n}'(x)$
 ## Proof
 Have 
 $$

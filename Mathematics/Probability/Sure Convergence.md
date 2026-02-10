@@ -1,5 +1,5 @@
 ## Definition
-For a sequence of [[Random Variables|random variables]] in a [[Probability Spaces|probability space]] $(\Omega,\mathfrak{F},\mathbb{P})$ exhibit [[Pointwise Limit|pointwise]] or sure convergence $X_{n}\to X$ if
+For a sequence of [[Random Variables|random variables]] in a [[Probability Spaces|probability space]] $(\Omega,\mathfrak{F},\mathbb{P})$ exhibit [[Pointwise Convergence|pointwise]] or sure convergence $X_{n}\to X$ if
 $$
 X_{n}(\omega)\to X(\omega)\forall \omega \in \Omega
 $$

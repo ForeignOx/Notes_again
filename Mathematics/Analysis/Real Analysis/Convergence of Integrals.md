@@ -34,7 +34,7 @@ $$
 $$
 = \frac{1}{\pi}\sum_{k=0}^{\infty}  \frac{1}{30^{k}}(-1)^{k}=\frac{1}{\pi}  \frac{1}{1+\frac{1}{30}}=\frac{30}{31\pi}
 $$
-## [[Pointwise Limit|Pointwise Convergence]]
+## [[Pointwise Convergence|Pointwise Convergence]]
 If $f_{n}$'s converge only pointwise, there might be issues, for example, consider the function:
 $$
 f_{n}(x)=\begin{cases}

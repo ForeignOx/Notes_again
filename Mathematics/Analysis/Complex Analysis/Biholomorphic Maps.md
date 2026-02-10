@@ -30,3 +30,8 @@ $$
 - The map $f(z)=e^{ z }$ takes $D=\left\{ z\in\mathbb{C}:\middle|:-\pi<\mathfrak{I}(z)<\pi \right\}$ biholomorphically to $D'=\mathbb{C}\setminus \mathbb{R}_{\leq 0}$. While the boundary is mapped to the boundary in this case, every point in $\partial D'=\mathbb{R}_{\leq 0}$ is achieved twce from the $\partial D$: once from $\left\{ z\in\mathbb{C}:\middle|: \mathfrak{I}(z)=-\pi \right\}$ and once from $\left\{ z\in\mathbb{C}:\middle|: \mathfrak{I}(z)=\pi \right\}$
 ## Remark
 We can compose biholomorphic maps to create new biholomorphic maps. In particular, we have that the set of biholomorphic maps from a set to itself has a nice structure, it is that of [[Automorphism Groups|automorphism groups]]
+## Example
+Find a biholomorphic map that takes $\mathbb{C}\setminus \mathbb{R}_{\leq 0}$ to $\mathbb{D}$ 
+We know that a Cayley tranformation takes the upper half plane to $\mathbb{D}$, so we do this by going $z^{\frac{1}{2}}$, to make the right half plane, $e^{ i \frac{\pi}{2} }$ to rotate to upper half plane, and then Cayley map to turn it to unit disk
+![[Pasted image 20260210111554.png]]
+![[Pasted image 20260210111531.png]]

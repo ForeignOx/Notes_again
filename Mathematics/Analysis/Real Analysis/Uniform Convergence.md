@@ -2,7 +2,7 @@ A [[Sequences of Functions|sequence of functions]] $f_{n}$ [[Convergence|converg
 $$
 \forall\varepsilon>0\exists N>0:\forall x\in I\forall n\geq N,\left| f_{n}(x)-f(x) \right|<\varepsilon 
 $$
-The difference between this and [[Pointwise Limit|pointwise limit]] is that the for all $x$ has been brought inside, so $N$ cannot depend on $x$
+The difference between this and [[Pointwise Convergence|pointwise limit]] is that the for all $x$ has been brought inside, so $N$ cannot depend on $x$
 If you have uniform convergence, you have pointwise convergence, uniform convergence is stricter
 ![[Uniform Convergence 2025-02-24 16.27.18.excalidraw]]
 So $f_{n}(x)$ is uniformly convergent if for all $n\geq N$ all $f_{n}(x)$ lie in a strip of $f(x)\pm\varepsilon$ 
