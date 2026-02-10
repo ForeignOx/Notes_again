@@ -98,5 +98,34 @@ G_{a}(s)=\frac{\left( 1+\frac{ps}{1-s} \right)}{1-(q-p)s}=\frac{1}{2}\left( \fra
 $$
 As a result $a_{n}=\frac{1+(q-p)^{n}}{2}$
 ___
-A biased coin is tossed repeatedly; on each toss, it shows heads with probability $p$. Let $r_{n}$ be the probability that a sequence of $$
-
+A biased coin is tossed repeatedly; on each toss, it shows heads with probability $p$. Let $r_{n}$ be the probability that a sequence of $n$ tosses never has two heads in a row. Show that $r_{0}=1,r_{1}=1$ and for all $n>1$, $r_{n}=qr_{n-1}+pqr_{n-2}$ where $q=1-p$. Deduce the generating function of the sequence $(r_{n})_{n\in\mathbb{N}}$
+Every sequence of $n\geq 2$ tosses starts either with $T$ or $HT$; hence the relation
+Multiplying these equalities by $s^{n}$ and summing, we get
+$$
+G_{r}(s)=\sum_{n=0}^{\infty}r_{n}s^{n}=1+s+qs\sum_{n=2}^{\infty}r_{n-1}s^{n-1}+qps^{2}\sum_{n=2}^{\infty}r_{n-2}s^{n-2}
+$$
+So that
+$$
+G_{r}(s)-(qs+pqs ^{2})G_{r}(s)+1+ps= \frac{1+ps}{1-qs-pqs^{2}}
+$$
+## Continuity Theorem
+For every fixed $n\geq 0$, let the sequence $(a_{k,n})_{k\geq 0}$ be a probability distribution, i.e. $a_{k,n}\geq 0$ and $\sum_{k=0}^{\infty}a_{k,n}=1$. Denote $G_{n}(s)$ to be the corresponding generating function,
+$$
+G_{n}(s)=\sum_{k=0}^{\infty} a_{k,n}s^{k}
+$$
+In order that for every fixed $k$,
+$$
+\lim_{ n \to \infty } a_{k,n}=a_{k}
+$$
+I.e. it converges [[Convergence in Distribution|in distribution]]
+It is necessarry and sufficient that for every $s\in[0,1)$ we have
+$$
+\lim_{ n \to \infty } G_{n}(s)=G(s)
+$$
+Where $G(s)=\sum_{k=0}^{\infty}a_{k}s ^{k}$ is the generating function of the limiting sequence
+### Example
+If $X_{n}\sim B(n,p)$ with $p=p_{n}$ satisfying $np_{n}\to \lambda$ as $n\to \infty$, then
+$$
+G_{X_{n}}\equiv(1+p_{n}(s-1))^{n}\to \exp(\lambda(s-1))
+$$
+So that the distribution of $X_{n}$ converges so that of $X\sim Po(\lambda)$
