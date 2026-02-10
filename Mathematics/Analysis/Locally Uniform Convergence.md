@@ -1,0 +1,4 @@
+## Definition
+Let $D\subseteq \mathbb{C}$ be a given set and let $\left\{ f_{n} \right\}_{n\in\mathbb{N}}:D\to \mathbb{C}$ be a  sequence of functions. We say that $\left\{ f_{n} \right\}_{n\in\mathbb{N}}$ converges locally uniformly to the limit function $f$ on $D$, if for every $z_{0}\in D$ there exists an [[Open Sets|open set]] $U_{z_{0}}\subset \mathbb{C}$ (that can depend on $z_{0}$) which contains $z_{0}$ such that $\left\{ f_{n} \right\}_{n\in\mathbb{N}}$ converges uniformly to $f$ on $U_{z_{0}}\cap D$
+## Remark
+We need to deal with $U_{z_{0}}\cap D$ to make sure we take into account all the different types of points in $D$ (interior and boundary)

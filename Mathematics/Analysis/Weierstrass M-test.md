@@ -38,5 +38,5 @@ $$
 Converges uniformly to a function on $\mathbb{D}$
 Denoting $f_{n}(z)= \frac{\left| 2z \right| ^{3n}}{3^{2n}n^{2}}$ we find that on $\mathbb{D}$,
 $$
-\left| f_{n}(z) \right| \leq \frac{2^{3n}}{3^{2n}n^{2}}=\left( \frac{8}{9} \right)^{n} \frac{1}{n^{2}}\leq (8)
+\left| f_{n}(z) \right| \leq \frac{2^{3n}}{3^{2n}n^{2}}=\left( \frac{8}{9} \right)^{n} \frac{1}{n^{2}}\leq \left( \frac{8}{9} \right)^{n}
 $$
