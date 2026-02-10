@@ -18,5 +18,9 @@ It is straightforward to derive probability generating functions of many distrib
 If $\mathbb{P}(X=c)=1$ for some $c\in\mathbb{R}$, then $G(s)-\mathbb{E}(x^{X})=s ^{c}$
 If [[Bernoulli Distribution|$X\sim \mathrm{Ber}(p)$]], then $G(s)=\mathbb{E}(s^{X})=(1-p)^{0}+ps=1-p+ps$
 If [[Binomial Distribution|$X\sim B(n,p)$]], then $G(s)=\mathbb{E}(s ^{X})=\sum_{k=0}^{n}{n \choose k }p^{k}(1-p)^{n-k}s ^{k}$
-
-$\s^{s}$
+If [[Poisson Distribution|$X\sim Po(\lambda)$]] then $G(s)=\mathbb{E}(s^{X})=\sum_{k=0}^{\infty} \frac{\lambda^{k}}{k!}e^{ -\lambda  }s ^{k}=e^{ \lambda(s-1) }$
+## Theorem
+If $X$ and $Y$ are [[Independence|independent]] random variables with values in $\mathbb{N}_{0}$, and $Z:=X+Y$, then their generating functions satisfy
+$$
+G_{Z}(s)=G_{X+Y}(s)=G_{X}(s)G_{Y}(s)
+$$
