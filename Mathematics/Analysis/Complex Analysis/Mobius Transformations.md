@@ -323,3 +323,15 @@ This is again an equation of a circle or a line, we have two options:
 $$
 \gamma'w\overline{w}-\alpha'\overline{w}-\overline{\alpha'}w+\beta'-\beta w\overline{w}-\overline{\alpha}w-\alpha \overline{w}+\gamma=0
 $$
+and
+$$
+\left| \alpha' \right| ^{2}-\beta'\gamma'=\left| \alpha \right| ^{2}-\beta\gamma>0
+$$
+Showing that the image of the circle under the inverion is a circle
+We now turn our attention to the general form of a [[Lines|line]] which we know can be written in the complex plane as
+$$
+-\alpha \overline{z}-\overline{\alpha}z+\beta=0
+$$
+With $\alpha \in\mathbb{C}^{*}$. Defining $w=\frac{1}{z}$ as 
+
+
