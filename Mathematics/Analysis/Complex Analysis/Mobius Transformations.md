@@ -337,11 +337,20 @@ $$
 -\overline{\alpha}\overline{w}-\alpha w+\beta w\overline{w}=0
 $$
 Which is again the equation for a circle or a line. We have two options:
-- $\beta=0$: in this case, since $\left| \alpha \right|^{2}-\beta\gamma$, we must have that $\alpha \neq 0$ and as such, the image of the circle under the inversion is a line
-- $\beta \neq 0$: in this case, we define $\gamma'=\beta,\alpha'=\overline{\alpha}$ and $\beta'=\gamma$ and notice that
+- $\beta=0$: in this case, the equation becomes $-\overline{\alpha}\overline{w}-\alpha w=0$ which is a line as $\alpha \neq 0$
+- $\beta \neq 0$: in this case, we define $\gamma'=\beta$, $\alpha'=\overline{\alpha}$ and $\beta'=0$ and notice that
 $$
-\gamma'w\overline{w}-\alpha'\overline{w}-\overline{\alpha'}+\beta'=\beta \overline{w}-\overline{\alpha}w-\alpha \overline{w}+\gamma=0
+\gamma'w\overline{w}-\alpha'\overline{w}-\overline{\alpha'}=-\overline{\alpha}\overline{w}-\alpha w+\beta w \overline{w}=0
 $$
 And
-
-
+$$
+\left| \alpha' \right| ^{2}-\beta'\gamma'=\left| \alpha \right| ^{2}>0
+$$
+Showing that the image of the line under the inversion is a circle
+To prove the last statement, we notice that a circle or a line go to a line iff $\beta=0$. This only happens if $z=0$ on the curve is derfined by
+$$
+\gamma z\overline{z}-\overline{\alpha}z-\alpha \overline{z}+\beta=0
+$$
+Which is equivalent to the fact that the circle or line pass through th point that the map $\frac{1}{z}$ takes to infinity
+### Notation
+We use the term circline to refer to an object that is either a circle or a line
