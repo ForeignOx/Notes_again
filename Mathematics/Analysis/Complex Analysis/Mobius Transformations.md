@@ -143,3 +143,19 @@ Consequently, any Mobius transformation requires only three complex numbers to b
 It turns out that these numbers can be determined by three points in the image of $M$
 ## Theorem
 Let $\left\{ z_{1},z_{2},z_{3} \right\}$ and $\left\{ w_{1},w_{2},w_{3} \right\}$ be two [[sets|sets]] of three [[Ordered Pairs|ordered]] distinct points in $\hat{\mathbb{C}}$. Then there exists a unique Mobius transformation $M$ such that $M(z_{i})=w_{i}$ for $i\in\overline{ 3}$
+### Proof
+For a given distinct $\left\{ z_{1},z_{2},z_{3} \right\}$, we use the [[Cross Ratio|cross ratio]] to define the map
+$$
+F(z)=(z,z_{1};z_{2},z_{3})=\frac{z-z_{2}}{z-z_{3}} \frac{z_{1}-z_{3}}{z_{1}-z_{2}}
+$$
+$F(z)$ is a Mobius transformation. moreover, $F(z_{1})=1,F(z_{2})=0,F(z_{3})=\infty$
+Given the associated numbers $\left\{ w_{1},w_{2},w_{3} \right\}$, we see that
+$$
+G(w)=(w,w_{1};w_{2},w_{3})
+$$
+Is another Mobius transformation such that $G(z_{1})=1,G(z_{2})=0,G(z_{3})=\infty$
+The map $M=G^{-1}\circ F$, which is well defined, is a Mobius transformation that satisfies 
+$$
+M(z_{1})=G^{-1}(1)=w_{1},M(z_{2})=G^{-1}(0)=w_{2},M(z_{3})=G^{-1}(\infty)=w_{3}
+$$
+To prove the uniqueness
