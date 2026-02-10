@@ -300,4 +300,4 @@ $$
 The general strategy relies on being able to map the boundary of a omain with a Mobius tranformation
 A remarkable feature of Mobius transformations is the following:
 ### Proposition
-Mobius transformations map circles and lines in $\hat{\mathbb{C}}$ to circles and lines in $\hat{\mathbb{C}}$, where
+Mobius transformations map circles and lines in $\hat{\mathbb{C}}$ to circles and lines in $\hat{\mathbb{C}}$, where we consider any line to pass through infinity 
