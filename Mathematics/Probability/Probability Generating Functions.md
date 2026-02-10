@@ -64,4 +64,36 @@ Generating functions are very useful in solving [[Recurrence Relations|recurrenc
 $$
 \frac{b}{a-x}=\frac{b}{a}\sum_{k=0}^{\infty}\left( \frac{x}{a} \right)^{k}=\sum_{k=0}^{\infty} \frac{b}{a^{k+1}}x^{k}
 $$
-Generating functions of sums of random variables
+Generating functions of sums of random variables can be written as power series, that can then be converted using [[Partial Fractions|partial fractions]]
+### Example
+Imagine a diligent janitor who replaces a light bulb the same day as it burns out. Suppose the first bulb is put in on day $\hspace{0pt}0$ and let $X_{i}$ be the lifetime of the $i$th light bulb. Let the individual lifetimes $X_{i}$ be independent and identically distributed random variables with values in $\mathbb{N}$ and have common distribution with generating function $G_{f}(s)$
+Define 
+$$
+r_{n}=\mathbb{P}(\text{a bulb was replaced on day }n)
+$$
+$$
+f_{k}:=\mathbb{P}(\text{the first bulb was replaced on day }k)
+$$
+Then
+$$
+r_{0}=1,f_{0}=0\text{ and }r_{n}=\sum_{k=1}^{n}f_{k}r_{n-k},~n\geq 1
+$$
+A standard computation implies that
+$$
+G_{r}(s)-1=\sum_{n=1}^{\infty}r_{n}s ^{n}=\sum_{n=0}^{\infty}\sum_{ k=1} ^{ n}f_{k}r_{n-k}s^{n}=\sum_{k=1}^{\infty}f_{k}s^{k}\sum_{n=k}^{\infty} r_{n-k}s^{n-k}=\sum_{k=1}^{\infty}f_{k}s^{k}G_{r}(s)
+$$
+$$
+= G_{f}(s)G_{r}(s)
+$$
+For all $\left| s \right|<1$ so that $G_{r}(s)=\frac{1}{1-G_{f}(s)}$
+___
+Let $a_{n}$ be the probability that $n$ independent Bernoulli trials with success probability $p$ result in an even number of successes. Find the generating function of $a_{n}$
+The event undewr consideration occurs if the initial failure at the fiest trial is followed by an even number of successes where $q=1-p$. Multiplying these equalities by $s^{n}$ and adding them, we get
+$$
+G_{a}(s)-1=qsG_{a}(s)+p\sum_{n=1}^{\infty}s^{n}-psG_{a}(s)=(q-p)sG_{a}(s)+ \frac{ps}{1-s}
+$$
+And after rearranging,
+$$
+G_{a}(s)=\frac{\left( 1+\frac{ps}{1-s} \right)}{1-(q-p)s}=\frac{1}{2}\left( \frac{1}{1-s}+\frac{1}{1-(q)} \right)
+$$
+
