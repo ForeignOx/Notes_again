@@ -2,3 +2,16 @@
 Let $D\subseteq \mathbb{C}$ be a given set and let $\left\{ f_{n} \right\}_{n\in\mathbb{N}}:D\to \mathbb{C}$ be a  sequence of functions. We say that $\left\{ f_{n} \right\}_{n\in\mathbb{N}}$ converges locally uniformly to the limit function $f$ on $D$, if for every $z_{0}\in D$ there exists an [[Open Sets|open set]] $U_{z_{0}}\subset \mathbb{C}$ (that can depend on $z_{0}$) which contains $z_{0}$ such that $\left\{ f_{n} \right\}_{n\in\mathbb{N}}$ converges uniformly to $f$ on $U_{z_{0}}\cap D$
 ## Remark
 We need to deal with $U_{z_{0}}\cap D$ to make sure we take into account all the different types of points in $D$ (interior and boundary)
+___
+A simplified version of local uniform convergence for open sets:
+In the case where $D\subseteq \mathbb{C}$ is an open set, the sequence $\left\{ f_{n} \right\}_{n\in\mathbb{N}}:D\to \mathbb{C}$ will converge locally uniformly on $D$ to $f$ if and only if for every $z_{0}\in D$ there exists an open set $U_{z_{0}}\subset \mathbb{C}$ (that can depend on $z_{0}$) which contains $z_{0}$ such that $\left\{ f_{n} \right\}_{n\in\mathbb{N}}$ converges uniformly on $U_{z_{0}}$ to $f$
+## Example
+Show that the sequence of functions $f_{n}(z)=z^{n}$ converges locally uniformly to $f(z)=0$ on $\mathbb{D}$
+We claim that it is enough to show that $f_{n}(z)$ converges to $f(z)$ uniformly on $B_{r}(0)$, where $0<r<1$ which is a fgamily of open sets in $\mathbb{D}$ such that any $z_{0}\in \mathbb{D}$ belongs to one of these sets
+Indeed, given $z_{0}\in \mathbb{D}$, $z_{0}\in B_{\frac{\left| z_{0} \right|+1}{2}}(0)\subset \mathbb{D}$
+On $B_{r}(0)$,
+$$
+\left| f_{n}(z)-f(z) \right| =\left| z \right| ^{n}\leq r^{n}=s_{n}
+$$
+So $s_{n}>0$, and $s_{n}$ goes to zero independently of $z$
+By our theorem, $f_{n}(z)$ converges to $f(z)$ uniformly on $B_{r}(0)$, $0<r<1$
