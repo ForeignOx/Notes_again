@@ -230,6 +230,23 @@ $$
 \frac{a-ib}{2}z+\frac{a+ib}{2}\overline{z}-c=0
 $$
 Which fits our general form with $\alpha=-\frac{a+ib}{2}\neq 0$ and $\beta=-c$
-Conversely
+Conversely,
+$$
+-\alpha \overline{z}-\overline{\alpha}z+\beta=0
+$$
+With $\alpha \neq 0$ implies that
+$$
+-\alpha(x-iy)-\overline{\alpha}(x+iy)+\beta=0
+$$
+Which holds iff
+$$
+(-\alpha-\overline{\alpha})x+i(\alpha-\overline{\alpha})y=-\beta
+$$
+or
+$$
+2\mathfrak{R}(\alpha)x+2\mathfrak{I}(\alpha)y=\beta
+$$
+Giving us the general form of a line since $\alpha \neq 0$ implies that its real or imaginary part must be non-zero
+
 
 #Mathematics #LinAlg 

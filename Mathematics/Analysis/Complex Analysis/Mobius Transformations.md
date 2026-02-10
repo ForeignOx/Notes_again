@@ -301,3 +301,19 @@ The general strategy relies on being able to map the boundary of a omain with a 
 A remarkable feature of Mobius transformations is the following:
 ### Proposition
 Mobius transformations map circles and lines in $\hat{\mathbb{C}}$ to circles and lines in $\hat{\mathbb{C}}$, where we consider any line to pass through infinity and where circ les in $\hat{\mathbb{C}}$ simply mean circles in $\mathbb{C}$. Moreover, a circle or a line would be mapped to a line iff there is a point on it that is mapped to $\infty$
+#### Proof
+Using the fact that every Mobius transformation is a composition of shifts, dilations, rotations, and inversions, we see that we only need to show that the claim is true for each such map (while being careful with the point $-\frac{d}{c}$)
+The claim is straightforward and intuitive for shifts, dilations and rotations. Moreover, in that case, se see that a line will go to a line if and only if there is a point on it that goes to infinity
+To conclude the proof we only need to consider inversions.
+We that we can write the general equation of a [[Circles|circle]] in the complex plane as
+$$
+\gamma z\overline{z}-\alpha \overline{z}-\overline{\alpha}z+\beta=0
+$$
+With $\gamma,\beta \in\mathbb{R},\alpha \in\mathbb{C}$ and $\left| \alpha \right|^{2}-\beta\gamma>0$. Defining $w=\frac{1}{z}$, we see that when $z\neq 0$, the above equation becomes
+$$
+\frac{\gamma}{w\overline{w}}-\frac{\alpha}{\overline{w}}-\frac{\overline{\alpha}}{w}+\beta=0
+$$
+Which is equivalent to 
+$$
+\beta w \overline{w}-\alpha w-\overline{\alpha}\overline{w}
+$$
