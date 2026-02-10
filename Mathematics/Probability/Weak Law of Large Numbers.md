@@ -115,7 +115,7 @@ $$
 $$
 I.e. for large $n$, with probability approaching $\hspace{0pt}1$, a random point $\underline{X}\in(0,1)^{n}$ is near the $n$ dimensional sphere of radius $\sqrt{ \frac{n}{3} }$ centred at the origin
 ## Lemma
-Let random variables $(S_{n})_{n\in\mathbb{N}}$ have two finite [[Moment (in Probability)|moments]], $\mu_{n}\equiv \mathbb{E}(S_{n}),\sigma^{2}_{n}\equiv \mathbb{V}\mathrm{ar}(S_{n})<\infty$
+Let random variables $(S_{n})_{n\in\mathbb{N}}$ have two finite [[Moments in Probability|moments]], $\mu_{n}\equiv \mathbb{E}(S_{n}),\sigma^{2}_{n}\equiv \mathbb{V}\mathrm{ar}(S_{n})<\infty$
 Further, let $(b_{n})_{n\in\mathbb{N}}$ satisfy $\frac{\sigma_{n}}{b_{n}}\to 0$ as $n\to \infty$, then
 $$
 \frac{S_{n}-\mu_{n}}{b_{n}}\to 0\text{ as }n\to \infty

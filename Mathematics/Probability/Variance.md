@@ -1,3 +1,4 @@
+## Definition
 $\mathbb{V}\mathrm{ar}(X)$ is the variance of a [[Discrete Random Variables|discrete random variable]] and tells us about the spread of the possible values of $X$, we calculate it like so:
 $$
 \mathbb{V}\mathrm{ar}(X)=\mathbb{E}((X-\mathbb{E}(X))^{2})=\mathbb{E}(X^2-2X\mathbb{E}(X)+\mathbb{E}(X)^2)
@@ -13,6 +14,7 @@ $$
 \mathbb{V}\mathrm{ar}(X)=\mathbb{E}(X^{2})-\mathbb{E}(X)^{2}
 $$
 It is useful to note that variance is the square of the [[Standard Deviation|standard deviation]], $\mathbb{V}\mathrm{ar}(X)=\sigma^{2}$
+We can calculate it 
 ___
 By LOTUS, taking $g(x)=(X-\mathbb{E}(x))^{2}$, for discrete,
 $$

@@ -38,7 +38,7 @@ $$
 $$
 $\forall \underline{u},\underline{v}\in V$, with equality when $\underline{u},\underline{v}$ are linearly dependent.
 # For Probability
-Let $X$ and $Y$ be [[Random Variables|random variables]] with finite [[Expectation|expectation]] for their second [[Moment (in Probability)|moments]], $\mathbb{E}(\left| X \right|^{2})<\infty$ and $\mathbb{E}(\left| Y \right|^{2})<\infty$, then
+Let $X$ and $Y$ be [[Random Variables|random variables]] with finite [[Expectation|expectation]] for their second [[Moments in Probability|moments]], $\mathbb{E}(\left| X \right|^{2})<\infty$ and $\mathbb{E}(\left| Y \right|^{2})<\infty$, then
 $$
 \mathbb{E}(XY)\leq \sqrt{ \mathbb{E}(X^{2})\mathbb{E}(Y^{2}) }
 $$
