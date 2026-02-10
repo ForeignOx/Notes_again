@@ -49,4 +49,4 @@ $$
 G_{c}(s)=G_{a}(s)G_{b}(s)
 $$
 ## Example
-Let $(X_{k})_{k\in\mathbb{N}}$ be independent and identically distributed variables with values in $\mathbb{N}_{0}$, and let $N\geq 0$ be 
+Let $(X_{k})_{k\in\mathbb{N}}$ be independent and identically distributed variables with values in $\mathbb{N}_{0}$, and let $N\geq 0$ be an integer valued random variable independent of $\left\{ X_{k} \right\}_{k\in\mathbb{N}}$. Then 
