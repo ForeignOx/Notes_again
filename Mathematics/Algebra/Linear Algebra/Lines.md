@@ -212,6 +212,24 @@ L=\left\{  \begin{pmatrix}
 2\\1\\-3
 \end{pmatrix}|\lambda \in \mathbb{R}  \right\}
 $$
-
+# In $\mathbb{C}$
+Considering [[Complex Numbers|complex numbers]] can be written in the form $z=x+iy$, we can plot lines in the same way as in $\mathbb{R}^{2}$
+___
+Given $\beta \in\mathbb{R},\alpha \in\mathbb{C}$
+$$
+\alpha \overline{z}-\overline{\alpha}z+\beta=0
+$$
+Describes a line if $\alpha \neq 0$, conversely, any line can be described by an equation of thi form
+### Proof
+The general form for a line in $\mathbb{C}$ is
+$$
+ax+by=c
+$$
+With $a,b,c\in\mathbb{R}$, and either $a$ or $b$ are non-zero. Since $x=\frac{z+\overline{z}}{2}$ and $y=\frac{z-\overline{z}}{2i}$, the above can be rewritten as
+$$
+\frac{a-ib}{2}z+\frac{a+ib}{2}\overline{z}-c=0
+$$
+Which fits our general form with $\alpha=-\frac{a+ib}{2}\neq 0$ and $\beta=-c$
+Conversely
 
 #Mathematics #LinAlg 
