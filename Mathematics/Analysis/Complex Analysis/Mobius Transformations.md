@@ -332,6 +332,10 @@ We now turn our attention to the general form of a [[Lines|line]] which we know 
 $$
 -\alpha \overline{z}-\overline{\alpha}z+\beta=0
 $$
-With $\alpha \in\mathbb{C}^{*}$. Defining $w=\frac{1}{z}$ as 
+With $\alpha \in\mathbb{C}^{*}$. Defining $w=\frac{1}{z}$ as before, we find that the equation of the line becomes
+$$
+-\overline{\alpha}\overline{w}-\alpha w+\beta w\overline{w}=0
+$$
+Which is again the equation for a circle or a line. We have two options
 
 
