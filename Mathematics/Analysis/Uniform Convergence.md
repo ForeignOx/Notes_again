@@ -110,4 +110,49 @@ $$
 $$
 Note that here $N(\varepsilon)$ does not depend on the specific choice of $z\in D$ - the same $N$ works for all of them
 ___
-We say that the series $\sum_{n=1}^{\infty}f_{n}(z)$ c
+We say that the series $\sum_{n=1}^{\infty}f_{n}(z)$ converges uniformly to $S:D\to \mathbb{C}$ on $D$ if the sequence of functions $\left\{ S_{N} \right\}_{N\in\mathbb{N}}:D\to \mathbb{C}$ defined by
+$$
+S_{N}(z)=\sum_{n=1}^{N}f_{n}(z)
+$$
+Converges uniformly to the function $S$ on $D$
+## Theorem: Uniform limits of continuous functions are continuous
+Let $\left\{ f_{n} \right\}_{n\in\mathbb{N}}:D\to \mathbb{C}$ be a sequence of continuous functions that converges uniformly to $f$ on $D$. Then $f$ is continuous on $D$
+## Lemma: Criteria for Uniform Convergence and Lack of Uniform Convergence for Sequences
+Let $\left\{ f_{n} \right\}_{n\in\mathbb{N}}:D\to \mathbb{C}$ be a sequence of functions that converges pointwise to a limit function $f$ on $D$
+- If there exists a non-negative sequence of real numbers $\left\{ s_{n} \right\}_{n\in\mathbb{N}}$ that converges to zero and $n_{0}\in\mathbb{N}$ (independent of $z$) such that for all $n\geq n_{0}$
+$$
+\left| f_{n}(z)-f(z) \right| \leq s_{n}~\forall z\in  D
+$$
+    Then the sequence of functions $\left\{ f_{n} \right\}_{n\in\mathbb{N}}$ converges uniformly to $f$ on $D$
+- If there exists a non-negative sequence of real numbers $\left\{ s_{n} \right\}_{n\in\mathbb{N}}$ that converges to $c>0$, $n_{0}\in \mathbb{N}$ (independent of $z$), and a sequence $\left\{ z_{n} \right\}_{n\in\mathbb{N}}\subset  D$ such that for all $n\geq n_{0}$
+$$
+\left| f_{n}(z_{n})-f(z_{n}) \right|\geq _{n} 
+$$
+    Then the sequence of functions $\left\{ f_{n} \right\}_{n\in\mathbb{N}}$ does not converge uniformly to $f$ on $D$
+## Remark
+In many cases we have that $n_{0}=1$ in the conditions for the above lemma. A simpleer version of the second  part of the lemma is:
+If there exists $c>0$ and a sequence $\left\{ z_{n} \right\}_{n\in\mathbb{N}}\subset D$ such that $\forall n\in\mathbb{N}$
+$$
+\left| f_{n}(z_{n})-f(z_{n})\geq c \right| 
+$$
+Then the sequennce of functions $\left\{ f_{n} \right\}_{n\in\mathbb{N}}$ does not converge uniformly to $f$ on $D$
+## Example
+Show that the sequence of functions
+$$
+f_{n}(z)=e^{ z }+\frac{1}{n}
+$$
+Converges to $e^{ z }$ uniformly on $\mathbb{C}$
+$$
+\left| f_{n}(z)-f(z) \right| =\frac{1}{n}=s_{n}
+$$
+$s_{n}>0$ for all $n$, and $s_{n}$ is independent of $z$ and $s_{n}\to 0$, so by our theorem, this converges uniformly
+___
+Show that for any $R>0$, the sequence of functions $f_{n}(z)=e^{ z }+\frac{z}{n}$ converges to $e^{ z }$ uniformly on $B_{R}(0)$, does this converge uniformly on $\mathbb{C}$?
+$$
+\left| f_{n}(z)-f(z) \right| =\left| \frac{z}{n} \right| =\frac{\left| z \right| }{n}
+$$
+If $z\in B_{R}(0)$, then
+$$
+\left| f_{n}(z)-f(z) \right| \leq \frac{R}{n}=s_{n}(R)
+$$
+$s_{n}(R)>0$, it is independent of $z$ and $s_{n}(R)\to 0$
