@@ -183,6 +183,28 @@ $$
 M_{1}\circ M_{2}^{-1}=I \iff M_{1}=M_{2}
 $$
 # Geometric Properties
+## Building Blocks of Mobius Transformations
+Any Mobius transformation is compositions of the following $\hspace{0pt}4$ types of maps:
+- Shift: $z\to z+b$ for some $b\in\mathbb{C}$
+- Dilation: $z\to\lambda z$ for some $\lambda \in\mathbb{R}_{>0}$
+- Rotation: $z\to e^{ i\theta }$ for some $\theta \in(-\pi,\pi]$
+- Inversion: $z\to \frac{1}{z}$
+### Proof
+We start by noticing that for any $a,b\in\mathbb{C}$, with $a\neq 0$,
+$$
+f(z)=az+b=\left| a \right| e^{ i\mathrm{Arg}(a) }z+b
+$$
+Which is a composition of a rotation, dilation and shift
+
+
+
+
+
+
 The three points theorem is more than an abstract mathematical theorem; its proof is constructive, giving us a recipe to build the unique Mobius tranformation that takes $\left\{ z_{1},z_{2},z_{3} \right\}$ to $\left\{ w_{1},w_{2},w_{3} \right\}$. This recipe involves the cross ratio, emphasising its geometric importtance in the world of Mobius transformations. The following observation shows that the cross ratio is not only useful in constructing a Mobius transformation, it is also invariant under them:
 ## Lemma
-The cross ratio is invariant under Mobius transformation. In other words, if $M:\hat{\mathbb{C}}\to \hat{C}$
+The cross ratio is invariant under Mobius transformation. In other words, if $M:\hat{\mathbb{C}}\to \hat{\mathbb{C}}$ is a Mobius transformation, then
+$$
+(M(z_{0}),M(z_{1});M(z_{2}),M(z_{3}))=(z_{0},z_{1};z_{2},z_{3})
+$$
+There are several ways to prove 
