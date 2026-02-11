@@ -1,3 +1,4 @@
+# In Particle Theory
 ## Definition
 The generalised momentum associated to a generalised coordinate $q_{i}$ is
 $$
@@ -54,4 +55,16 @@ If $c$ is a constant, $L$ and $L':=L+c$ give the same equations of motion;
 ### Proof
 $$
 0=\frac{ \partial L' }{ \partial q_{i} } -\frac{d }{dt} \left( \frac{ \partial L' }{ \partial \dot{q}_{i} }  \right)=\frac{ \partial L }{ \partial q_{i} } -\frac{d }{dt} \left( \frac{ \partial L }{ \partial \dot{q}_{i} }  \right)+\frac{ \partial c }{ \partial q_{i} } 
+$$
+# In Field Theory
+In field theory, we have a generalised momentum $\Pi^{i}$ which is defined as
+$$
+\Pi^{i}=\frac{ \partial \mathcal{L} }{ \partial u_{i} } 
+$$
+Where
+$$
+u_{i}=\frac{ \partial u }{ \partial x_{i} } 
+$$
+$$
+ u_{0}=\frac{ \partial u }{ \partial x } 
 $$

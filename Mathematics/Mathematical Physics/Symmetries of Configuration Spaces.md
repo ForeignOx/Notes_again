@@ -1,5 +1,6 @@
+# In Particle Theory
 ## Definition
-A [[Transformations of Configuration Spaces|transformation]] $q_{i}\to \phi_{i}$ is a symmetry if there exists some [[Functions|function]] $F(\underline{q},t)$ such that
+A [[Transformations of Configuration Spaces|transformation]] $q_{i}\to \phi_{i}$ is a symmetry of a [[Configuration Spaces|configuration space]] if there exists some [[Functions|function]] $F(\underline{q},t)$ such that
 $$
 \delta L=L'(\phi_{1},\dots,\phi_{N})-L(q_{1},\dots,q_{N})=\varepsilon \frac{d F(\underline{q},t)}{dt} +\mathcal{O}(\varepsilon^{2})
 $$
@@ -48,6 +49,7 @@ $$
 \dot{x}'=\dot{x}-\varepsilon \dot{y}+\dots,~\dot{y}'=\varepsilon \dot{x}+\dot{y}+\dots
 $$
 Sooo
+
 $$
 L'=\frac{1}{2}m(\dot{x}'^{2}+\dot{y}'^{2})-\frac{1}{2}\kappa(x'^{2}+y'^{2})
 $$
@@ -70,3 +72,13 @@ $$
 L\to \frac{1}{2}m(\dot{x}^{2}+\dot{y}^{2})-(y+\varepsilon)\dot{x}-\frac{1}{2}x^{2}=L-\varepsilon \dot{x}=L+\varepsilon \frac{d F(x,y,t)}{dt} 
 $$
 With for example $F=-x$
+# In Field Theory
+A symmetry in a field theory is a transformation 
+$$
+u\to u'=u+\varepsilon a(u)
+$$
+Such that
+$$
+\delta \mathcal{L}=\mathcal{O}(\varepsilon^{2})
+$$
+Without having to use the equations of motion, note that unlike in the particle model, we are omitting the total derivative
