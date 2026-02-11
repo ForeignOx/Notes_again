@@ -57,7 +57,7 @@ $$
 0=\frac{ \partial L' }{ \partial q_{i} } -\frac{d }{dt} \left( \frac{ \partial L' }{ \partial \dot{q}_{i} }  \right)=\frac{ \partial L }{ \partial q_{i} } -\frac{d }{dt} \left( \frac{ \partial L }{ \partial \dot{q}_{i} }  \right)+\frac{ \partial c }{ \partial q_{i} } 
 $$
 # In Field Theory
-In field theory, we have a generalised momentum $\Pi^{i}$ which is defined as
+In field theory, we have a generalised momentum $\underline{\Pi}_{i}$ which is defined as
 $$
 \Pi^{i}=\frac{ \partial \mathcal{L} }{ \partial u_{i} } 
 $$
@@ -66,5 +66,11 @@ $$
 u_{i}=\frac{ \partial u }{ \partial x_{i} } 
 $$
 $$
- u_{0}=\frac{ \partial u }{ \partial x } 
+ u_{0}=\frac{ \partial u }{ \partial x_{0} } =\frac{ \partial u }{ \partial t } 
+$$
+All together, the vector is
+$$
+\underline{\Pi}=\begin{pmatrix}
+\frac{ \partial \mathcal{L} }{ \partial u_{0} }  & \frac{ \partial \mathcal{L} }{ \partial u_{1} }  & \dots & \frac{ \partial \mathcal{L} }{ \partial u_{d} } 
+\end{pmatrix}
 $$

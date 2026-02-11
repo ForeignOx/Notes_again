@@ -1,3 +1,4 @@
+# In Particle Theory
 ## Theorem
 Consider a [[Transformations of Configuration Spaces|transformation]] [[Generators of Transformations|generated]] by $a_{i}$ ($q_{i}\to q_{i}+\varepsilon a_{i}$) such that $L\to L+\varepsilon \frac{d F}{dt}+\mathcal{O}(\varepsilon^{2})$, i.e. the transformation is a [[Symmetries of Configuration Spaces|symmetry]], then the Noether charge, defined as
 $$
@@ -228,3 +229,46 @@ $$
 \Phi_{Q}^{(\varepsilon)}(L)=L+\varepsilon \left\{ L ,Q\right\}+\mathcal{O}(\varepsilon^{2})=L+\varepsilon \frac{d F}{dt} +\mathcal{O}(\varepsilon^{2})
 $$
 And we are done
+# In Field Theory
+## Definition
+The Noether current (a [[Vectors|vector]] with $d+1$ components) we define associated to a transformation is defined as
+$$
+\underline{J}=a\underline{\Pi}
+$$
+Or in components
+$$
+J_{i}:=a\frac{ \partial \mathcal{L} }{ \partial u_{i} } 
+$$
+## Theorem
+If $\underline{J}$ is the Noether current associated to a symmetry, then
+$$
+\underline{\nabla} \cdot \underline{J} :=\sum_{i=0}^{d}\frac{ \partial J_{i} }{ \partial x_{i} } =0
+$$
+### Proof
+We can proced analogously as to what we did when proving Noether's theorem for discrete ystems. Under a generic transformation, we have
+$$
+\delta \mathcal{L}=\varepsilon \frac{ \partial \mathcal{L} }{ \partial u } +\varepsilon \sum_{i=0}^{d}\frac{ \partial a }{ \partial x_{i} } \frac{ \partial \mathcal{L} }{ \partial u_{i} } +\mathcal{O}(\varepsilon^{2})
+$$
+Using thee Euler-Lagrange equations, this becomes
+$$
+\delta \mathcal{L}=\varepsilon \sum_{i=0}^{d}\frac{ \partial  }{ \partial x_{i} } \left( a\frac{ \partial \mathcal{L} }{ \partial u_{i} }  \right)+\mathcal{O}(\varepsilon^{2})
+$$
+Which equating with the explicit action of the symmetry on $\mathcal{L}$ leads to
+$$
+\sum_{i=0}^{d}\frac{ \partial  }{ \partial x_{i} } \left( a\frac{ \partial \mathcal{L} }{ \partial u_{i} }  \right)=0
+$$
+## Definition
+Given a Noether current $\underline{J}$ asociated to a transformation, we define the Noether charge density
+$$
+\mathcal{Q}:=J_{0}
+$$
+Furthermore, in the $d=1$ case (one spatial dimnsion), we define the charge contained inan interval $(a,b)$ to be
+$$
+    \mathcal{Q}_{(a,b)}:=\int ^{b}_{a} \mathcal{Q} \, dx =\int ^{b}_{a} J_{0} \, dx 
+$$
+## Proposition
+Assume $d=1$, then
+$$
+\frac{d \mathcal{Q}_{(a,b)}}{dt} =J_{1}(a)-J_{1}(b)
+$$
+
