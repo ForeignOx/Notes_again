@@ -49,4 +49,23 @@ $$
 \mathbb{E}\left( \sum_{n=0}^{\infty}Z_{n} \right)=\sum_{n=0}^{\infty}m^{n}=\frac{1}{1-m}<\infty
 $$
 ## Definition
-The extinction [[Events|event]] $\mathcal{E}$
+The extinction [[Events|event]] $\mathcal{E}$ is the event
+$$
+\mathcal{E}=\bigcup \left\{ Z_{n}=0 \right\}
+$$
+As $\left\{ z_{n}=0 \right\}\subset \left\{ Z_{n+1}=0 \right\}$ for all $n\geq 0$, the extinction probability $\rho$ is defined as
+$$
+\rho=\mathbb{P}(\mathcal{E})=\lim_{ n \to \infty } \mathbb{P}(Z_{n}=0)
+$$
+Where $\mathbb{P}(Z_{n}=0)=\varphi_{n}(0)$ is the extinction probability before $(n+1)$st generation
+___
+The following result helps to derive the extinction probability $\rho$ without need to compute iterates $\varphi_{n}(\cdot)$
+To avoid trivialities, we assume that $p_{0}=\mathbb{P}(Z=0)$ satisfies $0<p_{0}<1$, under this assumption $\varphi(s)$ is a strictly increasing function of $s \in[0,1]$
+## Theorem
+If $0<p_{0}<1$, then the extinction probability $\rho$ is given by the smallest positive solution to the equation 
+$$
+s=\varphi(s)
+$$
+In particular, if $m=\mathbb{E}(Z)\leq 1$, then $\rho=1$; otherwise, we have $0<\rho<1$
+## Remark
+The relation $\rho=\varphi(\rho)$ has a clear probabilistic sense. Indeed, if $\rho=\mathbb{P}_{1}(\mathcal{E})$
