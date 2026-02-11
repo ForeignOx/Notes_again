@@ -271,4 +271,17 @@ Assume $d=1$, then
 $$
 \frac{d \mathcal{Q}_{(a,b)}}{dt} =J_{1}(a)-J_{1}(b)
 $$
+### Proof
+Taking the derivative inside the integral, we have
+$$
+\frac{d \mathcal{Q}_{(a,b)}}{dt}=\frac{d}{dt} \int ^{b}_{a}  J_{0}\, dx  =\int ^{b}_{a} \frac{ \partial J_{0} }{ \partial t }  \, dx 
+$$
+Now in our $d=1$ case, the conservation equation becomes
+$$
+\frac{ \partial J_{0} }{ \partial t } +\frac{ \partial J_{1} }{ \partial x } =0
+$$
+So replaceing $\frac{ \partial J_{0} }{ \partial t }$ in the integral above, we have
+$$
+\frac{\mathcal{Q}_{(a,b)}}{dt}=-\int ^{b}_{a} \frac{ \partial J_{1} }{ \partial x }  \, dx -J_{0}(a)-J_{1}(b)
+$$
 
