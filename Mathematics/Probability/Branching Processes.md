@@ -27,5 +27,26 @@ Usually explicit calculations are hard, but at least in principle, these equatio
 ## Example
 Let $\varphi_{1}(s)=\varphi(s)=q+ps$ for some $0<p=1-q<1$, then
 $$
-\varphi_{n}(s)
+\varphi_{n}(s)\equiv q(1+p+\dots+p^{n-1})+p^{n}s=1+p^{n}(s-1)
 $$
+Notice we have here that $\varphi_{n}(s)\to 1$ as $n\to \infty$ for all $s\in[0,1]$, i.e. the distribution converges to that of $Z_{\infty}\equiv0$ 
+Assuming that $\left\{ p_{k} \right\}_{k\geq 0}$ is a non-degenerate distribution, we have $\varphi(1)\equiv \varphi_{1}(1)=1$, and therefore $\varphi_{n}(1)=1$ for all $n\geq 0$
+Denote $m:=\varphi'(1_{-})\geq 0$ the average size of offspring of a single individual
+A straightforward induction based on our equations shows that
+$$
+\mathbb{E}(Z_{n})=\frac{d }{ds} \varphi_{n}(s)\Bigg{|}_{s=1_{-}} =m^{n}=(\mathbb{E}(Z_{1}))^{n}
+$$
+This suggests that if $m\equiv \mathbb{E}(Z)\neq 1$, the branching process might explode (for $m>1$) or die out (for $m<1$)
+One classigies branching process into critical (if $m=1$), subcritical $(m<1)$ or supercritical $(m>1)$
+It is straightforward to describe the case $m<1$, indeed, [[Markov's Inequality|Markov's inequality]] implies that 
+$$
+\mathbb{P}(Z_{n}>0)=\mathbb{P}(Z_{n}\geq 1)\leq \mathbb{E}(Z_{n})=m^{n}
+$$
+So that $\mathbb{P}(Z_{n}>0)\to 0$ as $n\to \infty$ (i.e. [[Convergence in Probability|$Z_{n}\overset{p}\to 0$]])
+Moreover, as $\sum_{n=0}^{\infty}\mathbb{P}(Z_{n}>0)<\infty$, [[Borel-Cantelli Lemma|Borel Cantelli]] implies that $\mathbb{P}(Z_{n}\to 0)=1$ i.e. [[Almost Sure Convergence|$Z_{n}\overset{a.s.}\to 0$]]
+We also notice that the average total population in this case is finite,
+$$
+\mathbb{E}\left( \sum_{n=0}^{\infty}Z_{n} \right)=\sum_{n=0}^{\infty}m^{n}=\frac{1}{1-m}<\infty
+$$
+## Definition
+The extinction [[Events|event]] $\mathcal{E}$
