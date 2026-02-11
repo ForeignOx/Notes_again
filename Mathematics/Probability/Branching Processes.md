@@ -68,4 +68,13 @@ s=\varphi(s)
 $$
 In particular, if $m=\mathbb{E}(Z)\leq 1$, then $\rho=1$; otherwise, we have $0<\rho<1$
 ## Remark
-The relation $\rho=\varphi(\rho)$ has a clear probabilistic sense. Indeed, if $\rho=\mathbb{P}_{1}(\mathcal{E})$
+The relation $\rho=\varphi(\rho)$ has a clear probabilistic sense. Indeed, if $\rho=\mathbb{P}_{1}(\mathcal{E})$ is the extinction probability starting from a single individual, $Z_{0}=1$, then by indepencence, we get $\mathbb{P}_{k}(\mathcal{E})\equiv \mathbb{P}(\mathcal{E}|Z_{0}=k)=\rho^{k}$ and thus the first step decomposition for $Z_{n}$ gives
+$$
+\rho=\mathbb{P}(\mathcal{E})=\sum_{k=0}^{\infty}\mathbb{P}(\mathcal{E},Z_{1}=k)=\sum_{k=0}^{\infty}\mathbb{P}(\mathcal{E}|Z_{1}=k)\mathbb{P}(Z_{1}=k)=\sum_{k=0}^{\infty}\rho^{k}\mathbb{P}(Z_{1}=k)
+$$
+$$
+ \equiv \mathbb{E}(\rho^{Z_{1}})=\varphi(\rho)
+$$
+In agreement with above
+___
+Notice that the population has a positive chance $1-\rho>0$ of survival iff the average offspring size persingle individual $m$ is larger than $1$. In fact, one can show that, in the supercritical case, with probability $1-\rho>0$, the size $Z_{n}$ of the population converges to infinity
