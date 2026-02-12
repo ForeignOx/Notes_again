@@ -35,4 +35,30 @@ $$
 $$
 ### Proof
 Since the Cayley map is a Mobius map, we know that it will take the [[Open Sets|boundary]] of $\mathbb{H}$ $M_{C}(\mathbb{H})$ 
-In the first option, the boundary of $\mathbb{H}$ is a line that doesn't pass through the point that $M_{C}$ takes to infinity, $z=-i$. Conseqe
+- In the first option, the boundary of $\mathbb{H}$ is a line that doesn't pass through the point that $M_{C}$ takes to infinity, $z=-i$. Consequently, $M_{C}(\partial \mathbb{H})$ is a circle
+    To find which circle it is, we can see where three points from $\partial \mathbb{H}$ are mapped to
+    We notice that
+$$
+M_{C}(-1)=i,~M_{C}(0)=-1,~M_{C}(1)=-i
+$$
+    And conclude that $M_{C}(\partial \mathbb{H})=\partial \mathbb{D}$. Since $M_{C}(i)=0\in\mathbb{D}$ and $i\in \mathbb{H}$, we find that
+$$
+M_{C}(\mathbb{H})=\mathbb{D}
+$$
+- As above, we need to consider where the boundary of $\mathbb{D}$ goes to. Since $\partial \mathbb{D}$ is a circle, it will be mapped to a circle or a line, since $-i\in\partial \mathbb{D}$ is a point that goe to infinity under $M_{C}$, $M_{C}(\partial \mathbb{D})$ must be a line
+    To find which line we get, it is enough for us to see where two points on $\partial \mathbb{D}$ (that are not mapped to infinity) are mapped to. We have that
+$$
+M_{C}(i)=0,~M_{C}(1)=-i
+$$
+    We conclude that $M_{C}(\partial \mathbb{D})$ is the imaginary axis which is the boundary of $\mathbb{H}_{L}$. Since $M_{C}(0)=-i\in\mathbb{H}_{L}$, we conclude that
+$$
+M_{C}(\mathbb{D})=\mathbb{H}_{L}
+$$
+- We notice that we can write
+$$
+\Omega_{1}=\mathbb{H}\cap \mathbb{H}_{R}
+$$
+    Since $M_{C}$ is a bijection on [[Riemann Sphere|$\hat{\mathbb{C}}$]], we have that
+    $$
+M_{C}(\Omega_{1})=M_{C}(\mathbb{H}\cap \mathbb{H}_{R})=M_{C}(\mathbb{H})\cap M_{C}(\mathbb{H}_{R})=\mathbb{D}\cap M_{C}()
+$$
