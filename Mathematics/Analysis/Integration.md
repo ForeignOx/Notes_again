@@ -194,6 +194,25 @@ $$
 \int _{\gamma}f(z) \, dz=\sum_{i=1}^{n} \int _{\gamma_{i}}f(z) \, dz 
 $$
 Note that integration in this form is not as simple as line integration as the dot product and complex multiplication are not comparable
+## Example
+Consider the path $\gamma:[0,2\pi]$ defined by $\gamma(\theta)=re^{ i\theta }$ with $r>0$, find $\int _{\gamma} \, dz$ and $\int _{\gamma}\overline{z} \, dz$
+___
+Consider a path $\gamma:[0,2\pi]\to \mathbb{C}$ by $\gamma(\theta)=a+re^{ i\theta }$ with $a\in\mathbb{C}$ and $r>0$, find $\int _{\gamma}(z-a)^{n} \, dz$ for $n\in\mathbb{Z}$
+$$
+\int _{\gamma}(z-a)^{n} \, dz=\int_{0}^{2\pi} (\gamma(\theta)-a)^{n}\gamma'(\theta) \, d\theta 
+$$
+$$
+= \int_{0}^{2\pi} (re^{ i\theta })^{n}ire^{ i\theta } \, d\theta =\int_{0}^{2\pi} r^{n }e^{ in\theta }ire^{ i\theta } \, d\theta 
+$$
+$$
+= ir^{n+1}\int _{0}^{2\pi} e^{ i(n+1)\theta } \, d\theta=ir^{n+1}\left[ \int_{0}^{2\pi} \cos((n+1)\theta) \, d\theta+i\int_{0}^{2\pi} \sin((n+1)\theta) \, d\theta   \right]    
+$$
+$$
+= \begin{cases}
+ir^{0}\left( \int_{0}^{2\pi} \cos(0) \, d\theta +i\int_{0}^{2\pi} \sin(0) \, d\theta  \right) & n+1=0 \\
+ir^{n+1}\left( \frac{\sin((n+1)\theta)}{n+1}\Bigg{|}_{0}^{2\pi}  \right)
+\end{cases}
+$$
 
 
 
