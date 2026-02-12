@@ -1,3 +1,4 @@
+# Real Integration
 ## Definite Integrals
 There are many examples of ways to construct definite integrals analytically, for example [[Regulated Integrals|regulated integrals]], Riemann integrals and Lebesgue integrals to name some
 The regulated integral is based on the approximation of the function by step functions. This can be thought of as focusing on a partition of the values of $f$ on the $y$-axis
@@ -160,5 +161,24 @@ f(x)=\begin{cases}
 \end{cases}
 $$
 Which is not continuous at $x=0$, and $f(x)\geq 0$, but $\int_{-1}^{1} f(x) \, dx=0$ since the step functions tend to 0
+# Complex Integration
+## Definition
+Consider a continuous function $f:[a,b]\to \mathbb{C}$ where $[a,b]\subseteq \mathbb{R}$, we define
+$$
+\int ^{b}_{a} f(t) \, dt=\int ^{b}_{a} \mathfrak{R}(f(t))+i\mathfrak{I}(f(t)) \, dt=\int ^{b}_{a} \mathfrak{R}(f(t)) \, dt+i\int ^{b}_{a} \mathfrak{I}(f(t)) \, dt    
+$$
+
+## Example
+Find $\int_{0}^{1} f(t) \, dt$ where $f(t)=t+it$
+$$
+    \int_{0}^{1} t+it \, dt =\int_{0}^{1} t \, dt+i\int_{0}^{1} t \, dt  =\frac{1+i}{2}
+$$
+## Lemma
+Let $f_{1}$ and $f_{2}$ be continuous functions from $[a,b]$ to $\mathbb{C}$, then
+$$
+\int ^{b}_{a} f_{1}(t) \, dx 
+$$
+
+
 
 #Mathematics #Calculus #Definition
