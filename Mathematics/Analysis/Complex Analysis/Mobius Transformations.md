@@ -379,3 +379,7 @@ Or
 $$
 M(z)=\frac{(x_{1}-x_{3})z-x_{2}(x_{1}-x_{3})}{(x_{1}-x_{2})z-x_{3}(x_{1}-x_{2})}
 $$
+We thus can find $T\in GL_{2}(\mathbb{R})$ (a smaller set than $GL_{2}(\mathbb{C})$) for which $M=M_{T}$
+Similarly, we find that:
+- If $x_{1}=\infty$ then $M(z)=\frac{z-x_{2}}{z-x_{3}}$
+- 
