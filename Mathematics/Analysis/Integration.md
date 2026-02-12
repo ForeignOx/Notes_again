@@ -219,6 +219,23 @@ $$
 0 & n\in\mathbb{Z}\setminus \left\{ -1 \right\}
 \end{cases}
 $$
+## Lemma: Reparamerisation of Curves
+Let $U\subset \mathbb{C}$ be an open set, $f:U\to \mathbb{C}$ be continuous and let $\gamma:[a,b]\to \mathbb{C}$ be a $C^{1}$ curve. If $\varphi:[a',b']\to [a,b]$ is a continuously differentiable bijection with $\varphi(a')=a,\varphi(b')=b$ and we define $\delta:[a,b]\to \mathbb{C}$ by
+$$
+\delta(t):=\gamma(\varphi(t))=(\gamma \circ \varphi)(t)
+$$
+Then
+$$
+\int _{\gamma}f(z) \, dz=\int _{\delta}f(z) \, dz  
+$$
+### Proof
+$$
+\int _{\delta}f(z) \, dz=\int_{a'}^{b'} f(\delta(t))\delta'(t) \, dt      = \int ^{b'}_{a'} f(\gamma(\varphi(t)))\gamma'(\varphi(t)) \, dt
+$$
+Changing variables,
+$$
+=\int _{\varphi(a')}^{\varphi(b')} f(\gamma(s)) \, ds = \int ^{b}_{a} f(\gamma(s)) \, ds = \int _{\gamma}f(z) \, dz   
+$$
 
 
 
