@@ -352,6 +352,14 @@ $$
 \gamma z\overline{z}-\overline{\alpha}z-\alpha \overline{z}+\beta=0
 $$
 Which is equivalent to the fact that the circle or line pass through th point that the map $\frac{1}{z}$ takes to infinity
-## Remark
+### Remark
 Any three distinct non-colinear points $z_{1},z_{2},z_{3}\in\mathbb{C}$ uniquely determine a circle in $\mathbb{C}$ passing through these points. Any two distinct points uniquely determine a line passing through them
 This means to find out where a circle is mapped under a Mobius transformation, we only need to check where three points on the circle go
+### Proposition: Mobius Transformations that Preserve the Upper Plane (H2H)
+Every Mobius transformation mapping $\mathbb{H}$ to $\mathbb{H}$ is of the form $M_{T}$ with $T$ in the special l
+$$
+SL_{2}(\mathbb{R}):=\left\{ T=\begin{pmatrix}
+a & b \\
+c & d
+\end{pmatrix}:\middle|:a,b,c,d\in \mathbb{R},\det T=ad-bc=1 \right\}
+$$

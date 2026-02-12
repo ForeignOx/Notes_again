@@ -82,5 +82,20 @@ $$
 $$
     Much like in the previous part of the proof, the bijectivity of $M_{C}$ implies that
 $$
-M_{C}(\mathbb{D}_{+})=
+M_{C}(\mathbb{D}_{+})=M_{C}(\mathbb{D}\cap \mathbb{H})=M_{C}(\mathbb{D})\cap M_{C}(\mathbb{H})=\mathbb{H_{L}}\cap \mathbb{D}=\mathbb{D}_{L}
 $$
+## Corollary
+Let $M_{C}$ be the Cayley map, then
+$$
+M_{C}^{-1}(\mathbb{D})=\mathbb{H} 
+$$
+$$
+ M_{C}^{-1}(\mathbb{H}_{L})=\mathbb{D}
+$$
+$$
+M_{C}^{-1}(\mathbb{D_{-}})=\Omega_{1}
+$$
+$$
+M_{C}^{-1}(\mathbb{D}_{L})=\mathbb{D}_{+}
+$$
+
