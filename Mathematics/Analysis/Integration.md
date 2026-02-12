@@ -176,8 +176,14 @@ $$
 ## Lemma
 Let $f_{1}$ and $f_{2}$ be continuous functions from $[a,b]$ to $\mathbb{C}$, then
 $$
-\int ^{b}_{a} f_{1}(t) \, dx 
+\int ^{b}_{a} f_{1}(t)+f_{2}(t) \, dt=\int ^{b}_{a} f_{1}(t) \, dt+\int ^{b}_{a} f_{2}(t) \, dt   
 $$
+For any complex number $c\in\mathbb{C}$,
+$$
+\int ^{b}_{a} cf_{1}(t) \, dt=c\int ^{b}_{a} f_{1}(t) \, dt  
+$$
+### Proof
+By definition
 
 
 
