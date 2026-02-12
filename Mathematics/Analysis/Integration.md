@@ -184,6 +184,8 @@ $$
 $$
 ### Proof
 By definition
+## Contour Integration
+Let $U\subseteq \mathbb{C}$ be an open set and let $f:U\to \mathbb{C}$ be a continuous function. Let $\gamma:=[a,b]\to U$ be $C^{1}$. Then we define the integral alo
 
 
 
