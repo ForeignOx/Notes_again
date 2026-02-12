@@ -59,6 +59,28 @@ $$
 \Omega_{1}=\mathbb{H}\cap \mathbb{H}_{R}
 $$
     Since $M_{C}$ is a bijection on [[Riemann Sphere|$\hat{\mathbb{C}}$]], we have that
+$$
+M_{C}(\Omega_{1})=M_{C}(\mathbb{H}\cap \mathbb{H}_{R})=M_{C}(\mathbb{H})\cap M_{C}(\mathbb{H}_{R})=\mathbb{D}\cap M_{C}(\mathbb{H}_{R})
+$$
+    To find $M_{C}(\mathbb{H}_{R})$, we follow the same steps as before and start with its boundary
+    $\partial \mathbb{H}_{R}$ is a line that contains the point that $M_{C}$ takes to infinity. Consequently $M_{C}(\partial \mathbb{H}_{R})$ is a line. Since
+$$
+M_{C}(0)=-1,~M_{C}(i)=0
+$$
+    We see that the boundary of $\mathbb{H}_{R}$ is mapped to the real axis, and since
     $$
-M_{C}(\Omega_{1})=M_{C}(\mathbb{H}\cap \mathbb{H}_{R})=M_{C}(\mathbb{H})\cap M_{C}(\mathbb{H}_{R})=\mathbb{D}\cap M_{C}()
+M_{C}(1+i)=\frac{2-i}{5}
+$$
+    We find that $M_{C}(\mathbb{H}_{R})$ is the lower half plane $\mathbb{H}_{-}$. We conclude that
+$$
+M_{C}(\Omega_{1})=\mathbb{D}\cap M_{C}(\mathbb{H}_{R})=\mathbb{D}\cap \mathbb{H}_{-}=\mathbb{D}_{-}
+$$
+    We could have gone about that a different way - by saying that the boundary of $\Omega_{1}$ is two infinite segments of lines and as such they will be mapped to segments of lines or circles by any Mobius transformation. We would have proceeded in a similar way to above
+- We notice that we can write
+$$
+\mathbb{D}_{+}=\mathbb{D}\cap \mathbb{H}
+$$
+    Much like in the previous part of the proof, the bijectivity of $M_{C}$ implies that
+$$
+M_{C}(\mathbb{D}_{+})=
 $$
