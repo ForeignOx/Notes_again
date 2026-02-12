@@ -210,9 +210,16 @@ $$
 $$
 = \begin{cases}
 ir^{0}\left( \int_{0}^{2\pi} \cos(0) \, d\theta +i\int_{0}^{2\pi} \sin(0) \, d\theta  \right) & n+1=0 \\
-ir^{n+1}\left( \frac{\sin((n+1)\theta)}{n+1}\Bigg{|}_{0}^{2\pi}  \right)
+ir^{n+1}\left( \frac{\sin((n+1)\theta)}{n+1}\Bigg{|}_{0}^{2\pi}-i \frac{\cos((n+1)\theta)}{n+1}\Bigg{|}_{0} ^{2\pi}   \right) & n+1\neq 0 
 \end{cases}
 $$
+$$
+=\begin{cases}
+2\pi i & n=-1 \\
+0 & n\in\mathbb{Z}\setminus \left\{ -1 \right\}
+\end{cases}
+$$
+
 
 
 
