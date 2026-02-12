@@ -66,3 +66,5 @@ The particle is moving freely under gravity and lands at a point $A$ on the grou
 - Determine the greatest height above the ground reached by the particle during its flight
 - Show that the particle remains at a height of at least 4/5m above ground for exactly $\frac{12}{7}$seconds
 ($t=\frac{18}{7},h=8.1$)
+- A particle is projected from a point $O$ with speed $36$ms$^{-1}$ at an angle of elevation $\beta$. It reaches a point $P$ which is at the same vertical level a $O$ and horizontal distance of $60$m from $O$. The particle is subject to no external forces except its weight. Find the two possible values of $\beta$, and determine the shortest possible flight time for the journey
+- The point $O$ lies on a plane which is inclined at an angle of $\frac{\pi}{6}$ to the horizontal. A particle is projected from $O$ up a line of greatest slope of the plane, with speed of $U$ms$^{-1}$ at  an angle $\theta+\frac{\pi}{6}$. The gravitational acceleration $g$ is assumed constant and air resistance is ignored. The particle first hits the plane when it is moving horizontally. Determine the exact value of $\tan\theta$
