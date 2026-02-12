@@ -382,4 +382,31 @@ $$
 We thus can find $T\in GL_{2}(\mathbb{R})$ (a smaller set than $GL_{2}(\mathbb{C})$) for which $M=M_{T}$
 Similarly, we find that:
 - If $x_{1}=\infty$ then $M(z)=\frac{z-x_{2}}{z-x_{3}}$
-- 
+- If $x_{2}=\infty$, then $M(z)=\frac{x_{1}-x_{3}}{z-x_{3}}$
+- If $x_{3}=\infty$, then $M(z)=\frac{z-x_{2}}{x_{1}-x_{2}}$
+We conclude that if $M$ takes the real axis to itself, then it can be represented by a matrix $T\in GL_{2}(\mathbb{R})$
+The converse to the above also holds since if $M=M_{T}$ with $T\in GL_{2}(\mathbb{R})$, then $M_{T}(x)\in\mathbb{R}\cup \left\{ \infty \right\}$ for any $x\in\mathbb{R}\cup \left\{ \infty \right\}$ which implies that the $M(\partial \mathbb{H})$ is the real axis
+In other words, we have managed to show that a Mobius transformation $M$ takes $\partial \mathbb{H}$ to itself iff it is of the form $M_{T}$ with $T\in GL_{2}(\mathbb{R})$
+We are only left with considering the determinant condition. From the above, we see that $M=M_{T}$ with $T\in GL_{2}(\mathbb{R})$ will take $\mathbb{H}$ to $\mathbb{H}$ iff
+$$
+\mathfrak{I}(M_{T}(i))>0
+$$
+Writing $T=\begin{pmatrix}a & b\\c & d\end{pmatrix}$, we find that
+$$
+M_{T}(i)=\frac{ai+b}{ci+d}=\frac{(ai+b)(d-ci)}{c^{2}+d^{2}}=\frac{bd+ac}{c^{2}+d^{2}}+i \frac{ad-bc}{c^{2}+d^{2}}
+$$
+and as such $M$ maps $\mathbb{H}$ to itself iff 
+$$
+\frac{ad-bc}{c^{2}+d^{2}}=\mathfrak{I}(M_{T}(i))>0
+$$
+Which is equivalent to saying that $\det T=ad-bc>0$ In that case we define
+$$
+T'= \frac{1}{\sqrt{ \det T }}T
+$$
+And find that $T'\in SL_{2}(\mathbb{R})$ and 
+$$
+M=M_{T}=M_{T'}
+$$
+Concluding the proof
+
+
