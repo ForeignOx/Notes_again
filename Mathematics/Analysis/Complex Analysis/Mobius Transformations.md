@@ -356,10 +356,26 @@ Which is equivalent to the fact that the circle or line pass through th point th
 Any three distinct non-colinear points $z_{1},z_{2},z_{3}\in\mathbb{C}$ uniquely determine a circle in $\mathbb{C}$ passing through these points. Any two distinct points uniquely determine a line passing through them
 This means to find out where a circle is mapped under a Mobius transformation, we only need to check where three points on the circle go
 ### Proposition: Mobius Transformations that Preserve the Upper Plane (H2H)
-Every Mobius transformation mapping $\mathbb{H}$ to $\mathbb{H}$ is of the form $M_{T}$ with $T$ in the special l
+Every Mobius transformation mapping $\mathbb{H}$ to $\mathbb{H}$ is of the form $M_{T}$ with $T$ in the [[General Linear Group|special linear group]]:
 $$
 SL_{2}(\mathbb{R}):=\left\{ T=\begin{pmatrix}
 a & b \\
 c & d
 \end{pmatrix}:\middle|:a,b,c,d\in \mathbb{R},\det T=ad-bc=1 \right\}
+$$
+Conversely, every such Mobius transformation maps $\mathbb{H}$ to $\mathbb{H}$ and hence gives a biholomorphism from $\mathbb{H}$ to $\mathbb{H}$
+#### Proof
+Assume that the Mobius transformation $M$ takes $\mathbb{H}$ to itself.
+Since the boundary of $\mathbb{H}$ must be mapped to the boundary of $\mathbb{H}$ under $M$, we find that we need $M$ to take the real axis to itself
+Consequently, there exists $x_{1},x_{2},x_{3}\in\mathbb{R}\cup \left\{ \infty \right\}$ such that
+$$
+M(x_{1})=1,~M(x_{2})=0,~M(x_{3})=\infty
+$$
+If none of $x_{1},x_{2},x_{3}$ is $\infty$, we use the cross ratio to conclude that
+$$
+\frac{M(z)-0}{1-0}=\frac{z-x_{2}}{z-x_{3}} \frac{x_{1}-x_{3}}{x_{1}-x_{2}}
+$$
+Or
+$$
+M(z)=\frac{(x_{1}-x_{3})z-x_{2}(x_{1}-x_{3})}{(x_{1}-x_{2})z-x_{3}(x_{1}-x_{2})}
 $$
