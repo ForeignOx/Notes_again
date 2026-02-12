@@ -185,7 +185,15 @@ $$
 ### Proof
 By definition
 ## Contour Integration
-Let $U\subseteq \mathbb{C}$ be an open set and let $f:U\to \mathbb{C}$ be a continuous function. Let $\gamma:=[a,b]\to U$ be $C^{1}$. Then we define the integral alo
+Let $U\subseteq \mathbb{C}$ be an open set and let $f:U\to \mathbb{C}$ be a continuous function. Let $\gamma:=[a,b]\to U$ be $C^{1}$. Then we define the integral of $f$ along the curve $\gamma$ by its [[Line Integrals|contour integral]]:
+$$
+\int _{\gamma}f(z) \, dz:=\int ^{b}_{a} f(\gamma(t))\gamma'(t) \, dt  
+$$
+If $\gamma:[a,b]\to U$ is a contour with partition $a=a_{0}<a_{1}<\dots<a_{n}=b$ such that $\gamma |_{[a_{i-1},a_{i}]}\to \mathbb{C}$ are $C^{1}$ curves for $i=1,\dots,n$, then we define
+$$
+\int _{\gamma}f(z) \, dz=\sum_{i=1}^{n} \int _{\gamma_{i}}f(z) \, dz 
+$$
+Note that integration in this form is not as simple as line integration as the dot product and complex multiplication are not comparable
 
 
 
