@@ -352,5 +352,3 @@ $$
 \gamma z\overline{z}-\overline{\alpha}z-\alpha \overline{z}+\beta=0
 $$
 Which is equivalent to the fact that the circle or line pass through th point that the map $\frac{1}{z}$ takes to infinity
-### Notation
-We use the term circline to refer to an object that is either a circle or a line
