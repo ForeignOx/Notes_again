@@ -237,6 +237,22 @@ $$
 =\int _{\varphi(a')}^{\varphi(b')} f(\gamma(s)) \, ds = \int ^{b}_{a} f(\gamma(s)) \, ds = \int _{\gamma}f(z) \, dz   
 $$
 
+## Remark
+The requirement that $\varphi$ is a bijection is important
+## Notation
+Given a domain $D$ such that there exists a bijective contour $\gamma:[a,b]\to \partial D$ with a continuous inverse $\gamma ^{-1}:\partial D\to[a,b]$ and such that $\gamma'(t)\neq 0$, we define
+$$
+\int _{\partial D}f(z) \, dz=\int _{\gamma}f(z) \, dz  
+$$
+Where we assume that we start at $\gamma(a)$ and end at $\gamma(b)$ (a prescribed direction). This notion i well defined and doesn't depend on $\gamma$ due to our reparametrisation of curves lemma meowmoewmoemwmeowmeowmeowmeowmeowmeowmeowme
+## Definition
+Let $\gamma:[a,b]\to \mathbb{C}$ and $\delta:[c,d]\to \mathbb{C}$ be two conttours such that $\gamma(b)=\delta(c)$. The addition of these contours, denoted by $\gamma \cup\delta$ is the contour defined by $\gamma \cup\delta:[a,b+d-c]\to \mathbb{C}$ by
+$$
+\gamma \cup\delta:= \begin{cases}
+\gamma(t) & a\leq t\leq b \\
+\delta(t+c-b) & b\leq t\leq b+d-c
+\end{cases}
+$$
 
 
 
