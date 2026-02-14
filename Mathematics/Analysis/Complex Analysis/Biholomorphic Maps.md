@@ -46,11 +46,24 @@ We have gathered a large collection of biholomorphic map with which we can start
 | $M_{C}=\frac{z-i}{z+i}$                                                                                     | $\mathbb{D}_{+}$                                                                                                                                   | $\mathbb{D}_{L}$                                                             | $M_{C}^{-1}(z)= \frac{iz+i}{1-z}$                                        |
 | $M_{T}(z)$ with $T\in SL_{2}(\mathbb{R})$                                                                   | $\mathbb{H}$                                                                                                                                       | $\mathbb{H}$                                                                 | $M_{T^{-1}}(z)$                                                          |
 | $M(z)=e^{ i\theta } \frac{z-z_{0}}{\overline{z_{0}}z-1}$ with $\theta \in(-\pi,\pi]$, $z_{0}\in \mathbb{D}$ | $\mathbb{D}$                                                                                                                                       | $\mathbb{D}$                                                                 | $M^{-1}(z)=\frac{z-z_{0}e^{ i\theta }}{z\overline{z_{0}}-e^{ i\theta }}$ |
-
-
-
-
+___
 Find a biholomorphic map that takes $\mathbb{C}\setminus \mathbb{R}_{\leq 0}$ to $\mathbb{D}$ 
-We know that a Cayley tranformation takes the upper half plane to $\mathbb{D}$, so we do this by going $z^{\frac{1}{2}}$, to make the right half plane, $e^{ i \frac{\pi}{2} }$ to rotate to upper half plane, and then Cayley map to turn it to unit disk
+We know that a [[Cayley Maps|Cayley tranformation]] takes the upper half plane to $\mathbb{D}$, so we do this by going $z^{\frac{1}{2}}$, to make the right half plane, $e^{ i \frac{\pi}{2} }$ to rotate to upper half plane, and then Cayley map to turn it to unit disk
 ![[Pasted image 20260210111554.png]]
 ![[Pasted image 20260210111531.png]]
+It is important to note that $f_{1}(z)=z^{\frac{1}{2}}$ is the principle branch of the square root which is indeed holomorphic in the domain $\mathbb{C}\setminus \mathbb{R}_{\leq 0}$. Both $f_{2}$ and $f_{3}$ are Mobius transformations and as such are holomorphic in their domains of definition
+One option for our desired map is
+$$
+f(z)=f_{3}(f_{2}(f_{1}(z)))= \frac{z^{\frac{1}{2}}-1}{z^{\frac{1}{2}}+1}
+$$
+___
+Find a biholomorphism that takes $\mathbb{D}_{-}$ to $\mathbb{H}$
+Once again we build the desired map by composing biholomorphic maps as described in the following diagram
+![[Pasted image 20260214175018.png]]
+![[Pasted image 20260214175049.png]]
+It is important to note that $f_{2}(z)=z^{2}$ is a biholomorphism between $\Omega_{1}$ and $\mathbb{H}$ with its inverse being the principal square root $z^{\frac{1}{2}}$ (which is well defined since the real axis is not in the domain)
+$f_{1}$ is a Mobius transformation and as such holomorphic in their domain of definition
+One option for our desired map is
+$$
+f(z)=f_{2}(f_{1}(z))-\left( \frac{z+1}{z-1} \right)^{2}
+$$
