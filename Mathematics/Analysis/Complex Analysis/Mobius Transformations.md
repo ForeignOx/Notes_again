@@ -466,5 +466,24 @@ $$
 Choosing $\theta=\pi+2\mathrm{Arg}(\alpha)\mod 2\pi \in(-\pi,\pi]$, we see that we will conclude the proof once we show that $z_{0}\in\mathbb{D}$
 This is indeed the case since $\left| \alpha \right|^{2}-\left| \beta \right|^{2}=1$ implies that
 $$
-\left| z_{0} \right| ^{2}= \frac{\left| \beta \right| ^{2}}{\left| \alpha \right| ^{2}}= \frac{\left| \beta \right| ^{2}}{\left| @ \right| }
+\left| z_{0} \right| ^{2}= \frac{\left| \beta \right| ^{2}}{\left| \alpha \right| ^{2}}= \frac{\left| \beta \right| ^{2}}{\left| \beta \right| ^{2}+(\left| \alpha \right| ^{2}-\left| \beta \right| ^{2})}=\frac{\left| \beta \right| ^{2}}{\left| \beta \right| ^{2}+1}<1
+$$
+For the second part, we use the first part to see that if $M$ takes the unit disc to itself and $z_{0}=0$, then
+$$
+M(z)=-e^{ i\theta }z=e^{ i(\pi+\theta) }z
+$$
+For some $\theta \in(-\pi,\pi]$
+### Example
+Find a biholomorphic map $f$ from the unit disc to itself such that $f\left( \frac{i}{2} \right)=0$ and $f(-i)=1$
+We can solve this using a Mobius transformation. From the above corollary and the fact that $\frac{i}{2}$ goes to $\hspace{0pt}0$ we conclude that $z_{0}=\frac{i}{2}$ and can choose
+$$
+f(z)=e^{ i\theta } \frac{z-\frac{i}{2}}{-\frac{i}{2}-1}=-e^{ i\theta } \frac{2z-i}{iz+2}
+$$
+Plugging $z==i$ gives us
+$$
+1=-e^{ i\theta } \frac{-3i}{3}=ie^{ i\theta }
+$$
+Which implies that $e^{ i\theta }=-i$. Consequently,
+$$
+f(z)=i \frac{2z-i}{iz+2}= \frac{2iz+1}{iz+2}
 $$

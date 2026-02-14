@@ -31,6 +31,11 @@ $$
 ## Remark
 We can compose biholomorphic maps to create new biholomorphic maps. In particular, we have that the set of biholomorphic maps from a set to itself has a nice structure, it is that of [[Automorphism Groups|automorphism groups]]
 ## Example
+We have gathered a large collection of biholomorphic map with which we can start mapping one domain in the complex plane to another. Here is a table summarising some of the important maps we've considered:
+
+
+
+
 Find a biholomorphic map that takes $\mathbb{C}\setminus \mathbb{R}_{\leq 0}$ to $\mathbb{D}$ 
 We know that a Cayley tranformation takes the upper half plane to $\mathbb{D}$, so we do this by going $z^{\frac{1}{2}}$, to make the right half plane, $e^{ i \frac{\pi}{2} }$ to rotate to upper half plane, and then Cayley map to turn it to unit disk
 ![[Pasted image 20260210111554.png]]
