@@ -33,6 +33,11 @@ We can compose biholomorphic maps to create new biholomorphic maps. In particula
 ## Example
 We have gathered a large collection of biholomorphic map with which we can start mapping one domain in the complex plane to another. Here is a table summarising some of the important maps we've considered:
 
+| Function               | Maps the Domain                                                                                                                                    | To the Domain                                                                | Inverse                                 |
+| ---------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------- | --------------------------------------- |
+| $z^{n},n\in\mathbb{N}$ | $\left\{ \theta_{1}<\mathrm{Arg}(z)<\theta_{2} \right\}$ with $-\pi \leq\theta_{1}<\theta_{2}\leq \pi$, $\theta_{2}-\theta_{1}\leq \frac{2\pi}{n}$ | $\left\{ n\theta_{1}\mod 2\pi<\mathrm{Arg}(z)<n\theta_{2}\mod 2\pi \right\}$ | Appropriate branch of $z^{\frac{1}{n}}$ |
+|                        |                                                                                                                                                    |                                                                              |                                         |
+
 
 
 
