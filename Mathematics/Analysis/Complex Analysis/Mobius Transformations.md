@@ -426,4 +426,45 @@ Or equivalently that
 $$
 M=M_{C}\circ M_{S}\circ M_{C}^{-1},~S\in SL_{2}(\mathbb{R})
 $$
-Since $M_{C}$ is represented by the matrix $C=\begin{pmatrix}1 & -i\\c & d \end{pmatrix}$, we conclude that $M$ takes $\mathbb{D}$ to itself
+Since $M_{C}$ is represented by the matrix $C=\begin{pmatrix}1 & -i\\c & d \end{pmatrix}$, we conclude that $M$ takes $\mathbb{D}$ to itself iff
+$$
+M=M_{CSC^{-1}},~S\in SL_{2}(\mathbb{R})
+$$
+Consequently $M$ can be represented by the matrix $T=CSC^{-1}$. To conclude the proof, we notice that 
+$$
+\det T=\det S=1
+$$
+And if $S=\begin{pmatrix}a & b\\c & d\end{pmatrix}$ with $a,b,c,d\in \mathbb{R}$, then
+$$
+T=CSC^{-1}=\frac{1}{2}\begin{pmatrix}
+(a+d)+i(b-c) & (a-d)-i(c+b) \\
+(a-d)+i(c+b) & (a+d)-i(b-c)
+\end{pmatrix}
+$$
+Which is of the desired form
+### Corollary: D2D Improved
+We can in fact improve on the above
+- Every Mobius transformation $M$ from the unit disc $\mathbb{D}$ to itself can be written as
+$$
+M(z)=e^{ i\theta } \frac{z-z_{0}}{\overline{z_{0}}z-1}
+$$
+    For some angle $\theta$ and $z_{0}\in \mathbb{D}$ which is the unique point such that $M(z_{0})=0$
+- All Mobius transformations of the unit disc to itself that satisfy $M(0)=0$ are rotations about $z=0$
+#### Proof
+For the first part, according to the D2D theorem, we have that
+$$
+M(z)=\frac{\alpha z+\beta}{\overline{\beta}z+\overline{\alpha}}
+$$
+With $\left| \alpha \right|^{2}-\left| \beta \right|^{2}=1$. In particular, this implies that $\alpha \neq 0$. Consequently, we can write:
+$$
+M(z)=\frac{\alpha}{\overline{\alpha}} \frac{z+\left( \frac{\beta}{\alpha} \right)}{\overline{\left( \frac{\beta}{\alpha} \right)}z+1}
+$$
+Denoting $z_{0}=-\frac{\beta}{\alpha}$, we find that
+$$
+M(z)=e^{ 2i\mathrm{Arg}(\alpha) } \frac{z-z_{0}}{- \overline{z_{0}}z+1}=e^{ i(\pi+2\mathrm{Arg}(\alpha)) } \frac{z-z_{0}}{\overline{z_{0}}z-1}
+$$
+Choosing $\theta=\pi+2\mathrm{Arg}(\alpha)\mod 2\pi \in(-\pi,\pi]$, we see that we will conclude the proof once we show that $z_{0}\in\mathbb{D}$
+This is indeed the case since $\left| \alpha \right|^{2}-\left| \beta \right|^{2}=1$ implies that
+$$
+\left| z_{0} \right| ^{2}= \frac{\left| \beta \right| ^{2}}{\left| \alpha \right| ^{2}}= \frac{\left| \beta \right| ^{2}}{\left| @ \right| }
+$$
