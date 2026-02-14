@@ -418,4 +418,12 @@ SU(1,1):=\left\{ T=\begin{pmatrix}
 $$
 Conversely, every such Mobius transformation maps $\mathbb{D}$ to $\mathbb{D}$ and hence bives a biholomorphic automorphism of $\mathbb{D}$
 #### Proof
-Consider the Cayley map $M_{C}(z)=\frac{z-i}{z+i}$. We have seen that $M_{C}$ takes $\mathbb{H}$ to $\mathbb{D}$. Consequently, the Mobius transformation $M$ takes $\mathbb{R}$ to itself
+Consider the Cayley map $M_{C}(z)=\frac{z-i}{z+i}$. We have seen that $M_{C}$ takes $\mathbb{H}$ to $\mathbb{D}$. Consequently, the Mobius transformation $M$ takes $\mathbb{D}$ to itself iff $f=M_{C}^{-1}\circ M\circ M_{C}$ takes $\mathbb{H}$ to itself. Sinc e$f$ is a Mobius transformation, the H2H theorem implies that
+$$
+M_{C}^{-1}\circ  M\circ  M_{C}=f=M_{S},~S\in SL_{2}(\mathbb{R})
+$$
+Or equivalently that
+$$
+M=M_{C}\circ M_{S}\circ M_{C}^{-1},~S\in SL_{2}(\mathbb{R})
+$$
+Since $M_{C}$ is represented by the matrix $C=\begin{pmatrix}1 & -i\\c & d \end{pmatrix}$, we conclude that $M$ takes $\mathbb{D}$ to itself
