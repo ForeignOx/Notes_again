@@ -1,6 +1,5 @@
-# For [[Real Functions|Real Functions]]
-## Definition
-We say [[Functions|$f(x)$]] on an [[Intervals|interval]] $I$ is the pointwise [[Limit|limit]] of a [[Sequences of Functions|sequence of functions]] if for all $x\in\mathbb{R}$ we have
+
+We say [[Functions|$f(x)$]] on an [[Intervals|interval]] $I$ is the pointwise [[Limit|limit]] of a [[Sequences of Functions|sequence of functions]] if for all $x\in I$ we have
 $$
 \lim_{ n \to \infty } f_{n}(x)=f(x)
 $$
@@ -21,8 +20,7 @@ $$
 
 
 
-# For [[Complex Functions|Complex Functions]]
-## Definition
+
 Let $D\subseteq \mathbb{C}$ be a given [[sets|set]] and let $\left\{ f_{n} \right\}_{n\in\mathbb{N}}:D\to \mathbb{C}$ be a sequence of functions. We say that $\left\{ f_{n} \right\}_{n\in\mathbb{N}}$ converges pointwise on $D$ to $f:D\to \mathbb{C}$ if for any $z\in D$ the limit function
 $$
 f(z):=\lim_{ n \to \infty } f_{n}(z)
