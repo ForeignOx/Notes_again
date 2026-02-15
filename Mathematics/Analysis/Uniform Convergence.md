@@ -129,6 +129,18 @@ $$
 \left| f_{n}(z_{n})-f(z_{n}) \right|\geq _{n} 
 $$
     Then the sequence of functions $\left\{ f_{n} \right\}_{n\in\mathbb{N}}$ does not converge uniformly to $f$ on $D$
+### Proof
+For the first part, since $\left\{ s_{n} \right\}_{n\in\mathbb{N}}$ is non-negative and independent of $z$, we have that for all $n\geq n_{0}$,
+$$
+0\leq \sup_{z\in  D}\left| f_{n}(z)-f(z) \right|\leq s_{n}
+$$
+Using the [[Squeeze Theorem|squeeze theorem]] we conclude that
+$$
+\lim_{ n \to \infty } \sup_{z\in  D} \left| f_{n}(z)-f(z) \right| =0
+$$
+Which is the desired result.
+
+
 ## Remark
 In many cases we have that $n_{0}=1$ in the conditions for the above lemma. A simpleer version of the second  part of the lemma is:
 If there exists $c>0$ and a sequence $\left\{ z_{n} \right\}_{n\in\mathbb{N}}\subset D$ such that $\forall n\in\mathbb{N}$

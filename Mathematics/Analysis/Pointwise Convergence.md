@@ -70,3 +70,5 @@ $$
 \left| \xi \right| =\lim_{ n \to \infty } \left| f_{n}(z) \right| =\lim_{ n \to \infty } \left| e^{ in\theta } \right| =1
 $$
 Which concldes that in this case we have no limit
+## Remark
+The above problem illustrates a big problem wee have with pointwise convergence - it doesn't retain important topological properties such as continuity: our original sequence $f_{n}(z)$ was continuous on $\mathbb{C}$ and converged pointwise on $\mathbb{D}\cup \left\{  1 \right\}$. The limit function, however, was not continuous at $z=1$. We need a better notion that will allow us to transfer topological properties from the sequence of functions to the limit
