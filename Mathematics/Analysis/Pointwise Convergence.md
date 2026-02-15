@@ -1,14 +1,22 @@
-
-We say [[Functions|$f(x)$]] on an [[Intervals|interval]] $I$ is the pointwise [[Limit|limit]] of a [[Sequences of Functions|sequence of functions]] if for all $x\in I$ we have
+## Definition (for sequences)
+Let $D\subseteq \mathbb{C}$ be a given [[sets|set]] or [[Intervals|interval]] and let $\left\{ f_{n} \right\}_{n\in\mathbb{N}}:D\to \mathbb{C}$ (or $\mathbb{R}$) be a [[Sequences of Functions|sequence of functions]]. We say that $\left\{ f_{n} \right\}_{n\in\mathbb{N}}$ converges pointwise on $D$ to $f:D\to \mathbb{C}$ if for any $z\in D$ the [[Convergence|limit]] [[functions|function]]
 $$
-\lim_{ n \to \infty } f_{n}(x)=f(x)
+f(z):=\lim_{ n \to \infty } f_{n}(z)
 $$
-So
+Exists
+In other words, for any $z\in D$ and any $\varepsilon>0$ there exists $N(\varepsilon,z)\in\mathbb{N}$ such that if $n>N(\varepsilon,z)$, $\left| f_{n}(z)-f(z) \right| <\varepsilon$
+And in fewer words, if
 $$
-\forall x\in I \forall\varepsilon>0\exists N>0:\forall n\geq N,\left| f_{n}(x)-f(x) \right| <\varepsilon
+(\forall z\in  D )(\forall\varepsilon>0)(\exists N(\varepsilon,z)\in \mathbb{N}): n>N(\varepsilon,z)\implies \left| f_{n}(z)-f(z) \right| <\varepsilon
 $$
-$N$ depends on $\varepsilon$ and $x$
-### Example
+Note that in general $N(\varepsilon,z)$ depends on $\varepsilon$ and $z\in\mathbb{C}$
+## Definition (for series)
+We say that the [[Series|series]] $\sum_{n=1}^{\infty}f_{n}(z)$ conerges pointwise on $D$ to $S:\mathbb{C}\to \mathbb{C}$ if the sequence of functions $\left\{ S_{N} \right\}_{N\in\mathbb{N}}:D\to \mathbb{C}$ defined by 
+$$
+S_{N}(z)=\sum_{n=1}^{N}f_{n}(z)
+$$
+Convverges pointwise to the function $S(z)$
+## Example
 Take $f_{n}(x)=x^{n}$ on $I=[0,1]$
 $$
 \lim_{ n \to \infty } x^{n}=f(x)=\begin{cases}
@@ -17,26 +25,7 @@ $$
 \end{cases}
 $$
 
-
-
-
-
-Let $D\subseteq \mathbb{C}$ be a given [[sets|set]] and let $\left\{ f_{n} \right\}_{n\in\mathbb{N}}:D\to \mathbb{C}$ be a sequence of functions. We say that $\left\{ f_{n} \right\}_{n\in\mathbb{N}}$ converges pointwise on $D$ to $f:D\to \mathbb{C}$ if for any $z\in D$ the limit function
-$$
-f(z):=\lim_{ n \to \infty } f_{n}(z)
-$$
-Exists
-In other words, for any $z\in D$ and any $\varepsilon>0$ there exists $N(\varepsilon,z)\in\mathbb{N}$ such that if $n>N(\varepsilon,z)$,
-$$
-\left| f_{n}(z)-f(z) \right| <\varepsilon
-$$
-Note that in general $N(\varepsilon,z)$ depends on $\varepsilon$ and $z\in\mathbb{C}$
-We say that the [[Series|series]] $\sum_{n=1}^{\infty}f_{n}(z)$ conerges pointwise on $D$ to $S:\mathbb{C}\to \mathbb{C}$ if the sequence of functions $\left\{ S_{N} \right\}_{N\in\mathbb{N}}:D\to \mathbb{C}$ defined by 
-$$
-S_{N}(z)=\sum_{n=1}^{N}f_{n}(z)
-$$
-Convverges pointwise to the function $S(z)$
-## Example
+___
 Consider the sequence of functions $f_{n}:\mathbb{C}\to \mathbb{C}$
 $$
 f_{n}(z)=z^{n}
@@ -67,4 +56,17 @@ Next we consider the case $\left| z \right|>1$ and find that
 $$
 \left| f_{n}(z) \right| =\left| z \right| ^{n}\to \infty
 $$
-So by definition in $\hat{\mathbb{C}}$ we have that $\left\{ f_{n}(z) \right\}_{n\in\mathbb{N}}$
+So by definition in $\hat{\mathbb{C}}$ we have that $\left\{ f_{n}(z) \right\}_{n\in\mathbb{N}}$ we have that $\left\{ f_{n}(z) \right\}_{n\in\mathbb{N}}$ converges to $\infty$ (which is not in $\mathbb{C}$)
+Lastly, we consider the case $\left| z \right|=1$ and $z\neq 1$. We can write $z=e^{ i\theta }$ with $\theta \neq 0$ and notice that
+$$
+f_{n+1}(z)=e^{ i(n+1)\theta }=e^{ i\theta }e^{ in\theta }=e^{ i\theta }f_{n}(z)
+$$
+Consequently, if $f_{n}(z)\to \xi$, then
+$$
+\xi=\lim_{ n \to \infty } f_{n+1}(z)=e^{ i\theta }\lim_{ n \to \infty } f_{n}(z)=e^{ i\theta }\xi
+$$
+Since $e^{ i\theta }\neq 1$, by the uniqueness of limits we must have $\xi=0$, which is impossible since
+$$
+\left| \xi \right| =\lim_{ n \to \infty } \left| f_{n}(z) \right| =\lim_{ n \to \infty } \left| e^{ in\theta } \right| =1
+$$
+Which concldes that in this case we have no limit
