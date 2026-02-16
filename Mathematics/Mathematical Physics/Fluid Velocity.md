@@ -20,4 +20,34 @@ The electromagnetic field exerts force density
 $$
 \underline{f}_{L}=\rho \underline{E}+\underline{J} \times \underline{B}
 $$
-On a distribution $$
+On a distribution $\rho,\underline{J}$
+Consider a small volume element at $\underline{x}$ with volume $\delta V$ and fluid velocity $\underline{v}(t,\underline{x})$
+The element contains $\delta q=\rho(t,\underline{x})\delta V$
+The Lorentz force is 
+$$
+\delta F_{L}= \delta q (\underline{E}(t,\underline{x})+\underline{v}(t,\underline{x})\times \underline{B}(t,\underline{x}))
+$$
+$$
+=\rho(t,\underline{x})(\underline{E}(t,\underline{x})+\underline{v}(t,\underline{x})\times \underline{B}(t,\underline{x}))\delta V 
+$$
+$$
+= (\rho(t,\underline{x} )\underline{E}(t,\underline{x})+\rho(t,\underline{x})\underline{v}(t,\underline{x})\times \underline{B}(t,\underline{x}))\delta V
+$$
+$$
+=(\rho(t,\underline{x})\underline{E}(t,\underline{x})+\underline{J}(t,\underline{x})\times \underline{B}(t,\underline{x}))\delta V
+$$
+This means that this first term must be the force density:
+$$
+\underline{f}_{L}=\rho \underline{E}+\underline{J}\times \underline{B}
+$$
+As we wanted
+___
+Suppose particle is at $\underline{y}(t)$ and its density is $\rho_{\underline{y}(t)}(t,\underline{x})$:
+$$
+\int _{V}\rho_{\underline{y}(t)}(t,\underline{x}) \, d^{3} \underline{x}=\begin{cases}
+0 & \underline{y}(t)\not\in  V \\
+q & \underline{y}(t)\in  V
+\end{cases} 
+$$
+This means that
+
