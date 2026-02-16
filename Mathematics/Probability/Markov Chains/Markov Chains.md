@@ -67,5 +67,28 @@ $$
 We now split into two cases, one wherre the above is $>0$ and one where it is equal to 0
 If it is positive, we have
 $$
-\mathbb{P}(X_{n+1}=i_{n+1}\mid X_{0}=i_{0},X_{1}=i_{1},\dots,X_{n}=i_{n})=\mathbb{P}(X_{n+1}=i_{n+1}\mid X)
+\mathbb{P}(X_{n+1}=i_{n+1}\mid X_{0}=i_{0},X_{1}=i_{1},\dots,X_{n}=i_{n})=\mathbb{P}(X_{n+1}=i_{n+1}\mid X_{n}=i_{n})=P_{i_{n}i_{n+1}}
 $$
+Hence
+$$
+\mathbb{P}(X_{0}=i_{0},X_{1}=i_{1},\dots,X_{n}=i_{n}X_{n+1}=i_{n+1})
+$$
+$$
+= \mathbb{P}(X_{n+1}=i_{n+1}\mid X_{0}=i_{0},X_{1}=i_{1},\dots,X_{n}=i_{n})\mathbb{P}(X_{0}=i_{0},\dots,X_{n}=i_{n})
+$$
+$$
+= \lambda _{i_{0}}P_{i_{0}i_{1}}\dots P_{i_{n-1}i_{n}}P_{i_{n}i_{n+1}}
+$$
+___
+We can view this in terms of linear algebra. 
+We write 
+$$
+\mathbb{P}_{i}(A)=\mathbb{P}(A\mid X_{0}=i)
+$$
+For probabilities of $Markov(\delta_{i},P)$
+Recall that the distributions are row vectors. By convention, $P^{0}=I$ (the $\left| I \right|\times \left| I \right|$ identity matrix)
+## Theorem
+Let $(X_{n})_{n\in\mathbb{N}}$ be $Markov(\lambda,P)$. For $n,m\geq 0$:
+- $\mathbb{P}(X_{n}=j)=(\lambda P^{n})_{j}$
+- $\mathbb{P}_{i}(X_{n}=j)=\mathbb{P}(X_{n}=j\mid X_{0}=i)=(P^{n})_{ij}$
+
