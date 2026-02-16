@@ -5,7 +5,7 @@ This unit contains opportunities for learners to apply scientific knowledge to p
 ## Mathematical Skills
 There are a number of opportunities for the development of mathematical skills in this unit. These include using calculators to find and use power expressions; making order of magnitude calculations; understanding and using the symbols:  $=$, $<$, $\ll$, $\gg$, $>$, $\propto$, $\approx$, $\Delta$; changing the subject of an equation, including non-linear equations; using angles in regular 2D and 3D structures.
 ## Learners should be able to demonstrate and apply their knowledge and understanding of:
-- the terms [[Period|period of rotation]], [[Frequency |frequency]]
+- the terms [[Gitt/Physics/Component 3/Nature of Waves/Period|period of rotation]], [[Frequency |frequency]]
 - the definition of the unit radian as a measure of angle
 - the use of the radian as a measure of angle
 - the definition of [[Angular Velocity|angular velocity]], ω, for an object performing circular motion and performing simple harmonic motion

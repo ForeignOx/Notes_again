@@ -12,7 +12,7 @@ When we study the motion of binary systems, we can consider the motion in two pa
 ___
 Consider circular orbits; as usual, the results also apply to elliptical orbits. The two objects from above are in mutual orbit, but we only consider motion within the system, so the centre of mass remains stationary
 ![[Bodies in Mutual Orbit 2024-04-01 21.57.26.excalidraw]]
-We know that $m_{1}v_{1}=m_{2}v_{2}$ otherwise the centre of mass would move, hence each orbits around the centre of mass with the same [[Period |period]]. To calculate this period, consider the motion of $m_{1}$:
+We know that $m_{1}v_{1}=m_{2}v_{2}$ otherwise the centre of mass would move, hence each orbits around the centre of mass with the same [[Gitt/Physics/Component 3/Nature of Waves/Period|period]]. To calculate this period, consider the motion of $m_{1}$:
 The [[Centripetal Force]] on $m_{1}$ is provided the by the [[Newton's Law of Gravitation|gravitational force]] from the other mass, so:
 $$
 m_{1}r_{1} \frac{4\pi^{2}}{T^{2}}=\frac{Gm_{1}m_{2}}{d^{2}}

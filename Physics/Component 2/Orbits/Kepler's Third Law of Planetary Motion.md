@@ -1,4 +1,4 @@
-The square of the [[Period |period]] of the orbit of an orbiting body, $T$, is propoportional to to the cube of the semi-major axis, $a$, of its orbit:
+The square of the [[Gitt/Physics/Component 3/Nature of Waves/Period|period]] of the orbit of an orbiting body, $T$, is propoportional to to the cube of the semi-major axis, $a$, of its orbit:
 $$
 T^{2}\propto a^{3}
 $$

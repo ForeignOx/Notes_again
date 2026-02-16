@@ -34,7 +34,7 @@ Many astronomical objects have line spectra, either emission or absorption, and 
 ## Orbiting bodies
 We can use the Doppler effect to find [[Exoplanet|exoplanets]], [[Brown Dwarf|brown dwarves]] or other low mass 'companions' orbiting stars. Assuming the star and unseen companion are in [[Bodies in Mutual Orbit|mutual orbit]]. The [[Radial Velocity]] of the star changes throughout its orbit; if our line of sight is in the plane of the orbit, the amplitude of the variation or radial velocity is the orbital speed of the star. This can be detected by the Doppler shift in the wavelength of the star's [[Emission Spectra|Fraunhofer lines]]
 ![[Doppler Effect 2024-04-01 22.18.50.excalidraw]]
-In the above scenario, the radial velocity of the star, $S$, is negative, giving a negative $\Delta\lambda$. Half an orbit later, $\Delta\lambda$ is positive, the companion, $C$, is detected only by this oscillating Doppler shit. The [[Period]] and amplitude of the wavelength variation are determined, the mass of the planet can be estimated:
+In the above scenario, the radial velocity of the star, $S$, is negative, giving a negative $\Delta\lambda$. Half an orbit later, $\Delta\lambda$ is positive, the companion, $C$, is detected only by this oscillating Doppler shit. The [[Gitt/Physics/Component 3/Nature of Waves/Period]] and amplitude of the wavelength variation are determined, the mass of the planet can be estimated:
 Assuming the mass of the star is much greater than that of the companion, then we can use:
 $$
 T^{2}=\frac{4\pi^{2}r^{3}}{GM}

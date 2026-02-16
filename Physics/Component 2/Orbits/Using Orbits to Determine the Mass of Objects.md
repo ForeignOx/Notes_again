@@ -9,7 +9,7 @@ $$
 $$
 \bar{v^{2}}=\frac{GM}{a}
 $$
- Hence, measuring the radius (or semi-major axis) of an orbit and either the orbital [[Period]] or speed enables us to determine the mass of the central object star or planet. If the diameter of the central body is known, its mean density can also be calculated, which enables planetary scientists to develop models of planetary composition
+ Hence, measuring the radius (or semi-major axis) of an orbit and either the orbital [[Gitt/Physics/Component 3/Nature of Waves/Period]] or speed enables us to determine the mass of the central object star or planet. If the diameter of the central body is known, its mean density can also be calculated, which enables planetary scientists to develop models of planetary composition
  For example this figure for the density of Mars is much lower than the mean density of the Earth, which is $5520 \pu{ kg m-3 }$ which suggests that Mars has proportionately much less iron than the Earth does. Also the absence of a significant magnetic field suggests that any iron core is completely solid. This fits in with the fact that small objects cool more rapidly than large ones
 ## Orbits in the Solar System
 We can plot the orbital speeds for objects circling the Sun with a [[Rotation Curves|rotation curve]]. The equation of the curve is:

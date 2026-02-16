@@ -26,7 +26,7 @@ $$
 x(t)=e^{ -bt }(\alpha \cos(qt)+\beta \sin(qt))
 $$
 ![[output-onlinepngtools.png]]
-Notice that the [[Period]] of the oscillation is constant - the time for oscillations does not get shorter as the amplitude decays. Also the amplitude goes down by the same fraction in each cycle
+Notice that the [[Gitt/Physics/Component 3/Nature of Waves/Period]] of the oscillation is constant - the time for oscillations does not get shorter as the amplitude decays. Also the amplitude goes down by the same fraction in each cycle
 The greater the value of $\lambda$, the more rapidly the amplitude of the oscillations decreases
 ## Critical Damping
 In the case $b=\omega$ known as critical damping and $\lambda_{\pm}=-b$, so 

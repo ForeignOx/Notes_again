@@ -11,7 +11,7 @@ There are opportunities within this topic for learners to carry out experimental
 - the difference between [[Transverse Waves|transverse]] and [[Longitudinal Waves]]
 - the term [[Polarisation]]
 - [[Phase of Oscillation|the terms in phase and in antiphase]]
-- the terms displacement, [[Amplitude|amplitude]], [[Wavelength]], [[Frequency]], [[Period]] and [[Speed of a Wave|velocity of a wave]]
+- the terms displacement, [[Amplitude|amplitude]], [[Wavelength]], [[Frequency]], [[Gitt/Physics/Component 3/Nature of Waves/Period]] and [[Speed of a Wave|velocity of a wave]]
 - graphs of displacement against time, and displacement against position for transverse waves only
 - the [[Speed of a Wave|equation]] $c=f\lambda$
 - the idea that all points on [[Wavefronts]] oscillate in phase, and that wave propagation directions (rays) are at right angles to wavefronts

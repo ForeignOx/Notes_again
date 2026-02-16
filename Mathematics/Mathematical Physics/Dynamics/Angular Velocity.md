@@ -9,7 +9,7 @@ We also know by definition that $\theta=\frac{d}{r}$ and since $d=\int v \, dt$,
 $$
 d\theta=\frac{ \int v \, dt}{r}\implies\omega=\frac{d\theta}{dt}=\frac{v}{r}
 $$
-In one revolution, the angular displacement is $2\pi$, we can use this to relate [[Frequency |frequency]] and [[Period|period]] to angular speed, $\omega$:
+In one revolution, the angular displacement is $2\pi$, we can use this to relate [[Frequency |frequency]] and [[Gitt/Physics/Component 3/Nature of Waves/Period|period]] to angular speed, $\omega$:
 $$ 
 \omega=\frac{2\pi}{T}=2\pi f
 $$

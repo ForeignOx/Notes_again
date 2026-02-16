@@ -17,7 +17,7 @@ The longest linear accelerator in the world ($3.2\pu{ km}$) forms a main part of
 The cyclotron is a particle accelerator that can take up much less space than the equivalent linear accelerator. This is because a cyclotron uses a [[Magnetic Fields|magnetic field]] (at right angles to the particle velocity) to confine the charged particles to (semi)circular paths between the times when they acquire kinetic energy
 ![[Pasted image 20240415215757.png]]
 
-A particle sent out from the injector gets faster each time it crosses the gaps between the hollow electrode chambers, because a high voltage is applied between them. The potential difference must alternate with a [[Period|periodic time]] equal to the time, $T_{C}$, for the particle to make one revolution. When the particle has attained a speed $v$ and a path radius $r$, we can calculate $T_{C}$ using what we know about [[Magnetic Fields on Moving Charges]]:
+A particle sent out from the injector gets faster each time it crosses the gaps between the hollow electrode chambers, because a high voltage is applied between them. The potential difference must alternate with a [[Gitt/Physics/Component 3/Nature of Waves/Period|periodic time]] equal to the time, $T_{C}$, for the particle to make one revolution. When the particle has attained a speed $v$ and a path radius $r$, we can calculate $T_{C}$ using what we know about [[Magnetic Fields on Moving Charges]]:
 $$
 T_{C}=\frac{2\pi r}{v}=\frac{2\pi}{v}\times \frac{mv}{Bq}=\frac{2\pi m}{Bq}
 $$

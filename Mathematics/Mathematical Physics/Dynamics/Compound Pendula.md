@@ -50,7 +50,7 @@ $$
 E=\frac{1}{6}ML^{2}\dot{\theta}^{2}+\frac{1}{2}MgL(1-\cos\theta)
 $$
 
-What is the equation of motion for $\theta(t)$? What is the [[Period|period]] $P$ of [[Small Oscillations|small oscillations]] about stable equilibrium? Release the bar from rest horizontally, what is the maximum value of $\dot{\theta}$?
+What is the equation of motion for $\theta(t)$? What is the [[Gitt/Physics/Component 3/Nature of Waves/Period|period]] $P$ of [[Small Oscillations|small oscillations]] about stable equilibrium? Release the bar from rest horizontally, what is the maximum value of $\dot{\theta}$?
 For the first part, we use $\frac{d E}{dt}=0$
 $$
 \frac{1}{3}ML^{2}\dot{\theta} \ddot{\theta}+\frac{1}{2}MgL\sin(\theta)\dot{\theta}=0

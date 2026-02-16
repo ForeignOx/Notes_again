@@ -59,7 +59,7 @@ The amplitude of $x=A\cos(\omega t+\epsilon)$ is quite obviously $A$
 ### Phase
 The phase of the system of equations is $\omega t+\epsilon$. as this is how far along in the motion the system is
 ### Period
-The oscillation repeats itself with every increase by $2\pi$ in the value of the phase, in other works, if we add $T$ (the [[Period]]) to any time $t$, we add $2\pi$ to the phase:
+The oscillation repeats itself with every increase by $2\pi$ in the value of the phase, in other works, if we add $T$ (the [[Gitt/Physics/Component 3/Nature of Waves/Period]]) to any time $t$, we add $2\pi$ to the phase:
 $$
 \forall t, \omega(t+T)+\epsilon=\omega t+\epsilon+2\pi
 $$
