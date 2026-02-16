@@ -101,15 +101,21 @@ $$
 \mathbb{P}(X_{0}=i_{0},X_{1}=i_{1},\dots,X_{n}=i_{n})=\lambda _{i_{0}}P_{i_{0}i_{1}}\dots P_{i_{n-1}i_{n}}
 $$
 For all $i_{0},i_{1},\dots,i_{n}\in I$
-We want to prove that $(X_{n})_{n\in\mathbb{N}}$
-
-
-
-
-
-
-
-
+We want to prove that $(X_{n})_{n\in\mathbb{N}}$ is $Markov(\lambda,P)$
+Recall that we need to show:
+- $\mathbb{P}(X_{0}=i_{0})=\lambda_{i_{0}}$ for all $i_{0}\in I$. This hold by taking $n=0$
+- For all $i_{0},i_{1},\dots,i_{n},i_{n+1}\in I$ with
+$$
+\mathbb{P}(X_{0}=i_{0},X_{1}=i_{1},\dots,X_{n}=i_{n})>0
+$$
+    We have
+$$
+\mathbb{P}(X_{0}=i_{0},X_{1}=i_{1},\dots,X_{n}=i_{n},X_{n+1}=i_{n+1}\mid X_{0}=i_{0},X_{1}=i_{1},\dots,X_{n}=i_{n}) 
+$$
+$$
+= \frac{\lambda_{i_{0}}P_{i_{0}i_{1}}\dots P_{i_{n-1}i_{n}}P_{i_{n}i_{n+1}}}{\lambda_{i_{0}}P_{i_{0}i_{1}}\dots P_{i_{n-1}i_{n}}}=P_{i_{n}i_{n+1}}
+$$
+Here we are using $\mathbb{P}(X_{0}=i_{0},X_{1}=i_{1},\dots,X_{n}=i_{n})$ to see that the denominator is strictly greater than 0
 ___
 We can view this in terms of linear algebra. 
 We write 
