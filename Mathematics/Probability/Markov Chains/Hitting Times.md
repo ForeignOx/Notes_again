@@ -59,4 +59,34 @@ For this we can find the vector of hitting probabilities. For any $h_{a}^{\left\
 For finite $I$, minimality is usually a simple matter like this. For infinite $I$, minimality plays a more subtle and important role
 ___
 Gambler's ruin: At each time step, a gambler bets £$\hspace{0pt}1$ winning £$\hspace{0pt}2$ with probability $p$, and £$\hspace{0pt}0$ with probability $q=1-p$ until he runs out of money
-If $X_{n}$ is his wealth at time $n$, which takes values in $\mathbb{N}_{0}$. What is the probability he goes bankrupt
+If $X_{n}$ is his wealth at time $n$, which takes values in $\mathbb{N}_{0}$. What is the probability he goes bankrupt (i.e. hits $0$, so $h_{i}^{A}$ with $A=\left\{ 0 \right\}$)?
+![[Pasted image 20260216222134.png]]
+We need the minimal non-negative solution to
+$$
+h_{0}=1,h_{i}=ph_{i+1}+qh_{i-1},~i\geq 1
+$$
+We recall that the general solution to $ax_{n+1}+bx_{n}+cx_{n-1}=0$ is found y setting $\alpha,\beta$ to be the roots of $ay^{2}+by+c=0$ and then
+$$
+x_{n}=A\alpha^{n}+B\beta^{n},~\alpha \neq \beta
+$$
+$$
+x_{n}=A+Bn\alpha^{n},\alpha=\beta
+$$
+Translating to our setting, we need the roots of $py^{2}-y+q=0$, which are given by $1$ and $\frac{q}{p}$, therefore
+$$
+\begin{cases}
+h_{i}=A+B\left( \frac{q}{p} \right)^{i} & q\neq p \\
+h_{i}=A+B_{i} & q=p
+\end{cases}
+$$
+Since $h_{0}=1$,
+$$
+\begin{cases}
+h_{i}=1-B+B\left( \frac{q}{p} \right)^{i} & q\neq p \\
+h_{i}=1-B+Bi & q=p
+\end{cases}
+$$
+We now divide into $\hspace{0pt}3$ cases:
+- If $p<q$ (similar to an actual casino), since $h_{i}\in[0,1]$, we must have that $B=0$, and hence $h_{i}=1$, therefore you definitely go broke
+- $p=q$ (a fair game) Since $h_{i}\in [0,1]$, again it must be that $B=0$, so $h_{i}\equiv 1$, therefore you go broke even in a  fair game
+- $p>q$ (you run a pyramid shceme) $h_{i}=1-B\left( 1-\left( \frac{q}{p} \right)^{i} \right)$, so the minimal non-negative solution is with $B=1$, therefore $h_{i}=\left( \frac{q}{p} \right)^{i}$, hence you are unlikely to go broke if you start with a large wealth
