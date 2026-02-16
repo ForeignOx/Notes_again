@@ -8,3 +8,11 @@ Period is a [[Class Properties|class property]]
 ___
 A state $i$ is called aperiodic if $period(i)=1$
 ## Theorem
+If $i$ and $j$ belong to the same communicating class, then $period(i)=period(j)$
+## Corollary
+Suppose that $P$ is the transition matrix for an [[Irreducible Markov Chains|irreducible]] Markov chain and that $i$ i aperiodic. Then all $j\in I$ are aperiodic
+## Proposition
+A state $i$ is aperiodic iff $P_{ii}^{n}>0$ for all sufficiently large $n$
+___
+These are essentially facts about number theory. 
+In light of this, a Markov chain will be called aperiodic if all states are aperiodic, so an irreducible and aperiodic Markov chain is a chain which is irreducible and has at least one aperiodic states
