@@ -33,7 +33,7 @@ k_{i}^{A}=0 & i\in  A \\
 k^{A}_{i}=1+\sum_{j\in  I}P_{ij}k^{A}_{j} & i\not\in  A
 \end{cases}
 $$
-By minimal solution, we mean that if $(x_{i})_{i\in I}$ is the minimal non-
+By minimal solution, we mean that if $(x_{i})_{i\in I}$ solves the above and $x_{i}\geq 0$ for all $i\in I$, then $h_{i}^{A}\leq x_{i}$ for all $i\in I$
 ## Example
 Fint $\mathbb{P}_{b}(H^{\left\{ d \right\}}<\infty)$, and $\mathbb{E}_{b}(H^{\left\{ a,b \right\}})$ for the following Markov chain:
 ![[Pasted image 20260216213434.png]]
@@ -57,3 +57,6 @@ $$
 Similarly, $h_{c}=\frac{1}{2}h_{b}+\frac{1}{2}h_{d}$. We've reduced the problem to a [[systems of linear equations|system of linear equations]] So $h_{a}=0$ implies that $h_{b}=\frac{1}{2}h_{c}$. Then using $h_{d}=1$ and $h_{c}=\frac{1}{2}h_{b}+\frac{1}{2}h_{d}$, we have that $h_{c}=\frac{1}{4} h_{c}+\frac{1}{2}$, so $h_{c}=\frac{2}{3}$ and hence $h_{b}=\frac{1}{3}$
 For this we can find the vector of hitting probabilities. For any $h_{a}^{\left\{ d \right\}}\geq 0$ we can solve this system. Minimality requires that we choose $h_{a}^{\left\{ d \right\}}=0$
 For finite $I$, minimality is usually a simple matter like this. For infinite $I$, minimality plays a more subtle and important role
+___
+Gambler's ruin: At each time step, a gambler bets £$\hspace{0pt}1$ winning £$\hspace{0pt}2$ with probability $p$, and £$\hspace{0pt}0$ with probability $q=1-p$ until he runs out of money
+If $X_{n}$ is his wealth at time $n$, which takes values in $\mathbb{N}_{0}$. What is the probability he goes bankrupt
