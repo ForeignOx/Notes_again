@@ -91,4 +91,35 @@ Recall that the distributions are row vectors. By convention, $P^{0}=I$ (the $\l
 Let $(X_{n})_{n\in\mathbb{N}}$ be $Markov(\lambda,P)$. For $n,m\geq 0$:
 - $\mathbb{P}(X_{n}=j)=(\lambda P^{n})_{j}$
 - $\mathbb{P}_{i}(X_{n}=j)=\mathbb{P}(X_{n}=j\mid X_{0}=i)=(P^{n})_{ij}$
-
+We can check, if $\left| I \right|<\infty$, these are vector-matrix and matrix-matrix products. If $\left| I \right|=\infty$, we can use the same formulae:
+$$
+(\lambda P)_{j}=\sum_{i\in  I}\lambda_{i}P_{ij},~(P^{2})_{ij}=\sum_{k\in  I}P_{ik}P_{kj}
+$$
+And so on for other values of $n$
+One can show that $(P^{2})_{ij}$ is well defined when $\left| I \right|=\infty$ (the sum converges)
+## Remark
+As we vary $j$, these describe row vector entries - the distribution of $X_{n}$ with the initial distribution $\lambda$ and $\delta_{i}$, respectively. In principle, this gives a way to answer most questions with linear algevra, however, this can lead to very lengthy calculations, and generally isn't the bet way of thining about Markov chains
+### Proof
+Use that matrix multiplication $A^{n}$ is a sum over paths of length $n$ and the theorem above
+## Example
+$$
+P=\begin{pmatrix}
+P_{A A} & P_{AB} \\
+P_{BA} & P_{B B}
+\end{pmatrix}=\begin{pmatrix}
+1-\alpha & \alpha \\
+\beta & 1-\beta
+\end{pmatrix}
+$$
+Set up and solve the recurrence relation for $P_{A A}^{n}$
+___
+## Chapman-Kolmogorov Equations
+We have, by matrix multiplication that
+$$
+P_{ij}^{n+m}=\sum_{k}P_{ik}^{n}P_{kj}^{m}
+$$
+In other words,
+$$
+\mathbb{P}(X_{n+m}=j\mid X_{0}=i)=\sum_{k}\mathbb{P}(X_{n}=j|X_{0}=k)\mathbb{P}(X_{m}=k\mid X_{0}=i)
+$$
+These are called the Chapman-Kolmogorov equations.
