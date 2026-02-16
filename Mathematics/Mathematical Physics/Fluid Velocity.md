@@ -42,6 +42,7 @@ $$
 $$
 As we wanted
 ___
+Finding $\rho$ and $\underline{J}$ for a point particle $q$
 Suppose particle is at $\underline{y}(t)$ and its density is $\rho_{\underline{y}(t)}(t,\underline{x})$:
 $$
 \int _{V}\rho_{\underline{y}(t)}(t,\underline{x}) \, d^{3} \underline{x}=\begin{cases}
@@ -50,4 +51,12 @@ q & \underline{y}(t)\in  V
 \end{cases} 
 $$
 This means that
+$$
+\rho_{\underline{y}(t)}(t,\underline{x})=\begin{cases}
+0 & \underline{x}\neq \underline{y}(t) \\
+\infty & \underline{x}=\underline{y}(t)
+\end{cases}
+$$
 
+This means that all the charge comes from a single point, so strictly speaking this is not a function, it is a distribution
+For this reason we can define it to be the [[Dirac Delta Function|Dirac delta function]]
