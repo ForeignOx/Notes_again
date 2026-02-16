@@ -26,5 +26,7 @@ $$
 Has greatest common divisor $2$
 For the 3-cycle:
 $$
-\left\{ n:\middle|: \right\}
+\left\{ n:\middle|:P^{n}_{A A}>0 \right\}=3\mathbb{N}_{0}=\left\{ 0,3,6,\dots \right\}
 $$
+Has greatest common divisor $3$
+
