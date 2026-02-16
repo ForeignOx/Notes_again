@@ -157,5 +157,32 @@ $$
 \mathbb{P}(A_{k}\cap \left\{ X)_{m}=i_{m},X_{m+1}=i_{m+1},\dots,X_{m+n}=i_{m+n} \right\}\mid X_{m}=i)
 $$
 $$
-= \delta_{i i_{m}}
+= \delta_{i i_{m}}P_{i_{m}i_{m+1}}\dots P_{i_{m+n-1}i_{m+n}}\mathbb{P}(A_{k}\mid X_{m}=i)
+$$
+Clearly, if $i\neq i_{m}$, then both sides are $\hspace{0pt}0$, so now take $i_{m}=i$. Then we have
+$$
+LHS = \frac{\mathbb{P}(A_{k}\cap \left\{ X_{m}=i_{m},X_{m+1}=i_{m+1},\dots,X_{m+n}=i_{m+n} \right\})}{\mathbb{P}(X_{m}=i_{m})}\delta_{i i_{m}}
+$$
+$$
+= \frac{\mathbb{P}(X_{0}=i_{0},\dots,X_{m-1}=i_{m-1},X_{m}=i_{m},X_{m+1}=i_{m+1},\dots,X_{m+n}=i_{m+n})}{\mathbb{P}(X_{m}=i_{m})}\delta_{i i_{m}}
+$$
+$$
+= \frac{\lambda_{i_{0}}P_{i_{0}i_{1}}\dots P_{i_{m-1}i_{m}}P_{i_{m}i_{m+1}}\dots P_{i_{m+n-1}i_{m+n}}}{\mathbb{P}(X_{m}=i_{m})}
+$$
+$$
+= \frac{\lambda_{i_{0}P_{i_{0}i_{1}}\dots P_{i_{m-1}i_{m}}}}{\mathbb{P}(X_{m}=i_{m})}\delta_{i i_{m}} P_{i_{m}i_{m+1}}\dots P_{i_{m+n-1}P_{i_{m+n}}}
+$$
+$$
+=\frac{\mathbb{P}(A_{k}\cap \left\{ X_{m}=i \right\})}{\mathbb{P}(X_{m=i})}\delta_{i i_{m}}P_{i_{m}i_{m+1}}\dots P_{i_{m+n-1}P_{i_{m+n}}} 
+$$
+$$
+= \mathbb{P}(A_{k}\mid X_{m}=i)\delta_{i i_{m}}P_{i_{m}i_{m+1}}\dots P_{i_{m+n-1}P_{i_{m+n}}}=RHS
+$$
+And we are done for the finite case
+Since $A$ is a countable union of disjoint elementary events, we can use countable additivity to take the sum of both sides of over the elementary events constituting $A$ to see that
+$$
+\mathbb{P}(A\cap \left\{ X_{m}=i_{m},X_{m+1}=i_{m+1},\dots,X_{m+n}=i_{m+n}\mid X_{m}=i \right\}) 
+$$
+$$
+= \sum_{k}\mathbb{P}(A_{k}\cap \left\{ X_{m}=i_{m},X_{m+1}=i_{m+1},\dots,X_{m+n} \right\})
 $$
