@@ -135,7 +135,7 @@ $$
 And so on for other values of $n$
 One can show that $(P^{2})_{ij}$ is well defined when $\left| I \right|=\infty$ (the sum converges)
 ## Remark
-As we vary $j$, these describe row vector entries - the distribution of $X_{n}$ with the initial distribution $\lambda$ and $\delta_{i}$, respectively. In principle, this gives a way to answer most questions with linear algevra, however, this can lead to very lengthy calculations, and generally isn't the bet way of thining about Markov chains
+As we vary $j$, these describe row vector entries - the distribution of $X_{n}$ with the initial distribution $\lambda$ and $\delta_{i}$, respectively. In principle, this gives a way to answer most questions with linear algebra, however, this can lead to very lengthy calculations, and generally isn't the bet way of thining about Markov chains
 ### Proof
 Use that matrix multiplication $A^{n}$ is a sum over paths of length $n$ and the theorem above
 ## Example
