@@ -123,3 +123,24 @@ $$
 \mathbb{P}(X_{n+m}=j\mid X_{0}=i)=\sum_{k}\mathbb{P}(X_{n}=j|X_{0}=k)\mathbb{P}(X_{m}=k\mid X_{0}=i)
 $$
 These are called the Chapman-Kolmogorov equations.
+## Memorylessness
+The Markov property fomalises the memorylessnes aspect of Markov chains, we call the [[Kronecker Delta Function|Kronecker delta]], $\delta_{i}$ the unit mass at $i$
+## Theorem
+If $(X_{n})_{n\in\mathbb{N}}$ is $Markov(\lambda,P)$ and $\mathbb{P}(X_{m}=i)>0$, then conditional on $X_{m}=i$, the sequence $(X_{m+n})_{n\in\mathbb{N}}$ is $Markov(\delta_{i},P)$ and is independent of $X_{0},X_{1},..,X_{m-1}$
+### Proof
+For the proof, we will use the idea of an event $A$ determined by $X_{0},\dots,X_{m-1}$
+This means $A$ can be written as a union of elementary events $A_{k}$, where elementary events are of the form
+$$
+A_{k}=\left\{ X_{0}=i_{0},\dots,X_{m-1}=i_{m-1} \right\}
+$$
+For some $i_{0},\dots,i_{m_{1}}\in I$
+So
+$$
+\bigcup_{k=0}^{\infty}A_{k}
+$$
+For some elementary events $A_{0},A_{1},\dots$ involving $X_{0},X_{1},\dots,X_{m-1}$
+Note that if $\left| I \right| <\infty$, then this is a finite union, a countable union in any case; and any two elementary events (which aren't the same, for the same $m$) are disjoint
+We will show that for any event $A$ determined by $X_{0},\dots,X_{m-1}$ and all $i_{m},\dots,i_{m+n}\in I$,
+$$
+\mathbb{P}(A\cap \left\{ X_{m}=i_{m},X_{m+1}=i_{m+1},\dots,X_{m+n}=i_{m+n}|X_{m}=i \right\})
+$$
