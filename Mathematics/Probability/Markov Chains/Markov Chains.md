@@ -181,8 +181,15 @@ $$
 And we are done for the finite case
 Since $A$ is a countable union of disjoint elementary events, we can use countable additivity to take the sum of both sides of over the elementary events constituting $A$ to see that
 $$
-\mathbb{P}(A\cap \left\{ X_{m}=i_{m},X_{m+1}=i_{m+1},\dots,X_{m+n}=i_{m+n}\mid X_{m}=i \right\}) 
+\mathbb{P}(A\cap \left\{ X_{m}=i_{m},X_{m+1}=i_{m+1},\dots,X_{m+n}=i_{m+n}\right\}\mid X_{m}=i ) 
 $$
 $$
-= \sum_{k}\mathbb{P}(A_{k}\cap \left\{ X_{m}=i_{m},X_{m+1}=i_{m+1},\dots,X_{m+n} \right\})
+= \sum_{k}\mathbb{P}(A_{k}\cap \left\{ X_{m}=i_{m},X_{m+1}=i_{m+1},\dots,X_{m+n}=i_{m+n} \right\}\mid X_{m}=i) 
 $$
+$$
+= \sum_{k}\delta_{i i_{m}}P_{i_{m}i_{m+1}}\dots P_{i_{m+n-1}i_{m+n}}\mathbb{P}(A_{k}\mid X_{m}=i)
+$$
+$$
+= \delta_{i i_{m}}P_{i_{m}i_{m+1}}\dots P_{i_{m}i_{m+1}}\dots P_{i_{m+n-1}i_{m+n}}\mathbb{P}(A\mid X_{m}=i)
+$$
+
