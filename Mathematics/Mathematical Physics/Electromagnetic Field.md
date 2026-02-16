@@ -27,5 +27,5 @@ Which is known as the vacuum permittivity or the permittivity of free space
 $$
 \mu_{0}=4\pi \times 10^{-7} \pu{TmA^{-1}}
 $$
-Which is known as the vacuum permeability or the permeability of free space
+Which is known as the vacuum permeability or the permeability of free spaceC
 
