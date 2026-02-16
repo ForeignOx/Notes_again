@@ -144,3 +144,18 @@ We will show that for any event $A$ determined by $X_{0},\dots,X_{m-1}$ and all 
 $$
 \mathbb{P}(A\cap \left\{ X_{m}=i_{m},X_{m+1}=i_{m+1},\dots,X_{m+n}=i_{m+n}|X_{m}=i \right\})
 $$
+$$
+ =\delta_{i i_{m}}P_{i_{m}i_{m+1}}\dots P_{i_{m+n-1}i_{m+n}}\mathbb{P}(A\mid X_{m}=i)
+$$
+This is the independence claim, $Markov(\delta_{i},P)$ follows by choosing $A=\Omega=\left\{ X_{0}\in \mathbf{I}..,X_{m-1}\in I \right\}$
+We firstly take an elementary event 
+$$
+A_{k}=\left\{ X_{0}=i_{0},\dots,X_{m-1}=i_{m-1} \right\}
+$$
+For some $i_{0},\dots,i_{m_{1}}\in I$. We will show that
+$$
+\mathbb{P}(A_{k}\cap \left\{ X)_{m}=i_{m},X_{m+1}=i_{m+1},\dots,X_{m+n}=i_{m+n} \right\}\mid X_{m}=i)
+$$
+$$
+= \delta_{i i_{m}}
+$$
