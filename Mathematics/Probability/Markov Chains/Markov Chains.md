@@ -56,3 +56,16 @@ Base case:
 By definition we have $\mathbb{P}(X_{0}=i_{0})=\lambda_{i_{0}}$
 Induction step:
 We suppose, by induction, that
+$$
+\mathbb{P}(X_{0}=i_{0},X_{1}=i_{1},\dots,X_{n}=i_{n})=\lambda_{i_{0}}P_{i_{0}i_{1}}\dots P_{i_{n-1}i_{n}}
+$$
+For all $i_{0},\dots,i_{n} \in I$
+We now fix arbitrary $i_{0},i_{1},\dots,i_{n},i_{n+1}\in I$, then we have
+$$
+\mathbb{P}(X_{0}=i_{0},X_{1}=i_{1},\dots,X_{n}=i_{n})=\lambda_{i_{0}}P_{i_{0}i_{1}}\dots P_{i_{n-1}i_{n}}
+$$
+We now split into two cases, one wherre the above is $>0$ and one where it is equal to 0
+If it is positive, we have
+$$
+\mathbb{P}(X_{n+1}=i_{n+1}\mid X_{0}=i_{0},X_{1}=i_{1},\dots,X_{n}=i_{n})=\mathbb{P}(X_{n+1}=i_{n+1}\mid X)
+$$
