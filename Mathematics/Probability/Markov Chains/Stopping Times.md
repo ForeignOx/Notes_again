@@ -16,5 +16,4 @@ In particular, the first passage time to $j\in I$, $T_{j}=H^{\left\{ j \right\}}
 ## Remark
 It depends on the particular Markov chain if a random variable is a stopping time or not
 The Markov property says that, conditional on $\left\{ X_{n}=i \right\}$, the future $(X_{n+m})_{m\in\mathbb{N}_{0}}$ is $Markov(\delta_{i},P)$ and independent of the past
-The strong Markov property says that the same is true at stopping times
-
+The [[strong Markov property|strong Markov property]] says that the same is true at stopping times

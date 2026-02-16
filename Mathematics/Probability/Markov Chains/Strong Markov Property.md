@@ -38,3 +38,21 @@ Now dividing both sides by $\mathbb{P}(T<\infty,X_{T}=i)$ and using the rules fo
 $$
 \mathbb{P}(X_{T+1}=j_{1},\dots,X_{T+m}=j_{m}\mid T<\infty,X_{T}=i)=\mathbb{P}_{i}(X_{n+1}=j_{1},\dots,X_{n+m}=j_{m})
 $$
+Which is what we wanted
+## Example
+Let $A$ be an event. Write $\mathbb{1}_{A}$ for the [[Indicator Function|indicator]] of $A$
+Write 
+$$
+T_{j}^{n}:=\inf\left\{ m>T_{j}^{n-1}:\middle|:X_{m}=j \right\},~T^{0}_{j}=0,~T^{1}_{j}=\frac{T}{j}
+$$
+For the $n$th passage time to $j$. We can show these are stopping times
+Consider if $i\neq j$
+$$
+\sum_{m=0}^{T^{n}_{j}}\mathbb{1}(X_{m}=i)
+$$
+For $Markov(\delta_{j},P)$, thi is
+$$
+\underbrace{ \sum_{m=0}^{T_{1}^{1}-1}\mathbb{1}(X_{m}=i) }_{ =Y_{1} }+\underbrace{ \sum_{m=T_{j}^{1}}^{T_{j}^{2}-1}\mathbb{1}(X_{m}=i) }_{ =Y_{2} }+\dots+\underbrace{ \sum_{m=T_{j}^{n-1}}^{T^{n}_{j}-1}\mathbb{1}(X_{m}=i) }_{ =Y_{n} }
+$$
+Assume $\mathbb{P}(T_{j}^{n}<\infty)=1$. Then the strong Markov property says that the $Y_{m}$ are [[Independent and Identically Distributed|independent and identically distributed]] random variables!
+This suggests that there is some regularity to how often $X_{n}$ returns to a given state $i$, by the [[strong law of large numbers|law of large numbers]] 
