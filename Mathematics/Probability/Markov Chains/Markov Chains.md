@@ -79,6 +79,37 @@ $$
 $$
 = \lambda _{i_{0}}P_{i_{0}i_{1}}\dots P_{i_{n-1}i_{n}}P_{i_{n}i_{n+1}}
 $$
+If it is $\hspace{0pt}0$, then
+$$
+\lambda_{i_{0}}P_{i_{0}i_{1}}\dots P_{i_{n-1}i_{n}}P_{i_{n}i_{n+1}}=0\times P_{i_{n}i_{n+1}}
+$$
+And
+$$
+\mathbb{P}(X_{0}=i_{0},X_{1}=i_{1},\dots,X_{n}=i_{n},X_{n+1}=i_{n+1})\leq \mathbb{P}(X_{0}=i_{0},X_{1}=i_{1},\dots,X_{n}=i_{n})=0
+$$
+Since
+$$
+\left\{ X_{0}=i_{0},X_{1}=i_{1},\dots,X_{n}=i_{n},X_{n+1}=i_{n+1} \right\}\subseteq \left\{ X_{0}=i_{0},X_{1}=i_{1},\dots,X_{n}=i_{n} \right\}
+$$
+And either way we have
+$$
+\mathbb{P}(X_{0}=i_{0},X_{1}=i_{1},\dots,X_{n}=i_{n},X_{n+1}=i_{n+1})=\lambda_{i_{0}}P_{i_{0}i_{1}}\dots P_{i_{n-1}i_{n}}P_{i_{n}i_{n+1}}
+$$
+And our induction is proven
+Now we prove the converse. We suppose that wee have
+$$
+\mathbb{P}(X_{0}=i_{0},X_{1}=i_{1},\dots,X_{n}=i_{n})=\lambda _{i_{0}}P_{i_{0}i_{1}}\dots P_{i_{n-1}i_{n}}
+$$
+For all $i_{0},i_{1},\dots,i_{n}\in I$
+We want to prove that $(X_{n})_{n\in\mathbb{N}}$
+
+
+
+
+
+
+
+
 ___
 We can view this in terms of linear algebra. 
 We write 
