@@ -15,4 +15,13 @@ We start by proving the first and third are equivalent:
 $$
 \left\{ \omega :\middle|:X_{0}(\omega)=i,X_{n}(\omega)=j \right\}\subseteq \bigcup_{k=0}^{\infty}\left\{ \omega :\middle|: X_{0}(\omega)=i,X_{k}(\omega)=j \right\}
 $$
-
+Hence
+$$
+P_{ij}^{n}\leq \mathbb{P}(X_{n}=j\text{ for some }n\geq 0)\leq \sum_{n=0}^{\infty}\mathbb{P}_{i}(X_{n}=j)=\sum_{n=0}^{\infty}P_{ij}^{n}
+$$
+Which shows the first and third are equivalent
+To show the first and second are equivalent, we have
+$$
+P^{n}_{ij}=\sum_{i_{1},\dots,i_{n-1}\in  I}P_{ii_{1}}P_{i_{1}i_{2}}\dots P_{i_{n-2}i_{n-1}}P_{i_{n-1}j}
+$$
+Then we have 
