@@ -98,6 +98,25 @@ $$
 Let $f:D\to \mathbb{C}$ be continuous on a [[Domains|domain]] $D$ if $\int _{\gamma}f(z) \, dz=0$ for all closed contours in $D$ then there exists a holomorphic antiderivative on $D$
 ### Proof
 We fix $a\in D$, and think about a point $z\in D$
+By the definition of a domain there exists a contour $\gamma _z$ in $D$ joining $a$ to $z$
+![[Fundamental Theorem of Calculus 2026-02-17 12.13.45.excalidraw]]
+The assumption ensures this is well defined. If $\gamma$ was another contour joining $a$ to $z$
+So by assumption
+$$
+0=\int _{\gamma_{z}\cup(-\gamma)}f(\xi) \, d\xi=\int _{\gamma_{z}}f(\xi) \, d\xi  -\int _{\gamma}f(\xi) \, d\xi 
+$$
+To show $F$ is an antiderivative, we need to show
+$$
+F'(w)=\lim_{ z \to w }  \frac{F(z)-F(w)}{z-w}=f(w)
+$$
+Consider $F(z)-F(w)$
+![[Fundamental Theorem of Calculus 2026-02-17 12.14.29.excalidraw]]
+We define $\delta$ to be $t\in[0,1]$ a lilne connecting $w$ to $z$, $\delta(t)=w+t(z-w)$
+Consider
+$$
+    F(z)-F(w)=\int _{\gamma_{z}}f(\xi) \, d\xi -\int _{\gamma_{w}} f(\xi) \, d\xi=\int _{\gamma_{z}\cup(-\gamma_{w})} f(\xi) \, d\xi
+$$
+
 
 
 
