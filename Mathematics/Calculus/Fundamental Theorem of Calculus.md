@@ -116,8 +116,23 @@ Consider
 $$
     F(z)-F(w)=\int _{\gamma_{z}}f(\xi) \, d\xi -\int _{\gamma_{w}} f(\xi) \, d\xi=\int _{\gamma_{z}\cup(-\gamma_{w})} f(\xi) \, d\xi
 $$
-
-
+Since  it is a closed loop, $F(z)-F(w)=\int _{\delta} f(\xi) \, d\xi$
+Sneakily notice that 
+$$
+f(w)(z-w)=f(w)(z-w)\int _{0}^{1} \, dt =\int_{0}^{1} f(w(z-w)) \, dt= \int_{0}^{1} f(w)\delta'(t) \, dt = \int _{\delta}f(w) \, d\xi   
+$$
+Sooooo
+$$
+\left| \frac{F(z)-F(w)}{z-w}-f(w) \right| =\frac{1}{\left| z-w \right| } \left| F(z)-F(w)-f(w)(z-w) \right| 
+$$
+$$
+= \frac{1}{\left| z-w \right| } \left| \int _{\delta}f(\xi-f(w)) \, d\xi  \right| 
+$$
+Which by the [[Estimate Lemma|ML inequality]]
+$$
+\leq \frac{\left| z-w \right|}{\left| z-w \right| } \sup_{\xi \in  \delta} \left| f(\xi)-f(w) \right| 
+$$
+Which as $z\to w$ tends to $0$ by continuity yowzah
 
 
 
