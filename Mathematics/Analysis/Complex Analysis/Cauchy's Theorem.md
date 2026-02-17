@@ -11,3 +11,9 @@ Is holomorphic on $U\setminus \left\{  w \right\}$ and continuous at $z=w$
 ### Proof
 Trivial
 ## Lemma: Goursat's Lemma
+Let $f:U\to \mathbb{C}$ be holomorphic on an open set $U$, then for any triangular region $\triangle \subset U$ (inside and boundary), then we have
+$$
+\int _{\partial\triangle}f(z) \, dz =0
+$$
+### Proof
+Let $\triangle$ be a triangular region on which $f$ is holomorphic. Divide $\triangle$ into smaller triangles
