@@ -95,8 +95,9 @@ $$
 $$
 # Complex Case
 ## Theorem
-Let $f:D\to \mathbb{C}$ be continuous on a [[Domains|domain]] $D$ if $\int _{\gamma}f(z) \, dz=0$ for all closed contours in $D$
-then there exists a holomorphic antiderivative on $D$
+Let $f:D\to \mathbb{C}$ be continuous on a [[Domains|domain]] $D$ if $\int _{\gamma}f(z) \, dz=0$ for all closed contours in $D$ then there exists a holomorphic antiderivative on $D$
+### Proof
+We fix $a\in D$, and think about a point $z\in D$
 
 
 
