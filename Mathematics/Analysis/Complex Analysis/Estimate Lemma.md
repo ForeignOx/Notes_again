@@ -40,3 +40,12 @@ So by the Estimate Lemma,
 $$
 \left| \int _{\gamma}f(z) \, dz  \right| \leq \int _{\gamma}\left| f(z) \right|  \, d\left| z \right| \leq M\int _{\gamma} \, d\left| z \right| =ML  
 $$
+## Example
+Let $\gamma:\left[ 0,\frac{\pi}{2} \right]\to \mathbb{C}$ be $\gamma(\theta)=2e^{ i\theta }$, then
+$$
+L(\gamma)=\int_{0}^{\frac{\pi}{2}} \left| \gamma'(\theta) \right|  \, d\theta = \int_{0}^{\frac{\pi}{2}} \left| 2e^{ i\theta } \right|  \, d\theta=\pi  
+$$
+So
+$$
+\left| \int _{\gamma} \frac{z+4}{z^{3}-1} \, dz  \right| \leq \pi \sup_{z\in \gamma}\left|  \frac{z+4}{z^{3}-1} \right| \leq \frac{6\pi}{7}
+$$
