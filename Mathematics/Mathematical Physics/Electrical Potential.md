@@ -40,7 +40,33 @@ Consider the [[Line Integrals|contour integral]] of the [[electric fields|electr
 $$
 \oint_{C}\underline{E}\cdot ~d \underline{\ell}=0 =\int _{S}\underline{\nabla} \times \underline{E}  \, d\underline{S}
 $$
-Since
+Since $\oint_{C}\underline{E}~d \underline{\ell}=0$, then
+$$
+\oint_{C}\underline{E}\cdot~d \underline{\ell}=\oint_{C_{1}}\underline{E}\cdot~d \underline{\ell}+\oint_{C_{2}}\underline{E}\cdot ~d \underline{\ell}
+$$
+$$
+\implies \oint_{C_{1}}\underline{E}\cdot~d \underline{\ell}=- \oint_{C_{2}} \underline{E}\cdot~d \underline{\ell}
+$$
+Taking $C_{2}'$ to be the opposite direction to $C_{2}$, then
+$$
+\oint_{C_{1}}\underline{E}\cdot~d \underline{\ell}=\oint_{C_{2}} \underline{E}\cdot ~d \underline{\ell}
+$$
+So we get the following properties:
+- $\oint_{C}\underline{E}\cdot d \underline{\ell}=0$ for any closed loop $C$
+- $\int _{\underline{a}}^{\underline{b}}\underline{E}\cdot \, d \underline{\ell}$ is independent of path taken
+- $\underline{E}=-\underline{\nabla }\phi$, then the second Maxwell equation is trivially satisfied:
+$$
+\underline{\nabla} \times \underline{E} =-\underline{\nabla} \times \underline{\nabla }\phi=0  
+$$
+    Which is known a Hodge de Rham decomposition, or Helmoltz decomposition. Also [[Gauss' Law|Gauss' law]] becomes:
+$$
+\nabla^{2}\phi=-\frac{\rho}{\varepsilon_{0}}
+$$
+One physically relevant quantity is $\underline{E}$
+$\phi(\underline{x})\to \phi(\underline{x})+C$ give the same $\underline{E}$, this is a baby example of gauge invariance. We can fix $C$ by demanding that $\phi(\underline{x})$
+
+
+
 
 ## More than one charge
 In principle we can calculate the electric potential due to any spatial distribution of charges by viewing the charge distribution as a collection of point charges, calculating $V$ at $P$ due to each point charge and adding them as scalars
