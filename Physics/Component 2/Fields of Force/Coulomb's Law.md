@@ -9,8 +9,25 @@ $$
 $$
 For a sphere $d \underline{S}=\underline{e}_{r}r^{2}\sin\theta d\theta d\varphi$ in [[Curvilinear Coordinates|spherical coordinates]], soo
 $$
-E(r)\int _{S_{r}}\underline{e}\cdot \underline{e}_{r} \, dx 
+        E(r)\int _{S_{r}}\underline{e}_{r}\cdot \underline{e}_{r}r^{2}\sin\theta \, d\theta d\varphi =E(r)r^{2}\int _{0}^{\pi}\int _{0}^{2\pi} \sin\theta \, d\theta  \, d\varphi = 4\pi E(r)r^{2} 
 $$
+So rearranging,
+$$
+E(r)=\frac{Q}{4\pi\varepsilon_{0}r^{2}}
+$$
+The electric field is thus
+$$
+\underline{E}(\underline{r})=\frac{Q}{4\pi\varepsilon_{0}} \frac{1}{\left| \underline{r} \right| ^{2}}\underline{e}_{r}=\frac{Q}{4\pi\varepsilon_{0}} \frac{\underline{r}}{\left| \underline{r} \right| ^{3}}
+$$
+If $Q$ was not sitting at the origin, but instead at some $\underline{r}_{0}$, then we can simply shift by $\underline{r}_{0}$ to find 
+$$
+\underline{E}(\underline{r})=\frac{Q}{4\pi\varepsilon_{0}} \frac{\underline{r}-\underline{r}_{0}}{\left| \underline{r}-\underline{r}_{0} \right| ^{3}}
+$$
+What we've actually shown that if $\rho(\underline{r})=Q\delta(\underline{r}-\underline{r}_{0})$, we actually solve
+$$
+\underline{\nabla} \cdot \underline{E} =\frac{\rho}{\varepsilon_{0}}=\frac{Q}{\varepsilon_{0}}\delta(\underline{r}-\underline{r}_{0})
+$$
+
 
 The force between point [[Electric Charge|charges]], $Q_{1}$ and $Q_{2}$, in a vacuum and separated by a distance $r$ is given by:
 $$
