@@ -66,8 +66,32 @@ $$
 $$
 Yayy
 ___
-Surface charge densidy
-C
+Surface charge density
+Consider if we have 
+$$
+\rho(\underline{r}_{0})=\int _{S} \sigma(s_{1},s_{2})\delta(\underline{r}_{0}-\underline{x}(s_{1},s_{2})) \, dS  
+$$
+Where
+$$
+dS=\left| \frac{ \partial \underline{x} }{ \partial s_{1} } \times \frac{ \partial \underline{x} }{ \partial s_{2} }  \right| ds_{1}ds_{2}
+$$
+Soo
+$$
+\phi(\underline{r})=\frac{1}{4\pi\varepsilon_{0}}\int _{\mathbb{R}^{3}} \frac{\rho(r_{0})}{\left| \underline{r}-\underline{r}_{0} \right| } \, d^{3} \underline{r}_{0} 
+$$
+$$
+= \frac{1}{4\pi\varepsilon_{0}}\int _{\mathbb{R}^{3}} \frac{1}{\left| \underline{r}-\underline{r}_{0} \right| } \left( \int _{S}\sigma(s_{1},s_{2})\delta(\underline{r}_{0}-\underline{x}(s_{1},s_{2})) \, dS  \right) \, d^{3} \underline{r}_{0} 
+$$
+$$
+= \frac{1}{4\pi\varepsilon_{0}}\int _{S} \sigma(s_{1},s_{2})\int _{\mathbb{R}^{3}} \frac{\delta(\underline{r}_{0}-\underline{x}(s_{1},s_{2}))}{\left| \underline{r}-\underline{r}_{0} \right| } \, d^{3} \underline{r}_{0}  \, dS 
+$$
+$$
+= \frac{1}{4\pi\varepsilon_{0}}\int _{S} \frac{\sigma(s_{1},s_{2})}{\left| \underline{r}-\underline{x}(s_{1},s_{2}) \right| } \, dS 
+$$
+
+
+
+
 
 
 
