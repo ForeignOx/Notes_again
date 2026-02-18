@@ -140,3 +140,17 @@ u_{x x}+u_{yy}=0 & x^{2}+y^{2}<1 \\
 u(\cos\theta,\sin\theta)-g(\theta) & \theta \in (-\pi,\pi]
 \end{cases}
 $$
+## Interesting Feature
+We know that electric field satisfies the Laplace equation
+$$
+\nabla^{2}(\phi)=\nabla^{2}\left( \frac{Q}{4\pi\varepsilon_{0}}  \frac{1}{\left| \underline{r}-\underline{r}_{0} \right| }\right)=-\frac{Q}{\varepsilon_{0}}\delta(\underline{r}-\underline{r}_{0})
+$$
+Which tells us:
+$$
+\nabla^{2}\left( -\frac{1}{4\pi \left| \underline{r}-\underline{r}_{0} \right| } \right)=\delta(\underline{r}-\underline{r}_{0})
+$$
+So we found a function $G(\underline{r};\underline{r}_{0})=-\frac{1}{4\pi} \frac{1}{\left| \underline{r}-\underline{r}_{0} \right|}$ satisfying
+$$
+\nabla^{2}G(\underline{r},\underline{r}_{0})=\delta(\underline{r},\underline{r}_{0})
+$$
+I.e. $G(\underline{r},\underline{r}_{0})$ is the Green's function for the Laplacian in 3D
