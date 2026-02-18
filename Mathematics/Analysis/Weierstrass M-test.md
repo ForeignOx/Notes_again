@@ -1,12 +1,12 @@
 ## Theorem
-If we have the [[Series|series]] $\sum_{k=0}^{\infty}f_{k}(x)$ on an [[Intervals|interval]] or [[Domains|domain]] $D$, (where $f_{k}(x)$ is a [[Sequences of Functions|sequence of functions]])
-Assuming $f_{k}(x)$ are all [[Boundedness|bounded]]: $\left| f_{k}(x) \right|\leq M_{k}~\forall x\in D$ and $\sum_{k=0}^{\infty} M_{k}$ [[Convergence|converges]], then $\sum_{k=0}^{\infty} f_{k}(x)$ [[Uniform Convergence|converges uniformly]] on $D$
+If we have the [[Series|series]] $\sum_{k=0}^{\infty}f_{k}(z)$ on an [[Intervals|interval]] or [[Domains|domain]] $D$, (where $f_{k}(z)$ is a [[Sequences of Functions|sequence of functions]])
+Assuming $f_{k}(z)$ are all [[Boundedness|bounded]]: $\left| f_{k}(z) \right|\leq M_{k}~\forall z\in D$ and $\sum_{k=0}^{\infty} M_{k}$ [[Convergence|converges]], then $\sum_{k=0}^{\infty} f_{k}(z)$ [[Uniform Convergence|converges uniformly]] on $D$
 ## Proof
 By comparison, 
 $$
-\sum_{k=0}^{\infty} \left| f_{k}(x) \right|  \leq \sum_{k=0}^{\infty} M_{k} <\infty
+\sum_{k=0}^{\infty} \left| f_{k}(z) \right|  \leq \sum_{k=0}^{\infty} M_{k} <\infty
 $$
-So $\sum_{k=0}^{\infty} f_{k}(x)$ [[Absolute Convergence|converges absolutely]] to a [[Functions|function]] $f(x)$. We need to show this is uniform
+So $\sum_{k=0}^{\infty} f_{k}(z)$ [[Absolute Convergence|converges absolutely]] to a [[Functions|function]] $f(z)$. We need to show this is uniform
 Set 
 $$
 L=\sum_{k=0}^{\infty} M_{k}=\lim_{ n \to \infty } \sum_{ k=0} ^{ n}  M_{k}
@@ -17,15 +17,15 @@ $$
 $$
 So we will show
 $$
-\left| f(x)-\sum_{k=0}^{n}f_{k}(x) \right| <\varepsilon \forall n\geq N
+\left| f(z)-\sum_{k=0}^{n}f_{k}(z) \right| <\varepsilon \forall n\geq N
 $$
 Indeed:
 $$
-\left| f(x)-\sum_{k=0}^{n}f_{k}(x) \right| =\left| \sum_{k=n+1}^{\infty}f_{k}(x) \right| \leq \sum_{k=n+1}^{\infty}\left| f_{k}(x) \right| \leq \sum_{k=n+1}^{\infty}M_{k}<\varepsilon
+\left| f(z)-\sum_{k=0}^{n}f_{k}(z) \right| =\left| \sum_{k=n+1}^{\infty}f_{k}(z) \right| \leq \sum_{k=n+1}^{\infty}\left| f_{k}(z) \right| \leq \sum_{k=n+1}^{\infty}M_{k}<\varepsilon
 $$
 So we have uniform convergence
 ___
-This is useful to show [[Continuity|continuity]] of $\sum_{k=0}^{\infty} f_{k}(x)$, w use $M$-test on compact subsets of $I$ 
+This is useful to show [[Continuity|continuity]] of $\sum_{k=0}^{\infty} f_{k}(z)$, we use $M$-test on compact subsets of $I$ 
 ## Criteria for Lack of Uniform Convergence of a Series
 Let $\left\{ f_{n} \right\}_{n\in\mathbb{N}}:D\to \mathbb{C}$ be a given sequence of functions. If $\left\{ f_{n} \right\}_{n\in\mathbb{N}}$ doesn't converge uniformly to $f(z)=0$ on $D$, then the sequence $S_{N}(z)=\sum_{n=1}^{N}f_{n}(z)$ does not converge uniforly on $D$
 ### Proof
@@ -37,6 +37,15 @@ Where we define $S_{0}(z)=0$. If $\left\{ S_{N} \right\}_{N\in\mathbb{N}}$ conve
 $$
 0\leq \sup_{z\in  D}\left| f_{n}(z) \right| \leq \sup_{z\in  D}\left| S_{n}-S(z)+S(z)-S_{n-1}(z) \right| 
 $$
+$$
+ \leq \sup_{z\in  D}(\left| S_{n}(z)-S(z) \right| +\left| S_{n-1}(z)-S(z) \right| )
+$$
+$$
+ \leq \sup_{z\in  D}\left| S_{n}(z)-S(z) \right| +\sup_{z\in  D}\left| S_{n-1}(z)-S(z) \right| \to 0
+$$
+As $n\to\infty$
+The squeeze theorem implies that $\lim_{ n \to \infty }\sup_{z\in D}\left| f_{n}(z) \right|=0$ and consequently $\left\{ f_{n} \right\}$ converges uniformly to $f(z)=0$ on $D$
+We conclude that if $\left\{ f_{n} \right\}_{n\in\mathbb{N}}$ doesn't converge uniformly to $f(z)=0$ on $D$, so the series can't converge uniformly
 ## Example
 Show that 
 $$
@@ -47,3 +56,4 @@ Denoting $f_{n}(z)= \frac{\left| 2z \right| ^{3n}}{3^{2n}n^{2}}$ we find that on
 $$
 \left| f_{n}(z) \right| \leq \frac{2^{3n}}{3^{2n}n^{2}}=\left( \frac{8}{9} \right)^{n} \frac{1}{n^{2}}\leq \left( \frac{8}{9} \right)^{n}
 $$
+Since $\sum_{n=1}^{\infty}\left( \frac{8}{9} \right)^{n}<\infty$ we conclude the result from Weierstrass' M-test
