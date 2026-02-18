@@ -1,4 +1,12 @@
-
+While [[uniform convergence|uniform convergence]] seems attractive, it is fairly restrictive and is usually more than we need to pass topological notions from a [[sequences of functions|sequence of functions]] to the [[limit|limit]]
+## Example
+We have seen that the sequence of functions $f_{n}(z)=z^{n}$ converges pointwise on $\mathbb{D}$ to the function $f(z)=0$. While the limit function is [[Continuity|continuous]], the convergence to it is not uniform
+To show this we can simply approach the "problematic point" $z=1$ in our domain. Indeed, by considering the sequence $z_{n}=\left( \frac{1}{2} \right)^{\frac{1}{n}}\in \mathbb{D}$, we find that
+$$
+\left| f_{n}(z_{n})-f(z_{n}) \right| =\frac{1}{2}
+$$
+Which implies, according to the [[Weierstrass M-test|Weierstrass M-test]] that $f$ doesn't converge uniformly to $f$ on $\mathbb{D}$
+The main reason
 ## Definition
 Let $D\subseteq \mathbb{C}$ be a given set and let $\left\{ f_{n} \right\}_{n\in\mathbb{N}}:D\to \mathbb{C}$ be a  sequence of functions. We say that $\left\{ f_{n} \right\}_{n\in\mathbb{N}}$ converges locally uniformly to the limit function $f$ on $D$, if for every $z_{0}\in D$ there exists an [[Open Sets|open set]] $U_{z_{0}}\subset \mathbb{C}$ (that can depend on $z_{0}$) which contains $z_{0}$ such that $\left\{ f_{n} \right\}_{n\in\mathbb{N}}$ converges uniformly to $f$ on $U_{z_{0}}\cap D$
 ## Remark
