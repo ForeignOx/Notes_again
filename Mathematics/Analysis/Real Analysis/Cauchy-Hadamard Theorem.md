@@ -1,10 +1,18 @@
 ## Theorem
-Given a [[Power Series|power series]] $\sum_{k=0}^{\infty} a_{k}(z-c)^{k}$, there exists $R\geq 0$ known as the radius of convergence (possibly $\infty$) such that the series [[Convergence|converges]] [[Absolute Convergence|absolutely]] for $\left| z \right|<R$, and diveres for $\left| z\right|>R$
-In fact, we can use the [[Limsup and Liminf|limsup]] to get a value for $R$:
+For any [[Sequences|sequence]] of [[complex numbers|complex numbers]] $\left\{ a_{n} \right\}_{n\in\mathbb{N}}$ there exist $R\in \mathbb{R}_{\geq 0}\cup \left\{ \infty \right\}$ such that the [[power series|power series]] $S(z)=\sum_{n=0}^{\infty}a_{n}(z-c)^{n}$ satisfies
+- If $R=0$, then $S(z)$ converges only for $z=c$, in this case $S(c)=a_{0}$
+- If $R>0$, then $S(z)$ [[Absolute Convergence|converges absolutely]] for all $\left| z-c \right|<R$, when $R=\infty$, this condition holds for any $z$
+- If $0<R<\infty$, then $S(z)$ diverges for $\left| z-c \right|>R$
+Here, $R$ is called the radius of convergence of our power series and $B_{R}(c)$ is called the disc of convergence
+## Remark
+We do not know what happens on the boundary of the disc of convergence $\left| z-c \right|=R$, the series can converge or diverge. We need to test it on a case by case basis
+## Formula for $R$
+The radius of convergece can be found using the formula
 $$
-c=\limsup_{ k \to \infty } \sqrt[k]{\left| a_{k} \right|   } 
+R=\frac{1}{\limsup_{ n \to \infty } \sqrt[n]{ \left| a_{n} \right|  } }
 $$
-Then $R=\frac{1}{c}$, (if $c=0$, then $R=\infty$, and if $c=\infty$, then $R=0$) 
+Where we can replace $\limsup$ with $\lim$ when the limit exits
+
 ### Proof
 We apply the [[Root Test|root test]] to our series $\sum_{k=0}^{\infty} a_{k} x^{k}$:
 $$

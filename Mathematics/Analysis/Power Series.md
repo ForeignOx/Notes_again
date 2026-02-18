@@ -4,6 +4,14 @@ $$
 S(z):=\sum_{n=0}^{\infty}a_{n}(z-c)^{n}
 $$
 Where $\left\{ a_{n} \right\}_{n\in\mathbb{N}}$ is a sequence of complex numbers and $c\in \mathbb{C}$
+## Theorem
+A power series $\sum_{n=0}^{\infty}a_{n}(z-c)^{n}$ with radius of convergence $0<R\leq \infty$ converges uniformly on any ball $B_{r}(c)$ with $0<r<R$. This implies that the power series is [[Locally Uniform Convergence|locally uniform convergent]] on its disc of convergence
+### Proof
+We start by noticing that the disc of convergence is an open ball, so we can use the simplified version of local uniform convergence
+
+
+
+
 ## Formal Derivative & Antiderivative
 The formal derivative of the series is, and is derived by differentiating the polynomial termwise:
 $$
