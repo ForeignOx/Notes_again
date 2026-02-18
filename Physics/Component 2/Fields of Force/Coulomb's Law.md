@@ -1,3 +1,17 @@
+If we consider a point charge $Q$ sitting at the origin. Symmetry suggests that $\underline{E}(\underline{r})=E(\left| \underline{r} \right|)\underline{e}_{r}$, and we denote $r=\left| \underline{r} \right|$,
+So we need to fix $E(\left| \underline{r} \right|)$. Note that $\underline{\nabla} \times \underline{E}=0$ by Maxwell's equations, so by [[Gauss' Law|Gauss' law]], considering a sphere with surface $S_{r}$
+$$
+\int _{S_{r}}\underline{E}\cdot \, d \underline{S} =\frac{Q_{V}}{\varepsilon_{0}}=\frac{Q}{\varepsilon_{0}}
+$$
+Computing the integral
+$$
+\int _{S_{r}}E(r)\underline{e}_{r}\cdot \, d \underline{S}=E(r)\int _{S_{r}}\underline{e}_{r}\cdot \, d \underline{S}  
+$$
+For a sphere $d \underline{S}=\underline{e}_{r}r^{2}\sin\theta d\theta d\varphi$ in [[Curvilinear Coordinates|spherical coordinates]], soo
+$$
+E(r)\int _{S_{r}}\underline{e}\cdot \underline{e}_{r} \, dx 
+$$
+
 The force between point [[Electric Charge|charges]], $Q_{1}$ and $Q_{2}$, in a vacuum and separated by a distance $r$ is given by:
 $$
 F=\frac{Q_{1}Q_{2}}{4\pi\epsilon_{0}r^{2}}
