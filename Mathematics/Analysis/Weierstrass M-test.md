@@ -29,7 +29,14 @@ This is useful to show [[Continuity|continuity]] of $\sum_{k=0}^{\infty} f_{k}(x
 ## Criteria for Lack of Uniform Convergence of a Series
 Let $\left\{ f_{n} \right\}_{n\in\mathbb{N}}:D\to \mathbb{C}$ be a given sequence of functions. If $\left\{ f_{n} \right\}_{n\in\mathbb{N}}$ doesn't converge uniformly to $f(z)=0$ on $D$, then the sequence $S_{N}(z)=\sum_{n=1}^{N}f_{n}(z)$ does not converge uniforly on $D$
 ### Proof
-Yeh
+We have that
+$$
+f_{n}(z)=S_{n}(z)-S_{n-1}(z)
+$$
+Where we define $S_{0}(z)=0$. If $\left\{ S_{N} \right\}_{N\in\mathbb{N}}$ converge uniformly on $D$ to $S$, then
+$$
+0\leq \sup_{z\in  D}\left| f_{n}(z) \right| \leq \sup_{z\in  D}\left| S_{n}-S(z)+S(z)-S_{n-1}(z) \right| 
+$$
 ## Example
 Show that 
 $$

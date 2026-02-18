@@ -1,4 +1,4 @@
-To prove a vesion of Cauchy's theorem, Goursat observed:
+ To prove a vesion of Cauchy's theorem, Goursat observed:
 ## Lemma: Continuity of the Difference Quotient Function
 Suppose [[Complex Functions|$f:U\to \mathbb{C}$]] is [[Holomorphicity|holomorphic]] on an [[Open Sets|open set]]. Then the difference quotient function $g:U\to \mathbb{C}$ given (for any $w\in U$):
 $$

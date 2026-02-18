@@ -139,8 +139,6 @@ $$
 \lim_{ n \to \infty } \sup_{z\in  D} \left| f_{n}(z)-f(z) \right| =0
 $$
 Which is the desired result.
-
-
 ## Remark
 In many cases we have that $n_{0}=1$ in the conditions for the above lemma. A simpleer version of the second  part of the lemma is:
 If there exists $c>0$ and a sequence $\left\{ z_{n} \right\}_{n\in\mathbb{N}}\subset D$ such that $\forall n\in\mathbb{N}$
@@ -173,4 +171,4 @@ $$
 \left| f_{n}(z_{n})-e^{ z_{n} } \right| = \frac{\left| z_{n} \right| }{n}=1
 $$
 Which shows that the convergence is not uniform according to the sequence part of the above lemma
-By choosing $s_{n}=1$
+By choosing $s_{n}=1$ or the above remark
