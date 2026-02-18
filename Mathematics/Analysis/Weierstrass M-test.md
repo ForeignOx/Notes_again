@@ -57,3 +57,17 @@ $$
 \left| f_{n}(z) \right| \leq \frac{2^{3n}}{3^{2n}n^{2}}=\left( \frac{8}{9} \right)^{n} \frac{1}{n^{2}}\leq \left( \frac{8}{9} \right)^{n}
 $$
 Since $\sum_{n=1}^{\infty}\left( \frac{8}{9} \right)^{n}<\infty$ we conclude the result from Weierstrass' M-test
+## Theorem: Version for [[Locally Uniform Convergence|Local Uniform Convergence]]
+Let $\left\{  f_{n} \right\}_{n\in\mathbb{N}}:D\to \mathbb{C}$ be a given sequence of functions. assume that for any $z_{0}\in D$, three exists an open set $U_{z_{0}}$, a sequence of non-negative real numbers $\left\{ M_{n}(U_{z_{0}}) \right\}_{n\in\mathbb{N}}$ and $n_{0}(U_{z_{0}})\in \mathbb{N}$ that may depend on $U_{z_{0}}$ (but not on $z\in U_{z_{0}}$) such that for all $n\geq n_{0}(U_{z_{0}})$:
+$$
+\left| f_{n}(z) \right| \leq M_{n}(U_{z_{0}})~\forall z\in  U_{z_{0}}\cap D
+$$
+and
+$$
+\sum_{n=n_{0}}^{\infty}M_{n}(U_{z_{0}})<\infty
+$$
+Then $S_{N}(z)=\sum_{n=1}^{N}f_{n}(z)$ converges locally uniformly on $D$ to some limit function $s:D\to \mathbb{C}$ which we denote by
+$$
+S(z)=\sum_{n=1}^{\infty}f_{n}(z)
+$$
+In particular, if all the functions $f_{n}(z)$ are continuous on $D$, then $S(z)$ is also continuous on $D$

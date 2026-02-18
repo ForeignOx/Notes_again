@@ -49,4 +49,9 @@ $$
     Then the sequence of functions $\left\{ f_{n} \right\}_{n\in\mathbb{N}}$ does not converge locally uniformly to $f$ on $D$
 ## Remark
 Note the difference in the second statemtnt and that for uniform convergence. Here we want $\left\{ z_{n} \right\}_{n\in\mathbb{N}}$ to not only be in $D$, but to converge to a point $z_{0}$ in the interior of $D$
-This guarantees that we can find $\varepsilon>0$ and $n_{1}\in \mathbb{N}$ such that the open ball $B_{\varepsilon}(z_{0})$ contains $z_{0}$ and is contained in $D$, we also 
+This guarantees that we can find $\varepsilon>0$ and $n_{1}\in \mathbb{N}$ such that the open ball $B_{\varepsilon}(z_{0})$ contains $z_{0}$ and is contained in $D$, will also contain $z_{n}$ for every $n\geq n_{1}$. Consequently we see that for any $n>\max(n_{0},n_{1})$,
+$$
+\left| f_{n}(z_{n})-f(z_{n}) \right| \geq s_{n}~\forall z\in  B_{\varepsilon}(z_{0})
+$$
+which is enough to show the lack of uniform convergence in $B_{\varepsilon}(z_{0})=B_{\varepsilon}(z_{0})\cap D$
+We conclude that the convergence on $D$ can't be locally uniform
