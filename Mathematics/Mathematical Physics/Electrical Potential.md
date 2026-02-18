@@ -26,6 +26,22 @@ And since the potential is the work done per unit charge,
 $$
 V=\frac{Q}{4\pi\epsilon_{0}r}
 $$
+___
+Alternate approach:
+For a static electric field, by Maxwell's equations, we have
+$$
+\underline{\nabla} \cdot \underline{ E} =\frac{\rho}{\varepsilon_{0}}
+$$
+$$
+ \underline{\nabla} \times \underline{E} =0
+$$
+And we consider travelling on a contour $C$ around a surface $S$, i.e. $C=\partial $
+Consider the [[Line Integrals|contour integral]] of the [[electric fields|electric field]], so by [[Stokes' Theorem|stokes' theorem]]:
+$$
+\oint_{C}\underline{E}\cdot ~d \underline{\ell}=0 =\int _{S}\underline{\nabla} \times \underline{E}  \, d\underline{S}
+$$
+Since
+
 ## More than one charge
 In principle we can calculate the electric potential due to any spatial distribution of charges by viewing the charge distribution as a collection of point charges, calculating $V$ at $P$ due to each point charge and adding them as scalars
 
