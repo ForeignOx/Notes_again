@@ -125,4 +125,4 @@ $$
 For $z\in B_{R}(c)$
 ___
 The amazing feature of holomorphicity is that the converse to the above in holds in nice enough domains. That is, if $f$ is holomorphic in a simply connected domain $D$, then for any $z_{0}\in D$, we can find a power series representation for $f(z)$ around $z_{0}$ with some radius of convergence $R>0$
-What is even more
+What is even more impressive is that the radius of convergence is intimately connected the holomorphicity of $f$ in the following geometric way: $R$ is the largest positive number such that $f$ is holomorphic in $B_{R}(z_{0})$
