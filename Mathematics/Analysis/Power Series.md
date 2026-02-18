@@ -7,19 +7,32 @@ Where $\left\{ a_{n} \right\}_{n\in\mathbb{N}}$ is a sequence of complex numbers
 ## Theorem
 A power series $\sum_{n=0}^{\infty}a_{n}(z-c)^{n}$ with radius of convergence $0<R\leq \infty$ converges uniformly on any ball $B_{r}(c)$ with $0<r<R$. This implies that the power series is [[Locally Uniform Convergence|locally uniform convergent]] on its disc of convergence
 ### Proof
-We start by noticing that the disc of convergence is an open ball, so we can use the simplified version of local uniform convergence
-
-
-
-
-## Formal Derivative & Antiderivative
-The formal derivative of the series is, and is derived by differentiating the polynomial termwise:
+We start by noticing that the disc of convergence is an open ball, so we can use the simplified version of local uniform convergence. Since for every $z_{0}\in B_{R}(c)$ we can find $0<r<R$ such that $z_{0}\in B_{r}(c)\subset B_{R}(c)$, we conclude that to how the local uniform convergence in $B_{R}(c)$, we only need to show the uniform convergence in $B_{r}(c)$ for any $0<r<R$
+On $B_{r}(c)$, we have that
 $$
-\sum_{k=1}^{\infty} ka_{k}x^{k-1}=\frac{1}{x}\sum_{k=1}^{\infty} ka_{k}x^{k}  
+\left| a_{n}(z-c)^{n} \right| \leq \left| a_{n} \right| \left| z-c \right| ^{n}\leq \left| a_{n} \right| r^{n}
+$$
+Since $\sum_{n=0}^{\infty}a_{n}(z-c)^{n}$ converges absolutely in $B_{R}(c)$, we find that as $z_{0}=c+r\in B_{R}(c)$, since $0<r<R$
+$$
+\sum_{n=0}^{\infty}\left| a_{n} \right| r^{n}=\sum_{n=1}^{\infty}\left| a_{n} \right| \left| z_{0}-c \right| ^{n}<\infty
+$$
+Using [[Weierstrass M-test|Weierstass' M-test]] on $B_{r}(c)$ with $M_{n}(B_{r}(c))=\left| a_{n} \right|r^{n}$ gives us the desired result
+## Example
+Show that the power series $\sum_{n=0}^{\infty} \frac{z^{n}}{n!}$ converges locally uniformly on $\mathbb{C}$
+We will show that the radius of converges $R=\infty$ and conclude the result from the theorem.
+Indeed, the expression is a power series with $a_{n}=\frac{1}{n!}$. We have that
+$$
+\frac{\left| a_{n} \right|}{\left| a_{n+1} \right| }=n+1\to \infty \text{ as }n\to\infty
+$$
+Which implies $R=\infty$ (this power actually converges to [[Exponential Functions|$e^{ z }$]])
+## Formal Derivative & Antiderivative
+Let $\sum_{n=0}^{\infty}a_{n}(z-c)^{n}$ be a power series with radius of convergence $0<R\leq \infty$, then the formal derivative obtained by differentiating term-wise:
+$$
+\sum_{k=1}^{\infty} ka_{k}(z-c)^{k-1}=\frac{1}{z-c}\sum_{k=1}^{\infty} ka_{k}(z-c)^{k}  
 $$
 The formal antiderivative is done by taking the antiderivative termwise:
 $$
-\sum_{k=1}^{\infty} \frac{1}{k+1}a_{k}x^{k+1}
+\sum_{k=1}^{\infty} \frac{1}{k+1}a_{k}(z-c)^{k+1}
 $$
 These have the same [[Cauchy-Hadamard Theorem|radius of convergence]]
 ### Proof
