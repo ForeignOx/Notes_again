@@ -51,49 +51,6 @@ Fixing $C=0$ so that $\phi(\left| \underline{r} \right|\to \infty)=0$, then
 $$
 \phi(\underline{r})= \frac{Q}{4\pi\varepsilon_{0}} \frac{1}{\left| \underline{r}-\underline{r}_{0} \right| }
 $$
-## General Solution
-In general we have to solve
-$$
-\nabla^{2}\phi(\underline{r})=-\frac{1}{\varepsilon_{0}}\rho(\underline{r})
-$$
-We know that $\nabla^{2} G(\underline{r},\underline{r}_{0})=\delta(\underline{r}-\underline{r}_{0})$ for the Green's function
-$$
-G(\underline{r},\underline{r}_{0})=-\frac{1}{4\pi \left| \underline{r}-\underline{r}_{0} \right| }
-$$
-So one solution is thus
-$$
-\phi(\underline{r})=-\frac{1}{\varepsilon_{0}}\int _{\mathbb{R}^{3}}G(\underline{r},\underline{r}_{0})\rho(\underline{r}_{0}) \, d^{3} \underline{x}_{0} 
-$$
-$$
-\implies \nabla^{2}\phi(\underline{r})=-\frac{1}{\varepsilon_{0}}\nabla^{2}\left( \int _{\mathbb{R}^{3}} G(\underline{r},\underline{r}_{0})\rho(\underline{r}_{0}) \, d^{3} \underline{x}_{0}  \right) 
-$$
-$$
-=-\frac{1}{\varepsilon_{0}}\int _{\mathbb{R}^{3}}\nabla^{2}G(\underline{r},\underline{r}_{0})\rho(\underline{r}_{0}) \, d^{3}\underline{x}_{0}
-$$
-$$
-= -\frac{1}{\varepsilon_{0}} \int _{\mathbb{R}^{3}} \delta(\underline{r}-\underline{r}_{0}) \rho(\underline{r}_{0}) \, d^{3}\underline{x}_{0}  
-$$
-$$
-= -\frac{1}{\varepsilon_{0}} \rho(\underline{r})
-$$
-One general solution is then
-$$
-\phi(\underline{r})=\frac{1}{4\pi\varepsilon_{0}}\int _{\mathbb{R}^{3}} \frac{\rho(\underline{r}_{0})}{\left| \underline{r}-\underline{r}_{0} \right| } \, d^{3} \underline{r}_{0} 
-$$
-The electric field for the general solution is then
-$$
-\underline{E}=-\underline{\nabla } \phi=-\frac{1}{4\pi\varepsilon_{0}} \underline{\nabla } \int _{\mathbb{R}^{3}} \frac{\rho(\underline{r}_{0})}{\left| \underline{r}-\underline{r}_{0} \right| } \, d^{3} \underline{r}_{0} 
-$$
-$$
-= -\frac{1}{4\pi\varepsilon_{0}}\int _{\mathbb{R}^{3}}\rho(\underline{r}_{0}) \underline{\nabla } \left( \frac{1}{\left| \underline{r}-\underline{r}_{0} \right| } \right) \, d^{3}\underline{r}_{0} 
-$$
-$$
-= \frac{1}{4\pi\varepsilon_{0}}\int _{\mathbb{R}^{3}}\rho(\underline{r}_{0}) \frac{\underline{r}-\underline{r}_{0}}{\left| \underline{r}-\underline{r}_{0} \right|^{3} } \, d^{3}\underline{r}_{0}  
-$$
-Which is the general solutio
-
-
-
 ## Definition
 The potential, $V$, at a point $P$ in an [[Electric Fields|electric field]] is the [[Work]] done by the field per unit [[Electric Charge|charge]] on a test charge as it goes from $P$ to infinity. The potential due to a point charge, $Q$ at distance $r$ from $Q$ is:
 $$
