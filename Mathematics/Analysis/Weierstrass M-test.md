@@ -76,4 +76,13 @@ Let $\left\{ f_{n} \right\}_{n\in\mathbb{N}}:D\to \mathbb{C}$ be a given sequenc
 ## Example
 Show that the series $\sum_{n=1}^{\infty} \frac{\left( z+\frac{1}{z} \right)^{n}}{n!}$ converges locally uniformly to a continuous function on $\mathbb{C}^{*}$
 We start by noticing that $\mathbb{C}^{*}$ is open, so we can use the simplified version of the local uniform convergence. It will be enough for us to show that for any $0<r<R<\infty$ the series converges uniformly on $A_{r,R}=\left\{ z\in\mathbb{C}:\middle|: r<\left| z \right|<R \right\}$ since for any $z_{0}\in \mathbb{C}^{*}$, we can find $r(z_{0})<R(z_{0})$ such that $z_{0}$ is in the open set $A_{r(z_{0}),R(z_{0})}$
-To show the uniform convergence on $A_{r,R}$, we will utilise the Weierstrass M-test. By doing this, we will also conclude the continuity of the limit function since
+To show the uniform convergence on $A_{r,R}$, we will utilise the Weierstrass M-test. By doing this, we will also conclude the continuity of the limit function since $\frac{\left( z+\frac{1}{z} \right)^{n}}{n!}$ is continuous on $\mathbb{C}^{*}$
+On $A_{r,R}$, we have that
+$$
+\left| \frac{\left( z+\frac{1}{z} \right)^{n}}{n!} \right| \leq \frac{\left( \left| z \right| +\frac{1}{\left| z \right| } \right)^{n}}{n!}\leq \frac{\left( R+\frac{1}{r} \right)^{n}}{n!}=M_{n}(r,R)
+$$
+Since
+$$
+\sum_{n=0}^{\infty}M_{n}(r,R)=\sum_{n=0}^{\infty} \frac{\left( R+\frac{1}{r} \right)^{n}}{n!}=e^{ R+\frac{1}{r} }<\infty
+$$
+We can use the Weierestrass M-test to conclude that $\sum_{n=1}^{\infty} \frac{\left( z+\frac{1}{z} \right)^{n}}{n!}$ converges uniformly on $A_{r,R}$
