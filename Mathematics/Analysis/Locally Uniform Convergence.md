@@ -31,4 +31,22 @@ The notion of local uniform convergence is enough to preserve continuity
 Let $\left\{ f_{n} \right\}_{n\in\mathbb{N}}:D\to \mathbb{C}$ be a sequence of continuous functions that converges locally uniformly to a limit function $f$ on $D$. Then $f:D\to \mathbb{C}$ is continuous on $D$
 ### Proof
 Let $z_{0}\in D$ be given, then there exists an open set $U_{z_{0}}\subseteq D$ such that $z_{0}\in U_{z_{0}}$ and $\left\{ f_{n} \right\}_{n\in\mathbb{N}}$ converges uniformly to $f$ on $U_{z_{0}}\cap D$
-This implies that $f$ is continuous on $U_{z_{0}}\cap D$ and in parti
+This implies that $f$ is continuous on $U_{z_{0}}\cap D$ and in particular, it is continuous at $z_{0}$
+Since $z_{0}$ was arbitrary, we conclude the continuity of $f$ on $D$
+___
+We can recast all our uniform convergence criteria to local uniform convergence:
+## Lemma: Criteria for Local Uniform Convergence and Lack Thereof for Sequences
+Let $\left\{ f_{n} \right\}_{n\in\mathbb{N}}:D\to \mathbb{C}$ be a sequence of functions converging pointwise toa  limit function $f$ on $D$
+- If for any $z_{0}\in D$, there exist an open set $U_{z_{0}}\subset D$ which contains $z_{0}$, a non-negative sequence of real numbers $\left\{ s_{n}(U_{z_{0}}) \right\}_{n\in\mathbb{N}}$ that converges to zero and $n_{0}(U_{z_{0}})\in \mathbb{N}$ that may depend on $U_{z_{0}}$ (but not on $z\in U_{z_{0}}$) such that for all $n\geq n_{0}(U_{z_{0}})$,
+$$
+\left| f_{n}(z)-f(z) \right| \leq s_{n}(U_{z_{0}})~\forall z\in  U_{z_{0}}\cap D
+$$
+    Then the sequence of functions $\left\{ f_{n} \right\}_{n\in\mathbb{N}}$ converges locally uniformly to $f$ on $D$
+- If there exist a non-negative sequence of real numbers $\left\{ s_{n} \right\}_{n\in\mathbb{N}}$ that converge to $c>0$, $n_{0}\in \mathbb{N}$ (independent of $z$), and a sequence $\left\{ z_{n} \right\}_{n\in\mathbb{N}}\subset D$ that converges to $z_{0}\in D^{0}$ such that for all $n\geq n_{0}$,
+$$
+\left| f_{n}(z_{n})-f(z_{n}) \right|\geq s_{n} 
+$$
+    Then the sequence of functions $\left\{ f_{n} \right\}_{n\in\mathbb{N}}$ does not converge locally uniformly to $f$ on $D$
+## Remark
+Note the difference in the second statemtnt and that for uniform convergence. Here we want $\left\{ z_{n} \right\}_{n\in\mathbb{N}}$ to not only be in $D$, but to converge to a point $z_{0}$ in the interior of $D$
+This guarantees that we can find $\varepsilon>0$ and $n_{1}\in \mathbb{N}$ such that the open ball $B_{\varepsilon}(z_{0})$ contains $z_{0}$ and is contained in $D$, we also 
