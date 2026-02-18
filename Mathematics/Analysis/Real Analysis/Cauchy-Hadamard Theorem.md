@@ -1,10 +1,11 @@
-Given a [[Power Series|power series]] $\sum_{k=0}^{\infty} a_{k}x^{k}$, there exists $R\geq 0$ known as the radius of convergence (possibly $\infty$) such that the series [[Convergence|converges]] [[Absolute Convergence|absolutely]] for $\left| x \right|<R$, and diveres for $\left| x \right|>R$
+## Theorem
+Given a [[Power Series|power series]] $\sum_{k=0}^{\infty} a_{k}(z-c)^{k}$, there exists $R\geq 0$ known as the radius of convergence (possibly $\infty$) such that the series [[Convergence|converges]] [[Absolute Convergence|absolutely]] for $\left| z \right|<R$, and diveres for $\left| z\right|>R$
 In fact, we can use the [[Limsup and Liminf|limsup]] to get a value for $R$:
 $$
 c=\limsup_{ k \to \infty } \sqrt[k]{\left| a_{k} \right|   } 
 $$
 Then $R=\frac{1}{c}$, (if $c=0$, then $R=\infty$, and if $c=\infty$, then $R=0$) 
-## Proof
+### Proof
 We apply the [[Root Test|root test]] to our series $\sum_{k=0}^{\infty} a_{k} x^{k}$:
 $$
 \limsup_{ k \to \infty } \sqrt[k]{ \left| a_{k}x^{k} \right|  }=\limsup_{ k \to \infty } \sqrt[k]{\left| a_{k} \right|   }\left| x \right| =\left| x \right| \limsup_{ k \to \infty }  \sqrt[k]{ \left| a_{k} \right|  }=c\left| x \right| 

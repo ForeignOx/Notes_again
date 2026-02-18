@@ -1,7 +1,9 @@
+## Definition
+A (complex) power series is an expression of the form
 $$
-\sum_{k=0}^{\infty} a_{k} x^{k}
+S(z):=\sum_{n=0}^{\infty}a_{n}(z-c)^{n}
 $$
-Can be thought of as an infinite polynomial, with $a_{k}\in\mathbb{R},x\in\mathbb{R}$. Can be a representation of other functions ($e^{ x },\sin x,\cos x$, etc)
+Where $\left\{ a_{n} \right\}_{n\in\mathbb{N}}$ is a sequence of complex numbers and $c\in \mathbb{C}$
 ## Formal Derivative & Antiderivative
 The formal derivative of the series is, and is derived by differentiating the polynomial termwise:
 $$
