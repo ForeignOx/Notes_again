@@ -30,11 +30,11 @@ Let $\sum_{n=0}^{\infty}a_{n}(z-c)^{n}$ be a power series with radius of converg
 $$
 \sum_{k=1}^{\infty} ka_{k}(z-c)^{k-1}=\frac{1}{z-c}\sum_{k=1}^{\infty} ka_{k}(z-c)^{k}  
 $$
-The formal antiderivative is done by taking the antiderivative termwise:
+Similarly the formal antiderivative is done by taking the antiderivative termwise:
 $$
 \sum_{k=1}^{\infty} \frac{1}{k+1}a_{k}(z-c)^{k+1}
 $$
-These have the same [[Cauchy-Hadamard Theorem|radius of convergence]]
+These have the same [[Cauchy-Hadamard Theorem|radius of convergence]] $R$
 ### Proof
 Consider the [[Root Test|root test]] for the formal derivative:
 $$
@@ -80,17 +80,13 @@ $$
 Since $r<R$
 ___
 Warning typically $\sum_{k=0}^{\infty} a_{k}x^{k}$ is not Lipschitz on $(-R,R)$
-### Power Series are Differentiable in Radius of Convergence
-A power series $\sum_{k=0}^{\infty} a_{k}x^{k=f(x)}$ is [[Differentiation|differentiable]] in $(-R,R)$ with termwise derivative 
+## Theorem: Power Series are [[Differentiation|Differentiable]] in Disc of Convergence
+Let $\sum_{n=0}^{\infty}a_{n}(z-c)^{n}$ be a power series in $\mathbb{C}$ with radius of convergence $0<R\leq \infty$, and let $f:B_{R}\to \mathbb{C}$ be the resulting limit function. Then $f$ is [[Holomorphicity|holomorphic]] on $B_{R}(c)$ with
 $$
-f'(x)=\sum_{k=1}^{\infty} ka_{k}x^{k-1} 
+f'(z)=\sum_{n=1}^{\infty}na_{n}(z-c)^{n-1}
 $$
-And
-$$
-f^{(n)}(0)=n!a_{n}
-$$
+For $z\in B_{R}(c)$
 #### Proof
-Part 1:
 Recall
 $$
 f(x)=f(c)+(x-c)\underbrace{ \sum_{k=1}^{\infty}a_{k}(x^{k-1}+x^{k-2}c+x^{k-3}c^{2}+\dots+xc^{k-2}+c^{k-1}) }_{ =f_{1}(x) }
@@ -111,18 +107,15 @@ $$
 \left| a_{k} \right| (r^{k-1}+r^{k-1}+\dots+r^{k-1})=\left| a_{k} \right| kr^{k-1}:=M_{k}
 $$
 Which is independent of $x$, so it must converge uniformly as the formal derivative of $f(x)$ evalueated at $x=r<R$, (so the radius of convergence is conserved)
-
-Part 2:
-Assuming part $\hspace{0pt}1$, we have
+## Corollary
+A power series $f$ of the form $\sum_{n=0}^{\infty}a_{n}(z-c)^{n}$ with positive radius of convergence $R$ can be differentiated infinitely many times in $B_{R}(c)$
+Moreover, for any $k\in \mathbb{N}$, the $k$th derivative of $f$ is given by the power series:
 $$
-f'(0)=\sum_{k=1}^{\infty} ka_{k}0^{k-1}=1\times a_{1}=a_{1} 
+f^{(k)}(z):=\sum_{n=k}^{\infty}n(n-1)\dots(n-k+1)a_{n}(z-c)^{n-k}=\sum_{n=k}^{\infty}k!{n \choose k }a_{n}(z-c)^{n-k}
 $$
+With $z\in B_{R}(c)$, consequently, 
 $$
-f''(0)=\sum_{k=2}^{\infty} k(k-1)a_{k}0^{k-2} =2(2-1)a_{2}=2!a_{2}
+f^{(k)}(c)=k!a_{k}
 $$
-$$
-\vdots
-$$
-$$
- f^{(n)}(0)=\sum_{k=n}^{\infty} k(k-1)\dots(k-n+1)a_{k}0^{k-n}=n!a_{n} 
-$$
+## Corollary: Power Series can be [[Integration|Integrated]] Term-Wise in their Disc of Convergence
+A power series $f$ of the form $\sum_{n=0}^{\infty}$
