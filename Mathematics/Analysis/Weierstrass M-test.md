@@ -71,3 +71,9 @@ $$
 S(z)=\sum_{n=1}^{\infty}f_{n}(z)
 $$
 In particular, if all the functions $f_{n}(z)$ are continuous on $D$, then $S(z)$ is also continuous on $D$
+## Theorem: Criteria for Lack of Local Uniform Convergence of a eries
+Let $\left\{ f_{n} \right\}_{n\in\mathbb{N}}:D\to \mathbb{C}$ be a given sequence of functions. If $\left\{ f_{n} \right\}_{n\in\mathbb{N}}$ doesn't converge locally uniformly to $f(z)=0$ on $D$, then the sequence $S_{N}(z)=\sum_{n=1}^{N}f_{n}(z)$ does not converge locally uniformly on $D$
+## Example
+Show that the series $\sum_{n=1}^{\infty} \frac{\left( z+\frac{1}{z} \right)^{n}}{n!}$ converges locally uniformly to a continuous function on $\mathbb{C}^{*}$
+We start by noticing that $\mathbb{C}^{*}$ is open, so we can use the simplified version of the local uniform convergence. It will be enough for us to show that for any $0<r<R<\infty$ the series converges uniformly on $A_{r,R}=\left\{ z\in\mathbb{C}:\middle|: r<\left| z \right|<R \right\}$ since for any $z_{0}\in \mathbb{C}^{*}$, we can find $r(z_{0})<R(z_{0})$ such that $z_{0}$ is in the open set $A_{r(z_{0}),R(z_{0})}$
+To show the uniform convergence on $A_{r,R}$, we will utilise the Weierstrass M-test. By doing this, we will also conclude the continuity of the limit function since
