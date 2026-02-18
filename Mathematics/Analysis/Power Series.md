@@ -118,4 +118,11 @@ $$
 f^{(k)}(c)=k!a_{k}
 $$
 ## Corollary: Power Series can be [[Integration|Integrated]] Term-Wise in their Disc of Convergence
-A power series $f$ of the form $\sum_{n=0}^{\infty}$
+A power series $f$ of the form $\sum_{n=0}^{\infty}a_{n}(z-c)^{n}$ with positive radius of convergence $R$ has a holomorphic antiderivative $F:B_{R}(c)\to \mathbb{C}$, that iss, a holomorphic function $F$ on $B_{R}(c)$ such that $F'(z)=f(z)$ is given by
+$$
+F(z):=\sum_{n=0}^{\infty} \frac{a_{n}}{n+1}(z-c)^{n+1}
+$$
+For $z\in B_{R}(c)$
+___
+The amazing feature of holomorphicity is that the converse to the above in holds in nice enough domains. That is, if $f$ is holomorphic in a simply connected domain $D$, then for any $z_{0}\in D$, we can find a power series representation for $f(z)$ around $z_{0}$ with some radius of convergence $R>0$
+What is even more
