@@ -61,7 +61,21 @@ $$
 0 & n\in\mathbb{Z}\setminus \left\{ -1 \right\}
 \end{cases}
 $$
-Motivated by this, we might ask the following: given an image of a curve in $\mathbb{C}$ (for instance a circle), can we define an integration on its image or does the parametrisation of it matter
+___
+Motivated by this, we might ask the following: given an image of a curve in $\mathbb{C}$ (for instance a circle), can we define an integration on its image or does the parametrisation of it matter? For instance, the maps $\delta:[0,1]\to \mathbb{C}$ and $\gamma:[0,2\pi]\to \mathbb{C}$ defined by
+$$
+\delta(t)=re^{ 2\pi it },~\gamma(\theta)=re^{ i\theta }
+$$
+Five us the same image and direction of movement - a circle of radius $r$ in the anticlockwise direction
+We saw above 
+$$
+    \int _{\gamma}\overline{z} \, dz=2\pi ir^{2}
+$$
+So let's compute the same integral over $\delta$: we have that $\delta'(t)=r(2\pi i)e^{ 2\pi it }$ and as such
+$$
+\int _{\delta} \overline{z} \, dz = \int_{0}^{1} (re^{ -2\pi it })(2\pi ir)e^{ 2\pi it } \, dt=2\pi ir^{2}\int_{0}^{1}  \, dt=2\pi ir^{2}  
+$$
+It seems to have worked yay, does it do so in general?
 ## Lemma: Reparamerisation of Curves
 Let $U\subset \mathbb{C}$ be an open set, $f:U\to \mathbb{C}$ be continuous and let $\gamma:[a,b]\to \mathbb{C}$ be a $C^{1}$ curve. If $\varphi:[a',b']\to [a,b]$ is a continuously differentiable bijection with $\varphi(a')=a,\varphi(b')=b$ and we define $\delta:[a,b]\to \mathbb{C}$ by
 $$
@@ -81,13 +95,20 @@ $$
 $$
 
 ## Remark
-The requirement that $\varphi$ is a bijection is important
+The requirement that $\varphi$ is a bijection is important, we might have that the curves are the same, but they wrap around multiple times or sommet
 ## Notation
 Given a domain $D$ such that there exists a bijective contour $\gamma:[a,b]\to \partial D$ with a continuous inverse $\gamma ^{-1}:\partial D\to[a,b]$ and such that $\gamma'(t)\neq 0$, we define
 $$
 \int _{\partial D}f(z) \, dz=\int _{\gamma}f(z) \, dz  
 $$
-Where we assume that we start at $\gamma(a)$ and end at $\gamma(b)$ (a prescribed direction). This notion i well defined and doesn't depend on $\gamma$ due to our reparametrisation of curves lemma meowmoewmoemwmeowmeowmeowmeowmeowmeowmeowme
+Where we assume that we start at $\gamma(a)$ and end at $\gamma(b)$ (a prescribed direction). This notion is well defined and doesn't depend on $\gamma$ due to our reparametrisation of curves lemma
+When the boundary has no end points, such as the circle, we can extend to above definition to the case where $\gamma:[a,b)\to \partial D$ has the previously mentioned properties and $\gamma(a)=\gamma(b)$
+## Example
+When $D=B_{r}(a)$ with $a\in \mathbb{C}$ and $r>0$, we have that
+$$
+\partial D=\left\{ z\in  \mathbb{C}:\middle|: \left| z-a \right| =r \right\}
+$$
+Which is the bijective image of the 
 ## Definition
 Let $\gamma:[a,b]\to \mathbb{C}$ and $\delta:[c,d]\to \mathbb{C}$ be two conttours such that $\gamma(b)=\delta(c)$. The addition of these contours, denoted by $\gamma \cup\delta$ is the contour defined by $\gamma \cup\delta:[a,b+d-c]\to \mathbb{C}$ by
 $$
