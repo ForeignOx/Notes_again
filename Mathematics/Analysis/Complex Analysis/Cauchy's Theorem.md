@@ -118,4 +118,4 @@ $$
 $$
 \int _{\left| z \right|  } \frac{\sin z}{z-\frac{\pi}{2}} \, dz=  2\pi i \sin\left( \frac{\pi}{2} \right) =2\pi i
 $$
-
+C
