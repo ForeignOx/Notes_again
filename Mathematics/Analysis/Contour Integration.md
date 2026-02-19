@@ -116,7 +116,7 @@ Going int he anticlockwise direction. Consequently,
 $$
 \int _{\left| z-a \right| =r}f(z) \, dz = \int_{0}^{2\pi} f(a+re^{ i\theta })ire^{ i\theta } \, d\theta  
 $$
-## Definition
+## Definition: Concatenation of Countours
 Let $\gamma:[a,b]\to \mathbb{C}$ and $\delta:[c,d]\to \mathbb{C}$ be two conttours such that $\gamma(b)=\delta(c)$. The addition of these contours, denoted by $\gamma \cup\delta$ is the contour defined by $\gamma \cup\delta:[a,b+d-c]\to \mathbb{C}$ by
 $$
 \gamma \cup\delta:= \begin{cases}
@@ -124,3 +124,6 @@ $$
 \delta(t+c-b) & b\leq t\leq b+d-c
 \end{cases}
 $$
+![[Pasted image 20260219175855.png]]
+## Lemma
+Let $f:U\to \mathbb{C}$ be a continuous function and let $\gamma:[a,b]\to U$ and $\delta:[c,d]\to U$
