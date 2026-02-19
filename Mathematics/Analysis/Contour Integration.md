@@ -108,7 +108,14 @@ When $D=B_{r}(a)$ with $a\in \mathbb{C}$ and $r>0$, we have that
 $$
 \partial D=\left\{ z\in  \mathbb{C}:\middle|: \left| z-a \right| =r \right\}
 $$
-Which is the bijective image of the 
+Which is the bijective image of the $C^{1}$ curve $\gamma:[0,2\pi)\to \mathbb{C}$
+$$
+\gamma_{a,r}(\theta)=a+re^{ i\theta }
+$$
+Going int he anticlockwise direction. Consequently,
+$$
+\int _{\left| z-a \right| =r}f(z) \, dz = \int_{0}^{2\pi} f(a+re^{ i\theta })ire^{ i\theta } \, d\theta  
+$$
 ## Definition
 Let $\gamma:[a,b]\to \mathbb{C}$ and $\delta:[c,d]\to \mathbb{C}$ be two conttours such that $\gamma(b)=\delta(c)$. The addition of these contours, denoted by $\gamma \cup\delta$ is the contour defined by $\gamma \cup\delta:[a,b+d-c]\to \mathbb{C}$ by
 $$
