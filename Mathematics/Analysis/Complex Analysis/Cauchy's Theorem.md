@@ -32,5 +32,11 @@ $$
 $$
 So
 $$
-F(z)-F(w)=in
+F(z)-F(w)=\int _{L_{z}}f(\xi) \, d\xi -\int _{L_{w}}f(\xi) \, d\xi 
 $$
+And
+$$
+0=\int _{\partial\triangle}f(\xi) \, d\xi =\int _{L_{z}\cup(-\delta)\cup (-L_{w})} f(\xi) \, d\xi =\int _{L_{z}}f(\xi) \, d\xi-\int _{L_{w}}f(\xi) \, d\xi-\int _{\delta}f(\xi) \, d\xi   
+$$
+So yeahh finish this perchance perchance...
+## Cauchy's Integral Formula
