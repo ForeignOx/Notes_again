@@ -29,7 +29,12 @@ $$
 As the sum is telescoping and the middle terms cancel
 ## Remark
 Finding antiderivatives is not a trivial thing, and this is our main restriction
-Due to Morera's lemma, 
+Due to Morera's lemma, the condition that $f$ is continuous is not necessary as $F$ being holomorphic means that it is infinitely differentiable, hence $f$ has a derivative thus must be continuous
+Under the conditions of the Newton-Leibniz theorem, we see that if $\gamma_{1}:[a,b]\to U$ and $\gamma_{2}:[a,b]\to U$ are contours such that $\gamma_{1}(a)=\gamma_{2}(a')$ and $\gamma_{1}(b)=\gamma_{2}(b')$, then
+$$
+0=\int _{\gamma_{1}\cup(-\gamma_{2})}f(z) \, dz=\int _{\gamma_{1}} f(z) \, dz+\int _{-\gamma_{2}}f(z) \, dz  =\int _{\gamma_{1}}f(z) \, dz-\int _{\gamma_{2}}f(z) \, dz   
+$$
+In other words, $\int _{\gamma_{1}}f(z) \, dz=\int _{\gamma_{2}}f(z) \, dz$ i.e the integral depends only on the end points and not the contour
 ## Example
 For $r>0$ we have for any $a\in \mathbb{C}$,
 $$
@@ -39,4 +44,4 @@ $$
 \end{cases} 
 $$
 So $f(z)=\frac{1}{z}$ is holomorphic on $\mathbb{C}\setminus \left\{  0 \right\}$ but doesn't have a holomorphic antiderivative, as that would mean its integral would have to be $\hspace{0pt}0$, contradicting Newton-Leibniz
-We do know that it kinda has the antiderivative $\log$, but this has the issue that the branch cut is messing things up :/
+We do know that it kinda has the antiderivative $\log$, but this has the issue that the branch cut is messing things up :/ and there is no branch of log that means we can go a full circle
