@@ -27,12 +27,17 @@ Defining $(-\gamma):[-b,-a]\to U$ by $(-\gamma)(t)=\gamma(-t)$, wee have that
 $$
 \int _{\gamma}f(z) \, dz=-\int _{-\gamma}f(z) \, dz  
 $$
-
-
-
-
+![[Pasted image 20260219171904.png]]
 ## Example
 Consider the path $\gamma:[0,2\pi]$ defined by $\gamma(\theta)=re^{ i\theta }$ with $r>0$, find $\int _{\gamma} \, dz$ and $\int _{\gamma}\overline{z} \, dz$
+We see that $\gamma'(\theta)=ire^{ i\theta }$, so by definition
+$$
+\int _{\gamma} \, dz=\int_{0}^{2\pi} ire^{ i\theta } \, d\theta =ir \left( \int_{0}^{2\pi} \cos\theta \, d\theta+i\int_{0}^{2\pi} \sin\theta \, d\theta \right)=0
+$$
+$$
+ \int _{\gamma}\overline{z} \, dz = \int_{0}^{2\pi} (re^{ -i\theta })ire^{ i\theta } \, d\theta = ir^2 \int_{0}^{2\pi}   \, d\theta    =2\pi ir^{2}
+$$
+
 ___
 Consider a path $\gamma:[0,2\pi]\to \mathbb{C}$ by $\gamma(\theta)=a+re^{ i\theta }$ with $a\in\mathbb{C}$ and $r>0$, find $\int _{\gamma}(z-a)^{n} \, dz$ for $n\in\mathbb{Z}$
 $$
@@ -56,6 +61,7 @@ $$
 0 & n\in\mathbb{Z}\setminus \left\{ -1 \right\}
 \end{cases}
 $$
+Motivated by this, we might ask the following: given an image of a curve in $\mathbb{C}$ (for instance a circle), can we define an integration on its image or does the parametrisation of it matter
 ## Lemma: Reparamerisation of Curves
 Let $U\subset \mathbb{C}$ be an open set, $f:U\to \mathbb{C}$ be continuous and let $\gamma:[a,b]\to \mathbb{C}$ be a $C^{1}$ curve. If $\varphi:[a',b']\to [a,b]$ is a continuously differentiable bijection with $\varphi(a')=a,\varphi(b')=b$ and we define $\delta:[a,b]\to \mathbb{C}$ by
 $$
