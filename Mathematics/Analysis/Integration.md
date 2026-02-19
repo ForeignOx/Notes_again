@@ -184,75 +184,7 @@ $$
 $$
 ### Proof
 By definition
-## Contour Integration
-Let $U\subseteq \mathbb{C}$ be an open set and let $f:U\to \mathbb{C}$ be a continuous function. Let $\gamma:[a,b]\to U$ be $C^{1}$. Then we define the integral of $f$ along the curve $\gamma$ by its [[Line Integrals|contour integral]]:
-$$
-\int _{\gamma}f(z) \, dz:=\int ^{b}_{a} f(\gamma(t))\gamma'(t) \, dt  
-$$
-If $\gamma:[a,b]\to U$ is a contour with partition $a=a_{0}<a_{1}<\dots<a_{n}=b$ such that $\gamma |_{[a_{i-1},a_{i}]}\to \mathbb{C}$ are $C^{1}$ curves for $i=1,\dots,n$, then we define
-$$
-\int _{\gamma}f(z) \, dz=\sum_{i=1}^{n} \int _{\gamma_{i}}f(z) \, dz 
-$$
-Note that integration in this form is not as simple as line integration as the dot product and complex multiplication are not comparable
-## Example
-Consider the path $\gamma:[0,2\pi]$ defined by $\gamma(\theta)=re^{ i\theta }$ with $r>0$, find $\int _{\gamma} \, dz$ and $\int _{\gamma}\overline{z} \, dz$
-___
-Consider a path $\gamma:[0,2\pi]\to \mathbb{C}$ by $\gamma(\theta)=a+re^{ i\theta }$ with $a\in\mathbb{C}$ and $r>0$, find $\int _{\gamma}(z-a)^{n} \, dz$ for $n\in\mathbb{Z}$
-$$
-\int _{\gamma}(z-a)^{n} \, dz=\int_{0}^{2\pi} (\gamma(\theta)-a)^{n}\gamma'(\theta) \, d\theta 
-$$
-$$
-= \int_{0}^{2\pi} (re^{ i\theta })^{n}ire^{ i\theta } \, d\theta =\int_{0}^{2\pi} r^{n }e^{ in\theta }ire^{ i\theta } \, d\theta 
-$$
-$$
-= ir^{n+1}\int _{0}^{2\pi} e^{ i(n+1)\theta } \, d\theta=ir^{n+1}\left[ \int_{0}^{2\pi} \cos((n+1)\theta) \, d\theta+i\int_{0}^{2\pi} \sin((n+1)\theta) \, d\theta   \right]    
-$$
-$$
-= \begin{cases}
-ir^{0}\left( \int_{0}^{2\pi} \cos(0) \, d\theta +i\int_{0}^{2\pi} \sin(0) \, d\theta  \right) & n+1=0 \\
-ir^{n+1}\left( \frac{\sin((n+1)\theta)}{n+1}\Bigg{|}_{0}^{2\pi}-i \frac{\cos((n+1)\theta)}{n+1}\Bigg{|}_{0} ^{2\pi}   \right) & n+1\neq 0 
-\end{cases}
-$$
-$$
-=\begin{cases}
-2\pi i & n=-1 \\
-0 & n\in\mathbb{Z}\setminus \left\{ -1 \right\}
-\end{cases}
-$$
-## Lemma: Reparamerisation of Curves
-Let $U\subset \mathbb{C}$ be an open set, $f:U\to \mathbb{C}$ be continuous and let $\gamma:[a,b]\to \mathbb{C}$ be a $C^{1}$ curve. If $\varphi:[a',b']\to [a,b]$ is a continuously differentiable bijection with $\varphi(a')=a,\varphi(b')=b$ and we define $\delta:[a,b]\to \mathbb{C}$ by
-$$
-\delta(t):=\gamma(\varphi(t))=(\gamma \circ \varphi)(t)
-$$
-Then
-$$
-\int _{\gamma}f(z) \, dz=\int _{\delta}f(z) \, dz  
-$$
-### Proof
-$$
-\int _{\delta}f(z) \, dz=\int_{a'}^{b'} f(\delta(t))\delta'(t) \, dt      = \int ^{b'}_{a'} f(\gamma(\varphi(t)))\gamma'(\varphi(t)) \, dt
-$$
-Changing variables,
-$$
-=\int _{\varphi(a')}^{\varphi(b')} f(\gamma(s)) \, ds = \int ^{b}_{a} f(\gamma(s)) \, ds = \int _{\gamma}f(z) \, dz   
-$$
 
-## Remark
-The requirement that $\varphi$ is a bijection is important
-## Notation
-Given a domain $D$ such that there exists a bijective contour $\gamma:[a,b]\to \partial D$ with a continuous inverse $\gamma ^{-1}:\partial D\to[a,b]$ and such that $\gamma'(t)\neq 0$, we define
-$$
-\int _{\partial D}f(z) \, dz=\int _{\gamma}f(z) \, dz  
-$$
-Where we assume that we start at $\gamma(a)$ and end at $\gamma(b)$ (a prescribed direction). This notion i well defined and doesn't depend on $\gamma$ due to our reparametrisation of curves lemma meowmoewmoemwmeowmeowmeowmeowmeowmeowmeowme
-## Definition
-Let $\gamma:[a,b]\to \mathbb{C}$ and $\delta:[c,d]\to \mathbb{C}$ be two conttours such that $\gamma(b)=\delta(c)$. The addition of these contours, denoted by $\gamma \cup\delta$ is the contour defined by $\gamma \cup\delta:[a,b+d-c]\to \mathbb{C}$ by
-$$
-\gamma \cup\delta:= \begin{cases}
-\gamma(t) & a\leq t\leq b \\
-\delta(t+c-b) & b\leq t\leq b+d-c
-\end{cases}
-$$
 
 
 
