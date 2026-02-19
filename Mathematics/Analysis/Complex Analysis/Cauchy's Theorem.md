@@ -57,5 +57,20 @@ Which must tend to zero since $f_{n}\to f$ uniformly
 ## Example
 A clasic example of power series is $\sum_{n=0}^{\infty}z^{n}$ which converges locally uniformly on $\left| z \right|<1$, and in fact
 $$
-\lim_{ N \to \infty } f_{N}()
+\lim_{ N \to \infty } f_{N}(z)=\lim_{ N \to \infty } \sum_{n=0}^{N}z^{n}=\lim_{ N \to \infty }  \frac{1-z^{N+1}}{1-z}=\frac{1}{1-z}
 $$
+In particular, for any contour $\gamma$ in the unit disc,
+$$
+\int _{\gamma}\sum_{n=0}^{\infty}z^{n} \, dz=\sum_{n=0}^{\infty}\int _{\gamma}z^{n} \, dz 
+$$
+## Proposition: Integral of Cauchy Kernel
+Let $w\in B_{r}(a)\subset \mathbb{C}$, then
+$$
+\int _{\left| z-a \right| =r} \frac{1}{z-w} \, dz=2\pi i 
+$$
+### Proof
+For $w\in B_{r}(a)$ and pick $z$ on $\left| z-a \right|=r$, then
+$$
+\frac{1}{z-w}=\frac{1}{z-a+a-w}=\frac{1}{z-a} \frac{1}{1- \frac{w-a}{z-a}}=\frac{1}{z-a} \sum_{n=0}^{\infty} \left( \frac{w-a}{z-a} \right)^{n}
+$$
+Which we can justify as $\left| z-a \right|=r$ and so since $w\in B_{r}(a)$, $\left| w-a \right|<r$
