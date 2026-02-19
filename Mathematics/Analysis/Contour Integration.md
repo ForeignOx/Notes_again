@@ -126,4 +126,4 @@ $$
 $$
 ![[Pasted image 20260219175855.png]]
 ## Lemma
-Let $f:U\to \mathbb{C}$ be a continuous function and let $\gamma:[a,b]\to U$ and $\delta:[c,d]\to U$
+Let $f:U\to \mathbb{C}$ be a continuous function and let $\gamma:[a,b]\to U$ and $\delta:[c,d]\to U$ be two controus such that $\gamma(b)=\delta(c)$
