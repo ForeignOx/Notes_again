@@ -75,3 +75,18 @@ $$
 $$
 Which we can justify as $\left| z-a \right|=r$ and so since $w\in B_{r}(a)$, $\left| w-a \right|<r$
 Note that $M(z)= \frac{w-a}{z-a}$ is a Mobius transform, $[a,w,\infty]\to[\infty,1,0]$
+If we use the contour $\gamma(t)=a+re^{ i\theta }$ with $\theta \in[0,2\pi]$, let
+$$
+\delta=M(\gamma)=\frac{w-a}{r}e^{ -it }
+$$
+Where $\frac{\left| w-a \right|}{r}<1$, note $\delta'(t)=-i\delta(t)$,
+$$
+    \int _{\gamma} \frac{1}{z-w} \, dz=\int _{\gamma}  \frac{1}{z-a}\sum_{n=0}^{\infty} \left( \frac{w-a}{z-a} \right)^{n} \, dz 
+$$
+$$
+    = \int_{0}^{2\pi} \frac{\gamma'(t)}{\gamma(t)-a}\sum_{n=0}^{\infty} \left( \frac{w-a}{\gamma(t)-a} \right)^{n} \, dt =\int_{0}^{2\pi}  \frac{ire^{ it }}{re^{ it }}\sum_{n=0}^{\infty} \left( \frac{w-a}{re^{ it }} \right)^{n} \, dt 
+$$
+$$
+    = \int_{0}^{2\pi} -\frac{\delta'(t)}{\delta(t)} \sum_{n=0}^{\infty} (\delta(t))^{n} \, dt = \int _{\delta} -\frac{1}{z}\sum_{n=0}^{\infty}z^{n} \, dz = \sum_{n=0}^{\infty} \int _{\delta} -\frac{1}{z} z^{n} \, dz=2\pi i  
+$$
+## Theorem: Cauchy's Integral Formula
