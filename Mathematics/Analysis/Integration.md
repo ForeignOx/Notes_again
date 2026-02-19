@@ -185,7 +185,7 @@ $$
 ### Proof
 By definition
 ## Contour Integration
-Let $U\subseteq \mathbb{C}$ be an open set and let $f:U\to \mathbb{C}$ be a continuous function. Let $\gamma:=[a,b]\to U$ be $C^{1}$. Then we define the integral of $f$ along the curve $\gamma$ by its [[Line Integrals|contour integral]]:
+Let $U\subseteq \mathbb{C}$ be an open set and let $f:U\to \mathbb{C}$ be a continuous function. Let $\gamma:[a,b]\to U$ be $C^{1}$. Then we define the integral of $f$ along the curve $\gamma$ by its [[Line Integrals|contour integral]]:
 $$
 \int _{\gamma}f(z) \, dz:=\int ^{b}_{a} f(\gamma(t))\gamma'(t) \, dt  
 $$
