@@ -74,3 +74,4 @@ $$
 \frac{1}{z-w}=\frac{1}{z-a+a-w}=\frac{1}{z-a} \frac{1}{1- \frac{w-a}{z-a}}=\frac{1}{z-a} \sum_{n=0}^{\infty} \left( \frac{w-a}{z-a} \right)^{n}
 $$
 Which we can justify as $\left| z-a \right|=r$ and so since $w\in B_{r}(a)$, $\left| w-a \right|<r$
+Note that $M(z)= \frac{w-a}{z-a}$ is a Mobius transform, $[a,w,\infty]\to[\infty,1,0]$
