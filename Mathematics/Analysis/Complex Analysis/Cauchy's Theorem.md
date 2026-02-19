@@ -17,3 +17,20 @@ $$
 $$
 ### Proof
 Let $\triangle$ be a triangular region on which $f$ is holomorphic. Divide $\triangle$ into smaller triangles
+## Theorem: Cauchy-Goursat's Theorem (for Starlike Domains)
+If $f:D\to \mathbb{C}$ is holomorphic on a [[Starlike Domains|starlike]] [[Domains|domain]], then for any closed contour $\gamma \subset D$,
+$$
+\int _{\gamma} f(z)\, dz =0
+$$
+### Proof
+Assume we can show $f$ has a holomorphic antiderivative on $D$, then by [[Newton-Leibniz Theorem|Newton-Leibniz]], $\int _{\gamma}f(z) \, dz=0$ for all closed $\gamma$
+Let $a_{0}$ be the central point in our starlike domain, then by definition $\exists L_{z}$ joining $a_{0}$ to $z$
+Define $F(z)=\int _{L_{z}}f(\xi) \, d\xi$
+By Goursat's Lemma,
+$$
+\int _{\partial\triangle}f(\xi) \, d\xi 
+$$
+So
+$$
+F(z)-F(w)=in
+$$
