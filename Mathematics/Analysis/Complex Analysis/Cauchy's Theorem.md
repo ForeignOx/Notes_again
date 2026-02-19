@@ -90,3 +90,32 @@ $$
     = \int_{0}^{2\pi} -\frac{\delta'(t)}{\delta(t)} \sum_{n=0}^{\infty} (\delta(t))^{n} \, dt = \int _{\delta} -\frac{1}{z}\sum_{n=0}^{\infty}z^{n} \, dz = \sum_{n=0}^{\infty} \int _{\delta} -\frac{1}{z} z^{n} \, dz=2\pi i  
 $$
 ## Theorem: Cauchy's Integral Formula
+If $f$ is holomorphic on some ball $B_{r}(a)$ and $\gamma$ is the contour $\left| z-a \right|=\rho$, then for every $w\in B_{\rho}(a)$, we have
+$$
+f(w)=\frac{1}{2\pi i} \int _{\gamma} \frac{f(z)}{z-w} \, dz 
+$$
+### Proof
+By secret remark, we have
+$$
+\int _{\gamma} g(z) \, dz=0 
+$$
+Where $g(z)$ is the difference quotient function, so
+$$
+    \int _{\gamma} \frac{f(z)-f(w)}{z-w} \, dz=0 
+$$
+$$
+ \iff \int _{\gamma} \frac{f(z)}{z-w} \, dz= \int _{\gamma} \frac{f(w)}{z-w} \, dz=f(w)\int _{\gamma} \frac{1}{z-w} \, dz=f(w)2\pi i
+$$
+## Example
+$\sin z$ is holomorphic on $\mathbb{C}$ as it is starlike soo
+$$
+\int _{\left| z \right| =1}\sin z \, dz=0
+$$
+And
+$$
+    \int \frac{\sin z}{z} \, dz=2\pi i \sin(0)=0
+$$
+$$
+\int _{\left| z \right|  } \frac{\sin z}{z-\frac{\pi}{2}} \, dz=  2\pi i \sin\left( \frac{\pi}{2} \right) =2\pi i
+$$
+
