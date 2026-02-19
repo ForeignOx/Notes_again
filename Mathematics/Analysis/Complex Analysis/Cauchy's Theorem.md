@@ -39,4 +39,23 @@ $$
 0=\int _{\partial\triangle}f(\xi) \, d\xi =\int _{L_{z}\cup(-\delta)\cup (-L_{w})} f(\xi) \, d\xi =\int _{L_{z}}f(\xi) \, d\xi-\int _{L_{w}}f(\xi) \, d\xi-\int _{\delta}f(\xi) \, d\xi   
 $$
 So yeahh finish this perchance perchance...
-## Cauchy's Integral Formula
+## Lemma: Exchange of Integral and Uniform Limit
+Let $f_{n}:U\to \mathbb{C}$ be a sequence fo continuous functions on an open set and let $\gamma$ be a contour in $U$, if
+$$
+f_{n}\to f
+$$
+Uniformly on $\gamma$, then
+$$
+\lim_{ n \to \infty } \int _{\gamma}f_{n}(z) \, dz=\int_{\gamma} \lim_{ n \to \infty } f_{n}(z) \, dz=\int _{\gamma}f(z) \, dz 
+$$
+### Proof
+By the [[Estimate Lemma|ML inequality]],
+$$
+\left| \int _{\gamma}f_{n}(z) \, dz-\int _{\gamma}f(z) \, dz   \right| =\left| \int _{\gamma}f_{n}(z)-f(z) \, dz  \right| \leq L(\gamma)\sup_{z\in  \gamma}\left| f_{n}(z)-f(z) \right| 
+$$
+Which must tend to zero since $f_{n}\to f$ uniformly
+## Example
+A clasic example of power series is $\sum_{n=0}^{\infty}z^{n}$ which converges locally uniformly on $\left| z \right|<1$, and in fact
+$$
+\lim_{ N \to \infty } f_{N}()
+$$
