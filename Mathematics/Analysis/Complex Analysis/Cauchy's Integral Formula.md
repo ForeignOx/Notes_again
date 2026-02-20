@@ -1,8 +1,12 @@
-A natural question to ask is how might one deal with a domain that is not starlike. We have seen the important example by explicitly calculating the integral that for $r>0$, we have
+While having the [[Cauchy-Goursat theorem|Cauchy-Goursat theorem]] is nice, a natural question to ask is how might one deal with a [[domains|domain]] that is not [[Starlike Domains|starlike]]. We have seen the important example by explicitly calculating the [[integration|integral]] that for $r>0$, we have
 $$
 \int _{\left| z-a \right| =r} \frac{1}{z-a} \, dz=2\pi i 
 $$
-In order to generalise this, we observe the compatibility of conttour integ
+In order to generalise this, we observe the compatibility of [[Contour Integration|contour integrals]] and [[Uniform Convergence|uniformly converging sequences]]. Recall that if $g,f_{n}:U\to \mathbb{C}$ are continuous and $f_{n}\to f$ [[Pointwise Convergence|pointwise]] on $U$, then for each $z\in U$, we have
+$$
+\lim_{ n \to \infty } f_{n}(z)g(z)=f(z)g(z)
+$$
+If the convergence is uniform, we can go further
 ## Lemma: Exchange of Integral and Uniform Limit
 Let $f_{n}:U\to \mathbb{C}$ be a sequence of continuous functions on an open set and let $\gamma$ be a contour in $U$, if
 $$
@@ -12,12 +16,25 @@ Uniformly on $\gamma$, then
 $$
 \lim_{ n \to \infty } \int _{\gamma}f_{n}(z) \, dz=\int_{\gamma} \lim_{ n \to \infty } f_{n}(z) \, dz=\int _{\gamma}f(z) \, dz 
 $$
+In particular, if $g:U\to \mathbb{C}$ is continuous, then
+$$
+\lim_{ n \to \infty } \int _{\gamma}f_{n}(z)g(z) \, dz=\int _{\gamma}f(z)g(z) \, dz  
+$$
 ### Proof
-By the [[ML Inequality|ML inequality]],
+Fix $\varepsilon>0$ and let $L(\gamma)$ be the length of $\gamma$
+Since $f_{n}\to f$ uniformly on $\gamma$, there exists $N>0$ such that for all $z\in \gamma$, we have 
 $$
-\left| \int _{\gamma}f_{n}(z) \, dz-\int _{\gamma}f(z) \, dz   \right| =\left| \int _{\gamma}f_{n}(z)-f(z) \, dz  \right| \leq L(\gamma)\sup_{z\in  \gamma}\left| f_{n}(z)-f(z) \right| 
+\left| f_{n}(z)-f(z) \right| < \frac{\varepsilon}{2L(\gamma)}
 $$
-Which must tend to zero since $f_{n}\to f$ uniformly
+Whenever $n>N$
+Recall that the limit definition $f$ is also continuous, and so the integral of $f$ along $\gamma$ is defined. In particular, by the [[ML inequality|ML inequality]] we have that for $n>N$:
+$$
+\left| \int _{\gamma}f_{n}(z) \, dz -\int _{\gamma}f(z) \, dz   \right|=\left| \int _{\gamma}f_{n}(z)-f(z) \, dz  \right|
+$$
+$$
+  \leq L(\gamma)\sup_{z\in  \gamma} \left| f_{n}(z)-f(z) \right| \leq L(\gamma) \frac{\varepsilon}{2L(\gamma)}<\varepsilon 
+$$
+For the final statement, note that the image of $\gamma$ is a compact set, so $g$ must attain a maximum absolute value on $\gamma$, by the [[Extreme Value Theorem|extreme value theorem]]. Thus, there exists $K>0$
 ## Example
 A clasic example of power series is $\sum_{n=0}^{\infty}z^{n}$ which converges locally uniformly on $\left| z \right|<1$, and in fact
 $$
