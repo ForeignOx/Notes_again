@@ -39,6 +39,13 @@ That is, $\bigcap_{n\in\mathbb{N}}\triangle_{n}=\left\{ w \right\}$ for some $w\
 The next step is to consider the [[Difference Quotient Function|difference quotient function]] 
 $$
 g(z):=\begin{cases}
-\frac{f(z)-f(w)}{z-w} & z\in U\setminus \left\{ w \right\}
+\frac{f(z)-f(w)}{z-w} & z\in U\setminus \left\{ w \right\} \\
+f'(w) & z=w
 \end{cases}
 $$
+Where $w$ is the limiting point from above, which is continuous
+We can consider the integral
+$$
+\int _{\partial\triangle_{n}}(z-w)(g(z)-g(w)) \, dz 
+$$
+Noting that 
