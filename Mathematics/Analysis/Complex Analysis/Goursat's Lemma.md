@@ -48,4 +48,19 @@ We can consider the integral
 $$
 \int _{\partial\triangle_{n}}(z-w)(g(z)-g(w)) \, dz 
 $$
-Noting that 
+Noting that $\int _{\partial\triangle_{n}} 1 \, dz=0=\int _{\partial\triangle_{n}}z \, dz$, by the [[Newton-Leibniz theorem|Newton-Leibniz theorem]], because integrands $1$ and $z^{2}$ have holomorphic antiderivatives $z$ and $\frac{z^{2}}{2}$ respectively.
+It follows that
+$$
+\int _{\partial\triangle_{n}} (z-w)(g(z)-g(w)) \, dz=\int _{\partial\triangle_{n}}(f(z)-f(w)-(z-w)g(w)) \, dz 
+$$
+$$
+ =\int _{\partial\triangle_{n}}f(z) \, dz  
+$$
+Since $w,f(w,g(w))$ are just constants. Therefore, we obtain
+$$
+\left| \int _{\partial\triangle}f(z) \, dz  \right| \leq 4^{n}\left| \int _{\partial\triangle_{n}}f(z) \, dz  \right| =4^{n}\left| \int _{\partial\triangle_{n}} (z-w)(g(z)-g(w)) \, dz  \right| 
+$$
+It is easy to see that for $z\in\partial\triangle_{n}$, we have $\left| z-w \right|<L(\partial\triangle_{n})$, since $w$ lies in the interior of the triangular region $\triangle_{n}$. Applying the [[ML inequality|ML inequality]], yields
+$$
+\left| \int _{\partial\triangle}f(z) \, dz  \right| \leq 4^{n}L(\partial\triangle_{n}) \sup_{z\in \partial\triangle_{n}}\left| (z-w)(g) \right| 
+$$
