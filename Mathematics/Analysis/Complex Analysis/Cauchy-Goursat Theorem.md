@@ -84,19 +84,28 @@ $$
 \int _{\gamma} f(z)\, dz =0
 $$
 ### Proof
-Assume we can show $f$ has a holomorphic antiderivative on $D$, then by [[Newton-Leibniz Theorem|Newton-Leibniz]], $\int _{\gamma}f(z) \, dz=0$ for all closed $\gamma$
-Let $a_{0}$ be the central point in our starlike domain, then by definition $\exists L_{z}$ joining $a_{0}$ to $z$
-Define $F(z)=\int _{L_{z}}f(\xi) \, d\xi$
-By Goursat's Lemma,
+Let $f$ be holomorphic on the starlike omain $D$. We will show that there exists an antiderivative $F:D\to \mathbb{C}$ such that $F'(z)=f(z)$ for all $z\in D$
+Since $f$ is continuous on $D$, it would then follow by Newton-Leibniz that $\int _{\gamma}f(z) \, dz=0$ for any closed contour $\gamma \subset D$ as required
+Establishing the existence of a holomorphic antiderivative follows a very similar method to the proof of the [[Fundamental Theorem of Calculus#Complex Case|fundamental theorem of calculus for complex functions]] although subtly different
+Let $a_{0}$ be a point in the starlike domain that realises its defining property, that is, let $a_{0}\in D$ be such that for any $z\in D$ the straight line $L_{z}$ connecting $a_{0}$ to $z$ lies entirely in $D$
+As a candidate for the antiderivative of $f$ on $D$ we take the function
 $$
-\int _{\partial\triangle}f(\xi) \, d\xi 
+F(z)=\int _{L_{z}}f(\xi) \, d\xi 
 $$
-So
+We don't nee to establish its well-definiteness because the contour is explicitly specified
+We just need to show that for any $w\in D$,
 $$
-F(z)-F(w)=\int _{L_{z}}f(\xi) \, d\xi -\int _{L_{w}}f(\xi) \, d\xi 
+\lim_{ z \to w } \frac{F(z)-F(w)}{z-w}=f(w)
 $$
-And
+Let $w\in D$ be given. Since $D$ is open, we can find $\varepsilon>0$ such that $B_{\varepsilon}(w)\subseteq D$, and for any $z\in B_{\varepsilon}(w)$ the straight line $\delta$ connecting $w$ to $z$ is entirely contained in $B_{\varepsilon}(w)$, and as such is in $D$
+Because $D$ i starlike, the straight lines $L_{z}$ and $L_{w}$ also lie in $D$, and the three contours $L_{z},\delta$ and $L_{w}$ form a triangle lying in $D$
+It follows from the properties of starlike domains that the whole triangular region $\triangle$ whose boundary $\partial\triangle$ is traced by the contour $L_{z}\cup(-\delta)\cup(-L_{w})$ must lie in $D$
+![[Pasted image 20260220155605.png]]
+By Goursat's lemma, we have $\int _{\partial\triangle}f(z) \, dz=0$ and so
 $$
-0=\int _{\partial\triangle}f(\xi) \, d\xi =\int _{L_{z}\cup(-\delta)\cup (-L_{w})} f(\xi) \, d\xi =\int _{L_{z}}f(\xi) \, d\xi-\int _{L_{w}}f(\xi) \, d\xi-\int _{\delta}f(\xi) \, d\xi   
+F(z)-F(w)=\int _{L_{z}}f(\xi) \, d\xi-\int _{L_{w}}f(\xi) \, d\xi 
 $$
-So yeahh finish this perchance perchance...
+$$
+ =\int _{L_{z}}f(\xi) \, d\xi-\int _{\delta}f(\xi) \, d\xi-\int _{L_{w}} f(\xi) \, d\xi    +\int _{\delta} \, dx 
+$$
+
