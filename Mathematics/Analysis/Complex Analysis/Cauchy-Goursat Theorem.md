@@ -106,6 +106,33 @@ $$
 F(z)-F(w)=\int _{L_{z}}f(\xi) \, d\xi-\int _{L_{w}}f(\xi) \, d\xi 
 $$
 $$
- =\int _{L_{z}}f(\xi) \, d\xi-\int _{\delta}f(\xi) \, d\xi-\int _{L_{w}} f(\xi) \, d\xi    +\int _{\delta} \, dx 
+     =\int _{L_{z}}f(\xi) \, d\xi-\int _{\delta}f(\xi) \, d\xi-\int _{L_{w}} f(\xi) \, d\xi    +\int _{\delta}f(\xi) \, d\xi = \int _{\partial\triangle}f(\xi) \, d\xi+\int _{\delta}f(\xi) \, d\xi  
 $$
-
+$$
+= \int _{\delta}f(\xi) \, d\xi 
+$$
+Sooooo
+$$
+\left| \frac{F(z)-F(w)}{z-w}-f(w) \right| =\frac{1}{\left| z-w \right| } \left| F(z)-F(w)-f(w)(z-w) \right| 
+$$
+$$
+= \frac{1}{\left| z-w \right| } \left| \int _{\delta}f(\xi-f(w)) \, d\xi  \right| 
+$$
+Which by the [[ML Inequality|ML inequality]]
+$$
+\leq \frac{\left| z-w \right|}{\left| z-w \right| } \sup_{\xi \in  \delta} \left| f(\xi)-f(w) \right| 
+$$
+Which as $z\to w$ tends to $0$ by continuity yowzah
+## Example
+Evaluate
+$$
+\int _{\left| z \right| =\frac{1}{2}} \frac{e^{ z }\sin ^{2}z}{e^{ z^{2} }} \, dz 
+$$
+Since the funciton is holomorphic in $\mathbb{C}$ (a starlike domain), since it si the composition/product/quotient of holomorphic functions
+The contour tracing $\left| z \right|=\frac{1}{2}$ is closed and lies in $\mathbb{C}$. Applying Cauchy-Goursat, we get
+$$
+    \int _{\left| z \right| =\frac{1}{2}} \frac{e^{ z }\sin ^{2}z}{e^{ z^{2} }} \, dz=0
+$$
+## Remark
+One can show that the Goursat lemma holds under the weaker assumption that $f$ is holomorphic on $D\setminus S$, where $S$ is a finite set of points and $f$ is continuous on $D$
+In turn, this means that the Cauchy-Goursat theorem holds under the same conditions

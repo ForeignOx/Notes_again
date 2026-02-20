@@ -1,10 +1,10 @@
- To prove a vesion of Cauchy's theorem, Goursat observed:
-
-
-## Theorem: Cauchy-Goursat's Theorem (for Starlike Domains)
-
+A natural question to ask is how might one deal with a domain that is not starlike. We have seen the important example by explicitly calculating the integral that for $r>0$, we have
+$$
+\int _{\left| z-a \right| =r} \frac{1}{z-a} \, dz=2\pi i 
+$$
+In order to generalise this, we observe the compatibility of conttour integ
 ## Lemma: Exchange of Integral and Uniform Limit
-Let $f_{n}:U\to \mathbb{C}$ be a sequence fo continuous functions on an open set and let $\gamma$ be a contour in $U$, if
+Let $f_{n}:U\to \mathbb{C}$ be a sequence of continuous functions on an open set and let $\gamma$ be a contour in $U$, if
 $$
 f_{n}\to f
 $$
@@ -82,4 +82,3 @@ $$
 $$
 \int _{\left| z \right|  } \frac{\sin z}{z-\frac{\pi}{2}} \, dz=  2\pi i \sin\left( \frac{\pi}{2} \right) =2\pi i
 $$
-C
