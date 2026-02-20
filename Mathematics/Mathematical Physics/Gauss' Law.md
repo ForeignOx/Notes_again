@@ -43,4 +43,31 @@ So it only depends on $E(r)$.
 $$
 \int _{S} \underline{E} \cdot\, d \underline{S} = \frac{Q_{V}}{\varepsilon_{0}}
 $$
-If we make a cylinder of height $L$ and radius $r$, with top and bottom faces $S_{T},S_{B}$ respectively, then we can say $S=S_{T}u$
+If we make a cylinder of height $L$ and radius $r$, with top and bottom faces $S_{T},S_{B}$ and cylindrical part $S_{r}$, then we can say $S=S_{T}\cup S_{B}\cup S_{r}$
+We know that $Q_{V}=\eta L$, so we just need to do the integrals now
+$$
+d\underline{S}_{T}=\underline{e}_{z}\cdot d S_{T},~ d \underline{S}_{B}=-\underline{e}_{z} \cdot dS_{B},~d\underline{S}_{r}=\underline{e}_{r}\cdot dS_{r}
+$$
+soooo
+$$
+    \int _{S}\underline{E} \, d \underline{S}=\int _{S_{T}}\underline{E} \cdot\, d\underline{S}_{T}+\int _{S_{B}} \underline{E}\cdot \, d \underline{S}_{B}+\int _{S_{r}}\underline{E} \, d\underline{S}_{r} 
+$$
+$$
+= \cancelto{ 0 }{ \int _{S_{T}} E(r) \underline{e}_{r}\cdot \underline{e}_{z} \, dS_{T} }-\cancelto{ 0 }{ \int _{S_{B}}E(r)\underline{e}_{r}\cdot \underline{e}_{z} \, dS_{B} }+\int _{S_{r}}E(r)\underline{e}_{r}\cdot \underline{e}_{r} \, dS_{r}
+$$
+$$
+= E(r)\int _{S_{r}} \, d S_{r}=E(r)2\pi rL  
+$$
+So Gauss' law gives
+$$
+E(r)2\pi rL=\frac{1}{\varepsilon_{0}}\eta L 
+$$
+$$
+\implies E(r)=\frac{\eta}{2\pi\varepsilon_{0}} \frac{1}{r}
+$$
+And 
+$$
+\underline{E}= E(r)\underline{e}_{r}=\frac{\eta}{2\pi\varepsilon_{0}} \frac{\underline{e}_{r}}{r}
+$$
+___
+Infinite plane with constant surface charge density $@$
