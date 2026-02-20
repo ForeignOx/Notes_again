@@ -70,4 +70,6 @@ $$
 \underline{E}= E(r)\underline{e}_{r}=\frac{\eta}{2\pi\varepsilon_{0}} \frac{\underline{e}_{r}}{r}
 $$
 ___
-Infinite plane with constant surface charge density $@$
+Infinite plane with constant surface charge density $\sigma$, by symmetry we can have translations along $x$ and $y$
+We have that $E_{x}=0$ and $E_{y}=0$, so $\underline{E}=E(z)\underline{e}_{z}$
+Also that 
