@@ -72,4 +72,29 @@ $$
 ___
 Infinite plane with constant surface charge density $\sigma$, by symmetry we can have translations along $x$ and $y$
 We have that $E_{x}=0$ and $E_{y}=0$, so $\underline{E}=E(z)\underline{e}_{z}$
-Also that 
+Also that $E(-z)=-E(z)$
+So by Gauss' law,
+$$
+\int _{S}\underline{E} \, d \underline{S}=\frac{Q_{V}}{\varepsilon_{0}} 
+$$
+We construct a cylinder(?) of same dimensions as previous example
+We have total charge equal to $\sigma A$ where $A$ is the area of the end of one of the cylinders
+Doing the actual integrals,
+$$
+\int _{S} \underline{E}\cdot \, d\underline{S}=\int _{S_{B}}\underline{E}\cdot \, d\underline{S}_{B}+\int _{S_{T}}\underline{E}\cdot \, d\underline{S}_{T}   +\int _{S_{r}}\underline{E}\cdot \, d\underline{S}_{r} 
+$$
+Due to our symmetries, the last integral is zero...
+$$
+        =-\int _{S_{B}}E(-z)\underline{e}_{z}\cdot \underline{e}_{z} \, dS_{B}+\int _{S_{T}}E(z)\underline{e}_{z}\cdot \underline{e}_{z} \, dS_{T} 
+$$
+$$
+= -E\left( -\frac{L}{2} \right)  \int _{S_{B}} \, dS_{B}+E\left( \frac{L}{2} \right)\int _{S_{T}} \, dS_{T}=A\left( E\left( \frac{L}{2} \right)-E\left( -\frac{L}{2} \right) \right)  
+$$
+So by Gaus' Law, and since $L$ can be anything, we can call it $z$
+$$
+E(z)-E(-z)=\frac{\sigma}{\varepsilon_{0}}
+$$
+$$
+\implies E(z)=\frac{\sigma}{2\varepsilon_{0}}
+$$
+Which is constant
