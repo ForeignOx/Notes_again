@@ -286,4 +286,43 @@ $$
 P^{n}_{A A}=P^{n}_{C C}= \frac{\beta}{\alpha+\beta}+(1-\alpha-\beta)^{n} \frac{\alpha}{\alpha+\beta}
 $$
 ___
-If $I=\left\{ A \right\}$
+If $I=\left\{ A,B,C \right\}$ has transition matrix
+$$
+P=\begin{pmatrix}
+0 & 1 & 0 \\
+0 & \frac{1}{2} & \frac{1}{2} \\
+\frac{1}{2} & 0 & \frac{1}{2}
+\end{pmatrix}
+$$
+![[Pasted image 20260220164929.png]]
+Recall that all unique [[eigenvalues|eigenvalues]] implies that a matrix is [[Diagonalisation|diagonalisable]]
+$$
+\det(P-\lambda I)=\left| \begin{pmatrix}
+-\lambda & 1 & 0 \\
+0 & \frac{1}{2}-\lambda & \frac{1}{2} \\
+\frac{1}{2} & 0 & \frac{1}{2}-\lambda
+\end{pmatrix} \right| 
+$$
+$$
+ =-\lambda\left( \frac{1}{2}-\lambda \right)^{2}+\frac{1}{4}=-\lambda^{3}+\lambda^{2}-\frac{\lambda}{4}+\frac{1}{4}
+$$
+Since $\lambda=1$ is a root (we shall see that $\lambda=1$ is always a root),
+$$
+=(\lambda-1)\left( -\lambda^{2}-\frac{1}{4} \right)=-(\lambda-1)\left( \lambda+\frac{i}{2} \right)\left( \lambda-\frac{i}{2} \right)
+$$
+Which implie there is an [[Matrix Inverses|invertible]] matrix $U$ such that
+$$
+P=U\mathrm{diag}\left( 1,\frac{i}{2},-\frac{i}{2} \right)U^{-1}
+$$
+Thus
+$$
+P^{n}=\underbrace{ U\mathrm{diag}\left( 1,\frac{i}{2},-\frac{i}{2} \right)U^{-1} \mathrm{diag}\left( 1,\frac{i}{2},-\frac{i}{2} \right)U^{-1}\dots U\mathrm{diag}\left( 1,\frac{i}{2},-\frac{i}{2} \right)U^{-1} }_{ n\text{ times} }
+$$
+$$
+=U\mathrm{diag}\left( 1,\frac{i}{2},-\frac{i}{2} \right)^{n}U^{-1}
+$$
+Since $USU^{-1}$ is a linear combination of elements of $S$, we see that
+$$
+P^{n}_{A A}=\alpha+\beta\left( \frac{i}{2} \right)^{n}+\gamma\left( -\frac{i}{2} \right)^{n}
+$$
+Now we can find $\alpha,\beta,\gamma$
