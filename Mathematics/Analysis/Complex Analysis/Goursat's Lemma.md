@@ -4,10 +4,15 @@ $$
 \int _{\partial\triangle}f(z) \, dz =0
 $$
 ### Proof
-Let $\triangle$ be a triangular region on which $f$ is holomorphic. Divide $\triangle$ into four smaller triangular regions $\triangle_{1},\triangle_{2},\triangle_{3},\triangle_{4}$ by considering the straight line that connect the midpoints of the sides bounding triangle $\partial\triangle$
+Let $\triangle$ be a triangular region on which $f$ is holomorphic. Divide $\triangle$ into four smaller triangular regions $\triangle^{(1)},\triangle^{(2)},\triangle^{(3)},\triangle^{(4)}$ by considering the straight line that connect the midpoints of the sides bounding triangle $\partial\triangle$
 ![[Pasted image 20260220021621.png]]
 We obtain, using properties of [[Contour Integration|contour integrals]]
 $$
-    \int _{\partial\triangle } f(z) \, dz=\sum_{i=1}^{4}\int _{\partial\triangle_{i}}f(z) \, dz  
+    \int _{\partial\triangle } f(z) \, dz=\sum_{i=1}^{4}\int _{\partial\triangle^{(i)}}f(z) \, dz  
 $$
-Since the sids of the smaller internal triangle are traversed twice in opposite directions by the contours (and this means their integral contribution cancels ou)
+Since the sids of the smaller internal triangle are traversed twice in opposite directions by the contours (and this means their integral contribution cancels out)
+By taking the absolute value and using the [[Triangle Inequality|triangle inequality]], we obtain:
+$$
+\left| \int _{\partial\triangle}f(z) \, dz  \right| \leq \sum_{i=1}^{4} \left| \int _{\partial\triangle^{(i)}} f(z) \, dz  \right| 
+$$
+Of these four smaller triangular regions, let $\triangle_{1}$ be the one associated with the maximal integral (that is, the triangular region)
