@@ -15,4 +15,30 @@ By taking the absolute value and using the [[Triangle Inequality|triangle inequa
 $$
 \left| \int _{\partial\triangle}f(z) \, dz  \right| \leq \sum_{i=1}^{4} \left| \int _{\partial\triangle^{(i)}} f(z) \, dz  \right| 
 $$
-Of these four smaller triangular regions, let $\triangle_{1}$ be the one associated with the maximal integral (that is, the triangular region)
+Of these four smaller triangular regions, let $\triangle_{1}$ be the one associated with the maximal integral (that is, the triangular region for which $\left| \int _{\partial\triangle_{1}} f(z) \, dz \right|\geq \int _{\partial\triangle^{(i)}}f(z) \, dz$ for all $i\in\overline{4}$)
+We then have
+$$
+\left| \int _{\partial\triangle} f(z) \, dz  \right| \leq 4\left| \int _{\partial\triangle_{1}}f(z) \, dz  \right| 
+$$
+Moreover, by construction we have that $L(\partial\triangle_{1})=\frac{1}{2}L(\partial\triangle)$
+By repreating this process for $\triangle_{1}$ and so on, we obtain a sequence of triangular regions
+$$
+\triangle \supset \triangle_{1}\supset \triangle_{2}\supset \dots \supset \triangle_{n} \supset \dots
+$$
+For which
+$$
+\left| \int _{\partial\triangle}f(z) \, dz  \right| \leq 4^{n}\left| \int _{\partial\triangle_{n}}f(z) \, dz  \right| 
+$$
+And 
+$$
+L(\partial\triangle_{n})=\frac{1}{2^{n}}L(\partial\triangle)
+$$
+In particular, notice that $L(\partial\triangle_{n})\to 0$ as $n\to\infty$
+As the triangles get smaler, they eventually limit to a single point this is due to $\mathbb{C}$ being a complete [[Metric Spaces|metric space]] and Cantor's intersection theorem
+That is, $\bigcap_{n\in\mathbb{N}}\triangle_{n}=\left\{ w \right\}$ for some $w\in U$
+The next step is to consider the [[Difference Quotient Function|difference quotient function]] 
+$$
+g(z):=\begin{cases}
+\frac{f(z)-f(w)}{z-w} & z\in U\setminus \left\{ w \right\}
+\end{cases}
+$$
