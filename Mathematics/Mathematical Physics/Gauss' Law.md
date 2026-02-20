@@ -98,3 +98,8 @@ $$
 \implies E(z)=\frac{\sigma}{2\varepsilon_{0}}
 $$
 Which is constant
+Another way of deriving this is to solve $\underline{\nabla} \cdot \underline{E}=\frac{\rho}{\varepsilon_{0}}$ which gives us
+$$
+\rho(\underline{x})=\int _{S} \sigma(s_{1},s_{2})\delta(\underline{x}-\underline{x}(s_{1},s_{2})) \, d S 
+$$
+
