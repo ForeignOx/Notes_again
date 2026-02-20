@@ -218,8 +218,8 @@ $$
 $$
 = \delta_{i i_{m}}P_{i_{m}i_{m+1}}\dots P_{i_{m}i_{m+1}}\dots P_{i_{m+n-1}i_{m+n}}\mathbb{P}(A\mid X_{m}=i)
 $$
-
 ## Examples
+Taking $I=\left\{ A,B \right\}$ and trnasition matrix, we can consturct the general two-state Markov chains:
 $$
 P=\begin{pmatrix}
 P_{A A} & P_{AB} \\
@@ -229,6 +229,7 @@ P_{BA} & P_{B B}
 \beta & 1-\beta
 \end{pmatrix}
 $$
+![[Pasted image 20260220164136.png]]
 We can set up and solve the recurrence relation for $P_{A A}^{n}$:
 $$
 P^{n+1}_{AA} = P^{n}_{A A}P_{A A}+P^{n}_{AB}P_{BA}=P^{n}_{A A}(1-\alpha)+P^{n}_{AB}\beta 
@@ -237,3 +238,52 @@ $$
 = P^{n}_{A A}(1-\alpha)+(1-P^{n}_{A A})\beta=\beta+P^{n}_{A A}(1-\alpha-\beta)
 $$
 Which has $P^{0}_{A A}=1$
+We write $q_{n}=P^{n}_{A A}$ so 
+$$
+q_{n+1}=\beta+(1-\alpha-\beta)q_{n}
+$$
+Now we write $q_{n}=c+x_{n}$ for some constant $c$ to be determined, we want to find $c$ such that $x_{n+1}=rx_{n}$, this would mean
+$$
+q_{n+1}=c+x_{n+1}=c+rx_{n} 
+$$
+$$
+= \beta+(1-\alpha-\beta)q_{n} = \beta+(1-\alpha-\beta)c+(1-\alpha-\beta)x_{n}
+$$
+Hence $r=1-\alpha-\beta$, and 
+$$
+c=\beta+(1-\alpha-\beta)c\implies C=\frac{\beta}{\alpha+\beta}
+$$
+We can plug this in and check that
+$$
+q_{n}=\frac{\beta}{\alpha+\beta}+(1-\alpha-\beta)x_{0}
+$$
+Does indeed solve the recurrence relation. Finally, to get $x_{0}$, we use $q_{0}=1$ to find
+$$
+x_{0}= \frac{\alpha}{\alpha+\beta}
+$$
+Hence
+$$
+P_{A A}^{n}=\frac{\beta}{\alpha+\beta}+(1-\alpha-\beta)^{n} \frac{\alpha}{\alpha+\beta}
+$$
+If $\alpha=\beta=1$, then the Markov chian alternates between $a,$ and $b$, we see that from our formula,
+$$
+P^{n}_{A A}=\frac{1}{2}+\frac{1}{2}(-1)^{n}
+$$
+___
+If $I=\left\{ A,B,C,D \right\}$ with transition matrix
+$$
+P=\begin{pmatrix}
+1-\alpha & \alpha & 0 & 0 \\
+\beta & 1-\beta & 0 & 0 \\
+0 & 0 & 1-\alpha & \alpha \\
+0 & 0 & \beta & 1-\beta
+\end{pmatrix}
+$$
+![[Pasted image 20260220164657.png]]
+Since $\left\{ A,B \right\}$ and $\left\{ C,D \right\}$ don't communicate with each other, we can treat them separately. Therefore we can calculate $P^{n}$ here without multiplying $4\times 4$ matrices
+As before, we get
+$$
+P^{n}_{A A}=P^{n}_{C C}= \frac{\beta}{\alpha+\beta}+(1-\alpha-\beta)^{n} \frac{\alpha}{\alpha+\beta}
+$$
+___
+If $I=\left\{ A \right\}$
