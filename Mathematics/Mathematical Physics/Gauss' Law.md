@@ -32,3 +32,5 @@ $$
 Which gives a pretty non-trivial things like that $\underline{E}$ flux is independent of surface as long as it encloses the same amount of charge
 Also only charges enclosed inside the surface contribute to the $\underline{E}$ [[Surface Integrals|flux]] 
 The integral form is useful in simple surfaces with many symmetries, note that we still need to impose that $\underline{\nabla} \times \underline{E}=0$
+## Applying Integral Form of Gauss' Law
+Say we want to find the electric field of the infinite charged wire with constant linear charge density $\eta$
