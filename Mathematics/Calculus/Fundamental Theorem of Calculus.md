@@ -37,7 +37,7 @@ $$
 Using the property $\hspace{0pt}2$ of definite integrals
 Let $m(h)$ and $M(h)$ denote the min and max values of $f(x)$ on $[x,x+h]$ which must exist due to the [[Extreme Value Theorem|extreme value theorem]]. Then by the 4th property:
 $$
-hm(h)\leq \int _{x}^{x+h}f(t) \, dt \leq hM(h)
+m(h)\leq \int _{x}^{x+h}f(t) \, dt \leq hM(h)
 $$
 Substituting this and dividing by $h$,
 $$
@@ -128,7 +128,7 @@ $$
 $$
 = \frac{1}{\left| z-w \right| } \left| \int _{\delta}f(\xi-f(w)) \, d\xi  \right| 
 $$
-Which by the [[Estimate Lemma|ML inequality]]
+Which by the [[ML Inequality|ML inequality]]
 $$
 \leq \frac{\left| z-w \right|}{\left| z-w \right| } \sup_{\xi \in  \delta} \left| f(\xi)-f(w) \right| 
 $$
