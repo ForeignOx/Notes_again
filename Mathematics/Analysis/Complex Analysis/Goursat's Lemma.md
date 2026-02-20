@@ -62,5 +62,19 @@ $$
 $$
 It is easy to see that for $z\in\partial\triangle_{n}$, we have $\left| z-w \right|<L(\partial\triangle_{n})$, since $w$ lies in the interior of the triangular region $\triangle_{n}$. Applying the [[ML inequality|ML inequality]], yields
 $$
-\left| \int _{\partial\triangle}f(z) \, dz  \right| \leq 4^{n}L(\partial\triangle_{n}) \sup_{z\in \partial\triangle_{n}}\left| (z-w)(g) \right| 
+\left| \int _{\partial\triangle}f(z) \, dz  \right| \leq 4^{n}L(\partial\triangle_{n}) \sup_{z\in \partial\triangle_{n}}\left| (z-w)(g(z)-g(w)) \right| 
 $$
+$$
+ <4^{n}L(\partial\triangle_{n})^{2}\sup_{z\in \partial\triangle_{n}}\left| g(z)-g(w) \right| =L(\partial\triangle)^{2}\sup_{z\in \partial\triangle_{n}}\left| g(z)-g(w) \right| 
+$$
+The left hand side is independent of $n$, so taking the limit $n\to\infty$ on the right hand side (so that $z\to w$), it follows from the continuity of $g$ that
+$$
+\sup_{z\in \partial\triangle_{n}}\left| g(z)-g(w) \right| \to \left| g(w)-g(w) \right| =0
+$$
+Thus
+$$
+\int _{\partial\triangle}f(z) \, dz=0 
+$$
+As required
+## Remark
+This result gives an indication as to the types of domain on which the Cauchy-Goursat theorem will hold. In order to calculate the integral around a triangular contour, we required the integrand to be holomorphpic on the region enclosed by this triangular contour
