@@ -128,4 +128,11 @@ $$
 ## Lemma
 Let $f:U\to \mathbb{C}$ be a continuous function and let $\gamma:[a,b]\to U$ and $\delta:[c,d]\to U$ be two controus such that $\gamma(b)=\delta(c)$
 ## Definition
-Let $U\subseteq \mathbb{C}$ be an open set and let $g:U\to \mathbb{R}$ be a continuous real-va
+Let $U\subseteq \mathbb{C}$ be an open set and let $g:U\to \mathbb{R}$ be a continuous real-valued function. Let $\gamma:[a,b]\to U$ be a $C^{1}$ curve. Then we define
+$$
+\int _{\gamma}g(z) \, d\left| z \right|:=\int ^{b}_{a} g(\gamma(t))\left| \gamma'(t) \right|  \, dt  
+$$
+If $\gamma:[a,b]\to U$ is a contour with partition $a=a_{0}<a_{1}<\dots<a_{n}=b$ such that $\gamma\big{|}_{[a_{i-1},a_{i}]}\to \mathbb{C}$ are $C^{1}$ curves for $i\in\overline{n}$, then we define
+$$
+\int _{\gamma}f(z) \, d\left| z \right| =\sum_{i=1}^{n} \int _{\gamma_{i}}g(z) \, d\left| z \right|   
+$$
