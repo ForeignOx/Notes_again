@@ -34,7 +34,8 @@ $$
 $$
   \leq L(\gamma)\sup_{z\in  \gamma} \left| f_{n}(z)-f(z) \right| \leq L(\gamma) \frac{\varepsilon}{2L(\gamma)}<\varepsilon 
 $$
-For the final statement, note that the image of $\gamma$ is a compact set, so $g$ must attain a maximum absolute value on $\gamma$, by the [[Extreme Value Theorem|extreme value theorem]]. Thus, there exists $K>0$
+For the final statement, note that the image of $\gamma$ is a compact set, so $g$ must attain a maximum absolute value on $\gamma$, by the [[Extreme Value Theorem|extreme value theorem]]. Thus, there exists $K>0$ such that $\sup_{z\in \gamma}\left| g(z) \right|\leq K$
+We then follow the argument the same way as above
 ## Example
 A clasic example of power series is $\sum_{n=0}^{\infty}z^{n}$ which converges locally uniformly on $\left| z \right|<1$, and in fact
 $$
@@ -45,10 +46,11 @@ $$
 \int _{\gamma}\sum_{n=0}^{\infty}z^{n} \, dz=\sum_{n=0}^{\infty}\int _{\gamma}z^{n} \, dz 
 $$
 ## Proposition: Integral of Cauchy Kernel
-Let $w\in B_{r}(a)\subset \mathbb{C}$, then
+Let $a\in\mathbb{C}$ and $r>0$. If $w\in B_{r}(a)\subset \mathbb{C}$, then
 $$
 \int _{\left| z-a \right| =r} \frac{1}{z-w} \, dz=2\pi i 
 $$
+The function $\frac{1}{z-w}$ is often known as the Cauchy kernel
 ### Proof
 For $w\in B_{r}(a)$ and pick $z$ on $\left| z-a \right|=r$, then
 $$
@@ -56,6 +58,7 @@ $$
 $$
 Which we can justify as $\left| z-a \right|=r$ and so since $w\in B_{r}(a)$, $\left| w-a \right|<r$
 Note that $M(z)= \frac{w-a}{z-a}$ is a Mobius transform, $[a,w,\infty]\to[\infty,1,0]$
+![[Pasted image 20260220162122.png]]
 If we use the contour $\gamma(t)=a+re^{ i\theta }$ with $\theta \in[0,2\pi]$, let
 $$
 \delta=M(\gamma)=\frac{w-a}{r}e^{ -it }
@@ -70,17 +73,19 @@ $$
 $$
     = \int_{0}^{2\pi} -\frac{\delta'(t)}{\delta(t)} \sum_{n=0}^{\infty} (\delta(t))^{n} \, dt = \int _{\delta} -\frac{1}{z}\sum_{n=0}^{\infty}z^{n} \, dz = \sum_{n=0}^{\infty} \int _{\delta} -\frac{1}{z} z^{n} \, dz=2\pi i  
 $$
+## Remark
+Knowing the integral of the Cauchy kernel allows us to prove the following remarkable fact: the values of a holomorphic function in an open ball are determined by the values of the function on its boundary, in other words, we can reconstruct the whole function in a two dimensional disc by just knowing the function on the one dimensional circle that bounds the disc
 ## Theorem: Cauchy's Integral Formula
 If $f$ is holomorphic on some ball $B_{r}(a)$ and $\gamma$ is the contour $\left| z-a \right|=\rho$, then for every $w\in B_{\rho}(a)$, we have
 $$
 f(w)=\frac{1}{2\pi i} \int _{\gamma} \frac{f(z)}{z-w} \, dz 
 $$
 ### Proof
-By secret remark, we have
+Assume $w\in B_{\rho}(a)$, so that $w$ lies inside the circle $\left| z-a \right|=\rho$. We know that the [[difference quotient function|difference quotient function]] is holomorphic on $B_{r}(a)\setminus \left\{ w \right\}$, so by the more generalised form of [[Cauchy-Goursat Theorem|Cauchy-Goursat]], we have that
 $$
 \int _{\gamma} g(z) \, dz=0 
 $$
-Where $g(z)$ is the difference quotient function, so
+Since the point $w$ does not lie on the circle $\left| z-a \right|=\rho$, this means
 $$
     \int _{\gamma} \frac{f(z)-f(w)}{z-w} \, dz=0 
 $$
