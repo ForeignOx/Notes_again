@@ -98,28 +98,41 @@ $$
 Let $f:D\to \mathbb{C}$ be continuous on a [[Domains|domain]] $D$ if $\int _{\gamma}f(z) \, dz=0$ for all closed contours in $D$ then there exists a holomorphic antiderivative on $D$
 ### Proof
 We fix $a\in D$, and think about a point $z\in D$
-By the definition of a domain there exists a contour $\gamma _z$ in $D$ joining $a$ to $z$
+By the definition of a domain there exists a contour $\gamma _z$ in $D$ joining $a$ to $z$ i.e. $\gamma_{z}(0)=a,\gamma_{z}(1)=z$
 ![[Fundamental Theorem of Calculus 2026-02-17 12.13.45.excalidraw]]
-The assumption ensures this is well defined. If $\gamma$ was another contour joining $a$ to $z$
-So by assumption
+We define
+$$
+F(z)=\int _{\gamma_{z}}f(\xi) \, d\xi 
+$$
+The assumption ensures this is well defined. 
+If $\gamma$ was another contour joining $a$ to $z$, by assumption
 $$
 0=\int _{\gamma_{z}\cup(-\gamma)}f(\xi) \, d\xi=\int _{\gamma_{z}}f(\xi) \, d\xi  -\int _{\gamma}f(\xi) \, d\xi 
+$$
+Which implies that
+$$
+\int _{\gamma_{z}}f(z) \, dz=\int _{\gamma}f(z) \, dz  
 $$
 To show $F$ is an antiderivative, we need to show
 $$
 F'(w)=\lim_{ z \to w }  \frac{F(z)-F(w)}{z-w}=f(w)
 $$
-Consider $F(z)-F(w)$
+Let $w\in D$ be given. Since $D$ is open, we can find $\varepsilon>0$ such that $B_{\varepsilon}(w)\subseteq D$. For any $z\in B_{\varepsilon}(w)$, we know that the straighrt line connecting $z$ and $w$, expressed by the curve $\delta:[0,1]\to D$:
+$$
+\delta(t)=z+t(w-z)
+$$
 ![[Fundamental Theorem of Calculus 2026-02-17 12.14.29.excalidraw]]
-We define $\delta$ to be $t\in[0,1]$ a lilne connecting $w$ to $z$, $\delta(t)=w+t(z-w)$
-Consider
+By the definition,
 $$
     F(z)-F(w)=\int _{\gamma_{z}}f(\xi) \, d\xi -\int _{\gamma_{w}} f(\xi) \, d\xi=\int _{\gamma_{z}\cup(-\gamma_{w})} f(\xi) \, d\xi
 $$
 Since  it is a closed loop, $F(z)-F(w)=\int _{\delta} f(\xi) \, d\xi$
 Sneakily notice that 
 $$
-f(w)(z-w)=f(w)(z-w)\int _{0}^{1} \, dt =\int_{0}^{1} f(w(z-w)) \, dt= \int_{0}^{1} f(w)\delta'(t) \, dt = \int _{\delta}f(w) \, d\xi   
+f(w)(z-w)=f(w)(z-w)\int _{0}^{1} \, dt =\int_{0}^{1} f(w(z-w)) \, dt 
+$$
+$$
+ = \int_{0}^{1} f(w)\delta'(t) \, dt = \int _{\delta}f(w) \, d\xi   
 $$
 Sooooo
 $$
@@ -133,25 +146,9 @@ $$
 \leq \frac{\left| z-w \right|}{\left| z-w \right| } \sup_{\xi \in  \delta} \left| f(\xi)-f(w) \right| 
 $$
 Which as $z\to w$ tends to $0$ by continuity yowzah
-## Theorem: Closed Contour Case
-Let $f:U\to \mathbb{C}$ be a continuous function on an open set $U\subset \mathbb{C}$, if $f$ has a [[Holomorphicity|holomorphic]] antiderivative $F$ on $U$
-Then
-$$
-\int _{\gamma}f(z) \, dz=0 
-$$
-For all closed contours $\gamma \subset U$
 ## Remark
-Finding antiderivatives is not a trivial thing, and this is our main restriction
-## Example
-For $r>0$ we have for any $a\in \mathbb{C}$,
-$$
-\int _{\left| z-a \right| =r}(z-a)^{n} \, dz =\begin{cases}
-0 & n\neq -1 \\
-2\pi i & n=-1
-\end{cases} 
-$$
-So $f(z)=\frac{1}{z}$ is holomorphic on $\mathbb{C}\setminus \left\{  0 \right\}$ but doesn't have a holomorphic antiderivative, as that would mean its integral would have to be $\hspace{0pt}0$, contradicting Newton-Leibniz
-We do know that it kinda has the antiderivative $\log$, but this has the issue that the branch cut is messing things up :/
+How many anti-derivatives does $f$ have? Surprisingly the result is the same as for the real case.
+If $F_{1}$ and $F_{2}$ are holomorphic functions on a domain $D$ with the same derivative, then $F_{1}-F_{2}$ is a holomorphic function on $D$ whose derivative is zero. As $D$ is a domain, we saw that this implies that $F_{1}-F_{2}$ must be constant
 
 
 #Mathematics #Calculus #Theorem 
