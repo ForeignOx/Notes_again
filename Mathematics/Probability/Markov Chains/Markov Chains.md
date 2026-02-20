@@ -117,7 +117,7 @@ $$
 $$
 Here we are using $\mathbb{P}(X_{0}=i_{0},X_{1}=i_{1},\dots,X_{n}=i_{n})$ to see that the denominator is strictly greater than 0
 ___
-We can view this in terms of linear algebra. 
+## Linear Algebra for Markov Chains omg
 We write 
 $$
 \mathbb{P}_{i}(A)=\mathbb{P}(A\mid X_{0}=i)
@@ -138,17 +138,6 @@ One can show that $(P^{2})_{ij}$ is well defined when $\left| I \right|=\infty$ 
 As we vary $j$, these describe row vector entries - the distribution of $X_{n}$ with the initial distribution $\lambda$ and $\delta_{i}$, respectively. In principle, this gives a way to answer most questions with linear algebra, however, this can lead to very lengthy calculations, and generally isn't the bet way of thining about Markov chains
 ### Proof
 Use that matrix multiplication $A^{n}$ is a sum over paths of length $n$ and the theorem above
-## Example
-$$
-P=\begin{pmatrix}
-P_{A A} & P_{AB} \\
-P_{BA} & P_{B B}
-\end{pmatrix}=\begin{pmatrix}
-1-\alpha & \alpha \\
-\beta & 1-\beta
-\end{pmatrix}
-$$
-Set up and solve the recurrence relation for $P_{A A}^{n}$
 ___
 ## Chapman-Kolmogorov Equations
 We have, by matrix multiplication that
@@ -230,3 +219,21 @@ $$
 = \delta_{i i_{m}}P_{i_{m}i_{m+1}}\dots P_{i_{m}i_{m+1}}\dots P_{i_{m+n-1}i_{m+n}}\mathbb{P}(A\mid X_{m}=i)
 $$
 
+## Examples
+$$
+P=\begin{pmatrix}
+P_{A A} & P_{AB} \\
+P_{BA} & P_{B B}
+\end{pmatrix}=\begin{pmatrix}
+1-\alpha & \alpha \\
+\beta & 1-\beta
+\end{pmatrix}
+$$
+We can set up and solve the recurrence relation for $P_{A A}^{n}$:
+$$
+P^{n+1}_{AA} = P^{n}_{A A}P_{A A}+P^{n}_{AB}P_{BA}=P^{n}_{A A}(1-\alpha)+P^{n}_{AB}\beta 
+$$
+$$
+= P^{n}_{A A}(1-\alpha)+(1-P^{n}_{A A})\beta=\beta+P^{n}_{A A}(1-\alpha-\beta)
+$$
+Which has $P^{0}_{A A}=1$

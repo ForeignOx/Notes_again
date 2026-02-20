@@ -24,23 +24,3 @@ $e^{ z }$ can be represented as:
 $$
 e^{ z }=\sum_{n=0}^{\infty} \frac{f^{(n)}(0)}{n!}z^{n}=\sum_{n=0}^{\infty} \frac{z^{n}}{n!}
 $$
-## Corollary: Cauchy's Derivative Formula
-Suppose $f$ is holomorphic on some ball $B_{r}(a)$, then
-$$
-\int _{\left| z-a \right| =\rho} \frac{f(z)}{(z-a)^{n+1}} \, dz =2\pi i  \frac{f^{(n)}(a)}{n"} 
-$$
-## Example
-Taking $n=1,a=0,f=\sin$,
-$$
-    \int _{\left| z \right|=1 } \frac{\sin z}{z^{2}} \, dz =2\pi i \sin' z\bigg{|}_{z=0}= 2\pi i \cos0=2\pi i
-$$
-___
-Consider
-$$
-f(x)=\begin{cases}
-e^{ -\frac{1}{x} } & x>0 \\
-0 & x\leq 0
-\end{cases}
-$$
-Which has Taylor series of $\hspace{0pt}0$ around $0$, which is really sad and that's basically because it is basically two functions glued together
-Another similar example is $\left| x \right|x^{n}$
