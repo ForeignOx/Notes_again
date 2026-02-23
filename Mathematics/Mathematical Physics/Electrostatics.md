@@ -24,4 +24,24 @@ $$
 $$
 By definitions of [[Divergence and Curl|divergence and curl]], this is trivial for $\underline{E}$
 ## Energy Stored in Electrostatic Field
-How much [[energy|energy]] do we invest to create the electr
+How much [[energy|energy]] do we invest to create the electric field $\underline{E}(\underline{x})$?
+The same amount of energy it took to assemble the distribution $\rho(\underline{x})$ that creates it
+A more elementary question to ask is how much [[work|work]] $U$ do we have to do in order to bring a particle of charge $q$ to the point $\underline{r}$ inside the electric field $\underline{E}(\underline{r})$
+$$
+U(\underline{r})=-\int _{-\infty}^{\underline{r}}\underline{f}(\underline{r}')\cdot  \, d\underline{r}'=-q\int _{-\infty}^{\underline{r}} \underline{E}(\underline{r}')\cdot \, d\underline{r}' 
+$$
+$$
+= q\int_{-\infty}^{\underline{r}} \underline{\nabla } \varphi(\underline{r}')\cdot \, d\underline{r}'=q(\varphi(\underline{r})-\varphi(\infty))=q\varphi(\underline{r})
+$$
+### System of $N$-particles
+Consider bringing $N$ particles of charges $q_{i}$ with $i \in\overline{N}$ at positions $\underline{x}_{i}$ in empty space
+We define
+$$
+\varphi_{j,i}(\underline{x}_{i})=\frac{1}{4\pi\varepsilon_{0}} \frac{q_{j}}{\left| \underline{x}_{i}-\underline{x}_{j} \right| }
+$$
+Which is simply the potential at $\underline{x}_{i}$ due to the particle at $\underline{x}_{j}$
+We also define
+$$
+U_{i,j}=q_{i}\varphi_{j}(\underline{x}_{i})=\frac{1}{4\pi\varepsilon_{0}} \frac{q_{i}q_{j}}{\left| \underline{x}_{j}-\underline{x}_{i} \right| }=q_{j}\varphi_{i}(\underline{x}_{j})=U_{j,i}
+$$
+Which is the the energy of 
