@@ -152,10 +152,16 @@ And
 $$
 \underline{p}=\int _{\mathbb{R}^{3}}\underline{r}\rho(\underline{r}) \, d^{3}\underline{r} =q_{1}\int \underline{r}\delta(\underline{r}-\underline{r}_{1}) \, d^{3}\underline{r}+q_{2}\int \underline{r}\delta(\underline{r}-\underline{r}_{2}) \, d^{3}\underline{r}=q_{1}\underline{r}_{1}+q_{2}\underline{r}_{2} 
 $$
-Shifting both: $\underline{r}_{i}\to \underline{r}_{i}+\underline{a}$
+Shifting both: $\underline{r}_{i}\to \underline{r}_{i}+\underline{a}$, then
 $$
+\underline{p}'=(q_{1}+q_{2})\cdot \underline{a}+q_{1}\underline{r}_{1}+q_{2}\underline{r}_{2}=Q\underline{a}+\underline{p}
+$$
+If $q_{1}=-q_{2}=q$so that $Q=0$,
+$$
+\underline{p}=q(\underline{r}_{1}-\underline{r}_{2})=q\underline{d}
+$$
+With $\underline{d}$ being the distance between the two charges
 
-$$
 
 
 #Physics #Fields #Equation #Definition
