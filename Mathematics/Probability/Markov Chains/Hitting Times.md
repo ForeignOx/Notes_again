@@ -36,6 +36,21 @@ $$
 =\sum_{j\in  I}\mathbb{P}_{i}(X_{1}=j)\mathbb{P}_{i}(H^{A}<\infty\mid X_{1}=j)=P_{ij}h_{j}
 $$
 As required
+- If $X_{i}$ solves the above and $X_{i}\geq 0$ for all $i$, then $X_{i}\geq h_{i}$ for all $i$
+If $i\in A$,
+$$
+X_{i}=\sum_{j\in  I}P_{ij}X_{j}=\sum_{j\in  A}P_{ij}X_{j}+P_{j\not\in  A}P_{ij}X_{j} 
+$$
+$$
+= \sum_{j\in  A}P_{ij}+\sum_{j\not\in  A}\sum_{j_{2}\in  A}P_{ij}P_{jj_{2}}+\sum_{j\not\in  A}\sum _{j_{2}\not\in  A} P_{ij}P_{j j_{2}}X_{j_{2}} 
+$$
+$$
+= \sum_{j\in  A}P_{ij}+\sum_{j\not\in  A}\sum_{j_{2}\in  A}P_{ij}P_{jj}+\sum_{j\not\in  A}\sum_{j_{2}\not\in  A}\sum_{j_{3}\in  I}P_{ij}P_{jj_{2}}P_{j_{2}j_{3}}X_{j_{3}}
+$$
+Continuing this inductively,
+$$
+=\sum_{m=1}^{n}\sum_{j_{1},\dots,j_{m-1}\not\in  A,j_{m}\in  A}P_{ij}P_{jj_{2}}P_{j_{2}j_{3}}\dots P_{j_{m-1}j_{m}}+\sum_{}
+$$
 ## Theorem
 The vector of mean hitting times $(k_{i}^{A})_{i\in I}$ is the minimal non-negative solution to the linear system
 $$
