@@ -82,4 +82,25 @@ So electric currents generate magnetic fields in a right-handed rule manner
 Ampere's law gives some intuition, but the full answer is only given in symmetric cases
 ### Remark
 Ampere's law seems a lil ambiguoso iykwim
+If we have  boundary $\partial S=C$, this could be like the circle cutting a sphere into two hemispheres $S_{1}$ and $S_{2}$, should we calculate $I_{S_{1}}$ or $I_{S_{2}}$??
+They end up being in fact the same, this is because $\underline{\nabla }\underline{J}=0$ which implies that
+$$
+\int _{V}\underline{\nabla } \underline{J} \, d V=0 
+$$
+Therefore, by Gauss' theorem
+$$
+\int _{S_{1}}\underline{J}\cdot \, d\underline{S}=-\int _{S_{2}}\underline{J} \, d\underline{S}
+$$
+$$
+\implies I_{S_{1}}=I_{S_{2}}  
+$$
+Also it means $\underline{\nabla} \cdot \underline{B}=0$
+## Examples
+It is meaningful to define flux out of $\underline{B}$ through a loop
+Consider the infinitely long straight wire.
+It is natural to gue $\underline{B}(\underline{r})=B(\underline{\rho})\underline{\hat{e}}_{\varphi}$ (using cylinrical coords)
+Henc we define $I_{S_{R}}=I$, and
+$$
+\int _{C_{R}}\underline{B}\cdot \, d \underline{\ell}=\int_{0}^{2\pi} B(R)R \, d\varphi=2  
+$$
 
