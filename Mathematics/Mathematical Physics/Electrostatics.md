@@ -56,4 +56,18 @@ $$
 $$
 = \frac{1}{2}\sum_{i=1}^{N}q_{i}\Phi_{i}(\underline{x}_{i})
 $$
-Where $\Phi_{i}(\underline{x})$
+Where $\Phi_{j}(\underline{x}_{i})=\sum_{j=i}^{N}\varphi_{j}(\underline{x}_{i})$ is the potential created by all the particles at $\underline{x}_{i}$ except for the $i$th particle
+For a smooth distribution,
+$$
+    U=\frac{1}{2}\int _{\mathbb{R}^{3}}\rho(\underline{r})\varphi(\underline{r}) \, d^{3}\underline{r} = -\frac{\varepsilon_{0}}{2}\int _{\mathbb{R}^{3}} \nabla^{2}\varphi(\underline{r})\cdot \varphi(\underline{r}) \, d^{3}\underline{r}
+$$
+$$
+= \frac{\varepsilon_{0}}{2}\int _{\mathbb{R}^{3}}\underline{\nabla } \varphi(\underline{r})\cdot \underline{\nabla} \varphi(\underline{r}) \, d^{3}\underline{r}   
+$$
+$$
+=\frac{\varepsilon_{0}}{2}\int _{\mathbb{R}^{3}}\left| \underline{E}(\underline{r}) \right| ^{2} \, d^{3}\underline{r}  
+$$
+$$
+\implies U=\frac{\varepsilon}{2}\int _{\mathbb{R}^{3}}\left| \underline{E}(\underline{r}) \right| ^{2} \, d^{3}\underline{r}
+$$
+

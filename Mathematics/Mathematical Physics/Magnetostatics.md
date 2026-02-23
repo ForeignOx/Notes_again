@@ -57,3 +57,5 @@ $$
 So our solutions are linear
 The total $\rho_{T}=\rho_{1}+\rho_{2}$ has $\underline{E}_{T}=\underline{E}_{1}+\underline{E}_{2}$
 So if we find several solutions, we can simply add them up
+___
+In magnetostatics, there is an absence of electric charge, so $\rho=0$
