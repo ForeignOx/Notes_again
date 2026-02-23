@@ -37,11 +37,23 @@ $$
 Consider bringing $N$ particles of charges $q_{i}$ with $i \in\overline{N}$ at positions $\underline{x}_{i}$ in empty space
 We define
 $$
-\varphi_{j,i}(\underline{x}_{i})=\frac{1}{4\pi\varepsilon_{0}} \frac{q_{j}}{\left| \underline{x}_{i}-\underline{x}_{j} \right| }
+\varphi_{j}(\underline{x}_{i})=\frac{1}{4\pi\varepsilon_{0}} \frac{q_{j}}{\left| \underline{x}_{i}-\underline{x}_{j} \right| }
 $$
 Which is simply the potential at $\underline{x}_{i}$ due to the particle at $\underline{x}_{j}$
 We also define
 $$
 U_{i,j}=q_{i}\varphi_{j}(\underline{x}_{i})=\frac{1}{4\pi\varepsilon_{0}} \frac{q_{i}q_{j}}{\left| \underline{x}_{j}-\underline{x}_{i} \right| }=q_{j}\varphi_{i}(\underline{x}_{j})=U_{j,i}
 $$
-Which is the the energy of 
+Which is the the energy of particle $i$ due to the potential of the $j$th particle, we will take advantage of its symmetry >:)
+We warm up with simply considering two particles $U=U_{2,1}$ rather than $U_{1,2}+U_{2,1}$, for three particle, $U=U_{2,1}+U_{3,1}+U_{3,2}$ we don't add all the other nonsense as then we would be double counting, sooo for $N$ particles
+$$
+U=\sum_{i=1}^{N}\sum_{j>i}U_{i,j}
+$$
+We take advantage of this, sooo
+$$
+U=\frac{1}{2}\sum_{i=1}^{N}\sum_{j\neq i}U_{i,j}=\frac{1}{2}\sum_{i=1}^{N}\sum_{j\neq i}q_{i}\varphi_{j}(\underline{x}_{i})=\frac{1}{2}\sum_{i=1}^{N}q_{i}\left( \sum_{j\neq i}\varphi_{j}(\underline{x}_{i}) \right)
+$$
+$$
+= \frac{1}{2}\sum_{i=1}^{N}q_{i}\Phi_{i}(\underline{x}_{i})
+$$
+Where $\Phi_{i}(\underline{x})$
