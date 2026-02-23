@@ -23,3 +23,5 @@ $$
 0=\underline{\nabla} \cdot (\underline{\nabla} \times \underline{F} )=\underline{\nabla} \cdot \underline{ C}  
 $$
 By definitions of [[Divergence and Curl|divergence and curl]], this is trivial for $\underline{E}$
+## Energy Stored in Electrostatic Field
+How much [[energy|energy]] do we invest to create the electr
