@@ -128,3 +128,29 @@ ___
 Birth-death proces
 Suppose we have a population of size $X_{n}\geq 0$ which evolves until the species is extinct
 ![[Pasted image 20260223133619.png]]
+We assume $p_{i}+q_{i}=1$
+The question we are interested is does the population go extinct?
+What is $h_{i}=\mathbb{P}_{i}(H^{\left\{ 0 \right\}}<\infty)$
+We see $h_{0}=1$ and for $i\geq 1$,
+$$
+h_{i}=p_{i}h_{i+1}+q_{i}h_{i-1}
+$$
+We change variables:
+$$
+\implies(p_{i}+q_{i})h_{i}=p_{i}h_{i+1}+q_{i}h_{i-1} 
+$$
+$$
+\implies p_{i}(h_{i}-h_{i+1})=q_{i}(h_{i-1}-h_{i})
+$$
+And we let $u_{i}=h_{i-1}-h_{i}$, soo
+$$
+u_{i+1}=\frac{q_{i}}{p_{i}}u_{i}
+$$
+Wihch is very easy to solve,
+$$
+u_{i+1}=\frac{q_{i}}{p_{i}}\times \frac{q_{i-1}}{p_{i-1}}\times\dots \times \frac{q_{1}}{p_{1}} u_{i}
+$$
+We also have that
+$$
+u_{1}+u_{1}+\dots+u_{i}=h_{0}-h_{1}+h_{1}-h_{2}+\dots+h_i-h_{n-1}=1-h_{i}
+$$
