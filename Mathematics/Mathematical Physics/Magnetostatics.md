@@ -59,3 +59,27 @@ The total $\rho_{T}=\rho_{1}+\rho_{2}$ has $\underline{E}_{T}=\underline{E}_{1}+
 So if we find several solutions, we can simply add them up
 ___
 In magnetostatics, there is an absence of electric charge, so $\rho=0$
+We study the electric current density $\underline{J}(\underline{x})$, which obeys the continuity equation
+$$
+\underline{\nabla} \cdot \underline{J} =0
+$$
+Which is already satisfied by Maxwell's equations
+$$
+\frac{ \partial \rho }{ \partial t } +\underline{\nabla } \underline{J}=0
+$$
+Note that there can be no analogue of magnetic charge
+It is natural to consider integrating $\underline{\nabla} \times \underline{B}=\mu\underline{J}$ on surface $S$ and use [[Stokes' Theorem|Stokes' theorem]]
+$$
+\int _{S}(\underline{\nabla} \times \underline{A} )\cdot \, d \underline{S}=\int _{C=\partial S}\underline{A} \cdot\, d \underline{\ell}  
+$$
+Note that this introduces a key feature of directionality
+Using Ampere's law $\underline{\nabla} \cdot \underline{ B}=0$,
+$$
+\int _{C-\partial S}\underline{B}\cdot \, d\underline{\ell}=\mu_{0}\int _{S}\underline{J}\cdot \, d\underline{S}=\mu_{0}I_{S} 
+$$
+This is the integral form of Ampere's law
+So electric currents generate magnetic fields in a right-handed rule manner
+Ampere's law gives some intuition, but the full answer is only given in symmetric cases
+### Remark
+Ampere's law seems a lil ambiguoso iykwim
+
