@@ -101,6 +101,7 @@ Consider the infinitely long straight wire.
 It is natural to gue $\underline{B}(\underline{r})=B(\underline{\rho})\underline{\hat{e}}_{\varphi}$ (using cylinrical coords)
 Henc we define $I_{S_{R}}=I$, and
 $$
-\int _{C_{R}}\underline{B}\cdot \, d \underline{\ell}=\int_{0}^{2\pi} B(R)R \, d\varphi=2  
+\int _{C_{R}}\underline{B}\cdot \, d \underline{\ell}=\int_{0}^{2\pi} B(R)R \, d\varphi=2\pi RB(R)  
 $$
+
 
