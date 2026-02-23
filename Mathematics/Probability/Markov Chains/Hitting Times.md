@@ -36,21 +36,29 @@ $$
 =\sum_{j\in  I}\mathbb{P}_{i}(X_{1}=j)\mathbb{P}_{i}(H^{A}<\infty\mid X_{1}=j)=P_{ij}h_{j}
 $$
 As required
-- If $X_{i}$ solves the above and $X_{i}\geq 0$ for all $i$, then $X_{i}\geq h_{i}$ for all $i$
+- If $x_{i}$ solves the above and $x_{i}\geq 0$ for all $i$, then $x_{i}\geq h_{i}$ for all $i$
 If $i\in A$,
 $$
-X_{i}=\sum_{j\in  I}P_{ij}X_{j}=\sum_{j\in  A}P_{ij}X_{j}+P_{j\not\in  A}P_{ij}X_{j} 
+x_{i}=\sum_{j\in  I}P_{ij}X_{j}=\sum_{j\in  A}P_{ij}X_{j}+P_{j\not\in  A}P_{ij}x_{j} 
 $$
 $$
-= \sum_{j\in  A}P_{ij}+\sum_{j\not\in  A}\sum_{j_{2}\in  A}P_{ij}P_{jj_{2}}+\sum_{j\not\in  A}\sum _{j_{2}\not\in  A} P_{ij}P_{j j_{2}}X_{j_{2}} 
+= \sum_{j\in  A}P_{ij}+\sum_{j\not\in  A}\sum_{j_{2}\in  A}P_{ij}P_{jj_{2}}+\sum_{j\not\in  A}\sum _{j_{2}\not\in  A} P_{ij}P_{j j_{2}}x_{j_{2}} 
 $$
 $$
-= \sum_{j\in  A}P_{ij}+\sum_{j\not\in  A}\sum_{j_{2}\in  A}P_{ij}P_{jj}+\sum_{j\not\in  A}\sum_{j_{2}\not\in  A}\sum_{j_{3}\in  I}P_{ij}P_{jj_{2}}P_{j_{2}j_{3}}X_{j_{3}}
+= \sum_{j\in  A}P_{ij}+\sum_{j\not\in  A}\sum_{j_{2}\in  A}P_{ij}P_{jj}+\sum_{j\not\in  A}\sum_{j_{2}\not\in  A}\sum_{j_{3}\in  I}P_{ij}P_{jj_{2}}P_{j_{2}j_{3}}x_{j_{3}}
 $$
 Continuing this inductively,
 $$
-=\sum_{m=1}^{n}\sum_{j_{1},\dots,j_{m-1}\not\in  A,j_{m}\in  A}P_{ij}P_{jj_{2}}P_{j_{2}j_{3}}\dots P_{j_{m-1}j_{m}}+\sum_{}
+=\sum_{m=1}^{n}\sum_{j_{1},\dots,j_{m-1}\not\in  A,j_{m}\in  A}P_{ij}P_{j_{1}j_{2}}P_{j_{2}j_{3}}\dots P_{j_{m-1}j_{m}}+\sum_{j_{1},\dots,j_{m}\not\in  A}P_{ij_{1}}P_{j_{1}j_{2}}\dots P_{j_{m-1}j_{m}}X_{j_{n}}
 $$
+$$
+\geq \mathbb{P}(H^{A}=m)
+$$
+Soo
+$$
+x_{i}\geq \sum_{m=1}^{n}\mathbb{P}(H^{A}=m)=\mathbb{P}(H^{a}\leq n)\to \mathbb{P}(H^{A}<\infty)=h_{i}^{A}
+$$
+
 ## Theorem
 The vector of mean hitting times $(k_{i}^{A})_{i\in I}$ is the minimal non-negative solution to the linear system
 $$
@@ -116,3 +124,7 @@ We now divide into $\hspace{0pt}3$ cases:
 - If $p<q$ (similar to an actual casino), since $h_{i}\in[0,1]$, we must have that $B=0$, and hence $h_{i}=1$, therefore you definitely go broke
 - $p=q$ (a fair game) Since $h_{i}\in [0,1]$, again it must be that $B=0$, so $h_{i}\equiv 1$, therefore you go broke even in a  fair game
 - $p>q$ (you run a pyramid shceme) $h_{i}=1-B\left( 1-\left( \frac{q}{p} \right)^{i} \right)$, so the minimal non-negative solution is with $B=1$, therefore $h_{i}=\left( \frac{q}{p} \right)^{i}$, hence you are unlikely to go broke if you start with a large wealth
+___
+Birth-death proces
+Suppose we have a population of size $X_{n}\geq 0$ which evolves until the species is extinct
+![[Pasted image 20260223133619.png]]
