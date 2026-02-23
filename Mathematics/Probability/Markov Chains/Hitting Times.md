@@ -25,6 +25,17 @@ h_{i}^{A}=\sum_{j\in  I}P_{ij}h_{j}^{A} & i\not\in  A
 \end{cases}
 $$
 By the minimal non-negative solution, we mean that if $(x_{i})_{i\in I}$ solves the above and $x_{i}\geq 0$ for all $i\in I$, then $h_{i}^{A}\leq x_{i}$ for all $i \in I$
+### Proof
+We need to show:
+- $h_{i}^{A}$ is a solution to the above,
+As in the example,
+$$
+\mathbb{P}_{i}(H^{A}<\infty)=\sum_{j\in  I}\mathbb{P}_{i}(H^{A}<\infty,X_{1}=j)
+$$
+$$
+=\sum_{j\in  I}\mathbb{P}_{i}(X_{1}=j)\mathbb{P}_{i}(H^{A}<\infty\mid X_{1}=j)=P_{ij}h_{j}
+$$
+As required
 ## Theorem
 The vector of mean hitting times $(k_{i}^{A})_{i\in I}$ is the minimal non-negative solution to the linear system
 $$
