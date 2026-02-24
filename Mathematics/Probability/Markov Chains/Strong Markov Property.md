@@ -56,3 +56,5 @@ $$
 $$
 Assume $\mathbb{P}(T_{j}^{n}<\infty)=1$. Then the strong Markov property says that the $Y_{m}$ are [[Independent and Identically Distributed|independent and identically distributed]] random variables!
 This suggests that there is some regularity to how often $X_{n}$ returns to a given state $i$, by the [[strong law of large numbers|law of large numbers]] 
+___
+Gambler's ru
