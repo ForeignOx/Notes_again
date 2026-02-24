@@ -77,7 +77,7 @@ H_{0}=H_{1}+\tilde{H}_{0}
 $$
 I.e;. if we start from $\hspace{0pt}2$, then the time to hit zero is equal to the time to hit $\hspace{0pt}1$ plus the time after hitting one to hit 0
 But by translational symmetry, they have the same probabilistic distribution
-Letting $\Phi_{n}(s)$ be the brobability generating function of thehitting time starting from $n$, thus
+Letting $\Phi_{n}(s)$ be the probability generating function of thehitting time starting from $n$, thus
 $$
 \Phi_{n}(s)=\mathbb{E}_{n}(s^{H_{0}})
 $$
@@ -100,5 +100,25 @@ $$
 Where we use the strong Markov property a few times
 But we also have
 $$
-\Phi(s)=\mathbb{E}_{1}(s^{H_{0}})=\mathbb{E}_{1}(s^{H_{0}}(\mathbb{1}_{X_{1}=0}))
+\Phi(s)=\mathbb{E}_{1}(s^{H_{0}})=\mathbb{E}_{1}(s^{H_{0}}(\mathbb{1}_{X_{1}=0}+\mathbb{1}_{X_{1}=2})) 
+$$
+$$
+= \mathbb{E}_{1}(s^{H_{0}}\mid X_{1}=2)\mathbb{P}_{1}(X_{1}=2)+\mathbb{E}_{1}(s^{H_{0}}\mid X_{1}=0)\mathbb{P}_{1}(X_{1}=0)
+$$
+$$
+ =p\mathbb{E}_{1}(s^{H_{0}}\mid X_{1}=2)+qs 
+$$
+$$
+=ps\mathbb{E}_{2}(s^{H_{0}})+qs 
+$$
+$$
+= ps(\Phi(s))^{2}+qs
+$$
+Therefore $\Phi(s)$ solves the quadratic equation $psx^{2}-x-qs=0$, hence
+$$
+\Phi(s)= \frac{1\pm \sqrt{ 1-4pqs^{2} }}{2ps}
+$$
+We know the Taylor series for $\sqrt{ 1-x }$:
+$$
+\sqrt{ 1-x }=1-\frac{x}{2}+\frac{x^{2}}{8}-\dots=\sum_{n=0}^{\infty} x^{n}(-1)^{n}{\frac{1}{2} \choose n }
 $$
