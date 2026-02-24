@@ -28,7 +28,7 @@ So we get the following properties:
 $$
 \underline{\nabla} \times \underline{E} =-\underline{\nabla} \times \underline{\nabla }\phi=0  
 $$
-    Which is known a Hodge de Rham decomposition, or Helmoltz decomposition. Also [[Gauss' Law|Gauss' law]] becomes:
+Which is known a Hodge de Rham decomposition, or Helmoltz decomposition. Also [[Gauss' Law|Gauss' law]] becomes:
 $$
 \nabla^{2}\phi=-\frac{\rho}{\varepsilon_{0}}
 $$
