@@ -66,3 +66,39 @@ The idea is to introduce the [[Probability Generating Functions|probability gene
 $$
 \Phi_{X}(s)=\sum_{n=0}^{\infty} s ^{n}\mathbb{P}(X=n)
 $$
+For random variables $X:\Omega\to \mathbb{N}$
+We know by the rules of differentiation, that
+$$
+\frac{1}{n!}\frac{d ^{n}}{ds ^{n}} \Bigg{|}_{s=0} \Phi_{X}(s )=\sum_{n=m}^{\infty} m(m-1)\dots(m-n+1)s^{m-n}\Bigg{|}_{s=0} \mathbb{P}(X=m)=\mathbb{P}(X=n)
+$$
+We observe that if $(X_{n})_{n\in\mathbb{N}_{0}}$ is $Markov(\delta_{2},P)$, then
+$$
+H_{0}=H_{1}+\tilde{H}_{0}
+$$
+I.e;. if we start from $\hspace{0pt}2$, then the time to hit zero is equal to the time to hit $\hspace{0pt}1$ plus the time after hitting one to hit 0
+But by translational symmetry, they have the same probabilistic distribution
+Letting $\Phi_{n}(s)$ be the brobability generating function of thehitting time starting from $n$, thus
+$$
+\Phi_{n}(s)=\mathbb{E}_{n}(s^{H_{0}})
+$$
+We claim that $\Phi_{2}=\Phi_{1}^{2}$
+$$
+\Phi_{2}(s)=\mathbb{E}_{2}(s ^{H_{0}})=\mathbb{E}( s^{H_{0}}\mathbb{1}_{H_{1}<\infty}) 
+$$
+$$
+= \mathbb{E}_{2}(s^{H_{0}}\mid H_{1}<\infty)\mathbb{P}_{2}(H_{1}<\infty) 
+$$
+$$
+= \mathbb{E}_{2}(s^{H_{1}}\mid H_{1}<\infty)\mathbb{E}_{2}(s^{\tilde{H}_{0}}\mid H_{1}<\infty)\mathbb{P}_{2}(H_{1}<\infty) 
+$$
+$$
+= \mathbb{E}(s^{H_{1}}\mathbb{1}_{H_{1}<\infty})\mathbb{E}(s^{\tilde{H}_{0}}\mid H_{1}<\infty) 
+$$
+$$
+= \mathbb{E}_{2}(s^{H_{1}})\mathbb{E}_{1}(s^{H_{0}})=(\Phi(s))^{2}
+$$
+Where we use the strong Markov property a few times
+But we also have
+$$
+\Phi(s)=\mathbb{E}_{1}(s^{H_{0}})=\mathbb{E}_{1}(s^{H_{0}}(\mathbb{1}_{X_{1}=0}))
+$$
