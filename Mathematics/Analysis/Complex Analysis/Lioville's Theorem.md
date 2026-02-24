@@ -20,3 +20,4 @@ $$
 $$
 As $\rho\to \infty$, we choose a bigger and bigger circle and $\frac{\left| w \right|M}{\rho-\left| w \right|}\to 0$
 So the function is constant
+
