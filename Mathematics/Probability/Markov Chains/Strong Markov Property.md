@@ -122,3 +122,12 @@ We know the Taylor series for $\sqrt{ 1-x }$:
 $$
 \sqrt{ 1-x }=1-\frac{x}{2}+\frac{x^{2}}{8}-\dots=\sum_{n=0}^{\infty} x^{n}(-1)^{n}{\frac{1}{2} \choose n }
 $$
+Therefore
+$$
+\Phi(s)= \frac{4pqs^{2}}{4ps}+\frac{16p^{2}q^{2}s^{4}}{16ps}+\dots=qs+pq^{2}s^{3}+\dots
+$$
+Thus
+$$
+\mathbb{P}_{1}(H^{\left\{ 0 \right\}}=1)=q,~\mathbb{P}_{1}(H^{\left\{ 0 \right\}}=2)=0,~\mathbb{P}_{1}(H^{\left\{ 0 \right\}}=3)=pq^{2}
+$$
+These can be checked
