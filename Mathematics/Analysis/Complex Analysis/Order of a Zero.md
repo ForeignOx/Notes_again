@@ -4,7 +4,7 @@ $$
 f(a)=f'(a)=\dots=f^{(k-1)}(a)=0
 $$
 But $f^{(k)}\neq 0$, then we say $f$ has a zero of order $k$ at $z=a$
-## Lemma
+## Lemma: Holomorphic Functions have Zeros of Finite Order
 If $f$ is holomorphic on some ball $B_{r}(a)$ with $f(a)=0$, then either $f(z)=0$ for all $z\in B_{r}(a)$ (identically zero for all $z\in B_{r}(a)$) or there exists $k\in\mathbb{N}$ such that $f$ has a zero of order $k$ at $z=a$
 ### Proof
 If $f$ is holomorphic on $B_{r}(a)$, then by [[Cauchy-Taylor Theorem|Cauchy-Taylor]] it has a convergent [[Power Series|power series]] representation of the form
