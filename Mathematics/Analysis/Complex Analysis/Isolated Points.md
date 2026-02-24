@@ -16,4 +16,4 @@ If $f(a)=0$, then by [[Order of a Zero#Lemma Holomorphic Functions have Zeros of
 $$
 f(z)=(z-a)^{k}g(z)~\forall z\in  B_{r}(a), g(a) \neq 0
 $$
-So there is $\rho>0$ such that $g\neq 0$ on $B_{\rho} (a)$ so on $B_{\rho}(a)\setminus \left\{ a \right\}$, $f(z)\neq 0$
+So by [[Continuous Functions are Locally Bounded|this proposition]] there is $\rho>0$ such that $g\neq 0$ on $B_{\rho} (a)$ so on $B_{\rho}(a)\setminus \left\{ a \right\}$, $f(z)\neq 0$
