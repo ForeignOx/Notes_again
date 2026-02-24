@@ -24,5 +24,4 @@ If $f:D\to \mathbb{C}$ is [[Continuity|continuous]] on a [[Starlike Domains|star
 - $f$ has a holomorphic antiderivative on $D$
 - $f$ has a convergent Taylor series expansion around every point in $D$
 - for any closed contour $\gamma$ in $D$, we have $\oint_{\gamma}f(z)~dz=0$
-- for any triangular region $\triangle$ in $D$, we have $\oint_{\triangle}f(z)~dz$
-- 
+- for any triangular region $\triangle$ in $D$, we have $\oint_{\triangle}f(z)~dz=0$
