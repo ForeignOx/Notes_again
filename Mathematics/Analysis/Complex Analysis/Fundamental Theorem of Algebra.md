@@ -50,4 +50,8 @@ $$
 $$
 \implies (z-2i)^{2}=2i=2e^{ i \frac{\pi}{2} }
 $$
-so $z$
+so $z-2i=\sqrt{ 2 }e^{ i \frac{\pi}{4}+ \frac{2\pi ik}{4} }$
+For $n \in \left\{ 0,1 \right\}$
+## Remark
+If $p(a)=0$ then there is a $k\in \mathbb{N}$ such that $p(z)=(z-a)^{k}Q(z)$ where $Q$ is a polynomial with $Q(a)\neq 0$
+## Definition
