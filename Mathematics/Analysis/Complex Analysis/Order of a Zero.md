@@ -33,6 +33,26 @@ k=\min\left\{ n\geq 0:\middle|:c_{n}\neq 0 \right\}
 $$
 Thus
 $$
-f(z)=\sum_{n=k}^{\infty} c_{n}(z-a)^{n}=(z-a)r
+f(z)=\sum_{n=k}^{\infty} c_{n}(z-a)^{n}=(z-a)^{k}\sum_{n=k}^{\infty} c_{n}(z-a)^{n-k}=(z-a)^{k}\sum_{m=0}^{\infty}c_{m+k}(z-a)^{m}
 $$
+We know that power series are holomorphic and $g(a)=c_{k}\neq 0$ hence proved
+## Example
+Consider $f(z)=z(e^{ z }-1)$, this has a zero at $z=0$
+$$
+f'(z)=e^{ z }-1+ze^{ z }
+$$
+So $f'(0)=0$
+$$
+f''(z)=e^{ z }+e^{ z }+ze^{ z }
+$$
+So $f''(0)=1+1+0\neq 0$, so this zero has order $2$
+Note
+$$
+e^{ z }=\sum_{n=0}^{\infty} \frac{z^{n}}{n!}
+$$
+So 
+$$
+f(z)=z\left( \sum_{n=0}^{\infty} \frac{z^{n}}{n!}-1 \right)=z\sum_{n=1}^{\infty} \frac{z^{n}}{n!}=z^{2} \sum_{n=1}^{\infty} \frac{z^{n-1}}{n!} = z^{2} \sum_{m=0}^{\infty} \frac{z^{m}}{(m+1)!}
+$$
+Which is holomorphic on $\mathbb{C}$
 
