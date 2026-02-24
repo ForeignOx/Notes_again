@@ -1,3 +1,4 @@
+## Proposition
 If [[Limit|$\lim_{ x \to a }f=L$]], and $\lim_{ x \to a }g(x)=M\neq 0$, then:
 $$
 \lim_{ x \to a } \frac{f(x)}{g(x)}=\frac{L}{M}
@@ -85,5 +86,18 @@ $$
 $$
 = \frac{-2+8}{1}=6 
 $$
+# Complex Version
+## Theorem
+Suppose [[Complex Functions|$f,h:D\to \mathbb{C}$]]  be [[Holomorphicity|holomorphic]] on a [[domains|domain]] $D$, if $a\in D$ is a [[Order of a Zero|zero of order]] $k$ of $f$ and a zero of order $m$ of $h$, then
+$$
+\lim_{ z \to a }  \frac{f(z)}{h(z)}=\begin{cases}
+0 & k>m \\
+\frac{f^{(k)}(a)}{h^{(k)}(a)} & k=m \\
+\infty & k<m
+\end{cases}
+$$
+
+
+
 
 #Mathematics #Analysis #Calculus #Theorem 
