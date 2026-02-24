@@ -58,3 +58,11 @@ Assume $\mathbb{P}(T_{j}^{n}<\infty)=1$. Then the strong Markov property says th
 This suggests that there is some regularity to how often $X_{n}$ returns to a given state $i$, by the [[strong law of large numbers|law of large numbers]] 
 ___
 Gambler's ruin but more innit
+So before we computed $\mathbb{P}_{i}(H^{\left\{ 0 \right\}}<\infty)$ i.e. the time of bancruptcy, but now we can use the strong Markov property to compute
+$$
+\mathbb{P}_{i}(H^{\left\{ 0 \right\}}=n)
+$$
+The idea is to introduce the [[Probability Generating Functions|probability generating function]] 
+$$
+\Phi_{X}(s)=\sum_{n=0}^{\infty} s ^{n}\mathbb{P}(X=n)
+$$
