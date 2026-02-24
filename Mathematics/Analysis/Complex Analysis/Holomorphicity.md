@@ -15,3 +15,14 @@ We can find a contour $\gamma:[0,1]\implies \mathbb{C}$ such that
 finish ths plzzz
 ___
 The beauty of complex analysis is that to have a constant holomorphic function, we only need that $f$ "doesn't fill" the space i.e.
+## Equivalent Notions
+If $f:D\to \mathbb{C}$ is [[Continuity|continuous]] on a [[Starlike Domains|starlike]] [[domains|domain]] $D$, the the following are equivalent:
+- $f$ is holomorphic on $D$
+- $f$ is complex differentiable at all points in $D$
+- $f$ is real differentiable on $D$ and satisfies the Cauchy-Riemann equations
+- $f$ is infinitely many times complex differentiable on $D$
+- $f$ has a holomorphic antiderivative on $D$
+- $f$ has a convergent Taylor series expansion around every point in $D$
+- for any closed contour $\gamma$ in $D$, we have $\oint_{\gamma}f(z)~dz=0$
+- for any triangular region $\triangle$ in $D$, we have $\oint_{\triangle}f(z)~dz$
+- 
