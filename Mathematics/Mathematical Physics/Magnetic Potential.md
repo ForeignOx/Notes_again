@@ -129,3 +129,16 @@ $$
 $$
 = \frac{\mu_{0}I}{2\pi r}\underline{e}_{\phi}
 $$
+# Long Distance Behaviour
+Imagine a localised current density $\underline{J}(\underline{x})$, in Coulomb gauge
+$$
+A_{i}(\underline{x})=\frac{\mu_{0}}{4\pi}\int _{\mathbb{R}^{3}} \frac{J_{i}(\underline{y})}{\left| \underline{x}-\underline{y} \right| } \, d^{3}\underline{y} 
+$$
+At long distances, $\left| \underline{x} \right|\gg \left| \underline{y} \right|$ we can expand
+$$
+\frac{1}{\left| \underline{x}-\underline{y} \right| }=\frac{1}{\left| \underline{x} \right| }+ \frac{\underline{x}\cdot \underline{y}}{\left| \underline{x} \right| ^{3}}+\dots
+$$
+(as physicists we don't case about higher order terms) plugging this in,
+$$
+A_{i}(\underline{x})=\frac{\mu_{0}}{4\pi} \left( \frac{1 }{\left| \underline{x} \right| }\int J_{i}(\underline{y}) \, d^{3}\underline{y}+\frac{1}{\left| \underline{x} \right|^{3} }\int J_{i}(\underline{y}) \, dx  \right)
+$$
