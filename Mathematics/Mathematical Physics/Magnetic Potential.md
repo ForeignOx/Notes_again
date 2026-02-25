@@ -140,5 +140,28 @@ $$
 $$
 (as physicists we don't case about higher order terms) plugging this in,
 $$
-A_{i}(\underline{x})=\frac{\mu_{0}}{4\pi} \left( \frac{1 }{\left| \underline{x} \right| }\int J_{i}(\underline{y}) \, d^{3}\underline{y}+\frac{1}{\left| \underline{x} \right|^{3} }\int J_{i}(\underline{y}) \, dx  \right)
+A_{i}(\underline{x})=\frac{\mu_{0}}{4\pi} \left( \frac{1 }{\left| \underline{x} \right| }\int J_{i}(\underline{y}) \, d^{3}\underline{y}+\frac{1}{\left| \underline{x} \right|^{3} }\int J_{i}(\underline{y})\underbrace{ x_{j}y_{j}  }_{ \underline{x}\cdot \underline{y} }\, d^{3}\underline{y}+\dots\right)
 $$
+The first integral is the total current, so we would imagine that as we are going over loops, that it will be zero, indeed
+$$
+\frac{ \partial (J_{j}(\underline{y})y_{i}) }{ \partial y_{j} } =y_{i}\frac{ \partial J_{j} }{ \partial y_{j} } +J_{j}\frac{ \partial y_{i} }{ \partial y_{j} } 
+$$
+Since $\frac{ \partial J_{j} }{ \partial y_{j} }=\underline{\nabla} \cdot \underline{J}=0$,
+$$
+=J_{i}(\underline{y})\delta_{ii}=I_{i}(\underline{y})
+$$
+Thus
+$$
+\int J_{i}(\underline{y}) \, d^{3}\underline{y}=\int_{\mathbb{R}^{3}}  \frac{ \partial (J_{j}(\underline{y})\underline{y}_{i}) }{ \partial y_{j} }  \, d^{3}\underline{y} = 0
+$$
+As by the [[Divergence Theorem|divergence theorem]], this evaluates to the current on the surface, which is the current at infinity which we define to be 0
+This is different to the electrostatic case
+The second term iss
+$$
+x_{j}\int_{\mathbb{R}^{3}} J_{i}(\underline{y})y_{j} \, d^{3}\underline{y}=(\underline{m}\times \underline{x})_{i} 
+$$
+Where
+$$
+\underline{m}=\frac{1}{2}\int _{\mathbb{R}^{3}} \underline{y}\times \underline{J}(\underline{y}) \, d^{3}\underline{y} 
+$$
+Which is defined to be the magnetic dipole moment $\underline{m}$
