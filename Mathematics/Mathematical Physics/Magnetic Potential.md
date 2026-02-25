@@ -20,8 +20,32 @@ We know from facts from [[Divergence and Curl|vector calculus]]:
 $$
 -\nabla^{2} \underline{A}+\underline{\nabla } (\underline{\nabla} \cdot \underline{A} )=\mu_{0} \underline{J}
 $$
+## Gauge Transformations
 Attempting to solve this leads us to the pretty non-trivial problem that $\underline{A}$ is not unique, so we need to consider Gauge transformations
 We see this since we can always make the transformation on $\underline{A}$:
 $$
-\underline{A}'=\underline{A}
+\underline{A}'=\underline{A}+\underline{\nabla } \chi
 $$
+Where $\chi$ is a scalar function, soo
+$$
+\underline{B}=\underline{\nabla} \times \underline{A}  
+$$
+$$
+\implies \underline{B}'=\underline{\nabla} \times \underline{A} '=\underline{\nabla} \times (\underline{A}+\underline{\nabla } \chi)=\underline{\nabla} \times \underline{A} +\cancelto{ 0 }{ \underline{\nabla} \times \underline{\nabla } \chi  } =\underline{B}
+$$
+So the vector potential actually defines an [[Equivalence Relation|equivalence class]] $\underline{A}'\sim \underline{A}+\underline{\nabla }\chi$
+So we need to impose additional Gauge fixing condition:
+$$
+G(\underline{A})=0
+$$
+To uniquely fix $\underline{A}$ in addition to solving our equation
+### Coulomb Gauge
+We can always choose $\underline{A}$ so that it satisfies the Coulomb gauge condition:
+$$
+G_{c}(\underline{A})=\underline{\nabla} \cdot \underline{A} =0
+$$
+Which we can impose
+#### Proof
+Fill this in later
+## Biot-Suvart Law
+
