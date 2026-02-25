@@ -165,3 +165,21 @@ $$
 \underline{m}=\frac{1}{2}\int _{\mathbb{R}^{3}} \underline{y}\times \underline{J}(\underline{y}) \, d^{3}\underline{y} 
 $$
 Which is defined to be the magnetic dipole moment $\underline{m}$
+Thus,
+$$
+\underline{A}(\underline{x})=\frac{\mu_{0}}{4\pi} \frac{\underline{m}\times \underline{x}}{\left| \underline{x} \right| ^{3}}+\dots
+$$
+We use the identity,
+$$
+\underline{\nabla} \times (\underline{A}\times \underline{B})=\underline{A}\cdot (\underline{\nabla } \cdot\underline{B}) -(\underline{A}\cdot \underline{\nabla } )\underline{B}-\underline{B}(\underline{\nabla} \cdot \underline{A} )+(\underline{B}\cdot \underline{\nabla } )\underline{A}
+$$
+
+The absence of magnetic monopoles make the dipole contribution to be leading
+In nature, elementary point particles come with intrinsic spin which gives rise to magnetic dipole moment
+## Example
+Dipole moment of planar loop with constant current $I$
+For a 3D current density, we know
+$$
+\underline{m}-\frac{1}{2}\int _{\mathbb{R}} \underline{y}\times \underline{J}(\underline{y}) \, d^{3}\underline{y} 
+$$
+We can parametrise a loop by $\underline{x}(s)$
