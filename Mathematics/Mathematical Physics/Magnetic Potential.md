@@ -210,3 +210,29 @@ $$
 $$
 ## Force and Energy of Magnetic Dipole
 Imagine we bring a small object $V$ with internal current density $\underline{J}(\underline{x})$ inside a magnetic fild $\underline{B}(\underline{x})$, what is the force $\underline{F}$ on it?
+We recall the [[Lorentz force|Lorentz force]] density:
+$$
+f_{L}=\cancelto{ 0 }{ \rho \underline{E} }+\underline{J}\times \underline{B}
+$$
+So to get the total force we integrate over the whole bolume:
+$$
+\underline{F}_{L}=\int _{V}\underline{J}(\underline{x})\times \underline{B}(\underline{x}) \, d^{3}\underline{x} 
+$$We assume that the centre of mass is at $\underline{x}_{0}$ and that $\underline{B}(\underline{x})$ is smooth inside the object (it doesn't change wildly) this means we can Taylor expand around $\underline{x}_{0}$:
+$$
+\underline{B}(\underline{x})=\underline{B}(\underline{x}_{0})+((\underline{x}-\underline{x}_{0})\cdot \underline{\nabla }_{\underline{x}_{0}} )\underline{B}(\underline{x})+\dots
+$$
+Then
+$$
+\underline{F}_{L}=\cancelto{ 0 }{ \left( \int _{V}\underline{J}(\underline{x}) \, d^{3}\underline{x}K  \right) }\times \underline{B}(x_{0})+\int _{V}\underline{J}(\underline{x})\times((\underline{x}-\underline{x}_{0})\times \underline{\nabla } _{\underline{x}_{0}})\underline{B}(\underline{x}_{0}) \, d^{3}\underline{x}+\dots
+$$
+We can actually rewrite this as:
+$$
+\underline{F}=\underline{\nabla } (\underline{m}\cdot \underline{B})
+$$
+$$
+\implies \underline{F}=-\underline{\nabla } U
+$$
+Where $U=- \underline{m}\cdot \underline{B}$, so it is conserved innit also see notes for proof of this 
+For the dipole moment, there are two ways a particle can minimise energy
+Either it moves to a region of space with smaller $U$
+Alternatively it can orient $\underline{m}$ so that it minimises $U$, which is when $\underline{m}$ is parallel to $\underline{B}$
