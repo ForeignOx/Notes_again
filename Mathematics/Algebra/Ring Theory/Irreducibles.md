@@ -1,6 +1,6 @@
 A [[Polynomials|polynomial]] is irreducible if it is non-constant and does not have a proper factorisation, i.e. $f(x)$ cannot be written as $f(x)=g(x)h(x)$ with $\deg g>0$ and $\deg h>0$
 ## Definition
-Let $R$ be a [[Rings|ring]]. An element $a\in R$ is called irriducible if:
+Let $R$ be a [[Rings|ring]]. An element $r\in R$ is called irriducible if:
 - $r$ is not a [[Units|unit]]
 - If $r=ab$, then either $a$ is a unit or $b$ is a unit, $a,b\in R$
 Note that $0$ is not irreducible, since $0=0\cdot0$ where each factor is not a unit.
