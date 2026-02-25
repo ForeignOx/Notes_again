@@ -182,4 +182,31 @@ For a 3D current density, we know
 $$
 \underline{m}-\frac{1}{2}\int _{\mathbb{R}} \underline{y}\times \underline{J}(\underline{y}) \, d^{3}\underline{y} 
 $$
-We can parametrise a loop by $\underline{x}(s)$
+We can parametrise a loop by $\underline{x}(s)$ with $s\in\mathbb{R}$, to compute the magnetic dipole moment
+$$
+\underline{J}(\underline{y})=\int _{C}I(s)\delta(\underline{y}-\underline{x}(s)) \underline{\dot{x}}(s) \, ds=I\int _{C}\delta(\underline{y}-\underline{x}(s))\underline{\dot{x}}(s) \, ds 
+$$
+Thus
+$$
+\underline{m}=\frac{1}{2}\int _{\mathbb{R}^{3}} \underline{y}\times\left( I\int _{C}\delta(\underline{y}-\underline{x}(s))\underline{\dot{x}}(s) \, ds  \right) \, d^{3}\underline{y} 
+$$
+$$
+= \frac{I}{2}\int _{C}\int _{\mathbb{R}^{3}} \underline{y}\times \underline{\dot{x}}(s)\delta(\underline{y}-\underline{x}(s)) \, d^{3}\underline{y}  \, ds 
+$$
+$$
+= \frac{I}{2}\int _{C}\underline{x}(s)\times \underline{\dot{x}}(s) \, ds 
+$$
+$$
+= I \underline{\hat{n}}S 
+$$
+Where $\hat{\underline{n}}$ is normal to the plane, and $S$ is the surface area (?)
+Where we have used that 
+$$
+\frac{1}{2}\oint_{C}\underline{x}(s)\times \underline{\dot{x}}(s)~ds=S\hat{\underline{n}}
+$$
+For a circular loop of radius $R$, lying on the xy-plane,
+$$
+\underline{m}=I\pi R^{2} \underline{e}_{z}
+$$
+## Force and Energy of Magnetic Dipole
+Imagine we bring a small object $V$ with internal current density $\underline{J}(\underline{x})$ inside a magnetic fild $\underline{B}(\underline{x})$, what is the force $\underline{F}$ on it?
