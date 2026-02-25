@@ -20,10 +20,6 @@ $$
 $$
 dS=\left| \frac{ \partial \underline{y} }{ \partial s_{1} } \times \frac{ \partial \underline{y} }{ \partial s_{2} }  \right| ds_{1}ds_{2}
 $$
-
-
-
-
 ___
 The electric current, $I$, through a [[Electrical Conductors|conductor]] is the rate of flow of [[Electric Charge|charge]]
 $$

@@ -79,4 +79,31 @@ $$
 $$
 Which is the Biot-Savart law!
 Which is true for a three dimensional current density
-We can also introduce surface and linear currents
+We can also introduce surface and linear currents:
+For a wire $C$ with constant current $I$, the Biot Savart law becomes:
+$$
+\underline{B}(\underline{x})=-\frac{\mu_{0}I}{4\pi}\int _{C} \frac{1}{\left| \underline{x}-\underline{y}(s) \right| ^{3}} (\underline{x}-\underline{y}(s))\times \, d\underline{y}(s)
+$$
+$$
+ =-\frac{\mu_{0}I}{4\pi} \int _{C}\frac{1}{\left| \underline{x}-\underline{y}(s) \right| ^{3}} ((\underline{x}-\underline{y}(s))\times \underline{\dot{y}}(s))\cdot \, ds
+
+$$
+Which our lecturer writes in cursed notation
+$$
+\underline{B}(\underline{x})=\frac{\mu_{0}I}{4\pi}\int _{C} \frac{d\underline{y}(s)\times (\underline{x}-\underline{y}(s))}{\left| \underline{x}-\underline{y}(s) \right| ^{3}}  
+$$
+### Example
+For the infinitely long straight wire, we use cylindrical coordinates. The parametrisation of $C$ is
+$$
+\underline{y}(z)=z\cdot \underline{e}_{z}\implies d\underline{y}(z)=\underline{e}_{z} dz 
+$$
+$$
+ \underline{x}=r\cdot \underline{e}_{r}
+$$
+Now computing the cross product,
+$$
+d\underline{y} \times(\underline{x}-\underline{y})=(\underline{e}_{z} dz)\times(r\underline{e}_{r}-z\underline{e}_{z}) 
+$$
+$$
+= (\underline{e}_{z}\times (r \underline{e}_{r}-z\underline{e}_{z}))dz
+$$
