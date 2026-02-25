@@ -105,5 +105,27 @@ $$
 d\underline{y} \times(\underline{x}-\underline{y})=(\underline{e}_{z} dz)\times(r\underline{e}_{r}-z\underline{e}_{z}) 
 $$
 $$
-= (\underline{e}_{z}\times (r \underline{e}_{r}-z\underline{e}_{z}))dz
+= (\underline{e}_{z}\times (r \underline{e}_{r}-z\underline{e}_{z}))dz 
+$$
+$$
+= r(\underline{e}_{z}\times \underline{e}_{r})dz=r\underline{e}_{\phi}dz
+$$
+Next,
+$$
+\left| x-\underline{y}(z) \right| =(r^{2}+z^{2})^{\frac{1}{2}}
+$$
+Sooo
+$$
+    \underline{B}(\underline{x})=\frac{\mu_{0}I}{4\pi} \int_{-\infty}^{\infty} \frac{\underline{e}_{\phi}r}{(r^{2}+z^{2})^{\frac{3}{2}}} \, dz
+$$
+Since $\underline{e}_{\phi}$ stays constant as we move along the $z$-axis, we can take it out of the integral:
+$$
+=\frac{\mu_{0}Ir}{4\pi}\underline{e}_{\phi}\int_{-\infty}^{\infty} \frac{1}{(r^{2}+z^{2})^{\frac{3}{2}}} \, dz 
+$$
+We now make the substitution $z=\tan\theta r$
+$$
+=\frac{\mu_{0}I}{4\pi r}\underline{e}_{\phi}\int_{-\frac{\pi}{2}}^{\frac{\pi}{2}} \cos\theta \, d\theta 
+$$
+$$
+= \frac{\mu_{0}I}{2\pi r}\underline{e}_{\phi}
 $$
