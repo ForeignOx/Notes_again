@@ -70,4 +70,13 @@ $$
 $$
 =\frac{\mu_{0}}{4\pi}\int _{\mathbb{R}^{3}}\underline{\nabla } \left( \frac{1}{\left| \underline{x}-\underline{x}_{0} \right| } \right)\times \underline{J}(\underline{x})+\frac{1}{\left| \underline{x}-\underline{x}_{0} \right| }\cancelto{ 0 }{ \underline{\nabla} \times \underline{J} (\underline{x}_{0}) } \, d^{3}\underline{x}_{0} 
 $$
-Where we have used $\underline{\nabla} \times (f $
+Where we have used $\underline{\nabla} \times (f \underline{A})=\underline{\nabla }f\times \underline{A}+f \underline{\nabla} \times \underline{A}$
+$$
+=-\frac{\mu_{0}}{4\pi}\int _{\mathbb{R}^{3}} \frac{\underline{x}-\underline{x}_{0}}{\left| \underline{x}-\underline{x}_{0} \right| }\times \underline{J}(\underline{x}_{0}) \, d^{3}\underline{x}_{0} 
+$$
+$$
+\implies \underline{B}(\underline{x})=\frac{\mu_{0}}{4\pi} \int _{\mathbb{R}^{3}} \frac{\underline{J}(\underline{x}_{0}) \times (\underline{x}-\underline{x}_{0}) }{\left| \underline{x}-\underline{x}_{0} \right| ^{3}} \, d^{3}\underline{x}_{0}
+$$
+Which is the Biot-Savart law!
+Which is true for a three dimensional current density
+We can also introduce surface and linear currents
