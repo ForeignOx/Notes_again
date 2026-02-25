@@ -48,4 +48,26 @@ Which we can impose
 #### Proof
 Fill this in later
 ## Biot-Suvart Law
-
+In Coulomb's Gauge, the equation becomes:
+$$
+\nabla^{2} \underline{A}=-\mu_{0} \underline{J}
+$$
+The vector version of the [[electrical potential|electrostatic potential]]
+This equation takes simple form in Cartesian coordinates:
+$$
+\nabla^{2} A_{i}(\underline{x})=-\mu_{0} J_{i}(\underline{x})
+$$
+One general solution is:
+$$
+A_{i}(\underline{x})=\frac{\mu_{0}}{4\pi} \int_{\mathbb{R}^{3}}  \frac{J_{i}(\underline{x}_{0})}{\left| \underline{x}-\underline{x}_{0} \right| } \, d^{3} \underline{x}_{0}
+$$
+Where $A_{i}\leftrightarrow \phi$, $\mu_{0}\leftrightarrow \frac{1}{\varepsilon_{0}}$ and $J_{i}\leftrightarrow \rho$ are our equivalents of the electrostatic potential
+We can check that $\underline{\nabla} \cdot \underline{ A}(\underline{x})$ is satisfied
+For the magnetic field we can write:
+$$
+\underline{B}(\underline{x})=\underline{\nabla} \times \underline{A} (\underline{x})= \frac{\mu_{0}}{4\pi} \int _{\mathbb{R^{3}}} \underline{\nabla} \times \left(  \frac{\underline{J}(\underline{x}_{0})}{\left| \underline{x}-\underline{x}_{0} \right| } \right)  \, d^{3} \underline{x}_{0}
+$$
+$$
+=\frac{\mu_{0}}{4\pi}\int _{\mathbb{R}^{3}}\underline{\nabla } \left( \frac{1}{\left| \underline{x}-\underline{x}_{0} \right| } \right)\times \underline{J}(\underline{x})+\frac{1}{\left| \underline{x}-\underline{x}_{0} \right| }\cancelto{ 0 }{ \underline{\nabla} \times \underline{J} (\underline{x}_{0}) } \, d^{3}\underline{x}_{0} 
+$$
+Where we have used $\underline{\nabla} \times (f $
