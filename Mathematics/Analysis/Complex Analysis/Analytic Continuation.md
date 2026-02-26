@@ -29,3 +29,13 @@ $$
  U_{2}=\left\{ z\in  D:\middle|: z\text{ is not an accumulation point of }S \right\}
 $$
 These are disjoint and $D=U_{1}\cup U_{2}$
+Note $U_{1}$ is nonempty, namely $B_{r}(a)\subset U_{1}$, and $U_{1}\subset S$
+
+We claim $U_{1}$ is open, 
+We show this by picking $z\in U_{1}$, let $\varepsilon>0$ and consider $B_{\varepsilon}(z)$. Note that if $z$ is an accumulation point of zeros fo $h$, then $h(z)=0$ by continuity, one can show this using sequence definition of continuity
+If $h(z)=0$, then by the [[Isolated Points|principle of isolated zeros]], there is a ball around $z$ containing no other zeros of $h$, this contradicts $h$ being an accumulation point of zeros
+
+We next claim $U_{2}$ is open
+Suppose $z\in U_{2}$, then by the principle of solated zeros or by the [[Continuous Functions are Locally Bounded|fact that continuous functions are locally bounded]], we have a ball around $z$ on which $h$ is non-zero
+So this ball contains no zeros (apart from at $z$) so all pionts are not accumulation points of zeros
+
