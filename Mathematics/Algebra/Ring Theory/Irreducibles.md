@@ -22,7 +22,7 @@ $$
 $$
 We know that $p|ab$, so $p$ divides the whole left hand side, so $p|b$
 ## Another Lemma
-Let $R$ be a commutative ring, let $x\in R$ be irreducible and $u\in R^{\times}$ be a unit, then $ux$ is also irreduciblwe
+Let $R$ be a commutative ring, let $x\in R$ be irreducible and $u\in R^{\times}$ be a unit, then $ux$ is also irreducible
 ### Proof
 To prove that $ux$ is irreducible, first show it is not a unit
 If it were, then $\exists v\in R$ such that $vux=1$, but then $x$ would be a unit (as $vu$ times $x$ would be $\hspace{0pt}1$, which we've assumed it isn't)
