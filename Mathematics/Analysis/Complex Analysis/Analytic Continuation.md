@@ -39,3 +39,16 @@ We next claim $U_{2}$ is open
 Suppose $z\in U_{2}$, then by the principle of solated zeros or by the [[Continuous Functions are Locally Bounded|fact that continuous functions are locally bounded]], we have a ball around $z$ on which $h$ is non-zero
 So this ball contains no zeros (apart from at $z$) so all pionts are not accumulation points of zeros
 
+Since $U_{1}\cup U_{2}$ are open and disjoint and $U_{1}$ is non-empty, then by connectedness, $D=U_{1}$, so $h=0$ on $D$
+## Theorem: Uniqueness of Analytic Continuation
+Let $f:D\to \mathbb{C}$ be holomorphic on a domain, then if $D'$ is a domain containing $D$, there is at most one analytic continuation of $f$ to $D'$
+## Remark
+If there is an analytic continuation $g$ of $f$ to $D'$, we say it is the analytic continuation of $f$ on $D'$. We also say $f$ "extends" to a holomorphic function on $D'$ or that $f$ is the restriction of $g$ to $D$
+## Theorem: Identity Theorem
+Let $f,g:D\to \mathbb{C}$ be holomorphic on a domain $D$. If $D$ contains an accumulation pont of the set
+$$
+S=\left\{ z\in D:\middle|: f(z)=g(z) \right\}
+$$
+Then $f(z)=g(z)$ on $D$
+
+
