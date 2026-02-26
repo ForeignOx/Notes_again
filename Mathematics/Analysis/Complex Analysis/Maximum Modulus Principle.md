@@ -42,4 +42,22 @@ Then $f$ is constant on $D$
 $D$ is a domain, so around $z=a$, pick a ball $B_{r}(a)\subset D$, then $\left| f(a) \right|\geq \left| f(z) \right|~\forall z\in B_{r}(a)$, so by the local maxumum modulus principle, $f$ is constant on $B_{r}(a)$
 So by the principle of [[analytic continuation|analytic continuation]], $f$ is constant on $D$
 ## Corollary: Holomorphic Functions Attain Maxima on Boundaries
-If $f: \overline{D}\to C$ is holomorphic on $D$ and continuous on the closure $\overline{D}$, then in the case that $D$ is bounded
+If $f: \overline{D}\to C$ is holomorphic on $D$ and [[Continuity|continuous]] on the [[Open Sets|closure]] $\overline{D}$, then in the case that $D$ is [[Boundedness|bounded]] (so $\overline{D}$ is compact), then $\left| f \right|$ attains its maximum on $\partial D$
+## Example
+Find the max of $\left| z^{2}+2z-3 \right|$ on $\overline{B_{1}(0)}$
+By the corollary above, the maximum is attained on $\left| z \right|=1$
+Then letting $z=e^{ i t}$ for some $t\in[0,2\pi]$, then
+$$
+\left| z^{2}+2z-3 \right| ^{2}=(z^{2}+2z-3)\overline{(z^{2}+2z-3)}
+$$
+$$
+= (e^{ 2it }+2e^{ it }-3)(e^{ -2it } +2e^{ -it }-3)=\dots=14-3e^{ -2t }-3e^{ 2t }-4e^{ it }-4e^{ -it }
+$$
+$$
+= 14-6\cos(2t)-8\cos t =-12\cos ^{2}t-8\cos t+20
+$$
+Which is maximised when $\cos t=-\frac{1}{3}$, so 
+$$
+\left| f \right| ^{2}=\frac{64}{3}\implies \max_{z\in  \overline{B_{1}(0)}}f=\frac{8}{\sqrt{ 3 }}
+$$
+
