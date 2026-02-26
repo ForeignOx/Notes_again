@@ -56,6 +56,18 @@ $$
 h(z)=f(z)-g(z)
 $$
 By [[continuity|continuity]], $h(w)=0$.
-By the principle of isolated zeros, there is a ball around $w$, say $B_{\rho}(w)$ for which $h(z)\neq0$ when $z\in B_{\rho}(w)\setminus \left\{ w \right\}$
+By the principle of is olated zeros, there is a ball around $w$, say $B_{\rho}(w)$ for which $h(z)\neq0$ when $z\in B_{\rho}(w)\setminus \left\{ w \right\}$
 But his contradicts $f$ being an accumulation point. In particular, $h$ is identically zero on some ball $B_{r}(w)$ by the principle of isolated zeros. By the principle of analytic continuation, $h(z)=0$ on $D$
+## Example
+Let $f:\mathbb{C}\to \mathbb{C}$ be entire satisfying
+$$
+f\left( \frac{1}{n} \right)=e^{ \frac{i}{n} }-e^{ -\frac{i}{n} }\forall n\in\mathbb{N}
+$$
+Identify $f$
+Note that $g(z)=2i\sin z=e^{ iz }-e^{ -iz }$ satisfies this
+In particular
+$$
+S=\left\{ z\in \mathbb{C}:\middle|: f(z)=g(z) \right\}>\left\{ \frac{1}{n} \right\}_{n\in\mathbb{N}}
+$$
+Then $z=0\in \mathbb{C}$ is an accumulation point of $S$, so by the identity theorem, $f(z)=g(z)$ on $\mathbb{C}$
 
