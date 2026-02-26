@@ -1,4 +1,4 @@
-## Theorem
+## Theorem: Local Maximum Modulus Principle
 Let [[Complex Functions|$f$]] be [[Holomorphicity|holomorphic]] on some ball $B_{r}(a)$. If $\left| f(a) \right|\geq \left| f(z) \right|$ $\forall z\in B_{r}(a)$, then $f$ is constant
 ### Proof
 We start by showing the modulus $\left| f \right|$ is constant.
@@ -31,3 +31,15 @@ $$
 \overline{f(z)}=\frac{c^{2}}{f(z)}
 $$
 is holomorphic on $B_{r}(a)$
+If $f,\overline{f}$ are both holomorphic and $f=u+iv$, then by [[Cauchy-Riemann equations|Cauchy-Riemann equations]], $u_{x}=$
+## Theorem: Maximum Modulus Principle
+Let $f:D\to \mathbb{C}$ be holomorphic on a domain. If therre exists $a\in D$ such that
+$$
+\left| f(a) \right| \geq \left| f(z) \right| ~\forall z\in  D
+$$
+Then $f$ is constant on $D$
+### Proof
+$D$ is a domain, so around $z=a$, pick a ball $B_{r}(a)\subset D$, then $\left| f(a) \right|\geq \left| f(z) \right|~\forall z\in B_{r}(a)$, so by the local maxumum modulus principle, $f$ is constant on $B_{r}(a)$
+So by the principle of [[analytic continuation|analytic continuation]], $f$ is constant on $D$
+## Corollary: Holomorphic Functions Attain Maxima on Boundaries
+If $f: \overline{D}\to C$ is holomorphic on $D$ and continuous on the closure $\overline{D}$, then in the case that $D$ is bounded
