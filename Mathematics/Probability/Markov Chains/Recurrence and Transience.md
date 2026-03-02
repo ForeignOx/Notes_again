@@ -25,5 +25,25 @@ $$
 The following dichotomy holds:
 - If $\mathbb{P}_{i}(T_{i}<\infty)=1$ then $i$ is recurrent and
 $$
-\sum_{n=0}^{\infty}\mathbb{P}_{i}(X_{n}=i)=\sum_{n=0}^{\infty}\mathbb{E}_{i}()                 \sum_{n=0}^{\infty}P_{ii}^{n}=\infty
+\sum_{n=0}^{\infty}\mathbb{P}_{i}(X_{n}=i)=\sum_{n=0}^{\infty}\mathbb{E}_{i}(\mathbb{1}(X_{n}=i))=\mathbb{E}_{i}\left( \sum_{n=0}^{\infty} \mathbb{1}(X_{n}=i) \right)=                 \sum_{n=0}^{\infty}P_{ii}^{n}=\infty
 $$
+- If $\mathbb{P}_{i}(T_{i}<\infty)<1$, then $i$ is transient and 
+$$
+\sum_{n=0}^{\infty}P_{ii}^{n}<\infty \implies \mathbb{E}_{i}\left( \sum_{n=0}^{\infty}\mathbb{1}(X_{n}=i) \right)<\infty
+$$
+In particular, every state is either recurrent or transient
+## Corollary
+Recurrence/transience is a [[Class Properties|class property]]: if $i\leftrightarrow j$, then either they're both recurrent or both transient
+### Proof
+We suppose $i\leftrightarrow j$, so $\exists m,k>0$ such that
+$$
+P_{ij}^{m}>0,P_{ji}^{k}>0
+$$
+We define
+$$
+c
+$$
+
+
+## Definition
+A [[communicating classes|communicating class]] $C$ is recurrent/transient if every $i\in C$ is recurrent/transient respectively
