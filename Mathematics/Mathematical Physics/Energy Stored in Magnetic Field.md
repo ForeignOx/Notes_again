@@ -41,4 +41,44 @@ The amount of energy the current had to do is precisely,
 $$
 \delta W(t)=\mathscr{E}_{C}(t)\delta q=\mathscr{E}_{C}(t)I(t)\delta t
 $$
-Thus from Faraday's law, 
+Thus from Faraday's law, we have
+$$
+\delta W=-\frac{d \Phi_{S}(t)}{dt} I(t)\delta t=-L\frac{d I}{dt} I(t)\delta t = -\frac{L}{2}\frac{d }{dt}(I^{2}(t))\delta t 
+$$
+$$
+\implies \frac{d W}{dt} =-\frac{L}{2}\frac{d}{dt} (I^{2}(t))
+$$
+$$
+\implies  W(t)=-\frac{L}{2}(I(t))^{2} 
+$$
+$$
+\implies  W(t)=-\frac{1}{2}\Phi_{S}(t)I(t) 
+$$
+So the energy we spent is
+$$
+U(t)=\frac{1}{2}\Phi_{s}(t)I(t)
+$$
+We know that
+$$
+\underline{J}(t,\underline{x})=\oint_{C} \delta(\underline{x}-\underline{y}(s))\underline{\dot{y}}(s)I(t)~d s
+$$
+So
+$$
+U(t)=\frac{1}{2}I(t)\int _{S}\underline{B}(t,\underline{x})\cdot \, d\underline{S}=\frac{1}{2}I(t)\int _{S}(\underline{\nabla} \times \underline{A} )\cdot \, d\underline{S}  
+$$
+Which by [[Stokes' Theorem|Stokes' theorem]],
+$$
+=\frac{1}{2}I(t)\oint_{C}\underline{A}(t,\underline{y})\cdot d\underline{y}=\frac{1}{2}I(t)\oint_{C}\underline{A}(t,y(s))\cdot \underline{y}(s)~ds
+$$
+$$
+=\frac{I(t)}{2}\oint_{C}\left( \int _{\mathbb{R}^{3}}\underline{A}(t,\underline{x})\delta(\underline{x}-\underline{y}(s)) \, d^{3}\underline{x} \right) \cdot \underline{y}(s)~ds 
+$$
+$$
+=\frac{1}{2} \int _{\mathbb{R}^{3}} \underline{A}(t,\underline{x})\cdot\left( \oint_{C} I(t)\delta(\underline{x}-\underline{y}(s))\underline{\dot{y}}(s)~ds \right) \, d^{3}\underline{x}  
+$$
+$$
+= \frac{1}{2}\int _{\mathbb{R}^{3}} \underline{A}(t,\underline{x})\cdot \underline{J}(t,\underline{x}) \, d^{3}\underline{x} 
+$$
+$$
+= \frac{1}{2\mu_{0}}  
+$$
