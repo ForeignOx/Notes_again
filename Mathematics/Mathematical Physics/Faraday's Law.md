@@ -61,8 +61,14 @@ $$
 $$
 Since $\theta(t)=\omega t$,
 $$
-\Phi_{S}(t)=\left|  \right| 
+\Phi_{S}(t)=\left| \underline{B} \right| \underline{A} \cos(\omega t)
 $$
+Thus
+$$
+I(t)= \frac{\left| B \right| A\omega}{R}\sin(\omega t)
+
+$$
+Which is AC current
 
 
 
