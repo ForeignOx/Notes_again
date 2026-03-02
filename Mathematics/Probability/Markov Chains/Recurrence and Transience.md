@@ -41,9 +41,29 @@ P_{ij}^{m}>0,P_{ji}^{k}>0
 $$
 We define
 $$
-c
+\xi=P_{ij}^{m}P_{ji}^{k}>0
 $$
-
-
+We claim
+$$
+\sum_{n=0}^{\infty} P_{jj}^{n}\geq \xi \sum_{n=0}^{\infty}P_{ii}^{n}
+$$
+This is since
+$$
+\sum_{n=0}^{\infty} P_{jj}^{n}\geq \sum_{n=m+k}^{\infty}P_{jj}^{n}=\sum_{n=0}^{\infty} P_{jj}^{n+m+k} \geq \sum_{n=0}^{\infty}P_{ji}^{k}P_{ij}^{m}P_{ii}^{n}=c\sum_{n=0}^{\infty}P_{ii}^{n}
+$$
+So $\sum_{n=0}^{\infty}P_{ii}^{n}=\infty\implies \sum_{n=0}^{\infty} P_{jj}^{n}=\infty$
+Conversely we can switch $i$ and $j$ to get the theorem proved both ways, hence $i$ is transient iff $j$ is transient
+By the theorem above, we get that $i$ is recurrent iff $j$ is recurrent
 ## Definition
 A [[communicating classes|communicating class]] $C$ is recurrent/transient if every $i\in C$ is recurrent/transient respectively
+## Definition
+We define the $r$th passage time to $i$ as $T_{i}^{0}=0,$
+$$
+T_{i}^{r}=\inf\left\{ n>T_{i}^{r-1}:\middle|: X_{n}=i \right\}
+$$
+## Example
+If
+$$
+I=\left\{ a,b,c \right\},(X_{n}(\omega))_{n\geq 0}=(a,a,c,b,a,b,b,a,b,b,a,b,\dots)
+$$
+What is 
