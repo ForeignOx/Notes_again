@@ -45,8 +45,24 @@ An analogy with a battery and Ohm's law
 $$
 I=\frac{\delta \varphi}{R}=\frac{1}{T}(\varphi_{2}-\varphi_{1})=\frac{1}{R}\int _{C}\underline{\nabla } \varphi\cdot \, d \underline{\ell}=-\frac{1}{R}\int _{C} \underline{E}\cdot \, d \underline{\ell}  
 $$
-
-
+As we know that in electrostatics $\underline{E}=-\underline{\nabla }\varphi$
+![[Magnetic Potential 2026-03-02 14.27.01.excalidraw]]
+Note that $I=-\frac{\ell}{R} \frac{d}{dt}\Phi_{S}$ is true even if $C$ is also changing with time ooo
+## Example
+Consider a planar conductting loop $C$ of area $A$ and electric resistance $R$ inside a homogeneous $\underline{B}$. The loop is rotated with constent angular velocity $\omega$ find the induced current
+$$
+I(t)=\frac{1}{R}\mathscr{E}_{C}(t)=-\frac{1}{R}\frac{d}{dt}  \Phi_{S}(t)
+$$
+$$
+ \Phi_{S}(t)=\int _{S}\underline{B} \cdot\, d \underline{S} =\int _{S} \underline{B}\cdot \hat{\underline{n}} \, dS =\int _{S}\left| \underline{B} \right| \cos(\theta(t)) \, dS 
+$$
+$$
+= \left| \underline{B} \right| \cos(\theta(t))\int _{S} \, dS=\left| \underline{B} \right| \cos(\theta(t))A  
+$$
+Since $\theta(t)=\omega t$,
+$$
+\Phi_{S}(t)=\left|  \right| 
+$$
 
 
 
