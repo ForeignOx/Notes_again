@@ -176,4 +176,31 @@ Every recurrent class is closed
 ## Theorem
 Every finite closed communicating class is recurrent. In particular, every finite and irreducible Markov chain is recurrent
 ### Proof
-Suppose $C$ is a closed communicating class and $i\in C$ we define $V_{j}$ to be the total number of visits to $j$, so $V_{j}^{n}$ is the total number of visits to $j$ before time $n$, which is 
+Suppose $C$ is a closed communicating class and $i\in C$ we define $V_{j}$ to be the total number of visits to $j$, so $V_{j}^{n}$ is the total number of visits to $j$ before time $n$, which is equal to $\sum_{m=0}^{n}\mathbb{1}(X_{m}=j)$
+$$
+\sum_{j\in  I}V_{j}^{n}=n 
+$$
+$$
+\implies \mathbb{E}_{i}\left( \sum_{j\in  I}V_{j}^{n} \right)=n
+$$
+So by [[Monotone Convergence Theorem|monotone convergence theorem]], this implie
+$$
+\sum_{j\in I}\mathbb{E}_{i}(V_{j})=\infty
+$$
+And since these are all finite, this means
+$$
+\mathbb{E}_{i}(V_{j})=\infty
+$$
+For some $j\in I$
+Thus
+$$
+\infty=\mathbb{E}_{i}(V_{j})=\mathbb{E}_{i}(V_{j}\mid T_{j}<\infty)\mathbb{P}_{i}(T_{j}<\infty)
+$$
+$$
+ =\mathbb{E}_{i}(\text{number of visits to }j\text{ of }(X_{T_{j}+n})_{n\geq 0}\mid T_{j}<\infty)\mathbb{P}_{i}(T_{j}<\infty) 
+$$
+$$
+= \mathbb{E}_{j}(V_{j})\mathbb{P}_{j}(T_{j}<\infty)
+$$
+Therefore $\mathbb{E}_{j}(V_{j})=\infty$, so $\sum_{n=0}^{\infty} P_{jj}^{n}=\infty$, so $j$ is recurrent, hence $i$ is recurrent for all $i\in C$
+
