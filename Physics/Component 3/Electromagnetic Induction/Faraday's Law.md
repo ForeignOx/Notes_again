@@ -1,8 +1,58 @@
+## Derivation
+From Maxwell's equations, we know that
+$$
+\underline{\nabla} \times \underline{E} =-\frac{ \partial \underline{B} }{ \partial t } 
+$$
+Imagine a given surface $S$ with boundary $C=\partial S$
+Intagrating both sides on $S$:
+$$
+    \int _{S} \left| \underline{\nabla} \times \underline{E}  \right| \cdot \, d\underline{S} = -\int _{S} \frac{ \partial \underline{B} }{ \partial t }\cdot  \, d\underline{S}
+$$
+So by Stoke's theorem:
+$$
+\int _{C} \underline{E}\cdot \, d \underline{\ell}=-\frac{d}{dt} \left( \int _{S} \underline{B}\cdot \, d\underline{S}  \right)
+$$
+Thus,
+$$
+\mathscr{E}_{C}=-\frac{d}{dt} \Phi_{S}(t)
+$$
+Which is Faraday's law of induction
+Here we have define the magnetic flux through $S$:
+$$
+\Phi_{S}(t)=\int _{S} \underline{B}\cdot \, d\underline{S} 
+$$
+And the electromotive force:
+$$
+\mathscr{E}_{c}=\oint_{C} \underline{E}\cdot d \underline{\ell}
+$$
+If 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 When the [[Magnetic Flux]], $\Phi$, through a circuit changes, an [[Emf]] is [[Emf Induced in a Moving Conductor|induced]] in the circuit, proportional to the rate of change of flux linkage. For a circuit with $N$ identical turns:
 $$
 \mathscr{E}=-\frac{d(N\Phi)}{dt}
 $$
-$N\Phi$ is the [[Flux Linkage]]. If the circuit is a coil of $N$ turns, each with the same flux, $\Phi$, through each, the emf is the same as if there were $N$ times the flux through a single turn
+$N\Phi$ is the [[Flux Linkage]]. If the circuit is a coil of $N$ turns, each with the same fl
+ux, $\Phi$, through each, the emf is the same as if there were $N$ times the flux through a single turn
 ## Rod on Rails
 The law gives the emf induced in a circuit in the general case. For a rod on rails, in the time $\delta t$, the rod sweeps across and area $l\times v\delta t$
 ![[Faraday's Law 2024-04-22 18.16.42.excalidraw]]
