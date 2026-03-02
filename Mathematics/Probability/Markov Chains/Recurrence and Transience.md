@@ -61,9 +61,37 @@ We define the $r$th passage time to $i$ as $T_{i}^{0}=0,$
 $$
 T_{i}^{r}=\inf\left\{ n>T_{i}^{r-1}:\middle|: X_{n}=i \right\}
 $$
+We define the $r$th excursion length as
+$$
+S_{i}^{r}=\begin{cases}
+T_{i}^{r}-T_{i}^{r-1} & T_{i}^{r-1}<\infty \\
+0 & T_{i}^{r-1}=\infty
+\end{cases}
+$$
+
 ## Example
 If
 $$
 I=\left\{ a,b,c \right\},(X_{n}(\omega))_{n\geq 0}=(a,a,c,b,a,b,b,a,b,b,a,b,\dots)
 $$
-What is 
+What are some passae times
+$$
+T_{a}^{1}(\omega)=1
+$$
+$$
+ T_{b}^{1}(\omega)=3
+$$
+$$
+T_{b}^{2}(\omega)=5
+$$
+$$
+ T^{3}_{b}(\omega)=6
+$$
+The idea is that recurrent means infinitely many $T_{i}^{r}$ happen, so it can't spend forever not at $i$
+## Lemma
+For $r\geq \phi$ conditional on $\left\{ T_{i}^{r-1}<\infty \right\}$, the excurion length $S_{i}^{r}$ is independent of $X_{0},X_{1},\dots,X_{T_{i}^{r-1}}$ and
+$$
+\mathbb{P}_{i}(S^{r}_{i}=n\mid T_{i}^{r-1}<\infty)=\mathbb{P}_{i}(T_{i}= n)
+$$
+### Proof
+We just need to translate things to apply the [[strong Markov property|strong Markov property]]
