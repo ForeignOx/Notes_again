@@ -95,3 +95,11 @@ $$
 $$
 ### Proof
 We just need to translate things to apply the [[strong Markov property|strong Markov property]]
+The strong Markov contition on $\left\{ T_{i}^{r-1} <\infty\right\}$
+$(X_{T_{i}^{r-1}+n})_{n\in\mathbb{N}_{0}}$is $Markov(\delta_{i},P)$ and independent of $X_{0},\dots X_{T_{i}^{r-1}}$
+If $\left\{ T_{i}^{r-1} <\infty\right\}$ then $S_{i}^{r}>0$ and 
+$$
+S_{i}^{r}=\inf\left\{ n\geq 1:\middle|: X_{T_{i}^{r-1}+n}=i \right\}
+$$
+Which is equal to the first passage time of $(X_{T_{i}^{r-1}+n})_{n\geq 0}$ to $i$
+o the strong Markov property tells us that $\mathbb{P}(S_{i}^{r}=n\mid T_{i}^{r-1}<\infty)=\mathbb{P}_{i}(T_{i}=n)$ which is equal to in distribution to $(X_{n})_{n\geq 0}$
