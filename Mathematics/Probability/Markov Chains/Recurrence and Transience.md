@@ -103,3 +103,13 @@ S_{i}^{r}=\inf\left\{ n\geq 1:\middle|: X_{T_{i}^{r-1}+n}=i \right\}
 $$
 Which is equal to the first passage time of $(X_{T_{i}^{r-1}+n})_{n\geq 0}$ to $i$
 o the strong Markov property tells us that $\mathbb{P}(S_{i}^{r}=n\mid T_{i}^{r-1}<\infty)=\mathbb{P}_{i}(T_{i}=n)$ which is equal to in distribution to $(X_{n})_{n\geq 0}$
+___
+This lets us say something about how long excursions last:
+$$
+V_{i}=\sum_{n=0}^{\infty}\mathbb{1}(X_{i}=i)
+$$
+## Lemma
+For $r=0,1,2,\dots$
+$$
+\mathbb{P}_{i}(V_{i}>r)=(\mathbb{P}_{i}(T_{i}<\infty))^{r}
+$$
