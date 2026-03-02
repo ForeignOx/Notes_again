@@ -25,7 +25,27 @@ And the electromotive force:
 $$
 \mathscr{E}_{c}=\oint_{C} \underline{E}\cdot d \underline{\ell}
 $$
-If 
+This means that if we move a charge $\delta q$ along $C$, then the work that $\underline{E}$ does is
+$$
+\delta W=\oint_{C} \underline{F}_{L}\cdot d \underline{\ell}=\oint_{C}\delta q\underline{E}\cdot d \underline{\ell}=\delta q\oint_{C}\underline{E}\cdot d \underline{\ell}=\delta q \mathscr{E}_{C}
+$$
+So $\mathscr{E}$ is the work done by $\underline{E}$ per unit of charge 
+![[Pasted image 20260302142022.png]]
+Importantly, there is a minus sign which we call Lenz's that yelds the left-hand rule for induced $\underline{E}$ on $C$
+## Remark
+Say we have an electrically conducting loop $C$ of resistance $R$
+On $C$ you will get an electric current:
+$$
+I=\frac{\mathscr{E}_{C}}{R}=\frac{1}{R}\oint_{C}\underline{E}\cdot d \underline{\ell} 
+$$
+$$
+= -\frac{\ell}{R} \frac{d}{dt} \Phi_{S}(t)
+$$
+An analogy with a battery and Ohm's law
+$$
+I=\frac{\delta \varphi}{R}=\frac{1}{T}(\varphi_{2}-\varphi_{1})=\frac{1}{R}\int _{C}\underline{\nabla } \varphi\cdot \, d \underline{\ell}=-\frac{1}{R}\int _{C} \underline{E}\cdot \, d \underline{\ell}  
+$$
+
 
 
 
