@@ -32,6 +32,11 @@ $$
 \sum_{n=0}^{\infty}P_{ii}^{n}<\infty \implies \mathbb{E}_{i}\left( \sum_{n=0}^{\infty}\mathbb{1}(X_{n}=i) \right)<\infty
 $$
 In particular, every state is either recurrent or transient
+### Proof
+$$
+\left\{ \text{Visit }i \text{ infinitely often} \right\}=\left\{ V_{i}=\infty \right\}=\bigcap_{r=0}^{\infty}\left\{ V_{i}>r \right\}
+$$
+There
 ## Corollary
 Recurrence/transience is a [[Class Properties|class property]]: if $i\leftrightarrow j$, then either they're both recurrent or both transient
 ### Proof
@@ -112,4 +117,24 @@ $$
 For $r=0,1,2,\dots$
 $$
 \mathbb{P}_{i}(V_{i}>r)=(\mathbb{P}_{i}(T_{i}<\infty))^{r}
+$$
+### Proof
+We induct, for $r=0$, $X_{0}=i\implies V_{i}\geq 1>0$, so the LHS=1=RHS
+For $r>0$, 
+$$
+\left\{ V_{i}>r+1 \right\}=\left\{ T_{i}^{r+1}<\infty \right\}=\left\{ T_{i}^{r}<\infty \right\}\cap \left\{ S_{i}^{r+1}<\infty \right\}
+$$
+Thus
+$$
+\mathbb{P}(V_{i}>r+1)=\mathbb{P}_{i}(T^{r+1}_{i}<\infty)=\mathbb{P}_{i}(T_{i}^{r}<\infty,S_{i}^{r}<\infty)
+$$
+$$
+ =\mathbb{P}(S_{i}^{r+1}<\infty\mid T_{i}^{r}<\infty)\mathbb{P}(T_{i}^{r}<\infty)=\mathbb{P}(S_{i}^{r+1}<\infty\mid T_{i}^{r}<\infty)(\mathbb{P}_{i}(T_{i}<\infty))^{r} 
+$$
+$$
+= (\mathbb{P}_{i}(T_{i}<\infty ))^{r+1}
+$$
+Where we have used coundable additivity to show
+$$
+\mathbb{P}_{i}(S_{i}^{r+1}<\infty\mid T_{i}^{r}<\infty)=\sum_{n=1}^{\infty} \mathbb{P}_{i}(S_{i}^{r+1}=n\mid T_{i}^{r}<\infty)=\sum_{n=1}^{\infty} \mathbb{P}_{i}(T_{i}=n)=\mathbb{P}_{i}(T_{i}<\infty)
 $$
