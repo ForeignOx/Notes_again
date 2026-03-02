@@ -36,7 +36,40 @@ In particular, every state is either recurrent or transient
 $$
 \left\{ \text{Visit }i \text{ infinitely often} \right\}=\left\{ V_{i}=\infty \right\}=\bigcap_{r=0}^{\infty}\left\{ V_{i}>r \right\}
 $$
-There
+Therefore 
+$$
+\mathbb{P}_{i}(\text{Visit }i\text{ infinitely often})=\lim_{ r \to \infty } \mathbb{P}_{i}(V_{i}>r)=\lim_{ r \to \infty } (\mathbb{P}_{i}(T_{i}<\infty))^{r}
+$$
+Since $\left\{ V_{i}>r \right\}$ are non-increasing events,
+Sooo
+- $\mathbb{P}_{i}(T_{i}<\infty)<1$ means that $\mathbb{P}_{i}(\text{Visit }i\text{ infinitely often})=0$, meaning $i$ is transient
+- $\mathbb{P}_{i}(T_{i}<\infty)=1$ which means that $\mathbb{P}_{i}(\text{Visit }i\text{ infinitely often})=\lim_{ r \to \infty }1^{r}=1$ so $i$ is recurrent
+We recall that we show
+$$
+\mathbb{E}_{i}(\text{number of visits to }i)=\mathbb{E}_{i}(V_{i})=\sum_{n=0}^{\infty}P_{ii}^{n}
+$$
+Using Tonelli
+So if $\mathbb{P}(T_{i}<\infty)=1$ then $\mathbb{P}_{i}(V_{i}=\infty)=1$ so trivially, $\mathbb{E}_{i}(V_{i})=1\times \infty=\infty$
+Thus
+$$
+\sum_{n=0}^{\infty}P_{ii}^{n}=\infty
+$$
+If $\mathbb{P}_{i}(T_{i}<\infty)<1$, then we use the following fact:
+For non-negative random variables $X$,
+$$
+\mathbb{E}(X)=\int_{0}^{\infty}  \mathbb{P}(X>x) \, dx 
+$$
+In particular, if $X$ is discrete
+$$
+\mathbb{E}(X)=\sum_{n=0}^{\infty} \mathbb{P}(X>n)
+$$
+Soooo
+$$
+\mathbb{E}_{i}(V_{i})=\sum_{r=0}^{\infty}\mathbb{P}_{i}(V_{i}>r)=\sum_{r=0}^{\infty} (\mathbb{P}_{i}(T_{i}<\infty))^{r}<\infty 
+$$
+$$
+\implies \sum_{n=0}^{\infty} P_{ii}^{n}<\infty
+$$
 ## Corollary
 Recurrence/transience is a [[Class Properties|class property]]: if $i\leftrightarrow j$, then either they're both recurrent or both transient
 ### Proof
@@ -138,3 +171,9 @@ Where we have used coundable additivity to show
 $$
 \mathbb{P}_{i}(S_{i}^{r+1}<\infty\mid T_{i}^{r}<\infty)=\sum_{n=1}^{\infty} \mathbb{P}_{i}(S_{i}^{r+1}=n\mid T_{i}^{r}<\infty)=\sum_{n=1}^{\infty} \mathbb{P}_{i}(T_{i}=n)=\mathbb{P}_{i}(T_{i}<\infty)
 $$
+## Theorem
+Every recurrent class is closed
+## Theorem
+Every finite closed communicating class is recurrent. In particular, every finite and irreducible Markov chain is recurrent
+### Proof
+Suppose $C$ is a closed communicating class and $i\in C$ we define $V_{j}$ to be the total number of visits to $j$, so $V_{j}^{n}$ is the total number of visits to $j$ before time $n$, which is 
