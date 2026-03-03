@@ -68,5 +68,6 @@ Let $D$ be a starlike domain, then for any close contour $\gamma$ in $D$, $I_{\g
 If $d=\mathbb{C}$ there are no points to check
 $\frac{1}{z-w}$ is holomorphic and irreducible and
 $$
-\oint_{\gamma} \frac{1}{z-w}\delta z=0
+\oint_{\gamma} \frac{1}{z-w}~ d z=0
 $$
+

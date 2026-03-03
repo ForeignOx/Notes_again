@@ -125,3 +125,5 @@ e^{ -\frac{1}{x} } & x>0 \\
 $$
 Which has Taylor series of $\hspace{0pt}0$ around $0$, which is really sad and that's basically because it is basically two functions glued together
 Another similar example is $\left| x \right|x^{n}$
+## Corollary: Generalised CIF
+Let $f$ be holomorphic on a [[Simply Connected Domains|simply connected domain]], then for any 

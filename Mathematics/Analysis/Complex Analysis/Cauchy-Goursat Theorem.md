@@ -149,3 +149,8 @@ $$
 \oint_{\gamma}f(z)~dz=\sum_{n=1}^{N}\int _{\gamma_{n}}f(z) \, dz=-\sum_{n=1}^{N} \int _{\delta_{n}}f(z) \, dz = -\int _{\delta}f(z) \, dz   
 $$
 By triangulation (and proof of Goursat's lemma), this gives what we want i.e. it becomes 0
+## Theorem: Cauchy-Goursat Thoerem (for simply connected domains)
+Let $f$ be holomorphic on a [[simply connected domains|simply connected domain]] $D$. Then for any closed contour $\gamma \subset D$,
+$$
+\oint_{\gamma}f(z)~dz=0
+$$
