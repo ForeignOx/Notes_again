@@ -144,3 +144,8 @@ $$
 ### Proof (sketch)
 By the [[covering lemma|covering lemma]], we can cover $\gamma$ with finitely many balls of uniform radius in a way that the bit of contour between centres is contained in the ball
 Let $\delta_{n}$ be the straight line connecting $\gamma(t_{n+1})$ to $\gamma(t_{n})$, which creates a polygon which traverses $\gamma(t_{n})$ in the opposite direction to $\gamma$
+Sooo
+$$
+\oint_{\gamma}f(z)~dz=\sum_{n=1}^{N}\int _{\gamma_{n}}f(z) \, dz=-\sum_{n=1}^{N} \int _{\delta_{n}}f(z) \, dz = -\int _{\delta}f(z) \, dz   
+$$
+By triangulation (and proof of Goursat's lemma), this gives what we want i.e. it becomes 0

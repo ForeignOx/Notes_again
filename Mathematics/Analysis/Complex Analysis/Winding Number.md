@@ -62,3 +62,11 @@ I_{\gamma}(w)=\begin{cases}
 0 & w\in \mathbb{C}\setminus(D_{\gamma}\cup\gamma)
 \end{cases}
 $$
+## Proposition
+Let $D$ be a starlike domain, then for any close contour $\gamma$ in $D$, $I_{\gamma}(w)=0$ for every $w\not\in D$
+### Proof
+If $d=\mathbb{C}$ there are no points to check
+$\frac{1}{z-w}$ is holomorphic and irreducible and
+$$
+\oint_{\gamma} \frac{1}{z-w}\delta z=0
+$$
