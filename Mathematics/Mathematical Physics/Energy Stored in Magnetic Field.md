@@ -80,5 +80,8 @@ $$
 = \frac{1}{2}\int _{\mathbb{R}^{3}} \underline{A}(t,\underline{x})\cdot \underline{J}(t,\underline{x}) \, d^{3}\underline{x} 
 $$
 $$
-= \frac{1}{2\mu_{0}}  
+= \frac{1}{2\mu_{0}}\int _{\mathbb{R}^{3}} \underline{A}(t,\underline{x})\cdot(\underline{\nabla} \times \underline{B} ) \, d^{3}\underline{x} 
+$$
+$$
+= \frac{1}{2\mu_{0}} \int _{\mathbb{R}^{3}} \underline{\nabla} \cdot (\underline{B}\times)  \, dx    
 $$
