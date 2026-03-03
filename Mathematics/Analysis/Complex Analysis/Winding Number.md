@@ -38,3 +38,20 @@ $$
  \iff \frac{\theta(b)-\theta(a)}{2\pi}=n
 $$
 wow
+## Lemma
+Let $\gamma:[a,b]\to \mathbb{C}$ be a closed contour. Then for any $w\not\in \gamma$,
+$$
+I_{\gamma}(w)=\frac{1}{2\pi i} \oint_{\gamma} \frac{1}{z-w}~dz
+$$
+### Prof
+By a theorem previously referenced, we know we can write $\gamma(t)=w+r(t)e^{ i\theta(t) }$, where $r,\theta$ are piecewise $C^{1}$
+$$
+\oint_{\gamma} \frac{1}{z-w}~dz=\int ^{b}_{a} \frac{\gamma'(t)}{\gamma(t)-w} \, dt =\int ^{b}_{a} \frac{r'(t)e^{ i\theta(t) }+i\theta'(t)r(t)e^{ i\theta(t) }}{r(t)e^{ i\theta(t) }} \, dt 
+$$
+$$
+= \int ^{b}_{a} \frac{r'(t)}{r(t)} \, dt+i \int ^{b}_{a} \theta'(t) \, dt 
+$$
+$$
+= [\log(r(t))]_{a}^{b}+i[\theta(t)]_{a}^{b}=0+i(\theta(b)-\theta(a))=2\pi i\frac{\theta(b)-\theta(a)}{2\pi}=2\pi iI_{\gamma}(w)   
+$$
+
