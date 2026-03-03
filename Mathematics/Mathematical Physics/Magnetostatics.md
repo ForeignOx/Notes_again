@@ -75,7 +75,7 @@ $$
 Note that this introduces a key feature of directionality
 Using Ampere's law $\underline{\nabla} \cdot \underline{ B}=0$,
 $$
-\int _{C-\partial S}\underline{B}\cdot \, d\underline{\ell}=\mu_{0}\int _{S}\underline{J}\cdot \, d\underline{S}=\mu_{0}I_{S} 
+\int _{C=\partial S}\underline{B}\cdot \, d\underline{\ell}=\mu_{0}\int _{S}\underline{J}\cdot \, d\underline{S}=\mu_{0}I_{S} 
 $$
 This is the integral form of Ampere's law
 So electric currents generate magnetic fields in a right-handed rule manner
