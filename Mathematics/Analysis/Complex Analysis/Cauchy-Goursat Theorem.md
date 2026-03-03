@@ -136,3 +136,11 @@ $$
 ## Remark
 One can show that the Goursat lemma holds under the weaker assumption that $f$ is holomorphic on $D\setminus S$, where $S$ is a finite set of points and $f$ is continuous on $D$
 In turn, this means that the Cauchy-Goursat theorem holds under the same conditions
+## Theorem: Cauchy-Goursat Theorem (for Simple Closed Contours)
+Suppose $f$ is holomorphic on and inside a simple closed countour $\gamma$, then
+$$
+\oint_{\gamma} f(z)~dz=0
+$$
+### Proof (sketch)
+By the [[covering lemma|covering lemma]], we can cover $\gamma$ with finitely many balls of uniform radius in a way that the bit of contour between centres is contained in the ball
+Let $\delta_{n}$ be the straight line connecting $\gamma(t_{n+1})$ to $\gamma(t_{n})$, which creates a polygon which traverses $\gamma(t_{n})$ in the opposite direction to $\gamma$
