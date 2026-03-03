@@ -126,4 +126,31 @@ $$
 Which has Taylor series of $\hspace{0pt}0$ around $0$, which is really sad and that's basically because it is basically two functions glued together
 Another similar example is $\left| x \right|x^{n}$
 ## Corollary: Generalised CIF
-Let $f$ be holomorphic on a [[Simply Connected Domains|simply connected domain]], then for any 
+Let $f$ be holomorphic on a [[Simply Connected Domains|simply connected domain]], then for any closed $\gamma$ and $w\not\in \gamma$, we have
+$$
+\oint_{\gamma} \frac{f(z)}{z-w}~dz=2\pi i f(w)I_{\gamma}(w)
+$$
+Where $I_{\gamma}(w)$ is the [[winding number|winding number]] of $\gamma$ around $w$
+In particular, if $f$ is holomorphic on and inside a simple closed contour $\gamma$, then
+$$
+\oint_{\gamma} \frac{f(z)}{z-w}~dz=2\pi i f(w)
+$$
+## Example
+Let $g(z)= \frac{\cos z}{z(z^{2}+2)}$ and let $\gamma$ be the square with vertices $\pm 1\pm i$. Calculate
+$$
+\oint_{\gamma} g(z)~dz
+$$
+$g$ is not holomorphic at $z=0$, and $z=\pm \sqrt{ 2 }i$
+If we let $f(z)= \frac{\cos(z)}{z^{2}+2}$, then $f$ is holomorphic on and inside $\gamma$, which is a SCC, so by generalised CIF,
+$$
+\oint_{\gamma}g(z)~dz=\oint_{\gamma} \frac{f(z)}{z}~dz= 2\pi i f(0)=2\pi i \frac{\cos0}{0^{2}+2}=\pi i
+$$
+___
+Consider $\gamma(t)=e^{ -4\pi it },t\in[0,1]$, calculate
+$$
+\oint_{\gamma} \frac{e^{ iz }}{z(z-4)}~dz
+$$
+We have seen that $I_{\gamma}(0)=-2$, soo since $f(z)= \frac{e^{ iz }}{z-4}$ is hollow on $B_{2}(0)$ which contains $\gamma$, soo
+$$
+\oint_{\gamma} \frac{f(z)}{z}~dz=2\pi i f(0)I_{\gamma}(0)=
+$$
