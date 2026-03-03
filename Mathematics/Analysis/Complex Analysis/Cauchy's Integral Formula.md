@@ -152,5 +152,5 @@ $$
 $$
 We have seen that $I_{\gamma}(0)=-2$, soo since $f(z)= \frac{e^{ iz }}{z-4}$ is hollow on $B_{2}(0)$ which contains $\gamma$, soo
 $$
-\oint_{\gamma} \frac{f(z)}{z}~dz=2\pi i f(0)I_{\gamma}(0)=
+\oint_{\gamma} \frac{f(z)}{z}~dz=2\pi i f(0)I_{\gamma}(0)=2\pi i(-2) \frac{e^{ 0 }}{0-4}=\pi i
 $$
