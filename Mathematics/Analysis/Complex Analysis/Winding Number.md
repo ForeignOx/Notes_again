@@ -5,4 +5,36 @@ I_{\gamma}(w)= \frac{\theta(b)-\theta(a)}{2\pi}
 $$
 For $w\not\in \gamma$ is called the winding number of $\gamma$ around $w$
 ## Example
-Fro 
+For $\gamma_{1}=e^{ 2\pi it }$ (which is the right form with $w=0,r(t)=1,\theta(t)=2\pi t$), so
+$$
+I_{\gamma_{1}}(0)=\frac{\theta(1)-\theta(0)}{2\pi}=\frac{2\pi-0}{2\pi}=1
+$$
+___
+For $\gamma_{2}=e^{ -4\pi it }$ (which has $w=0,r=1,\theta(t)=-4\pi t$)
+Soo
+$$
+I_{\gamma_{2}}(0)= \frac{\theta(1)-\theta(0)}{2\pi} = \frac{-4\pi}{2\pi}=-2
+$$
+## Remark
+The function $\theta$ is unique up to an additive constant
+If $\gamma$ is a contour, we can so that $r,\theta$ are piecewise $C^{1}$
+## Proposition
+If $\gamma$ is closed, then for all $w\not\in \gamma$, we have $I_{\gamma}\in \mathbb{Z}$
+### Proof
+Since the contour $\gamma(t)=w+r(t)e^{ -\theta(t) }$ is closed, we have $r(a)=r(b)$ (since $\gamma(a)=\gamma(b)$)and soo
+$$
+r(a)e^{ i\theta(a) }=r(b)e^{ i\theta(b) } 
+$$
+$$
+\iff e^{ i\theta(a) }=e^{ i\theta(b) }
+$$
+$$
+ \iff e^{ i(\theta(b)-\theta(a)) }=1 
+$$
+$$
+\iff i(\theta(b)-\theta(a))=2n\pi i 
+$$
+$$
+ \iff \frac{\theta(b)-\theta(a)}{2\pi}=n
+$$
+wow
