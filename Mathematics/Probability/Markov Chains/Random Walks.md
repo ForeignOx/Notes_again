@@ -49,4 +49,7 @@ p_{ij}=\begin{cases}
 $$
 Suppose we start at $0$, let us call the walk $X_{n}$ and write $X_{n}^{+}$ and $X_{n}^{-}$ for the projection of the walk on the diagonal lines $y=\pm x$,
 ![[Pasted image 20260303165722.png]]
-Then $X_{n}^{+}$ and $X_{n}^{-}$ are independent symmetric random walks on $\frac{1}{\sqrt{ 2 }}\mathbb{Z}$ and $X_{n}=0$ iff $X_{n}^{+}=X_{n}^{-}=0$,
+Then $X_{n}^{+}$ and $X_{n}^{-}$ are independent symmetric random walks on $\frac{1}{\sqrt{ 2 }}\mathbb{Z}$ and $X_{n}=0$ iff $X_{n}^{+}=X_{n}^{-}=0$, this makes clear that for $X_{n}$ we have
+$$
+P_{00}^{2n}=\left( {2n \choose n }\left( \frac{1}{2} \right)^{2n} \right)^{2}\sim \frac{2}{A^{2}n}\text{ as }n\to\infty
+$$
