@@ -62,3 +62,6 @@ Let $\gamma:[a,b]\to \mathbb{C}$ be a path, and let $w\not\in \gamma$, then let 
 $$
 \gamma(t)=w+r(t)e^{ i\theta(t) }
 $$
+## Definition
+A closed path $\gamma$ is simple if $\gamma(t_{1})=\gamma(t_{2})$ for some $t_{1}<t_{2}$ then $t_{1}=a,t_{2}=b$
+(i.e. no self-crossing or backtracking allowed)

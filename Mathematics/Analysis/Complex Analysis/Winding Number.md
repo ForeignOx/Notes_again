@@ -54,4 +54,11 @@ $$
 $$
 = [\log(r(t))]_{a}^{b}+i[\theta(t)]_{a}^{b}=0+i(\theta(b)-\theta(a))=2\pi i\frac{\theta(b)-\theta(a)}{2\pi}=2\pi iI_{\gamma}(w)   
 $$
-
+## Proposition
+Given a simple closed contour $\gamma$, one can place an orientation on $\gamma$ such that for $w\not\in \gamma$, we have
+$$
+I_{\gamma}(w)=\begin{cases}
+1 & w\in D_{\gamma} \\
+0 & w\in \mathbb{C}\setminus(D_{\gamma}\cup\gamma)
+\end{cases}
+$$
