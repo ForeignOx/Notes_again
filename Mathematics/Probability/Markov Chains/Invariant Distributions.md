@@ -32,3 +32,21 @@ But we know
 $$
 \mu_{i}=\mathbb{P}(X_{m}=i)=(\lambda P^{n})_{i}=(\lambda PP^{n-1})_{i}=(\lambda P^{n-1})_{i}=\dots = \lambda_{i}
 $$
+## Theorem
+Suppose $\left| I \right|<\infty$ and there exists $i\in I$ such that the limit
+$$
+\lim_{ n \to \infty } P^{n}_{ij}=\pi_{j}\text{ exists for all }j\in  I
+$$
+Then $\pi=(\pi_{j})_{j\in I}$ is an invariant distribution
+### Proof
+Using the Chapman-Kolmogorov equations,
+$$
+\pi_{j}=\lim_{ n \to \infty } P_{ij}^{n}=\lim_{ n \to \infty } \sum_{k\in  I}P_{ik}^{n-1}P_{kj} 
+$$
+$$
+= \sum_{k\in  I} (\lim_{ n \to \infty } P^{n-1}_{ik})P_{kj} 
+$$
+$$
+= \sum_{k\in  I} \pi_{k} P_{jk}=(\pi P)_{j}
+$$
+Note that $\left| I \right|<\infty$, is essential, this is not true in general if $\left| I \right|=\infty$, for example, the simple random walk on $\mathbb{Z}$
