@@ -57,4 +57,8 @@ ___
 We say that $A$ is piecewise $C^{1}$ path connected if for every pair of points $z,w\in A$ there exists a contour that starts at $z$ and ends at $w$ such that $\gamma(t)\in A$ for all $t\in[0,1]$
 ## Remark
 It is straightforward to see that $C^{1}$ curves are harder to find that their normal versions. Consequently, if a set is $C^{1}$ path connected or piecewise $C^{1}$ connected
-## Examples
+## Theorem
+Let $\gamma:[a,b]\to \mathbb{C}$ be a path, and let $w\not\in \gamma$, then let $r(t)=\left| \gamma(t)-w \right|>0$ be the continuous function representing the distance from $\gamma(t)$ to $w$, then there exists a continuous function $\theta:[a,b]\to \mathbb{R}$ such that
+$$
+\gamma(t)=w+r(t)e^{ i\theta(t) }
+$$
