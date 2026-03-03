@@ -49,4 +49,6 @@ $$
 $$
 = \sum_{k\in  I} \pi_{k} P_{jk}=(\pi P)_{j}
 $$
-Note that $\left| I \right|<\infty$, is essential, this is not true in general if $\left| I \right|=\infty$, for example, the simple random walk on $\mathbb{Z}$
+## Remark
+Note that $\left| I \right|<\infty$, is essential, this is not true in general if $\left| I \right|=\infty$, for example, the simple random walk on $\mathbb{Z}$ has $P_{ij}^{n}\to 0$ as $n\to\infty$ for all $i,j$
+Thi theorem says that if you settle into a limiting distribution, then it must be invariant
