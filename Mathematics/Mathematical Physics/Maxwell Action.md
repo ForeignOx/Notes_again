@@ -39,4 +39,45 @@ We first compute the total energy $U_{V}$ of the pule inside the infinite rectan
 $$
 V=\left\{ (x,y,z):\middle|: x\in \mathbb{R},0<y<L_{y},0<z<L_{z} \right\}
 $$
-We want to compute the rate $W_{S}$ at which the energy flows through the rectangular 
+We want to compute the rate $W_{S}$ at which the energy flows through the rectangular intersection,
+$$
+S=\left\{ (0,y,z):\middle|: 0<y<L_{y},0<z<L_{z} \right\}
+$$
+And finally show that $U_{V}$ is equal to the total $U_{S}$ energy that flows through $S$
+For the first part,
+$$
+\underline{B}(t,x)=\frac{1}{c}f(x-ct)\underline{e}_{z}
+$$
+Now we notice that $\left| \underline{B} \right|^{2}=\frac{1}{c^{2}}f^{2}=\frac{1}{c^{2}}\left| \underline{E} \right|^{2}$
+The energy density will be
+$$
+\mathcal{E}=\frac{1}{2}\left( \varepsilon_{0}\underline{E}^{2}+\frac{1}{\mu_{0}}\underline{B}^{2} \right)=\frac{1}{2}\left( \varepsilon_{0}f^{2}+\frac{1}{\mu_{0}} \frac{1}{c^{2}}f^{2} \right) 
+$$
+$$
+= \varepsilon_{0}f^{2}(x-ct)
+$$
+So the energy in $V$ is
+$$
+U_{V}=\int_{-\infty}^{\infty} \int_{0}^{L_{y}} \int_{0}^{L_{z}}  \varepsilon_{0}f^{2}(x-ct) \, dx  \, dy  \, dz =\varepsilon_{0}L_{y}L_{z}\int_{-\infty}^{\infty} f^{2}(x-ct) \, dx 
+$$
+$$
+= \varepsilon_{0}L_{x}L_{y}U 
+$$
+The Poynting vector is
+$$
+\underline{\mathcal{S}}=\frac{1}{\mu_{0}}\underline{E}\times \underline{B}=\frac{1}{\mu_{0}} \frac{1}{c}f^{2}(x-ct)\underline{e}_{y}\times \underline{e}_{z}=\frac{1}{\mu_{0}c}f^{2}(x-ct)\underline{e}_{x}
+$$
+$$
+W_{S}=\int _{S}  \underline{\mathcal{S}}\cdot \, d S=\int_{0}^{L_{z}} \int_{0}^{L_{y}} \mathcal{S} (x=0,t)\cdot \underline{e}_{x}\, dy \, dz  
+$$
+$$
+= \frac{L_{y}L_{z}}{\mu_{0}c}f^{2}(-ct)
+$$
+The total energy that goes through $S$ is
+$$
+U_{S}=\int_{-\infty}^{\infty} W_{S}(t) \, dt=\frac{L_{y}L_{z}}{\mu_{0}}\int_{-\infty}^{\infty} f^{2}(-ct) \, dt  
+$$
+$$
+= \frac{L_{y}L_{z}}{\mu_{0}c} \int_{-\infty}^{\infty} f^{2}(s)\left( -\frac{1}{c} \right) \, ds= \frac{L_{y}L_{z}}{\mu_{0}c^{2}}\int_{-\infty}^{\infty} f^{2} \, ds= \varepsilon_{0}L_{y}L_{z}U=U_{V} 
+$$
+Yay
