@@ -99,3 +99,43 @@ $$
 \underline{B}_{0}(\underline{k})= \frac{\underline{k}\times \underline{E}_{0}}{\omega(\underline{k})}
 $$
 ## Transport of Energy
+For the electromagnetic field we concluded that the energy in a region $V$ is given by
+$$
+        U_{V}=\int _{V} \frac{\varepsilon_{0}}{/2}\left| \underline{E}(t,\underline{x}) \right| ^{2}+\frac{1}{2\mu_{0}} \left| \underline{B}(t,\underline{x}) \right| ^{2} \, d^{3}\underline{x} 
+$$
+
+We can think of 
+$$
+\mathcal{E}(t,\underline{x})=\frac{\varepsilon_{0}}{2}\underline{E}^{2}(t,\underline{x})+\frac{1}{2\mu_{0}}\underline{B}^{2}(t,\underline{x})
+$$
+As the energy density
+How does this change in time? We take derivatives:
+$$
+\frac{ \partial \mathcal{E} }{ \partial t }=\varepsilon_{0}\underline{E}\cdot \frac{ \partial \underline{E} }{ \partial t } +\frac{1}{\mu_{0}} \underline{B}\cdot \frac{ \partial \underline{B} }{ \partial t }  
+$$
+We have time derivatives, so we want to consider equations of motion, returning to Maxwell's, we know
+$$
+\underline{\nabla} \times \underline{B} =\mu_{0}\varepsilon_{0} \frac{ \partial \underline{E} }{ \partial t } +\mu_{0}\underline{J}
+$$
+$$
+ \underline{\nabla} \times \underline{E} =-\frac{ \partial \underline{B} }{ \partial t } 
+$$
+So substituting these in:
+$$
+\frac{ \partial \mathcal{E} }{ \partial t } =\frac{1}{\mu_{0}} \underline{E}\cdot(\underline{\nabla} \times \underline{B} -\mu_{0}\underline{J})-\frac{1}{\mu_{0}}\underline{B}\cdot(\underline{\nabla} \times \underline{E} ) 
+$$
+$$
+= -\underline{E}\cdot \underline{J}+\frac{1}{\mu_{0}}(\underline{E}\cdot(\underline{\nabla} \times \underline{B} )-\underline{B}\cdot(\underline{\nabla} \times \underline{E} )) 
+$$
+$$
+= -\underline{E}\cdot \underline{J}-\frac{1}{\mu_{0}}\underline{\nabla} \cdot (\underline{E}\times \underline{B}) 
+$$
+We define the Pointing vector to be
+$$
+\mathcal{\underline{S}}=\frac{1}{\mu_{0}} \underline{E}\times \underline{B}
+$$
+So
+$$
+\frac{ \partial \mathcal{E} }{ \partial t }+\underline{\nabla} \cdot \underline{\mathcal{S}}  =-\underline{E}\cdot \underline{J}
+$$
+Which has the form of a continuity equation
