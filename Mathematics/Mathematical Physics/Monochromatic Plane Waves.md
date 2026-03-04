@@ -166,4 +166,4 @@ $$
 $$
 =\underline{J}\cdot \underline{E}\delta t\delta V
 $$
-Which tells us that the electromagnetic field loses energy $\underline{J}\cdot \underline{E}$ per unit time and unit volume which is exactly wa
+Which tells us that the electromagnetic field loses energy $\underline{J}\cdot \underline{E}$ per unit time and unit volume which is exactly what our conservation law above was trying to tell us
