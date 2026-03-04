@@ -1,4 +1,5 @@
- For a static electric field, by Maxwell's equations, we have
+# Time Independent Form
+For a static electric field, by Maxwell's equations, we have
 $$
 \underline{\nabla} \cdot \underline{ E} =\frac{\rho}{\varepsilon_{0}}
 $$
@@ -81,7 +82,7 @@ $$
 V=\frac{Q}{4\pi\epsilon_{0}r}
 $$
 ___
-# Long Distance Behaviour
+## Long Distance Behaviour
 In this section we consider scalar potential and electric field far from their sources, we assume that a charge density $\rho(\underline{x})$ is localised inside a bounded region $V\subset \mathbb{R}^{3}$, so $\rho(\underline{x})=0$ outside $V$
 ![[Pasted image 20260223141933.png]]
 In the integral expression of Gauss' law, the integration variable $\underline{x}'$ only ranges over $V$. We are interested in the behaviour of the potential at observation points satisfying $\left| \underline{x} \right|\gg \left| \underline{x}' \right|$ for all $\underline{x}'\in V$
@@ -110,7 +111,7 @@ $$
 As the total charge or monopole moment and the dipole moment of the charge distribution
 Keeping higher order terms would similarly define higher multipole moments
 The general patterns is that higher moments contribute terms that fall off more rapidly far from the sources. The monopole potential scales as $\frac{1}{\left| \underline{x} \right|}$, while the dipole correction scales as $\frac{1}{\left| \underline{x} \right|^{2}}$
-## Remark
+### Remark
 The dipole moment is the first shape-sensitive moment of the distribution
 For discrete particles, $\rho(\underline{x}')=\sum_{i}q_{i}\delta(\underline{x}-\underline{x}_{i})$ gives
 $$
@@ -138,7 +139,7 @@ $$
 \varphi(\underline{r})=0+\frac{1}{4\pi\varepsilon_{0}} \frac{\underline{p}\cdot \underline{r}}{\left| \underline{r} \right| ^{3}}+\dots
 $$
 For the right.
-## Example
+### Example
 Two point particles of charges $q_{i}$ located at $\underline{r}_{i}$ for $i\in\left\{ 1,2 \right\}$
 The charge density for the system is 
 $$
@@ -161,6 +162,31 @@ $$
 \underline{p}=q(\underline{r}_{1}-\underline{r}_{2})=q\underline{d}
 $$
 With $\underline{d}$ being the distance between the two charges
+# Time Dependent
+Here we have the full Maxwell equations:
+$$
+\underline{\nabla} \cdot \underline{E} =\frac{\rho}{\varepsilon_{0}}
+$$
+$$
+ \underline{\nabla} \times \underline{E} =-\frac{ \partial \underline{B} }{ \partial t } 
+$$
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

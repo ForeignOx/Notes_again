@@ -1,3 +1,4 @@
+# Time Independent
 ## Build Up
 For a [[Magnetostatics|static]] [[Magnetic Fields|magnetic field]] we are solving the modified Maxwell's equations:
 $$
@@ -236,3 +237,37 @@ Where $U=- \underline{m}\cdot \underline{B}$, so it is conserved innit also see 
 For the dipole moment, there are two ways a particle can minimise energy
 Either it moves to a region of space with smaller $U$
 Alternatively it can orient $\underline{m}$ so that it minimises $U$, which is when $\underline{m}$ is parallel to $\underline{B}$
+# Time Dependent
+For a time-dependent electromagnetic field, we have Maxwel's equations
+
+$$
+\underline{\nabla} \cdot \underline{E}(t,\underline{x})  = \frac{\rho(t,\underline{x})}{\varepsilon}
+$$
+$$
+\underline{\nabla} \cdot \underline{B}(t,\underline{x}) =0
+$$
+$$
+\underline{\nabla} \times \underline{E} (t,\underline{x})=-\frac{ \partial \underline{B}(t,\underline{x}) }{ \partial t } 
+$$
+$$
+\underline{\nabla} \times \underline{ B} (t,\underline{x})=\mu_{0}\left( \underline{J}(t,\underline{x})+\varepsilon_{0} \frac{ \partial \underline{E}(t,\underline{x}) }{ \partial t }  \right)
+$$
+Again we can write
+$$
+\underline{B}(t,\underline{x})=\underline{\nabla} \times \underline{A} (t,\underline{x})
+$$
+With a time-depenent vector potential $\underline{A}$
+Thus plugging this into our curl of $\underline{E}$ equation, we get:
+$$
+\underline{\nabla} \times \underline{ E} =-\frac{ \partial \underline{\nabla} \times \underline{A}  }{ \partial t } =-\underline{\nabla} \times \frac{ \partial \underline{A} }{ \partial t } 
+$$
+$$
+\implies \underline{\nabla} \times \left( \underline{E}+\frac{ \partial \underline{A} }{ \partial t }  \right)=0 
+$$
+$$
+\implies  \underline{E}+\frac{ \partial \underline{A} }{ \partial t }   =-\underline{\nabla } \varphi 
+$$
+$$
+\implies  \underline{E}=-\underline{\nabla } \varphi-\frac{ \partial \underline{A} }{ \partial t } 
+$$
+No
