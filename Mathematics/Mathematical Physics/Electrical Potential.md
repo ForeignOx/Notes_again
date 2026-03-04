@@ -1,4 +1,4 @@
-For a static electric field, by Maxwell's equations, we have
+ For a static electric field, by Maxwell's equations, we have
 $$
 \underline{\nabla} \cdot \underline{ E} =\frac{\rho}{\varepsilon_{0}}
 $$
