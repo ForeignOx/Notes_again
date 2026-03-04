@@ -15,13 +15,13 @@ $$
 We are looking for a function $S[\varphi,\underline{A}]$, such that $\frac{\delta S}{\delta \varphi}=0$ and $\frac{\delta S}{\delta \underline{A}}=0$ gives us our two equations
 The [[Action Principle|action]] is in fact Maxwell's actions:
 $$
-    S[\varphi,\underline{A}]=\int \frac{\varepsilon_{0}}{2}\underline{E}^{2}-\frac{1}{2\mu_{0}}\underline{B}^{2}-\varphi \rho+\underline{A}\cdot \underline{J} \, dt~d^{3}\underline{x} 
+    S[\varphi,\underline{A}]=\int \frac{\varepsilon_{0}}{2}\left| \underline{E} \right| ^{2}-\frac{1}{2\mu_{0}}\left| \underline{B} \right| ^{2}-\varphi \rho+\underline{A}\cdot \underline{J} \, dt~d^{3}\underline{x} 
 $$
 With $\underline{E}$ and $\underline{B}$ written as above
 ## Gauge Invariance
 If we use our action with our gauge invariance terms, we get
 $$
-S\left[ \varphi-\frac{ \partial \chi }{ \partial t } ,\underline{A}+\underline{\nabla } \chi \right]=\int \frac{\varepsilon_{0}}{2}\underline{E}^{2}-\frac{1}{2\mu_{0}}\underline{B}^{2}-\left( \varphi-\frac{ \partial \chi }{ \partial t }  \right)+(\underline{A}+\underline{\nabla } \chi)\cdot \underline{J} \, dt~d^{3}\underline{x} 
+S\left[ \varphi-\frac{ \partial \chi }{ \partial t } ,\underline{A}+\underline{\nabla } \chi \right]=\int \frac{\varepsilon_{0}}{2}\left| \underline{E} \right| ^{2}-\frac{1}{2\mu_{0}}\left| \underline{B} \right| ^{2}-\left( \varphi-\frac{ \partial \chi }{ \partial t }  \right)+(\underline{A}+\underline{\nabla } \chi)\cdot \underline{J} \, dt~d^{3}\underline{x} 
 $$
 $$
         = S[\varphi,\underline{A}]+\int \frac{ \partial \chi }{ \partial t } \rho+\underline{\nabla } \chi\cdot \underline{J} \, dt~d^{3}\underline{x} 
@@ -51,7 +51,7 @@ $$
 Now we notice that $\left| \underline{B} \right|^{2}=\frac{1}{c^{2}}f^{2}=\frac{1}{c^{2}}\left| \underline{E} \right|^{2}$
 The energy density will be
 $$
-\mathcal{E}=\frac{1}{2}\left( \varepsilon_{0}\underline{E}^{2}+\frac{1}{\mu_{0}}\underline{B}^{2} \right)=\frac{1}{2}\left( \varepsilon_{0}f^{2}+\frac{1}{\mu_{0}} \frac{1}{c^{2}}f^{2} \right) 
+\mathcal{E}=\frac{1}{2}\left( \varepsilon_{0}\left| \underline{E} \right| ^{2}+\frac{1}{\mu_{0}}\left| \underline{B} \right| ^{2} \right)=\frac{1}{2}\left( \varepsilon_{0}f^{2}+\frac{1}{\mu_{0}} \frac{1}{c^{2}}f^{2} \right) 
 $$
 $$
 = \varepsilon_{0}f^{2}(x-ct)
