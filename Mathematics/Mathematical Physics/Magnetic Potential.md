@@ -304,5 +304,7 @@ $$
 \underline{A}'=\underline{A}+\underline{\nabla } \chi 
 $$
 $$
-
+ \varphi'=\varphi-\frac{ \partial \chi }{ \partial t } 
 $$
+___
+We now have a system of equations that $\varphi$ and $\underline{A}$ satisfy do they come from varying an [[Action Principle|action]]?
