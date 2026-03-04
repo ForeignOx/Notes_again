@@ -130,7 +130,7 @@ $$
 $$
 = -\underline{E}\cdot \underline{J}-\frac{1}{\mu_{0}}\underline{\nabla} \cdot (\underline{E}\times \underline{B}) 
 $$
-We define the Pointing vector to be
+We define the Poynting vector to be
 $$
 \mathcal{\underline{S}}=\frac{1}{\mu_{0}} \underline{E}\times \underline{B}
 $$
@@ -138,4 +138,32 @@ So
 $$
 \frac{ \partial \mathcal{E} }{ \partial t }+\underline{\nabla} \cdot \underline{\mathcal{S}}  =-\underline{E}\cdot \underline{J}
 $$
-Which has the form of a continuity equation
+Which has the form of a continuity equation:
+$$
+\frac{ \partial \rho }{ \partial t } +\underline{\nabla} \cdot \underline{J} =0
+$$
+Where $\rho$ is the density of the conserved quantity and $\underline{J}$ is the current describing the flow of the conserved density
+So the Poynting vector describes the flow of energy carried by the electromagnetic field, but we note that the RHS is not actually $\hspace{0pt}0$, it is $-\underline{E}\cdot \underline{J}$
+This occurs becuase the electromagnetic field is not isolated, it exchanges energy with the charges
+More precisely, this is the energy transferred to particles through the Lorentz force
+The $-\underline{E}\cdot \underline{J}$ is the rate of energy lost from the electromagnetic field to move charged particles
+Taking a volume of charge $\delta q=\rho\delta V$ which has fluid velocity $\underline{v}$. In time $\delta t$, the electromagnetic field does work 
+$$
+\delta W=\delta F_{L}\cdot\delta \underline{\ell}=\delta F_{L}\cdot \underline{v}\delta t
+$$
+Where $F_{L}$ is the [[Lorentz force|Lorentz force]] on $\delta q$
+We know
+$$
+\delta F_{L}=f_{L}\delta V=(\rho \underline{E}+\underline{J}\times \underline{B})\delta V
+$$
+So
+$$
+\delta W=\rho(\underline{E}+\cancelto{ 0 }{ \underline{v}\times \underline{B} })\cdot \underline{v}\delta t\delta V 
+$$
+$$
+= \rho \underline{E}\cdot \underline{v}\delta t\delta V
+$$
+$$
+=\underline{J}\cdot \underline{E}\delta t\delta V
+$$
+Which tells us that the electromagnetic field loses energy $\underline{J}\cdot \underline{E}$ per unit time and unit volume which is exactly wa
