@@ -270,4 +270,39 @@ $$
 $$
 \implies  \underline{E}=-\underline{\nabla } \varphi-\frac{ \partial \underline{A} }{ \partial t } 
 $$
-No
+Now we consider the gauge invariance of $\underline{E}$ and $\underline{B}$, changing $\underline{A}'(t,\underline{x})=\underline{A}(t,\underline{x})+\underline{\nabla }\chi(t,\underline{x})$ leaves $\underline{B}$ invariant:
+$$
+\underline{B}'(t,\underline{x})=\underline{\nabla} \times \underline{A} =\underline{\nabla} \times (\underline{A}+\underline{\nabla } \chi)=\underline{\nabla} \times \underline{A} +\cancelto{ 0 }{ \underline{\nabla} \times \underline{\nabla } \chi }  =\underline{B}(t,\underline{x})
+$$
+So the Gauge trransformation parameter $\chi$ can in fact be time dependent
+Thus the transformation for the scalar potential is
+$$
+\varphi'(t,\underline{x})=\varphi(t,\underline{x})+\frac{ \partial \chi(t,\underline{x}) }{ \partial t } 
+$$
+$$
+\underline{E}'(t,\underline{x})=-\underline{\nabla } \varphi'-\frac{ \partial \underline{A}' }{ \partial t }  = -\underline{\nabla } \left( \varphi-\frac{ \partial \chi }{ \partial t }  \right)-\frac{ \partial \underline{A}+\underline{\nabla } \chi }{ \partial t } 
+$$
+$$
+= -\underline{\nabla } \varphi+\cancel{ \underline{\nabla } \frac{ \partial \chi }{ \partial t } } -\frac{ \partial \underline{A} }{ \partial t } - \cancel{ \frac{ \partial \underline{\nabla } \chi }{ \partial t } } =-\underline{\nabla } \varphi-\frac{ \partial \underline{A} }{ \partial t } =\underline{E}
+$$
+
+So the bottom line is that if we introduce a scalar potential $\varphi$ and a vector potential $\underline{A}$ through 
+$$
+\underline{E}=-\underline{\nabla } \varphi-\frac{ \partial \underline{A} }{ \partial t } 
+$$
+$$
+ \underline{B}=\underline{\nabla} \times \underline{A} 
+$$
+Solves $\underline{\nabla} \cdot \underline{B}=0$ and $\underline{\nabla} \times \underline{E}=-\partial_{t}\underline{B}$
+We are left with 
+$$
+\underline{\nabla} \cdot \underline{E} =\frac{\rho}{\varepsilon_{0}},\underline{\nabla} \times \underline{B} =\mu_{0}\left( \underline{J}+\varepsilon_{0} \frac{ \partial \underline{E} }{ \partial t }  \right)
+$$
+That $\varphi$ and $\underline{A}$ must satisfy with no further constraints
+Finally, we need the system to be invariant under the gauge transformation
+$$
+\underline{A}'=\underline{A}+\underline{\nabla } \chi 
+$$
+$$
+
+$$
