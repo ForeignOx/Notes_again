@@ -67,4 +67,4 @@ Note, we have the closed form expression:
 $$
 \sum_{n=-\infty}^{1}3^{n}z^{n}=3z+\sum_{m=0}^{\infty} \left( \frac{1}{3z} \right)^{m}=3z+  \frac{1}{1-\left( \frac{1}{3z} \right)}=\frac{9z^{2}}{3z-1}
 $$
-
+## Proposition: Uniqueness of Laurent S
