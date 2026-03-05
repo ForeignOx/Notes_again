@@ -87,4 +87,26 @@ $$
 As the integral equals zero unless $m=n$
 But we can do the exact same thing with $d_{n}$ to get $=2\pi i d_{n}$, so they are equal and hunce unique and stuff innit
 ## Theorem: Holomorphic Functions on Annuli have Laurent Series
-Let $f:A_{r,R}(a)\to C$
+Let $f:A_{r,R}(a)\to \mathbb{C}$ be a [[Complex Functions|complex function]] which is [[Holomorphicity|holomorphic]] on the [[Annuli|annulus]] $A_{r,R}(a)$, then there exist unique $c_{n}\in \mathbb{C}$ such that 
+$$
+f(z)=\sum_{n=-\infty}^{\infty}c_{n}(z-a)^{n}
+$$
+This is called the Laurent series of $f$ on $A_{r,R}(a)$
+### Proof
+Let $w\in A_{r,R}(a)$, pick $r<\rho_{1}<\left| w-a \right|<\rho_{2}<R$, we will show $f$ has a Laurent series expansion on $A_{\rho_{1},\rho_{2}}(a)$
+First consider 
+$$
+f_{2}(w)=\frac{1}{2\pi i}\oint_{\gamma_{2}}  \frac{f(z)}{z-w}~dz
+$$
+where $\gamma_{2}=a+\rho_{2}e^{ 2\pi it }$. We wrote
+$$
+\frac{1}{z-w}=\frac{1}{z-a}\sum_{n=0}^{\infty} \left( \frac{w-a}{z-a} \right)^{n}
+$$
+So
+$$
+\frac{1}{2\pi i} \oint_{\gamma_{2}}  \frac{f(z)}{z-w}~dz= \frac{1}{2\pi i} \oint_{\gamma_{2}}  \frac{f(z)}{z-a}\sum_{n=0}^{\infty} \left( \frac{w-a}{z-a} \right)^{n} 
+$$
+$$
+=  \frac{1}{2\pi i}  \sum_{n=0}^{\infty}(w-a)^{n} \underbrace{ \oint_{\gamma_{2}}  \frac{f(z)}{(z-a)^{n+1}}~dz }_{ =c_{n} }
+$$
+This is the analytic part of the Laurent series
