@@ -54,4 +54,17 @@ A Laurent series is holomorphic on its annulus of convergence (in particular, a 
 
 
 ## Example
-Find the annulus of 
+Find the annulus of convergence of the Laurent series:
+$$
+\sum_{n=-\infty}^{1}3^{n}z^{n}=3z+1+\frac{1}{3} \frac{1}{z}+\frac{1}{9} \frac{1}{z^{2}}+\dots 
+$$
+$$
+= 3z+1+\sum_{n=-\infty}^{-1} 3^{n}z^{n}=3z+1+\sum_{m=1}^{\infty} \left( \frac{1}{3z} \right)^{m}
+$$
+The analytic part converges on $\mathbb{C}$ and the analytic part converges when $\left| \frac{1}{3z} \right|<1 \iff \left| z \right|>\frac{1}{3}$
+So the Laurent series converges on the annulus $A_{\frac{1}{3},\infty}(0)$
+Note, we have the closed form expression:
+$$
+\sum_{n=-\infty}^{1}3^{n}z^{n}=3z+\sum_{m=0}^{\infty} \left( \frac{1}{3z} \right)^{m}=3z+  \frac{1}{1-\left( \frac{1}{3z} \right)}=\frac{9z^{2}}{3z-1}
+$$
+
