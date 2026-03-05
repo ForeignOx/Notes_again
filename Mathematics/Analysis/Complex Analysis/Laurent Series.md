@@ -67,4 +67,24 @@ Note, we have the closed form expression:
 $$
 \sum_{n=-\infty}^{1}3^{n}z^{n}=3z+\sum_{m=0}^{\infty} \left( \frac{1}{3z} \right)^{m}=3z+  \frac{1}{1-\left( \frac{1}{3z} \right)}=\frac{9z^{2}}{3z-1}
 $$
-## Proposition: Uniqueness of Laurent S
+## Proposition: Uniqueness of Laurent Series
+Given a Laurent series of the form $f(z)=\sum_{n=-\infty}^{\infty}c_{n}(z-a)^{n}$ with annulus of convergence $A_{r,R}(a)$. Then the constants $c_{n}$ are unique and given, for any $r<\rho<R$ by
+$$
+c_{n}=\frac{1}{2\pi i}\oint_{\left| z-a \right| =\rho} \frac{f(z)}{z-a}
+$$
+For $n\in\mathbb{Z}$
+### Proof
+Assume there is another expression on $A_{r,R}(a)$ of the form $f(z)=\sum_{n=-\infty}^{\infty}d_{n}(z-a)^{n}$ we want to show $c_{n}=d_{n}$. We have for any $r<\rho<R$,
+$$
+\oint_{\left| z-a \right| =\rho}  \frac{f(z)}{(z-a)^{n+1}}~dz= \oint_{\left| z-a \right| =\rho}  \frac{1}{(z-a)^{n+1}}\sum_{m=-\infty}^{\infty}c_{m}(z-a)^{m}~dz 
+$$
+$$
+= \oint_{\left| z-a \right| =\rho} \sum_{n=-\infty}^{\infty} c_{m}(z-a)^{m-n-1} ~dz = 2\pi i \sum_{n=-\infty}^{\infty}c_{m} \oint_{\left| z-a \right| =\rho} (z-a)^{m-n-1}~dz  
+$$
+$$
+= 2\pi i c_{n}
+$$
+As the integral equals zero unless $m=n$
+But we can do the exact same thing with $d_{n}$ to get $=2\pi i d_{n}$, so they are equal and hunce unique and stuff innit
+## Theorem: Holomorphic Functions on Annuli have Laurent Series
+Let $f:A_{r,R}(a)\to C$
