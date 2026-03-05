@@ -160,3 +160,22 @@ $$
 f(w)=\frac{1}{2\pi i}\oint _{\gamma_{1}} \frac{f(z)}{z-w} \, dw+\frac{1}{2\pi i} \oint_{\gamma_{2}} \frac{f(z)}{z-w}~dz
 $$
 ### Proof
+Let $w\in A_{\rho_{1},\rho_{2}}(a)$ assume $\mathfrak{R}(w)\neq \mathfrak{R}(a)$, consider the two horizontal lines,
+$$
+L_{1}(t)=a+\rho_{1}+t(\rho_{2}-\rho_{1}),~L_{2}(t)=a-\rho_{2}-t(\rho_{1}-\rho_{2})
+$$
+With $t\in[0,1]$
+![[Pasted image 20260305142108.png]]
+Using these, we construct two further contours as follows, let $\Gamma_{1}$ be the closed contour gonsisting of $\gamma_{2}$ for $t\in\left[ 0,\frac{1}{2} \right]$, then $L_{2}$ then $\gamma_{1}$ forr $t\in\left[ \frac{1}{2},1 \right]$ then $L_{1}$
+Similary, let $\Gamma_{2}$ be the closed contour consisting of $\gamma_{2}$ for $t\in\left[ \frac{1}{2},1 \right]$ then $-L_{1}$, then $\gamma_{1}$ for $t\in\left[ 0,\frac{1}{2} \right]$, then $-L_{2}$
+![[Pasted image 20260305142510.png]]
+By construction we have
+$$
+\oint _{\gamma_{1}} \frac{f(z)}{z-w} \, dz +\oint_{\gamma_{2}} \frac{f(z)}{z-w}~dz=\oint_{\Gamma_{1}} \frac{f(z)}{z-w}~dz+\oint_{\Gamma_{2}} \frac{f(z)}{z-w}~dz
+$$
+Since the contours $L_{1}$ and $L_{2}$ are each traversed twice in opposite directions. But both $\Gamma_{1}$ and $\Gamma_{2}$ are positively oriented simple closed contorus with $w$ lying inside precisely one of them
+The function $\frac{f(z)}{z-w}$ is therefore holomorphic on and inside the other, so by generalised CIF and Cauchy Goursat, we therefore have
+$$
+\oint_{\Gamma_{1}} \frac{f(z)}{z-w}~dz+\oint_{\Gamma_{2}} \frac{f(z)}{z-w}~dz=2\pi i f(w)+0=2\pi i f(w)
+$$
+As required, if we had $\mathfrak{R}(w)=\mathfrak{R}(a)$ instead we repeat the process with vertical lines
