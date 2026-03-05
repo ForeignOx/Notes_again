@@ -155,7 +155,7 @@ $$
 \oint_{\gamma} \frac{f(z)}{z}~dz=2\pi i f(0)I_{\gamma}(0)=2\pi i(-2) \frac{e^{ 0 }}{0-4}=\pi i
 $$
 ## Proposition: CIF for Annuli
-Let $f$ be holomorphic on some [[annulus|annulus]] $A_{r,R}(a)$, then for any $r<\rho_{1}<\rho_{2}<R$ and any $w\in A_{\rho_{1},\rho_{2}}(a)$, then we have
+Let $f$ be holomorphic on some [[Annuli|annulus]] $A_{r,R}(a)$, then for any $r<\rho_{1}<\rho_{2}<R$ and any $w\in A_{\rho_{1},\rho_{2}}(a)$, then we have
 $$
 f(w)=\frac{1}{2\pi i}\oint _{\gamma_{1}} \frac{f(z)}{z-w} \, dw+\frac{1}{2\pi i} \oint_{\gamma_{2}} \frac{f(z)}{z-w}~dz
 $$
