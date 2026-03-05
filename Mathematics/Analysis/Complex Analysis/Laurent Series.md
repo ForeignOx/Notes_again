@@ -24,3 +24,34 @@ Given a Laurent seires of the form $\sum_{n=-\infty}^{\infty} c_{n}(z-a)^{n}$ th
 - the Laurent series converges nowhere
 - there exists an [[Annuli|annulus]] $A_{r,R}(a)$ such that the Laurent series converges absolutely on $A_{r,R}(a)$ and diverges when $\left| z-a \right|<r$ or $\left| z-a \right|>R$
     - In this case, $A_{r,R}(a)$ is called the annulus of convergence of the Laurent series around $z=a$
+### Proof
+The Laurent series converges iff the analytic and principle parts converge at $z$
+For the analytic part, this is simply a power series. So it converges at just $z=a$ (in which case the Laurent series never converges anywhere not defined there) or there exists $R>0$ such that the analytic part converge when $\left| z-a \right|<R$
+For the principle part, we first make the change of variables
+$$
+\sum_{n=-\infty}^{-1}c_{n}(z-a)^{n}= \sum_{m=1}^{\infty} c_{-m}\left( \frac{1}{z-a} \right)^{m}
+$$
+If we write $w=\frac{1}{z-a}$, then this is equal to 
+$$
+= \sum_{m=1}^{\infty} c_{-m}w^{m}
+$$
+This is also just a power series which converges at just $w=0$ (in which case the Laurent series never converges, as there is no $z$ for which $\frac{1}{z-a}=0$)
+Or there exists $R'>0$ such that the power series converges when $\left| w \right|<R'$. Let
+$$
+r=\begin{cases}
+\frac{1}{R'} & R'<\infty \\
+0 & R'=\infty
+\end{cases}
+$$
+Then the principle part converges when 
+$$
+\frac{1}{\left| z-a \right|}<R' \iff \left| z-a \right| > \frac{1}{R'}=r
+$$
+Thus it converges on an annulus ye
+## Corollary
+A Laurent series is holomorphic on its annulus of convergence (in particular, a Laurent series converges locally on a disc of convergence of a holomorphic function)
+### Proof
+
+
+## Example
+Find the annulus of 
