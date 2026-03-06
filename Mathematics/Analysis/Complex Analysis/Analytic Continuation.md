@@ -56,7 +56,7 @@ $$
 h(z)=f(z)-g(z)
 $$
 By [[continuity|continuity]], $h(w)=0$.
-By the principle of is olated zeros, there is a ball around $w$, say $B_{\rho}(w)$ for which $h(z)\neq0$ when $z\in B_{\rho}(w)\setminus \left\{ w \right\}$
+By the principle of isolated zeros, there is a ball around $w$, say $B_{\rho}(w)$ for which $h(z)\neq0$ when $z\in B_{\rho}(w)\setminus \left\{ w \right\}$
 But his contradicts $f$ being an accumulation point. In particular, $h$ is identically zero on some ball $B_{r}(w)$ by the principle of isolated zeros. By the principle of analytic continuation, $h(z)=0$ on $D$
 ## Example
 Let $f:\mathbb{C}\to \mathbb{C}$ be entire satisfying
