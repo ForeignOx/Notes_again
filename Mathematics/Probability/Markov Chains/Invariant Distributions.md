@@ -192,5 +192,30 @@ $$
 $$
 So $\mu$ is also invariant. Therefore
 $$
-0=\mu_{k}=\sum_{j\in  I}
+0=\mu_{k}=\sum_{j\in  I}\mu_{j} P^{n}_{jk}\text{ for all }n\geq 0
 $$
+$$
+ \geq \mu_{i}P_{ik}^{n}\text{ for all }n\geq 0,i\in I 
+$$
+$$
+ \geq 0
+$$
+Therefore $\mu_{i}P_{ik}^{n}=0$ for all $n\geq 0$, $i\in I$
+However irreucibility implies that for all $i\in I$ there exists $n>0$ such that $P^{n}_{ik}>0$ implying that $\mu _{i}=0$ for all $i\in I$
+## Theorem
+Irreducible finite state Markov chains have unique stationary distributions
+This result is very powerful! Any method to find a stationary distribution is good
+### Proof
+The existence part come from the theorem two above, since the state space is finite, $\sum_{i}\gamma_{i}^{k}<\infty$, so we see that
+$$
+\left( \frac{\gamma_{i}^{k}}{\sum_{j\in  I}\gamma_{j}^{k}} \right)_{i\in  I}
+$$
+Is an invariant distribution. The main content of the theorem is the uniqueness part.
+Note that if Markov chain is irreducible and finite, then it must be recurrent which means every stationary measure $\lambda$ with $\lambda_{k}=1$ is $\gamma_{i}^{k}$ by the theorem above
+Now suppose that $\gamma$ is an invariant distrrubution, so we must have $\gamma_{i}>0$ for some $i$. Then for any other $j\in I$, there exists $n>0$ such that $P_{ij}^{n}>0$ by irreducibility, hence
+$$
+\lambda_{j}= (\lambda P^{n})_{j}=\sum_{\ell}\lambda_{\ell}P_{\ell j}^{n}\geq \lambda_{i}P_{ij}^{n}>0
+$$
+Therefore, $\lambda_{j}>0$ for all $j\in I$
+Now suppose we have two invariant distributions $\lambda$ and $\overline{\lambda}$, and fix $k\in I$. Then, by dividing by $\lambda_{k}$ (which we can do)
+
