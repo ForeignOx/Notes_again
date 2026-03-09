@@ -133,11 +133,22 @@ Let $P$ be irreducible and recurrent. Then:
 This means that $(\gamma_{i}^{k})_{i\in I}$ is an invariant measure for $P$
 ### Proof
 For the fist part, $X_{0}=k$, $X_{T_{k}}=k$ and $X_{n}\neq k$, for $0<n<T_{k}$, so yeah
-
+For the second part, this is a computation called the cycle trick. The idea is that $\gamma_{i}^{k}$ is the expected number of visits to $i$ in $\left\{ 0,1,\dots,T_{k-1} \right\}=RHS$, then we want to show
+$$
+LHS_{i}=\sum_{j\in  I}\gamma_{j}^{k}P_{ji}= \mathbb{E}(\text{number of visits to }i\text{ in }\left\{ 1,\dots,T_k \right\}) 
+$$
+$$
+= \mathbb{E}_{k}(\text{number of visits to }i\text{ in }\left\{ 0,\dots,T_{k}-1 \right\})
+$$
+Note that we're using the knowledge that $T_{k}$ definitely occurs, which relies on recurrence for the lasst equality. Making this more precise, we had
+$$
+\gamma_{i}^{k}=\mathbb{E}_{k}()
+$$
 
 
 
 For the third part, irreducibility implies that for any $i,k\in I$ there exists $m,n>0$ such that $P_{ik}^{m}>0,~P_{ki}^{n}>0$, thus by the second part,
 $$
-
+\gamma_{i}^{k}=(\gamma^{k}P)_{i}=(\gamma^{k}P^{m})_{i}\geq \gamma_{k}^{k}P_{ki}^{m}>0
 $$
+So $\gamma_{i}^{k}>0$ for all $i\in I$. The same reasoning implies that $\gamma _{k}^{k}\geq\gamma_{i}^{k}P_{ik}^{n}$, and so $\gamma_{i}^{k}\leq \frac{\gamma^{k}_{k}}{P_{ik}^{n}}<\infty$, so $\gamma_{i}^{k}<\infty$ for all $i\in I$
