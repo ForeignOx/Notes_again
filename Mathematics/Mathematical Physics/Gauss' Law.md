@@ -90,7 +90,7 @@ $$
 $$
 = -E\left( -\frac{L}{2} \right)  \int _{S_{B}} \, dS_{B}+E\left( \frac{L}{2} \right)\int _{S_{T}} \, dS_{T}=A\left( E\left( \frac{L}{2} \right)-E\left( -\frac{L}{2} \right) \right)  
 $$
-So by Gaus' Law, and since $L$ can be anything, we can call it $z$
+So by Gauss' Law, and since $L$ can be anything, we can call it $z$
 $$
 E(z)-E(-z)=\frac{\sigma}{\varepsilon_{0}}
 $$
