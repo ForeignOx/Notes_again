@@ -1,4 +1,4 @@
-An import thing to wonder about is what are the long run statitical properties of Markov chains??
+An import thing to wonder about is what are the long term statitical properties of Markov chains??
 To answer this, we will need invariant distributions  who wouldda thunk it 
 ## Terminology
 A measure is a row vector with non-negative entries
@@ -51,4 +51,44 @@ $$
 $$
 ## Remark
 Note that $\left| I \right|<\infty$, is essential, this is not true in general if $\left| I \right|=\infty$, for example, the simple random walk on $\mathbb{Z}$ has $P_{ij}^{n}\to 0$ as $n\to\infty$ for all $i,j$
-Thi theorem says that if you settle into a limiting distribution, then it must be invariant
+This theorem says that if you settle into a limiting distribution, then it must be invariant
+## Example
+Let $0<\alpha<\beta<1$ and consider the following Markov chain:
+$$
+B= \begin{pmatrix}
+P_{aa} & P_{ab} \\
+P_{ba} & P_{bb} 
+\end{pmatrix}=\begin{pmatrix}
+1-\alpha & \alpha \\
+\beta & 1-\beta
+\end{pmatrix}
+$$
+![[Pasted image 20260220164136.png]]
+Then we recall that
+$$
+P^{n}_{aa}= \frac{\beta}{\alpha+\beta}+\frac{\alpha}{\alpha+\beta}(1-\alpha-\beta)^{n}\to \frac{\beta}{\alpha+\beta}
+$$
+And
+$$
+P^{n}_{ab}\to \frac{\alpha}{\alpha+\beta}\text{ as }n\to\infty
+$$
+So $\left( \frac{\beta}{\alpha+\beta}, \frac{\alpha}{\alpha+\beta} \right)$ is invariant
+___
+We can check that
+$$
+\lim_{ n \to \infty } \begin{pmatrix}
+0 & 1 & 0 \\
+0 & \frac{1}{2} & \frac{1}{2} \\
+\frac{1}{2} & 0 & \frac{1}{2}
+\end{pmatrix}^{n}=\begin{pmatrix}
+\frac{1}{5} & \frac{2}{5} & \frac{2}{5} \\
+\frac{1}{5} & \frac{2}{5} & \frac{2}{5} \\
+\frac{1}{5} & \frac{2}{5} & \frac{2}{5}
+\end{pmatrix}
+$$
+Is the stationary distrubution, so yeah (note that all the rows are the same, this must always be the case)
+## Question
+Do we always have a unique stationary distribution?
+No. In fact, there might not be any stationary distribution and there may be more than one stationary distribution
+## Example
+
