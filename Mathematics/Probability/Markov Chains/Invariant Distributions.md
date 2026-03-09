@@ -91,4 +91,16 @@ Is the stationary distrubution, so yeah (note that all the rows are the same, th
 Do we always have a unique stationary distribution?
 No. In fact, there might not be any stationary distribution and there may be more than one stationary distribution
 ## Example
+Consider the Markov chain
 
+## A Key Object
+We might guess that irreducibility plays a role...
+A key object to consider for $i,k\in I$, the expected time at $i$ before returning to $k$:
+$$
+\gamma_{i}^{k}\mathbb{E}\left( \sum_{n=0}^{T_{k}-1}\mathbb{1}(X_{n}=I) \right)
+$$
+Where $T_{k}:= \inf \left\{ n>0:\middle|: X_{n}=k \right\}$
+For example, if $I=\left\{ a,b,c,d,e \right\}$, if
+$$
+(X_{n}(\omega))_{n\geq 0}=(a,b,c,d,e,b,c,b,a,e,c,a,)
+$$
