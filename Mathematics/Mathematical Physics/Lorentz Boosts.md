@@ -26,3 +26,10 @@ $$
 Where $\gamma= \frac{1}{\sqrt{ 1-\frac{v^{2}}{c^{2}} }}$
 ### Remarks
 This means that there is no sense of global time, $\gamma$ has to be real, and two observes cannot move with relative speed $v>c$
+In the limit $\frac{v}{c}\to 0$, we see that
+$$
+\gamma=\frac{1}{\sqrt{ 1-\frac{v^{2}}{c^{2}} }}\to 1,x'\to x-vt,t'=t
+$$
+So Galilean boosts are the limit of Lorentz boosts
+We also see that one of the key properties, the [[Euclidean Space|Euclidean distance]] is not preserved
+The invariant distance is the spacetime distance
