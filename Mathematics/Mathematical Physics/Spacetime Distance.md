@@ -15,3 +15,5 @@ Spacetime distance in different cases means:
 - $\Delta s^{2}<0$ for events with timelike separation
 - $\Delta s^{2}=0$ for events with lightlike separation, we call it this because for this to occur events must be connected by a ray of light
 - $\Delta s^{2}>0$ for events with spacelike separation
+This forms the basis for special relativity
+Note that we can also derive special relativity as the transformations that preserve spacetime distance and hence get Lorentz boosts from there
