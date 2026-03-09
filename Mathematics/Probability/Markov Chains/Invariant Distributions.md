@@ -97,10 +97,25 @@ Consider the Markov chain
 We might guess that irreducibility plays a role...
 A key object to consider for $i,k\in I$, the expected time at $i$ before returning to $k$:
 $$
-\gamma_{i}^{k}\mathbb{E}\left( \sum_{n=0}^{T_{k}-1}\mathbb{1}(X_{n}=I) \right)
+\gamma_{i}^{k}=\mathbb{E}\left( \sum_{n=0}^{T_{k}-1}\mathbb{1}(X_{n}=I) \right)
 $$
 Where $T_{k}:= \inf \left\{ n>0:\middle|: X_{n}=k \right\}$
 For example, if $I=\left\{ a,b,c,d,e \right\}$, if
 $$
-(X_{n}(\omega))_{n\geq 0}=(a,b,c,d,e,b,c,b,a,e,c,a,)
+(X_{n}(\omega))_{n\geq 0}=(a,b,c,d,e,b,c,b,a,e,c,a, \dots)
 $$
+Then what's inside the expectation? The answer is 2
+## Example
+So returning to the above eample, let's compute $(\gamma_{i}^{k})_{i\in I}$ in our example $I=\left\{ C,D,E \right\}$. The number of visits to $D$ before returning to $C$ must be $Geo\left( \frac{1}{2} \right)$ hence $\gamma_{D}^{C}=2$ (by the expectation of [[Geometric Distribution|geometric]] random variables)
+By the same argument, we see that $\gamma_{E}^{C}=2$, finally $\gamma_{C}^{C}=1$, sooo
+$$
+(\gamma_{i}^{C})_{i\in  \left\{ C,D,E \right\}} = (1,2,2)
+$$
+We can normalise to get the distribution
+$$
+\left( \frac{1}{5},\frac{2}{5},\frac{2}{5} \right)
+$$
+Similarly, let's try to find $(\gamma_{i}^{D})_{i \in \left\{ C,D,E \right\}}$
+For $\gamma_{C}^{D}$, with probability $\frac{1}{2}$ $T_{D}=1$ and in this case we don't visit $C$. Otherwise, we visit $C$ exactly once before $T_{D}$. Therefore $\gamma_{C}^{D}=\frac{1}{2}\times 0+\frac{1}{2}\times 1=\frac{1}{2}$
+For $\gamma_{D}^{D}$ we definitely visit $D$ once up to time $T_{D}$, namely at time $T_{D}$
+For $\gamma_{E}^{D}$, 
