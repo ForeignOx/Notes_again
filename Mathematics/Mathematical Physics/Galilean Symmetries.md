@@ -12,5 +12,23 @@ $$
 \underline{y}(t)=R\underline{x}(t)
 $$
  with [[Special Orthogonal Group|$R\in SO(3)$]] is a constant rotation matrix, and where $R^{\top} R=I_{3}$
- Differentiating twice gives $\ddot{\underline{y}}=R\ddot{\underline{x}}$ so Newton's l
+ Differentiating twice gives $\ddot{\underline{y}}=R\ddot{\underline{x}}$ so Newton's llaw holds in the rotated frame as
+ $$
+ m\underline{\ddot{y}}(t)=\underline{F}',\underline{F}'=R\underline{F}
+$$
 ## Galilean Boost
+Two inertial observers moving with constant relative velocity $\underline{v}$ are related by
+$$
+\underline{y}(t)=\underline{x}(t)-\underline{v} t
+$$
+Taking two time derivatives again gives $\underline{\ddot{y}}=\underline{\ddot{x}}$, so Newton's law is invariant (with $\underline{F}'=\underline{F}$)
+## Remark
+Notice that in all these cases, time is just a parameter, Newtonian physics never touches it
+## Application to Maxwell's Laws
+Since Maxwell came up with his laws, we want to check whether they are compatable with Newton's so they would have to respect the same symmetries otherwise our theories are incompatible
+We think of this by considering how waves obeying Maxwell's laws behave under Galilean boosts:
+### Mechanical Waves in 1D
+Imagine we live in one spatial dimension $x$, a very specific observes studies $\psi$ which satisfies the [[Wave Equation|wave equation]],
+$$
+\frac{ \partial^{2}\psi(t,x) }{ \partial t^{2} } -c^{2}
+$$
