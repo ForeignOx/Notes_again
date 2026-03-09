@@ -15,4 +15,20 @@ $$
  t_{i}'=\gamma\left( t_{i}- \frac{v}{c^{2}}x_{i} \right)
 $$
 For observer $R$ there is a spatial distance $\Delta x=x_{2}-x_{1}$ and temporal distance $\Delta t=t_{2}-t_{1}$
-For $R'$, 
+For $R'$, they have spatial distance $\Delta x'=x_{2}'-x_{1}'$ and tempporal distance $\Delta t'=t_{2}-t_{1}$
+They are related by 
+$$
+\Delta x'=\gamma(\Delta x-v\Delta t)
+$$
+$$
+ \Delta t'=\gamma\left( \Delta t-\frac{v}{c^{2}}\Delta x \right)
+$$
+If $E_{1}$ and $E_{2}$ happen simultaneously for $R$, $\Delta t=0$, thus $\Delta t'=\frac{v}{c^{2}}\Delta x\neq 0$ which mean $E_{1}$ and $E$ are not simultaneous for $R'$
+## Length Contraction
+Suppose that two particles are at rest for $R'$ separated by distance $\ell$
+The system moves with velocity $v$ with respect to $R$. What is the spatial distance measured by $R$?
+To meausre spatial distance, observers have to look at both particles simultaneously, this is a bit confusing given that they have different understandings of simultaneity
+We know that
+$$
+\Delta x'=\ell
+$$
