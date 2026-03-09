@@ -236,4 +236,4 @@ $$
 $$
 Hence $\lambda_{k}=\tilde{\lambda}_{k}$
 ## Theorem
-Suppose that $P$ is recurrent. Then it has an invariant measure, which is unique up to rescaling. This means that if $\lambda$ and $\tilde{\lambda}$ are two invariant measure for $P$, then there exists $c\in \mathbb{R}_{>0}$ such that $\lambda_{i}=c\tilde{\lambda}_{i}$ for all $i\in I$. More precisely, for any $k\in I$, the in
+Suppose that $P$ is recurrent. Then it has an invariant measure, which is unique up to rescaling. This means that if $\lambda$ and $\tilde{\lambda}$ are two invariant measure for $P$, then there exists $c\in \mathbb{R}_{>0}$ such that $\lambda_{i}=c\tilde{\lambda}_{i}$ for all $i\in I$. More precisely, for any $k\in I$, the invariant measures for $P$ are given by $(\gamma_{i}^{k})_{i\in I}$ and all positive multiples of this
