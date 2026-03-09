@@ -118,4 +118,26 @@ $$
 Similarly, let's try to find $(\gamma_{i}^{D})_{i \in \left\{ C,D,E \right\}}$
 For $\gamma_{C}^{D}$, with probability $\frac{1}{2}$ $T_{D}=1$ and in this case we don't visit $C$. Otherwise, we visit $C$ exactly once before $T_{D}$. Therefore $\gamma_{C}^{D}=\frac{1}{2}\times 0+\frac{1}{2}\times 1=\frac{1}{2}$
 For $\gamma_{D}^{D}$ we definitely visit $D$ once up to time $T_{D}$, namely at time $T_{D}$
-For $\gamma_{E}^{D}$, 
+For $\gamma_{E}^{D}$, with probability $\frac{1}{2}$, $T_{D}=1$ and we don't visit $E$. Otherwise the number of visits to $E$ is $Geo\left( \frac{1}{2} \right)$ whose expectation is $2$, therefore $\gamma_{E}^{D}=\frac{1}{2}\times 0+\frac{1}{2}\times 2=1$, soo
+$$
+(\gamma_{i}^{D})_{i \in \left\{ C,D,E \right\}}=\left( \frac{1}{2},1,1 \right)
+$$
+WHich is different to above, but when normalised, we get the same as above
+This is in fact the invariant distribution for the Markov chain holly moly
+Let's make this rigorous !
+## Theorem
+Let $P$ be irreducible and recurrent. Then:
+- $\gamma_{k}^{k}=1$
+- $\gamma_{k}P=\gamma^{k}$
+- $0<\gamma_{i}^{k}<\infty$ for all $i\in I$
+This means that $(\gamma_{i}^{k})_{i\in I}$ is an invariant measure for $P$
+### Proof
+For the fist part, $X_{0}=k$, $X_{T_{k}}=k$ and $X_{n}\neq k$, for $0<n<T_{k}$, so yeah
+
+
+
+
+For the third part, irreducibility implies that for any $i,k\in I$ there exists $m,n>0$ such that $P_{ik}^{m}>0,~P_{ki}^{n}>0$, thus by the second part,
+$$
+
+$$
