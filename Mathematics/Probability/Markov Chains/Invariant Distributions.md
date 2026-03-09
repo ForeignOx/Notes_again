@@ -217,5 +217,23 @@ $$
 \lambda_{j}= (\lambda P^{n})_{j}=\sum_{\ell}\lambda_{\ell}P_{\ell j}^{n}\geq \lambda_{i}P_{ij}^{n}>0
 $$
 Therefore, $\lambda_{j}>0$ for all $j\in I$
-Now suppose we have two invariant distributions $\lambda$ and $\overline{\lambda}$, and fix $k\in I$. Then, by dividing by $\lambda_{k}$ (which we can do)
-
+Now suppose we have two invariant distributions $\lambda$ and $\overline{\lambda}$, and fix $k\in I$. Then, by dividing by $\lambda_{k}$ (which we can do) we see that both
+$$
+\left( \frac{\lambda_{i}}{\lambda_{k}} \right)_{i\in I}\text{ and }\left(  \frac{\tilde{\lambda}_{i}}{\tilde{\lambda}_{k}} \right)_{i\in I}
+$$
+Are invariant measurew which take the value $1$ at $i=k$
+Therefore, by the thorem above
+$$
+\frac{\lambda_{i}}{\lambda_{k}}=\gamma_{i}^{k}=\frac{\tilde{\lambda}_{i}}{\tilde{\lambda}_{k}}
+$$
+For  $i\in I$ since both $\lambda$ and $\tilde{\lambda}$ are both distributions,
+$$
+\sum_{i}\lambda_{i}=\sum_{i}\tilde{\lambda}_{i}=1
+$$
+Therefore, taking the sum of both sides over $i$, we get
+$$
+\frac{1}{\lambda_{k}}=\frac{\sum_{i}\lambda_{i}}{\lambda_{k}}=\frac{\sum_{i}\tilde{\lambda}_{i}}{\tilde{\lambda}_{k}}=\frac{1}{\tilde{\lambda}_{k}}
+$$
+Hence $\lambda_{k}=\tilde{\lambda}_{k}$
+## Theorem
+Suppose that $P$ is recurrent. Then it has an invariant measure, which is unique up to rescaling. This means that if $\lambda$ and $\tilde{\lambda}$ are two invariant measure for $P$, then there exists $c\in \mathbb{R}_{>0}$ such that $\lambda_{i}=c\tilde{\lambda}_{i}$ for all $i\in I$. More precisely, for any $k\in I$, the in
