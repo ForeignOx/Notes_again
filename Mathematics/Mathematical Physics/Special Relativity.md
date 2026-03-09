@@ -32,3 +32,38 @@ We know that
 $$
 \Delta x'=\ell
 $$
+For $R$ who is wanting to measure the distance by looking at both particles at the same time, so $\Delta t=0$, so we want to solve for $\Delta x$:
+$$
+\ell=\gamma(\Delta x)
+$$
+$$
+ \Delta t'=-\frac{v\gamma}{c^{2}}x
+$$
+$$
+\implies \Delta x=\frac{\ell}{\gamma} 
+$$
+$$
+\implies  \ell'=\frac{\ell}{\gamma}<\ell
+$$
+So the length seems smaller for the person moving, this is why it's called the length contraction tim
+## Time Dilation
+Suppose we have two events $E_{1}$ and $E_{2}$ which happen at the same spatial point for $R'$ with time tifference $\Delta \tau$ between them
+The observer $R'$ moves with velocity $v$ with respect to $R$
+What is the time difference measured by $R$?
+We know that we can alays write the Lorentz transformations:
+$$
+\Delta x'=\gamma(\Delta x-v\Delta t)
+$$
+$$
+ \Delta t'=\gamma\left( \Delta t-\frac{v}{c^{2}}\Delta x \right)
+$$
+Substituting $\Delta x'=0,\Delta t'=\Delta \tau$, observer $R$ measures $\Delta t$, thus
+$$
+0=\gamma(\Delta x-v\Delta v)
+$$
+$$
+ \Delta \tau=\gamma\left( \Delta t-\frac{v}{c^{2}}\Delta x \right)
+$$
+Solving this gives $\Delta t=\gamma\Delta \tau>\Delta \tau$ which means that time seems larger for the person moving, so we say time has dilated
+## Example
+Consider a detection of muons
