@@ -179,3 +179,18 @@ $$
 \gamma_{i}^{k}=(\gamma^{k}P)_{i}=(\gamma^{k}P^{m})_{i}\geq \gamma_{k}^{k}P_{ki}^{m}>0
 $$
 So $\gamma_{i}^{k}>0$ for all $i\in I$. The same reasoning implies that $\gamma _{k}^{k}\geq\gamma_{i}^{k}P_{ik}^{n}$, and so $\gamma_{i}^{k}\leq \frac{\gamma^{k}_{k}}{P_{ik}^{n}}<\infty$, so $\gamma_{i}^{k}<\infty$ for all $i\in I$
+## Theorem
+If $P$ is irreducible, $\lambda$ is an invariant measure for $P$ and $\lambda_{k}=1$, then
+- $\lambda_{i}\geq \gamma_{i}^{k}$ for all $i\in I$
+- if $P$ is recurrent, then $\lambda=\gamma^{k}$
+### Proof
+For the first part,  this is similar to minimising hitting probabilities, check this?
+For the second part, since $P$ is recurrent, the above theorem tells us $\gamma^{k}$ is invariant. We now define $(\mu_{j})_{j\in I}$ by $\mu_{j}=\lambda_{j}-\gamma_{j}^{k}$ so $\mu_{j}\geq 0$ for all $j\in I$ by the first part and $\mu_{k}=1-1=0$
+Since both $\lambda$ and $\gamma$ are invariant,
+$$
+\mu P=\lambda P-\gamma P=\lambda-\gamma=\mu
+$$
+So $\mu$ is also invariant. Therefore
+$$
+0=\mu_{k}=\sum_{j\in  I}
+$$
