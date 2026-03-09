@@ -72,3 +72,10 @@ $$
 \frac{ \partial^{2}\psi' }{ \partial t'^{2} } -2v \frac{ \partial^{2}\psi' }{ \partial x'\partial t' } -(c^{2}-v^{2})\frac{ \partial^{2}\psi' }{ \partial x'^{2} } =0
 $$
 Which is different
+Essentially this tells us that the movement of a wave has a preferred reference frame
+### Mechanical Waves in 2D
+We know electromagnetic waves propagate with the speed of light
+Michelon and Morley showed in $\hspace{0pt}1887$ that all inertial observers see light propagating with the same speed
+This tells us that Maxwell's equation are universal for all inertial frames
+Note that the electromagnetic field is frame dependent but the electromagnetic field still satisfy Maxwell's equations
+What the above example showed is that with Galilean boosts, Maxwell's equations aren't satisfied which is very sad
