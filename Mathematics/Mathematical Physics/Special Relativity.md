@@ -67,3 +67,15 @@ $$
 Solving this gives $\Delta t=\gamma\Delta \tau>\Delta \tau$ which means that time seems larger for the person moving, so we say time has dilated
 ## Example
 Consider a detection of muons
+Muons are created in the atmosphere at $h\approx 10\pu{km}$
+They have high energy moving at $v\approx c$
+They have only finite lifetime $\tau \approx 2.2\pu{\mu s}$
+If relativity wasn't true, the lifetime from Earth's frame $\tau_{E}=\tau$
+They would only be able to travel $v\tau_{E}\approx660\pu{m}$
+So they wouldn't reach Earth
+So from Earth's frame, due to time dilation,
+$$
+\Delta \tau_{E}=\gamma \tau \approx 15.8\cdot 2.2 \mu\pu{s} \approx 34.8\mu \pu{s}
+$$
+So they actually have $d=v\tau_{E}=10.4\pu{d=v\tau_{E}}$ 
+Nut But taking spetial relativity 
