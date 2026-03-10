@@ -19,4 +19,30 @@ $$
 g(z)=\sum_{n=0}^{\infty}c_{n}(z-a)^{n}
 $$
 By another theorem, $g$ converges on $B_{R}(a)$ (and matches $f$ on $B_{R}^{*}(a)$) so $g$ is the analytic continuation of $f$ to $B_{R}(a)$
-For the other direction if $f$ extends to a holomorphic 
+For the other direction if $f$ extends to a holomorphic function $g$ on $B_{R}(a)$, then by Cauchy-Taylor, $g$ has a power series on $B_{R}(a)$ which matches $f$ on $B_{R}^{*}(a)$. This is the Laurent series on $f$
+## Proposition
+Suppose $f$ has an isolated singularity at $z=0$, this singularity is removable iff
+$$
+\lim_{ z \to a }  (z-a)f(z)=0
+$$
+### Proof
+Assume removable. By the lemma above, $f$ extends to a holomorphic function at $z=0$, by defining say $f(a):=w$, then by continuity,
+$$
+\lim_{ z \to a } (z-a)f(z)=(a-a)f(a)=0\cdot w=0
+$$
+For the other direction, suppose $\lim_{ z \to a }(z-a)f(z)=0$, let
+$$
+f(z)=\sum_{n=-\infty}^{\infty} c_{n}(z-a)^{n}
+$$
+Be the Laurent series of $f$ around $z=a$. If it has coefficients  given by
+$$
+c_{n}=\frac{1}{2\pi i}\oint_{\left| z-a \right| =\rho} \frac{f(z)}{(z-a)^{n+1}}~dz
+$$
+For $n\in\mathbb{Z}$ for any $\rho \in B_{R}^{*}(a)$
+By the [[ML Inequality|ML inequality]], for $n\leq -1$,
+$$
+0\leq \left| c_{n} \right| \leq \frac{L(\gamma)}{2\pi} \sup_{\left| z-a \right| =\rho}\left|  \frac{f(z)}{(z-a)^{n+1}} \right| 
+$$
+$$
+\implies \left| c_{n} \right| \leq \frac{2\pi \rho}{2\pi}\sup_{\left| z-a \right| =\rho} \left| \frac{f(z)}{(z-a)^{n+1}} \right| =\rho\sup_{a}
+$$
