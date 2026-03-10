@@ -11,3 +11,12 @@ $$
 f(z)=\frac{e^{ z }-1}{z} = \frac{\sum_{n=0}^{\infty} \frac{z^{n}}{n!}-1}{z} = \sum_{n=1}^{\infty} \frac{z^{n-1}}{n!}=\sum_{m=0}^{\infty} \frac{z^{m}}{(m+1)!}
 $$
 No particular part, so removable
+## Lemma
+Suppose $f$ has an isolated singularity at $z=a$, the singularity is reovable iff $f$ extends to a holomorfic function at $z=a$
+### Proof
+By definition there exist $R>0$ such that $f$ is holomorphic on $B^{*}_{R}(a)$, so it has a Laurent serie on $B^{*}_{R}(a)$ by a previous theorem. This Laurent series is a power series 
+$$
+g(z)=\sum_{n=0}^{\infty}c_{n}(z-a)^{n}
+$$
+By another theorem, $g$ converges on $B_{R}(a)$ (and matches $f$ on $B_{R}^{*}(a)$) so $g$ is the analytic continuation of $f$ to $B_{R}(a)$
+For the other direction if $f$ extends to a holomorphic 

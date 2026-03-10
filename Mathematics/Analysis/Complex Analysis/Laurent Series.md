@@ -136,4 +136,3 @@ $$
 =-\frac{1}{z}\sum_{n=0}^{\infty} \left( \frac{1}{z} \right)^{n}=\sum_{n=0}^{\infty} (-1)z^{-n-1}=\sum_{m=-\infty}^{-1} (-1)z^{m}
 $$
 Which is the Laurent series and it is just the principle part, the analytic part is 0
-
