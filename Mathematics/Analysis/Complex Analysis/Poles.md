@@ -30,4 +30,20 @@ So $f$ has a pole of order $k$ at $z=a$, so we can think of poles as being creat
 Suppose $f$ has an isolated singularity at $z=a$ then it is a pole iff there exists $r>0$ and a holomorphic function $h:B_{r}(a)\to \mathbb{C}$ such that $f(z)=\frac{1}{h(z)}$ on $B_{r}^{*}(a)$ and $h$ has a zero of order $k$ at $z=a$
 ### Proof
 For the converse direction, we found this in the above observation.
-For the forward, suppose $f$ has a p
+For the forward, suppose $f$ has a pole at $z=a$ and let $R>0$ be such that $f$ is holomorphic on $B_{R}^{*}(a)$, then by the characterisation lemma for poles, there exists $g:B_{R}(a)\to \mathbb{C}$ uch that $g(a)\neq 0$ and $f(z)=(z-a)^{-k}g(z)$ for $z\in B_{R}^{*}(a)$
+By continuity, there exists $r>0$ such that $g(z)\neq 0$ on $B_{r}(a)$ and so the function
+$$
+h(z):= \frac{1}{f(z)}=(z-a)^{k} \frac{1}{g(z)}
+$$
+Where $\frac{1}{g(z)}$ is holomorphic and not zero, which satisfiess the property of having a zero of order $k$
+Finally, note on $B_{r}^{*}(a)$, $f(z)=\frac{1}{h(z)}$ yay
+## Example
+An example to aim for is $f(z)= \frac{\tan z}{z}=\frac{\sin z}{z\cos z}$ this might me kinda miserable to reciprocate and take lots of derivatives and stuff which makes us sad, but there is an easier way
+## Remark
+Almost all function we see will look like
+$$
+f(z)= \frac{g(z)}{h(z)}
+$$
+For holomorphic $g,h$
+Thankfully we have a helpful corollary to deal with these
+## Coroll
