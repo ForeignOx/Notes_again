@@ -37,8 +37,6 @@ h(z):= \frac{1}{f(z)}=(z-a)^{k} \frac{1}{g(z)}
 $$
 Where $\frac{1}{g(z)}$ is holomorphic and not zero, which satisfiess the property of having a zero of order $k$
 Finally, note on $B_{r}^{*}(a)$, $f(z)=\frac{1}{h(z)}$ yay
-## Example
-An example to aim for is $f(z)= \frac{\tan z}{z}=\frac{\sin z}{z\cos z}$ this might me kinda miserable to reciprocate and take lots of derivatives and stuff which makes us sad, but there is an easier way
 ## Remark
 Almost all function we see will look like
 $$
@@ -46,4 +44,33 @@ f(z)= \frac{g(z)}{h(z)}
 $$
 For holomorphic $g,h$
 Thankfully we have a helpful corollary to deal with these
-## Coroll
+## Corollary
+Let $g,h$ be holomorphic on some domain $D$. Let
+$$
+S_{g}:=\left\{ z\in D:\middle|: g(z)=0 \right\}
+$$
+$$
+ S_{h}:=\left\{ z\in D:\middle|: h(z)=0 \right\}
+$$
+Then the function $f:D\setminus S_{h}\to \mathbb{C}$ defined by
+$$
+f(z)= \frac{g(z)}{h(z)}
+$$
+Is holomorphic with isolated singularities at all $z\in S_{h}$
+Moreover, the singularity at a point $z=a$ is a pole of order $k$ if $a\in S_{h}\setminus S_{g}$ and $a$ is a zero of $h$ of order $k$
+Also $f$ has a zero of order $k$ at $z=a$ if $a\in S_{g}\setminus S_{h}$ and $a$ is a zero of $g$ of order $k$
+If $a\in S_{g}\cup S_{h}$ then investigate further
+## Example
+An example to aim for is $f(z)= \frac{\tan z}{z}=\frac{\sin z}{z\cos z}$ this might me kinda miserable to reciprocate and take lots of derivatives and stuff which makes us sad, but thanks to the corollary, we need to find the zeros of $f(z)=\sin z$ and $g(z)=z\cos z$, so
+$$
+\sin z=0 \iff \frac{e^{ iz }-e^{ -iz }}{2i}=0 \iff e^{ iz }=e^{ -iz }
+$$
+$$
+\iff e^{ 2iz }=1 \iff 2iz=2\pi ni \iff z=n\pi
+$$
+For $n\in\mathbb{Z}$
+And the zeros of $g$ are $z=0$ or $z=\frac{\pi}{2}+n\pi$ for $n \in \mathbb{Z}$ since
+$$
+\frac{d }{dz}z\cos z \big{|}_{z= \frac{\pi}{2}+n\pi}\neq 0
+$$
+and $f$ ha zeros at $z=n\pi$ of order $\hspace{0pt}1$ since $\frac{d }{dz}\sin z \big{|}_{z=n\pi}=\cos(n\pi)=(-1)^{n}\neq 0$, 
