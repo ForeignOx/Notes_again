@@ -1,5 +1,5 @@
 ## Theorem
-If [[Complex Functions|$f$]] is [[Holomorphicity|holomorphic]] and [[Boundedness|bounded]] on some punctured ball $B_{R}^{*}(a)$, for some $R>0$, then 
+If [[Complex Functions|$f$]] is [[Holomorphicity|holomorphic]] and [[Boundedness|bounded]] on some punctured ball $B_{R}^{*}(a)$, for some $R>0$, then it extends to a holomorphic function at $z=a$
 ### Proof
 If $\left| f(z) \right|\leq M$ for some $M>0$, when $z\in B_{R}^{*}(a)$, then
 $$
