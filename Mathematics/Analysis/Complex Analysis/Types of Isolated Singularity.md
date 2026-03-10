@@ -44,5 +44,34 @@ $$
 0\leq \left| c_{n} \right| \leq \frac{L(\gamma)}{2\pi} \sup_{\left| z-a \right| =\rho}\left|  \frac{f(z)}{(z-a)^{n+1}} \right| 
 $$
 $$
-\implies \left| c_{n} \right| \leq \frac{2\pi \rho}{2\pi}\sup_{\left| z-a \right| =\rho} \left| \frac{f(z)}{(z-a)^{n+1}} \right| =\rho\sup_{a}
+\implies \left| c_{n} \right| \leq \frac{2\pi \rho}{2\pi}\sup_{\left| z-a \right| =\rho} \left| \frac{f(z)}{(z-a)^{n+1}} \right| =\rho\sup_{\left| z-a \right| =\rho} \frac{\left| (z-a)f(z) \right| }{\left| z-a \right| ^{n+2}} 
 $$
+$$
+= \frac{1}{\rho^{n+1}} \sup_{\left| z-a \right| =\rho}\underbrace{  \left| (z-a)f(z)U \right|  }_{ \to 0\text{ by assumption} }
+$$
+as $\rho\to 0$, and $\frac{1}{\rho^{n+1}}$ tends to $0$ if $n\leq-2$ and if $n=-1$ it tends to $\hspace{0pt}1$, so $\left| c_{n} \right|\to 0$ as $\rho\to 0$
+## Example
+$f(z)=\frac{\sin z}{z}$ has a singularity at $z=0$, we have
+$$
+\lim_{ z \to 0 } zf(z)=\lim_{ z \to 0 } \sin z=\sin 0=0
+$$
+Yay
+___
+$f(z)=\frac{e^{ z }-1}{z}$, now
+$$
+\lim_{ z \to 0 } zf(z)=\lim_{ z \to 0 } (e^{ z }-1)=1-1=0
+$$
+Yayy
+___
+Suppose $f:0\to \mathbb{C}$ is holomorphic on a domain and pick $w\in D$, define the [[Difference Quotient Function|difference quotient function]]
+$$
+g(z)=\frac{f(z)-f(w)}{z-w}
+$$
+This is holomorphic on $D\setminus \left\{ w \right\}$
+Then $z=w$ is an isolated singularity of $g$. Moreover,
+$$
+\lim_{ z \to w }  (z-w)g(z)=\lim_{ z \to w } f(z)-f(w)=f(w)-f(w)=0
+$$
+So removable yay
+
+
