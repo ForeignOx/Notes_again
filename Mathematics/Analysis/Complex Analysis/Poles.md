@@ -73,4 +73,36 @@ And the zeros of $g$ are $z=0$ or $z=\frac{\pi}{2}+n\pi$ for $n \in \mathbb{Z}$ 
 $$
 \frac{d }{dz}z\cos z \big{|}_{z= \frac{\pi}{2}+n\pi}\neq 0
 $$
-and $f$ ha zeros at $z=n\pi$ of order $\hspace{0pt}1$ since $\frac{d }{dz}\sin z \big{|}_{z=n\pi}=\cos(n\pi)=(-1)^{n}\neq 0$, 
+and $f$ has zeros at $z=n\pi$ of order $\hspace{0pt}1$ since,
+$$
+\frac{d }{dz}\sin z \big{|}_{z=n\pi}=\cos(n\pi)=(-1)^{n}\neq 0
+$$
+At $z=0$ we need to investigate. Note that
+$$
+\lim_{ z \to 0 } zf(z)=\lim_{ z \to 0 }  \frac{\sin z}{\cos z}= \frac{\sin 0}{\cos 0}=\frac{0}{1}=0
+$$
+So it is a removable singularity
+## Proposition
+Suppose $f$ has an isolated singularity at $z=a$, then the singularity is a pole iff
+$$
+\lim_{ z \to a }  \left| f(z) \right| =\infty
+$$
+### Proof
+Assume $f$ has a pole at $z=a$, then there exists $g$ which is holomorphic satisfying $g(a)\neq 0$ such that
+$$
+f(z)=\frac{1}{(z-a)^{k}}g(z)
+$$
+Then by continuity, there exists $B_{r}(a)$ such that $\left| g(z) \right|\geq M>0$ on $B_{r}(a)$, sooo
+$$
+\lim_{ z \to a } \left| f(z) \right| =\lim_{ z \to a }  \frac{1}{\left| z-a \right| ^{k}}\left| g(z) \right| \geq M\lim_{ z \to a }  \frac{1}{\left| z-a \right| ^{k}}=M\cdot \infty=\infty
+$$
+For the converse, if 
+$$
+\lim_{ z \to a } \left| f(z) \right| =\infty
+$$
+Then $\exists r>0$ such that $f(z)\neq 0$ when $z\in B^{*}_{r}(a)$
+We consider the reciprocal $h(z)=\frac{1}{f(z)}$ which is holomorphic also on $B_{r}^{*}(a)$ and moreover,
+$$
+0\leq \left| (z-a)h(z) \right| \leq \frac{\left| z-a \right| }{\left| f(z) \right| }
+$$
+Which we can show tends to zero as $z\to a$ so yay
