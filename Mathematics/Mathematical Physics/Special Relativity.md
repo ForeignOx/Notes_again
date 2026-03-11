@@ -194,7 +194,16 @@ $$
 Similarly for $V^{\mu}$
 We define a [[Bilinear Form|bilinear product]] 
 $$
-V \cdot W\equiv
+V \cdot W\equiv V^{\mu}\eta_{\mu \nu}W^{\nu}=-v^{0}w^{0}+v^{1}w^{1}+v^{2}w^{2}+v^{3}w^{3}
 $$
+Which is almost an [[Inner Product|inner product]], it satisfies symmetry and bilinearity, but not positivity :(
+Lorentz transformations leave the inner product invariant:
+$$
+W'\cdot V'=W^{\mu'}\eta_{\mu \nu}V^{\nu'}=(\Lambda^{\mu}_{~ ~\rho}W^{\rho}) \eta_{\mu \nu}(\Lambda^{\nu}_{~ ~\sigma}V^{\sigma}) 
+$$
+$$
+= W^{\rho}(\Lambda^{\mu}_{~ ~\rho}\eta_{\mu \nu}\Lambda^{\nu}_{~ ~\sigma})V^{\sigma} = W^{\rho}\eta_{\rho\sigma}V^{\sigma}=W\cdot V
+$$
+wow
 
 
