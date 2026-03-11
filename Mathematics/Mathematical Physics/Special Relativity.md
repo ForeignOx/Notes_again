@@ -319,4 +319,39 @@ $$
 
 $$
 We can show that this transforms how we'd like:
-
+$$
+\eta \Lambda_{x}=\begin{pmatrix}
+-1 & 0 & 0 & 0 \\
+0 & 1 & 0 & 0 \\
+0 & 0 & 1 & 0 \\
+0 & 0 & 0 & 1
+\end{pmatrix}\begin{pmatrix}
+\gamma & -\frac{v_{x}}{c}\gamma & 0 & 0 \\
+-v_{x}
+\end{pmatrix}
+$$
+## Lorentz Boosts in the $y$-direction
+This is derived similarly:
+$$
+\Lambda_{y}(v_{y})=\begin{pmatrix}
+meow
+\end
+{pmatrix}
+$$
+and in $z$-direction
+## Lorentz Boosts in Higher Dimension
+We also have
+$$
+\Lambda _{R}=\begin{pmatrix}
+1 & 0 & 0 & 0 \\
+0 \\
+0  &  & R\\  
+0 
+\end{pmatrix}
+$$
+Where $R$ is a $3\times 3$ rotation
+$R$ is parametrised by $\hspace{0pt}3$ angles
+So the most general Lorentz transformation is a combination of the above:
+$$
+\Lambda= \Lambda_{x}(v_{x})\Lambda_{y}(v_{y})\Lambda_{z}(v_{z})\Lambda_{R}
+$$
