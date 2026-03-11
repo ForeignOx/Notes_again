@@ -33,3 +33,4 @@ $$
 So Galilean boosts are the limit of Lorentz boosts
 We also see that one of the key properties, the [[Euclidean Space|Euclidean distance]] is not preserved
 The invariant distance is the spacetime distance
+

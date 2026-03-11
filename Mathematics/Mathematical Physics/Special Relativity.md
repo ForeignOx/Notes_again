@@ -78,4 +78,21 @@ $$
 \Delta \tau_{E}=\gamma \tau \approx 15.8\cdot 2.2 \mu\pu{s} \approx 34.8\mu \pu{s}
 $$
 So they actually have $d=v\tau_{E}=10.4\pu{d=v\tau_{E}}$ 
-Nut But taking spetial relativity 
+But taking spetial relativity 
+# The Beauty of 4D Theory
+Maxwell's theory is written in very $3D$ language (note the use of cross products) and there is a split between space and time, we use partial time derivatives as opposed to divergence and curl, but the more we look at it, the more we notice that we have to also include time as a dimension
+It is complicated because 3D language is pretty unnatural
+We need to introduce inherently $3+1$ dimensional technology in $x,y,z,t$
+We have the spacetime distance:
+$$
+\Delta s ^{2}=-c^{2}\Delta t^{2}+\Delta x^{2}+\Delta y^{2}+\Delta z^{2}
+$$
+It is convenient to introduce the vector
+$$
+x^{\mu}=\begin{pmatrix}
+x^{0} \\
+x^{1} \\
+x^{2} \\
+x^{3}
+\end{pmatrix}
+$$
