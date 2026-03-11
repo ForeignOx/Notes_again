@@ -17,10 +17,18 @@ a \\
 b \\
 c \\
 d 
-\end{pmatrix}~V_{\mu}=\begin{pmatrix}
+\end{pmatrix},~V_{\mu}\to\begin{pmatrix}
 -a \\
 b \\
 c \\
 d
 \end{pmatrix}
+$$
+How do covectors transform?
+We know its dual vector transforms as:
+$$
+W_{\mu'}=\eta_{\mu \nu}W^{\nu'}=\eta_{\mu \nu}\Lambda^{\nu}_{~ ~\rho}W^{\rho}=\eta_{\mu \nu}\Lambda^{\nu}_{~ ~\rho}\delta^{\rho}_{\sigma}W^{\sigma} 
+$$
+$$
+= \eta_{\mu \nu}\Lambda^{\nu}
 $$
