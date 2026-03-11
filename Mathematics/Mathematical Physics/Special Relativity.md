@@ -251,6 +251,23 @@ $$
 So this is also frame independent wow
 Vector and scalar:
 $$
-V^{\mu}\frac{ \partial  }{ \partial x^{\mu} } \varphi
+V^{\mu}\partial_{\mu}\varphi
 $$
-Is Lorentz invaria
+Is Lorentz invariant as $\partial_{\mu}\varphi$ is a covector
+Lastly something something from contracting a vector with covector indices
+## Lorentz Transormations
+The general $\Lambda$!!
+The most important thing is that they satisfy:
+$$
+\Lambda ^{\top}\eta\Lambda=\eta
+$$
+So it's an equation that is symmetric in its indices i.e.
+$$
+(\Lambda ^{\top}\eta\Lambda)^{\top}=\eta ^{\top} 
+$$
+$$
+\implies \Lambda ^{\top}\eta(\Lambda ^{\top})^{\top}=\eta ^{\top} 
+$$
+$$
+\implies \Lambda ^{\top}\eta\Lambda=\eta
+$$
