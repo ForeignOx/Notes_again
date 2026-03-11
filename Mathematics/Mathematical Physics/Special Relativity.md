@@ -127,4 +127,38 @@ Note that while $\eta$ and $\eta ^{-1}$ are technically the same matrix, they ar
 $$
 \eta^{\alpha\beta}\neq \eta_{\alpha\beta}
 $$
-A homogeneous [[Lorentz boosts|Lorentz transformation]] acting on coordinate can be writ
+A homogeneous [[Lorentz boosts|Lorentz transformation]] acting on coordinate can be written as:
+$$
+x^{\mu'}=\Lambda^{\mu}_{\nu}x^{\nu}
+$$
+By definition, it preserves the spacetime ditance:
+$$
+\Delta s^{2}=x^{\mu'}\eta_{\mu \nu}x^{\nu'}=x^{\rho}\eta_{\rho\sigma}x^{\sigma}  
+$$
+$$
+\implies (\Lambda^{\mu}_{\rho}x^{\rho})\eta_{\mu \nu}(\Lambda^{\nu}_{\sigma}x^{\sigma})x^{\sigma}=x^{\rho}\eta_{\rho\sigma}x^{\sigma} 
+$$
+$$
+\implies x^{\rho}\underbrace{ (\Lambda^{\mu}_{\rho} \eta_{\mu \nu}\Lambda^{\nu}_{\sigma}-\eta_{\rho\sigma}) }_{ =C_{\rho\sigma} }x^{\sigma}=0
+$$
+$$
+\implies \Lambda^{\mu}_{\rho}\eta_{\mu \nu}\Lambda^{\nu}_{\sigma}=\eta_{\rho\sigma}
+$$
+Which is the defining feature of the Lorentz transformation
+Note that we have used the fact that if $C_{ab}$ is [[Symmetric and Anti-Symmetric Matrices|symmetric]] and $x^{a}C_{ab}x^{b}=0$ means that $C_{ab}=0$
+We can prove this:
+$$
+\frac{ \partial^{2} }{ \partial x ^{m}\partial x^{n} } (x^{a}C_{ab}x^{b})=0 
+$$
+$$
+\implies 2(C_{mn}+C_{nm})=0 
+$$
+$$
+\implies 4C_{mn}=0\implies C_{mn}=0
+$$
+As $C_{nm}=C_{mn}^{\top}=C_{mn}$
+In matrix notation, we write the defining feature as:
+$$
+\Lambda ^{\top}\eta\Lambda= \eta
+$$
+This is an aanlogue of $R^{\top}IR=I$ in $\mathbb{R}^{3}$
