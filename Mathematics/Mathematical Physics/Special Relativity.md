@@ -225,5 +225,32 @@ $$
 $$
 So using the chain rule,
 $$
-\frac{ \partial  }{ \partial x^{\nu'} }=\frac{ \partial x^{\rho} }{ \partial x^{\nu'} } \frac{ \partial  }{ \partial x^{\rho} }=\frac{ \partial  }{ \partial x } 
+\frac{ \partial  }{ \partial x^{\nu'} }=\frac{ \partial x^{\rho} }{ \partial x^{\nu'} } \frac{ \partial  }{ \partial x^{\rho} }=\frac{ \partial  }{ \partial x } (\Lambda_{\mu}^{~ ~\rho}x^{\mu'})\frac{ \partial  }{ \partial x^{\rho} }  
 $$
+$$
+= \Lambda_{\mu}^{~ ~\rho}\frac{ \partial x^{\mu'} }{ \partial x^{\nu'} } \frac{ \partial  }{ \partial x^{\rho} } =\Lambda_{\mu}^{~ ~\rho} \frac{ \partial  }{ \partial x^{\rho} } 
+$$
+$$
+\implies \frac{ \partial  }{ \partial x^{\nu'} } =\Lambda_{\mu}^{~ ~\rho}\frac{ \partial  }{ \partial x^{\rho} } 
+$$
+This tells u that partial derivatives transform like the components of a covector
+This shows that $W_{\mu}=\frac{ \partial \varphi }{ \partial \mu }$ for any function $\varphi$ transforms like a covector
+## Lorentz Invariants
+It is useful to construct quantities which are frame independent, we call these Lorentz invariants
+For example two vectors:
+$$
+V\cdot W=\eta_{\mu \nu}V^{\mu}W^{\nu}
+$$
+Vectors and covectors:
+$$
+W_{\mu'}V^{\mu'}=(\Lambda_{\mu}^{~ ~\rho}W_{\rho})(\Lambda^{\mu}_{~ ~\sigma}V^{\sigma})=\Lambda_{\mu}^{~ ~\rho}\Lambda^{\mu}_{~ ~\sigma}W_{\rho}V^{\sigma} 
+$$
+$$
+= \delta^{\rho}_{\sigma}W_{\rho}V^{\sigma}=W_{\sigma}V^{\sigma}
+$$
+So this is also frame independent wow
+Vector and scalar:
+$$
+V^{\mu}\frac{ \partial  }{ \partial x^{\mu} } \varphi
+$$
+Is Lorentz invaria
