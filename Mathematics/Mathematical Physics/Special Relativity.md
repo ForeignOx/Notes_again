@@ -129,20 +129,20 @@ $$
 $$
 A homogeneous [[Lorentz boosts|Lorentz transformation]] acting on coordinate can be written as:
 $$
-x^{\mu'}=\Lambda^{\mu}_{\nu}x^{\nu}
+x^{\mu'}=\Lambda^{\mu}_{~~\nu}x^{\nu}
 $$
 By definition, it preserves the spacetime ditance:
 $$
 \Delta s^{2}=x^{\mu'}\eta_{\mu \nu}x^{\nu'}=x^{\rho}\eta_{\rho\sigma}x^{\sigma}  
 $$
 $$
-\implies (\Lambda^{\mu}_{\rho}x^{\rho})\eta_{\mu \nu}(\Lambda^{\nu}_{\sigma}x^{\sigma})x^{\sigma}=x^{\rho}\eta_{\rho\sigma}x^{\sigma} 
+\implies (\Lambda^{\mu}_{~ ~\rho}x^{\rho})\eta_{\mu \nu}(\Lambda^{\nu}_{~ ~\sigma}x^{\sigma})x^{\sigma}=x^{\rho}\eta_{\rho\sigma}x^{\sigma} 
 $$
 $$
-\implies x^{\rho}\underbrace{ (\Lambda^{\mu}_{\rho} \eta_{\mu \nu}\Lambda^{\nu}_{\sigma}-\eta_{\rho\sigma}) }_{ =C_{\rho\sigma} }x^{\sigma}=0
+\implies x^{\rho}\underbrace{ (\Lambda^{\mu}_{~ ~\rho} \eta_{\mu \nu}\Lambda^{\nu}_{~ ~\sigma}-\eta_{\rho\sigma}) }_{ =C_{\rho\sigma} }x^{\sigma}=0
 $$
 $$
-\implies \Lambda^{\mu}_{\rho}\eta_{\mu \nu}\Lambda^{\nu}_{\sigma}=\eta_{\rho\sigma}
+\implies \Lambda^{\mu}_{~ ~\rho}\eta_{\mu \nu}\Lambda^{\nu}_{~ ~\sigma}=\eta_{\rho\sigma}
 $$
 Which is the defining feature of the Lorentz transformation
 Note that we have used the fact that if $C_{ab}$ is [[Symmetric and Anti-Symmetric Matrices|symmetric]] and $x^{a}C_{ab}x^{b}=0$ means that $C_{ab}=0$
@@ -161,4 +161,40 @@ In matrix notation, we write the defining feature as:
 $$
 \Lambda ^{\top}\eta\Lambda= \eta
 $$
-This is an aanlogue of $R^{\top}IR=I$ in $\mathbb{R}^{3}$
+This is an aanlogue of $R^{\top}I_{3}R=I_{3}$ in $\mathbb{R}^{3}$
+The inverse $\Lambda ^{-1}$ of the Lorentz transformation is derived from:
+$$
+(\eta ^{-1}\Lambda ^{\top}\eta)\Lambda=I_{4} 
+$$
+$$
+\implies \Lambda ^{-1}=\eta ^{-1}\Lambda ^{\top}\eta
+$$
+Which we write in index notation
+$$
+(\Lambda ^{-1})^{\nu}_{~ ~\mu}=\eta^{\nu \pi}\Lambda^{\rho}_{\mu}\eta_{\rho \pi} \equiv \Lambda_{\mu}^{~ ~\nu}
+$$
+We can alwo define spacetime vectors indexed "up"
+$$
+W^{\mu}=\begin{pmatrix}
+w^{0} \\
+w^{1} \\
+w^{2} \\
+w^{3} 
+\end{pmatrix},V^{\mu}= \begin{pmatrix}
+v^{0} \\
+v^{1} \\
+v^{2} \\
+v^{3}
+\end{pmatrix}
+$$
+Which transforms as:
+$$
+W^{\mu'}=\Lambda^{\mu}_{~ ~\nu}W^{\nu}
+$$
+Similarly for $V^{\mu}$
+We define a [[Bilinear Form|bilinear product]] 
+$$
+V \cdot W\equiv
+$$
+
+
