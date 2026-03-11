@@ -30,5 +30,15 @@ $$
 W_{\mu'}=\eta_{\mu \nu}W^{\nu'}=\eta_{\mu \nu}\Lambda^{\nu}_{~ ~\rho}W^{\rho}=\eta_{\mu \nu}\Lambda^{\nu}_{~ ~\rho}\delta^{\rho}_{\sigma}W^{\sigma} 
 $$
 $$
-= \eta_{\mu \nu}\Lambda^{\nu}
+= \underbrace{ \eta_{\mu \nu}\Lambda^{\nu}_{~ ~\rho}\eta^{\rho\lambda} }_{ \Lambda_{\mu}^{~ ~\lambda} }\underbrace{ \eta_{\lambda\sigma}W^{\sigma}  }_{ W_{\lambda} }
 $$
+$$
+= \Lambda_{\mu}^{~ ~\lambda}W_{\lambda}
+$$
+Sooo
+$$
+W_{\mu'}=\Lambda_{\mu}^{~ ~\nu}W_{\lambda}
+$$
+So covectors transform with the inverse of the Lorentz transformation. In fact, thi equation can also serve as the [[determinants|determinant]] for covectors
+## Notation
+We call "up" indices vector indices, and we call "down" indices co-vector indices

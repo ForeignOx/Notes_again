@@ -205,5 +205,25 @@ $$
 = W^{\rho}(\Lambda^{\mu}_{~ ~\rho}\eta_{\mu \nu}\Lambda^{\nu}_{~ ~\sigma})V^{\sigma} = W^{\rho}\eta_{\rho\sigma}V^{\sigma}=W\cdot V
 $$
 wow
-
-
+___
+Note that we are still using classical physical laws i.e. we are using PDEs which is pretty nice, so now we want to donsider how
+$$
+\frac{ \partial  }{ \partial x^{\mu} } 
+$$
+Transforms, to investigate this, we use the chain rule:
+$$
+x^{\mu'}=\Lambda^{\mu}_{~ ~\nu}x^{\nu}
+$$
+$$
+\implies \Lambda_{\mu}^{~ ~\rho}x^{\mu'}=\Lambda_{\mu}^{~ ~\rho}\Lambda^{\mu}_{~ ~\nu}x^{\nu} 
+$$
+$$
+\implies \Lambda_{\mu }^{~ ~\rho}x^{\mu'}=\delta^{\rho}_{\nu}x^{\nu} 
+$$
+$$
+\implies x^{\rho}=\Lambda_{\mu}^{~ ~\rho}x^{\mu}
+$$
+So using the chain rule,
+$$
+\frac{ \partial  }{ \partial x^{\nu'} }=\frac{ \partial x^{\rho} }{ \partial x^{\nu'} } \frac{ \partial  }{ \partial x^{\rho} }=\frac{ \partial  }{ \partial x } 
+$$
