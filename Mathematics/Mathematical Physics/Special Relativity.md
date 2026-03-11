@@ -94,5 +94,37 @@ x^{0} \\
 x^{1} \\
 x^{2} \\
 x^{3}
+\end{pmatrix}=\begin{pmatrix}
+ct \\
+x \\
+y \\
+z
 \end{pmatrix}
 $$
+For $\mu \in \left\{ 0,1,2,3 \right\}$
+Sol rewriting the spacetime distance,
+$$
+\Delta s^{2}=-(\Delta x^{0})^{2}+(\Delta x^{1})^{2}+(\Delta x^{2})^{2}+(\Delta x^{3})^{3}
+$$
+And if we use Einstein's summation convention, we write this:
+$$
+\Delta s^{2} = \Delta x^{\mu}\eta_{\mu \nu}\Delta x^{\nu}
+$$
+Where we define the Minkowski metric,
+$$
+\eta_{\mu \nu}=\mathrm{diag}(-1,1,1,1)
+$$
+So we say the space $\mathbb{R}^{4}$ equipped with the distance $\Delta s^{2}$ is called the Minkowski space $\mathbb{R}^{1,3}$
+The inverse of the Minkowski is
+$$
+\eta^{-1}_{\mu \nu}=\eta^{\mu \nu}=\mathrm{diag}(-1,1,1,1)
+$$
+And note that
+$$
+\eta^{\alpha \mu}\eta_{\mu\beta}=\delta^{\alpha}_{\beta}
+$$
+Note that while $\eta$ and $\eta ^{-1}$ are technically the same matrix, they are different mathematical objects
+$$
+\eta^{\alpha\beta}\neq \eta_{\alpha\beta}
+$$
+A homogeneous [[Lorentz boosts|Lorentz transformation]] acting on coordinate can be writ
