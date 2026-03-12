@@ -1,5 +1,5 @@
 ## Lemma: Characterisation Lemma for Poles
-Suppose [[Complex Functions|$f$]] has an [[Isolated Singularity|isolated singularity]] at $z=a$ (so $\exists R>0$ such that $f$ is [[Holomorphicity|holomorphic]] on $B^{*}_{R}(a)$). This singularity is a pole of order $k$ iff there exists a holomorphic function $g:B_{R}(a)\to \mathbb{C}$ with $g(a)\neq 0$ such that
+Suppose [[Complex Functions|$f$]] has an [[Isolated Singularities|isolated singularity]] at $z=a$ (so $\exists R>0$ such that $f$ is [[Holomorphicity|holomorphic]] on $B^{*}_{R}(a)$). This singularity is a pole of order $k$ iff there exists a holomorphic function $g:B_{R}(a)\to \mathbb{C}$ with $g(a)\neq 0$ such that
 $$
 f(z)=(z-a)^{-k}g(z)
 $$

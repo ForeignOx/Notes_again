@@ -1,5 +1,5 @@
 ## Theorem
-Let $f$ have an essential singularity at $z=a$ and let $R>0$ such that $f$ is holomorphic on $B_{R}^{*}(a)$, then for any $w\in \mathbb{C}$ and all $0<r<R$ and all $\varepsilon>0$ there exists $z\in B^{*}_{r}(a)$ such that $f(z)\in B_{\varepsilon}(w)$, or written another way,
+Let $f$ have an [[Isolated Singularities|essential singularity]] at $z=a$ and let $R>0$ such that [[Complex Functions|$f$]] is [[Holomorphicity|holomorphic]] on $B_{R}^{*}(a)$, then for any $w\in \mathbb{C}$ and all $0<r<R$ and all $\varepsilon>0$ there exists $z\in B^{*}_{r}(a)$ such that $f(z)\in B_{\varepsilon}(w)$, or written another way,
 $$
 (\forall w_{\in  \mathbb{C}})(\forall r_{0<r<R})(\forall\varepsilon_{>0})(\exists B_{r}^{*}(a)): f(z)\in B_{\varepsilon}(w)
 $$
