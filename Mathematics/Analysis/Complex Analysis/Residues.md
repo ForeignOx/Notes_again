@@ -44,4 +44,7 @@ Consider
 $$
 f(z)=\sin z
 $$
-The denominator 
+The denominator has zeros at $z=n\pi$ and these are order $\hspace{0pt}1$, so simple zeros, by rule $\hspace{0pt}2$ with $g(z)=1,h(z)=\sin z$, 
+$$
+\mathrm{Res}_{z=a}(f)=c_{-1}
+$$
