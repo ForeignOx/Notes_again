@@ -46,5 +46,34 @@ f(z)=\sin z
 $$
 The denominator has zeros at $z=n\pi$ and these are order $\hspace{0pt}1$, so simple zeros, by rule $\hspace{0pt}2$ with $g(z)=1,h(z)=\sin z$, 
 $$
-\mathrm{Res}_{z=a}(f)=c_{-1}
+\mathrm{Res}_{z=a}(f)= \frac{g(a)}{h'(a)}=\frac{1}{\cos(n\pi)}=(-1)^{n}
+$$
+### Proof
+We have $f(z)=\sum_{n=-1}^{\infty}c_{n}(z-a)^{n}$ so
+$$
+(z-a)f(z)=\sum_{n=-1}^{\infty}c_{n}(z-a)^{n+1}=\sum_{m=0}^{\infty}c_{m-1}(z-a)^{m}
+$$
+Which is a [[power series|power series]] which is holomorphic at $z=a$ with value
+$$
+\lim_{ z \to a } (z-a)f(z)=c_{-1}
+$$
+For the second rule, if $f=\frac{g}{h}$ with $g(a)\neq 0$ and $h(a)=0,h'(a)\neq 0$, then by rule $\hspace{0pt}1$,
+$$
+\mathrm{Res}_{z=a}(f)=\lim_{ z \to a } (z-a)f(z)=\lim_{ z \to a }  \frac{(z-a)g(z)}{h(z)} 
+$$
+$$
+= \lim_{ z \to a }  \frac{g(z)+(z-a)g'(z)}{h'(z)}= \frac{g(a)+(a-a)g'(a)}{h'(a)}=\frac{g(a)}{h'(a)}
+$$
+By [[L'Hopital's Rule|L'hopital's]]
+For the third, if
+$$
+f(z)=\frac{g(z)}{(z-a)^{k}}
+$$
+With $g$ holomorphic, so has Taylor seroes at $z=a$, say $g(z)=\sum_{n=0}^{\infty}a_{n}(z-a)^{n}$ so
+$$
+f(z)=\sum_{n=0}^{\infty} a_{n}(z-a)^{n-k}=\sum_{m=-k}^{\infty} a_{m+k}(z-a)^{m}
+$$
+So $c_{m}=a_{m+k}$ and we want 
+$$
+c_{-1}=a_{k-1}= \frac{g^{(k-1)(a)}}{(k-1)!}
 $$
