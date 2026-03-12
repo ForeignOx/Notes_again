@@ -19,3 +19,9 @@ In the first case, $g(a)=0$, which would imply
 $$
 f(z)= b+\frac{1}{g(z)}=\frac{bg(z)+1}{g(z)}
 $$
+Which means $f$ has a pole at $z=a$
+Otherwise $g(a)\neq 0$, so
+$$
+\lim_{ z \to a }  (z-a)f(z)=\lim_{ z \to a }  \frac{(z-a)(bg(z)+1)}{g(z)}= \frac{(a-a)(b-g(a)+1)}{g(a)}=0
+$$
+So $f$ has a removable singularity at $z=a$ 
