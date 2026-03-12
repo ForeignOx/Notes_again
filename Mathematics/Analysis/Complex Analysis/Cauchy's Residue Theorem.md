@@ -53,4 +53,37 @@ Where $\gamma$ is any oriented simple closed contour such that $\hspace{0pt}0$ i
 $$
 f(z)=\frac{e^{ z }}{z^{2}(z+1)}
 $$
-
+If we write 
+$$
+f(z)= \frac{g(z)}{z^{2}}
+$$
+Where $g(z)=\frac{e^{ z }}{z+1}$ then $g$ is holomorphic on and inside $\gamma$, so by rule $\hspace{0pt}3$, 
+$$
+\mathrm{Res}_{z=0}(f)= \frac{g^{(2-1)}(0)}{(2-1)!}=g'(0)
+$$
+And
+$$
+g'(z)= \frac{e^{ z }}{1+z} - \frac{e^{ z }}{(1+z)^{2}}
+$$
+So $g'(0)=0$, soo
+$$
+\oint_{\gamma}f~dz=0
+$$
+## Integrals of Rational Real Functions of $\cos$ and $\sin$
+### Example
+Show that
+$$
+\int_{0}^{2\pi}  \frac{1}{1+a\sin\theta} \, d\theta=\frac{2\pi}{\sqrt{ 1-a^{2} }} 
+$$
+For $a\in(-1,1)$
+We know $\sin\theta=\frac{e^{ i\theta }-e^{ -i\theta }}{2i}$, assuming $a\neq 0$ then
+$$
+\int_{0}^{2\pi}  \frac{1}{1+a\sin\theta} \, d\theta =\int_{0}^{2\pi}  \frac{1}{1+a\left( \frac{e^{ i\theta }-e^{ -i\theta }}{2i} \right)} \, d\theta =\int_{0}^{2\pi}  \frac{2ie^{ i\theta }}{2ie^{ i\theta }+ae^{ 2i\theta }-a} \, d\theta 
+$$
+If we consider the function $\gamma(\theta)=e^{ i\theta }$ for $\theta \in[0,2\pi]$ is the unit circle in $\mathbb{C}$ hmmm
+$$
+=\int_{0}^{2\pi}  \frac{2\gamma'(\theta)}{a(\gamma(\theta))^{2}+2i(\gamma(\theta))-a} \, d\theta 
+$$
+$$
+= \oint_{\left| z= \right| }
+$$
