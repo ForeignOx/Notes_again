@@ -85,5 +85,11 @@ $$
 =\int_{0}^{2\pi}  \frac{2\gamma'(\theta)}{a(\gamma(\theta))^{2}+2i(\gamma(\theta))-a} \, d\theta 
 $$
 $$
-= \oint_{\left| z= \right| }
+= \oint_{\left| z \right| =1} \frac{2}{az^{2}+2iz-a}~dz = \oint_{\left| z \right| =1} \frac{2}{a(z-z_{1})(z-z_{2})}~dz
+$$
+By completing the square, where $z_{1}=i\left( \frac{-1+\sqrt{ 1-a^{2} }}{a} \right), z_{2}=i\left( \frac{-1-\sqrt{ 1-a^{2} }}{a} \right)$
+Note that $\left| z_{2} \right| <0$ and $z_{1}z_{2}=-1$, so $\left| z_{1} \right|<1$
+So by Cauchy's residue theorem
+$$
+        \int_{0}^{2\pi}  \frac{1}{1+a \sin\theta} \, d\theta = 2\pi i \mathrm{Res}_{z=z_{1}}(f)=2\pi i \frac{2}{a(z_{1}-z_{2})}= \frac{2\pi i}{i\sqrt{ 1-a^{2} }}
 $$
