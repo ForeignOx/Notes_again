@@ -12,7 +12,7 @@ From this we can understand an informal definition of a ring to give us intuitio
 - $\mathbb{R}^{3}$ is also a ring under $+$ and $\times$? The answer is no, because there are vectors such that $\underline{u}\times(\underline{v}\times \underline{w})\neq (\underline{u}\times \underline{v})\times \underline{w}$, and that's a key feature of what we deem multiplication; this missing property is called associativity
 
 ## Definition
-For a [[Sets|set]] $R$ to be a ring, we need two [[Binary Operations|binary operations]], usually written $+,\times$ 
+For a [[Sets|set]] $R$ to be a ring, we need two [[Binary Operations|binary operations]], usually written $+,\cdot$ 
 A ring is a triple $(R,+,\cdot)$ such that $(R,+)$ is an [[Abelian Groups|abelian group]] and such that:
 - $\exists 1\in\mathbb{R}: 1\cdot x=x\cdot1=x\forall x\in R$ (identity) - some definitions don't require this, but it is more convenient and useful to do so.
 - $x(yz)=(xy)z,\forall x,y,z\in R$ (associativity)
