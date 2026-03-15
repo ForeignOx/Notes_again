@@ -8,7 +8,6 @@ The contrapositive, a function is not uniformly continuous if:
 $$
 \exists\varepsilon>0:\forall\delta>0\exists c,x\in X\text{ with }\left| x-c \right| <\delta\implies \left| f(x)-f(c) \right| \geq\varepsilon
 $$
-
 ## Remarks
 The proof is non-constructive and gives no indication for finding $\delta$. In general this is very difficult
 This is what leads to integration later on…
