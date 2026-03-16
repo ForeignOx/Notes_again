@@ -33,3 +33,31 @@ $$
 $$
 We see that this is a coupling of $X$ and $Y$
 Observe that under this coupling $\tilde{X}_{n}\leq \tilde{Y}_{n}$. We will use couplings of Markov chains to establish relationships between them
+___
+The new random variables don't have to be built out of the old ones at all, for instace, taking $(X_{1},X_{2},X_{3})$ and $(Y_{1},Y_{2},Y_{3})$ from above, then define $\tilde{\Omega}=\left\{ \tilde{\omega}_{1},\tilde{\omega}_{2},\tilde{\omega}_{3},\tilde{\omega}_{4},\tilde{\omega}_{5} \right\}$ and $\mathbb{P}=\left\{ \frac{1}{4},\frac{1}{12},\frac{1}{6},\frac{1}{2} \right\}$, we define
+$$
+(\tilde{X}_{1},\tilde{X}_{2},\tilde{X}_{3})(\tilde{\omega})=\begin{cases}
+(1,1,2) & \tilde{\omega}\in \left\{ \omega_{1},\omega_{2} \right\}  \\
+(1,1,3) & \tilde{\omega}=\omega_{3}  \\
+(1,3,3) & \tilde{\omega}=\omega_{4}
+\end{cases}
+$$
+$$
+ (\tilde{Y}_{1},\tilde{Y}_{2},\tilde{Y}_{3})(\tilde{\omega})=\begin{cases}
+(1,1,3) & \tilde{\omega}=\omega_{1} &  \\
+(1,3,5) & \tilde{\omega}\in  \left\{ \omega_{2},\omega_{3},\omega_{4} \right\}
+\end{cases}
+$$
+We have written the couplings of $X$ and $Y$ as $\tilde{X}$ and $\tilde{Y}$ to emphasise that they are in fact new random variables on a new probability space, but one often abuses the notation by simply writng them as $X$ and $Y$
+___
+Consider the random walk on $I=\mathbb{Z}$ with transition states:
+$$
+P_{ij}=\begin{cases}
+\frac{2}{3}+\frac{1}{3(i+2)^{2}} & j=i+1  \\
+\frac{1}{3}- \frac{2}{3(i+2)^{2}} & j=i-1 \\
+0 & \text{otherwise}
+\end{cases}
+$$
+Clearly, this is irreducible. We will use coupling to show that the corresponding [[Markov chains|Markov chain]] is [[Recurrence and Transience|transient]]
+By irreducibility, we may suppose without loss of generality that the initial condition is $\hspace{0pt}0$, i.e. $\lambda(\left\{ 0 \right\})=1$
+We inductively construct on the same probability
