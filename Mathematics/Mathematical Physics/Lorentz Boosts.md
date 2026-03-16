@@ -33,4 +33,111 @@ $$
 So Galilean boosts are the limit of Lorentz boosts
 We also see that one of the key properties, the [[Euclidean Space|Euclidean distance]] is not preserved
 The invariant distance is the spacetime distance
+# In $3+1$D
+The general $\Lambda$!!
+The most important thing is that they satisfy:
+$$
+\Lambda ^{\top}\eta\Lambda=\eta
+$$
+So it's an equation that is symmetric in its indices i.e.
+$$
+(\Lambda ^{\top}\eta\Lambda)^{\top}=\eta ^{\top} 
+$$
+$$
+\implies \Lambda ^{\top}\eta(\Lambda ^{\top})^{\top}=\eta ^{\top} 
+$$
+$$
+\implies \Lambda ^{\top}\eta\Lambda=\eta
+$$
+So if we think of our $4\times 4$ matrix:
+$$
+\begin{pmatrix}
+a_{11} & a_{12} & a_{13} & a_{14} \\
+ & a_{22} & a_{23} & a_{24} \\
+ &  & a_{33} & a_{34} \\
+ &  &  & a_{44}
+\end{pmatrix}
+$$
+Because the lower diagonal must satisfy the symmetry, so we only get $10$ independent equations (rather than 16), so we are left with $\hspace{0pt}6$ free parameters
+## Lorentz Boosts in $x$-Direction
+We recall
+$$
+x'=\gamma(x-v_{x}t)
+$$
+$$
+ t'=\gamma\left( t-\frac{v_{x}}{c}x \right)
+$$
+$$
+y'=y
+$$
+$$
+ z'=z
+$$
+Which we can write in our new notation:
+$$
+(x^{0})'=\gamma\left( x^{0}- \frac{v_{x^{1}}}{c}x^{1} \right)
+$$
+$$
+ (x^{1})'=\gamma\left( x^{1}-\frac{v_{x^{1}}}{c}x^{0} \right)
+$$
+$$
+(x^{2})'=x^{2} 
+$$
+$$
+ (x^{3})'=x^{3}
+$$
+So we can write this as a matrix:
+$$
+\Lambda_{x}(v_{x})=\begin{pmatrix}
+\gamma & -\frac{v_{x}}{c}\gamma & 0 & 0 \\
+-\frac{v_{x}}{c}\gamma & \gamma & 0 & 0 \\
+0 & 0 & 1 & 0 \\
+0 & 0 & 0 & 1
+\end{pmatrix}
 
+$$
+We can show that this transforms how we'd like:
+$$
+\eta \Lambda_{x}=\begin{pmatrix}
+-1 & 0 & 0 & 0 \\
+0 & 1 & 0 & 0 \\
+0 & 0 & 1 & 0 \\
+0 & 0 & 0 & 1
+\end{pmatrix}\begin{pmatrix}
+\gamma & -\frac{v_{x}}{c}\gamma & 0 & 0 \\
+-v_{x}
+\end{pmatrix}
+$$
+## Lorentz Boosts in the $y$-direction
+This is derived similarly:
+$$
+\Lambda_{y}(v_{y})=\begin{pmatrix}
+meow
+\end
+{pmatrix}
+$$
+and in $z$-direction
+## Lorentz Boosts in Higher Dimension
+We also have
+$$
+\Lambda _{R}=\begin{pmatrix}
+1 & 0 & 0 & 0 \\
+0 \\
+0  &  & R\\  
+0 
+\end{pmatrix}
+$$
+Where $R$ is a $3\times 3$ rotation
+$R$ is parametrised by $\hspace{0pt}3$ angles
+So the most general Lorentz transformation is a combination of the above:
+$$
+\Lambda= \Lambda_{x}(v_{x})\Lambda_{y}(v_{y})\Lambda_{z}(v_{z})\Lambda_{R}
+$$
+This class is continuously connected to the identity
+$$
+\Lambda=I
+$$
+However the equation
+$$
+\Lambda^{\mu}_{~ ~\rho}\eta_{\mu \nu}\Lambda^{\nu}_{}
+$$
