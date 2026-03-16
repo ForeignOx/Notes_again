@@ -61,5 +61,9 @@ We can also see an example for the fourth, it makes a contraction for a ${1 \cho
 Here tere are two possible contractions $T^{\alpha}\,_{\alpha\gamma}$ or $T^{\alpha}\,_{\beta\alpha}$
 Picking $V_{\gamma}=T^{\alpha}\,_{\alpha\gamma}$ and show that it transforms like a $(0,1)$ tensor
 $$
-V_{\gamma'}=T^{\alpha'}\,_{}
+V_{\gamma'}=T^{\alpha'}\,_{\alpha'\gamma'}=(\Lambda^{\alpha'}\,_{\rho}\Lambda_{\alpha'}\,^{\sigma})\Lambda_{\gamma'}\,^{\tau}T^{\rho}\,_{\sigma \tau} 
 $$
+$$
+= \delta_{\rho}^{\sigma}\Lambda_{\gamma}\,^{\tau}T^{\rho}\,_{\sigma \tau}=\Lambda_{\gamma}\,^{\tau}T^{\rho}\,_{\sigma \tau}=\Lambda_{\gamma}\,^{\tau}V_{\tau}
+$$
+
