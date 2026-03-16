@@ -65,4 +65,7 @@ $$
 \rho=\frac{Q}{V}-\frac{Q}{\ell^{3}}
 $$
 Where $Q$ is the total charge inside the cube
-For $R'$, the side parallel to the $x$ axis appears contracted due to length contraction, so $\ell'_{x}=\frac{\ell}{\gamma}$, so the sides orthogonal to the velocity
+For $R'$, the side parallel to the $x$ axis appears contracted due to length contraction, so $\ell'_{x}=\frac{\ell}{\gamma}$, so the sides orthogonal to the velocity will have the same length, $\ell_{y}'=\ell$ and $\ell_{z}'=\ell$, so the density for $R'$ is then
+$$
+\rho'=\frac{Q}{v'}-\frac{Q}{\ell_{x}'\ell_{y}'\ell_{z}'}=\frac{\gamma Q}{\ell^{3}}=\gamma \rho
+$$
