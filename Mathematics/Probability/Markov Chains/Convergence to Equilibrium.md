@@ -34,3 +34,28 @@ $$
 $$
 $(Y_{n})_{n\geq 0}$ is a Markov chain on $\mathbb{N}$. Let $Z_{n}=Y_{n}\mod 17$ 
 We calim $(Z_{n})_{n\geq 0}$ is a Markov chain on $I=$
+## Ergodic Theorem for Markov Chains
+Suppose $(X_{n})_{n\geq 0}$ is $Markov(\lambda,P)$ and $P$ is irreducible, then
+- $\mathbb{P}\left( \frac{1}{N}V_{i}(N)\to \frac{1}{\mathbb{E}_{i}(T_{i})} \text{ as }N\to \infty\right)=1$ where $V_{i}(N)$ is the number of visits to $i$ up to time $N$
+- if in addition, $(X_{n})_{n\geq 0}$ is positive recurrent and $f:I\to \mathbb{R}$ is bounded, then
+$$
+\mathbb{P}\left( \frac{1}{N} \sum_{n=0}^{N-1}f(X_{n})\to \mathbb{E}_{\pi}(f)\text{ as }N\to \infty \right)=1
+$$
+### Proof
+later
+## Example
+Consider the Markov chain with $X_{1}=A$ and 
+$$
+X_{n}=\begin{cases}
+A & n\text{ even} \\
+B & n\text{ odd}
+\end{cases}
+$$
+Then $\mathbb{P}(X_{n}=A)$ doesn't converge to anything due to perioicity
+But $V_{A}(N)$ which is the number of visits to $A$ up to time $N$, which is the number of even number less than or equal to $N, which is
+$$
+\begin{cases}
+\frac{N}{2}+1 & N\text{ even} \\
+\frac{N}{2}+\frac{1}{2} & N\text{ odd}
+\end{cases}
+$$$
