@@ -51,4 +51,18 @@ J^{\mu'}=(\Lambda_{x}(v))^{\mu}\,_{\nu}J^{\nu}=\begin{pmatrix}
 \end{pmatrix}
 $$
 As usual with $\gamma=\frac{1}{\sqrt{ 1-\frac{v_{x}^{2}}{c^{2}} }}$
-By comparison we could say that the moving observer $R'$ see a different density, $\rho'=\gamma \rho$ and $J_{x}$
+By comparison we could say that the moving observer $R'$ see a different density, $\rho'=\gamma \rho$ and $J_{x}'=-\gamma \rho v_{x}$
+We could have found this without doing all this tensor business
+Since $\rho$ is different in different frames, it is not a ${0 \choose 0 }$ tensor, so it is not a scalar!
+If we have a chargedd fluid with fluic velocity $\underline{v}$, then $\underline{J}=\rho\cdot \underline{v}$, so
+$$
+J_{x}^{1}=-\rho'v_{x}
+$$
+Where $\rho'$ is the moving charge density that the observer sees
+The charge density changes due to length contraction
+Imagine a constant charge density $\rho$ inside a cube of side length $\ell$, so for $R$, the charge is 
+$$
+\rho=\frac{Q}{V}-\frac{Q}{\ell^{3}}
+$$
+Where $Q$ is the total charge inside the cube
+For $R'$, the side parallel to the $x$ axis appears contracted due to length contraction, so $\ell'_{x}=\frac{\ell}{\gamma}$, so the sides orthogonal to the velocity
