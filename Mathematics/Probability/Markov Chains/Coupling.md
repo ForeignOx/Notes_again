@@ -60,4 +60,44 @@ P_{ij}=\begin{cases}
 $$
 Clearly, this is irreducible. We will use coupling to show that the corresponding [[Markov chains|Markov chain]] is [[Recurrence and Transience|transient]]
 By irreducibility, we may suppose without loss of generality that the initial condition is $\hspace{0pt}0$, i.e. $\lambda(\left\{ 0 \right\})=1$
-We inductively construct on the same probability
+We inductively construct on the same probability space, the Markov chain $(X_{n})_{n\geq 0}$ with rate matrix $P$ and the biased random walk $(Y_{n})_{n\geq 0}$ with stochastic matrix
+$$
+Q_{ij}=\begin{cases}
+\frac{2}{3} & j=i+1  \\
+\frac{1}{3} & j=i-1 \\
+0 & \text{otherwise}
+\end{cases}
+$$
+We set $X_{0}=Y_{0}=0$, we now suppose that we have constructed $X_{0},\dots,X_{n}$ and $Y_{0},\dots,Y_{n}$
+We generate independently at random the uniform random variable $U_{n}$ and set
+$$
+X_{n+1}=\begin{cases}
+X_{n}+1 & U_{n}\leq \frac{2}{3}+ \frac{1}{3(i+2)^{2}} \\
+X_{n}-1 &  \frac{2}{3}+\frac{1}{3(i+2)^{2}}<U_{n}\leq 1
+\end{cases}
+$$
+$$
+Y_{n+1}=\begin{cases}
+Y_{n}+1 & U_{n}\leq \frac{2}{3} \\
+Y_{n}-1 & \frac{2}{3}<U_{n}\leq 1
+\end{cases}
+
+$$
+We see that this provides a coupling of $(X_{n})_{n\geq 0}$ and $(Y_{n})_{n\geq 0}$
+We now want to argue that $X_{n}$geq $Y_{n}$ for all $n\geq 0$, which we will accomplish by showing that $X_{n+1}-X_{n}\geq Y_{n+1}-Y_{n}$ for all $n\geq 0$ and using that $X_{0}=Y_{0}$
+Oberve that if $Y_{n+1}=Y_{n}-1$, then $X_{n+1}-X_{n}\geq -1=Y_{n+1}-Y_{n}$
+If $Y_{n+1}=Y_{n}+1$, then $U_{n}\leq \frac{2}{3}\leq \frac{2}{3}+ \frac{1}{3(i+2)^{2}}$, hence $X_{n+1}=X_{n}+1$
+In either case, we have $X_{n+1}-X_{n}\geq Y_{n+1}-Y_{n}$ for all $n\geq 0$ so that $X_{n}\geq Y_{n}$ for all $n$
+On the other hand, we know from the strong law of large numbers that
+$$
+\mathbb{P}\left( \frac{Y_{n}}{n}\to \frac{1}{3}\text{ as }n\to\infty \right)=1
+$$
+Therefore
+$$
+\mathbb{P}\left( Y_{n}\geq \frac{n}{4} \text{ eventually} \right)=1
+$$
+Since $X_{n}\geq Y_{n}$, we must have
+$$
+\mathbb{P}\left( X_{n}\geq \frac{n}{4}\text{ eventually} \right)=1
+$$
+This implies $X_{n}$ is transient
