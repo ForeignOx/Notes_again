@@ -21,6 +21,8 @@ Suppose $P$ is [[Irreducible Markov Chains|irreducible]] and [[period of states|
 $$
 \lim_{ n \to \infty } \mathbb{P}(X_{n}=j)=\pi_{j}
 $$
+### Proof
+The idea for this proof is to use coupling
 ## Remark
 In particular, take $\lambda=\delta_{i}$, then $P^{n}_{ij}\to \pi_{j}$ as $n\to \infty$ for all $i$
 ___
@@ -107,4 +109,8 @@ $$
 $$
 (or $-\frac{3}{2}$ which we rule out)
 So $x=\frac{1}{4}$
-So we need to check $p$ at $x=0$ and $x\to \infty$ (as the enpoints)
+So we need to check $p$ at $x=0$ and $x\to \infty$ (as the enpoints) ehhhh
+## Example
+Describing the flux of neutrons in a nuclear rector is offundamental importance for safely and effectively controlling nuclear reactors. However, the neutron flux solves a 6-dimensional PDE, which is very hard to solve accurately and efficiently
+Fortunately, the neutron flux can be described as the stationary distribution of a Markov chain describing how a single neutron moves
+By running this Markov chain and sampling the ergodic averages, we get a better description of the neutron flux, and better descriptions of how we should control the reactor
