@@ -139,5 +139,33 @@ $$
 $$
 However the equation
 $$
-\Lambda^{\mu}_{~ ~\rho}\eta_{\mu \nu}\Lambda^{\nu}_{}
+\Lambda^{\mu}_{~ ~\rho}\eta_{\mu \nu}\Lambda^{\nu}_{~ ~\sigma}=\eta_{\rho\sigma} 
 $$
+$$
+\implies 
+\Lambda ^{\top}\eta\Lambda=\eta
+$$
+Which admits solutions outside the family of $\Lambda$ 
+Taking the determinant of our equation we see this:
+$$
+\det(\Lambda ^{\top}\eta\Lambda)=\det \eta 
+$$
+$$
+ \implies \det(\Lambda ^{\top})\det(\eta)\det(\Lambda)=\det(\eta)
+$$
+$$
+\implies  \det(\Lambda)^{2}=1 
+$$
+$$
+\implies \det\Lambda=\pm 1
+$$
+Some solutions have $\det\Lambda=-1$, but these cannot be continuously connected to the identity as the identity has determinant 1
+For example time reversal:
+$$
+\Lambda_{T}=\mathrm{diag}(-1,1,1,1)
+$$
+Or spatial reflection:
+$$
+\Lambda_{p}=\mathrm{diag}(1,-1,1,1)
+$$
+So the matrices with $\det\Lambda=1$ form the proper Lorentz group $SO(1,3)$
