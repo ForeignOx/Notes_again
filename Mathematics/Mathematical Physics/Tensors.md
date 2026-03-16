@@ -66,4 +66,16 @@ $$
 $$
 = \delta_{\rho}^{\sigma}\Lambda_{\gamma}\,^{\tau}T^{\rho}\,_{\sigma \tau}=\Lambda_{\gamma}\,^{\tau}T^{\rho}\,_{\sigma \tau}=\Lambda_{\gamma}\,^{\tau}V_{\tau}
 $$
+Thus it does indeed transforam as a ${ 0 \choose 1 }$ tensor
+___
+The spacetime divergence $\partial_{\mu}V^{\mu}$ of a vector $V^{\mu}$ is Lorentz invariant
+$$
+W_{\mu}\,^{\nu}=\partial_{\mu}V^{\nu}
+$$
+Is a ${1 \choose 1 }$ tensor
+The space divergence $\partial_{\mu}V^{\mu}$ is contraction of the vector index of $W_{\mu}~^{\nu}$ with its covector index, so $\partial_{\mu}V^{\mu}$ is a ${0 \choose 0 }$ tensor, so it transforms like a scalar, so it is Lorentz invariant
+## Remark
+The operator $\square$ acting on scalars as
+$$
 
+$$
