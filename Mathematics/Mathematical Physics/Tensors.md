@@ -77,5 +77,9 @@ The space divergence $\partial_{\mu}V^{\mu}$ is contraction of the vector index 
 ## Remark
 The operator $\square$ acting on scalars as
 $$
-
+\square \psi=\eta^{\mu \nu}\partial_{\mu}\partial_{\nu}\psi
 $$
+is the Alembertian, it is the $\triangle$ for space-time
+___
+If a physical law is expressed as an equality between tensors, then it holds for all frames
+So if the qhysical quantities we study are tensors, their components will depend on the frame and the equation they satisfy is frame independent
