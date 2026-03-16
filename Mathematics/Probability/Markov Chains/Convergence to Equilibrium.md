@@ -77,4 +77,34 @@ $$
 - Our theorem says that the fraction of time at $H$ tends to $\frac{1}{2}$ (by the strong law of large numbers) so we can think of the Ergodic theorem as the strong law of large numbers for Markov chains
 - Suppose we earn £$\hspace{0pt}2$ for $H$ and lose £$\hspace{0pt}1$ for $T$, then the expected earnings divided by $N$ (by setting $f(H)=2,f(T)=-1$) $\mathbb{E}_{\pi}(f)=\frac{1}{2}f(H)+\frac{1}{2}f(T)=1-\frac{1}{2}=\frac{1}{2}$ as $N\to \infty$
 ## Example
-A smuggler
+A smuggler repeatedly sneaks goods through a border crossing. Each time, a corrupt border official refuses entry with probability $\frac{1}{2}$ and only resumes letting the smuggler through with probability $\sqrt{ x }$ if given a brible of £$1000x$ 
+If each smuggled shipment earns £$\hspace{0pt}750$, how much should the smuggler spend on bribes to maximise profit?
+![[Pasted image 20260316125044.png]]
+This Markov chain is positive recurrent and irreducible if $x>0$, soo
+$$
+\frac{1}{N}\sum_{n=0}^{N-1}f(X_{n})\to \mathbb{E}_{\pi}(f)
+$$
+Where the first term is the average profit per attempt after $N$ smuggling runs, the last term is the equilibrium average profit
+We recall that the stationary distribution for a two state Markov chain, thus
+$$
+\mathbb{E}_{\pi}(f)=750  \frac{\sqrt{ x }}{\frac{1}{2}+\sqrt{ x }}-1000x  \frac{\frac{1}{2}}{\frac{1}{2}+\sqrt{  x }}=\frac{1500\sqrt{ x }-1000x}{1+2\sqrt{ x }}
+$$
+So to maximie profit, we want to maximise this under the condition $x\geq 0$, this is a calculus exercise, taking the derivative,
+$$
+\frac{\left( 750x^{-\frac{1}{2}}-1000 \right)(1+2\sqrt{ x })-(1500\sqrt{ x }-1000x)x^{-\frac{1}{2}}}{(1+2\sqrt{ x })^{2}}
+$$
+Setting this to zero gives
+$$
+0=-1000\sqrt{ x }-1000+750x^{-\frac{1}{2}}
+$$
+Which gives
+$$
+4x+4\sqrt{ x }-3=0
+$$
+Which is a quadratic in $\sqrt{ x }$, so
+$$
+\sqrt{ x }=\frac{-1\pm 2}{2}=\frac{1}{2}
+$$
+(or $-\frac{3}{2}$ which we rule out)
+So $x=\frac{1}{4}$
+So we need to check $p$ at $x=0$ and $x\to \infty$ (as the enpoints)
