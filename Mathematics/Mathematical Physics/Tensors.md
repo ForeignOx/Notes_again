@@ -1,3 +1,5 @@
+## Definition
+A tensor is an object that transforms like a tensor
 ## Build Up for Special Relativity
 We have defined vectors $V^{\mu}$ where
 $$
@@ -23,14 +25,30 @@ T^{\mu_{1}'\mu_{2}'\dots \mu_{m}'}\,_{\nu_{1}'\nu_{2}'\dots \nu_{n}'}=\Lambda^{\
 $$
 In $d$ dimensions, an ${m \choose n }$ tensor has $d^{m+n}$ independent components
 Vectors are ${1 \choose 0 }$ tensors, covectors are ${0 \choose 1 }$ tensors, scalar functions are ${0 \choose 0 }$ tensors
-## Example
+## Examples
 For any two vectors $V^{\mu},W^{\nu}$, then
 $$
-M^{\mu \nu}=V^{\mu}W^{\nu}
+\eta^{\mu \nu}=V^{\mu}W^{\nu}
 $$
 Is a ${2 \choose 0 }$ tensor, we can check how it transforms:
 $$
-M^{\mu'\nu'}=V^{\mu'}W^{\nu'}=(\Lambda^{\mu}\,_{\rho}V^{\rho})(\Lambda^{\nu}\,_{\sigma}W^{\sigma})=\Lambda^{\mu}\,_{\rho}
+\eta^{\mu'\nu'}=V^{\mu'}W^{\nu'}=(\Lambda^{\mu}\,_{\rho}V^{\rho})(\Lambda^{\nu}\,_{\sigma}W^{\sigma})=\Lambda^{\mu}\,_{\rho}\Lambda^{\nu}\,_{\sigma}V^{\rho}W^{\sigma} =\Lambda^{\mu}\,_{\rho}\Lambda^{\nu}\,_{\sigma}\eta^{\rho\sigma}
 $$
-## Definition
-A tensor is an object that transforms like a tensor
+___
+For any vector $V^{\mu}$ and covector $W_{\nu}$, then
+$$
+\eta^{\mu}\,_{\nu}=V^{\mu}W_{\nu}
+$$
+Is a ${1 \choose  1}$ tensor
+We can check it satisfies transformation:
+$$
+\eta^{\mu'}\,_{\nu'}=V^{\mu'}W_{\nu'}=(\Lambda^{\mu}\,_{\rho}V^{\rho})(\Lambda_{\nu}\,^{\sigma}W_{\sigma})=\Lambda^{\mu}\,_{\rho}\Lambda_{\nu}\,^{\sigma}V^{\rho}W_{\sigma}=\Lambda^{\mu}\,_{\rho}\Lambda_{\nu}\,^{\sigma}\eta^{\rho}\,_{\sigma}
+$$
+___
+For any vector field $W^{\mu},\eta_{\nu}\,^{\mu}=\partial_{\nu}W^{\mu}$ is a ${1 \choose 1 }$ tensor, again we check transformation:
+$$
+\eta_{\nu'}\,^{\mu'}=\partial_{\nu'}W^{\mu'}=\Lambda_{\nu}\,^{\rho}\partial_{\rho}(\Lambda^{\mu}\,_{\sigma}W^{\sigma})=\partial_{\nu}W^{\mu}
+$$
+## Properties of Tensors
+- The sum of two ${m \choose n }$ tensors is a tensor of the same type
+- The product of a ${m_{1} \choose n_{1} }$ and a ${m_{2} \choose n_{2} }$ tensor is a ${m_{1}+m_{2} \choose n_{1}+n_{2} }$
