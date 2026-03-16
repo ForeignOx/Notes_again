@@ -54,8 +54,27 @@ $$
 Then $\mathbb{P}(X_{n}=A)$ doesn't converge to anything due to perioicity
 But $V_{A}(N)$ which is the number of visits to $A$ up to time $N$, which is the number of even number less than or equal to $N, which is
 $$
-\begin{cases}
+V_{A}(N)=\begin{cases}
 \frac{N}{2}+1 & N\text{ even} \\
 \frac{N}{2}+\frac{1}{2} & N\text{ odd}
 \end{cases}
-$$$
+$$
+$$
+\implies \frac{1}{N} V_{A}(N)=\frac{1}{N}\begin{cases}
+\frac{N}{2}+1 & N\text{ even} \\
+\frac{N}{2}+\frac{1}{2} & N\text{ odd}
+\end{cases} \to \frac{1}{2}=\pi_{A}
+$$
+## Interpreting Theorem
+Take $(X_{n})_{n\geq 0}$ with 
+$$
+\mathbb{P}(X_{n}=H)=\mathbb{P}(X_{n}=T)=\frac{1}{2}
+$$
+This is a positive recurrent Markov chain on $\left\{ H,T \right\}$ with
+$$
+\mathbb{E}_{i}(T_{i})=\frac{1}{\pi_{i}}=2
+$$
+- Our theorem says that the fraction of time at $H$ tends to $\frac{1}{2}$ (by the strong law of large numbers) so we can think of the Ergodic theorem as the strong law of large numbers for Markov chains
+- Suppose we earn £$\hspace{0pt}2$ for $H$ and lose £$\hspace{0pt}1$ for $T$, then the expected earnings divided by $N$ (by setting $f(H)=2,f(T)=-1$) $\mathbb{E}_{\pi}(f)=\frac{1}{2}f(H)+\frac{1}{2}f(T)=1-\frac{1}{2}=\frac{1}{2}$ as $N\to \infty$
+## Example
+A smuggler
