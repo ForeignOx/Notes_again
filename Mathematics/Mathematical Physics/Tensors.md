@@ -52,3 +52,14 @@ $$
 ## Properties of Tensors
 - The sum of two ${m \choose n }$ tensors is a tensor of the same type
 - The product of a ${m_{1} \choose n_{1} }$ and a ${m_{2} \choose n_{2} }$ tensor is a ${m_{1}+m_{2} \choose n_{1}+n_{2} }$
+- Raising (or lowering) and index of an ${m \choose n }$ tensor produces a ${m+1 \choose n-1 }$ for raising and a ${m-1 \choose n+1 }$ tensor for lowering
+- The partial derivative of an ${m \choose n }$ tensor produces a ${m \choose n+1 }$ tensor
+- If a tensor is equal to zero in one frame, then it is equal to zero in all frames
+___
+The previous examples exploit the second and fifth properties
+We can also see an example for the fourth, it makes a contraction for a ${1 \choose 2 }$ tensor $T^{\alpha}\,_{\beta\gamma}$
+Here tere are two possible contractions $T^{\alpha}\,_{\alpha\gamma}$ or $T^{\alpha}\,_{\beta\alpha}$
+Picking $V_{\gamma}=T^{\alpha}\,_{\alpha\gamma}$ and show that it transforms like a $(0,1)$ tensor
+$$
+V_{\gamma'}=T^{\alpha'}\,_{}
+$$
