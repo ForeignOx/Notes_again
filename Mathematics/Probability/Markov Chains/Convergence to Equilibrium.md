@@ -22,4 +22,15 @@ $$
 \lim_{ n \to \infty } \mathbb{P}(X_{n}=j)=\pi_{j}
 $$
 ## Remark
-In particular, take $\lambda=\delta_{i}$
+In particular, take $\lambda=\delta_{i}$, then $P^{n}_{ij}\to \pi_{j}$ as $n\to \infty$ for all $i$
+___
+It is almost impossible to state how important this is. It's the key idea between the google search algorithm, the basis of Markov chain Monte Carlo methods and many other applications
+## Example
+
+___
+Suppose $\mathbb{P}(X_{n}=H)=p \in(0,1)$ and where $Y_{n}$ is the number of heads amongst $X_{0},X_{1},\dots,X_{n}$. FInd
+$$
+\lim_{ n \to \infty } \mathbb{P}(X_{n}\text{ is a multple of }17)
+$$
+$(Y_{n})_{n\geq 0}$ is a Markov chain on $\mathbb{N}$. Let $Z_{n}=Y_{n}\mod 17$ 
+We calim $(Z_{n})_{n\geq 0}$ is a Markov chain on $I=$
