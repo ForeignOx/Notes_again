@@ -114,7 +114,8 @@ $$
 \int _{L_{R}}f(z) \, dz=2\int_{-R}^{R} f(L_{R}(x))L'_{R} \, dx =\int_{-R}^{R}  \frac{x^{2}}{x^{6}+1} \, dx =2\int_{0}^{R}  \frac{x^{2}}{x^{6}+1} \, dx  
 $$
 To close the contour, we consider the semicircular contour $C_{R}(t)=Re^{ it }$ for $t\in[0,\pi]$, and we write $\gamma_{R}:= L_{R}\cup C_{R}$, this is called a D-shaped contour
-we have
+![[Pasted image 20260317121322.png]]
+We have
 $$
 \oint_{\gamma_{R}}f=\int _{L_{R}}f+\int _{C_{R}}f
 $$
@@ -202,3 +203,28 @@ Thus
 $$
 \lim_{ \rho \to 0 }  \int _{C_{\rho}}g(z) \, dz=c_{-1} \pi i+0=\mathrm{Res}_{z=a}(g)\pi i 
 $$
+___
+$$
+\int_{0}^{\infty}  \frac{\sin x}{x} \, dx =\lim_{ \rho \to 0,R\to \infty } \int_{\rho}^{R} \frac{\sin x}{x} \, dx 
+$$
+Instead we consider the sneaky function $f(z)=\frac{e^{ iz }}{z}$
+This has a nasty pole at $z=0$, aiaiai, so we can't use D-shape, so instead we step-around (omg pole reference????/?????!!?!?!?!?!???!?!???!?!?????)
+So we actually have some freaky semiannulus
+![[Pasted image 20260317121347.png]]
+Sooo we let
+$$
+\gamma:= \gamma_{\rho,R}=L_{1} \cup C_{R}\cup L_{2}\cup(-C_{\rho})
+$$
+What is the relevance? First note that $f$ is holomorphic on and inside $\gamma$, so by Cauchy-Gourssat for simple closed curves,
+$$
+\oint_{\gamma}f~dz=0
+
+$$
+Consider
+$$
+\int _{L_{1}} e^{ iz } \, dz+\int _{L_{2}} e^{ iz } \, dz =\int _{\rho}^{R} \frac{e^{ ix }}{x} \, dx +\int_{-R}^{-\rho} \frac{e^{ iy }}{y} \, dy   
+$$
+$$
+    = \int_{\rho}^{R}  \frac{e^{ ix }}{x}  \frac{e^{ ix }}{x} \, dx 
+$$
+
