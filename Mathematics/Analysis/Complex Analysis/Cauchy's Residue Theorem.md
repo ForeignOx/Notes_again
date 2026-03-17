@@ -103,4 +103,23 @@ We now perfrom the genius move of writing $z$ instead of $x$:
 $$
 f(z)= \frac{z^{2}}{z^{6}+1}
 $$
-We also note that $f$ is [[Even Functions|even]], so $\int_{0}^{R} f \, dx=\frac{1}{2}\int_{-R}^{R} f \, dx$ 
+We also note that $f$ is [[Even Functions|even]], so $\int_{0}^{R} \frac{x^{2}}{x^{6}+1} \, dx=\frac{1}{2}\int_{-R}^{R} \frac{x^{2}}{x^{6}+1} \, dx$ 
+How does the integral of $f$ relate to the function above? Consider the straight line $L_{R}=x$ for $x\in[-R,R]$, so
+$$
+\int _{L_{R}}f(z) \, dz=2\int_{-R}^{R} f(L_{R}(x))L'_{R} \, dx =\int_{-R}^{R}  \frac{x^{2}}{x^{6}+1} \, dx =2\int_{0}^{R}  \frac{x^{2}}{x^{6}+1} \, dx  
+$$
+To close the contour, we consider the semicircular contour $C_{R}(t)=Re^{ it }$ for $t\in[0,\pi]$, and we write $\gamma_{R}:= L_{R}\cup C_{R}$, this is called a D-shaped contour
+we have
+$$
+\oint_{\gamma_{R}}f=\int _{L_{R}}f+\int _{C_{R}}f
+$$
+$$
+\implies \int_{0}^{\infty}  \frac{x^{2}}{x^{6}+1} \, dx =\lim_{ R \to \infty }  \int_{0}^{R} \frac{x^{2}}{x^{6}+1} \, dx =\frac{1}{2} \lim_{ R \to \infty } \int_{-R}^{R}  \frac{x^{2}}{x^{6}+1} \, dx 
+$$
+$$
+= \frac{1}{2}\lim_{ R \to \infty } \int _{L_{R}}f(z) \, dz =\frac{1}{2}\lim_{ R \to \infty } \left( \oint_{\gamma_{R}}f(z)~dz-\int _{C_{R}}f(z) \, dz  \right)
+$$
+What happens to $\int _{C_{R}}f$ as $R\to \infty$, by the [[ML Inequality|ML inequality]],
+$$
+\left| \int _{C_{R}}f(z) \, dz  \right| \leq L(C_{R})\sup_{z\in  C_{R}} \left| f(z) \right| =\pi R\sup_{z\in  C_{R}} \left|  \frac{z^{2}}{z^{6}+1} \right|  \leq \pi R
+$$
