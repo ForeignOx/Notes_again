@@ -245,5 +245,16 @@ So using the Estimate lemma,
 $$
 \left| \int _{C_{R}} \frac{e^{ iz }}{z} \, dz \right| \leq \int_{0}^{\pi}  \left| \frac{e^{ iR e^{ i\theta } }}{Re^{ i\theta }} \right|\cdot \left| iR e^{ i\theta } \right| \, d\theta=\int_{0}^{\pi} e^{ -R \sin\theta} \, d\theta<\frac{\pi}{R}\to 0\text{ as }R\to \infty
 $$
-
+By the indentation lemma,
+$$
+\lim_{ \rho \to 0 }  \int _{C_{\rho}}f =\pi i \mathrm{Res}_{z=0} \left( \frac{e^{ iz }}{z} \right) 
+$$
+We have
+$$
+\mathrm{Res}_{z=0}\left(  \frac{e^{ iz }}{z} \right)=\lim_{ z \to 0 }  \frac{ze^{ iz }}{z}=\lim_{ z \to 0 }  e^{ iz }=1
+$$
+Sooooooo
+$$
+\int_{0}^{\infty}  \frac{\sin x}{x} \, dx = \frac{1}{2i}(\pi i-0)=\frac{\pi}{2}
+$$
 
