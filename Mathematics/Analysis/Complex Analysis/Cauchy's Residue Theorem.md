@@ -94,6 +94,11 @@ $$
         \int_{0}^{2\pi}  \frac{1}{1+a \sin\theta} \, d\theta = 2\pi i \mathrm{Res}_{z=z_{1}}(f)=2\pi i \frac{2}{a(z_{1}-z_{2})}= \frac{2\pi i}{i\sqrt{ 1-a^{2} }}
 $$
 ## Integrals of Rational Functions
+We can perform this method for integrals of the form
+$$
+\int_{-R}^{R}  \frac{p(x)}{q(x)} \, dx
+$$
+When $\deg q\geq \deg p+2$ and $q$ has no real roots, it works by considering the D-shaped domain and taking it to infinity
 ### Example
 Evaluate
 $$
@@ -149,5 +154,26 @@ $$
 And since we have a D-shaped contour, poles with $\mathfrak{I}( z)>0$
 So by the second rule for residues with $g(z)= \frac{z^{2}}{z^{6}+1}$, $g(z)=z^{2},h(z)= z^{6}+1$,
 $$
-\mathrm{Res}_{z=z_{k}}(f)= \frac{g(z_{k})}{h'(z_{k})}= \frac{z_{k}^{2}}{6z_{k}^{5}}= \frac{1}{6(-1)}
+\mathrm{Res}_{z=z_{k}}(f)= \frac{g(z_{k})}{h'(z_{k})}= \frac{z_{k}^{2}}{6z_{k}^{5}}=\frac{1}{6z_{k}^{3}}= \frac{1}{6(-1)^{k}i}
+$$
+Soo
+$$
+\int_{ 0}^{\infty}  \frac{x^{2}}{x^{6}+1} \, dx=\frac{1}{2}\lim_{ R \to \infty }  \pi i \left( \frac{1}{6i}-\frac{1}{6i}+\frac{1}{6i} \right)=\frac{\pi}{6}
+$$
+
+## Indented Contours
+### Lemma: Indentation Lemma
+Suppose $g$ has a simple (order 1) pole at $z=a$, then for any $\rho>0$, let $C_{\rho}$ be the semicircular contour joining $a+\rho$ to $a-\rho$ via
+$$
+C_{\rho}(\theta)=a+\rho e^{ i\theta }
+$$
+For $\theta \in[0,\pi]$
+Then
+$$
+\lim_{ \rho \to 0 } \int _{C_{\rho}}g(z) \, dz =\pi i \mathrm{Res}_{z=a}(g)
+$$
+#### Proof
+Conider the Laurent series of $g$ around $z=a$, it is 
+$$
+g(\)
 $$
