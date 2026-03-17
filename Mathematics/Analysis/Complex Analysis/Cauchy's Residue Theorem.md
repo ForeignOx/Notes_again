@@ -225,6 +225,25 @@ $$
 \int _{L_{1}} e^{ iz } \, dz+\int _{L_{2}} e^{ iz } \, dz =\int _{\rho}^{R} \frac{e^{ ix }}{x} \, dx +\int_{-R}^{-\rho} \frac{e^{ iy }}{y} \, dy   
 $$
 $$
-    = \int_{\rho}^{R}  \frac{e^{ ix }}{x}  \frac{e^{ ix }}{x} \, dx 
+    = \int_{\rho}^{R}  \frac{e^{ ix }}{x} - \frac{e^{- ix }}{x} \, dx =2i \int_{\rho}^{R}  \frac{\sin x}{x} \, dx
+     
 $$
+Which is what we were wanting omg
+Soo we can do some rearranging to see that
+$$
+\int_{\rho}^{R}  \frac{\sin x}{x} \, dx =\frac{1}{2i}\left( \int _{C_{\rho}}f -\int _{C_{R}} f   \right)
+$$
+For $C_{R}$, we need the lemma that for $R>0$,
+$$
+\int_{0}^{\pi} e^{ -R\sin\theta } \, d\theta <\frac{\pi}{R}
+$$
+Note that on $C_{R}$, where $z=R e^{ i\theta }=R\cos\theta+Ri\sin\theta$, so
+$$
+\left| e^{ iz } \right| =\left| e^{ iRe^{ i\theta } } \right|=\left|  e^{ iR\cos\theta-R\sin\theta } \right|=e^{ -R\sin\theta }
+$$
+So using the Estimate lemma, 
+$$
+\left| \int _{C_{R}} \frac{e^{ iz }}{z} \, dz \right| \leq \int_{0}^{\pi}  \left| \frac{e^{ iR e^{ i\theta } }}{Re^{ i\theta }} \right|\cdot \left| iR e^{ i\theta } \right| \, d\theta=\int_{0}^{\pi} e^{ -R \sin\theta} \, d\theta<\frac{\pi}{R}\to 0\text{ as }R\to \infty
+$$
+
 
