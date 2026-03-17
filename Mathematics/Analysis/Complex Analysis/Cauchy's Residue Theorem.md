@@ -121,5 +121,33 @@ $$
 $$
 What happens to $\int _{C_{R}}f$ as $R\to \infty$, by the [[ML Inequality|ML inequality]],
 $$
-\left| \int _{C_{R}}f(z) \, dz  \right| \leq L(C_{R})\sup_{z\in  C_{R}} \left| f(z) \right| =\pi R\sup_{z\in  C_{R}} \left|  \frac{z^{2}}{z^{6}+1} \right|  \leq \pi R
+\left| \int _{C_{R}}f(z) \, dz  \right| \leq L(C_{R})\sup_{z\in  C_{R}} \left| f(z) \right| =\pi R\sup_{z\in  C_{R}} \left|  \frac{z^{2}}{z^{6}+1} \right|  \leq \pi R \sup_{z\in  C_{R}}  \frac{\left| z \right| ^{2}}{\left| z \right| ^{6}-1} 
+$$
+$$
+= \pi R \cdot \frac{R^{2}}{R^{6}-1}=\frac{\pi R^{3}}{R^{6}-1}\to 0 \text{ as } R\to \infty
+$$
+So
+$$
+\int_{0}^{\infty} \frac{x^{2}}{x^{6}+1} \, dx =\frac{1}{2}\lim_{ R \to \infty }  \oint_{\gamma_{R}} f(z)~dz
+$$
+And by Cauchy's residue theorem,
+$$
+\oint_{\gamma_{R}}f(z)~dz = 2\pi i \sum\mathrm{Res}_{z=z_{i}} (f)
+$$
+And the poles of 
+$$
+f(z)= \frac{z^{2}}{z^6+1}
+$$
+Are at the zeros of $z^{6}+1$, so at
+$$
+z_{k}=e^{ \frac{i\pi}{6}+\frac{2k\pi i}{6} }
+$$
+For $k\in \overline{6}$, sooo
+$$
+z_{k}\in  \left\{ e^{ \frac{i\pi}{6} },e^{ i \frac{3\pi}{6} }, e^{ i \frac{5\pi}{6} },e^{ i \frac{7\pi}{6} }, e^{ i \frac{9\pi}{6} },e^{ i \frac{11\pi}{6} } \right\}
+$$
+And since we have a D-shaped contour, poles with $\mathfrak{I}( z)>0$
+So by the second rule for residues with $g(z)= \frac{z^{2}}{z^{6}+1}$, $g(z)=z^{2},h(z)= z^{6}+1$,
+$$
+\mathrm{Res}_{z=z_{k}}(f)= \frac{g(z_{k})}{h'(z_{k})}= \frac{z_{k}^{2}}{6z_{k}^{5}}= \frac{1}{6(-1)}
 $$
