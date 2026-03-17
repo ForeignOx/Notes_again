@@ -175,5 +175,30 @@ $$
 #### Proof
 Conider the Laurent series of $g$ around $z=a$, it is 
 $$
-g(\)
+g(z)=\sum_{n=-1}^{\infty} c_{n}(z-a)^{n} = \frac{c_{-1}}{z-a}+\underbrace{ \sum_{n=0}^{\infty} c_{n}(z-a)^{n} }_{ =h(z) }
+$$
+So
+$$
+\int _{C_{\rho} g(z)}g(z) \, dz  = c_{-1} \int _{C_{\rho}} \frac{1}{z-a} \, dz \int _{C_{\rho}}h(z) \, dz  
+$$
+And we claim that
+$$
+\lim_{ \rho \to 0 }  \int _{C_{\rho}}h(z) \, dz=0 
+$$
+Which we prove with our best friend the ML inequality
+We know $h$ is holomorphic on $B_{R}(a)$, so by the [[Extreme Value Theorem|extreme value theorem]], $h$ attains a maximum on $\overline{B}_{\frac{\rho}{2}}(a)$, so there exists $M>0$ independent of $\rho$ such that
+$$
+\left| h(z) \right| \leq M \forall z \in  C_{\rho}
+$$
+So by the ML inequality:
+$$
+\left| \int _{C_{\rho}}h(z) \, dz  \right| \leq L(C_{\rho})\sup_{z\in  C_{\rho}} \left| h(z) \right| \leq \pi \rho M\to 0
+$$
+As $\rho\to 0$, finally, note
+$$
+\int _{C_{\rho}} \frac{1}{z-a} \, dz = \int _{0}^{\pi} \frac{C_{\rho}'(\theta)}{C_{\rho}(\theta)-a} \, d\theta =\int_{0}^{\pi}  \frac{i\rho e^{ i\theta }}{\rho e^{ i\theta }} \, d\theta=\int_{0}^{i} i \, d\theta  
+$$
+Thus
+$$
+\lim_{ \rho \to 0 }  \int _{C_{\rho}}g(z) \, dz=c_{-1} \pi i+0=\mathrm{Res}_{z=a} 
 $$
