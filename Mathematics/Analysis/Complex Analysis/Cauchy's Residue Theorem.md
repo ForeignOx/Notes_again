@@ -93,3 +93,14 @@ So by Cauchy's residue theorem
 $$
         \int_{0}^{2\pi}  \frac{1}{1+a \sin\theta} \, d\theta = 2\pi i \mathrm{Res}_{z=z_{1}}(f)=2\pi i \frac{2}{a(z_{1}-z_{2})}= \frac{2\pi i}{i\sqrt{ 1-a^{2} }}
 $$
+## Integrals of Rational Functions
+### Example
+Evaluate
+$$
+\int_{0}^{\infty} \frac{x^{2}}{x^{6}+1} \, dx :=\lim_{ R \to \infty } \int_{0}^{R}  \frac{x^{2}}{x^{6}+1} \, dx 
+$$
+We now perfrom the genius move of writing $z$ instead of $x$:
+$$
+f(z)= \frac{z^{2}}{z^{6}+1}
+$$
+We also note that $f$ is [[Even Functions|even]], so $\int_{0}^{R} f \, dx=\frac{1}{2}\int_{-R}^{R} f \, dx$ 
