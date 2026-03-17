@@ -200,5 +200,5 @@ $$
 $$
 Thus
 $$
-\lim_{ \rho \to 0 }  \int _{C_{\rho}}g(z) \, dz=c_{-1} \pi i+0=\mathrm{Res}_{z=a} 
+\lim_{ \rho \to 0 }  \int _{C_{\rho}}g(z) \, dz=c_{-1} \pi i+0=\mathrm{Res}_{z=a}(g)\pi i 
 $$
