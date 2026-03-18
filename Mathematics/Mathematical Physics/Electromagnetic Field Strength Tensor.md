@@ -119,3 +119,12 @@ $$
 $$
 F_{23}=-F_{32}=B_{1}
 $$
+So we can write this in matrix form:
+$$
+F=\begin{pmatrix}
+0 & -\frac{1}{c}E_{1} & -\frac{1}{c}E_{2} & -\frac{1}{c}E_{3} \\
+\frac{1}{c}E_{1} & 0 &  \\
+\frac{1}{c}E_{2} &  \\
+\frac{1}{c}E_{3} & 
+\end{pmatrix}
+$$
