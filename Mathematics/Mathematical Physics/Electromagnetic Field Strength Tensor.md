@@ -83,6 +83,39 @@ $$
 So it has $\hspace{0pt}6$ independent terms which means it carries the same amount of information with $\underline{E}$ and $\underline{B}$
 Let's write out the components of $F_{\mu \nu}$, 
 $$
-F_{0i}=\partial_{0}A_{i}-\partial_{i}A_{0}=\frac{1}{c}
+F_{0i}=\partial_{0}A_{i}-\partial_{i}A_{0}=\frac{1}{c}\partial_{t}A_{i}+\frac{1}{c}\partial_{i}\varphi=\frac{1}{c}(\partial_{i} \varphi+\partial_{t}A_{i})=-\frac{1}{c} E_{i}
 $$
-
+Thus
+$$
+F_{0i}=-\frac{1}{c}E_{i}, F_{i0}=\frac{1}{c}E_{i}
+$$
+Next, 
+$$
+F_{ij}=\partial_{i}A_{j}-\partial_{j}A_{i}
+$$
+We know from the definition of the curl,
+$$
+B_{k}=\epsilon_{kmn}\partial_{m}A_{n}
+$$
+$$
+\implies  \epsilon_{ijk}B_{k}=\epsilon_{ijk}\epsilon_{kmn}\partial_{m}A_{n} =(\delta_{im}\delta_{jn}-\delta_{in}\delta_{jm})\partial_{m}A_{n} 
+$$
+$$
+\implies \epsilon_{ijk}B_{k}=\delta_{im}\delta_{jn}\partial_{m}A_{n}-\delta_{in}\delta_{jm}\partial_{m}A_{n} 
+$$
+$$
+\implies \epsilon_{ijk}B_{k}=\partial_{i}A_{j}-\partial_{j}A_{i}
+$$
+Thus
+$$
+F_{ij}=\epsilon_{ijk}B_{k} 
+$$
+$$
+\implies F_{12}=-F_{21}=B_{3}
+$$
+$$
+F_{13}=-F_{31}=-B_{2}
+$$
+$$
+F_{23}=-F_{32}=B_{1}
+$$
