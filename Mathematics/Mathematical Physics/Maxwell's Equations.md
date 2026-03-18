@@ -51,3 +51,46 @@ $$
 -1 & \text{for odd permutations}
 \end{cases}
 $$
+So $W_{\kappa\lambda\mu}=0$ whenever any two indices coincide
+Given that we have $\hspace{0pt}4$ choices for $\kappa,\lambda,\mu$, we have ${4 \choose 3 }=4$ independent equations
+Now we want to do a detailed check that this gives us back what we want
+For the first Maxwell equation, if $\nu=0$,
+$$
+\cancelto{ 0 }{ \partial_{0}F^{0 0} }+\partial_{i}F^{i0}=-\mu_{0}J^{0} 
+$$
+$$
+\implies -\frac{1}{c}\partial_{i} E_{i}=-\mu_{0}c\rho 
+$$
+$$
+\implies \underline{\nabla} \cdot \underline{ E} =\frac{\rho}{\varepsilon_{0}}
+$$
+Which gives us Gauss' law
+If $\nu=i$,
+$$
+\partial_{0}F^{0i}+\partial_{j}F^{ji}=-\mu_{0} J^{i}
+$$
+Which if we do the faffing tells us that
+$$
+\underline{\nabla} \times \underline{ B} =\mu_{0}\underline{J}+\mu_{0}\varepsilon_{0}\partial_{t}\underline{E}
+$$
+Yay
+Doing the same for Maxwell's second equation, if $\mu=0,\kappa=i,\lambda=j$, then the we get
+$$
+\partial_{0}F_{ij}+\partial_{i}F_{j{0}}+\partial_{j}F_{0i}=0 
+$$
+$$
+\implies \epsilon_{ijk}\partial_{t}B_{k}+\partial_{i}E_{j}-\partial_{j}E_{i}=0 
+$$
+$$
+\implies \epsilon_{lij}\epsilon_{ijk}\partial_{t}B_{k}+\epsilon_{ijk}(\partial_{i}E_{j}-\partial_{j}E_{i})=0 
+$$
+$$
+\implies  \partial_{t}B_{l}+\epsilon_{lij}E_{j}=0 
+$$
+$$
+\implies  \underline{\nabla} \times \underline{ E} =-\partial_{t}\underline{B}
+$$
+And if we let $\mu=i,\kappa=j,\lambda=k$, then
+$$
+\partial_{i}F_{jk}+\partial_{j}F_{ki}+\partial_{k}F_{ij}
+$$
