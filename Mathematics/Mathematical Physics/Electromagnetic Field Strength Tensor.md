@@ -121,10 +121,41 @@ F_{23}=-F_{32}=B_{1}
 $$
 So we can write this in matrix form:
 $$
-F=\begin{pmatrix}
+F_{\mu \nu}=\begin{pmatrix}
 0 & -\frac{1}{c}E_{1} & -\frac{1}{c}E_{2} & -\frac{1}{c}E_{3} \\
-\frac{1}{c}E_{1} & 0 &  \\
-\frac{1}{c}E_{2} &  \\
-\frac{1}{c}E_{3} & 
+\frac{1}{c}E_{1} & 0 & B_{3} & -B_{2} \\
+\frac{1}{c}E_{2} & -B_{3} & 0 & B_{1} \\
+\frac{1}{c}E_{3} & B_{2} & -B_{1} & 0
+\end{pmatrix}
+$$
+It is also useful to compute
+$$
+F^{\mu \nu}=\eta^{\mu \rho}\eta^{\nu\sigma}F_{\rho\sigma}=\begin{pmatrix}
+0 & \frac{1}{c}E_{1} & \frac{1}{c}E_{2} & \frac{1}{c}E_{3} \\
+-\frac{1}{c}E_{1} & 0 & B_{3} & -B_{2} \\
+-\frac{1}{c}E_{2} & -B_{3} & 0 & B_{1} \\
+-\frac{1}{c}E_{3} & B_{2} & -B_{1} & 0
+\end{pmatrix}
+$$
+Note this doesn't change the antisymmetry property of $F$
+How do $\underline{E}$ and $\underline{B}$ transform under a Lorentz transformation?
+We know how $F_{\mu \nu}$ transforms, as it is a ${0 \choose 2 }$ tensors, it must transform as such, similarly for $F^{\mu \nu }$ being a ${2 \choose 0 }$ tensor
+Reading off $\underline{E}'$ and $\underline{B}'$ from the transformed strength tensor $F^{\mu'\nu'}$
+Let's try a boost in the $x$-direction:
+$$
+\Lambda^{\alpha}~_{\beta}=\begin{pmatrix}
+\gamma & -\frac{v_{x}}{c}\gamma  & 0 & 0 \\
+-\frac{v_{x}}{c}\gamma & \gamma & 0 & 0 \\
+0 & 0 & 1 & 0  \\
+0 & 0 & 0 & 1
+\end{pmatrix}
+$$
+So
+$$
+F^{\mu'\nu'}=\Lambda^{\mu}~_{\alpha}\Lambda^{\nu}~_{\beta}F^{\alpha\beta} 
+$$
+$$
+\implies F^{\mu'\nu'}=\begin{pmatrix}
+0 & \frac{E_{x}}{c} & \frac{\gamma}{c}(E)
 \end{pmatrix}
 $$
