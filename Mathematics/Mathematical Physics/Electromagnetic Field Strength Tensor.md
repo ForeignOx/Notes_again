@@ -156,6 +156,40 @@ F^{\mu'\nu'}=\Lambda^{\mu}~_{\alpha}\Lambda^{\nu}~_{\beta}F^{\alpha\beta}
 $$
 $$
 \implies F^{\mu'\nu'}=\begin{pmatrix}
-0 & \frac{E_{x}}{c} & \frac{\gamma}{c}(E)
+0 & \frac{E_{x}}{c} & \frac{\gamma}{c}(E_{y}-v_{x}B_{z}) & \frac{\gamma}{c}(E_{z}+v_{x}B_{y}) \\ & 0 & \gamma\left( B_{z}-\frac{v_{x}}{c^{2}}E_{y} \right) & -\gamma\left( B_{y}+\frac{v_{x}}{c^{2}}E_{z} \right) \\
+ &  & 0 & B_{x}
 \end{pmatrix}
+$$
+This tells us 
+$$
+E_{x}'=E_{x}
+$$
+$$
+E_{y}'=\gamma(E_{y}-v_{x}B_{z})
+$$
+$$
+E_{z}'=\gamma(E_{z}+v_{x}B_{y})
+$$
+$$
+ B'_{x}=B_{x}
+$$
+$$
+ B_{y}'=\gamma\left( B_{y}+\frac{v_{x}}{c^{2}}E_{z} \right)
+$$
+$$
+ B_{z}'=\gamma\left( B_{z}-\frac{v_{x}}{c^{2}}E_{y} \right)
+$$
+So components parallel to the boost remain unchanged, and purely electric fields can appear as partly magnetic in another frame and vice versa
+For a general velocity $\underline{v}$,
+$$
+\underline{E}_{||}'=\underline{E}_{| |}
+$$
+$$
+\underline{E}_{\bot}'=\gamma(\underline{E}_{\bot}+\underline{v}\times \underline{B})
+$$
+$$
+\underline{B}_{| |}'=\underline{B}_{| |}
+$$
+$$
+ \underline{B}_{\bot}'=\gamma\left( \underline{B}_{\bot}-\frac{\underline{v}}{c^{2}}\times \underline{E} \right)
 $$
