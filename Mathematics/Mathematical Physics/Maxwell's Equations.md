@@ -92,5 +92,8 @@ $$
 $$
 And if we let $\mu=i,\kappa=j,\lambda=k$, then
 $$
-\partial_{i}F_{jk}+\partial_{j}F_{ki}+\partial_{k}F_{ij}
+\partial_{i}F_{jk}+\partial_{j}F_{ki}+\partial_{k}F_{ij}=0 
+$$
+$$
+\implies \underline{\nabla} \cdot \underline{B} =0
 $$

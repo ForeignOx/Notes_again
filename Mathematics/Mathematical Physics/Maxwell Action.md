@@ -81,3 +81,17 @@ $$
 = \frac{L_{y}L_{z}}{\mu_{0}c} \int_{-\infty}^{\infty} f^{2}(s)\left( -\frac{1}{c} \right) \, ds= \frac{L_{y}L_{z}}{\mu_{0}c^{2}}\int_{-\infty}^{\infty} f^{2} \, ds= \varepsilon_{0}L_{y}L_{z}U=U_{V} 
 $$
 Yay
+## Special Relativity Yayy
+We observe
+$$
+F^{\mu \nu}F_{\mu \nu}=-2\mu_{0}\left( \varepsilon_{0} \left| \underline{E} \right| ^{2}-\frac{1}{\mu_{0}}\left| \underline{B} \right| ^{2} \right)
+$$
+And 
+$$
+A_{\mu}J^{\mu}=A_{0}J^{0}+A_{i}J^{i}=-\frac{\varphi}{c}J^{0}+A_{i}J^{i}=-\varphi \rho+ \underline{A}\cdot \underline{J}
+$$
+With these two parts, we can rewrite the action using our special spacetime quantites:
+$$
+    S=\int _{\mathbb{R}^{4}}-\frac{1}{4\mu_{0}}F_{\mu \nu}F^{\mu \nu}+A_{\mu}J^{\mu} \, dt~d^{3}\underline{x}
+$$
+
