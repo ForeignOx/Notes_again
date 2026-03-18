@@ -46,4 +46,26 @@ Sooo as a spacetime covector,
 $$
 A_{\mu}\to A_{\mu}+\partial_{\mu}\chi
 $$
-Since $\chi$ is a scalar function, it must be a ${0 \choose 0 }$ tensor, $\partial_{\mu}$
+Since $\chi$ is a scalar function, it must be a ${0 \choose 0 }$ tensor, $\partial_{\mu}\chi$ is thus a ${0 \choose 1 }$ tensor, so this specific choice of $A_{\mu}$ combines witha  covectros $\partial_{\mu}\chi$
+Now this looks nice and all, but what about $\underline{E}$ and $\underline{B}$?
+Well hold your horses, first we want to construct something gauge invariant out of $A^{\mu}$, which we tart by asking what the gauge invariant quantities are? It must be a ${0 \choose 2 }$ tensor
+$$
+F_{\mu \nu}=\partial_{\mu}A_{\nu}-\partial_{\nu}A_{\mu}
+$$
+And we call $F_{\mu \nu}$ the field strength tensor. To check this being gauge invariant,
+$$
+A_{\mu}'=A_{\mu}+\partial_{\mu}\chi
+$$
+Which gives the field strength tensor:
+$$
+F'_{\mu \nu}=\partial_{\mu}A'_{\nu}-\partial_{\nu}A'_{\mu}=\partial_{\mu}(A_{\nu}+\partial_{\nu}\chi)-\partial_{\nu}(A_{\mu}+\partial_{\mu}\chi) 
+$$
+$$
+= \partial_{\mu}A_{\nu}+\partial_{\mu}\partial_{\nu}\chi-\partial_{\nu}A_{\mu}-\partial_{\nu }\partial_{\mu}\chi 
+$$
+$$
+= \partial_{\mu}A_{\nu}-\partial_{\nu}A_{\mu}+\cancelto{ 0 }{ \partial_{\mu}\partial_{\nu}\chi-\partial_{\nu}\partial_{\mu}\chi }=F_{\mu \nu}
+$$
+Yay
+
+
