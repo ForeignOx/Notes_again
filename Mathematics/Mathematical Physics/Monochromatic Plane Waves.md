@@ -101,7 +101,7 @@ $$
 ## Transport of Energy
 For the electromagnetic field we concluded that the energy in a region $V$ is given by
 $$
-        U_{V}=\int _{V} \frac{\varepsilon_{0}}{/2}\left| \underline{E}(t,\underline{x}) \right| ^{2}+\frac{1}{2\mu_{0}} \left| \underline{B}(t,\underline{x}) \right| ^{2} \, d^{3}\underline{x} 
+        U_{V}=\int _{V} \frac{\varepsilon_{0}}{2}\left| \underline{E}(t,\underline{x}) \right| ^{2}+\frac{1}{2\mu_{0}} \left| \underline{B}(t,\underline{x}) \right| ^{2} \, d^{3}\underline{x} 
 $$
 
 We can think of 
