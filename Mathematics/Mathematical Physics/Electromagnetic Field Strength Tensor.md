@@ -67,5 +67,22 @@ $$
 = \partial_{\mu}A_{\nu}-\partial_{\nu}A_{\mu}+\cancelto{ 0 }{ \partial_{\mu}\partial_{\nu}\chi-\partial_{\nu}\partial_{\mu}\chi }=F_{\mu \nu}
 $$
 Yay
-
+The field strength tensor is antiymmetric in its indices:
+$$
+F_{\mu \nu}=\partial_{\mu}A_{\nu}-\partial_{\nu}A_{\mu}=-(\partial_{\nu}A_{\mu}-\partial_{\mu}A_{\nu})=-F_{\nu \mu}
+$$
+This must take the form:
+$$
+\begin{pmatrix}
+0 & a_{12} & a_{13} & a_{14} \\
+-a_{12} & 0 & a_{23} & a_{24} \\
+-a_{13} & a_{23} & 0 & a_{34} \\ 
+-a_{14} & -a_{24} & -a_{34} & 0
+\end{pmatrix}
+$$
+So it has $\hspace{0pt}6$ independent terms which means it carries the same amount of information with $\underline{E}$ and $\underline{B}$
+Let's write out the components of $F_{\mu \nu}$, 
+$$
+F_{0i}=\partial_{0}A_{i}-\partial_{i}A_{0}=\frac{1}{c}
+$$
 
