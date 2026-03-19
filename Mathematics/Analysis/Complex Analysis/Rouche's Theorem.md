@@ -1,0 +1,2 @@
+## Theorem
+Suppose $f,g$ are holomorphic on and inside a simple closed contour $\gamma$, if $\left| f(z)-g(z) \right|<\left| g(z) \right|$ for all $z\in \gamma$, then $f$ and $g$ have the same number of zeros inside $\gamma$ 
