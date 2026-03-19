@@ -28,7 +28,7 @@ $$
 $$
 - **Rule 3:** If $f(z)=\frac{g(z)}{(z-a)^{k}}$ for some $k>0$ with $g$ being holomorphic at $z=a$, then
 $$
-\mathrm{Res}_{z=a}(f)= \frac{g^{(k-1)(a)}}{(k-1)!}
+\mathrm{Res}_{z=a}(f)= \frac{g^{(k-1)}(a)}{(k-1)!}
 $$
 ## Examples
 Consider 
