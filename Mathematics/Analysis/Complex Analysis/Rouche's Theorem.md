@@ -61,4 +61,5 @@ Sooo
 $$
 \left| f(z)-g(z) \right| \leq \frac{2e^{ \pi }}{2}=e^{ \pi }<\pi^{\pi}=\pi^{\pi}\left| z \right| =\left| g(z) \right| 
 $$
-So by Rouche's theorem, $f$ has $m$ zeros inside $\mathbb{D}$ since $g$ 
+So by Rouche's theorem, $f$ has $m$ zeros inside $\mathbb{D}$ since $g$ has a zero of order $m$ at $z=0$
+
