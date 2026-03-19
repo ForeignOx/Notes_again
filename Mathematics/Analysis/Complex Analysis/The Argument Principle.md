@@ -19,4 +19,26 @@ g(z)= \frac{f'(z)}{f(z)}= \frac{\frac{e^{ z }}{z}-\frac{e^{ z }}{z^{2}}}{\frac{e
 $$
 This function $g$ has a pole at $1=\frac{1}{z}$ of order $\hspace{0pt}1$ at $z=0$
 ## Lemma
-Suppose $f$ is meromorphic on a domain $D$, then the function $\frac{f'}{f}$ is also meromorphic on $D$ with simple poles at all points
+Suppose $f$ is meromorphic on a domain $D$, then the function $\frac{f'}{f}$ is also meromorphic on $D$ with simple poles at all points $a\in \mathbb{C}$ at which $f$ has a zero or a pole, moreover,
+$$
+\mathrm{Res}_{z=a}\left( \frac{f'}{f} \right)=\begin{cases}
+k & \text{if }z=a\text{ is a zero of }f\text{ of order }k \\
+-k & \text{if }z=a\text{ is a pole of }f\text{ of order }k
+\end{cases}
+$$
+### Proof
+Clearly $\frac{f'}{f}$ is holomorphic everywhere except potentially places $f$ has a pole or zero or any isolated singularity
+Suppose $f$ has a zero or order $k$ at $z=a$, then by the characterisation lemma,
+$$
+f(z)=(z-a)^{k}g(z)
+$$
+For some holomorphic $g$ with $g(a)\neq 0$, soo
+$$
+\frac{f'(z)}{f(z)}= \frac{k(z-a)^{k-1}g(z)+(z-a)^{k}g'(z)}{(z-a)^{k}g(z)}=\frac{k}{z-a}+ \frac{g'(z)}{g(z)}
+$$
+i.e. the principle and analytic parts, so $\frac{f'}{f}$ has a pole of orderr $\hspace{0pt}1$ at $z=a$, and $\mathrm{Res}_{z=a}\left( \frac{f'}{f} \right)=k$
+Suppose instead that $f$ has a pole of order $k$ at $z=a$, then by the characterisation lemma, $f(z)=(z-a)^{-k}g(z)$ for some holomorphic $g$, with $g(a)\neq 0$, so
+$$
+\frac{f'(z)}{f(z)} =  \frac{-k(z-a)^{-k-1}g(z)+(z-a)^{-k}g'(z)}{(z-a)^{-k}g(z)}=-\frac{k}{z-a}+\frac{g'(z)}{g(z)}
+$$
+As before this is a pole of order $1$, $\mathrm{Res}_{z=a}\left( \frac{f'}{f} -k$
