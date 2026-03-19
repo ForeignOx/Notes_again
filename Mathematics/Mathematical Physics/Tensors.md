@@ -58,7 +58,7 @@ $$
 ___
 The previous examples exploit the second and fifth properties
 We can also see an example for the fourth, it makes a contraction for a ${1 \choose 2 }$ tensor $T^{\alpha}\,_{\beta\gamma}$
-Here tere are two possible contractions $T^{\alpha}\,_{\alpha\gamma}$ or $T^{\alpha}\,_{\beta\alpha}$
+Here there are two possible contractions $T^{\alpha}\,_{\alpha\gamma}$ or $T^{\alpha}\,_{\beta\alpha}$
 Picking $V_{\gamma}=T^{\alpha}\,_{\alpha\gamma}$ and show that it transforms like a $(0,1)$ tensor
 $$
 V_{\gamma'}=T^{\alpha'}\,_{\alpha'\gamma'}=(\Lambda^{\alpha'}\,_{\rho}\Lambda_{\alpha'}\,^{\sigma})\Lambda_{\gamma'}\,^{\tau}T^{\rho}\,_{\sigma \tau} 
