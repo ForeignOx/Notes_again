@@ -60,4 +60,9 @@ Suppose $f$ is meromorphic on and inside a simple closed contour $\gamma$ with n
 $$
 I_{\Gamma_{f}}(0)=z_{f}-p_{f}
 $$
+### Example
+Let $\gamma(t)=4e^{ it }$, $f(z)=\sin z$, the image contour $\Gamma_{f}(t)$ satisfies $I_{\Gamma_{f}}(0)=3$, so
+$$
+\frac{1}{2\pi i} \oint_{\gamma} \frac{f'(z)}{f(z)}~dz = \oint_{\gamma}\cot(z)\delta z=3
+$$
 
