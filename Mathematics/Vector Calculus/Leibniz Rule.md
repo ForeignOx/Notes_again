@@ -1,5 +1,5 @@
 If $f(x)$ and $g(x)$ are both [[Differentiation|differentiable]] [[Functions|functions]], that are differentiable $n$ times, then so is the product $(fg)(x)$
-Denote this function$h(x)=f(x)g(x)$:
+Denote this function $h(x)=f(x)g(x)$:
 $$
 h'(x)=\lim_{ \delta x \to 0 } \frac{h(x+\delta x)-h(x)}{\delta x}
 $$
