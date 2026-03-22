@@ -111,9 +111,29 @@ T:=\min\left\{ n\geq :\middle|: X_{n}=Y_{n}=b \right\}
 $$
 This is precisely the first passage time of $W_{n}$ to $(b,b)$. Since $Q$ is positive recurrent, we have
 $$
-\mathbb{P}(T<\infty)=\mathbb{P}(W_{n}=(b,b))
+\mathbb{P}(T<\infty)=\mathbb{P}(W_{n}=(b,b)\text{ for some }n<\infty)=1
 $$
-
+So we are done for step 1
+Step 2:
+We want to show that
+$$
+Z_{n}=\begin{cases}
+X_{n} & n<T  \\
+Y_{n} & n\geq T
+\end{cases}
+$$
+Is $Markov(\lambda,P)$
+We firstly observe that $Z_{0}=X_{0}$ (since $T\geq 1$ by definition), so $\mathbb{P}(Z_{0}=i)=\mathbb{P}(X_{0}=i)=\lambda(i)$ for all $i\in I$
+The main task is to check that it's Markov with stochastic matrix $P$. We want to show:
+$$
+\mathbb{P}(Z_{n+1}=i_{n+1}\mid Z_{0}=i_{0},\dots,Z_{n}=i_{n},T=k)=P_{i_{n}i_{n+1}}\text{ for }1\leq k\leq n
+$$
+$$
+\mathbb{P}(Z_{n+1}=i_{n+1}\mid Z_{0}=i_{0},\dots,Z_{n}=i_{n},T>n)=P_{i_{n}i_{n+1}}
+$$
+The idea is to use the strong Markov property
+Since $(W_{n})_{n\geq 0}$ is $Markov(\mu,Q)$ and $T$ is an (almost surely finite) stopping time (as it's a hitting time) with $W_{T}=(b,b)$, the strong Markov property implies that $(W_{T+n})_{n\geq 0}$ is $Markov(\delta_{(b,b)},Q))$, and independent of $W_{0},W_{1},\dots,W_{T}$
+Then 
 
 
 
