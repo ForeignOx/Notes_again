@@ -75,7 +75,43 @@ Next we claim that $Q$ is positive recurrent. To prove this, we need to show tha
  - $Q$ has a stationary distribution
 To show that $Q$ is irreducible, we recall the proposition that says that a state $i$ is aperiodic iff $P^{n}_{ii}>0$ for all sufficiently large $n$. Since $P$ is irreducible, for any $i,j\in I$, there exists $k>0$ such that $P^{k}_{ij}>0$. Therefore
 $$
-
+P_{ij}^{n}\geq P_{ii}^{n-k}P_{ij}^{k}>0
+$$
+For all $n$ large enough. Similarly, $P^{n}_{k\ell}>0$ for all $n$ large enough, hence,
+$$
+Q^{n}_{(i,k)(j,\ell)}=P_{ij}^{n}P_{k\ell}^{n}>0
+$$
+for all $n$ large enough, in particular, $Q$ is irreducible
+Next to show that $Q$ has a stationary distribution, we define
+$$
+\psi((i,k)):=\pi(i)\pi(k)~(i,k)\in  I\times I
+$$
+We claim that $\psi$ is a stationary distribution for $Q$. We firstly check it's a distribution:
+$$
+\psi((i,k))=\pi(i)\pi(k)\geq 0
+$$
+for all $i,k\in I$
+$$
+\sum_{(i,k)\in  I\times I}\psi((i,k))=\sum_{i\in I}\sum_{k\in  I}\pi(i)\pi(k)=\underbrace{ \left( \sum_{i\in I}\pi(i) \right) }_{ =1 }\underbrace{ \left( \sum_{k\in  I}\pi(k) \right) }_{ =1 }=1
+$$
+Now to see that $\psi$ is stationary for $Q$, observe that
+$$
+(\psi Q)_{(j,\ell)}=\sum_{(i,k)\in  I\times I} \psi_{(i,k)}Q_{(i,k)(j,\ell)} 
+$$
+$$
+= \sum_{(i,k)\in  I\times I} \pi(i)\pi(k)P_{ij}P_{k\ell} 
+$$
+$$
+= \underbrace{ \left( \sum_{i\in I}\pi (i)P_{ij} \right) }_{ =\pi(j) }\underbrace{ \left( \sum_{k\in  I}\pi(k)P_{k\ell} \right) }_{ =\pi(\ell) }=\psi(j,\ell)
+$$
+We have now proven that $Q$ is irreducible and has a stationary distribution on the state space $I\times I$, hence it is positive recurrent
+Recall that
+$$
+T:=\min\left\{ n\geq :\middle|: X_{n}=Y_{n}=b \right\}
+$$
+This is precisely the first passage time of $W_{n}$ to $(b,b)$. Since $Q$ is positive recurrent, we have
+$$
+\mathbb{P}(T<\infty)=\mathbb{P}(W_{n}=(b,b))
 $$
 
 
