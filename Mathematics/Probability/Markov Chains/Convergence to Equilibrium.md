@@ -45,7 +45,19 @@ $$
 We claim $(W_{n})_{n\geq 0}$ is $Markov(\mu,Q)$ on the state space $I\times I$, where
 - $\mu_{(i,k)}=\lambda_{i}\pi_{k}$
 - $Q_{(i,k)(j,\ell)}=P_{ij}P_{k\ell}$ ($X$ goes from $i$ to $j$, $Y$ goes from $k$ to $\ell$)
-To prove this claim, we use independence to split the step 
+To prove this claim, we use independence to split the step of $X_{n}$ and of $Y_{n}$, use separately the Markov property for $X_{n}$ and $Y_{n}$, and use independence again to put them back together. We do this as follows:
+$$
+\mathbb{P}(W_{n}=(i_{n},k_{n})\mid W_{0}=(i_{0},k_{0}),\dots,W_{n-1}=(i_{n-1},k_{n-1})) 
+$$
+$$
+= \frac{\mathbb{P}(X_{0}=i_{0},\dots,X_{n}=i_{n},Y_{0}=k_{0},\dots,Y_{n}=k_{n})}{\mathbb{P}(X_{0}=i_{0},\dots,X_{n-1}=i_{n-1},Y_{0}=k_{0},\dots,Y_{n-1}=k_{n-1})} 
+$$
+$$
+=  \frac{\mathbb{P}(X_{0}=i_{0},\dots,X_{n}=i_{n})}{\mathbb{P}(X_{0}=i_{0},\dots,X_{n-1}=i_{n-1})} \frac{\mathbb{P}(Y_{0}=k_{0},\dots,Y_{n}=k_{n})}{\mathbb{P}(Y_{0}=k_{0},\dots,Y_{n-1}=k_{n-1})} 
+$$
+$$
+= 
+$$
 
 
 
