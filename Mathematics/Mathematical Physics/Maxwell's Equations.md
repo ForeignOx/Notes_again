@@ -4,7 +4,7 @@ $$
 \underline{\nabla} \cdot \underline{E} =\frac{\rho}{\varepsilon_{0}}
 $$
 $$
- \underline{\nabla} \times \underline{B} =\mu_{0}\underline{J}+\mu_{0}\varepsilon_{0} \partial_{t}\underline{B}
+ \underline{\nabla} \times \underline{B} =\mu_{0}\underline{J}+\mu_{0}\varepsilon_{0} \partial_{t}\underline{E}
 $$
 $$
  \underline{\nabla} \cdot \underline{B} =0

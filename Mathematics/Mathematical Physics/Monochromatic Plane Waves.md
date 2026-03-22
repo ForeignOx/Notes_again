@@ -9,7 +9,7 @@ $$
 $$
 Where we have defined $\omega=kc$
 This is an example of a monochromatic wave propagating through space
-Since it is monochromatic, it will be a single colour, and $T=\frac{2\pi}{\omega}$ is its [[period|period]] in time which gives [[frequency|frequency]] $\nu = \frac{1}{T}$ ad the [[wavelength|wavelength]] is $\lambda=\frac{2\pi}{k}$ which we can think of as the period in space
+Since it is monochromatic, it will be a single colour, and $T=\frac{2\pi}{\omega}$ is its [[period|period]] in time which gives [[frequency|frequency]] $\nu = \frac{1}{T}$ and the [[wavelength|wavelength]] is $\lambda=\frac{2\pi}{k}$ which we can think of as the period in space
 We can also write 
 $$
 \underline{E}(x,t)=E_{0} e^{ i(kx-\omega(k)) } \underline{e}_{y}
