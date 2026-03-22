@@ -199,11 +199,9 @@ $$
 = P_{i_{n}i_{n+1}}\left( \sum_{k=1}^{n} \mathbb{P}(T=k\mid Z_{0}=i_{0},\dots,Z_{n}=i_{n})+\mathbb{P}(T>n\mid Z_{0}=i_{0},\dots,Z_{n}=i_{n}) \right) 
 $$
 $$
-= P_{i_{n}i_{n+1}} \mathbb{P}(\left\{ T\leq n \right\}\cup \left\{ T>n \right\}\mid Z_{0}=i_{0},\dots,Z_{n}=i_{n})
+= P_{i_{n}i_{n+1}} \underbrace{ \mathbb{P}(\left\{ T\leq n \right\}\cup \left\{ T>n \right\}\mid Z_{0}=i_{0},\dots,Z_{n}=i_{n}) }_{ =1 }=P_{i_{n}i_{n+1}}
 $$
-
-
-
+So step $\hspace{0pt}2$ is done
 Step 3:
 We have
 $$
