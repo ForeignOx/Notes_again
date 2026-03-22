@@ -22,7 +22,12 @@ $$
 \lim_{ n \to \infty } \mathbb{P}(X_{n}=j)=\pi_{j}
 $$
 ### Proof
-The idea for this proof is to use coupling
+We suppose that $(X_{n})_{n\geq 0}$ is $Markov(\lambda,P)$, and $(Y_{n})_{n\geq 0}$ is $Markov(\underline{\pi},P)$, and they are independent of each other. Taking $b\in I$, then the [[first passage time|first passage time]] of $(X_{n},Y_{n})$ to $(b,b)$ is 
+$$
+T=\min\left\{ n\geq 0:\middle|: X_{n}=Y_{n}=b \right\}
+$$
+
+
 ## Remark
 In particular, take $\lambda=\delta_{i}$, then $P^{n}_{ij}\to \pi_{j}$ as $n\to \infty$ for all $i$
 ___
@@ -109,7 +114,7 @@ $$
 $$
 (or $-\frac{3}{2}$ which we rule out)
 So $x=\frac{1}{4}$
-So we need to check $p$ at $x=0$ and $x\to \infty$ (as the enpoints) ehhhh
+So we need to check $p$ at $x=0$ and $x\to \infty$ (as the endpoints) ehhhh
 ## Example
 Describing the flux of neutrons in a nuclear rector is offundamental importance for safely and effectively controlling nuclear reactors. However, the neutron flux solves a 6-dimensional PDE, which is very hard to solve accurately and efficiently
 Fortunately, the neutron flux can be described as the stationary distribution of a Markov chain describing how a single neutron moves
