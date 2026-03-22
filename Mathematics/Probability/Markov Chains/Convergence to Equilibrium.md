@@ -56,7 +56,26 @@ $$
 =  \frac{\mathbb{P}(X_{0}=i_{0},\dots,X_{n}=i_{n})}{\mathbb{P}(X_{0}=i_{0},\dots,X_{n-1}=i_{n-1})} \frac{\mathbb{P}(Y_{0}=k_{0},\dots,Y_{n}=k_{n})}{\mathbb{P}(Y_{0}=k_{0},\dots,Y_{n-1}=k_{n-1})} 
 $$
 $$
-= 
+= \mathbb{P}(X_{n}=i_{n}\mid X_{0}=i_{0},\dots X_{n-1}=i_{n-1})\mathbb{P}(Y_{n}=k_{n}\mid Y_{0}=k_{0},\dots Y_{n-1}=k_{n-1}) 
+$$
+$$
+= \mathbb{P}(X_{n}=i_{n}\mid X_{n-1}=i_{n-1})\mathbb{P}(Y_{n}=k_{n}\mid Y_{n-1}=k_{n-1}) 
+$$
+$$
+= \frac{\mathbb{P}(X_{n}=i_{n},X_{n-1}=i_{n-1})}{\mathbb{P}(X_{n-1}=i_{n-1})} \frac{\mathbb{P}(Y_{n}=k_{n},Y_{n-1}=k_{n-1})}{\mathbb{P}(Y_{n-1}=k_{n-1})}
+$$
+$$
+= \frac{\mathbb{P}(X_{n}=i_{n},X_{n-1}=i_{n-1},Y_{n}=k_{n},Y_{n-1}=k_{n-1})}{\mathbb{P}(X_{n-1}=i_{n-1},Y_{n-1}=k_{n-1})} 
+$$
+$$
+= \mathbb{P}(W_{n}=(i_{n},k_{n})\mid W_{n-1}=(i_{n-1},k_{n-1}))
+$$
+Next we claim that $Q$ is positive recurrent. To prove this, we need to show that:
+ - $Q$ is irreducible on the state space $I\times I$
+ - $Q$ has a stationary distribution
+To show that $Q$ is irreducible, we recall the proposition that says that a state $i$ is aperiodic iff $P^{n}_{ii}>0$ for all sufficiently large $n$. Since $P$ is irreducible, for any $i,j\in I$, there exists $k>0$ such that $P^{k}_{ij}>0$. Therefore
+$$
+
 $$
 
 
