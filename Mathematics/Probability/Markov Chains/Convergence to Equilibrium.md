@@ -133,7 +133,32 @@ $$
 $$
 The idea is to use the strong Markov property
 Since $(W_{n})_{n\geq 0}$ is $Markov(\mu,Q)$ and $T$ is an (almost surely finite) stopping time (as it's a hitting time) with $W_{T}=(b,b)$, the strong Markov property implies that $(W_{T+n})_{n\geq 0}$ is $Markov(\delta_{(b,b)},Q))$, and independent of $W_{0},W_{1},\dots,W_{T}$
-Then 
+Then since $X_{n}$ is the first coordinate of $W_{n}$ and $Y_{n}$ the second coodinate, we have
+$$
+\mathbb{P}(Z_{n+1}=i_{n+1}\mid X_{0}=i_{0},\dots,Z_{n}=i_{n},T=k) 
+$$
+$$
+= \mathbb{P}(Y_{T+n-k+1}=i_{n+1}\mid X_{0}=i_{0},\dots,X_{k}=i_{k},T=k,Y_{T+1}=i_{k+1},\dots,Y_{T+n-k}=i_{n}) 
+$$
+$$
+= \frac{\mathbb{P}(Y_{T+n-k+1}=i_{n+1},X_{0}=i_{0},\dots,X_{k}=i_{k},T=k,Y_{T+1}=i_{k+1},..,Y_{T+n-k}=i_{n})}{\mathbb{P}(X_{0}=i_{0},\dots ,X_{k}=i_{k},T=k,Y_{T+1}=i_{k+1},\dots,Y_{T+n-k}=i_{n})} 
+$$
+$$
+= \frac{\mathbb{P}(Y_{T+n-k+1}=i_{n+1},Y_{T+1}=i_{k+1},\dots,Y_{T+n-k}=i_{n})}{\mathbb{P}(Y_{T+1}=i_{k+1},\dots,Y_{T+n-k}=i_{n})} \cancelto{ 1 }{ \frac{\mathbb{P}(X_{0}=i_{0},\dots,X_{k}=i_{k})}{\mathbb{P}(X_{0}=i_{0},\dots,X_{k}=i_{k})} 
+ } 
+$$
+$$
+= \mathbb{P}(Y_{T+n-k+1}=i_{n+1}\mid Y_{T+1}=i_{k+1},\dots,Y_{T+n-k}=i_{n})
+ $$
+ Since $(W_{T+n})_{n\geq 0}$ is $Markov(\delta_{(b,b)},P)$, the two coordinates of $(W_{T+n})_{n\geq 0}$ are independent $Markov(\delta_{b},P)$
+ The second coordinate is precisely $(Y_{T+n})_{n\geq 0}$, hence
+ $$
+\mathbb{P}(Y_{T+n-k+1}=i_{n+1}\mid Y_{T+1}=i_{k+1},\dots,Y_{T+n-k}=i_{n})=P_{i_{n}i_{n+1}} 
+$$
+$$
+\implies \mathbb{P}(Z_{n+1}=i_{n+1}\mid Z_{0}-i_{0},\dots,Z_{n}=i_{n},T=k)=P_{i_{n}i_{n+1}}
+$$
+For all $1\leq k\leq n$
 
 
 
