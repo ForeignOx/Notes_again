@@ -159,6 +159,48 @@ $$
 \implies \mathbb{P}(Z_{n+1}=i_{n+1}\mid Z_{0}-i_{0},\dots,Z_{n}=i_{n},T=k)=P_{i_{n}i_{n+1}}
 $$
 For all $1\leq k\leq n$
+On the other hand
+$$
+\mathbb{P}(Z_{n+1}=i_{n+1}\mid Z_{0}=i_{0},\dots,Z_{n}=i_{n},T>n) 
+$$
+$$
+ =\mathbb{P}(Z_{n+1}=i_{n+1}\mid X_{0}=i_{0},\dots,X_{n}=i_{n},T>n) 
+$$
+$$
+= \mathbb{P}(X_{n+1}=i_{n+1}\mid X_{0}=i_{0},\dots,X_{n}=i_{n},T>n) 
+$$
+$$
+= \mathbb{P}(X_{n+1}=i_{n+1}\mid X_{0}=i_{0},X_{1}=i_{1}\neq Y_{1},X_{2}=i_{2}\neq Y_{2},\dots,X_{n}=i_{n}\neq Y_{n})  
+$$
+$$
+= \mathbb{P}(X_{n+1}=i_{n+1}\mid X_{0}=i_{0},X_{1}=i_{1},\dots,X_{n}=i_{n})=P_{i_{n}i_{n+1}}
+$$
+By the Markov property for $X_{n}$
+We now calculate
+$$
+\mathbb{P}(Z_{n+1}=i_{n+1}\mid Z_{0}=i_{0},\dots,Z_{n}=i_{n}) 
+$$
+$$
+= \sum_{k=1}^{n}\mathbb{P}(Z_{n+1}=i_{n+1},T=k\mid Z_{0}=i_{0},\dots,Z_{n}=i_{n})
+$$
+$$
+ +\mathbb{P}(Z_{n+1}=i_{n+1},T>n\mid Z_{0}=i_{0},\dots,Z_{n}=i_{n})  
+$$
+$$
+= \sum_{k=1}^{n}\mathbb{P}(Z_{n+1}=i_{n+1}\mid Z_{0}=i_{0},\dots,Z_{n}=i_{n},T=k)\mathbb{P}(T=k\mid Z_{0}=i_{0},\dots,Z_{n}=i_{n}) 
+$$
+$$
+ +\mathbb{P}(Z_{n+1}=i_{n+1} \mid Z_{0}=i_{0},\dots,Z_{n}=i_{n},T>n)\mathbb{P}(T>n\mid Z_{0}=i_{0},\dots,Z_{n}=i_{n}) 
+$$
+$$
+= \sum_{k=1}^{n} P_{i_{n}i_{n+1}} \mathbb{P}(T=k\mid Z_{0}=i_{0},\dots,Z_{n}=i_{n})+P_{i_{n}i_{n+1}}\mathbb{P}(T>n\mid Z_{0}=i_{0},\dots,Z_{n}=i_{n}) 
+$$
+$$
+= P_{i_{n}i_{n+1}}\left( \sum_{k=1}^{n} \mathbb{P}(T=k\mid Z_{0}=i_{0},\dots,Z_{n}=i_{n})+\mathbb{P}(T>n\mid Z_{0}=i_{0},\dots,Z_{n}=i_{n}) \right) 
+$$
+$$
+= P_{i_{n}i_{n+1}} \mathbb{P}(\left\{ T\leq n \right\}\cup \left\{ T>n \right\}\mid Z_{0}=i_{0},\dots,Z_{n}=i_{n})
+$$
 
 
 
