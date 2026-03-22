@@ -26,8 +26,58 @@ We suppose that $(X_{n})_{n\geq 0}$ is $Markov(\lambda,P)$, and $(Y_{n})_{n\geq 
 $$
 T=\min\left\{ n\geq 0:\middle|: X_{n}=Y_{n}=b \right\}
 $$
+We perform this proof in $\hspace{0pt}3$ steps:
+1. Show that $\mathbb{P}(T<\infty)=1$,
+2. Show that
+$$
+Z_{n}=\begin{cases}
+X_{n} & n<T \\
+Y_{n} & n\geq T
+\end{cases}
+$$
+    Is $Markov(\lambda,P)$. This is the "switched" Markov chain
+3. Argue that $\hspace{0pt}1$ and $\hspace{0pt}2$ imply our theorem
+Step 1:
+We define
+$$
+W_{n}:=(X_{n},Y_{n}),~n\geq 0
+$$
+We claim $(W_{n})_{n\geq 0}$ is $Markov(\mu,Q)$ on the state space $I\times I$, where
+- $\mu_{(i,k)}=\lambda_{i}\pi_{k}$
+- $Q_{(i,k)(j,\ell)}=P_{ij}$
 
 
+
+
+Step 3:
+We have
+$$
+\mathbb{P}(Z_{n}=j)=\mathbb{P}(Z_{n}=j,T>n)+\mathbb{P}(Z_{n}=j,T\leq n) 
+$$
+$$
+ = \mathbb{P}(X_{n}=j,T>n)+\mathbb{P}(Y_{n}=j,T\leq n)
+$$
+Then since $\pi$ is stationary,
+$$
+\left| \mathbb{P}(Z_{n}=j)-\pi(j) \right| =\left| \mathbb{P}(Z_{n}=j)-\mathbb{P}(Y_{n}=j) \right|  
+$$
+$$
+= \left| \mathbb{P}(Z_{n}=j,T>n)+\mathbb{P}(Z_{n}=j,T\leq n)-\mathbb{P}(Y_{n}=j,T>n) -\mathbb{P}(Y_{n}=j,T\leq n) \right|  
+$$
+$$
+= \left| \mathbb{P}(Z_{n}=j,T>n)-\mathbb{P}(Y_{n}=j,T>n) \right| 
+$$
+$$
+\leq \mathbb{P}(Z_{n}=j,T>n)-\mathbb{P}(Y_{n}=j,T>n)
+$$
+$$
+ \leq 2\mathbb{P}(T>n)\to 0\text{ as }n\to\infty
+$$
+By step $\hspace{0pt}1$, to see that step $\hspace{0pt}1$ implies that $\mathbb{P}(T>n)\to 0$, we see that
+$$
+\lim_{ n \to \infty } \mathbb{P}(T>n )=\lim_{ n \to \infty } \mathbb{P}\left( \bigcap_{k=0}^{n}\left\{ T>n \right\} \right)=\mathbb{P}(T=\infty)=0
+$$
+And we are done!
 ## Remark
 In particular, take $\lambda=\delta_{i}$, then $P^{n}_{ij}\to \pi_{j}$ as $n\to \infty$ for all $i$
 ___
