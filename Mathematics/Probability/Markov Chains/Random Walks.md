@@ -64,6 +64,7 @@ P_{ij}=\begin{cases}
 \end{cases}
 $$
 Where $\deg(i)$ is the number of edges containing $i$. Note that with self loops, a loop counts as one more in degree
+A graph is [[Connectedness of Graphs|connected]] if the associated Markov chain is [[Irreducible Markov Chains|irreducible]]. This is equivalent to the existence of a path between any two vertices
 ## Theorem
 Suppose that $G=(V,E)$ is a graph, and $P$ is the associated Markov chain given above, then the [[Invariant Distributions|stationary measures]] are given by
 $$
@@ -103,4 +104,41 @@ P_{ij}=\begin{cases}
 \frac{1}{4} & i=5, & j\in  \left\{ 1,2,3,4 \right\}
 \end{cases}
 $$
-A graph is [[Connectedness of Graphs|connected]] if the associated Markov chain is [[Irreducible Markov Chains|irreducible]]. This is equivalent to the existence of a path between any two vertices
+
+The sum of degrees is therefore $18$, hence the stationary distribution is given by
+$$
+\pi=\begin{pmatrix}
+\frac{1}{6} & \frac{2}{9} & \frac{1}{6} & \frac{2}{9} & \frac{2}{9}
+\end{pmatrix}
+$$
+Then
+$$
+\pi P =\begin{pmatrix}
+\frac{1}{6} & \frac{2}{9} & \frac{1}{6} & \frac{2}{9} & \frac{2}{9}
+\end{pmatrix} \begin{pmatrix}
+0 & \frac{1}{3} & 0 & \frac{1}{3} & \frac{1}{3} \\
+\frac{1}{4} & \frac{1}{4} & \frac{1}{4} & 0 & \frac{1}{4} \\
+0 & \frac{1}{3} & 0 & \frac{1}{3} & \frac{1}{3} \\
+\frac{1}{4} & 0 & \frac{1}{4} & \frac{1}{4} & \frac{1}{4} \\
+\frac{1}{4} & \frac{1}{4} & \frac{1}{4} & \frac{1}{4} & 0
+\end{pmatrix} =\begin{pmatrix}
+\frac{1}{6} & \frac{2}{9} & \frac{1}{6} & \frac{2}{9} & \frac{2}{9}
+\end{pmatrix}
+$$
+Yay
+Working out htis stationary distribution by solving $\pi P=\pi$ directly would have been much more difficult
+___
+Suppose that a king moves on an otherwise empty chessboard in discrete time, so at each step it chooses on of the adjacent squares and jumps onto it. This then constitutes a Markov chain
+We let
+$$
+I=\left\{ (x,k):\middle|:x\in \left\{ a,b, \dots,h \right\},k\in \left\{ 1,2,\dots,8 \right\} \right\}
+$$
+Be the set of squares on the chessboard, so the king is a Markov chain $X_{n}\in I$, this can be viewed as the following graph:
+![[Pasted image 20260323225307.png]]
+We calculate the degrees:
+$$
+\deg(i)=\begin{cases}
+3 & i\text{ is a corner} \\
+
+\end{cases}
+$$
