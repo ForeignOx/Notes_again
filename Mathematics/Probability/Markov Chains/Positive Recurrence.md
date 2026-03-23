@@ -82,3 +82,23 @@ For some $c\in \mathbb{R}_{>0}$, but since $\sum_{i\in \mathbb{Z}}1=\infty$, thi
 Therefore the theorem above tells us we can't have positive recurrence, so we have null recurrence
 ___
 One can work out the stationary distribution fot the following Markov chain
+![[Pasted image 20260323154646.png]]
+To be
+$$
+\pi=\begin{pmatrix}
+\frac{1}{5} & \frac{2}{5} & \frac{2}{5}
+\end{pmatrix}
+$$
+Then our theorem tells us that the mean return times are given by
+$$
+m_{i}=\mathbb{E}_{i}(T_{i})=\frac{1}{\pi_{i}},~i\in I
+$$
+Therefore
+$$
+\begin{pmatrix}
+m_{1} & m_{2} & m_{3} 
+\end{pmatrix}=\begin{pmatrix}
+5 & \frac{5}{2} & \frac{5}{2}
+\end{pmatrix}
+$$
+This is much faster than direct computation and faster than applying the theorem that mean hitting times are the minimal non-negative solution of and equation
