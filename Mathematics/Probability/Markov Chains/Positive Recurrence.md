@@ -2,5 +2,17 @@ There are in fact two types of [[Recurrence and Transience|recurrence]], recall 
 ## Definition
 A state $i\in I$ is positive recurrent if the expected time to return to $i$, from $i$ is finite,
 $$
-m_{i}:=\mathbb{E}_{i}(T_{i})
+m_{i}:=\mathbb{E}_{i}(T_{i})<\infty
 $$
+Conversely, a recurrent state $i\in I$ with
+$$
+m_{i}:=\mathbb{E}(T_{i})=\infty
+$$
+Is null recurrent
+## Theorem
+Suppose $P$ is irreducible. The following are equivalent
+- 
+## Example
+Consider the simple random walk on $\mathbb{Z}$, as described below:
+![[Pasted image 20260323145259.png]]
+This has $\mathbb{P}_{i}(T_{i}<\infty)=1$, so it is recurrent, but $\mathbb{E}_{i}(T_{i})=\infty$, so it is null recurrent
