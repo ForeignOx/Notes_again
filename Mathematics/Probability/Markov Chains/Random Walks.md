@@ -53,7 +53,7 @@ Then $X_{n}^{+}$ and $X_{n}^{-}$ are independent symmetric random walks on $\fra
 $$
 P_{00}^{2n}=\left( {2n \choose n }\left( \frac{1}{2} \right)^{2n} \right)^{2}\sim \frac{2}{A^{2}n}\text{ as }n\to\infty
 $$
-## Random Walks on Graphs
+# Random Walks on Graphs
 Recall a [[Graphs|graph]] $G=(V,E)$ consists of a set of vertices $V$ and edges $E\subseteq V\times V$ (note we don't allow more than one edge for any pair of vertices)
 We suppose that we have a Markov chain whereby if $X_{n}=i$, then we choose uniformly amongst all $j\in V$ such that $\left\{ i,j \right\}$ is an edge (i.e. belongs to $E$), and we set $X_{n+1}=j$ 
 Therefore the transition matrix is given by
@@ -66,3 +66,25 @@ $$
 Where $\deg(i)$ is the number of edges containing $i$. Note that with self loops, a loop counts as one more in degree
 ### Example
 Consider the Markov chain in the following diagram
+![[Pasted image 20260323222338.png]]
+Then 
+$$
+\deg(1)=\deg(3)=3,~\deg(2)=\deg(4)=\deg(5)=4
+$$
+So that
+$$
+P_{ij}=\begin{cases}
+\frac{1}{3} & i=1, & j\in \left\{ 2,4,5 \right\} \\
+\frac{1}{4} & i=2,  & j\in \left\{ 1,2,4,5 \right\} \\
+\frac{1}{3} & i=3, & j\in  \left\{ 2,4,5 \right\} \\
+\frac{1}{4} & i=4, & j\in  \left\{ 1,3,4,5 \right\} \\
+\frac{1}{4} & i=5, & j\in  \left\{ 1,2,3,4 \right\}
+\end{cases}
+$$
+A graph is [[Connectedness of Graphs|connected]] if the associated Markov chain is [[Irreducible Markov Chains|irreducible]]. This is equivalent to the existence of a path between any two vertices
+## Theorem
+Suppose that $G=(V,E)$ is a graph, and $P$ is the associated Markov chain given above, then the [[Invariant Distributions|stationary measures]] are given by
+$$
+\pi_{i}=c \deg(i)
+$$
+For $c>0$ which satisfy the [[Detailed Balance|detailed balance]] equations
