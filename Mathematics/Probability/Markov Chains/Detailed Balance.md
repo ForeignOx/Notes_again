@@ -42,6 +42,6 @@ m_{1} & m_{2} & m_{3} & m_{4} & m_{5}
 \frac{16}{3} & \frac{16}{3} & \frac{16}{3} & \frac{16}{3} & 4
 \end{pmatrix}
 $$
-___
 ## On General Graphs
-This is in fact a big class of examples
+This is in fact a big class of examples. Recall a [[Graphs|graph]] $G=(V,E)$ consists of a set of vertices $V$ and edges $E\subseteq V\times V$ (note we don't allow more than one edge for any pair of vertices)
+We suppose that we have a Markov chain whereby if $X_{n}=i$, then we choose uniformly amongst all $j\in V$ such that $\left\{ i,j \right\}$ is an edge (i.e. belongs to $E$), and we set $X_{n+1}=j$ 
