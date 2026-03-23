@@ -22,3 +22,13 @@ $$
 Consider the simple random walk on $\mathbb{Z}$, as described below:
 ![[Pasted image 20260323145259.png]]
 This has $\mathbb{P}_{i}(T_{i}<\infty)=1$, so it is recurrent, but $\mathbb{E}_{i}(T_{i})=\infty$, so it is null recurrent
+We proved before that a simple [[Random Walks|random walk]] on $\mathbb{Z}$ is recurrent
+So the problem is to determine if we have positive recurrence. We observe that
+$$
+\pi_{i}=1~\forall i\in I
+$$
+Is an invariant measure, so we know by a theorem that any invariant measure is of the form 
+$$
+c\pi_{i}=c,~i\in I
+$$
+For some $c\in \mathbb{R}_{>0}$
