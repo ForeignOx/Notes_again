@@ -237,3 +237,15 @@ $$
 Hence $\lambda_{k}=\tilde{\lambda}_{k}$
 ## Theorem
 Suppose that $P$ is recurrent. Then it has an invariant measure, which is unique up to rescaling. This means that if $\lambda$ and $\tilde{\lambda}$ are two invariant measure for $P$, then there exists $c\in \mathbb{R}_{>0}$ such that $\lambda_{i}=c\tilde{\lambda}_{i}$ for all $i\in I$. More precisely, for any $k\in I$, the invariant measures for $P$ are given by $(\gamma_{i}^{k})_{i\in I}$ and all positive multiples of this
+## Theorem
+Consider the stochastic matrix $P$ on the state space $I$
+- If $C$ is a non-closed communicating class for $P$, then $\pi(i)=0$ for all $i \in C$ and all stationary distributions $\pi$ for $P$
+- If $C$ is a null recurrent or transient closed communicating class for $P$, then $\pi(i)=0$ for all $i\in C$ and all stationary distributions $\pi$ for $P$
+- If $C$ is a [[Positive Recurrence|positive recurrent]] or transient communicating class for $P$, then there is a unique stationary distribution for $P$ which is supported on $C$, which we denote by $\pi^{C}$ 
+- Enumerate the closed and positive recurrent communicating classes for $P$ as $C_{1},C_{2},\dots$ (which may be either finite or infinite), then the set of all stationary distributions for $P$ is given by
+$$
+\left\{ \sum_{i}a_{i}\pi^{C_{i}} :\middle|: a_{i}\geq 0 ~\forall i\text{ and }\sum_{i}a_{i}=1\right\}
+$$
+    Here $\pi^{C_{i}}$ is the unique stationary distribution supported on $C_{i}$
+## Example
+Consider the following example

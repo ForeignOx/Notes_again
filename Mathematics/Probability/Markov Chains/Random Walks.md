@@ -139,6 +139,27 @@ We calculate the degrees:
 $$
 \deg(i)=\begin{cases}
 3 & i\text{ is a corner} \\
-
+5 & i\text{ is along the boundary, but not the corner} \\
+8 & i\text{ is in the interior}
+\end{cases}
+$$
+We see that the total degree is
+$$
+\sum_{i\in I}\deg(i)=3\times \underbrace{ 4 }_{ \text{\# corners} }+5\times \underbrace{ 4\times 6 }_{ \text{\# edges} }+8\times \underbrace{ 6\times 6 }_{ \text{\# interiors} }=420
+$$
+Therefore the stationary distribution is given by
+$$
+\pi(i)=\begin{cases}
+\frac{1}{140} & i\text{ is a corner} \\
+\frac{1}{84} & i\text{ is on an edge} \\
+\frac{2}{105} & i\text{ is in the interior}
+\end{cases}
+$$
+Therefore the mean return times are given by
+$$
+m_{i}:=\mathbb{E}_{i}(T_{i})=\frac{1}{\pi_{i}}=\begin{cases}
+140 & i\text{ is a corner} \\
+84 & i\text{ is on an edge} \\
+\frac{105}{2} & i\text{ is in the interior}
 \end{cases}
 $$
