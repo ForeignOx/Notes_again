@@ -22,14 +22,29 @@ $$
 
 ## Tools of Particle Physics
 - [[Heisenberg's Uncertainty Principle|Heisenberg uncertainty principle]], as probing small size requires large momentum/energy
-- Particle sources such as accelerators
 Say that $\Delta x=10^{-18}\pu{m}$, then since
 $$
 \Delta p\Delta x\geq \frac{\hbar}{2} 
 $$
 $$
-\implies \Delta p\geq \frac{\hbar}{2\Delta x}= \frac{6.6\times 10^{-16}\pu{eV\cdot s}}{2\times 10^{-18}\pu{m}}
+\implies \Delta p\geq \frac{\hbar}{2\Delta x}= \frac{6.6\times 10^{-16}\pu{eV\cdot s}}{2\times 10^{-18}\pu{m}}=10^{11}\pu{eV/c}
 $$
+Which is a very large energy, so we need very powerful machines to get these momenta
+- Particle sources 
+    - Accelerators
+    - Cosmic rays
+    - Radioactive sources
+![[Pasted image 20260323113129.png]]
+- Particle detectors
+    - Charged particle detectors
+    - Calorimeters
+    - Photon detectors
+- Cloud chamber
+    - Invented in $\hspace{0pt}1911$ by C.T.R. Wilson
+    - Has alcohols that allow stuff to be detected
+## History
+For particle phyics in $\hspace{0pt}1930$, we only had $\hspace{0pt}3$ known fundamental particles, $e^{-},p,\gamma$, and quantum mechanics is new
+Electrons have spin
 
 
 
