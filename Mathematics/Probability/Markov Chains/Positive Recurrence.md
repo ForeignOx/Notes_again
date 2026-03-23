@@ -44,7 +44,27 @@ To show the third implies the first, we suppose that we have an invariant ditrib
 $$
 \frac{\pi_{i}}{\pi_{k}}\geq \gamma_{i}^{k}
 $$
-By a previous theorem, 
+By a previous theorem, and hence $\pi_{j}>0$ for all $j\in I$, since $\gamma_{j}^{k}>0$
+We showed that $m_{k}=\sum_{j\in I}\gamma_{j}^{k}$, so
+$$
+m_{k} =\sum_{j\in  I}\gamma_{j}^{k}\leq \sum_{j\in  I} \frac{\pi_{j}}{\pi_{k}}=\frac{1}{\pi_{k}}<\infty
+$$
+For all $k\in I$
+Finally to show that $\pi_{i}=\frac{1}{m_{i}}$,
+By recurrence, we have
+$$
+\frac{\pi_{i}}{\pi_{k}}=\gamma^{k}_{i}~i\in I
+$$
+Now we showed that
+$$
+m_{k}=\sum_{i\in I}\gamma_{i}^{k}
+$$
+Therefore
+$$
+\underbrace{ \sum_{i\in I} \frac{\pi_{i}}{\pi _{k}} }_{ =\frac{1}{\pi_{k}} }=\underbrace{  \sum_{i\in I}\gamma^{k}_{i} }_{ =m_{k} }
+$$
+And we are done
+
 ## Example
 Consider the simple random walk on $\mathbb{Z}$, as described below:
 ![[Pasted image 20260323145259.png]]
@@ -60,3 +80,5 @@ c\pi_{i}=c,~i\in I
 $$
 For some $c\in \mathbb{R}_{>0}$, but since $\sum_{i\in \mathbb{Z}}1=\infty$, this can't be normalisable, so there is no invariant distribution
 Therefore the theorem above tells us we can't have positive recurrence, so we have null recurrence
+___
+One can work out the stationary distribution fot the following Markov chain
