@@ -249,3 +249,43 @@ $$
     Here $\pi^{C_{i}}$ is the unique stationary distribution supported on $C_{i}$
 ## Example
 Consider the following example
+![[Pasted image 20260323230408.png]]
+At each step, the Markov chain chooses uniformly from all the possible outwards arrows. For example, if $X_{n}=F$, then
+$$
+X_{n+1}=\begin{cases}
+G & \text{ with probability }\frac{1}{2} \\
+B & \text{with probability }\frac{1}{2}
+\end{cases}
+$$
+The corresponding stochastic matrix is
+$$
+P=\begin{pmatrix}
+0 & 1 & 0 & 0 & 0 & 0 & 0 \\
+1 & 0 & 0 & 0 & 0 & 0 & 0 \\
+0 & 0 & 0 & \frac{1}{2} & \frac{1}{2} & 0 & 0 \\
+0 & 0 & \frac{1}{2} & 0 & \frac{1}{2} & 0 & 0 \\
+0 & 0 & \frac{1}{2} & \frac{1}{2} & 0 & 0 & 0  \\
+0 & \frac{1}{2} & 0 & 0 & 0 & 0 & \frac{1}{2}\\
+0 & 0 & 0 & 0 & 0 & 0 & 1
+\end{pmatrix}
+$$
+Now to find the tationary distributions directly from $P$ would involve solving an equation with $\hspace{0pt}7$ variables (hard!) however, we can simply look at the communicating classes. We see that the closed communicating classes are $\left\{ A,B \right\}$ and $\left\{ C,D,E \right\}$ ($\left\{ F,G \right\}$ is not closed)
+The state space is finite, so all closed communicating classes are positive recurrent. Therefore, there is one stationary distribution on $\left\{ A,B \right\}$, $\pi^{\left\{ A,B \right\}}$, and one supported on $\left\{ C,D,E \right\}$, $\pi^{\left\{ C,D,E \right\}}$
+All stationary distributions are combinations of these two
+To find $\pi^{\left\{ A,B \right\}}$ we only need to consider the Markov chain restricted to $\left\{ A,B \right\}$, we easily see (e.g. by symmetry) that it's given by
+$$
+\pi^{\left\{ A,B \right\}}=\begin{pmatrix}
+\frac{1}{2} & \frac{1}{2} & 0 & 0 & 0 & 0 & 0
+\end{pmatrix}
+$$
+Similarly, to find $\pi^{\left\{ C,D,E \right\}}$, we look at the Markov chain restricted to $\left\{ C,D,E \right\}$ and see that
+$$
+\pi^{\left\{ C,D,E \right\}}=\begin{pmatrix}
+0 & 0 & \frac{1}{3} & \frac{1}{3} & \frac{1}{3} & 0 & 0
+\end{pmatrix}
+
+$$
+Therefore the set of all stationary distributions is given by
+$$
+\pi=\left\{ a\pi^{\left\{ A,B \right\}}+(1-a)\pi^{\left\{ C,D,E \right\}} \right\}
+$$
