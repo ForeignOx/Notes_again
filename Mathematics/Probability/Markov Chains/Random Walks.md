@@ -53,3 +53,16 @@ Then $X_{n}^{+}$ and $X_{n}^{-}$ are independent symmetric random walks on $\fra
 $$
 P_{00}^{2n}=\left( {2n \choose n }\left( \frac{1}{2} \right)^{2n} \right)^{2}\sim \frac{2}{A^{2}n}\text{ as }n\to\infty
 $$
+## Random Walks on Graphs
+Recall a [[Graphs|graph]] $G=(V,E)$ consists of a set of vertices $V$ and edges $E\subseteq V\times V$ (note we don't allow more than one edge for any pair of vertices)
+We suppose that we have a Markov chain whereby if $X_{n}=i$, then we choose uniformly amongst all $j\in V$ such that $\left\{ i,j \right\}$ is an edge (i.e. belongs to $E$), and we set $X_{n+1}=j$ 
+Therefore the transition matrix is given by
+$$
+P_{ij}=\begin{cases}
+\frac{1}{\deg(i)} & \left\{ i,j \right\}\in  E \\
+0 & \text{otherwise}
+\end{cases}
+$$
+Where $\deg(i)$ is the number of edges containing $i$. Note that with self loops, a loop counts as one more in degree
+### Example
+Consider the Markov chain in the following diagram
