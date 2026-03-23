@@ -44,7 +44,23 @@ Which is a very large energy, so we need very powerful machines to get these mom
     - Has alcohols that allow stuff to be detected
 ## History
 For particle phyics in $\hspace{0pt}1930$, we only had $\hspace{0pt}3$ known fundamental particles, $e^{-},p,\gamma$, and quantum mechanics is new
-Electrons have spin
+Electrons have spin (conflicts with special relativity)
+Then Dirac's theory, was to start from the energy-mass relation
+$$
+E^{2}=p^{2}c^{2}+m_{0}^{2}c^{4}
+$$
+Which merges quantum mechanics and special relativity
+He also came up with the Dirac equation
+From his theory, we could predict the existence of a negative solution to the Dirac equation, which we would consider a "negative electron" i.e. a teeny tiny particle with positive charge
+Then Anderson discovers the positron by measuring cosmic rays with a cloud chamber
+By applying a magnetic field, positively charged particles curve one way, negatively charged curve the other way, and there can be a lead sheet to slow the particle down to give direction of travel
+Next the muon $\mu^{-}$ was discovered in $\hspace{0pt}1937$ by cosmic rays by Anderson using a bubble chamber in a magnetic field. Curvatre was much smaller than for an electron telling us it has larger momentum and hence mass of $\sim 200$ times that of electron
+Next the pion came, it was first proposed by Yukawa in $\hspace{0pt}1935$, using a range of nuclear interactions. In $\hspace{0pt}1947$ it was discovered using photographic emulsion plates
+It has properties such as strong interaction, consitent with exchange particle for nuclear inteactions, it is observed in $\hspace{0pt}3$ diferent charges
+Next in the 1950s many many new particles were discovered using cosmic rays, accelerators and bubble chambers
+A few of these particles were predicted such as the neutral pion, the antiproton and the neutrino
+Also a bunch of other random ones, so we needed a way to organise this, to go from experiment to theory
+This is why the standard model was develobed in the 1960s and 1970s
 
 
 
