@@ -64,6 +64,28 @@ P_{ij}=\begin{cases}
 \end{cases}
 $$
 Where $\deg(i)$ is the number of edges containing $i$. Note that with self loops, a loop counts as one more in degree
+## Theorem
+Suppose that $G=(V,E)$ is a graph, and $P$ is the associated Markov chain given above, then the [[Invariant Distributions|stationary measures]] are given by
+$$
+\pi_{i}=c \deg(i)
+$$
+For $c>0$ which satisfy the [[Detailed Balance|detailed balance]] equations 
+$$
+\pi_{i}P_{ij}=\pi_{j}P_{ji}
+$$
+For $i,j\in V$
+### Proof
+By [[Detailed Balance#Lemma|this theorem]], we imply need to show that $\pi$, defined by 
+$$
+\pi_{i}=\deg(i)
+$$
+Satisfies the detailed balance equations
+If $\left\{ i,j \right\}\not\in E$ i.e. there's no edge between $i$ and $j$, then $P_{ij}=P_{ji}=0$ and it's trivial
+If $\left\{ i,j \right\}\in E$ i.e. there is an edge between $i$ and $j$, then $P_{ij}=\frac{1}{\deg(i)}$, so
+$$
+\pi_{i}P_{ij}=\deg(i)  \frac{1}{\deg(i)}=1
+$$
+And similarly $\pi_{j}P_{ji}=1$, hence detailed balance is satisfied
 ### Example
 Consider the Markov chain in the following diagram
 ![[Pasted image 20260323222338.png]]
@@ -82,9 +104,3 @@ P_{ij}=\begin{cases}
 \end{cases}
 $$
 A graph is [[Connectedness of Graphs|connected]] if the associated Markov chain is [[Irreducible Markov Chains|irreducible]]. This is equivalent to the existence of a path between any two vertices
-## Theorem
-Suppose that $G=(V,E)$ is a graph, and $P$ is the associated Markov chain given above, then the [[Invariant Distributions|stationary measures]] are given by
-$$
-\pi_{i}=c \deg(i)
-$$
-For $c>0$ which satisfy the [[Detailed Balance|detailed balance]] equations
