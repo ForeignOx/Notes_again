@@ -11,7 +11,13 @@ $$
 Is null recurrent
 ## Theorem
 Suppose $P$ is irreducible. The following are equivalent
-- 
+- Every state $i\in I$ is positive recurrent
+- Some state $k\in I$ is positive recurrent
+- $P$ has an [[Invariant Distributions|invariant distribution]] $\pi$
+When any (and hence all) of these conditions hold,
+$$
+\pi_{i} = \frac{1}{m_{i}}
+$$
 ## Example
 Consider the simple random walk on $\mathbb{Z}$, as described below:
 ![[Pasted image 20260323145259.png]]
