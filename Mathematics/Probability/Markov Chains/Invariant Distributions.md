@@ -287,5 +287,5 @@ $$
 $$
 Therefore the set of all stationary distributions is given by
 $$
-\pi=\left\{ a\pi^{\left\{ A,B \right\}}+(1-a)\pi^{\left\{ C,D,E \right\}} \right\}
+\pi=\left\{ a\pi^{\left\{ A,B \right\}}+(1-a)\pi^{\left\{ C,D,E \right\}}:\middle|: 0\leq a\leq 1 \right\}
 $$
