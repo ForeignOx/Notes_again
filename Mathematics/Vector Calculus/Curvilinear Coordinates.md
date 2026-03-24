@@ -81,7 +81,5 @@ Here $r>0,\theta \in [0,\pi],\phi \in[0,2\pi]$
 $$
 \underline{x}(r,\theta,\phi)=r\sin\theta \cos \phi \underline{e}_{1}+r\sin\theta \sin \phi \underline{e}_{2}+r\cos\theta \underline{e}_{3}
 $$
-![[Curvilinear Coordinates 2025-10-09 15.42.04.excalidraw]]
+![[Pasted image 20260324162453.png]]
 They have scale factors $h_{r}=1,h_{\theta}=r,h_{\phi}=r\sin\theta$
-To derive the parametrisation, we firstly imagine taking a side view of the sphere:
-![[Curvilinear Coordinates 2025-10-09 15.44.56.excalidraw]]
