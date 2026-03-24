@@ -5,7 +5,7 @@ $$
 $$
 A state $i$ is transient if 
 $$
-\mathbb{P}_{i}(X_{n}=1\text{ for infinitely many }n)=0
+\mathbb{P}_{i}(X_{n}=i\text{ for infinitely many }n)=0
 $$
 ## Question
 We might wonder if a state can be neither, i.e. is it possible for
@@ -127,7 +127,7 @@ $$
 $$
 The idea is that recurrent means infinitely many $T_{i}^{r}$ happen, so it can't spend forever not at $i$
 ## Lemma
-For $r\geq \phi$ conditional on $\left\{ T_{i}^{r-1}<\infty \right\}$, the excurion length $S_{i}^{r}$ is independent of $X_{0},X_{1},\dots,X_{T_{i}^{r-1}}$ and
+For $r\geq \phi$ conditional on $\left\{ T_{i}^{r-1}<\infty \right\}$, the excursion length $S_{i}^{r}$ is independent of $X_{0},X_{1},\dots,X_{T_{i}^{r-1}}$ and
 $$
 \mathbb{P}_{i}(S^{r}_{i}=n\mid T_{i}^{r-1}<\infty)=\mathbb{P}_{i}(T_{i}= n)
 $$
