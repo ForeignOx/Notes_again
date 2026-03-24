@@ -183,7 +183,7 @@ $$
 $$
 \implies \mathbb{E}_{i}\left( \sum_{j\in  I}V_{j}^{n} \right)=n
 $$
-So by [[Monotone Convergence Theorem|monotone convergence theorem]], this implie
+So by [[Monotone Convergence Theorem|monotone convergence theorem]], this implies
 $$
 \sum_{j\in I}\mathbb{E}_{i}(V_{j})=\infty
 $$
