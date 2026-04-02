@@ -191,7 +191,7 @@ $$
 e^{ z }e^{ -z }=e^{ z-z }=e^{ 0 }=1
 $$
 And consequenctly that $e^{ -z }=\frac{1}{e^{ z }}$
-Lastly, we have that $e^{ z }=1=e^{ 0 }e^{ i_{0} }$ imples that 
+Lastly, we have that $e^{ z }=1=e^{ 0 }e^{ i0}$ imples that 
 $$
 \mathfrak{R}(z)=0,\mathfrak{I}(z)=0\mod 2\pi
 $$
