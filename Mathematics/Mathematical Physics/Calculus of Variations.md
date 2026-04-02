@@ -1,5 +1,5 @@
 ## Functions of $\hspace{0pt}1$ Variable
-A [[Functions\Bigg{|}function]] $f:\mathbb{R}\to \mathbb{R}$ $f(s)$ has an [[Critical Points\Bigg{|}extremum]] (maximum or minimum) at $s=s_{0}$ if
+A [[Functions|function]] $f:\mathbb{R}\to \mathbb{R}$ $f(s)$ has an [[Critical Points|extremum]] (maximum or minimum) at $s=s_{0}$ if
 $$
 \frac{d f}{ds} \Bigg{|}_{s=s_{0}}=0
 $$
