@@ -111,7 +111,7 @@ Since this expression equals the negative of itself, it must be zero
 
 ## Example
 Compute the divergence and curl of the vector field $\underline{f}(\underline{x})=-\underline{x}$ and $\underline{g}(\underline{x})=(y-x)\underline{e}_{1}-(x+y)\underline{e}_{2}$
-Using the proposition:
+Using the proposition
 $$
 \underline{\nabla} \cdot \underline{f} =\frac{ \partial }{ \partial x } (-x)+\frac{ \partial  }{ \partial y } (-y)+\frac{ \partial  }{ \partial z } (-z)=-3
 $$
