@@ -5,7 +5,7 @@ Essentially we see a half cycle of oscillation, starting with the string in an e
 In a stationary wave, all points between a pair of neighbouring nodes oscillate in phase; points either side of a node oscillate in antiphase. In a progressive wave, there is a gradual change of phase along the wave
 In a progressive wave, all points oscillate with the same amplitude. In a stationary wave, the amplitude of vibration varies smoothly from zero (at the nodes) to a maximum at the antinodes
 ## Stationary Waves in Air columns
-If you blow across the open top of a tube or pipe, [[Longitudinal Waves|longitudinal]] stationary waves are set up in the air column. Unlike in a string, the stationary wave has an antinode at the open end. The first few [[Harmonics]] are shown below:
+If you blow across the open top of a tube or pipe, [[Longitudinal Waves|longitudinal]] stationary waves are set up in the air column. Unlike in a string, the stationary wave has an antinode at the open end. The first few [[Gitt/Physics/Component 3/Wave Properties/Harmonics]] are shown below:
 ![[Pasted image 20240408215906.png]]
 
 #Physics #Waves #Definition
