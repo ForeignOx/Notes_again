@@ -189,18 +189,21 @@ ___
 Similar to the above statement, we can find a criterion to continuity at a point that is given completely by open sets:
 Let $A\subseteq \mathbb{C}$ be an open set and let $f:A\to \mathbb{C}$ be a given map. Then $f$ is continuous at $z\in A$ iff $z_{0}\in (f^{-1}(U))^{0}$ for every open set $U\subseteq \mathbb{C}$ that contains $f(z_{0})$
 ___
-We can use this theorem to classify sets!
-- For any $z_{0}\in\mathbb{C}$, $\left\{ z_{0} \right\}$ is closed, so if $f$ is continuous, then $f^{-1}(\left\{ z_{0} \right\})$ is closed
-For example
+We can ue continuous functions to determine the openness or closedness of sets!!
+## Example
+For any $y\in \mathbb{C}$ and any continuous function $f$ we have that $f^{-1}(\left\{ y \right\})$ is a closed set. For example
 $$
-\left\{ z\in \mathbb{C}:\middle|: \left| z \right| =1 \right\}
+C=\left\{ z\in \mathbb{C}:\middle|:\left| z \right| =1 \right\}=f^{-1}(\left\{ 1 \right\})
 $$
-ehh
-stuff
-### Remark
-SImilarly to the above statement, we can find a criterion to continuity at a point that is given completely by open sets:
-Let 
-
-
-
+Where $f$ is the continuous function $f(z)=\left| z \right|$ and as such it is a closed set
+___
+The set
+$$
+U=\left\{ z=x+iy\in  \mathbb{C}:\middle|:(x^{2}+y^{2})\sin ^{3}(\sqrt{ x^{2}+7 })>2 \right\}
+$$
+Is open as it can be realised as $f^{-1}((2,\infty))$ for the continuous function
+$$
+f(z)=f(x+iy)=(x^{2}+y^{2})\sin ^{3}(\sqrt{ x^{2}+7 })
+$$
+___
 #Mathematics #Analysis #Definition
