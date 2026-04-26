@@ -173,8 +173,22 @@ Let $A\subseteq \mathbb{C}$ be an [[Open Sets|open set]] and let $f:A\to \mathbb
 ### Remark
 It might seem odd that the set we investivgate, $A$, is open. This is to avoid issues where the [[Image|preimage]] of a set omehow lands on the boundary of $A$. It is possible to define being open relative to $A$, at which the above theorem holds
 ### Proof
-We will focus on the equivalence between continuity and the preimage of open sets
-
+We will focus on the equivalence between continuity and the preimage of open sets. The equivalent statement for closed sets follows from [[Law of De Morgan|De Morgan's laws]]
+We start by assuming $f$ is continuios on $A$. Let $U$ be open and let $z_{0}\in F^{-1}(U)$. We want to show that there is an open ball around $z_{0}$ that is completely in $f^{-1}(U)$. 
+By definition we have $f(z_{0})\in U$ which is open. Consequently, there exists $\varepsilon>0$ such that
+$$
+B_{\varepsilon}(f(z_{0}))\subseteq U
+$$
+Since $f$ is continuous and $z_{0}\in A$, which is open, we can find $\delta>0$ such that $B_{\delta}(z_{0})\subseteq A$ and if $z\in B_{\delta}(z_{0})$, then $f(z)\in B_{\varepsilon}(f(z_{0}))$. In other words, $B_{\delta}(z_{0})\subseteq f^{-1}(U)$. Since $z_{0}$ was arbitrary we conclude that $f^{-1}(U)$ is open
+Conversely, asuming that $f^{-1}(U)$ is open for any open $U$, we consider $z_{0}\in A$
+For a given $\varepsilon>0$ we define $U=B_{\varepsilon}(f(z))$ which we know to be open. As $z_{0}\in f^{-1}(U)$ and $U$ is open, our assumption on $f$ states that we can find $\delta>0$ such that $B_{\delta}(z_{0})\subseteq f^{-1}(U)$
+In other words, for any $z_{0}\in A$ and any $\varepsilon>0$ we can find $\delta>0$ such that if $z\in B_{\delta}(z_{0})$ then $f(z)\in B_{\varepsilon}(f(z_{0}))$
+Hence we are done :)
+___
+## Remark
+Similar to the above statement, we can find a criterion to continuity at a point that is given completely by open sets:
+Let $A\subseteq \mathbb{C}$ be an open set and let $f:A\to \mathbb{C}$ be a given map. Then $f$ is continuous at $z\in A$ iff $z_{0}\in (f^{-1}(U))^{0}$ for every open set $U\subseteq \mathbb{C}$ that contains $f(z_{0})$
+___
 We can use this theorem to classify sets!
 - For any $z_{0}\in\mathbb{C}$, $\left\{ z_{0} \right\}$ is closed, so if $f$ is continuous, then $f^{-1}(\left\{ z_{0} \right\})$ is closed
 For example
