@@ -172,6 +172,9 @@ Let $A\subseteq \mathbb{C}$ be an [[Open Sets|open set]] and let $f:A\to \mathbb
 - $f^{-1}(F)$ is a closed set for every closed set $F\subseteq \mathbb{C}$
 ### Remark
 It might seem odd that the set we investivgate, $A$, is open. This is to avoid issues where the [[Image|preimage]] of a set omehow lands on the boundary of $A$. It is possible to define being open relative to $A$, at which the above theorem holds
+### Proof
+We will focus on the equivalence between continuity and the preimage of open sets
+
 We can use this theorem to classify sets!
 - For any $z_{0}\in\mathbb{C}$, $\left\{ z_{0} \right\}$ is closed, so if $f$ is continuous, then $f^{-1}(\left\{ z_{0} \right\})$ is closed
 For example
