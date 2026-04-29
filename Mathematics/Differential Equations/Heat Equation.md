@@ -247,7 +247,7 @@ $$
 \Phi(r,\theta)=\sum_{n=0}^{\infty}\sum_{k=1}^{\infty}\Phi(n,k)(r,\theta)
 $$
 
-We do this for $n>0$, $J_{n}(0)=0$ and $j_{n,0}=0$ (eqwuivalent to $\sin(0x)=0$)
+We do this for $n>0$, $J_{n}(0)=0$ and $j_{n,0}=0$ (equivalent to $\sin(0x)=0$)
 We have $J_{0}(0)=1$ and the homogeneouus dirichlet boundary conditions require $R_{n}(r)=0$, so we cannot have $J_{0}$($\hspace{0pt}0$,r)
 Crucially we have an infinite sum of functions $\sin(n\theta),\cos(n\theta),J_{n}(\sqrt{ \lambda_{n,k}r\ })$ which can come from eigenvalue problems, so it has the same structure of as the fourier series
 Finally, we solve for the time dependent behaviour:
