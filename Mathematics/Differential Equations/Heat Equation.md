@@ -183,7 +183,7 @@ $$
 \frac{1}{r}\frac{ \partial  }{ \partial r } \left( r\frac{ \partial R\Theta }{ \partial r }  \right)+\frac{1}{r^{2}}\frac{ \partial^{2}R\Theta }{ \partial \theta^{2} } +\lambda R\Theta =0
 $$
 $$
-\implies \Theta  \frac{1}{r}\frac{d }{dr} \left( r \frac{d R}{dr}  \right)+R  \frac{1}{r^{2}}\frac{d ^{2}\Theta}{d\theta^{2}}+\lambda RP=0
+\implies \Theta  \frac{1}{r}\frac{d }{dr} \left( r \frac{d R}{dr}  \right)+R  \frac{1}{r^{2}}\frac{d ^{2}\Theta}{d\theta^{2}}+\lambda R\Theta=0
 $$
 $$
 \implies \frac{r}{R} \frac{d }{dr} \left( r\frac{d R}{dr}  \right)+\frac{1}{\Theta}\frac{d^{2} \Theta}{d\theta^{2}}+\lambda r^{2}=0 
