@@ -23,6 +23,6 @@ $$
 ## Orthogonality
 The functions $J_{n}(x)$ are [[Orthogonality|orthogonal]] on the interval $[0,L_{r}]$ with respect to the weight $x$ over their zeros $j_{n,k}$:
 $$
-\int _{0}^{L_{r}}xJ_{n}\left( \frac{j_{n,k}x}{L_{r}} \right)J\left( \frac{J_{n,m}x}{L_{r}} \right) \, dx =\frac{L_{r}^{2}}{2}(J_{n+1}(j_{n,k}))^{2}\delta_{km}
+\int _{0}^{L_{r}}xJ_{n}\left( \frac{j_{n,k}x}{L_{r}} \right)J_{m}\left( \frac{J_{n,m}x}{L_{r}} \right) \, dx =\frac{L_{r}^{2}}{2}(J_{n+1}(j_{n,k}))^{2}\delta_{km}
 $$
 And the zeros $j_{n,k},J_{n}(j_{n,k})=0$ determine the [[Eigenvalues|eigenvalues]] $\left( \frac{\lambda_{n,k}}{L_{r}} \right)^{2}$
