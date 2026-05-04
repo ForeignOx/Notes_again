@@ -39,20 +39,14 @@ $$
 $$
  \frac{1}{L}\int _{-L}^{L} \cos\left( \frac{n\pi x}{L} \right)\cos\left( \frac{m\pi x}{L} \right) \, dx =\begin{cases}
 0&\text{if }m\neq n\\1&\text{if }m=n
-\end{cases}
+\end{cases}=\delta_{mn}
 $$
 $$
 \frac{1}{L}\int _{-L}^{L}\sin\left( \frac{n\pi x}{L} \right)\sin\left( \frac{m\pi x}{L} \right) \, dx =\begin{cases}
 0&\text{if }m\neq n\\1&\text{if }m=n
-\end{cases}
+\end{cases}=\delta_{mn}
 $$
-It is convenient to use the [[Kronecker Delta Function|Kronecker Delta function]] to rewrite the last two:
-$$
- \frac{1}{L}\int _{-L}^{L} \cos\left( \frac{n\pi x}{L} \right)\cos\left( \frac{m\pi x}{L} \right) \, dx =\delta_{mn}
-$$
-$$
-\frac{1}{L}\int _{-L}^{L}\sin\left( \frac{n\pi x}{L} \right)\sin\left( \frac{m\pi x}{L} \right) \, dx =\delta_{mn}
-$$
+Using the [[Kronecker Delta Function|Kronecker Delta function]] for the last two
 ### Proof
 For the first:
 $$
