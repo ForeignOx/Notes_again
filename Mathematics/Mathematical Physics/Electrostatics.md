@@ -68,6 +68,6 @@ $$
 =\frac{\varepsilon_{0}}{2}\int _{\mathbb{R}^{3}}\left| \underline{E}(\underline{r}) \right| ^{2} \, d^{3}\underline{r}  
 $$
 $$
-\implies U=\frac{\varepsilon}{2}\int _{\mathbb{R}^{3}}\left| \underline{E}(\underline{r}) \right| ^{2} \, d^{3}\underline{r}
+\implies U=\frac{\varepsilon_{0}}{2}\int _{\mathbb{R}^{3}}\left| \underline{E}(\underline{r}) \right| ^{2} \, d^{3}\underline{r}
 $$
 
