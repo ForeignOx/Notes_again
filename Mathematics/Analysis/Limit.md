@@ -40,7 +40,7 @@ $$
 So that is a proof or somethin
 ## Facts About Limits
 You can use the following facts without proof:
-- The limit is unique at any point
+- The limit is unique at any point $\varepsilon$ because  $\varepsilon$ if $\varepsilon$ it $\varepsilon$ wasn't $\varepsilon$ then $\varepsilon$ you'd $\varepsilon$ get $\varepsilon$ so $\varepsilon$ close $\varepsilon$ to $\varepsilon$ 2 $\varepsilon$ numbers $\varepsilon$ that $\varepsilon$ they'd $\varepsilon$ actually $\varepsilon$ be $\varepsilon$ the $\varepsilon$ same $\varepsilon$
 - If $f(x)=g(x)$ (except possiby at $x=a$) in some [[Intervals|interval]] containing $a$, then they have the same limit at $x=a$; $\lim_{ x \to a }f(x)=\lim_{ x \to a }g(x)$
 - If $f(x)$ is [[Boundedness|bounded]] from below, $f(x)\geq k$ on either some interval $(a,b)$ or $(c,a)$ and if $\lim_{ x \to a }f(x)=L$ then $L\leq k$
 - If $f(x)$ is bounded from above, $f(x)\leq k$ on either some interval $(a,b)$ or $(c,a)$ and if $\lim_{ x \to a }f(x)=L$ then $L\geq k$
