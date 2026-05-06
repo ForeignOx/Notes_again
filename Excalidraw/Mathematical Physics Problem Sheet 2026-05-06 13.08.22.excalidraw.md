@@ -7,89 +7,29 @@ tags: [excalidraw]
 ==⚠  Switch to EXCALIDRAW VIEW in the MORE OPTIONS menu of this document. ⚠==
 
 
-# Text Elements
+# Excalidraw Data
+## Text Elements
+## Embedded Files
+712fdb130c5e77acb5d533ff1609025fb953137e: [[Pasted Image 20260506130824_342.png]]
+6ffad444b430480a050d908f0b28d2a323e2e264: [[Pasted Image 20260506131126_315.png]]
+
 %%
-# Drawing
-```json
-{
-	"type": "excalidraw",
-	"version": 2,
-	"source": "https://github.com/zsviczian/obsidian-excalidraw-plugin/releases/tag/2.0.18",
-	"elements": [
-		{
-			"type": "text",
-			"version": 9,
-			"versionNonce": 1400742850,
-			"isDeleted": true,
-			"id": "dajg1iZ7",
-			"fillStyle": "hachure",
-			"strokeWidth": 1,
-			"strokeStyle": "solid",
-			"roughness": 1,
-			"opacity": 100,
-			"angle": 0,
-			"x": -194.48040771484375,
-			"y": 357.3305892944336,
-			"strokeColor": "#1e1e1e",
-			"backgroundColor": "transparent",
-			"width": 58.319915771484375,
-			"height": 25,
-			"seed": 95933,
-			"groupIds": [],
-			"frameId": null,
-			"roundness": null,
-			"boundElements": [],
-			"updated": 1707229368170,
-			"link": null,
-			"locked": false,
-			"fontSize": 20,
-			"fontFamily": 1,
-			"text": "ffffff",
-			"rawText": "ffffff",
-			"textAlign": "left",
-			"verticalAlign": "top",
-			"containerId": null,
-			"originalText": "ffffff",
-			"lineHeight": 1.25,
-			"baseline": 17
-		}
-	],
-	"appState": {
-		"theme": "light",
-		"viewBackgroundColor": "#1e1e2e",
-		"currentItemStrokeColor": "#c6d0f5",
-		"currentItemBackgroundColor": "transparent",
-		"currentItemFillStyle": "solid",
-		"currentItemStrokeWidth": 0.5,
-		"currentItemStrokeStyle": "solid",
-		"currentItemRoughness": 0,
-		"currentItemOpacity": 100,
-		"currentItemFontFamily": 1,
-		"currentItemFontSize": 20,
-		"currentItemTextAlign": "left",
-		"currentItemStartArrowhead": null,
-		"currentItemEndArrowhead": "arrow",
-		"scrollX": 313.0973663330078,
-		"scrollY": -151.0550765991211,
-		"zoom": {
-			"value": 2
-		},
-		"currentItemRoundness": "round",
-		"gridSize": null,
-		"gridColor": {
-			"Bold": "#48486FFF",
-			"Regular": "#2C2C44FF"
-		},
-		"currentStrokeOptions": null,
-		"previousGridSize": null,
-		"frameRendering": {
-			"enabled": true,
-			"clip": true,
-			"name": true,
-			"outline": true
-		}
-	},
-	"files": {}
-}
+## Drawing
+```compressed-json
+N4KAkARALgngDgUwgLgAQQQDwMYEMA2AlgCYBOuA7hADTgQBuCpAzoQPYB2KqATLZMzYBXUtiRoIACyhQ4zZAHoFAc0JRJQgEYA6bGwC2CgF7N6hbEcK4OCtptbErHALRY8RMpWdx8Q1TdIEfARcZgRmBShcZQUebTiAdho6IIR9BA4oZm4AbXAwUDAiiBJuCA4jKDYAWQANbAA2ABkAUQSAEQAJAEYAFSiAfRbOgClkoshYRDLCfWikfmLMbmcG
+
+hoBObXXugFYdgA59gGYE/fWABga+fMgYFaOAFiPtI+7uhqPzngeLnkeHxaQCgkdTcdYJAE3KQIQjKaTcI48c6AiDWZTBbjIqHMKCkNgAawQAGE2Pg2KQyrjrMw4LhAplxsVNLhsPjlHihBxiCSyRSJFSODS6RkoIzIAAzQj4fAAZVgGIkgg8YogOLxhIA6iDJJjtDsUWqCQg5TAFeglaUURy4Rxwtk0FiJhA2LTsGo7mhuudHcV2cI4ABJYj21A5
+
+AC6KPF5HSQe4HCE0pRhC5WDKuHOKo5XNtzBD8cT2IQCGICO6hwSBwSPsgjBY7C4aH1UNrrE4ADlOGJuGWkacKzxrk7CMx2qkoMXuOKCGEUZphFyWsF0pk8wn8CihHBiLhxyXPQlTucEjwLg9LvsUUQOPi42vL2xWRO0FP8DPsVEoEIQxBEFzk8oVUlYJYwkBJuh4cViE0bpPmwHYEAPFlNB2YgdiOI5xXFd5zl+HZxU0dY0JghIFmxdxxFDG4wG6
+
+QFqJuMN8gAX0WQpilKCRNHodp6CEAAxZR8WYDUKCJfAEgAJRlJoAE0dh4ABVFUpgoko5mUUinWWNBVgafZtDOBodnWREjiMmCjhRD1UGcb49TOM9wIeHY3jAw4UWBYhQTQcFnnOPYdgebp1nWHgywrFFJBhOFRTQB4Hj0hJwXOJyzn2J5wqhNEzWrVVcSNHlyUpchBVpelRVnFk2SzblSUK/liqFMrAKlWV5RUi0SwNPLNW1XUmydQ1CRNM1VVJS
+
+0oWtSQcxDHKXRZd1u29FE/U3IMQ3DSNowQEDUHzdcoWTYhUwkXBukzediGm28CwGos91QK5ArkqsGhRFt60W/rine9tOwo+KfieY4LwOkcxyfVAXzfJ0505YhFzSEVVxu4pN23XduwPfYj0+Iz9gSV6oSvG80D2+9H3uqGEC6ncvzKX9HA4ADIylbb7ogBpMNwYg4oeTQnmS7H0x2c5iAufZxXOTQeH2YgeFwEyEB4JWGgeFVmHI3IqJo7X6KY8A
+
+IzoXA4DgOUdwo1joEi9IyiIaLGQYQgEAoAAhSqVq5Aq+XQABiboEH95WHewEQyoDcd9DldViVq72IB9xpiHOcUdmD0ORXDtI3dZD2at5IrqVKkU09IMOI94lrhvasbOvyCAQ9LjOI6jo0tU8nUHT1RZ6/TzJM8j7rjTasoOpLsu0nE4QbTtTFu4b8f9AAeVdBbPSWuv56btJeM4KBeNwfQpSsnXik3vvy93mVCCMCikTn3uoH73osCgABBO2G3QY
+
+JxXKjeH/7s2pA36lzYBQSK3Nrr7VPv/COLQuSvxAWAkI7M6R4ioN3DWeJpS1EWqrbQqsByq2CuBR6GDsBYPwNJbgx4Gj6S9PsGWXwjj7G6IFbuRg2AGG4KxGsBAhAUXOPggmB4PjdAJmlRKhkmL30bufCeF0roSGqg7dkJAr430gd3VRec6qoB4RAF2pJ2Y+wBvsBovELEqnEggZQCY6RlB9jwIkTi4qWOkX/WRUAW6EmXlAesyMoGQDgIEMwwhm
+
+AAHFSBqOvhRMmdcowHwQNYlMUSmbcKhBkXAmhgj3VxPwlE2AiBwG4Hk6mUIOCJJKaQfJUJhBQCvBRUp7jih2AAFYIGwFkGUFS4DVDYEdOBWScmTmnAgcAzE6BAXCNwxiIBGJAA==
 ```
 %%
