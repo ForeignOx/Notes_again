@@ -1,4 +1,4 @@
-What is the [[Kinetic Energy]] of the rotating system of connected spheres in the diagram below?
+zWhat is the [[Kinetic Energy]] of the rotating system of connected spheres in the diagram below?
 ![[Rotational Kinetic Energy 2024-04-23 21.55.59.excalidraw]]
 Taking the mass of the bar to be negligible:
 $$
