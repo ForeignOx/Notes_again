@@ -1,4 +1,4 @@
- ## Prototype Problem via this Method
+## Prototype Problem via this Method
 Consider the [[Linear Partial Differential Equations|linear]] [[Partial Differential Equations|PDE]] 
 $$
 \frac{ \partial u }{ \partial x } =\mathcal{L}u+h(x,t)
