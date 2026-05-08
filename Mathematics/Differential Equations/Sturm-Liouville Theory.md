@@ -37,7 +37,7 @@ $$
 $$
 \implies c_{k}= \frac{\left< f,y_{k} \right> }{\lambda_{k}\left< y_{k},ry_{k} \right> }
 $$
-And the siolution is the series solution
+And the solution is the series solution
 $$
 y=\sum_{k}c_{k}y_{k}
 $$
