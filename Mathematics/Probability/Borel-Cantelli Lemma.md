@@ -18,6 +18,10 @@ For the second part, the event $A^{c}=\left\{ A_{n}\text{ finitely often} \right
 $$
 B_{n}^{c}=\bigcap_{k=n}^{\infty}A_{k}^{c}\equiv \left\{ \text{none of }A_{k},k\geq n,\text{occurs} \right\}
 $$
+As
+$$
+A^{c}=\bigcup_{n=1}\bigcap_{k=n}^\infty A_{k}^{c}=\bigcup_{n=1}^{\infty}B_{n}^{c}
+$$
 So for $\mathbb{P}(A^{c})=0$, it is sufficient to show that $\mathbb{P}(B_{n}^{c})=0$ for all $n\geq 1$. By independence and the elementary inequality $1-x\leq e^{ -x }$ with $x\geq 0$, we get
 $$
 \mathbb{P}\left( \bigcap_{k=n}^{m}A_{k}^{c} \right)=\prod_{k=n}^{m}\mathbb{P}(A^{c}_{k})=\prod_{k=n}^{m}(1-\mathbb{P}(A_{k}))\leq \exp\left( -\sum_{k=n}^{m}\mathbb{P}(A_{k}) \right)
