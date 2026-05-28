@@ -13,7 +13,7 @@ For every $n\geq 1$, let $B_{n}:=\bigcup _{k=n}^{\infty}A_{k}$ be the event that
 $$
 0\leq \mathbb{P}(A)\leq \mathbb{P}(B_{n})\leq \sum_{k=n}^{\infty}\mathbb{P}(A_{k})\to 0
 $$
-As $n\to \infty$  whenever $\sum_{k=n}^{\infty}\mathbb{P}(A_{k})<\infty$. Consequently $\mathbb{P}(A)=0$
+As $n\to \infty$  whenever $\sum_{k=1}^{\infty}\mathbb{P}(A_{k})<\infty$. Consequently $\mathbb{P}(A)=0$
 For the second part, the event $A^{c}=\left\{ A_{n}\text{ finitely often} \right\}$ is related to the sequence
 $$
 B_{n}^{c}=\bigcap_{k=n}^{\infty}A_{k}^{c}\equiv \left\{ \text{none of }A_{k},k\geq n,\text{occurs} \right\}
