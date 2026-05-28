@@ -123,7 +123,7 @@ For $\gamma_{E}^{D}$, with probability $\frac{1}{2}$, $T_{D}=1$ and we don't vis
 $$
 (\gamma_{i}^{D})_{i \in \left\{ C,D,E \right\}}=\left( \frac{1}{2},1,1 \right)
 $$
-WHich is different to above, but when normalised, we get the same as above
+Which is different to above, but when normalised, we get the same as above
 This is in fact the invariant distribution for the Markov chain holly moly
 Let's make this rigorous !
 ## Theorem
