@@ -106,7 +106,6 @@ T_{i}^{r}-T_{i}^{r-1} & T_{i}^{r-1}<\infty \\
 0 & T_{i}^{r-1}=\infty
 \end{cases}
 $$
-
 ## Example
 If
 $$
