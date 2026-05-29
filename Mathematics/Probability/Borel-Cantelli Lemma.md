@@ -110,6 +110,3 @@ And thus by the Borel-Cantelli lemma, the event $A(\varepsilon)\equiv \left\{ \l
 By the discussion in the remark above and the monotonicity of $A(\varepsilon)$, the convergence event $C=\bigcap_{\varepsilon>0}A(\varepsilon)$ has probability $\hspace{0pt}1$. A more general result in the setting of the almost sure convergence is also considered
 
 
-$$
-p_{i,j}(n) = \begin{cases} \frac{1}{3} & \text{if } j = i+1 \text{ and } 0 \leq i < n, \text{ or } j = i-1 \text{ and } -n < i \leq 0 \\ \frac{2}{3} & \text{if } j = i-1 \text{ and } i > 0, \text{ or } j = i+1 \text{ and } i < 0 \\ \frac{1}{3} & \text{if } i = j = 0, \text{ or } i = j = n, \text{ or } i = j = -n \\ 0 & \text{otherwise} \end{cases}
-$$
