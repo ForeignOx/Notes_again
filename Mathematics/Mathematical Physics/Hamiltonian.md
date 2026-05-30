@@ -56,7 +56,7 @@ $$
 \dot{q}_{i}=\left\{ q_{i},H \right\}=\frac{ \partial H }{ \partial p_{i} } 
 $$
 $$
-\dot{p}_{i}\left\{ p_{i},H \right\}=-\frac{ \partial H }{ \partial q_{i} } 
+\dot{p}_{i}=\left\{ p_{i},H \right\}=-\frac{ \partial H }{ \partial q_{i} } 
 $$
 ### Proof
 The first thing to do is to note that when we write the partial derivative in the Hamiltonian picture $\frac{ \partial A }{ \partial q_{j} }$, we are differrentiating $A$ with respect to $q_{j}$, keeping the other $q$'s, any explicit time dependance in $A$, and the $p$'s fixed. This should be contrasted with the Lagrangian picture, where differentiating with respect to $q_{j}$ involved keeping the other $q$'s, time and the $\dot{q}$'s fixed
