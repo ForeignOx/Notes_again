@@ -4,6 +4,7 @@ If we define a generating vector $\underline{w}$ which is perpendicular to both 
 $$
 \underline{y}(t,\phi)=\underline{x}(t)+\varepsilon(\cos(\phi \underline{v}(t))+\sin(\phi \underline{w}(t)))
 $$
-The choice of $\underline{y}$ is not unique and is determined by choice of $\underline{v}$. By altering $\underline{y}(t)$, we alter the basis of our surface
-
+The choice of $\underline{y}$ is not unique and is determined by choice of $\underline{v}$. By altering $\underline{y}(t)$, we alter the basis of our surface; such a choice is known as the framing, below, $\phi_{1},\phi_{2},\phi_{3}$ are various framings
 ![[Pasted image 20260608105456.png]]
+Alternatively, the tube can be covered with a series of parallel curves which pass through points $(t,\alpha)$, where there is a single curve for each $\alpha \in[0,2\pi]$. Such a tube is known as a twisted tube
+When this tube is assigned an energy value, it is known as an isotropic rod![[Pasted image 20260608110739.png]]
