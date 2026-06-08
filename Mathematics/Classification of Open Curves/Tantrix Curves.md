@@ -1,0 +1,1 @@
+The tantrix curve $\underline{\hat{T}}_{\underline{x}}(t)$ 

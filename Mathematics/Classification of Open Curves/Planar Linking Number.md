@@ -5,4 +5,8 @@ For each knot pairing we denote the total $\mathcal{L}_{ij}$ between $\mathcal{K
 $$
 \mathcal{L}_{ij}(\mathcal{K}_{i},\mathcal{K}_{j})=\frac{1}{2}\sum_{k=1}^{n_{ij}}\mathcal{S}(\mathcal{C}_{k}^{ij})
 $$
-And $\mathcal{L}(L)$ represents the sum of all $\mathcal{L}_{ij}$ between all knot combinationss. There exists no redundancy in thiss calculation, so crossings are only counted onc
+And $\mathcal{L}(L)$ represents the sum of all $\mathcal{L}_{ij}$ between all knot combinations. There exists no redundancy in this calculation, so crossings are only counted once:
+$$
+\mathcal{L}(L)=\sum_{i=1}^{m-1}\sum_{j=i+1}^{m}\mathcal{L}_{ij}
+$$
+It can be shown that the measure $\mathcal{L}$ is independent of the choice of projection direction
