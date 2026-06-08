@@ -28,7 +28,7 @@ $$
 $$
 ## Issues
 If $\kappa=0$, this frame is poorly defined. 
-Another issssue is as follows, if we have a helix sshaped curve defined as
+Another issue is as follows, if we have a helix shaped curve defined as
 $$
 \underline{x}(s)=\left( r\cos\left( \frac{qs}{\sqrt{ 1+(qr)^{2} }} \right),r\sin\left( \frac{qs}{\sqrt{ 1+(qr)^{2} }} \right),\frac{s}{\sqrt{ 1+(qr)^{2} }} \right)
 $$

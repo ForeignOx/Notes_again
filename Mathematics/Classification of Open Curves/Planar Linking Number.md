@@ -10,3 +10,6 @@ $$
 \mathcal{L}(L)=\sum_{i=1}^{m-1}\sum_{j=i+1}^{m}\mathcal{L}_{ij}
 $$
 It can be shown that the measure $\mathcal{L}$ is independent of the choice of projection direction
+## Topological Properties
+All properties of link pairings that are left unchanged by a set of transformations are known as topological invariants. The et of deformations of a closed curve (or union of closed curves) which do not allow the curves to pass through either themselves or any other curve compromising the link will leave some property of the link unchanged
+(essentially all such transformations will be combinations of the [[Reidameister moves|Reidameister moves]])
