@@ -1,0 +1,1 @@
+An ambient [[isotopy|isotopy]] is a form of isotopy that demands that the [[Homeomorphisms|homeomorphic]] actions act on the space rather than the knot itself. The space is deformed, dragging the knot with it, removing the possibility of shrinking the knot to a single dimensionless point
