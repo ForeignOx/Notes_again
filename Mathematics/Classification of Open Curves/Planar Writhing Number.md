@@ -5,4 +5,4 @@ Consider a knot diagram $\mathcal{K}$ which has $n$ self-crossings labelled $\ma
 $$
 w(\mathcal{K})=\sum_{ i=1} ^{ n}\mathcal{S}(\mathcal{C}_{i})
 $$
-Often this is simply called the [[writhe|writhe]] (without planar prefix)
+Often this is simply called the [[writhe|writhe]] (without planar prefix), but there is a three dimensional version which is not equivalent.The three dimensional writhe averages $w$ over all projection angles
