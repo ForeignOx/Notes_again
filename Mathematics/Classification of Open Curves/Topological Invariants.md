@@ -1,0 +1,2 @@
+## Definition
+A topological invariant $\mathcal{I}$ of a closed curve $\underline{x}$ is some measure $\mathcal{I}(\underline{x})$, which is invariant to the full set of ambient [[Isotopy|isotopies]] defined for $\underline{x}$. The [[Planar Linking Number|linking number]] $\mathcal{L}$ is an example of a topological invariant
