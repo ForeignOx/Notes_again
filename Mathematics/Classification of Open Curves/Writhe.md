@@ -4,6 +4,6 @@ It is a geometric measure of position, without scale
 It has been demonstrated that the magnetic helicity of a pair of linked magnetic flux tubes is the multiple of the linking number of the two tubes and the magnetic flux flowing through each. Here a topological quantity is mixed with a magnitude
 ___
 Varous methods for evaluating the linking and writhin of open curves have been propoed, one such approach involves extending an open helical structure with planar section of curve allowing us to use the well established linking and writhe expressions for closed curves
-A second approach has been to 
+A second approach has been to make new definitions to measure open linking and writhing
 ## Supercoiling
 Open curves can coil around their own axis, a process known as supercoiling
