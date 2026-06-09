@@ -103,4 +103,22 @@ $$
 \dot{d}_{j}^{(k)}(t_{\ell})\approx \frac{d_{j}^{(k)}(t_{\ell+1})-d_{j}^{(k)}(t_{\ell})}{t_{\ell+1}-t_{\ell}}
 $$
 Which measure how the multiscale shape is changing at each time
-Befor we analyse any curves we must remove global translation an rotation which give the ri
+Befor we analyse any curves we must remove global translation an rotation which give the rigid-body motion
+## Energy
+Define the energy at scale $k$ by
+$$
+E_{k}(t)=\sum_{j}\lvert \lvert \Delta_{j}^{(k)}(t) \rvert \rvert ^{2}
+$$
+Which measures how much defomation is present at scale $k$. Small $k$ correspond to short-wavelength local rearrangements. Large $k$ corresponds to collective bending
+A ueful normalised version is:
+$$
+\tilde{E}_{k}(t)= \frac{E_{k}(t)}{\sum_{\ell=1}^{m}E_{\ell}(t)}
+$$
+Which asks what fraction of the total deformation is present at each scale
+Another compact summary i the scale centroid
+$$
+\tilde{k}(t)=\frac{\sum_{k}kE_{k}(t)}{\sum_{k}E_{k}(t)}
+$$
+If $\tilde{k}(t)$ grows, then we see that the deformation i moving from fine to coarse scales
+## Directional Coherence
+Energy alone is not enough as a high value of $E_{k}(t)$ could come from many unrelated local motions. These can be thermally noisy and may cancel each other out, so we also define a 
