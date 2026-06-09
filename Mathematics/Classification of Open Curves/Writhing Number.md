@@ -7,3 +7,9 @@ $$
 w(\mathcal{K})=\sum_{ i=1} ^{ n}\mathcal{S}(\mathcal{C}_{i})
 $$
 Often this is simply called the [[writhe|writhe]] (without planar prefix), but there is a three dimensional version which is not equivalent.The three dimensional writhe averages $w$ over all projection angles
+# 3D Writhing Number
+The following definition is for closed spacecurves. The writhe $\mathcal{W}$ unlike the [[Linking Number|linking]] $\mathcal{L}$ cannot be defined by a single planar projection, so it is distinct from the above $w$
+By replaxing $\underline{y}(s)$ with $\underline{x}(s')$ in the formula for the linking number, we get an expression representing the self-linking of $\underline{x}$ in $\mathbb{R}^{3}$:
+$$
+\mathcal{W}=\frac{1}{4\pi}\oint_{\underline{x}}\oint_{\underline{x}} \frac{\underline{\hat{T}}_{\underline{x}}(s)\times \underline{\hat{T}}_{\underline{x}}(s')\cdot(\underline{x}(s)-\underline{x}(s'))}{\left| \underline{x}(s)-\underline{x}(s') \right|^{3} }dsds'
+$$

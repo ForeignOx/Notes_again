@@ -14,7 +14,7 @@ It can be shown that the measure $\mathcal{L}$ is independent of the choice of p
 # 3D Linking Number
 The extent to which two closed spacecurves $\underline{x}(s)$ and $\underline{y}(s')$ are linked in $\mathbb{R}^{3}$ over $\sin n[0,L]$, $s'\in[0,M]$, can be evaluated as follows:
 $$
-\mathcal{L}\equiv \frac{1}{4\pi}\oint_{\underline{x}}\oint_{\underline{y}} \frac{\hat{T}_{\underline{x}}(s)\times \hat{T}_{\underline{y}}(s')\cdot(\underline{x}(s)-\underline{y}(s'))}{\left| \underline{x}(s)-\underline{y}(s') \right| ^{3}}~dsds'
+\mathcal{L}\equiv \frac{1}{4\pi}\oint_{\underline{x}}\oint_{\underline{y}} \frac{\underline{\hat{T}}_{\underline{x}}(s)\times \underline{\hat{T}}_{\underline{y}}(s')\cdot(\underline{x}(s)-\underline{y}(s'))}{\left| \underline{x}(s)-\underline{y}(s') \right| ^{3}}~dsds'
 $$
 This expression can be applied to open [[ribbons|ribbons]] as well
 The equation represents the average of the planar linking number as averaged over all posible projection. Each projection can be thought of as a particular viewing angle of the link
@@ -24,3 +24,4 @@ $\mathcal{L}$ is trivially related to the [[crossing number|crossing number]], s
 $$
 \mathcal{L}=\frac{1}{2}C(\hat{n})
 $$
+$\mathcal{L}$ as applied to a ribbon $R(\underline{x},\underline{v})(t)$ is invariant to the transformations $t\to-t,s\to-s$; this is a result of both curves reversing simultaneously
