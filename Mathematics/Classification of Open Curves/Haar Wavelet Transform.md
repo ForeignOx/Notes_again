@@ -70,4 +70,37 @@ If $n=2^{m}$ then the edge sequence can be reconstructed exactly from one final 
 $$
 e_{i}=a_{1}^{(m)}+\sum_{k=1}^{m}\sum_{j}\sigma_{i,j}^{(k)}d_{j}^{(k)}
 $$
-Where $\sigma_{i,j}^{(k)}$ is a sign function that is nonzero only when edge $e_{i}$ lies inside the supp
+Where $\sigma_{i,j}^{(k)}$ is a sign function that is nonzero only when edge $e_{i}$ lies inside the support of the $j$th level $k$ mode, so within that jth block:
+$$
+\sigma_{i,j}^{(k)}=\begin{cases}
+1 & \text{if }e_{i}\text{ is in the firt half of the block} \\
+-1 & \text{if }e_{i}\text{ is in the second half of the block}
+\end{cases}
+$$
+Coordinates are recovered by cumulative summation:
+$$
+x_{p}=x_{0}+\sum_{i=1}^{p}e_{i}
+$$
+## Time Dependent Curve
+Suppoe we have a sequence of curves $C(t_{1}),C(t_{2}),\dots,C(t_{T})$, with vertices at time $t_{\ell}$
+$$
+x_{0}(t_{\ell}),x_{1}(t_{\ell}),\dots,x_{n}(t_{\ell})
+$$
+$$
+ e_{i}(t_{\ell})=x_{i}(t_{\ell})-x_{i-1}(t_{\ell})
+$$Applying the Haar tranform to each frame give time-dependent coefficients:
+$$
+d_{j}^{(k)}(t_{\ell})
+$$
+These coefficients contain both the static hape of the molecule and its motion
+The changes relative to a reference state are given by
+$$
+\Delta d_{j}^{(k)}(t)=d_{j}^{(k)}(t)-d_{j}^{(k)}(t_{0})
+$$
+Which measures the accumulated deformation relative to the starting frame,
+Alternatively, for instantaneous motion, we can use coefficient velocities:
+$$
+\dot{d}_{j}^{(k)}(t_{\ell})\approx \frac{d_{j}^{(k)}(t_{\ell+1})-d_{j}^{(k)}(t_{\ell})}{t_{\ell+1}-t_{\ell}}
+$$
+Which measure how the multiscale shape is changing at each time
+Befor we analyse any curves we must remove global translation an rotation which give the ri
