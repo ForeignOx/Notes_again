@@ -135,4 +135,15 @@ A simple way to test this is to compare activity at a fine scale $p$ with later 
 $$
 R_{p,q}=\mathrm{corr}(E_{p}(t),E_{q}(t+\tau))
 $$
-If $R_{p,q}(\tau)$ peak for positive $\tau$, then fine-scale activity te
+If $R_{p,q}(\tau)$ peak for positive $\tau$, then fine-scale activity tends to precede coarse-scale growth, i.e.
+$$
+T_{p\to q}=\max_{\tau \in [\tau_{min},\tau_{max}]}R_{p,q}(\tau)
+$$
+With the maximum lag at
+$$
+\tau ^{*}_{p\to q}=\underset{ \tau \in [\tau_{min},\tau_{max}] }{ \mathrm{argmax} }(R_{p,q}(\tau))
+$$
+It may be informative to correlate fine-scale coherence with later coarse-scale energy:
+$$
+R_{p,q}^{A,E}(\tau)=\mathrm{corr}(A_{p}(t),E_{q}(t+\tau))
+$$
