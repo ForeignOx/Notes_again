@@ -1,3 +1,4 @@
+# Planar Writhing Number
 Applying an orientation to a [[Knots|knot]] will induce an orientation to the projection in the [[Knot Diagrams|knot diagram]], the two types of projection crossings which occur are assigned values of $\hspace{0pt}1$ or $-1$ as demonstrated here
 ![[Pasted image 20260608095750.png|541]]
 ## Definition

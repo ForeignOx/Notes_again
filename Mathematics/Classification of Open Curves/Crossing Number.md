@@ -1,0 +1,3 @@
+Suppose two [[Spacecurves|curves]] are projected onto a viewing plane whose normal points along the direction $\hat{n}$. We can also regard a projection angle as a viewing angle. In the projection plane the curves will cross each other a number of times. Let $C(\hat{n})$ count the number of positive crossings minus the number of negative crossings
+For two distinct closed curves, $C(\hat{n})$ is independent of $\hat{n}$. Counting crossings can be a convenient method of calculating the linking and writhe
+Clearly, half the total crossing number is equivalent to the [[Linking Number|planar linking number]]

@@ -1,3 +1,4 @@
+# Planar Linking Number
 An orientation can be assigned to a [[Link Diagrams|link diagram]] by assigning orientations to all its constituent knots. A sign is applied to all mutual crossings, then half the total sum of signs yields the planar linking number
 ## Definition
 Conisder a [[Link Diagrams|link diagram]] $L$ which contains $m$ constituent [[knots|knots]] $\mathcal{K}_{1},\dots,\mathcal{K}_{m}$ (all oriented). If knots $\mathcal{K}_{i}$ and $\mathcal{K}_{j}$ themselves generate $n_{ij}$ mutual crossings, these crossings are labelled $\mathcal{C}_{k}^{ij}$ for $k=1,\dots,n_{ij}$
@@ -10,6 +11,10 @@ $$
 \mathcal{L}(L)=\sum_{i=1}^{m-1}\sum_{j=i+1}^{m}\mathcal{L}_{ij}
 $$
 It can be shown that the measure $\mathcal{L}$ is independent of the choice of projection direction
-## Topological Properties
-All properties of link pairings that are left unchanged by a set of transformations are known as topological invariants. The et of deformations of a closed curve (or union of closed curves) which do not allow the curves to pass through either themselves or any other curve compromising the link will leave some property of the link unchanged
-(essentially all such transformations will be combinations of the [[Reidameister moves|Reidameister moves]])
+# 3D Linking Number
+The extent to which two closed spacecurves $\underline{x}(s)$ and $\underline{y}(s')$ are linked in $\mathbb{R}^{3}$ over $\sin n[0,L]$, $s'\in[0,M]$, can be evaluated as follows:
+$$
+\mathcal{L}\equiv \frac{1}{4\pi}\oint_{\underline{x}}\oint_{\underline{y}} \frac{\hat{T}_{\underline{x}}(s)\times \hat{T}_{\underline{y}}(s')\cdot(\underline{x}(s)-\underline{y}(s'))}{\left| \underline{x}(s)-\underline{y}(s') \right| ^{3}}~dsds'
+$$
+This expression can be applied to open [[ribbons|ribbons]] as well
+The equation represents the average of the planar linking number as 
