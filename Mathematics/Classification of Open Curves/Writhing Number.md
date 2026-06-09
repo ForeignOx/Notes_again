@@ -13,3 +13,5 @@ By replaxing $\underline{y}(s)$ with $\underline{x}(s')$ in the formula for the 
 $$
 \mathcal{W}=\frac{1}{4\pi}\oint_{\underline{x}}\oint_{\underline{x}} \frac{\underline{\hat{T}}_{\underline{x}}(s)\times \underline{\hat{T}}_{\underline{x}}(s')\cdot(\underline{x}(s)-\underline{x}(s'))}{\left| \underline{x}(s)-\underline{x}(s') \right|^{3} }dsds'
 $$
+Analogous to the linking number, this measures the average crossing sum of $\underline{x}(s)$ with itelf over all planar projections. 
+If an exact copy of $\underline{x}$ is translated along a fixed direction $\sigma$ by a small amount $\varepsilon$, then $\mathcal{W}(\underline{x},\sigma)=\mathcal{L}(\underline{x},\underline{x}+\varepsilon\sigma)$
