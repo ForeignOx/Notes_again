@@ -17,4 +17,10 @@ $$
 \mathcal{L}\equiv \frac{1}{4\pi}\oint_{\underline{x}}\oint_{\underline{y}} \frac{\hat{T}_{\underline{x}}(s)\times \hat{T}_{\underline{y}}(s')\cdot(\underline{x}(s)-\underline{y}(s'))}{\left| \underline{x}(s)-\underline{y}(s') \right| ^{3}}~dsds'
 $$
 This expression can be applied to open [[ribbons|ribbons]] as well
-The equation represents the average of the planar linking number as 
+The equation represents the average of the planar linking number as averaged over all posible projection. Each projection can be thought of as a particular viewing angle of the link
+Since the planar linking number can be shown to be independent of viewing angle, $\mathcal{L}$ above is equivalent to the planar linking number. It can be inferred from this that $\mathcal{L}$ must always be of integer value for closed spacecurves
+Furthermore, the evaluation of $\mathcal{L}$ is independent of chosen parametrisations
+$\mathcal{L}$ is trivially related to the [[crossing number|crossing number]], so
+$$
+\mathcal{L}=\frac{1}{2}C(\hat{n})
+$$
