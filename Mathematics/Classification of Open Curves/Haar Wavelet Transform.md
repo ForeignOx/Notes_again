@@ -121,4 +121,18 @@ $$
 $$
 If $\tilde{k}(t)$ grows, then we see that the deformation i moving from fine to coarse scales
 ## Directional Coherence
-Energy alone is not enough as a high value of $E_{k}(t)$ could come from many unrelated local motions. These can be thermally noisy and may cancel each other out, so we also define a 
+Energy alone is not enough as a high value of $E_{k}(t)$ could come from many unrelated local motions. These can be thermally noisy and may cancel each other out, so we also define a coherence score:
+$$
+A_{k}(t)=\frac{\left\lvert  \left\lvert  \sum_{j}\Delta_{j}^{(k)}(t)  \right\rvert  \right\rvert }{\sum_{j}\lvert \lvert \Delta d_{j}^{(k)}(t) \rvert \rvert }
+$$
+Which satisfies $0\leq A_{k}(t)\leq 1$
+If the detail vectors point in unrelated directions, then then numerator will be small as the vectors cancel, but if they point in a common direction, then the numerator is close to the denominator, so $A_{k}$ will grow close to 1
+___
+A global coherence score may miss a local event. A protein may have one region beginning to organise while the rest of the chain remains noisy. Let $B_{r}^{(q)}$ enote a block at a coarser scale $q$. We can then perform the above calculation for $A_{k}(t)$ but just within that block
+## Detecting Transfer across Scales
+We want to test our hypothesis that coherent small-scale rearrangements may appear before the corresponding large-scale conformational motion is obvious in the raw trajectory
+A simple way to test this is to compare activity at a fine scale $p$ with later activity at coarser scale $q$, we can define the lagged cross-scale correlation:
+$$
+R_{p,q}=\mathrm{corr}(E_{p}(t),E_{q}(t+\tau))
+$$
+If $R_{p,q}(\tau)$ peak for positive $\tau$, then fine-scale activity te
