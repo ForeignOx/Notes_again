@@ -15,7 +15,11 @@ $$
 $$
 Analogous to the linking number, this measures the average crossing sum of $\underline{x}(s)$ with itelf over all planar projections. 
 If an exact copy of $\underline{x}$ is translated along a fixed direction $\sigma$ by a small amount $\varepsilon$, then $\mathcal{W}(\underline{x},\sigma)=\mathcal{L}(\underline{x},\underline{x}+\varepsilon\sigma)$
-## Constant Conformal Invariance
-Applying a set of [[Ambient Isotopy|ambient isotopies]] to a closed curve does not leave $\mathcal{W}$ unchanged, so $\mathcal{W}$ is not a [[Topological Invariants|topological invariant]]. However, a set of continuous transformations can be defined, representing a subset of the ambient isotopies, which leave $\mathcal{W}$ unchanged.
-___
-For a closed spacecurve $\underline{x}(s)$, a cons
+Applying a set of [[Ambient Isotopy|ambient isotopies]] to a closed curve does not leave $\mathcal{W}$ unchanged, so $\mathcal{W}$ is not a [[Topological Invariants|topological invariant]]. However, a set of continuous transformations can be defined, representing a subset of the ambient isotopies, which leave $\mathcal{W}$ unchanged, these are the [[Constant Conformal Invariance|constant conformal invariants]]
+## Properties
+- $\mathcal{W}$ is not generally of integer value
+- $\mathcal{W}$ is a contant conformal invariant, but not a topological one
+- $\mathcal{W}$ changes continually under deformations of the spacecurve, except when the spacecurve crosses itself, in which case it jumps by $\pm 2$
+- The double integral form has a singularity at $s=s'$, but the integral does not diverge
+- $\mathcal{W}$ of a [[Ribbons|ribbon]] or [[Tubes|tube]] $R(\underline{x},\underline{v})$ depends only on the shape of $\underline{x}$, thus $\mathcal{W}$ is independent of the choice of framing
+- The writhe of a planar spacecurve is zero
