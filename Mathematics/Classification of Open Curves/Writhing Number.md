@@ -15,3 +15,7 @@ $$
 $$
 Analogous to the linking number, this measures the average crossing sum of $\underline{x}(s)$ with itelf over all planar projections. 
 If an exact copy of $\underline{x}$ is translated along a fixed direction $\sigma$ by a small amount $\varepsilon$, then $\mathcal{W}(\underline{x},\sigma)=\mathcal{L}(\underline{x},\underline{x}+\varepsilon\sigma)$
+## Constant Conformal Invariance
+Applying a set of [[Ambient Isotopy|ambient isotopies]] to a closed curve does not leave $\mathcal{W}$ unchanged, so $\mathcal{W}$ is not a [[Topological Invariants|topological invariant]]. However, a set of continuous transformations can be defined, representing a subset of the ambient isotopies, which leave $\mathcal{W}$ unchanged.
+___
+For a closed spacecurve $\underline{x}(s)$, a cons
