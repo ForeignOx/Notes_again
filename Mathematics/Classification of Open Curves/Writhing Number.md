@@ -23,3 +23,4 @@ Applying a set of [[Ambient Isotopy|ambient isotopies]] to a closed curve does n
 - The double integral form has a singularity at $s=s'$, but the integral does not diverge
 - $\mathcal{W}$ of a [[Ribbons|ribbon]] or [[Tubes|tube]] $R(\underline{x},\underline{v})$ depends only on the shape of $\underline{x}$, thus $\mathcal{W}$ is independent of the choice of framing
 - The writhe of a planar spacecurve is zero
+As with $\mathcal{L}$, our equation for writhe is independent of the choice of parametrisation and can be applied to non smooth curves. 
