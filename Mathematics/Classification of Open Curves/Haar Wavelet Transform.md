@@ -104,7 +104,7 @@ $$
 E_{k}(t)=\sum_{j}\lvert \lvert \Delta_{j}^{(k)}(t) \rvert \rvert ^{2}
 $$
 Which measures how much defomation is present at scale $k$. Small $k$ correspond to short-wavelength local rearrangements. Large $k$ corresponds to collective bending
-A ueful normalised version is:
+A useful normalised version is:
 $$
 \tilde{E}_{k}(t)= \frac{E_{k}(t)}{\sum_{\ell=1}^{m}E_{\ell}(t)}
 $$
@@ -113,11 +113,11 @@ Another compact summary i the scale centroid
 $$
 \tilde{k}(t)=\frac{\sum_{k}kE_{k}(t)}{\sum_{k}E_{k}(t)}
 $$
-If $\tilde{k}(t)$ grows, then we see that the deformation i moving from fine to coarse scales
+If $\tilde{k}(t)$ grows, then we see that the deformation is moving from fine to coarse scales
 ## Directional Coherence
 Energy alone is not enough as a high value of $E_{k}(t)$ could come from many unrelated local motions. These can be thermally noisy and may cancel each other out, so we also define a coherence score:
 $$
-A_{k}(t)=\frac{\left\lvert  \left\lvert  \sum_{j}\Delta_{j}^{(k)}(t)  \right\rvert  \right\rvert }{\sum_{j}\lvert \lvert \Delta d_{j}^{(k)}(t) \rvert \rvert }
+A_{k}(t)=\frac{\left\lvert  \left\lvert  \sum_{j}\Delta d_{j}^{(k)}(t)  \right\rvert  \right\rvert }{\sum_{j}\lvert \lvert \Delta d_{j}^{(k)}(t) \rvert \rvert }
 $$
 Which satisfies $0\leq A_{k}(t)\leq 1$
 If the detail vectors point in unrelated directions, then then numerator will be small as the vectors cancel, but if they point in a common direction, then the numerator is close to the denominator, so $A_{k}$ will grow close to 1
