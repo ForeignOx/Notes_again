@@ -122,7 +122,7 @@ $$
 Which satisfies $0\leq A_{k}(t)\leq 1$
 If the detail vectors point in unrelated directions, then then numerator will be small as the vectors cancel, but if they point in a common direction, then the numerator is close to the denominator, so $A_{k}$ will grow close to 1
 ___
-A global coherence score may miss a local event. A protein may have one region beginning to organise while the rest of the chain remains noisy. Let $B_{r}^{(q)}$ enote a block at a coarser scale $q$. We can then perform the above calculation for $A_{k}(t)$ but just within that block
+A global coherence score may miss a local event. A protein may have one region beginning to organise while the rest of the chain remains noisy. Let $B_{r}^{(q)}$ denote a block at a coarser scale $q$. We can then perform the above calculation for $A_{k}(t)$ but just within that block
 ## Detecting Transfer across Scales
 We want to test our hypothesis that coherent small-scale rearrangements may appear before the corresponding large-scale conformational motion is obvious in the raw trajectory
 A simple way to test this is to compare activity at a fine scale $p$ with later activity at coarser scale $q$, we can define the lagged cross-scale correlation:
