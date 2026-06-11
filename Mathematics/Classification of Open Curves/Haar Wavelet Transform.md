@@ -54,12 +54,6 @@ d_{j}^{(n)}
 \end{pmatrix}\begin{pmatrix}
 a_{j}^{(n-1)} \\
 d_{j}^{(n-1)}
-\end{pmatrix}=\frac{1}{2^{n}}\begin{pmatrix}
-1 & 1 \\
-1 & -1
-\end{pmatrix}^{n}\begin{pmatrix}
-e_{2j-1} \\
-e_{2j}
 \end{pmatrix}
 $$
 
