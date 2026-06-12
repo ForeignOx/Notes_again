@@ -57,7 +57,7 @@ d_{j}^{(n-1)}
 \end{pmatrix}
 $$
 
-A level detail coefficient compares neighbouring edges, so if the two edges point in nearly the same direction, $d_{j}^{(1)}$ is mall. If the curve bends sharply between them, $d_{j}^{(1)}$ is large. A level$-2$ detail coefficient compares two neighbouring two-edge average, so it measures whether the firt half of a four-edge block points differently from the second half
+A level detail coefficient compares neighbouring edges, so if the two edges point in nearly the same direction, $d_{j}^{(1)}$ is small. If the curve bends sharply between them, $d_{j}^{(1)}$ is large. A level$-2$ detail coefficient compares two neighbouring two-edge average, so it measures whether the firt half of a four-edge block points differently from the second half
 In general, $d_{j}^{(k)}$ compares the first and second halves of a block of $2^{k}$ edges. The support is local, but the locality is scale dependent
 ___
 If $n=2^{m}$ then the edge sequence can be reconstructed exactly from one final average and all detail coefficients. Schematically,
