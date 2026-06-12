@@ -7,7 +7,7 @@ $$
 e_{i}=x_{i}~~i=1,\dots,n
 $$
 If a curve is sampled at approximately fixed aclength, the edge vectors encode the local tangent direction, or the [[Tantrix Curves|tantrix]], we want to detect how motion is distributed across length scales
-Instead of applying a wavelet transform directly to the coordinates $x_{i}$, we aply it to the edge sequence $(e_{1},\dots,e_{n})$ removing sensitivity to global tranlation and means that each Haar aeraging step replaces neighbouring edges with courser edges
+Instead of applying a wavelet transform directly to the coordinates $x_{i}$, we apply it to the edge sequence $(e_{1},\dots,e_{n})$ removing sensitivity to global tranlation and means that each Haar aeraging step replaces neighbouring edges with courser edges
 ___
 Assume that $n=2^{m}$
 Group the edges in pairs $(e_{1},e_{2}),(e_{2},e_{3}),\dots,(e_{n-1},e_{n})$ then for each pair define an average vector and a detail vector:
