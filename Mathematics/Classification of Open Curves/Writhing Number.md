@@ -59,4 +59,21 @@ $$
 \implies \mathcal{W}(\gamma)=\sum_{m=1}^{J}\Delta \mathcal{W}^{(m)}
 $$
 ___
-The level contribution can be made more local by examining the segment-pair terms. At level $m$, let $e_{0}^{(m)},e_{1}^{(m)},\dots,e^{(m)}_{2^{m}-1}$
+The level contribution can be made more local by examining the segment-pair terms. At level $m$, let $e_{0}^{(m)},e_{1}^{(m)},\dots,e^{(m)}_{2^{m}-1}$ be the edges of $\gamma^{(m)}$. Define
+$$
+K_{ab}^{(m)}=\frac{1}{2\pi}I_{ab}^{(m)}
+$$
+Where $I_{ab}^{(m)}$ is the signed spherical area contribution between edges $e_{a}^{(m)}$ and $e_{b}^{(m)}$. Then
+$$
+\mathcal{W}^{(m)}=\sum_{a<b}K_{ab}^{(m)}
+$$
+Now suppose a coarse edge $A$ at level $m-1$ is split into two children at level $m$, i.e. $A\to a_{0},a_{1}$, and similarly $B\to b_{0},b_{1}$ for some coarse edge $B$
+The refinement contribution associated with the coarse pair $(A,B)$ is:
+$$
+\Delta K_{AB}^{(m)}=\sum_{p=0}^{1}\sum_{q=0}^{1}K_{a_{p}b_{q}}^{(m)}-K_{AB}^{(m-1)}
+$$
+Which records how the writhe interacttion between two coarse regions changs when both regions are refined
+A fully eneral version also inclues the case $A=B$:
+$$
+
+$$
