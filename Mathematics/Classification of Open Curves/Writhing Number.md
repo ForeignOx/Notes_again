@@ -24,6 +24,8 @@ Applying a set of [[Ambient Isotopy|ambient isotopies]] to a closed curve does n
 - $\mathcal{W}$ of a [[Ribbons|ribbon]] or [[Tubes|tube]] $R(\underline{x},\underline{v})$ depends only on the shape of $\underline{x}$, thus $\mathcal{W}$ is independent of the choice of framing
 - The writhe of a planar spacecurve is zero
 As with $\mathcal{L}$, our equation for writhe is independent of the choice of parametrisation and can be applied to non smooth curves. 
+## Discrete Writhe
+jfjfjf
 ## Writhe Decomposition
 For a polygonal curve, we represent it using straight edge vectors. It is tempting to decompose the tangent sequence into Haar wavelet modes and then try to decompose the writhe integral into wavelet-wavelet interactions, but this won't work because writhe is not only a function of tangent vectors, it also depends on the positions of the curve through:
 $$
@@ -31,3 +33,21 @@ $$
 $$
 So if the curve is reconstructed from wavelet coefficients, then the positions $\underline{x}(s)$ also change when a detail coefficient is added. Therefore writhe is nonlinear in the wavelet coefficients
 The better idea is to decompose the reconstructed curve itself across scaless and measure how the polygonal writhe changes as each scale of detail is added
+___
+Suppose our curve is represented at $J$ levels of dyadic resolution. For simplicity assume the fiest curve has $2^{J}$ edges. A wavelet decompoition gives a hierarchy of reconstructed curves:
+$$
+\gamma^{(0)},\gamma^{(1)},\dots,\gamma^{(J)}
+$$
+Where $\gamma^{(0)}$ is the coarsest approximation, $\gamma^{(1)}$ is obtaine by adding the coarsest detail and so on and $\gamma^{(J)}$ is the original full-resolution polygonal curve
+In the simplest picture $\gamma^{(0)}$ might be a single edge, so it has no writhe. Adding the first detail produce two edges, which lie in a plane, so again there is no writhe, only curvature. At the next level, the curve has four edges and genuinely non-planar edge-pair contributions can appear.
+For a closed curve, one may need a slightly different coarsest object, because a one-edged closed polygon doesn't exist, so we might want to use a triangle instead.
+___
+Define
+$$
+\mathcal{W}^{(m)}=\mathcal{W}(\gamma^{(m)})
+$$
+The contribution associated with adding level $m$ detail is
+$$
+\Delta \mathcal{W}^{(m)}=\mathcal{W}^{(m)}-\mathcal{W}^{(m-1)}
+$$
+
