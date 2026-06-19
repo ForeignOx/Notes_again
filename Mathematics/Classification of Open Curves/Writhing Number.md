@@ -78,4 +78,15 @@ $$
 \Delta K^{(m)}_{AA}=\sum_{a<b}K^{(m)}_{ab}
 $$
 Where $a,b$ are children of $A$
-For a binary split into two adjacent children, this is usually zero because adjacent polygonal edges have no KL contribution. However including this case does
+For a binary split into two adjacent children, this is usually zero because adjacent polygonal edges have no KL contribution. However including this case does make the formulae nicer
+Then the legvel increment can be written as
+$$
+\Delta \mathcal{W}^{(m)}=\sum_{A\leq B}\Delta K^{(m)}_{AB}
+$$
+___
+Each refinement step is controlled by the wavelet detail coefficients. Schematically, a parent edge or parent curve segment is tranformed as:
+$$
+\text{parent geometry}+\text{detail coefficient}\to \text{two child edges}
+$$
+So $\Delta K^{(m)}_{AB}$ depends on the already reconstructed coarser geometry $\gamma^{(m-1)}$, the detial coefficients defining regions $A$ and $B$, and the nonlinear KL geometry of the resulting child edge-pair directions
+Therefore it is resonable to say that $\Delta K_{AB}^{(m)}$ tracks the effect of the combination of details in regions $A$ and $B$. However, one should not ssay it is a bilinear coefficient, the mapping between the wavelet details and the writhe is non-linear as the curve positions and edge directions c
