@@ -98,4 +98,20 @@ It does not answer:
 The distinction is important. Writhe is a global geometric quantity. A local detail coefficient may only create writhe by changing how one region of the curve sees another region. Therefore the natural quantities are interactions between refined regions, not isolated detail energies
 The outputs one might analyse are $\Delta \mathcal{W}^{(m)}$, $\Delta K_{AB}^{(m)}$, and$\sum_{m\leq M}\Delta \mathcal{W}^{(m)}$ which is the writhe accumulate up to resolution $M$
 Positive and negative contributions can canncel, which shows whether small scale refinement create coherent writhe at any larger scales
-
+### Decompoition Algorithm:
+- Start with polygonal curve $\gamma^{(J)}$ with $2^{J}$ edges
+- Perform a Haar or wavelet decomposition of the curvve using the edge vectors
+- For each level, reconstruct the polygonal curve $\gamma^{(m)}$
+- Compute the exact KL pair matrix $K^{(m)}$for $\gamma^{(m)}$
+- Compute the total writhe
+$$
+\mathcal{W}^{(m)}=\sum_{a<b}K_{ab}^{(m)}
+$$
+- Compute the level increments:
+$$
+\Delta \mathcal{W}^{(m)}=\mathcal{W}^{(m)}-\mathcal{W}^{(m-1)}
+$$
+- Compute the parent-pair refinement increments:
+$$
+\Delta K_{AB}^{(m)}=jjfjfjfjfjfj
+$$
