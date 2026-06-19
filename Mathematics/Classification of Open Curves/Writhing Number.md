@@ -73,7 +73,9 @@ $$
 \Delta K_{AB}^{(m)}=\sum_{p=0}^{1}\sum_{q=0}^{1}K_{a_{p}b_{q}}^{(m)}-K_{AB}^{(m-1)}
 $$
 Which records how the writhe interacttion between two coarse regions changs when both regions are refined
-A fully eneral version also inclues the case $A=B$:
+A fully general version also inclues the case $A=B$:
 $$
-
+\Delta K^{(m)}_{AA}=\sum_{a<b}K^{(m)}_{ab}
 $$
+Where $a,b$ are children of $A$
+For a binary split into two adjacent children, this is usually zero because adjacent polygonal edges have no KL contribution. However including this case does
