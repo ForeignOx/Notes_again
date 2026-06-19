@@ -1,4 +1,4 @@
-`# Planar Writhing Number
+# Planar Writhing Number
 Applying an orientation to a [[Knots|knot]] will induce an orientation to the projection in the [[Knot Diagrams|knot diagram]], the two types of projection crossings which occur are assigned values of $\hspace{0pt}1$ or $-1$ as demonstrated here
 ![[Pasted image 20260608095750.png|541]]
 ## Definition
@@ -24,3 +24,10 @@ Applying a set of [[Ambient Isotopy|ambient isotopies]] to a closed curve does n
 - $\mathcal{W}$ of a [[Ribbons|ribbon]] or [[Tubes|tube]] $R(\underline{x},\underline{v})$ depends only on the shape of $\underline{x}$, thus $\mathcal{W}$ is independent of the choice of framing
 - The writhe of a planar spacecurve is zero
 As with $\mathcal{L}$, our equation for writhe is independent of the choice of parametrisation and can be applied to non smooth curves. 
+## Writhe Decomposition
+For a polygonal curve, we represent it using straight edge vectors. It is tempting to decompose the tangent sequence into Haar wavelet modes and then try to decompose the writhe integral into wavelet-wavelet interactions, but this won't work because writhe is not only a function of tangent vectors, it also depends on the positions of the curve through:
+$$
+\frac{\underline{x}(s)-\underline{x}(s')}{\left| \underline{x}(s)-\underline{x}(s') \right| ^{3}}
+$$
+So if the curve is reconstructed from wavelet coefficients, then the positions $\underline{x}(s)$ also change when a detail coefficient is added. Therefore writhe is nonlinear in the wavelet coefficients
+The better idea is to decompose the reconstructed curve itself across scaless and measure how the polygonal writhe changes as each scale of detail is added
