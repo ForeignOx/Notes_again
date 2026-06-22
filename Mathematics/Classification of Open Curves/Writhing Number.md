@@ -79,7 +79,7 @@ $$
 $$
 Where $a,b$ are children of $A$
 For a binary split into two adjacent children, this is usually zero because adjacent polygonal edges have no KL contribution. However including this case does make the formulae nicer
-Then the legvel increment can be written as
+Then the level increment can be written as
 $$
 \Delta \mathcal{W}^{(m)}=\sum_{A\leq B}\Delta K^{(m)}_{AB}
 $$
@@ -113,5 +113,5 @@ $$
 $$
 - Compute the parent-pair refinement increments:
 $$
-\Delta K_{AB}^{(m)}=jjfjfjfjfjfj
+\Delta K_{AB}^{(m)}=
 $$
