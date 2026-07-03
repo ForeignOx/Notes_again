@@ -7,3 +7,4 @@ These have a [[Self-Adjoint|self-adjoint]] [[Linear Maps|linear operator]] assoc
 $$
 \mathcal{L}_{H}f=f''-2xf'
 $$
+$\mathbb{M}$
