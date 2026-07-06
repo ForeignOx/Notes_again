@@ -115,3 +115,6 @@ $$
 $$
 \Delta K_{AB}^{(m)}=
 $$
+$$
+T = \sum \left| K_{ab}(t+\tau)-K_{ab}(t) \right| 
+$$
