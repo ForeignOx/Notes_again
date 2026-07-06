@@ -119,5 +119,8 @@ $$
 T = \sum \left| K_{ab}(t+\tau)-K_{ab}(t) \right| 
 $$
 $$
-Nm​(Nm​−1)/21​a<b∑​∣Kab(m)​(t+τ)−Kab(m)​(t)∣
+T_{m}(t)=\sum_{a<b}\left| K_{ab}^{(m)}(t+\delta t)-K_{ab}^{(m)}(t) \right| 
+$$
+$$
+ C_{mn}(\tau) = \frac{\sum_{t}(T_{m}(t)-\bar{T}_{m}(t))(T_{n}(t+\tau)-\bar{T}}{}
 $$
