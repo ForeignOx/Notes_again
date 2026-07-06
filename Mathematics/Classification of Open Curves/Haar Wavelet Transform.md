@@ -1,4 +1,4 @@
-Suppose we have a discrete [[Spacecurves|spacecurve]] with vertices
+`Suppose we have a discrete [[Spacecurves|spacecurve]] with vertices
 $$
 x_{0},x_{1},\dots,x_{n}\in  \mathbb{R}^{3}
 $$
