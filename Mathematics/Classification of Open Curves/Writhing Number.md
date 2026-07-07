@@ -115,12 +115,21 @@ $$
 $$
 \Delta K_{AB}^{(m)}=
 $$
-$$
-T = \sum \left| K_{ab}(t+\tau)-K_{ab}(t) \right| 
-$$
+
+
+
+
+
+
+
 $$
 T_{m}(t)=\sum_{a<b}\left| K_{ab}^{(m)}(t+\delta t)-K_{ab}^{(m)}(t) \right| 
 $$
 $$
- C_{mn}(\tau) = \frac{\sum_{t}(T_{m}(t)-\bar{T}_{m}(t))(T_{n}(t+\tau)-\bar{T}}{}
+ C_{mn}(\tau) = \frac{\sum_{t}(T_{m}(t)-\bar{T}_{m}(t))(T_{n}(t+\tau)-\bar{T}_{n})}{\sigma_{m}\sigma_{n}}
 $$
+Where m is fine scale, $n$ is coarse scale.
+$$
+M_{mn}= \max_{\tau>0}C_{mn}(\tau)
+$$
+Produces an $L\times L$ matrix (where $L$ is number of levels), with which we can produce a heatmap to see direction of information flow
