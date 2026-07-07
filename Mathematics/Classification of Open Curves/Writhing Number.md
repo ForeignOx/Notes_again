@@ -120,11 +120,13 @@ $$
 
 
 
-
-
+## Correlation between scales
+If we have the accumulation of lag between time steps:
 $$
 T_{m}(t)=\sum_{a<b}\left| K_{ab}^{(m)}(t+\delta t)-K_{ab}^{(m)}(t) \right| 
 $$
+(for correlation we might want to remove the absolute value)
+Then we can find the correlation using:
 $$
  C_{mn}(\tau) = \frac{\sum_{t}(T_{m}(t)-\bar{T}_{m})(T_{n}(t+\tau)-\bar{T}_{n})}{\sigma_{m}\sigma_{n}}
 $$
@@ -133,3 +135,10 @@ $$
 M_{mn}= \max_{\tau>0}C_{mn}(\tau)
 $$
 Produces an $L\times L$ matrix (where $L$ is number of levels), with which we can produce a heatmap to see direction of information flow
+## Earthmover's Distance
+Normalising our T gives us:
+$$
+p_{m}(t)=\frac{T_{m}(t)}{\sum_{n}T_{n}(t)}
+$$
+Representing a probability distribution across scales for each time step
+We can then compute the Earth mover's distance between $p(t)$ and $p(t+\Delta t)$, and $p(t_{0})$ and $p(t)$ using the formulae:
