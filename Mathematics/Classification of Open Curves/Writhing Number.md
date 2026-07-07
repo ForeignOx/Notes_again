@@ -126,7 +126,7 @@ $$
 T_{m}(t)=\sum_{a<b}\left| K_{ab}^{(m)}(t+\delta t)-K_{ab}^{(m)}(t) \right| 
 $$
 $$
- C_{mn}(\tau) = \frac{\sum_{t}(T_{m}(t)-\bar{T}_{m}(t))(T_{n}(t+\tau)-\bar{T}_{n})}{\sigma_{m}\sigma_{n}}
+ C_{mn}(\tau) = \frac{\sum_{t}(T_{m}(t)-\bar{T}_{m})(T_{n}(t+\tau)-\bar{T}_{n})}{\sigma_{m}\sigma_{n}}
 $$
 Where m is fine scale, $n$ is coarse scale.
 $$
