@@ -140,5 +140,8 @@ Normalising our T gives us:
 $$
 p_{m}(t)=\frac{T_{m}(t)}{\sum_{n}T_{n}(t)}
 $$
-Representing a probability distribution across scales for each time step
-We can then compute the Earth mover's distance between $p(t)$ and $p(t+\Delta t)$, and $p(t_{0})$ and $p(t)$ using the formulae:
+Representing a probability distribution across scales for each time step. We let $p(t)=\left\{ p_{1}(t),p_{2}(t),\dots \right\}$ be the distribution
+We can then compute the Earth mover's distance between $p(t)$ and $p(t+\Delta t)$, and $p(t_{0})$ and $p(t)$ using the formulaf:
+$$
+EMD(p(t),p(t+\Delta t)) = \sum_{m}\left| dx  \right| 
+$$
