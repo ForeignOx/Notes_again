@@ -162,3 +162,7 @@ $$
 \Delta \mu(t)=\mu(t+\Delta t)-\mu(t)
 $$
 Which has property, $\Delta \mu>0$: activity migrating to finer scale, $\Delta \mu<0$ activity is migrating to coarser scale
+
+
+
+On lowest scale, some portion are non local on the off-diagonal, add these up for coherence, which is a quantity over time, if this changes, do we see correlation to on diagonal higher up
