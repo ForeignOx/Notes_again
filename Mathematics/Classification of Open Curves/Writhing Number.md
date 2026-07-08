@@ -141,7 +141,24 @@ $$
 p_{m}(t)=\frac{T_{m}(t)}{\sum_{n}T_{n}(t)}
 $$
 Representing a probability distribution across scales for each time step. We let $p(t)=\left\{ p_{1}(t),p_{2}(t),\dots \right\}$ be the distribution
-We can then compute the Earth mover's distance between $p(t)$ and $p(t+\Delta t)$, and $p(t_{0})$ and $p(t)$ using the formulaf:
+We can then compute the Earth mover's distance between $p(t)$ and $p(t+\Delta t)$, and $p(t_{0})$ and $p(t)$ using the formula:
 $$
-EMD(p(t),p(t+\Delta t)) = \sum_{m}\left| dx  \right| 
+EMD(p,q) = \sum_{m}\left| \sum_{n\leq m}p_{n}-q_{n}  \right| 
 $$
+So we have the 
+$$
+EMDVel(t)=EMD(p(t),p+\Delta t)
+$$
+And
+$$
+EMDRel(t,t_{0})=EMD(p(t_{0}),p(t))
+$$
+We can also compute the mean scale:
+$$
+\mu(t)=\sum_{m}mp_{m}(t)
+$$
+Then we can have the rate of this:
+$$
+\Delta \mu(t)=\mu(t+\Delta t)-\mu(t)
+$$
+Which has property, $\Delta \mu>0$: activity migrating to finer scale, $\Delta \mu<0$ activity is migrating to coarser scale
