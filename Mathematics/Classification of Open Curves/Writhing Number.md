@@ -163,6 +163,7 @@ $$
 $$
 Which has property, $\Delta \mu>0$: activity migrating to finer scale, $\Delta \mu<0$ activity is migrating to coarser scale
 
+# To Do:
 
-
-On lowest scale, some portion are non local on the off-diagonal, add these up for coherence, which is a quantity over time, if this changes, do we see correlation to on diagonal higher up
+- On lowest scale, some portion are non local on the off-diagonal, add these up for coherence, which is a quantity over time, if this changes, do we see correlation to on diagonal higher up
+- Take a wavelet decomposition of a curve, add power to the details at a higher scale, inducing more aggressive motion
