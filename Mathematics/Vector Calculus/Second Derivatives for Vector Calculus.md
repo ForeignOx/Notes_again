@@ -13,6 +13,13 @@ $$
 $$
 \underline{\nabla } \cdot(\underline{\nabla } g)=\nabla  ^{2}g=\Delta g
 $$
+$$
+\nabla=\begin{pmatrix}
+\partial_{x} \\
+\partial_{y} \\
+ \partial_{z}
+\end{pmatrix}
+$$
 ### Example
 Compute $\Delta g$ for $g(\underline{x})=x^{3}-3xy^{2}$, in cartesians,
 $$
