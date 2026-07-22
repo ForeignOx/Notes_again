@@ -30,3 +30,8 @@ Instead of using the total writhe per edge, we could use the pair increment matr
 $$
 p_{i}=\sum_{j}\left| \Delta K_{ij} \right| 
 $$
+Again as we have two such edges, we define
+$$
+P_{k}=\frac{1}{2}(p_{2k}+p_{2k-1})
+$$
+and look for $\mathrm{corr}(\left| d_{k} \right|,P_{k})$ which should tell us about amount of writhe created at that scale specifically due to the detail coefficient
