@@ -18,9 +18,15 @@ And we find $\mathrm{corr}(\left| d_{k} \right|,W_{k})$ which informs us whether
 ### Correlation between writhe change and Detail Coefficient
 Consider the writhe change:
 $$
-\Delta w_{i}(\tau)=w_{i}(t+\tau)-w_{i}(t)
+\Delta w_{i}(t)=w_{i}(t+\tau)-w_{i}(t)
 $$
 And we can form our average:
 $$
-\Delta W_{i}(\tau)=\frac{1}{2}(\Delta w_{i}())
+\Delta W_{k}(t)=\frac{1}{2}(\Delta w_{2k}(t)+\Delta w_{2k-1}(t))
+$$
+And we can investgate the correlation $\mathrm{corr}(\left| d_{i}(t)\left| , \right|\Delta W_{k}(t) \right|)$ for different amounts of lag $\tau$, which should give us information as to whether large detail coefficients predict where writhe will change later
+### Correlation between detail coefficient and pair increment
+Instead of using the total writhe per edge, we could use the pair increment matrices, for edge $i$;
+$$
+p_{i}=\sum_{j}\left| \Delta K_{ij} \right| 
 $$

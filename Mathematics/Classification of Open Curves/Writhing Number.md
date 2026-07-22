@@ -72,7 +72,7 @@ The refinement contribution associated with the coarse pair $(A,B)$ is:
 $$
 \Delta K_{AB}^{(m)}=\sum_{p=0}^{1}\sum_{q=0}^{1}K_{a_{p}b_{q}}^{(m)}-K_{AB}^{(m-1)}
 $$
-Which records how the writhe interacttion between two coarse regions changs when both regions are refined
+Which records how the writhe interacttion between two coarse regions changes when both regions are refined
 A fully general version also inclues the case $A=B$:
 $$
 \Delta K^{(m)}_{AA}=\sum_{a<b}K^{(m)}_{ab}
