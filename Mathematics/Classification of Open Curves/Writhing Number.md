@@ -120,10 +120,10 @@ $$
 
 
 
-## Correlation between scales
+## Correlation at a Scale
 If we have the accumulation of lag between time steps:
 $$
-T_{m}(t)=\sum_{a<b}\left| K_{ab}^{(m)}(t+\delta t)-K_{ab}^{(m)}(t) \right| 
+T_{m}(\delta t)=\sum_{a<b}\left| K_{ab}^{(m)}(t+\delta t)-K_{ab}^{(m)}(t) \right| 
 $$
 (for correlation we might want to remove the absolute value)
 Then we can find the correlation using:
