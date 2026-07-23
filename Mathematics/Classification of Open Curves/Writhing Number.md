@@ -121,12 +121,16 @@ $$
 
 
 ## Correlation at a Scale
-If we have the accumulation of lag between time steps:
+If we have the accumulation of lag from the start, denoted by writhe gain:
 $$
-T_{m}(\delta t)=\sum_{a<b}\left| K_{ab}^{(m)}(t+\delta t)-K_{ab}^{(m)}(t) \right| 
+T_{m}( t)=\sum_{a<b}\left| K_{ab}^{(m)}(t_{0}+t)-K_{ab}^{(m)}(t_{0}) \right| 
 $$
 (for correlation we might want to remove the absolute value)
-Then we can find the correlation using:
+We can also have the accumulation of lag between time steps, denoted by writhe activity:
+$$
+\Delta T_{m}( t)=\sum_{a<b}\left| K_{ab}^{(m)}(t+\delta t)-K_{ab}^{(m)}(t) \right| 
+$$
+zThen we can find the correlation using:
 $$
  C_{mn}(\tau) = \frac{\sum_{t}(T_{m}(t)-\bar{T}_{m})(T_{n}(t+\tau)-\bar{T}_{n})}{\sigma_{m}\sigma_{n}}
 $$
