@@ -130,7 +130,7 @@ We can also have the accumulation of lag between time steps, denoted by writhe a
 $$
 \Delta T_{m}( t)=\sum_{a<b}\left| K_{ab}^{(m)}(t+\delta t)-K_{ab}^{(m)}(t) \right| 
 $$
-zThen we can find the correlation using:
+Then we can find the correlation using:
 $$
  C_{mn}(\tau) = \frac{\sum_{t}(T_{m}(t)-\bar{T}_{m})(T_{n}(t+\tau)-\bar{T}_{n})}{\sigma_{m}\sigma_{n}}
 $$
