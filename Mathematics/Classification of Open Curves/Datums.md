@@ -1,4 +1,5 @@
 ## 5NAZ_A 50 frames 
+![[5naz_A_50.gif]]
 #### WritheGains
 ![[Pasted image 20260731184639.png]]
 #### CorrelationsLagDetails
