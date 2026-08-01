@@ -46,6 +46,9 @@ We can then repeat this process for our new edge set to get a second level of de
 (*go animation weeee*)
 ```
 ### Time Dependent Curve
+Now we actually care about a curve 
+
+
 Suppose we have a sequence of curves $C(t_{1}),C(t_{2}),\dots,C(t_{T})$, with vertices at time $t_{\ell}$
 $$
 x_{0}(t_{\ell}),x_{1}(t_{\ell}),\dots,x_{n}(t_{\ell})
