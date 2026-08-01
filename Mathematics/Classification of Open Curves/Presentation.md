@@ -43,10 +43,13 @@ e_{2j}
 $$
 We can then repeat this process for our new edge set to get a second level of decomposition, and so on.
 ```
-(*go animation weeee*)
+(*go animation weeee, I'm thinking it will be of unwinding helix at time t_0 *)
 ```
 ### Time Dependent Curve
-Now we actually care about a curve 
+```
+Now we actually care about a curve that is evolving in time, so to add another layer of informational depth, we want to add some more 
+```
+
 
 
 Suppose we have a sequence of curves $C(t_{1}),C(t_{2}),\dots,C(t_{T})$, with vertices at time $t_{\ell}$
