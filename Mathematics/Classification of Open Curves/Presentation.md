@@ -168,4 +168,4 @@ To then allow these proteins to evolve in time, I would choose randomly a nearby
 I used this to play around with proteins and generate my own imaginary proteins by picking from these different regions corresponding to helices, sheets or the nifty little linker sections. I could then play around with the tools we described above and analyse any patterns. Another interesting thing I ha a look at was to use the fact that I'm using this wavelet approach to modify the global geometry of the curves without influencing the local geometry by influencing the detail coefficients of the coarse curve, allowing me to do things like this where I forced my protein-like curve to form a twist in the middle.
 
 ```
-## 
+## Now some actual proteins for ya
