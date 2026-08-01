@@ -130,7 +130,7 @@ $$
 $$
 
 ```
-Alright I hope everyone's ok with that now, because it's about to get slightly messier. Do you remember how we redefined the writhe for
+Alright I hope everyone's ok with that now, because it's about to get slightly messier. Do you remember how we redefined the writhe for discrete curves, well we're about to take that notion into account for our decomposition
 ```
 The level contribution can be made more local by examining the segment-pair terms. At level $m$, let $e_{0}^{(m)},e_{1}^{(m)},\dots,e^{(m)}_{2^{m}-1}$ be the edges of $\gamma^{(m)}$. Define
 $$
@@ -143,24 +143,16 @@ $$
 Now suppose a coarse edge $A$ at level $m-1$ is split into two children at level $m$, i.e. $A\to a_{0},a_{1}$, and similarly $B\to b_{0},b_{1}$ for some coarse edge $B$
 The refinement contribution associated with the coarse pair $(A,B)$ is:
 $$
-\Delta K_{AB}^{(m)}=\sum_{p=0}^{1}\sum_{q=0}^{1}K_{a_{p}b_{q}}^{(m)}-K_{AB}^{(m-1)}
+\Delta K_{AB}^{(m)}=\sum_{p=0}^{1}\sum_{q=0}^{1}K_{a_{p}b_{q}}^{(m)}-K_{AB}^{(m+1)}
 $$
 Which records how the writhe interacttion between two coarse regions changes when both regions are refined
-A fully general version also inclues the case $A=B$:
-$$
-\Delta K^{(m)}_{AA}=\sum_{a<b}K^{(m)}_{ab}
-$$
-Where $a,b$ are children of $A$
-For a binary split into two adjacent children, this is usually zero because adjacent polygonal edges have no KL contribution. However including this case does make the formulae nicer
-Then the level increment can be written as
+So we can rewrite our writhe increment in terms of this:
 $$
 \Delta \mathcal{W}^{(m)}=\sum_{A\leq B}\Delta K^{(m)}_{AB}
 $$
-___
-Each refinement step is controlled by the wavelet detail coefficients. Schematically, a parent edge or parent curve segment is tranformed as:
-$$
-\text{parent geometry}+\text{detail coefficient}\to \text{two child edges}
-$$
+```
+But now we have to recall that every increment is dependent on our detail coefficient
+```
 So $\Delta K^{(m)}_{AB}$ depends on the already reconstructed coarser geometry $\gamma^{(m-1)}$, the detial coefficients defining regions $A$ and $B$, and the nonlinear KL geometry of the resulting child edge-pair directions
 Therefore it is resonable to say that $\Delta K_{AB}^{(m)}$ tracks the effect of the combination of details in regions $A$ and $B$. However, one should not ssay it is a bilinear coefficient, the mapping between the wavelet details and the writhe is non-linear as the curve positions and edge directions change when details are added
 ___
