@@ -89,7 +89,7 @@ $$
 \mathcal{W}=\frac{1}{4\pi}\oint_{\underline{x}}\oint_{\underline{x}} \frac{\underline{\hat{T}}_{\underline{x}}(s)\times \underline{\hat{T}}_{\underline{x}}(s')\cdot(\underline{x}(s)-\underline{x}(s'))}{\left| \underline{x}(s)-\underline{x}(s') \right|^{3} }dsds'
 $$
 ```
-This is a rather nice property
+This is a rather nice property in that it is invariant under small continuous deformations, which isn't quite as good as being topologically invariant, but that's ok for our purposes. The main glaring issue, is that unless we are working with 
 ```
 
 ## Proteins
