@@ -72,14 +72,15 @@ $$
 $$
 Which measure how the multiscale shape is changing at each time
 ```
-So here is an example of the kind of results
+So here is an example of the kind of results I got from running this on some toy models
 Show animation of unwinding helix with all the bells and whistles
 ```
 ## Writhe
 ```
-Now we turn to the writhe, which is a knot theoretic property
+Now we turn to the writhe, which is a knot theoretic property which people such as Chris have found to be useful in the analysis of curves such as proteins (which I am mainly focusing on), but also magnetic field lines, which perhaps is more exciting for people here
+In essence, writhe is a measure of how much a curve self-tangles, which is related to a perhaps more well-known number the linking number that is a mea
 ```
-The following definition is for closed spacecurves. The writhe $\mathcal{W}$ unlike the [[Linking Number|linking]] $\mathcal{L}$ cannot be defined by a single planar projection, so it is distinct from the above $w$
+The following definition is for closed spacecurves. The writhe $\mathcal{W}$ unlike the linking $\mathcal{L}$ cannot be defined by a single planar projection, so it is distinct from the above $w$
 By replaxing $\underline{y}(s)$ with $\underline{x}(s')$ in the formula for the linking number, we get an expression representing the self-linking of $\underline{x}$ in $\mathbb{R}^{3}$:
 $$
 \mathcal{W}=\frac{1}{4\pi}\oint_{\underline{x}}\oint_{\underline{x}} \frac{\underline{\hat{T}}_{\underline{x}}(s)\times \underline{\hat{T}}_{\underline{x}}(s')\cdot(\underline{x}(s)-\underline{x}(s'))}{\left| \underline{x}(s)-\underline{x}(s') \right|^{3} }dsds'
