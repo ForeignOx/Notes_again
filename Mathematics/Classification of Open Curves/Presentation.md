@@ -47,7 +47,7 @@ We can then repeat this process for our new edge set to get a second level of de
 ```
 ### Time Dependent Curve
 ```
-Now we actually care about a curve that is evolving in time, so to add another layer of informational depth, we want to add some more 
+Now we actually care about a curve that is evolving in time, so to add another layer of informational depth, we want to add some more measures to keep track of. Since this is a largely computational project, we discretise the timesteps
 ```
 
 
