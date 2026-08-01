@@ -163,7 +163,7 @@ It does not answer:
 The distinction is important. Writhe is a global geometric quantity. A local detail coefficient may only create writhe by changing how one region of the curve sees another region. Therefore the natural quantities are interactions between refined regions, not isolated detail energies
 ## Proteins
 ```
-Let's take a break now from all this mathsyness, this is an applied talk after all, so let's talk about proteins for a bit. The reason we think that this multiresolution approach is important is that the way that proteins structure themseleves and interact is in a multiresolution format, they have the individual amino acids *show this*, which come together to form secondary structures such as helices and sheets *show a slick zoom out* which have their own properties and cause tangling in unique ways.6k
+Let's take a break now from all this mathsyness, this is an applied talk after all, so let's talk about proteins for a bit. The reason we think that this multiresolution approach is important is that the way that proteins structure themseleves and interact is in a multiresolution format, they have the individual amino acids *show this*, which come together to form secondary structures such as helices and sheets *show a slick zoom out* which have their own properties and cause tangling in unique ways, this is mainly due to their chemical bonds giving very restrictive geometry
 
 ```
 
