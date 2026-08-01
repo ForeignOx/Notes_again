@@ -15,7 +15,7 @@
 #### ParentChildCorrelation
 ![[Pasted image 20260731184500.png]]
 #### Angular Coherence
-![[Pasted image 20260731184701.png]]
+![[Pasted image 20260731184701.png|700]]
 ## 2PBI_A 50 frames 
 
 #### WritheGains
