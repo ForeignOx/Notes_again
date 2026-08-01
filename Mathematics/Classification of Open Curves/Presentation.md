@@ -78,7 +78,8 @@ Show animation of unwinding helix with all the bells and whistles
 ## Writhe
 ```
 Now we turn to the writhe, which is a knot theoretic property which people such as Chris have found to be useful in the analysis of curves such as proteins (which I am mainly focusing on), but also magnetic field lines, which perhaps is more exciting for people here
-In essence, writhe is a measure of how much a curve self-tangles, which is related to a perhaps more well-known number the linking number that is a mea
+In essence, writhe is a measure of how much a curve self-tangles, which is related to a perhaps more well-known number the linking number that is a measure of how tangled two knots are with each other.
+The way we calculate it for closed curves, is we take a knot, and consider how it looks when projected onto a plane from a certain angle, 
 ```
 The following definition is for closed spacecurves. The writhe $\mathcal{W}$ unlike the linking $\mathcal{L}$ cannot be defined by a single planar projection, so it is distinct from the above $w$
 By replaxing $\underline{y}(s)$ with $\underline{x}(s')$ in the formula for the linking number, we get an expression representing the self-linking of $\underline{x}$ in $\mathbb{R}^{3}$:
