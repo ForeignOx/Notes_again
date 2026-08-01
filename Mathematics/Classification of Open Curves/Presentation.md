@@ -22,33 +22,17 @@ $$
 $$
  d_{j}^{(1)}=\frac{1}{2}(e_{2j-1}-e_{2j})
 $$
-For $j\in\left\{ 1,2,\dots,\frac{n}{2} \right\}$, though for our purposes, we 
-Equivalently, 
+So $a_{j}^{(1)}$ records the mean direction of the two edges, while $d_{j}^{(1)}$ records the direction that the average has deviated.
+```
+*show geogebra diagram or something*
+```
+For $j\in\left\{ 1,2,\dots,\frac{n}{2} \right\}$, though for our purposes, we actually want to remove the halves as we want our approximation coefficient to resemble the curve, whereas the half would shrink the curve, and since the half is only really there for normalisation, we just remove it from both approximation and detail coefficients.
+Equivalently we can write this in matrix form, 
 $$
 \begin{pmatrix}
 a_{j}^{(1)} \\
 d_{j}^{(1)} 
-\end{pmatrix}=\frac{1}{2}\begin{pmatrix}
-1 & 1  \\
-1 & -1 
-\end{pmatrix}\begin{pmatrix}
-e_{2j-1} \\
-e_{2j}
-\end{pmatrix}
-$$Group the edges in pairs $(e_{1},e_{2}),(e_{2},e_{3}),\dots,(e_{n-1},e_{n})$ then for each pair define an average vector and a detail vector:
-$$
-a_{j}^{(1)}=\frac{1}{2}(e_{2j-1}+e_{2j})
-$$
-$$
- d_{j}^{(1)}=\frac{1}{2}(e_{2j-1}-e_{2j})
-$$
-For $j\in\left\{ 1,2,\dots,\frac{n}{2} \right\}$
-Equivalently, 
-$$
-\begin{pmatrix}
-a_{j}^{(1)} \\
-d_{j}^{(1)} 
-\end{pmatrix}=\frac{1}{2}\begin{pmatrix}
+\end{pmatrix}=\begin{pmatrix}
 1 & 1  \\
 1 & -1 
 \end{pmatrix}\begin{pmatrix}
@@ -56,8 +40,7 @@ e_{2j-1} \\
 e_{2j}
 \end{pmatrix}
 $$
-
-
+We can then repeat this process for our new edge set to get a second level of decomposition, and so on.
 
 ## Writhe
 
