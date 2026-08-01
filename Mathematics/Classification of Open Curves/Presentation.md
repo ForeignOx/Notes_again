@@ -91,6 +91,7 @@ $$
 ```
 This is a rather nice property in that it is invariant under small continuous deformations, which isn't quite as good as being topologically invariant, but that's ok for our purposes. The main glaring issue, is that unless we are working with the very few specific proteins that do have closed representations then we are in trouble.
 Thankfully this same integral form still mostly works for open curves, though it no longer is invariant under continuous deformation (you can picture just threading the end of the curve )
+
 ```
 
 ## Proteins
