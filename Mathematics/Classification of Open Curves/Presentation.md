@@ -44,21 +44,19 @@ $$
 We can then repeat this process for our new edge set to get a second level of decomposition, and so on.
 ```
 (*go animation weeee, I'm thinking it will be of unwinding helix at time t_0 *)
+The values we care about for analysis, 
 ```
 ### Time Dependent Curve
 ```
-Now we actually care about a curve that is evolving in time, so to add another layer of informational depth, we want to add some more measures to keep track of. Since this is a largely computational project, we discretise the timesteps
+Now we actually care about a curve that is evolving in time, so to add another layer of informational depth, we want to add some more measures to keep track of. Since this is a largely computational project, we discretise the timesteps:
 ```
-
-
-
 Suppose we have a sequence of curves $C(t_{1}),C(t_{2}),\dots,C(t_{T})$, with vertices at time $t_{\ell}$
 $$
 x_{0}(t_{\ell}),x_{1}(t_{\ell}),\dots,x_{n}(t_{\ell})
 $$
 $$
  e_{i}(t_{\ell})=x_{i}(t_{\ell})-x_{i-1}(t_{\ell})
-$$Applying the Haar tranform to each frame give time-dependent coefficients:
+$$Applying the Haar tranform to each frame give time-dependent detail coefficients coefficients:
 $$
 d_{j}^{(k)}(t_{\ell})
 $$
