@@ -126,12 +126,12 @@ $$
 This is not claiming that a wavelet mode has an intrinsic writhe by itself, instead, it says $\Delta \mathcal{W}^{(m)}$ is the change in exact polygonal writhe when the level $m$ geometric detail is added to the already reconstructed coarser curve
 The main advantage is that the decomposition telescopes:
 $$
-\mathcal{W}^{(0)}= \mathcal{W}^{(\ell)}+\sum_{m=1}^{\ell}\Delta \mathcal{W}^{(m)} 
+\mathcal{W} = \mathcal{W}^{(0)}= \sum_{m=0}^{\ell}\Delta \mathcal{W}^{(m)} 
 $$
-$$
-\implies \mathcal{W}(\gamma)=\sum_{m=1}^{J}\Delta \mathcal{W}^{(m)}
-$$
-___
+
+```
+Alright I hope everyone's ok with that now, because it's about to get slightly messier. Do you remember how we redefined the writhe for
+```
 The level contribution can be made more local by examining the segment-pair terms. At level $m$, let $e_{0}^{(m)},e_{1}^{(m)},\dots,e^{(m)}_{2^{m}-1}$ be the edges of $\gamma^{(m)}$. Define
 $$
 K_{ab}^{(m)}=\frac{1}{2\pi}I_{ab}^{(m)}
