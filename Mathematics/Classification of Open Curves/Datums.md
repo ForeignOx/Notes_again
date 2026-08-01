@@ -16,3 +16,19 @@
 ![[Pasted image 20260731184500.png]]
 #### Angular Coherence
 ![[Pasted image 20260731184701.png]]
+## 2PBI_A 50 frames 
+
+#### WritheGains
+
+#### CorrelationsLagDetails
+![[Pasted image 20260731201012.png]]
+#### Correlations between 1 and $i$
+![[Pasted image 20260731201035.png]]
+#### Correlations between 1 and $i$ ignoring 4 ignoring diagonal activity of depth 4
+
+#### CorrelationsBlock
+
+#### ParentChildCorrelation
+
+#### Angular Coherence
+
