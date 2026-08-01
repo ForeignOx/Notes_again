@@ -151,21 +151,20 @@ $$
 \Delta \mathcal{W}^{(m)}=\sum_{A\leq B}\Delta K^{(m)}_{AB}
 $$
 ```
-But now we have to recall that every increment is dependent on our detail coefficient
+But now we have to recall that every increment is dependent on our detail coefficients, so
 ```
-So $\Delta K^{(m)}_{AB}$ depends on the already reconstructed coarser geometry $\gamma^{(m-1)}$, the detial coefficients defining regions $A$ and $B$, and the nonlinear KL geometry of the resulting child edge-pair directions
-Therefore it is resonable to say that $\Delta K_{AB}^{(m)}$ tracks the effect of the combination of details in regions $A$ and $B$. However, one should not ssay it is a bilinear coefficient, the mapping between the wavelet details and the writhe is non-linear as the curve positions and edge directions change when details are added
+$\Delta K^{(m)}_{AB}$ depends on the already reconstructed coarser geometry $\gamma^{(m-1)}$, the detial coefficients defining regions $A$ and $B$, and the nonlinear KL geometry of the resulting child edge-pair directions
+Therefore it is resonable to say that $\Delta K_{AB}^{(m)}$ tracks the effect of the combination of details in regions $A$ and $B$. However, one cannot say it is a bilinear coefficient, the mapping between the wavelet details and the writhe is non-linear as the curve positions and edge directions change when details are added
 ___
 This method answers the question:
     At what scales and between which regions of the curve does the writhe appear as the curve is progressively reconstructed?
 It does not answer: 
     How much writhe belongs to one Haar coefficient?
 The distinction is important. Writhe is a global geometric quantity. A local detail coefficient may only create writhe by changing how one region of the curve sees another region. Therefore the natural quantities are interactions between refined regions, not isolated detail energies
-
-
-
 ## Proteins
-
+```
+Let's take a break now from all this mathsyness, this is an applied talk after all, so let's talk about proteins for a bit. The reason we think that this multiresolution approach is important is that the way that proteins structure themsel
+```
 
 
 ## 
