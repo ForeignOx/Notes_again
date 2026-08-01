@@ -96,8 +96,84 @@ Another issue that we have is that for proteins and computation in general, to m
 show the maths of that bit
 ```
 Next we want to combine our two main tools, essentially we want to decompose our curves down to find which simplifications are the biggest contributors to writhe, similar to how one finds the critical modes with Fourier decomposition. Our main issue is this
-distance cubed term which is makes our decomposition nonlinear which causes many issues, as we can't simply calculate the writhe of each layer, they are all tangled together. To sort this issue out, we 
+distance cubed term which is makes our decomposition nonlinear which causes many issues, as we can't simply calculate the writhe of each layer, they are all tangled together. To sort this issue out, we use a slightly different way of decomposing the writhe
 ```
+Suppose we have our set of open spacecurves given by the levels of Haar decomposition
+$$
+\gamma^{(0)},\gamma^{(1)},\dots,\gamma^{(\ell)}
+$$
+Where $\gamma^{(0)}$ is our original curve and $\gamma^{(\ell)}$ is the final decomposition, which has only one edge connecting the two endpoints
+```
+*show images of each level of decomposition*
+```
+If we consider this coarsest approximation $\gamma^{(\ell)}$ is a single edge, so it has no writhe 
+``` 
+a line never tangles with itself (in euclidean space at least)
+```
+Adding the first detail coefficient produces 2 edges which lie on a plane, so there is no writhe as there is no torsion, only curvature. At the next level up, the curve has 4 edges, so we can have some writhe. 
+```
+If we keep considering the amount of writhe we gain from adding the next layer of detail, we get a notion of how much writhe i
+
+```
+
+
+Define
+$$
+\mathcal{W}^{(m)}=\mathcal{W}(\gamma^{(m)})
+$$
+The contribution associated with adding level $m$ detail is
+$$
+\Delta \mathcal{W}^{(m)}=\mathcal{W}^{(m)}-\mathcal{W}^{(m-1)}
+$$
+This is not claiming that a wavelet mode has an intrinsic writhe by itself, instead, it says $\Delta \mathcal{W}^{(m)}$ is the change in exact polygonal writhe when the level $m$ geometric detail is added to the already reconstructed coarser curve
+The main advantage is that the decomposition telescopes:
+$$
+\mathcal{W}^{(J)}= \mathcal{W}^{(0)}+\sum_{m=1}^{J}\Delta \mathcal{W}^{(m)} 
+$$
+$$
+\implies \mathcal{W}(\gamma)=\sum_{m=1}^{J}\Delta \mathcal{W}^{(m)}
+$$
+___
+The level contribution can be made more local by examining the segment-pair terms. At level $m$, let $e_{0}^{(m)},e_{1}^{(m)},\dots,e^{(m)}_{2^{m}-1}$ be the edges of $\gamma^{(m)}$. Define
+$$
+K_{ab}^{(m)}=\frac{1}{2\pi}I_{ab}^{(m)}
+$$
+Where $I_{ab}^{(m)}$ is the signed spherical area contribution between edges $e_{a}^{(m)}$ and $e_{b}^{(m)}$. Then
+$$
+\mathcal{W}^{(m)}=\sum_{a<b}K_{ab}^{(m)}
+$$
+Now suppose a coarse edge $A$ at level $m-1$ is split into two children at level $m$, i.e. $A\to a_{0},a_{1}$, and similarly $B\to b_{0},b_{1}$ for some coarse edge $B$
+The refinement contribution associated with the coarse pair $(A,B)$ is:
+$$
+\Delta K_{AB}^{(m)}=\sum_{p=0}^{1}\sum_{q=0}^{1}K_{a_{p}b_{q}}^{(m)}-K_{AB}^{(m-1)}
+$$
+Which records how the writhe interacttion between two coarse regions changes when both regions are refined
+A fully general version also inclues the case $A=B$:
+$$
+\Delta K^{(m)}_{AA}=\sum_{a<b}K^{(m)}_{ab}
+$$
+Where $a,b$ are children of $A$
+For a binary split into two adjacent children, this is usually zero because adjacent polygonal edges have no KL contribution. However including this case does make the formulae nicer
+Then the level increment can be written as
+$$
+\Delta \mathcal{W}^{(m)}=\sum_{A\leq B}\Delta K^{(m)}_{AB}
+$$
+___
+Each refinement step is controlled by the wavelet detail coefficients. Schematically, a parent edge or parent curve segment is tranformed as:
+$$
+\text{parent geometry}+\text{detail coefficient}\to \text{two child edges}
+$$
+So $\Delta K^{(m)}_{AB}$ depends on the already reconstructed coarser geometry $\gamma^{(m-1)}$, the detial coefficients defining regions $A$ and $B$, and the nonlinear KL geometry of the resulting child edge-pair directions
+Therefore it is resonable to say that $\Delta K_{AB}^{(m)}$ tracks the effect of the combination of details in regions $A$ and $B$. However, one should not ssay it is a bilinear coefficient, the mapping between the wavelet details and the writhe is non-linear as the curve positions and edge directions change when details are added
+___
+This method answers the question:
+    At what scales and between which regions of the curve does the writhe appear as the curve is progressively reconstructed?
+It does not answer: 
+    How much writhe belongs to one Haar coefficient?
+The distinction is important. Writhe is a global geometric quantity. A local detail coefficient may only create writhe by changing how one region of the curve sees another region. Therefore the natural quantities are interactions between refined regions, not isolated detail energies
+
+
+
 ## Proteins
 
 
