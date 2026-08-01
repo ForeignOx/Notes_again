@@ -71,11 +71,20 @@ $$
 \dot{d}_{j}^{(k)}(t_{\ell})\approx \frac{d_{j}^{(k)}(t_{\ell+1})-d_{j}^{(k)}(t_{\ell})}{t_{\ell+1}-t_{\ell}}
 $$
 Which measure how the multiscale shape is changing at each time
-Befor we analyse any curves we must remove global translation an rotation which give the rigid-body motion
-
+```
+So here is an example of the kind of results
+Show animation of unwinding helix with all the bells and whistles
+```
 ## Writhe
-
-
+```
+Now we turn to the writhe, which is a knot theoretic property
+```
+The following definition is for closed spacecurves. The writhe $\mathcal{W}$ unlike the [[Linking Number|linking]] $\mathcal{L}$ cannot be defined by a single planar projection, so it is distinct from the above $w$
+By replaxing $\underline{y}(s)$ with $\underline{x}(s')$ in the formula for the linking number, we get an expression representing the self-linking of $\underline{x}$ in $\mathbb{R}^{3}$:
+$$
+\mathcal{W}=\frac{1}{4\pi}\oint_{\underline{x}}\oint_{\underline{x}} \frac{\underline{\hat{T}}_{\underline{x}}(s)\times \underline{\hat{T}}_{\underline{x}}(s')\cdot(\underline{x}(s)-\underline{x}(s'))}{\left| \underline{x}(s)-\underline{x}(s') \right|^{3} }dsds'
+$$
+Analogous to the linking number, this measures the average crossing sum of $\underline{x}(s)$ with itelf over all planar projections. 
 
 ## Proteins
 
