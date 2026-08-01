@@ -169,3 +169,4 @@ I used this to play around with proteins and generate my own imaginary proteins 
 
 ```
 ## Now some actual proteins for ya
+yeh we get tha gist anywayssss
