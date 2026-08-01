@@ -91,9 +91,13 @@ $$
 ```
 This is a rather nice property in that it is invariant under small continuous deformations, which isn't quite as good as being topologically invariant, but that's ok for our purposes. The main glaring issue, is that unless we are working with the very few specific proteins that do have closed representations then we are in trouble.
 Thankfully this same integral form still mostly works for open curves, though it no longer is invariant under continuous deformation (you can picture just threading the end of the curve through the knotted bits)
-Another issue that we have is that for proteins and computation in general, to match it up with the wavelet decomposition we want to be working on discrete spacecurves... so we act
+Another issue that we have is that for proteins and computation in general, to match it up with the wavelet decomposition we want to be working on discrete spacecurves... so we actually have to modify our formula further,thankfully it's not too hard to do 
 ```
-
+show the maths of that bit
+```
+Next we want to combine our two main tools, essentially we want to decompose our curves down to find which simplifications are the biggest contributors to writhe, similar to how one finds the critical modes with Fourier decomposition. Our main issue is this
+distance cubed term which renders our
+```
 ## Proteins
 
 
