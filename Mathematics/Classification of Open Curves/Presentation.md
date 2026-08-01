@@ -164,11 +164,8 @@ The distinction is important. Writhe is a global geometric quantity. A local det
 ## Proteins
 ```
 Let's take a break now from all this mathsyness, this is an applied talk after all, so let's talk about proteins for a bit. The reason we think that this multiresolution approach is important is that the way that proteins structure themseleves and interact is in a multiresolution format, they have the individual amino acids *show this*, which come together to form secondary structures such as helices and sheets *show a slick zoom out* which have their own properties and cause tangling in unique ways, this is mainly due to their chemical bonds giving very restrictive geometry. We can observe this, for example if we measure the angles between each amino acid, using this technique depicted here, we get this sort of distribution out of it. *show tha distro yo*
-To then allow these proteins to evolve in time, I would choose randomly a nearby angle on a cone-like capping surface of the sphere 
-
+To then allow these proteins to evolve in time, I would choose randomly a nearby angle on a cone-like capping surface of the sphere for a certain subset of the curve and evolve it like that, but then I refined the model and instead of picking nearby points in angular distribution, I picked nearby points on the probability distribution, which we can think of as travelling around this distribution graph.
 I used this to play around with proteins and generate my own imaginary proteins by picking from these different regions corresponding to helices, sheets or the nifty little linker sections. I could then play around with the tools we described above and analyse any patterns. Another interesting thing I ha a look at was to use the fact that I'm using this wavelet approach to modify the global geometry of the curves without influencing the local geometry by influencing the detail coefficients of the coarse curve, allowing me to do things like this where I forced my protein-like curve to form a twist in the middle.
 
 ```
-
-
 ## 
