@@ -112,23 +112,21 @@ a line never tangles with itself (in euclidean space at least)
 ```
 Adding the first detail coefficient produces 2 edges which lie on a plane, so there is no writhe as there is no torsion, only curvature. At the next level up, the curve has 4 edges, so we can have some writhe. 
 ```
-If we keep considering the amount of writhe we gain from adding the next layer of detail, we get a notion of how much writhe i
+If we keep considering the amount of writhe we gain from adding the next layer of detail, we get a notion of how much writhe is in each layer
 
 ```
-
-
 Define
 $$
 \mathcal{W}^{(m)}=\mathcal{W}(\gamma^{(m)})
 $$
 The contribution associated with adding level $m$ detail is
 $$
-\Delta \mathcal{W}^{(m)}=\mathcal{W}^{(m)}-\mathcal{W}^{(m-1)}
+\Delta \mathcal{W}^{(m)}=\mathcal{W}^{(m)}-\mathcal{W}^{(m+1)}
 $$
 This is not claiming that a wavelet mode has an intrinsic writhe by itself, instead, it says $\Delta \mathcal{W}^{(m)}$ is the change in exact polygonal writhe when the level $m$ geometric detail is added to the already reconstructed coarser curve
 The main advantage is that the decomposition telescopes:
 $$
-\mathcal{W}^{(J)}= \mathcal{W}^{(0)}+\sum_{m=1}^{J}\Delta \mathcal{W}^{(m)} 
+\mathcal{W}^{(0)}= \mathcal{W}^{(\ell)}+\sum_{m=1}^{\ell}\Delta \mathcal{W}^{(m)} 
 $$
 $$
 \implies \mathcal{W}(\gamma)=\sum_{m=1}^{J}\Delta \mathcal{W}^{(m)}
