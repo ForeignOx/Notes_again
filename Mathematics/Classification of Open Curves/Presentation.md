@@ -96,7 +96,7 @@ Another issue that we have is that for proteins and computation in general, to m
 show the maths of that bit
 ```
 Next we want to combine our two main tools, essentially we want to decompose our curves down to find which simplifications are the biggest contributors to writhe, similar to how one finds the critical modes with Fourier decomposition. Our main issue is this
-distance cubed term which renders our
+distance cubed term which is makes our decomposition nonlinear which causes many issues, as we can't simply calculate the writhe of each layer, they are all tangled together. To sort this issue out, we 
 ```
 ## Proteins
 
