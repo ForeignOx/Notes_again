@@ -44,7 +44,7 @@ $$
 We can then repeat this process for our new edge set to get a second level of decomposition, and so on.
 ```
 (*go animation weeee, I'm thinking it will be of unwinding helix at time t_0 *)
-The values we care about for analysis, 
+The values we care about for analysis, is the detail coefficients as they are a meaure of how much information is lost from each simplification
 ```
 ### Time Dependent Curve
 ```
@@ -72,6 +72,7 @@ $$
 $$
 Which measure how the multiscale shape is changing at each time
 Befor we analyse any curves we must remove global translation an rotation which give the rigid-body motion
+
 ## Writhe
 
 
