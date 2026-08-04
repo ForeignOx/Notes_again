@@ -51,3 +51,38 @@
 ![[Pasted image 20260804124812.png]]
 #### Angular Coherence
 ![[Pasted image 20260804124829.png]]
+
+## 1B0N_A 50 (every other) frames 
+
+
+#### WritheGains
+![[Pasted image 20260804131648.png]]
+#### CorrelationsLagDetails
+![[Pasted image 20260804131306.png]]
+#### Correlations between 1 and $i$
+![[Pasted image 20260804131343.png]]
+#### Correlations between 1 and $i$ ignoring 4 ignoring diagonal activity of depth 4
+![[Pasted image 20260804131411.png]]
+#### CorrelationsBlock
+![[Pasted image 20260804131430.png]]
+#### ParentChildCorrelation
+![[Pasted image 20260804131452.png]]
+#### Angular Coherence
+![[Pasted image 20260804131531.png]]
+
+## 3WP8_A 50 (every other) frames 
+
+
+#### WritheGains
+
+#### CorrelationsLagDetails
+
+#### Correlations between 1 and $i$
+
+#### Correlations between 1 and $i$ ignoring 4 ignoring diagonal activity of depth 4
+
+#### CorrelationsBlock
+
+#### ParentChildCorrelation
+
+#### Angular Coherence
