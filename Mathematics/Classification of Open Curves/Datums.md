@@ -38,7 +38,7 @@
 
 
 #### WritheGains
-
+![[Pasted image 20260804124952.png]]
 #### CorrelationsLagDetails
 ![[Pasted image 20260804124602.png]]
 #### Correlations between 1 and $i$
@@ -46,7 +46,8 @@
 #### Correlations between 1 and $i$ ignoring 4 ignoring diagonal activity of depth 4
 ![[Pasted image 20260804124722.png]]
 #### CorrelationsBlock
-
+![[Pasted image 20260804124741.png]]
 #### ParentChildCorrelation
-
+![[Pasted image 20260804124812.png]]
 #### Angular Coherence
+![[Pasted image 20260804124829.png]]
