@@ -20,7 +20,7 @@
 ![[2pbi_A_50.gif]]
 
 #### WritheGains
-
+![[Pasted image 20260804124302.png]]
 #### CorrelationsLagDetails
 ![[Pasted image 20260731201012.png]]
 #### Correlations between 1 and $i$
@@ -33,3 +33,20 @@
 ![[Pasted image 20260801132105.png]]
 #### Angular Coherence
 ![[Pasted image 20260801132122.png]]
+
+## 3WP8_A 50 (every other) frames 
+
+
+#### WritheGains
+
+#### CorrelationsLagDetails
+![[Pasted image 20260804124602.png]]
+#### Correlations between 1 and $i$
+![[Pasted image 20260804124644.png]]
+#### Correlations between 1 and $i$ ignoring 4 ignoring diagonal activity of depth 4
+![[Pasted image 20260804124722.png]]
+#### CorrelationsBlock
+
+#### ParentChildCorrelation
+
+#### Angular Coherence
