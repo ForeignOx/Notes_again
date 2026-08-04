@@ -35,7 +35,7 @@
 ![[Pasted image 20260801132122.png]]
 
 ## 3WP8_A 50 (every other) frames 
-
+![[3wp8_A_50.gif]]
 
 #### WritheGains
 ![[Pasted image 20260804124952.png]]
@@ -53,16 +53,22 @@
 ![[Pasted image 20260804124829.png]]
 
 ## 1B0N_A 50 (every other) frames 
-
+![[1b0N_A_50.gif]]
 
 #### WritheGains
 ![[Pasted image 20260804131648.png]]
+Absolute writhe gain:
+![[Pasted image 20260804132536.png]]
 #### CorrelationsLagDetails
 ![[Pasted image 20260804131306.png]]
 #### Correlations between 1 and $i$
 ![[Pasted image 20260804131343.png]]
+Absolute correlations:
+![[Pasted image 20260804132404.png]]
 #### Correlations between 1 and $i$ ignoring 4 ignoring diagonal activity of depth 4
 ![[Pasted image 20260804131411.png]]
+Absolute Correlations:
+![[Pasted image 20260804132435.png]]
 #### CorrelationsBlock
 ![[Pasted image 20260804131430.png]]
 #### ParentChildCorrelation
