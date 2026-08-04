@@ -53,6 +53,7 @@
 ![[Pasted image 20260804124829.png]]
 
 ## 1B0N_A 50 (every other) frames 
+#### Gif
 ![[1b0N_A_50.gif]]
 
 #### WritheGains
@@ -75,6 +76,24 @@ Absolute Correlations:
 ![[Pasted image 20260804131452.png]]
 #### Angular Coherence
 ![[Pasted image 20260804131531.png]]
+
+## 5w82_E 50 (every other) frames 
+
+
+#### WritheGains
+![[Pasted image 20260804133212.png]]
+#### CorrelationsLagDetails
+![[Pasted image 20260804133001.png]]
+#### Correlations between 1 and $i$
+![[Pasted image 20260804133013.png]]
+#### Correlations between 1 and $i$ ignoring 4 ignoring diagonal activity of depth 4
+![[Pasted image 20260804133029.png]]
+#### CorrelationsBlock
+![[Pasted image 20260804133046.png]]
+#### ParentChildCorrelation
+![[Pasted image 20260804133101.png]]
+#### Angular Coherence
+![[Pasted image 20260804133154.png]]
 
 ## 3WP8_A 50 (every other) frames 
 
