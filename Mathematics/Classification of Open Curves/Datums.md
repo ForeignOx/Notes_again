@@ -1,7 +1,7 @@
 ## 5NAZ_A 50 frames 
 ![[5naz_A_50.gif]]
 #### WritheGains
-![[Pasted image 20260731184639.png]]
+
 #### CorrelationsLagDetails
 ![[Pasted image 20260731154558.png]]
 
@@ -20,7 +20,7 @@
 ![[2pbi_A_50.gif]]
 
 #### WritheGains
-![[Pasted image 20260801131810.png]]
+
 #### CorrelationsLagDetails
 ![[Pasted image 20260731201012.png]]
 #### Correlations between 1 and $i$
