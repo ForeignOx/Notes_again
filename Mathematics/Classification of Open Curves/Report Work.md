@@ -1,5 +1,5 @@
 # Abstract
-
+An investigation into the hypothesis that a telescoping Haar wavelet decomposition of the writhe would be a useful tool to see how and to what extent local movement of amino acids in a protein lead to large scale changes in the protein geometry.
 # Mathematical Background
 The main focus of this project was on time-dependent discrete open spacecurves in 3 dimensions:
 $$
@@ -8,7 +8,8 @@ $$
 $$
 \gamma(s,t) \mapsto \mathbf{x}_{i}(t)
 $$
-As this was a good way of representing 
+As this was a good way of representing the time evolution of the $C_{\alpha}$ protein backbone (cite paper which uses this?) which was the main real-life application of the project. It was also useful for the computational aspect of the calculations and could be used on other open curves such as magnetic field lines. (maybe provide other e.g.)
+It has been found (cite) that writhe is a useful tool to measure the tangling of these protein backbones, but 
 
 
 
@@ -167,7 +168,7 @@ It does not answer:
     How much writhe belongs to one Haar coefficient?
 The distinction is important. Writhe is a global geometric quantity. A local detail coefficient may only create writhe by changing how one region of the curve sees another region. Therefore the natural quantities are interactions between refined regions, not isolated detail energies
 The outputs one might analyse are $\Delta \mathcal{W}^{(m)}$, $\Delta K_{AB}^{(m)}$, and$\sum_{m\leq M}\Delta \mathcal{W}^{(m)}$ which is the writhe accumulate up to resolution $M$
-Positive and negative contributions can canncel, which shows whether small scale refinement create coherent writhe at any larger scales
+Positive and negative contributions can cancel, which shows whether small scale refinement create coherent writhe at any larger scales
 ### Decompoition Algorithm:
 - Start with polygonal curve $\gamma^{(J)}$ with $2^{J}$ edges
 - Perform a Haar or wavelet decomposition of the curvve using the edge vectors
