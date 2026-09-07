@@ -8,7 +8,7 @@ $$
 $$
 \gamma(s,t) \mapsto \mathbf{x}_{i}(t)
 $$
-
+As this was a good way of representing 
 
 
 
