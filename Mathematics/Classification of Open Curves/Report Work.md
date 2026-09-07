@@ -1,23 +1,13 @@
 # Abstract
 
 # Mathematical Background
-The main focus of this project was on time-dependent discrete open spacecurves
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+The main focus of this project was on time-dependent discrete open spacecurves in 3 dimensions:
+$$
+\gamma: \mathbb{N}\times \mathbb{R}^{+}\to \mathbb{R}^{3}
+$$
+$$
+\gamma(s,t) \mapsto (x_{1},x_{2},x_{3})
+$$
 
 
 
