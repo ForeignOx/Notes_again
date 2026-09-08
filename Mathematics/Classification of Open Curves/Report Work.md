@@ -65,7 +65,10 @@ $$
 Where $f$ can be the identity, or represent the relative detail or detail velocity coefficients.
 This is a metric of how much deformation there is in each scale across time.
 A useful metric derived from this is a scale centroid:
-
+$$
+\tilde{k}(t)=\frac{E^{(k)}(t)}{\sum_{k}E^{(k)}(t)}
+$$
+Which represents which scales the energy resides.
 
 ## Writhe
 Next writhe time
