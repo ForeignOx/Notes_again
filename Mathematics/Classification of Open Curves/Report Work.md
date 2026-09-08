@@ -1,6 +1,7 @@
 # Abstract
 An investigation into the hypothesis that a telescoping Haar wavelet decomposition of the writhe would be a useful tool to see how and to what extent local movement of amino acids in a protein lead to large scale changes in the protein geometry.
 # Mathematical Background
+## Haar Wavelet Transform
 The main focus of this project was on time-dependent discrete open spacecurves in 3 dimensions:
 $$
 \gamma: \left\{ 0,1,\dots,n \right\}\times \mathbb{R}^{+}\to \mathbb{R}^{3}
@@ -45,9 +46,8 @@ $$
  \mathbf{d}_{j}^{(k+1)}(t)=\mathbf{a}^{(k)}_{2j-1}(t)-\mathbf{a}^{(k)}_{2j}(t)
 $$
 Note that using the approximation and detail coefficients, one can reconstruct the more detailed curve by a simple rearrangement.
+## Haar Transform Analysis
 
-
-- Here show some of the initial work with unwinding helices and folding curves etc
 
 Next writhe time
 
