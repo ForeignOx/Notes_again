@@ -64,6 +64,7 @@ E^{(k)}(t)=\sum_{j}\lvert \lvert f(\mathbf{d}_{j}^{(k)}) \rvert \rvert ^{2}
 $$
 Where $f$ can be the identity, or represent the relative detail or detail velocity coefficients.
 This is a metric of how much deformation there is in each scale across time.
+A useful metric derived from this is a scale centroid:
 
 
 ## Writhe
