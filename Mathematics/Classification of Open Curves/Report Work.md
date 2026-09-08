@@ -74,7 +74,7 @@ $$
 A^{(k)}(t)=\frac{\left\lvert  \left\lvert  \sum_{j}f( \mathbf{d}_{j}^{(k)})  \right\rvert  \right\rvert }{\sum_{j}\lvert \lvert f(\mathbf{d}_{j}^{(k)}) \rvert \rvert }
 $$
 With $f$ defined as with energy. If the detail vectors point in unrelated directions, then the numerator will be small as the vectors cancel, but if they point in a common direction, then $A^{(k)}\to1$.
-Some test curves that were tested using these included a  
+Some test curves that were tested using these included  
 ## Writhe
 Next writhe time
 
