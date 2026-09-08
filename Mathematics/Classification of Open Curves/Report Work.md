@@ -60,12 +60,9 @@ $$
 Where we use the approximation in computations as we discretise the timesteps.
 From these we define relative and instantaneous energies respectively by:
 $$
-\Delta E^{(k)}(t)=\sum_{j}\lvert \lvert \Delta \mathbf{d}_{j}^{(k)}(t) \rvert \rvert ^{2} 
+E^{(k)}(t)=\sum_{j}\lvert \lvert f(\mathbf{d}_{j}^{(k)}) \rvert \rvert ^{2}
 $$
-$$
- \dot{E}^{(k)}(t)=\sum_{j}\lvert \lvert d \rvert \rvert 
-$$
-
+Where $f$ can be the identity
 ## Writhe
 Next writhe time
 
