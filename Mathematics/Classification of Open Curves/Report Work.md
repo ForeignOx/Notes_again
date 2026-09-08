@@ -47,51 +47,15 @@ $$
 $$
 Note that using the approximation and detail coefficients, one can reconstruct the more detailed curve by a simple rearrangement.
 ## Haar Transform Analysis
+With this information alone, much like Fourier analysis, one can 
 
-
+## Writhe
 Next writhe time
 
 
 
-## Haar Wavelet Transform
-Suppose we have a discrete [[Spacecurves|spacecurve]] with vertices
-$$
-x_{0},x_{1},\dots,x_{n}\in  \mathbb{R}^{3}
-$$
-and edge vectors
-$$
-e_{i}=x_{i+1}-x_{i}~~i=1,\dots,n-1
-$$
-Group the edges in pairs $(e_{1},e_{2}),(e_{2},e_{3}),\dots,(e_{n-1},e_{n})$ then for each pair define an average vector and a detail vector:
-$$
-a_{j}^{(1)}=\frac{1}{2}(e_{2j-1}+e_{2j})
-$$
-$$
- d_{j}^{(1)}=\frac{1}{2}(e_{2j-1}-e_{2j})
-$$
-For $j\in\left\{ 1,2,\dots,\frac{n}{2} \right\}$. So $a_{j}^{(1)}$ records the mean direction of the two edges, while $d_{j}^{(1)}$ records the direction that the average has deviated.
-Equivalently we can write this in matrix form, 
-$$
-\begin{pmatrix}
-a_{j}^{(1)} \\
-d_{j}^{(1)} 
-\end{pmatrix}=\begin{pmatrix}
-1 & 1  \\
-1 & -1 
-\end{pmatrix}\begin{pmatrix}
-e_{2j-1} \\
-e_{2j}
-\end{pmatrix}
-$$
-We can then repeat this process for our new edge set to get a second level of decomposition, and so on.
-___
-Suppose we have a sequence of curves $C(t_{1}),C(t_{2}),\dots,C(t_{T})$, with vertices at time $t_{\ell}$
-$$
-x_{0}(t_{\ell}),x_{1}(t_{\ell}),\dots,x_{n}(t_{\ell})
-$$
-$$
- e_{i}(t_{\ell})=x_{i}(t_{\ell})-x_{i-1}(t_{\ell})
-$$Applying the Haar tranform to each frame give time-dependent detail coefficients coefficients:
+
+
 Define the energy at scale $k$ by
 $$
 E_{k}(t)=\sum_{j}\lvert \lvert \Delta_{j}^{(k)}(t) \rvert \rvert ^{2}
