@@ -52,7 +52,19 @@ We define relative detail coefficients as changes in detail coefficient with res
 $$
 \Delta \mathbf{d}_{j}^{(k)}(t)=\mathbf{d}_{j}^{(k)}(t)-\mathbf{d}_{j}^{(k)}(t_{0})
 $$
-
+Which shows the 
+We also define detail velocity coefficients as instantaneous changes in detail coefficient
+$$
+\dot{\mathbf{d}}_{j}^{(k)}(t)=\frac{d\mathbf{d}_{j}^{(k)}}{dt} \approx \frac{\mathbf{d}_{j}^{(k)}(t)-\mathbf{d}_{j}^{(k)}(t-\delta t)}{\delta t}
+$$
+Where we use the approximation in computations as we discretise the timesteps.
+From these we define relative and instantaneous energies respectively by:
+$$
+\Delta E^{(k)}(t)=\sum_{j}\lvert \lvert \Delta \mathbf{d}_{j}^{(k)}(t) \rvert \rvert ^{2} 
+$$
+$$
+ \dot{E}^{(k)}(t)=\sum_{j}\lvert \lvert d \rvert \rvert 
+$$
 
 ## Writhe
 Next writhe time
