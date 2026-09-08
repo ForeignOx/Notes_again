@@ -58,11 +58,12 @@ $$
 \dot{\mathbf{d}}_{j}^{(k)}(t)=\frac{d\mathbf{d}_{j}^{(k)}}{dt} \approx \frac{\mathbf{d}_{j}^{(k)}(t)-\mathbf{d}_{j}^{(k)}(t-\delta t)}{\delta t}
 $$
 Where we use the approximation in computations as we discretise the timesteps.
-From these we define relative and instantaneous energies respectively by:
+We define the energy at scale $k$ and time $t$ as
 $$
 E^{(k)}(t)=\sum_{j}\lvert \lvert f(\mathbf{d}_{j}^{(k)}) \rvert \rvert ^{2}
 $$
-Where $f$ can be the identity
+Where $f$ can be the identity, or represent the relative detail or detail velocity coefficients.
+
 ## Writhe
 Next writhe time
 
