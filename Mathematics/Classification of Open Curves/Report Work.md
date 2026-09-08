@@ -68,7 +68,7 @@ A useful metric derived from this is a scale centroid:
 $$
 \tilde{k}(t)=\frac{E^{(k)}(t)}{\sum_{k}E^{(k)}(t)}
 $$
-Which represents which scales the energy resides. If this increases, then the energy of the detail coefficients is moving from small to large scale which would be indicative of a global change in geometry.
+Which represents which scales the energy resides. If this increases, then the energy of the detail coefficients is moving from small to large scale which would be indicative of a significant change in the geometry.
 
 
 ## Writhe
