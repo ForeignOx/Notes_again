@@ -16,13 +16,18 @@ $$
 \mathbf{e}_{i}(t)=\mathbf{x}_{i}(t)-\mathbf{x}_{i-1}(t)
 $$
 For $i\in\left\{ 1,\dots ,n \right\}$
-Group the edges into pairs $(\mathbf{e}_{1},\mathbf{e}_{2}),(\mathbf{e}_{2},\mathbf{e}_{3}),\dots,(\mathbf{e}_{n-1},\mathbf{e}_{n})$ and for each pair define an average and detail vector:
+Group the edges into pairs $(\mathbf{e}_{1},\mathbf{e}_{2}),(\mathbf{e}_{2},\mathbf{e}_{3}),\dots,(\mathbf{e}_{n-1},\mathbf{e}_{n})$ if there are an even number, or pairs and a final triplet $(\mathbf{e}_{n-2},\mathbf{e}_{n-1},\mathbf{e}_{n})$ and for each pair define an average and detail vector:
 $$
-a_{j}^{(1)}=\frac{1}{2}(e_{2j-1}+e_{2j})
+\mathbf{a}_{j}^{(1)}=\mathbf{e}_{2j-1}+\mathbf{e}_{2j}
 $$
 $$
- d_{j}^{(1)}=\frac{1}{2}(e_{2j-1}-e_{2j})
+ \mathbf{d}_{j}^{(1)}=\mathbf{e}_{2j-1}-\mathbf{e}_{2j}
 $$
+And for the triplet define the average and two detail vectors:
+find this :)
+Note that unlike a standard Haar transform with normalisation constant $\frac{1}{2}$, this has been modified to simply be 1 as to avoid reducing the scale at each level of decomposition.
+The average vectors form a simplified spacecurve, and the detail vectors represent how much this curve has been simplified compared to the original
+(diag)
 
 
 
