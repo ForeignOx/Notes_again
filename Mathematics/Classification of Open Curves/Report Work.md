@@ -58,7 +58,7 @@ Next writhe time
 
 Define the energy at scale $k$ by
 $$
-E_{k}(t)=\sum_{j}\lvert \lvert \Delta_{j}^{(k)}(t) \rvert \rvert ^{2}
+E_{k}(t)=\sum_{j}\lvert \lvert \Delta d_{j}^{(k)}(t) \rvert \rvert ^{2}
 $$
 Which measures how much defomation is present at scale $k$. Small $k$ correspond to short-wavelength local rearrangements. Large $k$ corresponds to collective bending
 A useful normalised version is:
