@@ -47,7 +47,12 @@ $$
 $$
 Note that using the approximation and detail coefficients, one can reconstruct the more detailed curve by a simple rearrangement.
 ## Haar Transform Analysis
-With this information alone, much like Fourier analysis, one can 
+With this information alone, much like Fourier analysis, one can glean useful information about the geometry of a curve by examining how the coefficients of the Haar transform evolve over time. Since the approximation coefficients simply represent the several simplified curves, the detail coefficients are points of interest.
+We define relative detail coefficients as changes in detail coefficient with respect to a reference time $t_{0}$:
+$$
+\Delta \mathbf{d}_{j}^{(k)}(t)=\mathbf{d}_{j}^{(k)}(t)-\mathbf{d}_{j}^{(k)}(t_{0})
+$$
+
 
 ## Writhe
 Next writhe time
