@@ -24,13 +24,15 @@ $$
  \mathbf{d}_{j}^{(1)}(t)=\mathbf{e}_{2j-1}(t)-\mathbf{e}_{2j}(t)
 $$
 And for the triplet define the average and two detail vectors:
-find this :)
 
 $$
 \mathbf{a}^{(1)}_{j}(t)=\mathbf{e}_{2j-2}(t)+\mathbf{e}_{2j-1}(t)+\mathbf{e}_{2j}(t)
 $$
 $$
-
+\mathbf{c}_{j}^{(1)}(t)=\mathbf{e}_{2j-2}(t)-\mathbf{e}_{2j-1}(t)
+$$
+$$
+ \mathbf{d}_{j}^{(1)}(t)=\frac{1}{2}(\mathbf{e}_{2j-2}(t)+\mathbf{e}_{2j-1}(t))-\mathbf{e}_{2j}(t)
 $$
 Note that unlike a standard Haar transform with normalisation constant $\frac{1}{2}$, this has been modified to simply be 1 as to avoid reducing the scale at each level of decomposition.
 The average vectors form a simplified spacecurve, and the detail vectors represent how much this curve has been simplified compared to the original.
@@ -42,6 +44,9 @@ $$
 $$
  \mathbf{d}_{j}^{(k+1)}(t)=\mathbf{a}^{(k)}_{2j-1}(t)-\mathbf{a}^{(k)}_{2j}(t)
 $$
+Note that using the approximation and detail coefficients, one can reconstruct the more detailed curve by a simple rearrangement.
+
+
 - Here show some of the initial work with unwinding helices and folding curves etc
 
 Next writhe time
