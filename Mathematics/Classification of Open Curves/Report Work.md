@@ -10,7 +10,7 @@ $$
 $$
 As this was a good way of representing the time evolution of the $C_{\alpha}$ protein backbone (cite paper which uses this?) which was the main real-life application of the project. It was also useful for the computational aspect of the calculations and could be used on other open curves such as magnetic field lines. (maybe provide other e.g.)
 It has been found (cite) that writhe is a useful tool to measure the tangling of these protein backbones as it takes careful consideration of local and global geometry.
-Since proteins are so naturally given to multiresolution 
+Proteins are naturally given to multiresolution analysis due to their natural structural ordering, the primary structure of the amino acids themselves, the secondary structure of helices and pleated sheets, and even in some cases tertiary structure such as beta barrels. 
 
 
 
