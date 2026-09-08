@@ -69,7 +69,7 @@ $$
 \tilde{k}(t)=\frac{E^{(k)}(t)}{\sum_{k}E^{(k)}(t)}
 $$
 Which represents which scales the energy resides. If this increases, then the energy of the detail coefficients is moving from small to large scale which would be indicative of a significant change in the geometry.
-Another metric is the directional coherence which rules out whether a high value of $E^{(k)}(t)$ comes from many unrelated motions 
+Another metric is the directional coherence which rules out whether a high value of $E^{(k)}(t)$ comes from many unrelated motions so a coherence 
 
 
 ## Writhe
