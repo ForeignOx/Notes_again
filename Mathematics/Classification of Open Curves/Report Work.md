@@ -106,14 +106,12 @@ Then the contribution associated with adding level $m$ detail is
 $$
 \Delta \mathcal{W}^{(m)}=\mathcal{W}^{(m)}-\mathcal{W}^{(m+1)}
 $$
-One can calculate this writhe increase
-This is not claiming that a wavelet mode has an intrinsic writhe by itself, instead, it says $\Delta \mathcal{W}^{(m)}$ is the change in exact polygonal writhe when the level $m$ geometric detail is added to the already reconstructed coarser curve.
-This can be 
+One can calculate this writhe increase for each relevant wavelet mode, and their sum is simply the total writhe of the original curve:
 $$
 \mathcal{W} = \mathcal{W}^{(0)}= \sum_{m=0}^{\ell}\Delta \mathcal{W}^{(m)} 
 $$
-
-The level contribution can be made more local by examining the segment-pair terms. At level $m$, let $e_{0}^{(m)},e_{1}^{(m)},\dots,e^{(m)}_{2^{m}-1}$ be the edges of $\gamma^{(m)}$. Define
+This is not claiming that a wavelet mode has an intrinsic writhe by itself, instead, it says $\Delta \mathcal{W}^{(m)}$ is the change in exact polygonal writhe when the level $m$ geometric detail is added to the already reconstructed coarser curve.
+The level contribution can be made more local by examining the segment-pair terms. At level $m$, let $\mathbf{a}_{0}^{(m)},\mathbf{a}_{1}^{(m)},\dots,\mathbf{a}^{(m)}_{\ell}$ be the edges of $\gamma^{(m)}$. Define
 $$
 K_{ab}^{(m)}=\frac{1}{2\pi}I_{ab}^{(m)}
 $$
