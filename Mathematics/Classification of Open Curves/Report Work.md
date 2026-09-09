@@ -74,7 +74,10 @@ $$
 A^{(k)}(t)=\frac{\left\lvert  \left\lvert  \sum_{j}f( \mathbf{d}_{j}^{(k)})  \right\rvert  \right\rvert }{\sum_{j}\lvert \lvert f(\mathbf{d}_{j}^{(k)}) \rvert \rvert }
 $$
 With $f$ defined as with energy. If the detail vectors point in unrelated directions, then the numerator will be small as the vectors cancel, but if they point in a common direction, then $A^{(k)}\to1$.
-
+To test whether local energy transfers to global energy, a correlation between the energy at fine scale $p$ at time $t$ compared to the energy at coarser scale $q$ at a lagged time $t+\tau$ was investigated.
+$$
+R_{p,q}=\mathrm{corr}(E^{(p)}(t),E^{(q)}(t+\tau))
+$$
 Some curves that were tested for these included a line that folded into a circle with parametrisation:
 
 A loop that twisted into a helix with parametrisation
@@ -85,24 +88,7 @@ And a relatively straight line that formed a twist halfway through
 Next writhe time
 
 
-### Detecting Transfer across Scales
-We want to test our hypothesis that coherent small-scale rearrangements may appear before the corresponding large-scale conformational motion is obvious in the raw trajectory
-A simple way to test this is to compare activity at a fine scale $p$ with later activity at coarser scale $q$, we can define the lagged cross-scale correlation:
-$$
-R_{p,q}=\mathrm{corr}(E_{p}(t),E_{q}(t+\tau))
-$$
-If $R_{p,q}(\tau)$ peak for positive $\tau$, then fine-scale activity tends to precede coarse-scale growth, i.e.
-$$
-T_{p\to q}=\max_{\tau \in [\tau_{min},\tau_{max}]}R_{p,q}(\tau)
-$$
-With the maximum lag at
-$$
-\tau ^{*}_{p\to q}=\underset{ \tau \in [\tau_{min},\tau_{max}] }{ \mathrm{argmax} }(R_{p,q}(\tau))
-$$
-It may be informative to correlate fine-scale coherence with later coarse-scale energy:
-$$
-R_{p,q}^{A,E}(\tau)=\mathrm{corr}(A_{p}(t),E_{q}(t+\tau))
-$$
+
 ## Writhe
 ### Writhe Decomposition
 For a polygonal curve, we represent it using straight edge vectors. It is tempting to decompose the tangent sequence into Haar wavelet modes and then try to decompose the writhe integral into wavelet-wavelet interactions, but this won't work because writhe is not only a function of tangent vectors, it also depends on the positions of the curve through:
