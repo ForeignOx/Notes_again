@@ -75,7 +75,11 @@ A^{(k)}(t)=\frac{\left\lvert  \left\lvert  \sum_{j}f( \mathbf{d}_{j}^{(k)})  \ri
 $$
 With $f$ defined as with energy. If the detail vectors point in unrelated directions, then the numerator will be small as the vectors cancel, but if they point in a common direction, then $A^{(k)}\to1$.
 
-Some test curves that were
+Some curves that were tested for these included a line that folded into a circle with parametrisation:
+
+A loop that twisted into a helix with parametrisation
+
+And a relatively straight line that formed a twist at the centre
 ## Writhe
 Next writhe time
 
