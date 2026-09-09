@@ -85,25 +85,30 @@ A loop that twisted into a helix with parametrisation
 And a relatively straight line that formed a twist halfway through
 
 ## Writhe
-Writhe has been found(cite) to be a useful tool that encodes both local and global geometry of a curve, so can be used to analyse and classify differences between curves. A goal of the project was to examine an approach that combines signal processing tools from wavelets and writhe, but since writhe is nonlinear, the amounts of writhe of each of the smaller 
+Writhe of open curves has been found to be a useful tool(cite) that encodes both local and global geometry of a curve, so can be used to analyse and classify differences between curves.
+This project uses a common form of the discretised open writhe as in (paper to cite)
+A goal of the project was to examine an approach that combines signal processing tools from wavelets and writhe, but since writhe is nonlinear, the amounts of writhe of each of the simplified curves cannot simply combine to obtain the writhe of the whole curve.
+Thus a telescoping decomposition was considered using the method described below.
 
-Suppose we have our set of open spacecurves given by the levels of Haar decomposition
+Consider a set of open spacecurves given by the levels of Haar decomposition
 $$
 \gamma^{(0)},\gamma^{(1)},\dots,\gamma^{(\ell)}
 $$
 Where $\gamma^{(0)}$ is our original curve and $\gamma^{(\ell)}$ is the final decomposition, which has only one edge connecting the two endpoints
-If we consider this coarsest approximation $\gamma^{(\ell)}$ is a single edge, so it has no writhe 
-Adding the first detail coefficient produces 2 edges which lie on a plane, so there is no writhe as there is no torsion, only curvature. At the next level up, the curve has 4 edges, so we can have some writhe. 
+If we consider this coarsest approximation $\gamma^{(\ell)}$ is a single edge, so possesses no writhe.
+Adding the first detail coefficient produces 2 edges which lie on a plane, so also possesses no writhe as there is no torsion, only curvature. 
+At the next level up, $\gamma^{(\ell-2)}$, the curve has 4 edges, so we can possess writhe. 
 Define
 $$
 \mathcal{W}^{(m)}=\mathcal{W}(\gamma^{(m)})
 $$
-The contribution associated with adding level $m$ detail is
+Then the contribution associated with adding level $m$ detail is
 $$
 \Delta \mathcal{W}^{(m)}=\mathcal{W}^{(m)}-\mathcal{W}^{(m+1)}
 $$
-This is not claiming that a wavelet mode has an intrinsic writhe by itself, instead, it says $\Delta \mathcal{W}^{(m)}$ is the change in exact polygonal writhe when the level $m$ geometric detail is added to the already reconstructed coarser curve
-The main advantage is that the decomposition telescopes:
+One can calculate this writhe increase
+This is not claiming that a wavelet mode has an intrinsic writhe by itself, instead, it says $\Delta \mathcal{W}^{(m)}$ is the change in exact polygonal writhe when the level $m$ geometric detail is added to the already reconstructed coarser curve.
+This can be 
 $$
 \mathcal{W} = \mathcal{W}^{(0)}= \sum_{m=0}^{\ell}\Delta \mathcal{W}^{(m)} 
 $$
