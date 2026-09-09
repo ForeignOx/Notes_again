@@ -85,44 +85,28 @@ A loop that twisted into a helix with parametrisation
 And a relatively straight line that formed a twist halfway through
 
 ## Writhe
-Next writhe time
-
-
-
-## Writhe
-### Writhe Decomposition
-For a polygonal curve, we represent it using straight edge vectors. It is tempting to decompose the tangent sequence into Haar wavelet modes and then try to decompose the writhe integral into wavelet-wavelet interactions, but this won't work because writhe is not only a function of tangent vectors, it also depends on the positions of the curve through:
+Writhe has been found(cite) to be a useful 
+Suppose we have our set of open spacecurves given by the levels of Haar decomposition
 $$
-\frac{\underline{x}(s)-\underline{x}(s')}{\left| \underline{x}(s)-\underline{x}(s') \right| ^{3}}
+\gamma^{(0)},\gamma^{(1)},\dots,\gamma^{(\ell)}
 $$
-So if the curve is reconstructed from wavelet coefficients, then the positions $\underline{x}(s)$ also change when a detail coefficient is added. Therefore writhe is nonlinear in the wavelet coefficients
-The better idea is to decompose the reconstructed curve itself across scaless and measure how the polygonal writhe changes as each scale of detail is added
-___
-Suppose our curve is represented at $J$ levels of dyadic resolution. For simplicity assume the fiest curve has $2^{J}$ edges. A wavelet decompoition gives a hierarchy of reconstructed curves:
-$$
-\gamma^{(0)},\gamma^{(1)},\dots,\gamma^{(J)}
-$$
-Where $\gamma^{(0)}$ is the coarsest approximation, $\gamma^{(1)}$ is obtaine by adding the coarsest detail and so on and $\gamma^{(J)}$ is the original full-resolution polygonal curve
-In the simplest picture $\gamma^{(0)}$ might be a single edge, so it has no writhe. Adding the first detail produce two edges, which lie in a plane, so again there is no writhe, only curvature. At the next level, the curve has four edges and genuinely non-planar edge-pair contributions can appear.
-For a closed curve, one may need a slightly different coarsest object, because a one-edged closed polygon doesn't exist, so we might want to use a triangle instead.
-___
+Where $\gamma^{(0)}$ is our original curve and $\gamma^{(\ell)}$ is the final decomposition, which has only one edge connecting the two endpoints
+If we consider this coarsest approximation $\gamma^{(\ell)}$ is a single edge, so it has no writhe 
+Adding the first detail coefficient produces 2 edges which lie on a plane, so there is no writhe as there is no torsion, only curvature. At the next level up, the curve has 4 edges, so we can have some writhe. 
 Define
 $$
 \mathcal{W}^{(m)}=\mathcal{W}(\gamma^{(m)})
 $$
 The contribution associated with adding level $m$ detail is
 $$
-\Delta \mathcal{W}^{(m)}=\mathcal{W}^{(m)}-\mathcal{W}^{(m-1)}
+\Delta \mathcal{W}^{(m)}=\mathcal{W}^{(m)}-\mathcal{W}^{(m+1)}
 $$
 This is not claiming that a wavelet mode has an intrinsic writhe by itself, instead, it says $\Delta \mathcal{W}^{(m)}$ is the change in exact polygonal writhe when the level $m$ geometric detail is added to the already reconstructed coarser curve
 The main advantage is that the decomposition telescopes:
 $$
-\mathcal{W}^{(J)}= \mathcal{W}^{(0)}+\sum_{m=1}^{J}\Delta \mathcal{W}^{(m)} 
+\mathcal{W} = \mathcal{W}^{(0)}= \sum_{m=0}^{\ell}\Delta \mathcal{W}^{(m)} 
 $$
-$$
-\implies \mathcal{W}(\gamma)=\sum_{m=1}^{J}\Delta \mathcal{W}^{(m)}
-$$
-___
+
 The level contribution can be made more local by examining the segment-pair terms. At level $m$, let $e_{0}^{(m)},e_{1}^{(m)},\dots,e^{(m)}_{2^{m}-1}$ be the edges of $\gamma^{(m)}$. Define
 $$
 K_{ab}^{(m)}=\frac{1}{2\pi}I_{ab}^{(m)}
@@ -134,53 +118,22 @@ $$
 Now suppose a coarse edge $A$ at level $m-1$ is split into two children at level $m$, i.e. $A\to a_{0},a_{1}$, and similarly $B\to b_{0},b_{1}$ for some coarse edge $B$
 The refinement contribution associated with the coarse pair $(A,B)$ is:
 $$
-\Delta K_{AB}^{(m)}=\sum_{p=0}^{1}\sum_{q=0}^{1}K_{a_{p}b_{q}}^{(m)}-K_{AB}^{(m-1)}
+\Delta K_{AB}^{(m)}=\sum_{p=0}^{1}\sum_{q=0}^{1}K_{a_{p}b_{q}}^{(m)}-K_{AB}^{(m+1)}
 $$
 Which records how the writhe interacttion between two coarse regions changes when both regions are refined
-A fully general version also inclues the case $A=B$:
-$$
-\Delta K^{(m)}_{AA}=\sum_{a<b}K^{(m)}_{ab}
-$$
-Where $a,b$ are children of $A$
-For a binary split into two adjacent children, this is usually zero because adjacent polygonal edges have no KL contribution. However including this case does make the formulae nicer
-Then the level increment can be written as
+So we can rewrite our writhe increment in terms of this:
 $$
 \Delta \mathcal{W}^{(m)}=\sum_{A\leq B}\Delta K^{(m)}_{AB}
 $$
-___
-Each refinement step is controlled by the wavelet detail coefficients. Schematically, a parent edge or parent curve segment is tranformed as:
-$$
-\text{parent geometry}+\text{detail coefficient}\to \text{two child edges}
-$$
-So $\Delta K^{(m)}_{AB}$ depends on the already reconstructed coarser geometry $\gamma^{(m-1)}$, the detial coefficients defining regions $A$ and $B$, and the nonlinear KL geometry of the resulting child edge-pair directions
-Therefore it is resonable to say that $\Delta K_{AB}^{(m)}$ tracks the effect of the combination of details in regions $A$ and $B$. However, one should not ssay it is a bilinear coefficient, the mapping between the wavelet details and the writhe is non-linear as the curve positions and edge directions change when details are added
+
+$\Delta K^{(m)}_{AB}$ depends on the already reconstructed coarser geometry $\gamma^{(m-1)}$, the detial coefficients defining regions $A$ and $B$, and the nonlinear KL geometry of the resulting child edge-pair directions
+Therefore it is resonable to say that $\Delta K_{AB}^{(m)}$ tracks the effect of the combination of details in regions $A$ and $B$. However, one cannot say it is a bilinear coefficient, the mapping between the wavelet details and the writhe is non-linear as the curve positions and edge directions change when details are added
 ___
 This method answers the question:
     At what scales and between which regions of the curve does the writhe appear as the curve is progressively reconstructed?
 It does not answer: 
     How much writhe belongs to one Haar coefficient?
 The distinction is important. Writhe is a global geometric quantity. A local detail coefficient may only create writhe by changing how one region of the curve sees another region. Therefore the natural quantities are interactions between refined regions, not isolated detail energies
-The outputs one might analyse are $\Delta \mathcal{W}^{(m)}$, $\Delta K_{AB}^{(m)}$, and$\sum_{m\leq M}\Delta \mathcal{W}^{(m)}$ which is the writhe accumulate up to resolution $M$
-Positive and negative contributions can cancel, which shows whether small scale refinement create coherent writhe at any larger scales
-### Decompoition Algorithm:
-- Start with polygonal curve $\gamma^{(J)}$ with $2^{J}$ edges
-- Perform a Haar or wavelet decomposition of the curvve using the edge vectors
-- For each level, reconstruct the polygonal curve $\gamma^{(m)}$
-- Compute the exact KL pair matrix $K^{(m)}$for $\gamma^{(m)}$
-- Compute the total writhe
-$$
-\mathcal{W}^{(m)}=\sum_{a<b}K_{ab}^{(m)}
-$$
-- Compute the level increments:
-$$
-\Delta \mathcal{W}^{(m)}=\mathcal{W}^{(m)}-\mathcal{W}^{(m-1)}
-$$
-- Compute the parent-pair refinement increments:
-$$
-\Delta K_{AB}^{(m)}=
-$$
-
-
 
 
 
