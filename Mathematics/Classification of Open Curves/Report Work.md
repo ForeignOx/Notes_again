@@ -79,7 +79,8 @@ Some curves that were tested for these included a line that folded into a circle
 
 A loop that twisted into a helix with parametrisation
 
-And a relatively straight line that formed a twist at the centre
+And a relatively straight line that formed a twist halfway through
+
 ## Writhe
 Next writhe time
 
