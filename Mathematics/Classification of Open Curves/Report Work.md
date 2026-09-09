@@ -85,7 +85,8 @@ A loop that twisted into a helix with parametrisation
 And a relatively straight line that formed a twist halfway through
 
 ## Writhe
-Writhe has been found(cite) to be a useful 
+Writhe has been found(cite) to be a useful tool that encodes both local and global geometry of a curve, so can be used to analyse and classify differences between curves. A goal of the project was to examine an approach that combines signal processing tools from wavelets and writhe, but since writhe is nonlinear, the amounts of writhe of each of the smaller 
+
 Suppose we have our set of open spacecurves given by the levels of Haar decomposition
 $$
 \gamma^{(0)},\gamma^{(1)},\dots,\gamma^{(\ell)}
