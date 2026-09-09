@@ -100,38 +100,37 @@ Adding the first detail coefficient produces 2 edges which lie on a plane, so al
 At the next level up, $\gamma^{(\ell-2)}$, the curve has 4 edges, so we can possess writhe. 
 Define
 $$
-\mathcal{W}^{(m)}=\mathcal{W}(\gamma^{(m)})
+\mathcal{W}^{(k)}=\mathcal{W}(\gamma^{(k)})
 $$
 Then the contribution associated with adding level $m$ detail is
 $$
-\Delta \mathcal{W}^{(m)}=\mathcal{W}^{(m)}-\mathcal{W}^{(m+1)}
+\Delta \mathcal{W}^{(k)}=\mathcal{W}^{(k)}-\mathcal{W}^{(k+1)}
 $$
 One can calculate this writhe increase for each relevant wavelet mode, and their sum is simply the total writhe of the original curve:
 $$
-\mathcal{W} = \mathcal{W}^{(0)}= \sum_{m=0}^{\ell}\Delta \mathcal{W}^{(m)} 
+\mathcal{W} = \mathcal{W}^{(0)}= \sum_{k=0}^{\ell}\Delta \mathcal{W}^{(k)} 
 $$
-This is not claiming that a wavelet mode has an intrinsic writhe by itself, instead, it says $\Delta \mathcal{W}^{(m)}$ is the change in exact polygonal writhe when the level $m$ geometric detail is added to the already reconstructed coarser curve.
-The level contribution can be made more local by examining the segment-pair terms. At level $m$, let $\mathbf{a}_{0}^{(m)},\mathbf{a}_{1}^{(m)},\dots,\mathbf{a}^{(m)}_{\ell}$ be the edges of $\gamma^{(m)}$. Define
+This is not claiming that a wavelet mode has an intrinsic writhe by itself, instead, it says $\Delta \mathcal{W}^{(k)}$ is the change in exact polygonal writhe when the level $k$ geometric detail is added to the already reconstructed coarser curve.
+The level contribution can be made more local by examining the segment-pair terms. At level $k$, let $\mathbf{a}_{0}^{(k)},\mathbf{a}_{1}^{(k)},\dots,\mathbf{a}^{(k)}_{m}$ be the edges or approximation coefficients of $\gamma^{(k)}$. Define
 $$
-K_{ab}^{(m)}=\frac{1}{2\pi}I_{ab}^{(m)}
+K_{ab}^{(k)}=\frac{1}{2\pi}I_{ab}^{(k)}
 $$
-Where $I_{ab}^{(m)}$ is the signed spherical area contribution between edges $e_{a}^{(m)}$ and $e_{b}^{(m)}$. Then
+Where $I_{ab}^{(k)}$ is the signed spherical area contribution between edges $\mathbf{a}_{a}^{(k)}$ and $\mathbf{a}_{b}^{(k)}$ as defined in the discrete writhe calculation; the amount of area on a sphere where observing the edges from that point on that sphere, it appears that they intersect. Then
 $$
-\mathcal{W}^{(m)}=\sum_{a<b}K_{ab}^{(m)}
+\mathcal{W}^{(k)}=\sum_{a<b}K_{ab}^{(k)}
 $$
-Now suppose a coarse edge $A$ at level $m-1$ is split into two children at level $m$, i.e. $A\to a_{0},a_{1}$, and similarly $B\to b_{0},b_{1}$ for some coarse edge $B$
-The refinement contribution associated with the coarse pair $(A,B)$ is:
+Now suppose a coarse edge $A$ at level $k+1$ is split into two children at level $k$, i.e. $A\to a_{0},a_{1}$, and similarly $B\to b_{0},b_{1}$ for some coarse edge $B$.
+Define the refinement contribution associated with the coarse pair $(A,B)$ is:
 $$
-\Delta K_{AB}^{(m)}=\sum_{p=0}^{1}\sum_{q=0}^{1}K_{a_{p}b_{q}}^{(m)}-K_{AB}^{(m+1)}
+\Delta K_{AB}^{(k)}=\sum_{p=0}^{1}\sum_{q=0}^{1}K_{a_{p}b_{q}}^{(k)}-K_{AB}^{(k+1)}
 $$
-Which records how the writhe interacttion between two coarse regions changes when both regions are refined
-So we can rewrite our writhe increment in terms of this:
+Which records how the writhe interaction between two coarse regions changes when both regions are refined
+The writhe increments can be rewritten in terms of the refinement contributions like so:
 $$
-\Delta \mathcal{W}^{(m)}=\sum_{A\leq B}\Delta K^{(m)}_{AB}
+\Delta \mathcal{W}^{(k)}=\sum_{A\leq B}\Delta K^{(k)}_{AB}
 $$
-
-$\Delta K^{(m)}_{AB}$ depends on the already reconstructed coarser geometry $\gamma^{(m-1)}$, the detial coefficients defining regions $A$ and $B$, and the nonlinear KL geometry of the resulting child edge-pair directions
-Therefore it is resonable to say that $\Delta K_{AB}^{(m)}$ tracks the effect of the combination of details in regions $A$ and $B$. However, one cannot say it is a bilinear coefficient, the mapping between the wavelet details and the writhe is non-linear as the curve positions and edge directions change when details are added
+$\Delta K^{(k)}_{AB}$ depends on the already reconstructed coarser geometry $\gamma^{(k-1)}$, the detial coefficients defining regions $A$ and $B$, and the nonlinear KL geometry of the resulting child edge-pair directions
+Therefore it is resonable to say that $\Delta K_{AB}^{(m)}$ tracks the effect of the combination of details in regions $A$ and $B$. However, one cannot say it is a bilinear coefficient, the mapping between the wavelet details and the writhe is non-linear as the curve positions and edge directions change when details are added.
 ___
 This method answers the question:
     At what scales and between which regions of the curve does the writhe appear as the curve is progressively reconstructed?
