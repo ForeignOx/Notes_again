@@ -87,6 +87,14 @@ And a relatively straight line that formed a twist halfway through
 ## Protein-Like Curves
 To test the properties of the metrics developed, more realistic curves are needed than the toy models above. To begin, some noise functions were developed.
 
+The most basic was to add vectors to the position vectors whose components were $a*\varepsilon*d_\text{min}$, where $a$ is sampled from a $U[-1,1]$ distribution, $d_\text{min}$ is the smallest distance between two points on the curve and $\varepsilon$ is the scale of noise that could be varied.
+
+A more nuanced approach that preserved distances between points was to start at one end of the curve and consider the direction edge vector to the next point on a unit sphere and sampling a new vector from the capping surface of the cone around the vector with angle $\varepsilon$:
+(diagram pls)
+From this sampled vector, rotate the rest of the curve to make it unchanged with respect to this vector, then continue to the second edge vector and repeat.
+
+Since one useful application of these tools was thought to be protein evolution analysis, an approach borrowed from (cite) was used whereby one can sample from a very resstandard curvature and torsion coefficients of 
+
 ## Writhe
 Writhe of open curves has been found to be a useful tool(cite) that encodes both local and global geometry of a curve, so can be used to analyse and classify differences between curves.
 This project uses a common form of the discretised open writhe as in (paper to cite)
