@@ -92,8 +92,9 @@ The most basic was to add vectors to the position vectors whose components were 
 A more nuanced approach that preserved distances between points was to start at one end of the curve and consider the direction edge vector to the next point on a unit sphere and sampling a new vector from the capping surface of the cone around the vector with angle $\varepsilon$:
 (diagram pls)
 From this sampled vector, rotate the rest of the curve to make it unchanged with respect to this vector, then continue to the second edge vector and repeat.
+(perhaps also diagram)
+Since one useful application of these tools was thought to be protein evolution analysis, an approach borrowed from (cite) was used whereby one can sample from a database of standard curvature and torsion coefficients of proteins as they follow a strict distribution. Using these (cite again perhaps) developed an algorithm to form what they called a "protein-like random walk" that also had the feature of resampling if the walk self-intersected, allowing for more realistic outputs. 
 
-Since one useful application of these tools was thought to be protein evolution analysis, an approach borrowed from (cite) was used whereby one can sample from a very resstandard curvature and torsion coefficients of 
 
 ## Writhe
 Writhe of open curves has been found to be a useful tool(cite) that encodes both local and global geometry of a curve, so can be used to analyse and classify differences between curves.
