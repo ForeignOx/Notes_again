@@ -84,6 +84,9 @@ A loop that twisted into a helix with parametrisation
 
 And a relatively straight line that formed a twist halfway through
 
+## Protein-Like Curves
+To test the properties of the metrics developed, more realistic curves are needed than the toy models above. To begin, some noise functions were developed.
+
 ## Writhe
 Writhe of open curves has been found to be a useful tool(cite) that encodes both local and global geometry of a curve, so can be used to analyse and classify differences between curves.
 This project uses a common form of the discretised open writhe as in (paper to cite)
@@ -137,6 +140,10 @@ This method answers the question:
 It does not answer: 
     How much writhe belongs to one Haar coefficient?
 The distinction is important. Writhe is a global geometric quantity. A local detail coefficient may only create writhe by changing how one region of the curve sees another region. Therefore the natural quantities are interactions between refined regions, not isolated detail energies
+
+
+
+
 
 
 
