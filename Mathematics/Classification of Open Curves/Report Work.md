@@ -1,6 +1,6 @@
 # Abstract
 An investigation into the hypothesis that a telescoping Haar wavelet decomposition of the writhe would be a useful tool to see how and to what extent local movement of amino acids in a protein lead to large scale changes in the protein geometry.
-# Mathematical Background
+# Methodology
 ## Haar Wavelet Transform
 The main focus of this project was on time-dependent discrete open spacecurves in 3 dimensions:
 $$
@@ -79,11 +79,17 @@ $$
 R_{p,q}=\mathrm{corr}(E^{(p)}(t),E^{(q)}(t+\tau))
 $$
 Some curves that were tested for these included a line that folded into a circle with parametrisation:
+$$
 
+$$
 A loop that twisted into a helix with parametrisation
+$$
 
-And a relatively straight line that formed a twist halfway through
+$$
+And a relatively straight line that formed a twist halfway through 
+$$
 
+$$
 ## Protein-Like Curves
 To test the properties of the metrics developed, more realistic curves are needed than the toy models above. To begin, some noise functions were developed.
 
@@ -96,8 +102,7 @@ From this sampled vector, rotate the rest of the curve to make it unchanged with
 Since one useful application of these tools was thought to be protein evolution analysis, an approach borrowed from (cite) was used whereby one can sample from a database of standard curvature and torsion coefficients of proteins as they follow a strict distribution. Using these (cite again perhaps) developed an algorithm to form what they called a "protein-like random walk" that also had the feature of resampling if the walk self-intersected, allowing for more realistic outputs. A refinement to this process was made by examining that in nature, proteins form 3 main forms of secondary structure, $\alpha$-helices, $\beta$-pleated sheets and the umbrella term "linkers" for the sections that connect helices or sheets of which there are many varieties. One can classify the pairs of curvature-torsion coefficients as belonging to one of these 3 groups, so by sampling from these 3 distributions one could form more customised random walks such as 50 points of helix followed by 10 of linker followed by another 50 points of helix.
 
 
-A key project goal was to investigate 
-
+A key project goal was to examine properties of protein evolution, so a custom 
 
 
 
