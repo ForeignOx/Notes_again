@@ -94,8 +94,9 @@ A more nuanced approach that preserved distances between points was to start at 
 From this sampled vector, rotate the rest of the curve to make it unchanged with respect to this vector, then continue to the second edge vector and repeat.
 (perhaps also diagram)
 Since one useful application of these tools was thought to be protein evolution analysis, an approach borrowed from (cite) was used whereby one can sample from a database of standard curvature and torsion coefficients of proteins as they follow a strict distribution. Using these (cite again perhaps) developed an algorithm to form what they called a "protein-like random walk" that also had the feature of resampling if the walk self-intersected, allowing for more realistic outputs. A refinement to this process was made by examining that in nature, proteins form 3 main forms of secondary structure, $\alpha$-helices, $\beta$-pleated sheets and the umbrella term "linkers" for the sections that connect helices or sheets of which there are many varieties. One can classify the pairs of curvature-torsion coefficients as belonging to one of these 3 groups, so by sampling from these 3 distributions one could form more customised random walks such as 50 points of helix followed by 10 of linker followed by another 50 points of helix.
-The project was 
-talk about evolution
+
+
+A key project goal was to investigate 
 
 
 
