@@ -80,15 +80,15 @@ R_{p,q}=\mathrm{corr}(E^{(p)}(t),E^{(q)}(t+\tau))
 $$
 Some curves that were tested for these included a line that folded into a circle with parametrisation:
 $$
-
+x=\frac{1}{s}\sin(ts),~y=\frac{1}{s}\cos(ts)
 $$
 A loop that twisted into a helix with parametrisation
 $$
-
+x = \tanh(s)\cos(\omega(1-t)s),~y=\sin(\omega(1-t)s),~z=H-as ^{2}
 $$
-And a relatively straight line that formed a twist halfway through 
+And a relatively straight line that formed a twist halfway through:
 $$
-
+r=\frac{2}{1+t^{2}} \mathrm{sech}(s), ~\phi=ts-\frac{\pi}{2},~z=s-\frac{2}{1+t^{2}}\tanh(s) 
 $$
 ## Protein-Like Curves
 To test the properties of the metrics developed, more realistic curves are needed than the toy models above. To begin, some noise functions were developed.
