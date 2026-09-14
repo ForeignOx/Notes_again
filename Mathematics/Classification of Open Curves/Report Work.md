@@ -247,4 +247,5 @@ The comparison between these correlations and the other counterparts seemed like
 (show graphs)
 Another investigation was made into transfer of only regions with "hotspots" of activity, but again this seemed unsuccessful.
 (show a hotspot plot)
-Finally some investigations into correlations between detail coefficients and writhe pair writhe increments was investigated, 
+## Conclusion
+This project produced a formal method to produce a telescoping decomposition of the writhe of open curves
