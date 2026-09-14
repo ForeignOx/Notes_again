@@ -214,4 +214,5 @@ $$
 Which has property, $\Delta \mu>0$: activity migrating to finer scale, $\Delta \mu<0$ activity is migrating to coarser scale
 
 # Analysis
-Several different methods were employed to analyse the large amount of data provided by the multiresolution decomposition
+Several different methods were employed to analyse the large amount of data provided by the multiresolution decomposition, and some form of correlation between the data of local geometry and global geometry at a later timestep was sought but not found during the timespan of the project.
+Inspred by (josh's) investigations into protein writhe, initially this metric referred toa
