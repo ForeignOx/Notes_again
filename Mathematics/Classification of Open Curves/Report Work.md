@@ -219,4 +219,10 @@ Inspred by (josh's) projects relating to protein writhe, initially this metric r
 $$
 T^{(k)}( t)=\sum_{a<b}\left| K_{ab}^{(k)}(t_{0}+t)-K_{ab}^{(k)}(t_{0}) \right| 
 $$
-Which measures the accumulation of writhe from the protein's initial state at a given level of decomposition
+Which measures the accumulation of writhe from the protein's initial state at a given level of decomposition. The correlation was calculated using the formula:
+$$
+ C_{mn}(\tau) = \frac{\sum_{t}(T_{m}(t)-\bar{T}_{m})(T_{n}(t+\tau)-\bar{T}_{n})}{\sigma_{m}\sigma_{n}}
+$$
+Where to test the hypothesis, $m$ was chosen to be a fine scale (with many vertices) and $n$ a coarser scale to see whether there was a correlation between the writhe gain at fine scale with writhe gain at coarser scale at some lagged time.
+These were the sorts of graphs obtained for different amounts of lag, nothing conclusive was found...
+
