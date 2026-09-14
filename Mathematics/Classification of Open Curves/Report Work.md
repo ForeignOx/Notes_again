@@ -244,3 +244,4 @@ Then it was considered that the local interactions between an edge and its relat
 To account for this a form of the above metrics was developed but ignoring activity on the diagonal on the fine scale a depth of $d$
 (show diagram)
 The comparison between these correlations and the other counterparts seemed like a promising direction, but again, nothing conclusive was found.
+(show graphs)
