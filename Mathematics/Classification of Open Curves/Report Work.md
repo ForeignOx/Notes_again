@@ -214,3 +214,4 @@ $$
 Which has property, $\Delta \mu>0$: activity migrating to finer scale, $\Delta \mu<0$ activity is migrating to coarser scale
 
 # Analysis
+Several different methods were employed to analyse the large amount of data provided by the multiresolution decomposition
