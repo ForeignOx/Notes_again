@@ -248,4 +248,4 @@ The comparison between these correlations and the other counterparts seemed like
 Another investigation was made into transfer of only regions with "hotspots" of activity, but again this seemed unsuccessful.
 (show a hotspot plot)
 ## Conclusion
-This project produced a formal method to produce a telescoping decomposition of the writhe of open curves
+This project produced a formal method to produce a telescoping decomposition of the writhe of open curves. This method was utilised to try and glean information about the dynamics of proteins, but given the large amount of available data and the 
