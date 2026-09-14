@@ -246,3 +246,5 @@ To account for this a form of the above metrics was developed but ignoring activ
 The comparison between these correlations and the other counterparts seemed like a promising direction, but again, nothing conclusive was found.
 (show graphs)
 Another investigation was made into transfer of only regions with "hotspots" of activity, but again this seemed unsuccessful.
+(show a hotspot plot)
+Finally some investigations into correlations between detail coefficients and writhe pair writhe increments was investigated, 
