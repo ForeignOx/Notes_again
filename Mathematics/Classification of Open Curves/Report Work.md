@@ -9,7 +9,7 @@ $$
 $$
 \gamma(s,t) \mapsto \mathbf{x}_{i}(t)
 $$
-As this was a good way of representing the time evolution of the $C_{\alpha}$ protein backbone (cite paper which uses this?) which was the main real-life application of the project. It was also useful for the computational aspect of the calculations and could be used on other open curves such as magnetic field lines. (maybe provide other e.g.)
+As this was a good way of representing the time evolution of the $C_{\alpha}$ protein backbone (cite paper which uses this?) which was the main real-life application of the project. It was also useful for the computational aspect of the calculations and could be used on other open curves such as magnetic field lines, or flexible robotic actuators in soft robotics. 
 It has been found (cite) that writhe is a useful tool to measure the tangling of these protein backbones as it takes careful consideration of local and global geometry.
 Proteins are naturally given to multiresolution analysis due to their natural structural ordering, the primary structure of the amino acids themselves, the secondary structure of helices and pleated sheets, and even in some cases tertiary structure such as beta barrels. The Haar wavelet transform on the edges was considered to be a good way to systematically break down a curve into modes that represent these levels of structure.
 Defining edge vectors at time $t$:
@@ -248,4 +248,4 @@ The comparison between these correlations and the other counterparts seemed like
 Another investigation was made into transfer of only regions with "hotspots" of activity, but again this seemed unsuccessful.
 (show a hotspot plot)
 ## Conclusion
-This project produced a formal method to produce a telescoping decomposition of the writhe of open curves. This method was utilised to try and glean information about the dynamics of proteins, but given the large amount of available data and the 
+This project produced a formal method to produce a telescoping decomposition of the writhe of open curves. This method was utilised to try and glean information about the dynamics of proteins, but given the large amount of available data and the limited time of the project's duration, nothing conclusive was found. Further research possibilities include further investigation into proteins, perhaps instead of 
