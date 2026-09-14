@@ -215,4 +215,8 @@ Which has property, $\Delta \mu>0$: activity migrating to finer scale, $\Delta \
 
 # Analysis
 Several different methods were employed to analyse the large amount of data provided by the multiresolution decomposition, and some form of correlation between the data of local geometry and global geometry at a later timestep was sought but not found during the timespan of the project.
-Inspred by (josh's) investigations into protein writhe, initially this metric referred toa
+Inspred by (josh's) projects relating to protein writhe, initially this metric referred to as writhe gain defined:
+$$
+T^{(k)}( t)=\sum_{a<b}\left| K_{ab}^{(k)}(t_{0}+t)-K_{ab}^{(k)}(t_{0}) \right| 
+$$
+Which measures the accumulation of writhe from the protein's initial state at a given level of decomposition
