@@ -153,73 +153,6 @@ $$
 $$
 $\Delta K^{(k)}_{AB}$ depends on the already reconstructed coarser geometry $\gamma^{(k-1)}$, the detial coefficients defining regions $A$ and $B$, and the nonlinear KL geometry of the resulting child edge-pair directions
 Therefore it is resonable to say that $\Delta K_{AB}^{(m)}$ tracks the effect of the combination of details in regions $A$ and $B$. However, one cannot say it is a bilinear coefficient, the mapping between the wavelet details and the writhe is non-linear as the curve positions and edge directions change when details are added.
-
-
-
-
-
-
-
-___
-This method answers the question:
-    At what scales and between which regions of the curve does the writhe appear as the curve is progressively reconstructed?
-It does not answer: 
-    How much writhe belongs to one Haar coefficient?
-The distinction is important. Writhe is a global geometric quantity. A local detail coefficient may only create writhe by changing how one region of the curve sees another region. Therefore the natural quantities are interactions between refined regions, not isolated detail energies
-
-
-
-
-
-
-
-### Correlation at a Scale
-If we have the accumulation of lag from the start, denoted by writhe gain:
-$$
-T_{m}( t)=\sum_{a<b}\left| K_{ab}^{(m)}(t_{0}+t)-K_{ab}^{(m)}(t_{0}) \right| 
-$$
-(for correlation we might want to remove the absolute value)
-We can also have the accumulation of lag between time steps, denoted by writhe activity:
-$$
-\Delta T_{m}( t)=\sum_{a<b}\left| K_{ab}^{(m)}(t+\delta t)-K_{ab}^{(m)}(t) \right| 
-$$
-Then we can find the correlation using:
-$$
- C_{mn}(\tau) = \frac{\sum_{t}(T_{m}(t)-\bar{T}_{m})(T_{n}(t+\tau)-\bar{T}_{n})}{\sigma_{m}\sigma_{n}}
-$$
-Where m is fine scale, $n$ is coarse scale.
-$$
-M_{mn}= \max_{\tau>0}C_{mn}(\tau)
-$$
-Produces an $L\times L$ matrix (where $L$ is number of levels), with which we can produce a heatmap to see direction of information flow
-### Earthmover's Distance
-Normalising our T gives us:
-$$
-p_{m}(t)=\frac{T_{m}(t)}{\sum_{n}T_{n}(t)}
-$$
-Representing a probability distribution across scales for each time step. We let $p(t)=\left\{ p_{1}(t),p_{2}(t),\dots \right\}$ be the distribution
-We can then compute the Earth mover's distance between $p(t)$ and $p(t+\Delta t)$, and $p(t_{0})$ and $p(t)$ using the formula:
-$$
-EMD(p,q) = \sum_{m}\left| \sum_{n\leq m}p_{n}-q_{n}  \right| 
-$$
-So we have the 
-$$
-EMDVel(t)=EMD(p(t),p+\Delta t)
-$$
-And
-$$
-EMDRel(t,t_{0})=EMD(p(t_{0}),p(t))
-$$
-We can also compute the mean scale:
-$$
-\mu(t)=\sum_{m}mp_{m}(t)
-$$
-Then we can have the rate of this:
-$$
-\Delta \mu(t)=\mu(t+\Delta t)-\mu(t)
-$$
-Which has property, $\Delta \mu>0$: activity migrating to finer scale, $\Delta \mu<0$ activity is migrating to coarser scale
-
 # Analysis
 Several different methods were employed to analyse the large amount of data provided by the multiresolution decomposition, and some form of correlation between the data of local geometry and global geometry at a later timestep was sought but not found during the timespan of the project.
 Inspred by (josh's) projects relating to protein writhe, initially this metric referred to as writhe gain defined:
@@ -248,4 +181,4 @@ The comparison between these correlations and the other counterparts seemed like
 Another investigation was made into transfer of only regions with "hotspots" of activity, but again this seemed unsuccessful.
 (show a hotspot plot)
 ## Conclusion
-This project produced a formal method to produce a telescoping decomposition of the writhe of open curves. This method was utilised to try and glean information about the dynamics of proteins, but given the large amount of available data and the limited time of the project's duration, nothing conclusive was found. Further research possibilities include further investigation into proteins, perhaps instead of 
+This project produced a formal method to produce a telescoping decomposition of the writhe of open curves. This method was utilised to try and glean information about the dynamics of proteins, but given the large amount of available data and the limited time of the project's duration, nothing conclusive was found. Further research possibilities include further investigation into proteins, perhaps instead of searching the statistics, more protein dynamic could be studied to discover potential usage. Alternatively the method could be applied to magnetic field lines and their tangling as they produce solar flares. Another route would be to develop a similar telescoping decomposition for other tools in differential geometry such as the twist.
