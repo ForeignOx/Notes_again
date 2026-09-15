@@ -182,3 +182,10 @@ Another investigation was made into transfer of only regions with "hotspots" of 
 (show a hotspot plot)
 ## Conclusion
 This project produced a formal method to produce a telescoping decomposition of the writhe of open curves. This method was utilised to try and glean information about the dynamics of proteins, but given the large amount of available data and the limited time of the project's duration, nothing conclusive was found. Further research possibilities include further investigation into proteins, perhaps instead of searching the statistics, more protein dynamic could be studied to discover potential usage. Alternatively the method could be applied to magnetic field lines and their tangling as they produce solar flares. Another route would be to develop a similar telescoping decomposition for other tools in differential geometry such as the twist.
+
+
+
+
+$$
+\sum_{n} e^{ i\theta_{n} }
+$$
