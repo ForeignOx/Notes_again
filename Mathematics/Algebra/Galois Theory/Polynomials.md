@@ -169,4 +169,11 @@ This is also true for $v^{3}$, but since $uv=-\frac{p}{3}$, we just pick which $
 ## Quartics
 Similar but more complicated, involves square roots, cube roots, and fourth roots (which are just square roots)
 ## Quintics and Up
-Uh oh when $n\geq 5$ it not possible in general, but you can do some
+Uh oh when $n\geq 5$ it not possible in general, but you can do some like $x^{5}+x+1=(x^{2}+x+1)(x^{3}-x^{2}+1)$
+But here is an issuous one:
+$$
+x^{5}-x-1
+$$
+Why? idk
+Galoi did stuff to find out which ones could be solved and which ones couldn't (using groups)
+We did just do some sketchy stuff whereby we just kinda assumed we were in the complex numbers, but this galois theory works with everything....... but we need to be careful, for example in $\mathbb{Z}/2$ we have $2=0$, so we can't divide by 2 yikeycrikey
