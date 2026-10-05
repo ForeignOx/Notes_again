@@ -80,4 +80,27 @@ $$
 \underline{\alpha}'(u)=(\alpha_{1}'(u),\alpha_{2}'(u),\dots,\alpha_{n}'(u))\in \mathbb{R}^{n}
 $$
     the tangent vector of $\underline{\alpha}$ at $u$ (where $'$ is derivative with respect to $u$)
-- The curve $\underline{\alpha}$ is called regular if we have $\underline{\alpha}'(u)\neq 0$ $\forall u\in I$. The curve is singular at $u$ if $\underline{\alpha}'(u)=0$, the tangent vector of a the curve $\underline{\alpha}$ vanishes pre
+- The curve $\underline{\alpha}$ is called regular if we have $\underline{\alpha}'(u)\neq 0$ $\forall u\in I$. The curve is singular at $u$ if $\underline{\alpha}'(u)=0$, the tangent vector of a the curve $\underline{\alpha}$ vanishes precisely at the singular points
+- If $\underline{\alpha}$ is a regular curve, the unit tangent vector of $\underline{\alpha}$ at $u$ is defined as:
+$$
+\underline{t}_{\underline{\alpha}}(u)=\frac{\underline{\alpha}'(u)}{\lvert \lvert \underline{\alpha}'(u) \rvert \rvert }
+$$
+- If $\lvert \lvert \underline{\alpha}'(u) \rvert \rvert=1$ for all $u \in I$, we say that $\underline{\alpha}$ is a unit speed curve. Generally if $\lvert \lvert \underline{\alpha}'(u) \rvert \rvert=c$ for all $u\in I$, we say that $\underline{\alpha}$ is a constant speed curve
+## Example
+The unit circle $\underline{\alpha}:\mathbb{R}\to \mathbb{R}^{2}$, $\underline{\alpha}(u)=(\cos u,\sin u)$, the curve $\alpha$ is regular and unit speed. The trace of $\underline{\alpha}$ can be described as follows:
+$$
+\underline{\alpha}(\mathbb{R})=\underline{\alpha}([0,2\pi))=\left\{ \underline{x}\in \mathbb{R}:\middle|:\lvert \lvert \underline{x} \rvert \rvert =1 \right\}
+$$
+___
+The helix $\underline{\alpha}:\mathbb{R}\to \mathbb{R}^{3}$ given by $\underline{\alpha}(u)=(\cos u,\sin  u,u)$, in this case we have $\underline{\alpha}'(u)=(-\sin u, \cos u,1)$, and therefore
+$$
+\lvert \lvert \underline{\alpha}'(u) \rvert \rvert =\sqrt{ \sin ^{2}u+\cos ^{2}u+1^{2} }=\sqrt{ 2 }
+$$
+Therefore $\underline{\alpha}$ is a constant speed wiith unit tangent vector
+$$
+\underline{t}(u)=\frac{\underline{\alpha}'(u)}{\lvert \lvert \underline{\alpha}'(u) \rvert \rvert }=\left( -\frac{\sin u}{\sqrt{ 2 }},\frac{\cos u}{\sqrt{ 2 }},\frac{1}{\sqrt{ 2 }} \right)
+$$
+___
+The cusp $\underline{\alpha}:\mathbb{R}\to \mathbb{R}^{2},\underline{\alpha}(u)=(u^{3},u^{2})$, then $\underline{\alpha}$ is a smooth curve with $\underline{\alpha}'(u)=(3u^{2},2u)$. We have that $\underline{\alpha}'(u)=0$ iff $u=0$ and therefore $\underline{\alpha}$ is singular at $u=0$
+___
+The node
