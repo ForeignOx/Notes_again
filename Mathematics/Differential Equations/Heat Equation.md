@@ -37,6 +37,13 @@ u(x,y,t)=\sum_{n=0}^{\infty}\sum_{m=0}^{\infty}C_{nm}e^{ -D\left( \frac{x^{2}}{L
 $$
 A key property of this solution is that if we set $t=0$, we get a [[Fourier Series|Fourier Series]], and thus can represent any square integrable function (we can set an initial shape and then find out what happens to it as we let time run). We can thus expect a lot of complex behaviour
 The terms of a Fourier series [[Linear Independence|linearly independent]], so only $\hspace{0pt}0$ if all $C_{nm}=0$, this means that we can describe this complex behaviour in terms of simple functions
+## Derivation
+Say we have a region $\Omega \subseteq \mathbb{R}^{3}$ for $t\geq 0$ with $u(t,\underline{x})$ being the teperature at $\underline{x}\in\Omega$ and time $x$, say that $u_{0}$ is a known initial temperature, $u_{0}:\Omega\to \mathbb{R}$
+We say this obeys Fourier's law that heat propagates from hotter towarder colder places:
+$$
+f(t,\underline{x})=-k\nabla _{\underline{x}}u(t,\underline{x})
+$$
+Which is the heat flux, $k$ is thermal conductivity, $k>0$ and $k=k(t,x)$
 ## Solution Using Fourier Series
 We can write the solution of the heat equation as a fourier series with coefficients changing with time
 $$
