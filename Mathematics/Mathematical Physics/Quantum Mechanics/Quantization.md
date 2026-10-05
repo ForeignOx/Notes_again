@@ -10,4 +10,11 @@ $$
 L=n\hbar
 $$
 Where $\hbar=\frac{h}{2\pi}$
-Then in 1922 we fired some silver atoms through a magnetic field
+Then in 1922 we fired some silver atoms through a magnetic field:
+![[Pasted image 20261005093926.png]]
+We expect the atoms to smear proportional to $\cos\theta$, but actually it's just discrete, so angular momentum is clearly quantized that's the only possible explanation.
+
+
+
+![[Pasted image 20261005093500.png]]
+The silver atom acts like a tiny magnet as it has a spinny electric charge
