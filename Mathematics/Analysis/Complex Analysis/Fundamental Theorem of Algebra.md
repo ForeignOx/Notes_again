@@ -1,4 +1,4 @@
-An important class of [[Holomorphicity|entire]] [[functions|functions]] are non-constant [[polynomials|polynomials]] of the form
+An important class of [[Holomorphicity|entire]] [[functions|functions]] are non-constant [[Polynomials|polynomials]] of the form
 $$
 p(z)=c_{d}z^{d}+c_{d-1}z^{z-1}+\dots+c_{1}z+c_{0}
 $$
