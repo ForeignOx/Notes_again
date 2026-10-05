@@ -157,10 +157,16 @@ u^{3}+v^{3}=-q
 $$
 And we know that
 $$
-(y-u^{3})(y-v^{3})
+(y-u^{3})(y-v^{3})=y^{2}+qy+\frac{p^{3}}{27}=0
 $$
-
+Which is nicely just a quadratic
 So we have a root:
 $$
-t=u+v=\sqrt[3]{ -\frac{q}{2}+\sqrt{ \frac{q^{2}}{4} } }
+t=u+v=\sqrt[3]{ -\frac{q}{2}+\sqrt{ \frac{q^{2}}{4}+\frac{p^{3}}{27} } }+\sqrt[3]{ -\frac{q}{2}-\sqrt{ \frac{q^{2}}{4}+\frac{p^{3}}{27} } }
 $$
+But where are the other roots?? Notice that $u^{3}$ has 3 cube roots $u,\omega u,\omega^{2}u$, where $\omega=e^{ \frac{2\pi i}{3} }=-\frac{1}{2}+\frac{i\sqrt{ 3 }}{2}$
+This is also true for $v^{3}$, but since $uv=-\frac{p}{3}$, we just pick which $u$ determines $v$, so the 3 solutions are $u+v$, $\omega u+\omega^{2}v$ and $\omega^{2}u+\omega v$
+## Quartics
+Similar but more complicated, involves square roots, cube roots, and fourth roots (which are just square roots)
+## Quintics and Up
+Uh oh when $n\geq 5$ it not possible in general, but you can do some
