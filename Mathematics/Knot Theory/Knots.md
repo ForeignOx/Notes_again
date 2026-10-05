@@ -1,5 +1,5 @@
 ## Definition
-We define a knot as a circle $\mathbb{S}^{1}$ embedded in $\mathbb{R}^{3}$ without any double points
+We define a knot as a circle $\mathbb{S}^{1}$ embedded in $\mathbb{R}^{3}$ without any double points or a 1-component [[Links|link]]
 ## Example
 The right-handed trefoil:
 ![[Pasted image 20261005141821.png]]
