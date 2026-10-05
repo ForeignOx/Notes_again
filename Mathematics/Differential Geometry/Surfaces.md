@@ -66,3 +66,5 @@ And the unit normal would be
 $$
 \underline{\hat{n}}= \frac{-\frac{ \partial h }{ \partial x } \underline{e}_{1}-\frac{ \partial h }{ \partial y } \underline{e}_{2}+\underline{e}_{3} }{\sqrt{ 1+\frac{ \partial h }{ \partial x }^{2}+\frac{ \partial h }{ \partial y } ^{2}  }}
 $$
+## Curvature of Surfacees
+Can we define [[Curvature|curvature]] for surfac
