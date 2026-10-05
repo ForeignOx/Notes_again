@@ -2,6 +2,12 @@
 A partial [[Differential Equations|differential equation]] or PDE is an equation containing an unknown [[Functions|function]] of two or more variables
 The order of a PDE is the highest [[Differentiation|derivative]] it contains
 A PDE is [[Linear Partial Differential Equations|linear]]/non-linear if it is [[Linear|Linear]]/non-linear in the dependent variable
+## Order
+Let $k\in\mathbb{N}$ and let $\Omega \subseteq \mathbb{R}^{n}$ be open. A $k$th order PDE has the form
+$$
+F(\underline{x},u(\underline{x}),Du(\underline{x}),\dots,D^{k}u(\underline{x}))=0, ~\underline{x}\in \Omega
+$$
+Where $F:\Omega \times \mathbb{R}\times \mathbb{R}^{n}\times \dots \times \mathbb{R}^{n^{k}}\to \mathbb{R}$
 ## Examples
 $$
 \frac{ \partial u }{ \partial t } +\frac{ \partial^{3}u }{ \partial x^{3} } -bu\frac{ \partial u }{ \partial x } =0
@@ -44,3 +50,14 @@ For the special case $k=1$, we write $Du=D^{1}u$ and regard the elements of $Du$
 $$
 Du=(u_{x_{1}},\dots,u_{x_{n}})
 $$
+Which is simply $(\underline{\nabla }u)^{\top}$
+For the case $k=2$, we write this as the [[Hessian Matrix|hessian matrix]]:
+$$
+D^{2}u=\begin{pmatrix}
+u_{x_{1}x_{1}} & \dots & u_{x_{1}x_{n}} \\
+\vdots & \ddots & \vdots \\
+u_{x_{n}x_{1} } & \dots & u_{x_{n}x_{n}}
+\end{pmatrix}
+$$
+And observe that $[D^{2}u]_{ij}=\frac{\partial^{2}u}{\partial x_{i}\partial x_{j}}$ 
+And in general, $Df$ is the Jacobian of $f$ for $f:\Omega \to \mathbb{R}^{m}$ with $\Omega \subseteq \mathbb{R}^{n}$
