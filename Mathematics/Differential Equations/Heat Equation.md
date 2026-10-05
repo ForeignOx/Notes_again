@@ -43,7 +43,24 @@ We say this obeys Fourier's law that heat propagates from hotter towarder colder
 $$
 f(t,\underline{x})=-k\nabla _{\underline{x}}u(t,\underline{x})
 $$
-Which is the heat flux, $k$ is thermal conductivity, $k>0$ and $k=k(t,x)$
+Which is the heat flux, $k$ is thermal conductivity, $k>0$ and $k=k(t,\underline{x})$
+And if we consider some subdomain $V\subset \Omega$, then
+$$
+\frac{d}{dt} \int _{V}u(t,\underline{x}) \, d\underline{x} =-\int _{\partial V}f(t_{0},\underline{x})\cdot \hat{\underline{n}} \, dS(x) 
+$$
+Which means the amount of heat mass is proportional to the amount of heat leaving the barrier. By the [[Divergence Theorem|divergence theorem]], we can write this as:
+$$
+=-\int _{V}\underline{\nabla} \cdot \underline{f}(t,\underline{x})  \, d\underline{x} 
+$$
+Then supposing $u$ is nice enough, we can bring the time derivative into the first integral, soo
+$$
+\int _{V}\partial_{t}(u(t,\underline{x})) \, d\underline{x} =-\int _{V}\underline{\nabla} \cdot \underline{f} (t,\underline{x}) \, d\underline{x} 
+$$
+$$
+\implies u_{t}=-\underline{\nabla} \cdot \underline{k\nabla}_{\underline{x}}u
+$$
+There is a special case if $k$ is constant, we can take it out, soo $u_{t}=-k\nabla^{2}u$
+In order to solve this properly we need some extra conditions, such as initial conditions
 ## Solution Using Fourier Series
 We can write the solution of the heat equation as a fourier series with coefficients changing with time
 $$
