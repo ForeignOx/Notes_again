@@ -14,3 +14,4 @@ $$
 F_{1}(\mathbb{S}^{1} ,1)\cup\dots \cup F_{n}(\mathbb{S}^{1} ,1)
 $$
 Are equivalent or isotopic
+We normally study [[Equivalence Relation|equivalence classes]] or isotopy classes of links (rather than links themselves)
