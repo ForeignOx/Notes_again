@@ -70,7 +70,7 @@ f(x)=q(x)(x-\alpha)+r(x),\deg r<1
 $$
     Setting $x=\alpha$ we get $0=r(\alpha)$, but $r$ is a constant, so it must in fact be the zero polynomial, hence $(x-\alpha)|f(x)$, so $f(x)$ is not irreducible
     We need to show the converse holds; if it is not irreducible then $f(x)=g(x)h(x)$, where $\deg g,\deg h\ge 1$, but then $\deg f=\deg g+\deg h$, but we know that $\deg f$ is either $\hspace{0pt}2$ or $\hspace{0pt}3$, so we must have either $\deg g=1$ or $\deg h=1$. This means that WLOG, $g(x)=ax+b,a\neq 0$, hence $g\left( -\frac{b}{a} \right)=0\implies f\left( -\frac{b}{a} \right)=0$, so $f$ has the root $-\frac{b}{a}$
-#### Irreducible Plynomials in $\mathbb{Q}[x]$ and $\mathbb{Z}[x]$
+#### Irreducible Polynomials in $\mathbb{Q}[x]$ and $\mathbb{Z}[x]$
 First note that to check whether $f(x)\in \mathbb{Q}[x]$ has a root $\alpha \in \mathbb{Q}$ such that $f(\alpha)=0$, then it is enough to clear the denominators, i.e. multiply $f(x)$ by some $d\in\mathbb{Z}$ (e.g. the product of all the denominators of the coefficients of $f(x)$) and check whether $df(x)\in \mathbb{Z}[x]$ has a root
 #### The rational root test
 Let $f(x)=a_{0}+a_{1}x+\dots+a_{n}x^{n}\in\mathbb{Z}[x]$ with $\deg f\geq 1$. If $f\left( \frac{p}{q} \right)=0$ for $p,q\in\mathbb{Z}$ and $\gcd(p,q)=1$, then $p|a_{0}$ and $q|a_{n}$
@@ -124,3 +124,43 @@ This implies that $p|b_{k}c_{0}$, so $p| b_{k}$ or $p|c_{0}$, but we decided tha
 #### Example
 Prove that $f(x)=x^{7}+48x-24$ is irreducible in $\mathbb{Q}[x]$
 $48=3\cdot2^{4}$ and $24=3\cdot 2^{3}$, so Eisenstein's criterion with $p=3$ shows that $f(x)$ is irreducible
+## Solving Cubics
+For a cubic:
+$$
+x^{3}+a_{2}x^{2}+a_{1}x+a_{0}
+$$
+Then making the substitution $t=x+\frac{a_{2}}{3}$ gives us the reduced cubic:
+$$
+\left( t-\frac{a_{2}}{3} \right)^{3}+a_{2}\left( t-\frac{a_{2}}{3} \right)^{2}+\dots = 0
+$$
+$$
+ t^{3}+pt+q=0
+$$
+This is known as the reduced cubic.
+Next we need a clever step, we know that:
+$$
+(u+v)^{3}-3uv(u+v)-(u^{3}+v^{3})
+$$
+So making the substitution $t=u+v$, we get the reduced polynomial:
+$$
+t^{3}-3uvt-(u^{3}+v^{3})
+$$
+Which is not only reduced, but also means we just need to find $u,v$ so that
+$$
+\begin{cases}
+p=-3uv \\
+q=-(u^{3}+v^{3}) 
+\end{cases}\iff \begin{cases}
+u^{3}v^{3}=-\frac{p^{3}}{27} \\
+u^{3}+v^{3}=-q
+\end{cases}
+$$
+And we know that
+$$
+(y-u^{3})(y-v^{3})
+$$
+
+So we have a root:
+$$
+t=u+v=\sqrt[3]{ -\frac{q}{2}+\sqrt{ \frac{q^{2}}{4} } }
+$$
