@@ -67,4 +67,13 @@ $$
 \underline{\hat{n}}= \frac{-\frac{ \partial h }{ \partial x } \underline{e}_{1}-\frac{ \partial h }{ \partial y } \underline{e}_{2}+\underline{e}_{3} }{\sqrt{ 1+\frac{ \partial h }{ \partial x }^{2}+\frac{ \partial h }{ \partial y } ^{2}  }}
 $$
 ## Curvature of Surfacees
-Can we define [[Curvature|curvature]] for surfac
+Can we define [[Curvature|curvature]] for surfaces. We do so given a point $P$ of a surface $S$. If we intersect the surface with a plane $E$ containing the vector $N$ at $P$ orthogonal to $S$ (the normal vector), this intersection $E\cap S$ is locally a [[Plane Curves|planar curve]] with its own curvature
+When we rotate the plane $E$ around the vector $N$, the curvature of the resulting planar curve at $P$ changes and we are particularly interested in the maximum and minimum of these curvatures. 
+![[Pasted image 20261005132844.png]]
+They are called the principal curvatures of $S$ at $P$, and they are denoted $\kappa_{1}(P),\kappa_{2}(P)$, which give rise to two important notions:
+- the product $\kappa_{1}(P)\kappa  _2(P)$ is called the Gaussian curvature $K(P)$ of the surface $S$ at $P$
+- the arithmetic mean $\frac{\kappa_{1}(P)+\kappa_{2}(P)}{2}$ of the principal curvatures is called the mean curvature $H(P)$ of the surface $S$ at $P$
+Another way to measure curvature is called the Willmore functional defined by:
+$$
+\mathcal{W}(S)=\int H^{2} \, dA 
+$$
