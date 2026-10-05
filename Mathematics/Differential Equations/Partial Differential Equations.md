@@ -28,7 +28,7 @@ $$
 u(0,y,0)  = 
 $$
 ## Multi-index Notation
-Let $\underline{\alpha}=(\alpha_{1},\dots,\alpha_{n})$ be a vector of nonnegative integers and let $\left| \underline{\alpha} \right|_{1}=\alpha_{1}+\dots+\alpha_{n}$ be the $\ell^{1}$-[[norms|norm]] of $\underline{\alpha}$. If $u:\mathbb{R}^{n}\to \mathbb{R}$, we define $D^{\underline{\alpha}}u$ to be the partial derivative
+Let $\underline{\alpha}=(\alpha_{1},\dots,\alpha_{n})$ be a vector of nonnegative integers and let $\lvert \lvert \underline{\alpha} \rvert \rvert_{1}=\alpha_{1}+\dots+\alpha_{n}$ be the $\ell^{1}$-[[norms|norm]] of $\underline{\alpha}$. If $u:\mathbb{R}^{n}\to \mathbb{R}$, we define $D^{\underline{\alpha}}u$ to be the partial derivative
 $$
-D^{\underline{\alpha}}u=
+D^{\underline{\alpha}}u=\frac{\partial^{\lvert \lvert \underline{\alpha} \rvert \rvert _{1}}u}{\partial x_{1}^{\alpha_{1}}\dots \partial x_{n}^{\alpha_{n}}}=\partial_{x_{1}}^{\alpha_{1}}\dots \partial_{x_{n}}^{\alpha_{n}}u
 $$

@@ -60,7 +60,7 @@ $$
 \implies u_{t}=-\underline{\nabla} \cdot \underline{k\nabla}_{\underline{x}}u
 $$
 There is a special case if $k$ is constant, we can take it out, soo $u_{t}=-k\nabla^{2}u$
-In order to solve this properly we need some extra conditions, such as initial conditions
+In order to solve this properly we need some extra conditions, such as initial conditions and boundary conditions
 ## Solution Using Fourier Series
 We can write the solution of the heat equation as a fourier series with coefficients changing with time
 $$
