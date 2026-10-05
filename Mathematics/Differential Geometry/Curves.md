@@ -1,5 +1,5 @@
 ## Definition
-A curve $C$ is a 1-[[Dimension|dimensional]] [[Subsets|subset]] of [[Vectorspace Rn|$\mathbb{R}^{n}$]], for $n>1$.
+A regular curve $C$ is a 1-[[Dimension|dimensional]] [[Subsets|subset]] of [[Vectorspace Rn|$\mathbb{R}^{n}$]], for $n>1$.
 ![[Curves 2025-10-07 11.21.35.excalidraw]]
 We usually describe them by a parametrisation $\underline{x}(t)$:
 $$
@@ -11,6 +11,8 @@ A curve is closed if $\underline{x}(t_{1})=\underline{x}(t_{0})$.
 A curve is simple if it doesn't intersect itself.
 A curve is regular if it has at least one [[Differentiation#Remark|regular parametarisation]] 
 An oriented curve is a curve together with a specified (consistent) choice of [[Unit Tangent Vectors|unit tangent vector]].
+A curve is [[Smooth Functions|smooth]] if it is infinitely many times differentiable 
+If a curve is a map $f:U\to \mathbb{R}^{n}$ with $U\subset \mathbb{R}^{m}$, then the restriction of the map $f$ to a subset $V\subset U$ is denoted by $f|_{V}:V\to \mathbb{R}^{n}$
 ## Examples
 Find a parametrisation $\underline{x}(t)$ for the circle $x^{2}+y^{2}=a^{2}$ in $\mathbb{R}^{2}$.
 ![[Curves 2025-10-07 11.21.45.excalidraw]]
@@ -65,3 +67,17 @@ $$
 ## Definition
 A closed path $\gamma$ is simple if $\gamma(t_{1})=\gamma(t_{2})$ for some $t_{1}<t_{2}$ then $t_{1}=a,t_{2}=b$
 (i.e. no self-crossing or backtracking allowed)
+## Definition 
+Let $I$ be an open interval and $\underline{\alpha}:I\to \mathbb{R}^{n}$ be a map. ($I$ can include $(a,b),(a,\infty),(-\infty,b),(-\infty,\infty)$) 
+- We can write:
+$$
+\underline{\alpha}(u)=(\alpha_{1}(u),\alpha_{2}(u),\dots,\alpha_{n}(u))
+$$
+    Where $\alpha_{i}$ are the [[coordinates|coordinates]] in a given [[basis|basis]]. We call $\underline{\alpha}$ smooth if all component functions $\alpha_{i}$ are smooth maps
+- The image $\underline{\alpha}(I)\subset \mathbb{R}^{n}$ of the interval $I$ under $\underline{\alpha}$ is called the trace of $\underline{\alpha}$
+- We call the vector
+$$
+\underline{\alpha}'(u)=(\alpha_{1}'(u),\alpha_{2}'(u),\dots,\alpha_{n}'(u))\in \mathbb{R}^{n}
+$$
+    the tangent vector of $\underline{\alpha}$ at $u$ (where $'$ is derivative with respect to $u$)
+- The curve $\underline{\alpha}$ is called regular if we have $\underline{\alpha}'(u)\neq 0$ $\forall u\in I$. The curve is singular at $u$ if $\underline{\alpha}'(u)=0$, the tangent vector of a the curve $\underline{\alpha}$ vanishes pre
