@@ -1,1 +1,1 @@
-The simplest [[Knots|knot]] is the 1-k
+The simplest [[Knots|knot]] is the 1-component unlink and is just a circle wow

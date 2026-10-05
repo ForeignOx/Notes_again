@@ -1,7 +1,7 @@
 # Planar Linking Number
 An orientation can be assigned to a [[Link Diagrams|link diagram]] by assigning orientations to all its constituent knots. A sign is applied to all mutual crossings, then half the total sum of signs yields the planar linking number
 ## Definition
-Conisder a [[Link Diagrams|link diagram]] $L$ which contains $m$ constituent [[Gitt/Mathematics/Classification of Open Curves/Knots|knots]] $\mathcal{K}_{1},\dots,\mathcal{K}_{m}$ (all oriented). If knots $\mathcal{K}_{i}$ and $\mathcal{K}_{j}$ themselves generate $n_{ij}$ mutual crossings, these crossings are labelled $\mathcal{C}_{k}^{ij}$ for $k=1,\dots,n_{ij}$
+Conisder a [[Link Diagrams|link diagram]] $L$ which contains $m$ constituent [[Knots|knots]] $\mathcal{K}_{1},\dots,\mathcal{K}_{m}$ (all oriented). If knots $\mathcal{K}_{i}$ and $\mathcal{K}_{j}$ themselves generate $n_{ij}$ mutual crossings, these crossings are labelled $\mathcal{C}_{k}^{ij}$ for $k=1,\dots,n_{ij}$
 For each knot pairing we denote the total $\mathcal{L}_{ij}$ between $\mathcal{K}_{i}$ and $\mathcal{K}_{j}$ as the sum of all signed crossings:
 $$
 \mathcal{L}_{ij}(\mathcal{K}_{i},\mathcal{K}_{j})=\frac{1}{2}\sum_{k=1}^{n_{ij}}\mathcal{S}(\mathcal{C}_{k}^{ij})
@@ -20,7 +20,7 @@ This expression can be applied to open [[ribbons|ribbons]] as well
 The equation represents the average of the planar linking number as averaged over all posible projection. Each projection can be thought of as a particular viewing angle of the link
 Since the planar linking number can be shown to be independent of viewing angle, $\mathcal{L}$ above is equivalent to the planar linking number. It can be inferred from this that $\mathcal{L}$ must always be of integer value for closed spacecurves
 Furthermore, the evaluation of $\mathcal{L}$ is independent of chosen parametrisations
-$\mathcal{L}$ is trivially related to the [[crossing number|crossing number]], so
+$\mathcal{L}$ is trivially related to the [[Crossing Number|crossing number]], so
 $$
 \mathcal{L}=\frac{1}{2}C(\hat{n})
 $$
