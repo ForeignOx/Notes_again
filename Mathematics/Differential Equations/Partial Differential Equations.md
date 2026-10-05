@@ -32,3 +32,15 @@ Let $\underline{\alpha}=(\alpha_{1},\dots,\alpha_{n})$ be a vector of nonnegativ
 $$
 D^{\underline{\alpha}}u=\frac{\partial^{\lvert \lvert \underline{\alpha} \rvert \rvert _{1}}u}{\partial x_{1}^{\alpha_{1}}\dots \partial x_{n}^{\alpha_{n}}}=\partial_{x_{1}}^{\alpha_{1}}\dots \partial_{x_{n}}^{\alpha_{n}}u
 $$
+For example if $u:\mathbb{R}^{2}\to \mathbb{R}$, then
+$$
+D^{(0,0)}u=u,~D^{(1,0)}u=u_{x},~D^{(0,1)}u=u_{y},~ D^{(2,0)}u=u_{xx},~D^{(1,1)}u=u_{xy},~ D^{(0,2)}u_{yy}
+$$
+Let $k\in\mathbb{N}_{0}$. We define $D^{k}u(\underline{x})$ to be the set of values of all partial derivatives of $u$ of order $k$ at point $\underline{x}$:
+$$
+D^{k}u(\underline{x})=\left\{ D^{\underline{\alpha}}u(\underline{x}):\middle|:\lvert \lvert \underline{\alpha} \rvert \rvert _{1}=k \right\}
+$$
+For the special case $k=1$, we write $Du=D^{1}u$ and regard the elements of $Du$ as being arranged in a row vector:
+$$
+Du=(u_{x_{1}},\dots,u_{x_{n}})
+$$
