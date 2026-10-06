@@ -38,3 +38,6 @@ $$
 \underline{\beta}'(s)=(\underline{\alpha}'\circ \ell ^{-1})(s)\cdot (\ell ^{-1})'(s)= \frac{\underline{\alpha}'(\ell ^{-1}(s))}{\lvert \lvert \underline{\alpha}'(\ell ^{-1}(s)) \rvert \rvert }
 
 $$
+Thus $\lvert \lvert \underline{\beta}'(s) \rvert \rvert=1$ and $\underline{\beta}$ is a unit speed curve
+___
+Note that regularity is essential in the proof since, otherwise $\underline{\alpha}'(u)=0$ for some $u\in I$, which leads to diviion by zero.
