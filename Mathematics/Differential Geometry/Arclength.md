@@ -22,5 +22,6 @@ $$
 $$
 By using the fact that
 $$
-\lim_{ u_{i+1} \to u_{i} } \frac{\underline{\alpha}(u_{i+1})-\underline{\alpha}(u_{i})}{u_{i+1}-u_{i}}=\underline{\alpha};
+\lim_{ u_{i+1} \to u_{i} } \frac{\underline{\alpha}(u_{i+1})-\underline{\alpha}(u_{i})}{u_{i+1}-u_{i}}=\underline{\alpha}'(u_{i})
 $$
+And the left-handside is a [[Riemann Sums|Riemann sum]] which converges to the integral as the partition becomes finer

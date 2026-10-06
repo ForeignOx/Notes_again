@@ -110,7 +110,3 @@ These look like:
 (t^3-t,t^2-1)
 
 ```
-
-
-
-
