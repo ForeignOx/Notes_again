@@ -7,4 +7,4 @@ $$
 $$
 Where the mass $\delta M$ is enclosed by volume $\delta V$
 ![[Pasted image 20261006102254.png]]
-We can think about these infinitesimal volumes $\delta V$ as fluid elements. These fluid elements, which have properties like density, move around and we can talk about points in the fluid that follow this motion as fluid particles, although this is not related to the actual atoms and molecules, it does allow us to use intuition about l
+We can think about these infinitesimal volumes $\delta V$ as fluid elements. These fluid elements, which have properties like density, move around and we can talk about points in the fluid that follow this motion as fluid particles, although this is not related to the actual atoms and molecules, it does allow us to use intuition about solid particles
