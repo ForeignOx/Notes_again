@@ -101,6 +101,15 @@ $$
 \underline{t}(u)=\frac{\underline{\alpha}'(u)}{\lvert \lvert \underline{\alpha}'(u) \rvert \rvert }=\left( -\frac{\sin u}{\sqrt{ 2 }},\frac{\cos u}{\sqrt{ 2 }},\frac{1}{\sqrt{ 2 }} \right)
 $$
 ___
-The cusp $\underline{\alpha}:\mathbb{R}\to \mathbb{R}^{2},\underline{\alpha}(u)=(u^{3},u^{2})$, then $\underline{\alpha}$ is a smooth curve with $\underline{\alpha}'(u)=(3u^{2},2u)$. We have that $\underline{\alpha}'(u)=0$ iff $u=0$ and therefore $\underline{\alpha}$ is singular at $u=0$
+The cusp $\underline{\alpha}:\mathbb{R}\to \mathbb{R}^{2},\underline{\alpha}(u)=(u^{3},u^{2})$, then $\underline{\alpha}$ is a smooth curve with $\underline{\alpha}'(u)=(3u^{2},2u)$. We have that $\underline{\alpha}'(u)=0$ iff $u=0$ and therefore $\underline{\alpha}$ is singular at $u=0$, so $\underline{\alpha}$ is smooth, but not regular
 ___
-The node
+The node $\underline{\alpha}:\mathbb{R}\to \mathbb{R}^{2}$, $\underline{\alpha}(u)=(u^{3}-u,u^{2}-1)$, then $\underline{\alpha}(-1)=\underline{\alpha}(1)=(0,0)$, and $\underline{\alpha}'(u)=(3u^{2}-1,2u)$, which is never $\underline{0}$ for any value of $u\in \mathbb{R}$, so it is regular
+These look like:
+```desmos-graph
+(t^3,t^2)|-10<t<10
+(t^3-t,t^2-1)|-10<t<10
+
+```
+
+
+
