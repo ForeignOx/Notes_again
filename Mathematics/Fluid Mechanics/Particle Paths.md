@@ -3,7 +3,7 @@ A particle path is the path $\underline{x}(t)$, of a fluid particle over a given
 $$
 \frac{d \underline{x}}{dt} (t)=\underline{u}(\underline{x}(t),t)
 $$
-Subjject to initial conditions (the beginnings to the paths)
+Subject to initial conditions (the beginnings to the paths)
 ## Example
 Find the path of a particle in the 2D flow:
 $$
@@ -16,3 +16,8 @@ $$
 $$
 \frac{d y}{dt} =-y  ~ ~ ~y(0)=b
 $$
+Integration gives
+$$
+\underline{x}(\underline{a},t)=ae^{ t }\underline{e}_{1}+be^{ -t } \underline{e}_{2}
+$$
+![[Pasted image 20261006104850.png]]
