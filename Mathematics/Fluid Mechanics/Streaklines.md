@@ -30,4 +30,5 @@ y=\frac{t_{0}^{2}}{2}+b-\frac{1}{2}(t_{0}+a-x)^{2}
 $$
 Which we can plot
 Finally, note that this is the equation for all particles that pass through $\underline{a}$; we haven't yet used the fact that they are released between $t=0$ and $t_{0}$, i.e. $\tau \in[0,t_{0}]$, which gives us the restriction that $x\in[a,t_{0}+a]$
-If we choose the 
+If we choose the release point to be $\underline{a}=(0,0)$, the streaklines at $t_{0}=1$, and $t_{0}=2$ are plotted below, then the dashed lines show the individual particle path of two particles, one released at $t=0$ and another released at $t=1$
+![[Pasted image 20261006152604.png]]
