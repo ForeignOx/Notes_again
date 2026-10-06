@@ -17,4 +17,4 @@ $$
 
 \frac{d y}{ds} =t_{0}~y(0)=y_{0}
 $$
-When we want the streamline that passes through some given $(x_{0},y_{0})$. Integrating the first equation, $x=s+x_{0}$, whicle the second gives $y=t_{0}s+y_{0}$ Eliminating $s$ hows that the streamilnes are line with slope $t_{0}$
+When we want the streamline that passes through some given $(x_{0},y_{0})$. Integrating the first equation, $x=s+x_{0}$, whicle the second gives $y=t_{0}s+y_{0}$ Eliminating $s$ hows that the streamilnes are line with sls$ope $t_{0}$
