@@ -107,7 +107,7 @@ $$
 $$
 = 2(\lvert \lvert \underline{u} \rvert \rvert \lvert \lvert \underline{v} \rvert \rvert -(\underline{u},\underline{v})) 
 $$
-Which is positive by [[Cauchy-Schwarz Inequality|Cauchy-Schwarz]], so norms induced by inner products are in fact norms so that's good
+Which is positive by [[Cauchy-Schwarz Inequality|Cauchy-Schwarz]], so [[norms|norms]] induced by inner products are in fact norms so that's good
 ## Complex Norms
 Suppose we have a complex vectorspace $V$, with [[Hermitian Inner Product|hermitian inner product]] $\left< , \right>$, then $\forall \underline{u},\underline{v}\in V$, we want
 $$

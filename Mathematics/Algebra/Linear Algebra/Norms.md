@@ -70,7 +70,16 @@ Where
 $$
 \left< x,y \right> =\sum_{i=1}^{n}x_{i}y_{i}
 $$
-
+___
+Let $\ell^{2}$ be the set of all sequences $(x_{n})_{n\in\mathbb{N}}$ of real numbers such that
+$$
+\sum_{ n=1} ^{\infty}  x_{n}^{2}<\infty
+$$
+By the [[Cauchy-Schwarz Inequality|cauchy-schwarz inequality]], the series $\sum_{ n=1} ^{\infty} x_{n}y_{n}$ for $(x_{n})_{n\in\mathbb{N}},(y_{n})_{n\in\mathbb{N}}$ is [[Absolute Convergence|absolutely convergent]], and therefore we can define:
+$$
+\left< (x_{n})_{n\in\mathbb{N}},(y_{n})_{n\in\mathbb{N}} \right> =\sum_{n=1}^{\infty}x_{n}y_{n}
+$$
+Defines an inner product on $\ell^{2}$ which is in fact known as the hilbert space
 
 
 #Mathematics #LinAlg #Definition 
