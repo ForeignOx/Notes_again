@@ -2,7 +2,7 @@
 ## Real Case
 Suppose we have a [[Vectorspaces|vectorspace]] $V$, with real [[Inner Product|inner product]] $(,)$; a real [[Inner Product Spaces|inner product space]], then $\forall \underline{u},\underline{v}\in V$,
 $$
-(\underline{u},\underline{v})^{2}\leq(\underline{u},\underline{u})(\underline{v},\underline{v})
+(\underline{u},\underline{v})^{2}\leq(\underline{u},\underline{u})(\underline{v},\underline{v}) \iff \left| \left< x,y \right>  \right| \leq \sqrt{ \left< x,x \right>  }\sqrt{ \left< y,y \right>  }
 $$
 $$
 \implies \left| (\underline{u},\underline{v}) \right| \leq \lvert \lvert \underline{u} \rvert \rvert \lvert \lvert \underline{v} \rvert \rvert 
@@ -32,7 +32,7 @@ $$
 $$
 So $\underline{u},\underline{v}$ would not be linearly independent
 ## Complex Case
-If $\left\{ V,\left< , \right> \right\}$ is a [[Complex Numbers|complex]] inner product space, with $\lvert \lvert . \rvert \rvert$ being the norm induced by the [[Hermitian Inner Product|hermitian inner product]] $\left< , \right>$, then
+If $\left\{ V,\left< , \right> \right\}$ is a [[Complex Numbers|complex]] inner product space, with $\lvert \lvert \cdot \rvert \rvert$ being the norm induced by the [[Hermitian Inner Product|hermitian inner product]] $\left< , \right>$, then
 $$
 \left| \left< \underline{u},\underline{v} \right>  \right| ^{2}\leq \lvert \lvert \underline{u} \rvert \rvert ^{2}\lvert \lvert \underline{v} \rvert \rvert ^{2}
 $$

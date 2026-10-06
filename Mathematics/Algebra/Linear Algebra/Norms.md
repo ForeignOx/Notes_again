@@ -61,6 +61,15 @@ Key ones include the Euclidean norm $\lvert \lvert x \rvert \rvert_{2}$, the man
 $$
 \lvert \lvert x \rvert \rvert _{\infty}=\max\left\{ \left| x_{i} \right| \in \mathbb{R}:\middle|: i=1,\dots,n \right\}
 $$
+The three norm properties are easily checked for these functions, with the exception of the [[Triangle Inequality|triangle inequality]] for the Euclidean norm
+Because of [[Pythagoras' Theorem|pythagoras' theorem]], we think of $\lvert \lvert \cdot \rvert \rvert_{2}$ as the most reasonable choice of distance. The euclidean norm is the norm induced by the standard [[Dot Product|dot product]] on $\mathbb{R}^{n}$, so
+$$
+\lvert \lvert x \rvert \rvert _{2}=\sqrt{ \left< x,x \right>  }
+$$
+Where
+$$
+\left< x,y \right> =\sum_{i=1}^{n}x_{i}y_{i}
+$$
 
 
 
