@@ -21,5 +21,10 @@ And note that $A$ is not $x(0)$ this time, so
 $$
 x= \frac{Ae^{ at }}{1+\frac{A}{K}e^{ at }}
 $$
-What is the long term behaviour?? It just goes to $K$
-
+What is the long term behaviour?? It just goes to $K$, but also it has come from an equilibrium at $x=0$, if we make a small change to $x=K$ so going to $x=K-\varepsilon$, after some time you go back to $x=K$ so we call this stable
+However if we make a small change to $x=0+\varepsilon$, in time it goes to $x=K$, so we call this unstable
+Interestingly we don't need to actually solve to see this, we just need to plot $\frac{d x}{dt}$ against $x$, which is an upside-down parabola
+```desmos-graph
+K=3
+y=x*(1-x/K)
+```

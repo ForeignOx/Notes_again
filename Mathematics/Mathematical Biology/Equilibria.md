@@ -1,0 +1,2 @@
+Equilibria are when all time derivatives in your differential equations are 0, they are also known as steady states and fixed points
+We also want to consider permissible/feasible equilibria, for example with a population making it non-negative
