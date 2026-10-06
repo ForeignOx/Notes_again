@@ -106,10 +106,11 @@ ___
 The node $\underline{\alpha}:\mathbb{R}\to \mathbb{R}^{2}$, $\underline{\alpha}(u)=(u^{3}-u,u^{2}-1)$, then $\underline{\alpha}(-1)=\underline{\alpha}(1)=(0,0)$, and $\underline{\alpha}'(u)=(3u^{2}-1,2u)$, which is never $\underline{0}$ for any value of $u\in \mathbb{R}$, so it is regular
 These look like:
 ```desmos-graph
-(t^3,t^2)|-10<t<10
-(t^3-t,t^2-1)|-10<t<10
+(t^3,t^2)
+(t^3-t,t^2-1)
 
 ```
+
 
 
 
