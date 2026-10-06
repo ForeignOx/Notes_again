@@ -1,6 +1,6 @@
 Given a [[Vectorspaces|vectorspace]] over $\mathbb{R}$, (or $\mathbb{C}$), a norm on $V$ is a [[Functions|functions]] 
 $$
-\lvert \lvert . \rvert \rvert:V\to \mathbb{R}
+\lvert \lvert \cdot \rvert \rvert:V\to \mathbb{R}
 $$
 $$
  \underline{v}\mapsto \lvert \lvert \underline{v} \rvert  \rvert 
@@ -52,5 +52,16 @@ $$
 
 ## Unit Vectors
 $\underline{v}$ is a unit vector s $\lvert \lvert \underline{v} \rvert \rvert=1$
+## Examples
+For $(x_{1},\dots,x_{n})\in\mathbb{R}^{n}$ define the $\ell_{p}$ norm:
+$$
+\lvert \lvert x \rvert \rvert _{p}=\left( \sum_{i=1}^{n} x_{i}^{p}\right)^{\frac{1}{p}}
+$$
+Key ones include the Euclidean norm $\lvert \lvert x \rvert \rvert_{2}$, the manhattan norm, $\lvert \lvert x \rvert \rvert_{1}$ and the $\ell_{\infty}$ norm:
+$$
+\lvert \lvert x \rvert \rvert _{\infty}=\max\left\{ \left| x_{i} \right| \in \mathbb{R}:\middle|: i=1,\dots,n \right\}
+$$
+
+
 
 #Mathematics #LinAlg #Definition 
