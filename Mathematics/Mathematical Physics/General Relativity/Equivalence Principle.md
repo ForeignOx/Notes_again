@@ -3,4 +3,14 @@ General relativaty is a theory of gravity. At its heart is the equivalence princ
 
 \*locally meaning only having access to a small region of spacetime: othewise could detect variations of the gravitational field with position, these are known as tidal forces
 
+Validity of the equivalence principle requires all bodies to fall with the same acceleration irrespective of their composition or mass 
+In Newtonian physics this is the result of a curious coincidence: the equality of the gravitational mass $m_{g}$ and the inertial mass $m_{i}$
+By Newton, acceleration is force over inertial mass which is just $\frac{m_{g}g}{m_{i}}$, but this is equal to $g$ as $m_{i}=m_{g}$
+Why should this be true? These are physically distinct:
+- $m_{i}$ is resistanc to acceleration by forces
+- $m_{g}$ is some form of charge determining gravitational force on a body
+In electromagnetism, the charge/$m_{i}$ ratio is not 1, curious curious curious.....
+
+In general relativity, there are no gravitational forces in a uniform field
+
 
