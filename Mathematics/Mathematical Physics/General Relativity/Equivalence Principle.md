@@ -14,8 +14,7 @@ In electromagnetism, the charge/$m_{i}$ ratio is not 1, curious curious curious.
 In general relativity, there are no gravitational forces in a uniform field; everything falls at the same rate simply because we're in an accelerated frame of reference so it's a fictitious force
 Fictitious forces disappear in an appropriate choice of coordinate system
 Einstein thought this was a weak equivalence principle and wanted to make it the most general thing ever with the following strong equivalence principle:
-> Meowmeowmeowmeowmeowmeowmeowmeowmeo
+> Free-falling observers define local inertial frames (i.e. coordinate systems) in which all the laws of physics are those of special relativity
 
-
-
-
+But if free-falling bodies experience no gravitational forces, why does the Earth orbit the sun????
+It took Einstein a while to work out that actually it's just bc spacetime is curved by matter, so free-falling bodies follow the closeest analogue of a straight line on curved spacetime, known as a geodesic.... These can in fact form closed orbits
