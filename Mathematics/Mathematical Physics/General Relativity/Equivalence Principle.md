@@ -11,6 +11,11 @@ Why should this be true? These are physically distinct:
 - $m_{g}$ is some form of charge determining gravitational force on a body
 In electromagnetism, the charge/$m_{i}$ ratio is not 1, curious curious curious.....
 
-In general relativity, there are no gravitational forces in a uniform field
+In general relativity, there are no gravitational forces in a uniform field; everything falls at the same rate simply because we're in an accelerated frame of reference so it's a fictitious force
+Fictitious forces disappear in an appropriate choice of coordinate system
+Einstein thought this was a weak equivalence principle and wanted to make it the most general thing ever with the following strong equivalence principle:
+> Meowmeowmeowmeowmeowmeowmeowmeowmeo
+
+
 
 
