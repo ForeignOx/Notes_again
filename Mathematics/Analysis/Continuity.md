@@ -206,4 +206,18 @@ $$
 f(z)=f(x+iy)=(x^{2}+y^{2})\sin ^{3}(\sqrt{ x^{2}+7 })
 $$
 ___
+## Continuous Differentiability Notation
+For $k\in\mathbb{N}$, we define on some region $\Omega$
+$$
+C^{k}(\Omega):=\left\{ f:\Omega\to \mathbb{R}:\middle|: f\text{ is }k\text{ times continuously differentiable} \right\}
+$$
+$$
+C^{k}(\overline{\Omega}):=\left\{ f\in C^{k}(\Omega):\middle|: D^{\alpha}f \text{ has a continuous expension to }\overline{\Omega},\forall \left| \alpha \right| \leq k\right\}
+$$
+We have a special case for $k=0$, where $C^{0}(\Omega)$, just meas continuous functions.
+On $C^{0}(\overline{\Omega})$ we can define a norm $\lvert \lvert f \rvert \rvert_{\infty}=\sup\left| f(x) \right|$
+
+
+
+
 #Mathematics #Analysis #Definition

@@ -7,6 +7,11 @@ $$
 \mathcal{L}u=f
 $$
 Where $\mathcal{L}$ is a [[Linear Differential Operators|linear differential operator]] acting on $u(x_{1},\dots,x_{n})$ and $f$ is some function
+___
+Another way of writing this is with multi-index notation: 
+$$
+\sum_{\alpha}
+$$
 ## Examples
 For example, the [[Heat Equation|heat equation]]
 $$

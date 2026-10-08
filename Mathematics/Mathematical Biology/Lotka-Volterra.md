@@ -38,4 +38,4 @@ $$
 $$
 \frac{d \hat{y}}{d\hat{t}} =\gamma(-\hat{y}+\hat{x}\hat{y})
 $$
-Where $\gamma=\frac{c}{a}$, and these equations are known as the non-dimensional Lotka-Volterra model, so there is only 1 independent parameter which is pretty cool, every other solution is a
+Where $\gamma=\frac{c}{a}$, and these equations are known as the non-dimensional Lotka-Volterra model, so there is only 1 independent parameter which is pretty cool, every other solution is a scaling in $X,Y$ or $T$ 
