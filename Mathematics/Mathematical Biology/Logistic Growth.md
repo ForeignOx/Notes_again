@@ -25,6 +25,11 @@ What is the long term behaviour?? It just goes to $K$, but also it has come from
 However if we make a small change to $x=0+\varepsilon$, in time it goes to $x=K$, so we call this unstable
 Interestingly we don't need to actually solve to see this, we just need to plot $\frac{d x}{dt}$ against $x$, which is an upside-down parabola
 ```desmos-graph
-K=3
+---
+K=5
 y=x*(1-x/K)
+(0,2)|label:dx/dt|hidden
+(6,0)|label:x|hidden
 ```
+This is known as the phase portrait and this space is known as the phase space
+You can read these, the zeros are the equilibria, and between these, we see $x$ is increasing as $\frac{d x}{dt}>0$
