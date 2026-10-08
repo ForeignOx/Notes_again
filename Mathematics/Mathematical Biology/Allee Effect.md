@@ -11,5 +11,6 @@ y=-x*(1-x/K)*(1-x/A)
 (0,2)|label:dx/dt|hidden
 (6,0)|label:x|hidden
 ```
-This is bistable, it goes stable, unstable, stable. In general stability always alternates (in 1)
+This is bistable, it goes stable, unstable, stable. In general stability always alternates (in 1D models)
 It sensitive to initial conditions. $a$ scales time, but it makes no long term difference
+Note that oscillations are not possible in 1D, i.e. $\frac{d x}{dt}>0$ going to $\frac{d x}{dt}<0$, it is always the other way around
