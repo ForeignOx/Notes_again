@@ -10,17 +10,33 @@ Where $\mathcal{L}$ is a [[Linear Differential Operators|linear differential ope
 ___
 Another way of writing this is with multi-index notation: 
 $$
-\sum_{\alpha}
+\sum_{\left| \alpha \right| \leq k}a_{\alpha}(x)D^{\alpha}u(x)=f(x)
 $$
+For $x\in \Omega$, where $k$ is the order of the PDE.
+We have $f,a_{\alpha}:\Omega\to \mathbb{R},~\forall\alpha=(\alpha_{1},\dots,\alpha_{n})\in\mathbb{N}_{0}^{n}$ are given
+Coefficient functions and $u:\Omega\to \mathbb{R}$ is the unknown
 ## Examples
 For example, the [[Heat Equation|heat equation]]
 $$
 \mathcal{L}=\frac{ \partial  }{ \partial t } -D\nabla^{2}\implies \mathcal{L}u=\frac{ \partial u }{ \partial t } -D\nabla^{2}u
 $$
+Another way of writing this is 
+$$
+\partial_{t}u(t,x)-\Delta_{x}u(t,x)=\partial_{t}u(t,x)-\sum_{i=1}^{3}\partial^{2}_{x}u(t,x)=0
+$$
+This is order 2, and we have $\alpha_{(1,0,0,0)}=1$, the other non-trivial cases are $a_{(0,2,0,0)}=-1$ for the $x$ component, and also $a_{(0,0,2,0)}=-1$ and $a_{(0,0,0,2)}=-1$ all others are 0
+___
 The [[Wave Equation|wave equation]]:
 $$
 \mathcal{L}=\frac{ \partial^{2} }{ \partial t^{2} } -c^{2}\nabla^{2}\implies \mathcal{L}u=\frac{ \partial^{2}u }{ \partial t^{2} } -c^{2}\nabla^{2}u
 $$
+___
+Let's take another example with $\Omega=\mathbb{R}^{2}$
+$$
+\sin(x_{1}x_{2})\partial_{x_{1}}\partial^{2}_{x_{2}}u+1=0
+$$
+So we have $a_{(1,2)}=\sin(x_{1}x_{2})$, all other coefficients are 0, and here the order of the PDE is 3
+
 ## Application of [[Fourier Transform|Fourier Transforms]]
 Suppose we we have a PDE of $\hspace{0pt}2$ independent variables $x,t$, and $\hspace{0pt}1$ dependent variable $u(x,t)$, then
 $$
