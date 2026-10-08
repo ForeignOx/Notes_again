@@ -10,11 +10,12 @@ Where $\mathcal{L}$ is a [[Linear Differential Operators|linear differential ope
 ___
 Another way of writing this is with multi-index notation: 
 $$
-\sum_{\left| \alpha \right| \leq k}a_{\alpha}(x)D^{\alpha}u(x)=f(x)
+\sum_{\left| \underline{\alpha} \right| \leq k}a_{\underline{\alpha}}(\underline{x})D^{\alpha}u(\underline{x})=f(\underline{x})
 $$
 For $x\in \Omega$, where $k$ is the order of the PDE.
-We have $f,a_{\alpha}:\Omega\to \mathbb{R},~\forall\alpha=(\alpha_{1},\dots,\alpha_{n})\in\mathbb{N}_{0}^{n}$ are given
+We have $f,a_{\underline{\alpha}}:\Omega\to \mathbb{R},~\forall\underline{\alpha}=(\alpha_{1},\dots,\alpha_{n})\in\mathbb{N}_{0}^{n}$ are given
 Coefficient functions and $u:\Omega\to \mathbb{R}$ is the unknown
+These are linear as we have a linear operator $\mathcal{L}:X\to Y$ between [[vectorspaces|vectorspaces]], with $X$ being the vectorspace $X=C^{k}(\Omega)$, $Y=C(\Omega)$, as the functions have to be $k$-times differentiable to be input to $\mathcal{L}$, then come out to be continuous
 ## Examples
 For example, the [[Heat Equation|heat equation]]
 $$
@@ -36,7 +37,12 @@ $$
 \sin(x_{1}x_{2})\partial_{x_{1}}\partial^{2}_{x_{2}}u+1=0
 $$
 So we have $a_{(1,2)}=\sin(x_{1}x_{2})$, all other coefficients are 0, and here the order of the PDE is 3
-
+## Remark
+Linear PDEs of order 1 can be written in a compact form as
+$$
+a(\underline{x})\cdot \underline{\nabla } u(\underline{x})+a_{0}(\underline{x})u(\underline{x})=f
+$$
+With $a:\Omega\to \mathbb{R}^{n} ,~f,a_{0}:\Omega\to \mathbb{R}$
 ## Application of [[Fourier Transform|Fourier Transforms]]
 Suppose we we have a PDE of $\hspace{0pt}2$ independent variables $x,t$, and $\hspace{0pt}1$ dependent variable $u(x,t)$, then
 $$
