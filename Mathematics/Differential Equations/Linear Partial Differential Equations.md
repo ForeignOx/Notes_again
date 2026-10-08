@@ -10,9 +10,9 @@ Where $\mathcal{L}$ is a [[Linear Differential Operators|linear differential ope
 ___
 Another way of writing this is with multi-index notation: 
 $$
-\sum_{\left| \underline{\alpha} \right| \leq k}a_{\underline{\alpha}}(\underline{x})D^{\alpha}u(\underline{x})=f(\underline{x})
+\sum_{\left| \underline{\alpha} \right| \leq k}a_{\underline{\alpha}}(\underline{x})D^{\underline{\alpha}}u(\underline{x})=f(\underline{x})
 $$
-For $x\in \Omega$, where $k$ is the order of the PDE.
+For $\underline{x}\in \Omega$, where $k$ is the order of the PDE.
 We have $f,a_{\underline{\alpha}}:\Omega\to \mathbb{R},~\forall\underline{\alpha}=(\alpha_{1},\dots,\alpha_{n})\in\mathbb{N}_{0}^{n}$ are given
 Coefficient functions and $u:\Omega\to \mathbb{R}$ is the unknown
 These are linear as we have a linear operator $\mathcal{L}:X\to Y$ between [[vectorspaces|vectorspaces]], with $X$ being the vectorspace $X=C^{k}(\Omega)$, $Y=C(\Omega)$, as the functions have to be $k$-times differentiable to be input to $\mathcal{L}$, then come out to be continuous
