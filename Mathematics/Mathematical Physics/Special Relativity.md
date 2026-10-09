@@ -1,3 +1,7 @@
+Special Relativity came about becaue Einstein had some principles:
+- The laws of physics take the same form in all inertial frames, this is a symmetry principle; all inertial frames are equivalent and indistinguishable from one another
+- The speed of light in a vacuum $c$ is constant and takes the same value in all inertial frames
+An observer is associated with a coordinate system, which is different to an inertial observer, different observers will disagree on the spatial and temporal intervals between events; but there is one thing that everyone ag
 ## Simultaneity
 Suppose two inertial observers are related by a [[Lorentz boosts|Lorentz boost]]:
 $$
