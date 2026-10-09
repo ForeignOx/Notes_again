@@ -130,6 +130,7 @@ $$
 $$
 
 ## In Metric Spaces
+### Definition
 Let $(M,d)$ be a metric space, $r>0$, $x\in M$. Then
 $$
 B(x;r)=\left\{ y\in  M:\middle|:d(x,y)<r \right\}
@@ -140,6 +141,16 @@ D(x; r)=\left\{ y\in  M:\middle|:d(x,y)\leq r \right\}
 $$
 Is called the closed ball of radius $r$ around $x\in M$
 We may write $B_{d}(x; r)$ and $D_{d}(x; r)$ if different metrics are considered
-___
+### Definition
 Let $M$ be a metric space, a subset $U\subseteq M$ is called open if $\forall x\in U$, $\exists\varepsilon>0$ such that $B(x; \varepsilon)\subseteq U$. A subset $A\subseteq M$ is called closed if $M\setminus A$ is open
 Unfortunately, a set being closed does not imply that it is not open and vice-versa. Indeed, some are open and closed and others are neither
+## Example
+Let $(X,d_{x})$ have the discrete metric. Every $U\subset X$ is open if $x\in U$ is clopen
+If $x\in U$, choose $\varepsilon=1$, and $\left\{ x \right\}=B(x;1)\subset U$, but also, $X\setminus U\subseteq X$, hence open, which means $U$ is also closed, hence clopen
+___
+Consider
+$$
+d_{\infty}(x,y)\leq d_{2}(x,y)\leq d_{1}(x,y)\leq md_{\infty}(x,y)
+$$
+For all $x,y\in \mathbb{R}^{m}$
+To see this, 
