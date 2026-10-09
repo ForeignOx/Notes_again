@@ -13,3 +13,11 @@ The first condition ensures that the distance between different points is positi
 d_{\lvert \lvert \cdot \rvert \rvert }(x,y)=\lvert \lvert x-y \rvert \rvert 
 $$
 Which satisfies all the conditions by definition of metric
+___
+Let $M$ be a set, define a metric $d:M\times M\to \mathbb{R}$ by
+$$
+d(x,y)=1-\delta_{xy}
+$$
+Which can indeed be seen as a metric by checking the things. This is called the discrete metric
+___
+Let $(M,d)$ be a metric space and $A\subseteq M$, then $A$ is also a metric space; define $d_{A}:A\times A\to \mathbb{R}$  by restricting $d$ to $A\times A$, then $d_{A}$ is also a metric, the condition satisfaction is inherited from the superset
