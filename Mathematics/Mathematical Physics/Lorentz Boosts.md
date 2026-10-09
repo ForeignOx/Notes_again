@@ -11,7 +11,7 @@ $$
 $$
  t'=Et+Dx
 $$
-Which gives su the derivatives:
+Which gives us the derivatives:
 $$
 \frac{ \partial  }{ \partial t } =\frac{ \partial x' }{ \partial t } \frac{ \partial  }{ \partial x' } +\frac{ \partial t' }{ \partial t } \frac{ \partial  }{ \partial t' } =B\frac{ \partial  }{ \partial x'+E\frac{ \partial  }{ \partial t' }  } 
 $$
