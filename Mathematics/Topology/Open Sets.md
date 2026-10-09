@@ -129,3 +129,17 @@ $$
 \partial A:=\overline{A}\setminus A^{0}=(A^{0})^{c}\cap((A^{c})^{0})^{c}=(A^{0}\cup (A^{c})^{0})^{c}
 $$
 
+## In Metric Spaces
+Let $(M,d)$ be a metric space, $r>0$, $x\in M$. Then
+$$
+B(x;r)=\left\{ y\in  M:\middle|:d(x,y)<r \right\}
+$$
+Is called the open ball of radius $r$ around $x\in M$, and
+$$
+D(x; r)=\left\{ y\in  M:\middle|:d(x,y)\leq r \right\}
+$$
+Is called the closed ball of radius $r$ around $x\in M$
+We may write $B_{d}(x; r)$ and $D_{d}(x; r)$ if different metrics are considered
+___
+Let $M$ be a metric space, a subset $U\subseteq M$ is called open if $\forall x\in U$, $\exists\varepsilon>0$ such that $B(x; \varepsilon)\subseteq U$. A subset $A\subseteq M$ is called closed if $M\setminus A$ is open
+Unfortunately, a set being closed does not imply that it is not open and vice-versa. Indeed, some are open and closed and others are neither
