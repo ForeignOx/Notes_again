@@ -1,0 +1,2 @@
+## Definition
+A Hilbert space $\mathcal{H}$ is a complex [[Vectorspaces|vectorspace]] with an [[Inner Product|inner product]]. It can be finite or infinite dimensional, but in the infinite case there is a completeness condition
