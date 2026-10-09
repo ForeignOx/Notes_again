@@ -98,7 +98,12 @@ $$
 (For the matrix of a linear transformation, we instead found $A= P ^{-1}AP$, this is different)
 So a big question for [[Diagonalisation|diagonalisation]], is can we find $M$ such that $M^{\top}AM$ is diagonal, and a subquestion, what if $M^{\top}=M^{-1}$ 
 ## Bra-ket notation
-For two [[States|states]] $\ket{v},\ket{u}\in \mathcal{H}$ a [[Hilbert Spaces|Hilbert space]], the inner product is represe 
+For two [[States|states]] $\ket{v},\ket{u}\in \mathcal{H}$ a [[Hilbert Spaces|Hilbert space]], the inner product is represented as $\braket{u|v}$ which satisfies standard inner product axioms, with one notation change:
+- $\braket{v|u}=\braket{u|v}^{*}$
+- $\braket{ v | \lambda u }=\lambda \braket{ v | u }$
+- $\braket{ v | (\ket{u}+\ket{w}) }=\braket{ v | u }+\braket{ v | w }$
+- $\braket{ v | v }\geq 0$ with equality iff $\ket{v}=0$, the zero vector
+Note we write $\sqrt{ \braket{ v | v } }$ the norm of $\ket{v}$, and is written $\lvert \lvert \ket{v} \rvert \rvert^{2}$ 
 
 
 #Mathematics #LinAlg #Definition 

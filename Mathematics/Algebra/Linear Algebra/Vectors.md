@@ -35,5 +35,24 @@ Since vectors have an order imposed by some [[Sets of Indices|set of indices]], 
 ![[Vectors 2024-10-13 21.44.11.excalidraw]]
 ## Ket Notation
 A vector in a [[Hilbert Spaces|Hilbert space]] is written as a ket $\ket{\cdot}$, and the $\cdot$ can be represented by any letter as the name of the vector, e.g. $\ket{\psi}$
+### Basis Expansion
+Take a basis of $\mathcal{H}$ $\ket{i}$ for $i\in\left\{ 1,\dots,n \right\}$, then we can write any state $\ket{v}\in\mathcal{H}$ uniquely as
+$$
+\ket{v} =\sum_{i=1}^{n}v_{i}\ket{i} 
+$$
+For some $v_{i}\in \mathbb{C}$ which are the components of $\ket{v}$ in basis $\ket{i}$ (you can think of them as coordinates)
+### Proposition
+The basis is orthonormal if
+$$
+\braket{ i | j } =\delta_{ij}
+$$
+### Proof
+$$
+\braket{ j | v } =\braket{ j | \sum_{ i=1} ^{ n} v_{i}\ket{i}   } 
+$$
+$$
+= \sum_{ i=1} ^{ n}  v_{i}\ket{}  
+$$
+
 
 #Mathematics #LinAlg 
