@@ -51,8 +51,20 @@ $$
 \braket{ j | v } =\braket{ j | \sum_{ i=1} ^{ n} v_{i}\ket{i}   } 
 $$
 $$
-= \sum_{ i=1} ^{ n}  v_{i}\ket{}  
+= \sum_{ i=1} ^{ n}  v_{i}\braket{ j | i }   =\sum_{ i=1} ^{ n}  v_{i}\delta_{ij}=v_{j}
 $$
+Then we can write $\ket{v}$ as
+$$
+\ket{v} =\sum_{ i=1} ^{ n}\ket{i}   \braket{ i | v }  
+$$
+So
+$$
+\braket{ w | v } =\sum_{ i=1} ^{ n}  \braket{ w | i } \braket{ i | v } 
+$$
+$$
+= \sum_{ i=1} ^{ n}  w_{i}^{*}v_{i}
+$$
+
 
 
 #Mathematics #LinAlg 
