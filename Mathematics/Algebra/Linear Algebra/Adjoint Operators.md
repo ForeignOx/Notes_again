@@ -34,3 +34,13 @@ Which allows us to infer two boundary conditions on $w$:
 - $3w(b)-w'(b)=0$
 - $w(a)=0$
 So the solution includes these as our $BC^{*}$
+## In Quantum
+The adjoint $()^{\dagger}$ or Hermitian conjugate maps kets to bras,
+$$
+(\ket{v} )^{\dagger}=\bra{v} 
+$$
+It is defined by
+$$
+\braket{ v | w } =(\braket{ w | v } )^{*}
+$$
+So if $\ket{v}=\sum_{i}v_{i}\ket{i}$, then $\bra{v}=\sum_{i}v_{i}^{*}\bra{i}$

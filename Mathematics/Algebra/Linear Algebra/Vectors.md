@@ -64,7 +64,25 @@ $$
 $$
 = \sum_{ i=1} ^{ n}  w_{i}^{*}v_{i}
 $$
-
+## Bras
+If you think of $\ket{v}$ as a column vector:
+$$
+\ket{v} =\begin{pmatrix}
+v_{1} \\
+\vdots \\
+v_{n}
+\end{pmatrix}
+$$
+Then we can assemble the $w_{i}^{*}$ as a row vector $(w_{1}^{*},\dots,w_{n}^{*})$, so that
+$$
+\braket{ w | v } =(w_{1}^{*},\dots,w_{n}^{*})\begin{pmatrix}
+v_{1} \\
+\vdots \\
+v_{n}
+\end{pmatrix}
+$$
+Inspired by this, we think of $\bra{w}$ as this row vector, so that it's just matrix multiplication
+Mathematically, $\braket{ w}\in\mathcal{H}^{*}$, the dual vectorspace of $\mathcal{H}$, the space of all linear maps $\mathcal{H }\to \mathbb{C}$
 
 
 #Mathematics #LinAlg 
