@@ -97,6 +97,8 @@ A\to \tilde{A}=M^{\top}AM
 $$
 (For the matrix of a linear transformation, we instead found $A= P ^{-1}AP$, this is different)
 So a big question for [[Diagonalisation|diagonalisation]], is can we find $M$ such that $M^{\top}AM$ is diagonal, and a subquestion, what if $M^{\top}=M^{-1}$ 
+## Bra-ket notation
+For two [[States|states]] $\ket{v},\ket{u}\in \mathcal{H}$ a [[Hilbert Spaces|Hilbert space]], the inner product is represe 
 
 
 #Mathematics #LinAlg #Definition 

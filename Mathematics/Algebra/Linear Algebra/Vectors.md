@@ -34,6 +34,6 @@ Since vectors have an order imposed by some [[Sets of Indices|set of indices]], 
 ## Scalar multiplication
 ![[Vectors 2024-10-13 21.44.11.excalidraw]]
 ## Ket Notation
-A vector in a [[Hilbert Spaces|Hilbert space]] is written as a ket $\ket{\psi}$
+A vector in a [[Hilbert Spaces|Hilbert space]] is written as a ket $\ket{\cdot}$, and the $\cdot$ can be represented by any letter as the name of the vector, e.g. $\ket{\psi}$
 
 #Mathematics #LinAlg 

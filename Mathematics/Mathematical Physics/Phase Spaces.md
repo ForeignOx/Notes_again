@@ -1,5 +1,5 @@
 ## Definition
-The phase (or state) space $\mathscr{P}$ is the space of all possible [[Gitt/Mathematics/Mathematical Physics/States|states]] for a classical system
+The phase (or state) space $\mathscr{P}$ is the space of all possible [[States|states]] for a classical system
 ## Remark
 The dimension of the phase space is twice the dimension of the [[Configuration Spaces|configuration space]],
 $$
