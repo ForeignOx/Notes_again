@@ -169,3 +169,48 @@ $$
 \Lambda_{p}=\mathrm{diag}(1,-1,1,1)
 $$
 So the matrices with $\det\Lambda=1$ form the proper Lorentz group $SO(1,3)$
+## Notation
+This all looks very yucky, we can all agree, but if we define rapidity $\beta$ by $\frac{v}{c}=\tanh\beta$, so
+$$
+\gamma=\frac{1}{\sqrt{ 1-\tanh ^{2}\beta }}=\cosh\beta 
+$$
+$$
+ \frac{\gamma v}{c}=\sinh\beta
+$$
+So a lorentz boost matrix in the $x$-direction, it looks like this in terms of rapidity:
+$$
+\begin{pmatrix}
+ct' \\
+x' \\
+y' \\
+z'
+\end{pmatrix}=\begin{pmatrix}
+\cosh\beta & -\sinh\beta & 0 & 0 \\
+-\sinh\beta & \cosh\beta & 0 & 0 \\
+0 & 0 & 1 & 0 \\
+0 & 0 & 0 & 1
+\end{pmatrix}\begin{pmatrix}
+ct \\
+x \\
+y \\
+z
+\end{pmatrix}
+$$
+$$
+\begin{pmatrix}
+ct' \\
+x' \\
+y' \\
+z'
+\end{pmatrix}=\begin{pmatrix}
+\cosh\beta & -\sinh\beta &  &  \\
+-\sinh\beta & \cosh\beta & \huge{0} &  \\
+0 & 0 & 1 & 0 \\
+0 & 0 & 0 & 1
+\end{pmatrix}\begin{pmatrix}
+ct \\
+x \\
+y \\
+z
+\end{pmatrix}
+$$
