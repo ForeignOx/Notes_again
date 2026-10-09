@@ -196,21 +196,3 @@ y \\
 z
 \end{pmatrix}
 $$
-$$
-\begin{pmatrix}
-ct' \\
-x' \\
-y' \\
-z'
-\end{pmatrix}=\begin{pmatrix}
-\cosh\beta & -\sinh\beta &  &  \\
--\sinh\beta & \cosh\beta & \huge{0} &  \\
-0 & 0 & 1 & 0 \\
-0 & 0 & 0 & 1
-\end{pmatrix}\begin{pmatrix}
-ct \\
-x \\
-y \\
-z
-\end{pmatrix}
-$$
