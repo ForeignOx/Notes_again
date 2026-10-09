@@ -216,7 +216,16 @@ C^{k}(\overline{\Omega}):=\left\{ f\in C^{k}(\Omega):\middle|: D^{\alpha}f \text
 $$
 We have a special case for $k=0$, where $C^{0}(\Omega)$, just meas continuous functions.
 On $C^{0}(\overline{\Omega})$ we can define a norm $\lvert \lvert f \rvert \rvert_{\infty}=\sup\left| f(x) \right|$
-
+## Continuity in Metric Spaces
+Let $(M,d_{M})$ and $(N,d_{N})$ be metric spaces, and $f:M\to N$ a function. We say that $f$ is continuous at $a\in M$ if $\forall\varepsilon>0$, $\exists\delta>0$ such that
+$$
+d_{M}(x,a)<\delta\implies d_{N}(f(x),f(a))<\varepsilon
+$$
+We say $f$ is continuous if $f$ is continuous $\forall a\in M$
+### Example
+Let $X$ be a set and $d_{X}$ the discrete metric. Any $f:X\to M$ with $M$ a metric space is continuous. To ee see this take $a\in X$, given $\varepsilon>0$, we can take $\delta=1$
+If $d_{X}(x,a)<1$, then $x=a$, then $d_{M}(f(x),f(a))=d_{M}(f(a),f(a))=0<\varepsilon$
+On the other hand the identity function is not continuous. To see this, let $a\in\mathbb{R}^{n}$ and $\varepsilon=1$, for any $\delta>0$, we can find $x\in\mathbb{R}^{n}$ with $d_{2}(x,a)<\delta$, but as long as $x\neq a$, we get $d(x,a)=1$
 
 
 
