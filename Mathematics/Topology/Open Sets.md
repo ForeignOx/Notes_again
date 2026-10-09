@@ -153,4 +153,29 @@ $$
 d_{\infty}(x,y)\leq d_{2}(x,y)\leq d_{1}(x,y)\leq md_{\infty}(x,y)
 $$
 For all $x,y\in \mathbb{R}^{m}$
-To see this, 
+To see this, note that $(d_{\infty}(x,y))^{2}=\left| x_{j}-y_{j} \right|^{2}$ for some $j\in \left\{ 1,\dots,m \right\}$, and this appears as a summand in $(d_{2}(x,y))^{2}$ as the other summands are all non-negative
+With this reasoning, we also get $(d_{2}(x,y))^{2}\leq(d_{1}(x,y))^{2}$ as the latter contains alll the summands from the former, together with more non-negative ones. Finally, since each $\left| x_{i}-y_{i} \right|\leq d_{\infty}(x,y)$, we get the last inequality. From this it follows that all 3 metrics have the same open subsets of $\mathbb{R}^{m}$
+### Lemma
+Let $M$ be a metric space:
+- $B(x; r)$ is open for all $x\in M$, $r>0$
+- $D(x; r)$ is closed for all $x\in M,r>0$
+
+
+### Proof
+For the first, given $y\in B(x;r)$, we need $\delta>0$ such that $B(y; \delta)\subseteq B(x; r)$, then
+$$
+\delta=r-d(x,y)>0
+$$
+Taking $z\in B(y,\delta)$
+$$
+d(z,x)\leq d(z,y)+d(y,x)<r-d(x,y)+d(y,x)=r
+$$
+$$
+\implies z\in  B(x; r)
+$$
+___
+For the second, we need $M\setminus D(x; r)$ to be open. If $y\in M\setminus D(x; r)$, then $d(y,x)>r$, so we need $s$ with $B(y; s)\subset M\setminus D(x; r)$, $s=d(x,y)-r>0$, then
+$$
+d(x,z)\geq d(x,y)-d(z,y)>d(x,y)-(d(x,y)-r)=r
+$$
+
