@@ -405,16 +405,41 @@ A_{n1}&\dots&A_{nn}
 0
 \end{pmatrix}=A_{ij}
 $$
-## Proposition: Completeness Relation
+### Proposition: Completeness Relation
 This is a useful identity
 $$
 \sum_{ i=1} ^{ n}  \ket{i} \bra{i} =\mathbb{1}
 $$
 #### Proof
+$$
+\forall \ket{v} \in \mathcal{H},\left( \sum_{ i=1} ^{ n}  \ket{i} \bra{i}  \right)\ket{v} =\sum_{ i=1} ^{ n}  \ket{i} \braket{ i | v } =\ket{v} 
+$$
+So $\sum_{ i=1} ^{ n} \ket{i} \bra{i}=\mathbb{1}$
+___
+Alternate proof, in an orthonormal basis,
+$$
+\sum_{ i=1} ^{ n}  \ket{i} \bra{i} =\sum_{ i=1} ^{ n}  \begin{pmatrix}
+0 \\
+\vdots \\
+1 \\
+\vdots \\
+0
+\end{pmatrix}\begin{pmatrix}
+0 & \dots & 1 &  \dots & 0
+\end{pmatrix}=\sum_{i=1}^{n}\delta_{ii}=\mathbb{1}
+$$
+
 ### Proposition
 We can write operators in terms of matrix elements as
 $$
 \hat{A}=\sum_{ i=1} ^{ n}  \sum_{ j=1} ^{ n}  A_{ij}\ket{i} \bra{j} 
+$$
+#### Proof
+$$
+\sum_{ i=1} ^{ n}  \sum_{ j=1} ^{ n} A_{ij}\ket{i} \bra{j} =\sum_{ i=1} ^{ n}  \sum_{ j=1} ^{ n} \bra{i} \hat{A}\ket{j} \ket{i} \bra{j} 
+$$
+$$
+= \sum_{ i=1} ^{ n}  \sum_{ j=1} ^{ n} \ket{i} \bra{i} \hat{A}\ket{j} \bra{j} =\sum_{ i=1} ^{ n}  \ket{i} \bra{i} \hat{A}\mathbb{1}=\mathbb{1}\hat{A}\mathbb{1}=\hat{A}
 $$
 
 
