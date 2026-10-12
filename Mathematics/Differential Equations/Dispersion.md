@@ -1,4 +1,4 @@
-Usually, localised waves disperse as they travel, this prevents them from being soliltons.
+Usually, localised waves disperse as they travel, this prevents them from being soliltons, dispersion is characterised by having waves that travel at different speeds
 ## Example
 Take the advection equation, a linear first order PDE:
 $$
@@ -43,4 +43,19 @@ Any equation relating $\omega$ to $k$ is called a dispersion relation
 The maxima of a real plane wave such as $\mathfrak{R}(e^{ ikx-\omega(k)t })$ or $\mathfrak{I}(e^{ ikx-\omega(k)t })$ are called wave crests. By a slight abuse of terminology, we always call the real or imaginary parts of the complex wave as wave crests
 
 By rewriting the complex plane solution of the Klein-Gordon equation as $e^{ ik(x-c(k)t) }$
-We see tha
+We see that its wave crests move at velocity (called the phase velocity)
+$$
+c(k)=\frac{\omega(k)}{k}=v\sqrt{ 1+\frac{m^{2}}{k^{2}} }\mathrm{sign}(k)
+$$
+So plane waves with different wavenumbers move at different velocities, so if we try to make a lump of Klein-Gordon field by superimposing plane waves:
+$$
+u(x,t)=\mathfrak{R}\left( \int_{-\infty}^{\infty} f(k)e^{ i(kx)-\omega(k)t } \, dk  \right)
+$$
+It will disperse
+There is another form of velocity than phase velocity called group velocity for lumps of field
+$$
+c_{g}(k)=\frac{d \omega(k)}{dk} 
+$$
+Which is the velocity of the lump while it disperses
+## Remark
+The energy and information carried by a wave travels at the group velocity and not the phase velocity. For a relativisting wave equation with speed of light $v$, no signals can be transmitted vaster than that, so it should be the case that $\left| c_{g}(k) \right|\leq v$ for all wavenumbers $k$, but there is no analogous bound on the phase velocity
