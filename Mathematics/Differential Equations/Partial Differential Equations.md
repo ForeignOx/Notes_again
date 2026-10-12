@@ -61,3 +61,19 @@ u_{x_{n}x_{1} } & \dots & u_{x_{n}x_{n}}
 $$
 And observe that $[D^{2}u]_{ij}=\frac{\partial^{2}u}{\partial x_{i}\partial x_{j}}$ 
 And in general, $Df$ is the Jacobian of $f$ for $f:\Omega \to \mathbb{R}^{m}$ with $\Omega \subseteq \mathbb{R}^{n}$
+## Well-Posedness
+### Definition
+ We say that a PDE (and its boudnary conditions) is well-posed if all the following are satisfied by the solution:
+ - Existence 
+ - Uniqueness
+ - Stability
+If a PDE is not well-posed, then it is ill-posed
+### Examples
+A PDE with inconsistent boundary conditions is ill-posed as it will not have a solution
+___
+Consider the PDE
+$$
+u_{xx}+u_{yy}=0
+$$
+In $(0,1)\times(0,1)$ with $u(x,0)=0,u(x,1)=0$ for $x\in[0,1]$
+Which is Laplace's equation on the unit square with boundary conditions on two sides of the square, it is ea
