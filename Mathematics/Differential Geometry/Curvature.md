@@ -17,3 +17,12 @@ For a given unit speed plane curve $\underline{\alpha}:I\to \mathbb{R}^{2}$, we 
 $$
 \underline{t}'(s)\cdot  \underline{n}(s)=\kappa(s)  \underline{n}(s)\cdot  \underline{n}(s)=\kappa(s)\lvert \lvert  \underline{n}(s) \rvert \rvert ^{2}=\kappa(s)
 $$
+So if $\underline{t}(s)=(x(s),y(s))$, then $\underline{n}'(s)=(-y(s),x(s))$ and $\underline{t}'(s=(x'(s),y'(s)))$$, soo
+$$
+\kappa(s)=\underline{t}'(s)  \underline{n}(s)=(x'(s),y'(s))\cdot(-y(s),x(s))=-x'(s)y(s)+y'(s)x(s)
+$$
+## Proposition
+Let $\underline{\alpha}:I\to \mathbb{R}^{2}$ be a smooth regular plane curve with $\underline{\alpha}(u)=(x(u),y(u))$ (not necessarily parametrised by arclength), we have
+$$
+\kappa=\frac{x'y''-x''y'}{((x')^{2}+(y')^{2})^{\frac{3}{2}}}
+$$
