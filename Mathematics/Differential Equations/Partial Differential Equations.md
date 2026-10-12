@@ -84,6 +84,10 @@ $$
 u_{2}(x,y)=\sin(2\pi y)\cosh(2\pi x)
 $$
 So we don't have enought boundary conditions to have a well-posed 
+If we add the further condition $\partial_{t}u(x,0)=g^{\varepsilon}(x)=\varepsilon \sin\left( \frac{x}{\varepsilon} \right)$ for $\varepsilon>0$ and 0 otherwise
+Can we hope for any stability of the solution $u^{\varepsilon}$ as $\varepsilon_{0}\to 0$
+We can see that 
+grd
 ___
 Consider
 $$
@@ -110,7 +114,13 @@ Just by thinking about this we can see it will go wrong as it is fixed at the en
 
 y=1-\abs(x)|y>0
 ```
-
+How about a "weaker" notion of a solution, such as non-differntiable at finitely many points, but then we have a whole family of solutions, and as we add more points of non-differentiability, the functions converge uniformly to 0, which is a function that we don't really want
+___
+Trying to violate the non-stability of classical solutions, consider Laplace's equation:
+$$
+\partial_{tt}u+\partial_{x x}u=0
+$$
+On $(x,t)\in\mathbb{R}\times(0,\infty)$ with boundary conditions
 
 
 
