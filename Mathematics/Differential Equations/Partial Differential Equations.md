@@ -108,6 +108,25 @@ $$
 \lvert \lvert u^{\varepsilon}-u^{0} \rvert \rvert _{\infty}=\sup_{x\in \mathbb{R},t\in (0,\infty)}\left| u^{\varepsilon} \right| =\sup_{x,t}\left| \varepsilon^{2}\sin\left( \frac{x}{\varepsilon} \right) \right| =\infty
 $$
 This is not good
+Can we instead have that $u^{\varepsilon}(\cdot,t)\to 0$ as $\varepsilon\to 0$ for even just 1 $t>0$?
+Well
+$$
+\sup_{x\in \mathbb{R}}\left| \varepsilon^{2}\sin\left( \frac{x}{\varepsilon} \right) \right|\left| \sinh\left( \frac{t}{\varepsilon} \right) \right| =\varepsilon^{2}\left| \sinh\left( \frac{t}{\varepsilon} \right) \right|  =\infty
+$$
+As $\sinh$ is a sum of exponentials and exponentials beat polynomials
+Ok so that doesn't work either, how about stability with respect to pointwise convergence?
+Can we ay that $u^{\varepsilon}(x,t)\to 0$ $\varepsilon\to 0$ for any fixed point, i.e. does $\varepsilon^{2}\sin\left( \frac{x}{\varepsilon} \right)\sinh\left( \frac{t}{\varepsilon} \right)$ as $\varepsilon\to 0$, taking $(x,t)$ fixed and consider $(x_{n},t_{n})\to(x,t)$ one would need to have
+$$
+\lim_{ n \to \infty } \varepsilon^{2}\sin\left( \frac{x_{n}}{\varepsilon} \right)\sinh\left( \frac{t_{n}}{\varepsilon} \right)
+$$
+Taking $t_{n}=\varepsilon\sinh ^{-1}\left( \frac{1}{n} \right)$ we should be ok
+
+
+
+
+
+
+
 ___
 Consider
 $$
