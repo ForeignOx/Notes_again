@@ -441,8 +441,7 @@ $$
 $$
 = \sum_{ i=1} ^{ n}  \sum_{ j=1} ^{ n} \ket{i} \bra{i} \hat{A}\ket{j} \bra{j} =\sum_{ i=1} ^{ n}  \ket{i} \bra{i} \hat{A}\mathbb{1}=\mathbb{1}\hat{A}\mathbb{1}=\hat{A}
 $$
-## The Adjoint (Hermitian Conjugate) of a Linear Operator
-### Definition
+### The Adjoint (Hermitian Conjugate) of a Linear Operator
 For an operator $\hat{A}$, the adjoint, $\hat{A}^{\dagger}$ is defined such that $\bra{w}\hat{A}^{\dagger}\ket{v}=\bra{v}\hat{A}\ket{w}^{*}$ for all $\ket{v}\bra{w}\in \mathcal{H}$, which uniquely defines $\hat{A}^{\dagger}$
 ___
 The rule of thumb for taking the adjoint, we reverse the order of everything and use
@@ -450,6 +449,9 @@ $$
 \ket{v} ^{\dagger}=\bra{v} ,(\ket{v} ^{\dagger})^{\dagger}=\ket{v} 
 $$
 And $c^{\dagger}=c^{*}$ for $c\in\mathbb{C}$
-
+### Key Types of Operator
+- The Hermitian operator $\hat{O}$, which satisfies $\hat{O}=\hat{O}^{\dagger}$, these are observables in quantum, they have real eigenvalues
+- The unitary operator $\hat{U}$ which satisfies $\hat{U}^{\dagger}\hat{U}=\mathbb{1} \iff \hat{U}^{\dagger}=\hat{U}^{-1}$ 
+- The projection operator $\hat{P}$ which satisfies $\hat{P}^{2}=\hat{P}=\hat{P}^{\dagger}$  (so it is also Hermitian)
 
 #Mathematics #LinAlg #Definition #Theorem 
