@@ -354,6 +354,39 @@ $$
 T\left( \sum x_{i}\alpha_{i} \right)=\sum x_{i}T(\alpha_{i})\in  L(Y)=Y
 $$
 Thus $\sum x_{i}\alpha_{i}\in T^{-1}[Y]$ and $T^{-1}[Y]$ is its own linear span
+## Bra-Ket Notation
+We hae $\ket{v},\bra{w}$ and $\braket{ w | v }$, what is $\ket{v}\bra{w}$? In a basis,
+$$
+\ket{v} \bra{w} =\begin{pmatrix}
+v_{1} \\
+\vdots \\
+v_{n} 
+\end{pmatrix}\begin{pmatrix}
+w_{1}^{*} & w_{2}^{*} & \dots & w^{*}_{n}
+\end{pmatrix}=\begin{pmatrix}
+v_{1}w_{1}^{*} & \dots \\
+\vdots & \ddots
+\end{pmatrix}
+$$
+In this notation we add hats on linear maps:
+$$
+\hat{A}:\mathcal{H}\to \mathcal{H},\ket{v} \mapsto \hat{A}\ket{v} 
+$$
+With
+$$
+\hat{A}(\lambda \ket{v} +\mu \ket{w} )=\lambda \hat{A}\ket{v} +\mu \hat{A}\ket{w} 
+$$
+The matrix elements (in a basis) or components of $\hat{A}$ are
+$$
+\bra{i} \hat{A}\ket{j}  
+$$
+### Proof
+In a basis $\left\{ \ket{i} \right\}$
+$$
+\bra{i} \hat{A}\ket{j} =\begin{pmatrix}
+0 & \dots & \underbrace{ 1 }_{ j\text{th pos.} } & \dots & 0
+\end{pmatrix}
+$$
 
 
 #Mathematics #LinAlg #Definition #Theorem 

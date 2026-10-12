@@ -83,6 +83,13 @@ v_{n}
 $$
 Inspired by this, we think of $\bra{w}$ as this row vector, so that it's just matrix multiplication
 Mathematically, $\braket{ w}\in\mathcal{H}^{*}$, the dual vectorspace of $\mathcal{H}$, the space of all linear maps $\mathcal{H }\to \mathbb{C}$
+## Proposition
+The adjoint is anti-linear:
+$$
+(a\ket{u} +b\ket{v} )=a^{*}\bra{u} +b^{*}\bra{v} 
+$$
+### Proof
+Follows from $\braket{ u | v }=\braket{ v | u }^{*}$
 
 
 #Mathematics #LinAlg 
