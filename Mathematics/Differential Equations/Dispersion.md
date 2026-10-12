@@ -40,3 +40,7 @@ $$
 We usually ignore the negative sign though...
 Here $k$ is wavenumber, $\omega$ is angular frequency, $\lambda=\frac{2\pi}{k}$ is the wavelength which has periodicity in $t$, and $\tau=\frac{2\pi}{\omega}$ which has periodicity in $t$
 Any equation relating $\omega$ to $k$ is called a dispersion relation
+The maxima of a real plane wave such as $\mathfrak{R}(e^{ ikx-\omega(k)t })$ or $\mathfrak{I}(e^{ ikx-\omega(k)t })$ are called wave crests. By a slight abuse of terminology, we always call the real or imaginary parts of the complex wave as wave crests
+
+By rewriting the complex plane solution of the Klein-Gordon equation as $e^{ ik(x-c(k)t) }$
+We see tha
