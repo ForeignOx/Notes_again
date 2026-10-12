@@ -86,8 +86,28 @@ $$
 So we don't have enought boundary conditions to have a well-posed 
 If we add the further condition $\partial_{t}u(x,0)=g^{\varepsilon}(x)=\varepsilon \sin\left( \frac{x}{\varepsilon} \right)$ for $\varepsilon>0$ and 0 otherwise
 Can we hope for any stability of the solution $u^{\varepsilon}$ as $\varepsilon_{0}\to 0$
-We can see that 
-grd
+We can see that $g^{\varepsilon}\to 0$ uniformly as $\varepsilon_{0}\to0$ as $\lvert \lvert g^{\varepsilon}-0 \rvert \rvert_{L^{\infty}}=\sup\left| g^{\varepsilon}(x) \right|=\varepsilon\to 0$
+And we have $u^{0}(x,t)\equiv0$ for all $x,t$ in this case
+If we have $\varepsilon> 0$, one needs to find the solution
+$$
+u^{\varepsilon}(x,t)=X^{\varepsilon}(x)T^{\varepsilon}(t)
+$$
+Plugging this into the equation we have:
+$$
+X_{xx}^{\varepsilon}(x)T^{\varepsilon}(t)+X^{\varepsilon}(x)T_{tt}^{\varepsilon}(t)=0
+$$
+And also the boundary conditions, we should find that the solutions look something like:
+$$
+u^{\varepsilon}(x,t)=\varepsilon^{2}\sin\left( \frac{x}{\varepsilon} \right)\sinh\left( \frac{t}{\varepsilon} \right)
+$$
+Can we hope that $u^{\varepsilon}$ converges uniformly to $u^{0}=0$, i.e. do we have
+$$
+\lvert \lvert u^{\varepsilon}-u^{0} \rvert \rvert _{\infty}\underset{\mathbb{R}\times(0,\infty)}{\to}0
+$$
+$$
+\lvert \lvert u^{\varepsilon}-u^{0} \rvert \rvert _{\infty}=\sup_{x\in \mathbb{R},t\in (0,\infty)}\left| u^{\varepsilon} \right| =\sup_{x,t}\left| \varepsilon^{2}\sin\left( \frac{x}{\varepsilon} \right) \right| =\infty
+$$
+This is not good
 ___
 Consider
 $$
