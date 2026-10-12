@@ -1,5 +1,5 @@
 ## Definition
-We define the spacetime distance for special relativaty as
+We define the spacetime distance for special relativity as
 $$
 \Delta s ^{2}=(\Delta x)^{2}-c^{2}(\Delta t)^{2}
 $$
