@@ -76,4 +76,42 @@ $$
 u_{xx}+u_{yy}=0
 $$
 In $(0,1)\times(0,1)$ with $u(x,0)=0,u(x,1)=0$ for $x\in[0,1]$
-Which is Laplace's equation on the unit square with boundary conditions on two sides of the square, it is ea
+Which is Laplace's equation on the unit square with boundary conditions on two sides of the square, it is easy to check that the following two functions satisfy:
+$$
+u_{1}(x,y)=\sin(\pi y)\sinh(\pi x)
+$$
+$$
+u_{2}(x,y)=\sin(2\pi y)\cosh(2\pi x)
+$$
+So we don't have enought boundary conditions to have a well-posed 
+___
+Consider
+$$
+-\Delta u=1
+$$
+In $\Omega \subset \mathbb{R}^{n}$ and $\underline{\nabla }u\cdot \hat{\underline{n}}$ on $\partial\Omega$
+This does not have a $C^{2}$ solution, indeed, if ther would be a $C^{2}$ solution,
+$$
+-\int_{\Omega} \Delta u \, dx =\int _{\Omega} \, dx =\mathrm{vol}(\Omega)>0
+$$
+But taking the divergence theorem:
+$$
+-\int _{\partial\Omega}\underline{\nabla } u\cdot \hat{\underline{n}} \, dS(x)=0 
+$$
+Which is a contradiction
+___
+Consider the Eikal equation $\left| \underline{\nabla } u \right|=1$ on $\Omega=B_{1}(0)$ with $u(x)=0$ on $\partial\Omega$
+This cannot have classical solutions, consider in 1D, $B_{1}(0)=(-1,1)$, and we want
+$$
+\left| u(x) \right| =1, u(-1)=u(1)=0
+$$
+Just by thinking about this we can see it will go wrong as it is fixed at the endpoints so having the gradient of 1 gives us something like the following, which must have a point of non-differentiability at some point
+```desmos-graph
+
+y=1-\abs(x)|y>0
+```
+
+
+
+
+
