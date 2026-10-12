@@ -28,3 +28,4 @@ $$
 0=\underline{\alpha}''(s)\cdot\underline{\alpha}'(s)+\underline{\alpha}'(s)\cdot\underline{\alpha}''(s)=2\underline{\alpha}''(s)\cdot\underline{\alpha}'(s)=2\underline{t}'(s)\cdot \underline{t}(s)
 $$
 This shows that $\underline{t}'(s)$ is perpendicular to $\underline{t}(s)$ and must be, therefore parallel to the unit normal vector $\underline{n}(s)$
+
