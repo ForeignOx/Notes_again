@@ -41,3 +41,27 @@ $$
 Thus $\lvert \lvert \underline{\beta}'(s) \rvert \rvert=1$ and $\underline{\beta}$ is a unit speed curve
 ___
 Note that regularity is essential in the proof since, otherwise $\underline{\alpha}'(u)=0$ for some $u\in I$, which leads to diviion by zero.
+## Example
+Take a catenary $\underline{\alpha}(u)=(u,\cosh u), \underline{\alpha}'(u)=(1,\sinh u)$, so
+$$
+\lvert \lvert \underline{\alpha}'(u) \rvert \rvert=\sqrt{ 1+\sinh ^{2}u }=\cosh u
+$$
+$$
+\ell(u)=\int _{t=0}^{u}\cosh t \, dt=\sinh u 
+$$
+So $\ell ^{-1}(s)=\mathrm{arsinh}(s)=\log(s+\sqrt{ s^{2}+1 })$
+$$
+\underline{\beta}(s)=\underline{\alpha}\circ \ell ^{-1}(s)=\underline{\alpha}(\log(s+\sqrt{ s^{2}+1 }) ) 
+$$
+$$
+= (\log(s+\sqrt{ s^{2}+1 }),\cosh(\sinh ^{-1}(u)))
+$$
+$$
+= (\log(s+\sqrt{ s^{2}+1 }),\sqrt{ s^{2}+1 })
+$$
+## Proposition: Arclength is Independent of Parametrisation
+Let $\underline{\alpha}:I\to \mathbb{R}^{n}$ be a smooth, regular curve. $\underline{\tilde{\alpha}}:=\underline{\alpha} \circ h:J\to \mathbb{R}^{n}$ be a reparametrisation of $\underline{\alpha}$, where $h:J\to I$, with $J\subset I$, let $[a,b]\subset I,[c,d]=h^{-1}([a,b])$, then we have
+$$
+L(\underline{\alpha}|_{[a,b]})=L(\underline{\tilde{\alpha}}|_{[c,d]})
+$$
+
