@@ -354,7 +354,7 @@ $$
 T\left( \sum x_{i}\alpha_{i} \right)=\sum x_{i}T(\alpha_{i})\in  L(Y)=Y
 $$
 Thus $\sum x_{i}\alpha_{i}\in T^{-1}[Y]$ and $T^{-1}[Y]$ is its own linear span
-## Bra-Ket Notation
+## Outer Product
 We hae $\ket{v},\bra{w}$ and $\braket{ w | v }$, what is $\ket{v}\bra{w}$? In a basis,
 $$
 \ket{v} \bra{w} =\begin{pmatrix}
@@ -368,25 +368,55 @@ v_{1}w_{1}^{*} & \dots \\
 \vdots & \ddots
 \end{pmatrix}
 $$
-In this notation we add hats on linear maps:
+### Definition
+In this notation we add hats on linear maps, and call them outer products, let $\hat{A}=\ket{v}\bra{w}$:
 $$
-\hat{A}:\mathcal{H}\to \mathcal{H},\ket{v} \mapsto \hat{A}\ket{v} 
+\hat{A}:\mathcal{H}\to \mathcal{H}
+$$
+$$
+\ket{u} \mapsto \hat{A}\ket{u} 
+$$
+$$
+ \ket{v} \bra{w} :\ket{u} \mapsto \ket{v} \braket{ w | u } 
 $$
 With
 $$
 \hat{A}(\lambda \ket{v} +\mu \ket{w} )=\lambda \hat{A}\ket{v} +\mu \hat{A}\ket{w} 
 $$
+### Proposition
 The matrix elements (in a basis) or components of $\hat{A}$ are
 $$
-\bra{i} \hat{A}\ket{j}  
+A_{ij}=\bra{i} \hat{A}\ket{j}  
 $$
-### Proof
+#### Proof
 In a basis $\left\{ \ket{i} \right\}$
 $$
 \bra{i} \hat{A}\ket{j} =\begin{pmatrix}
-0 & \dots & \underbrace{ 1 }_{ j\text{th pos.} } & \dots & 0
-\end{pmatrix}
+0 & \dots & \underbrace{ 1 }_{ i\text{th pos.} } & \dots & 0
+\end{pmatrix}\begin{pmatrix}
+A_{11} & \dots & A_{1n} \\
+\vdots & \ddots & \vdots \\
+A_{n1}&\dots&A_{nn}
+\end{pmatrix}\begin{pmatrix}
+0 \\
+\vdots \\
+\underbrace{ 1 }_{ j\text{th pos}  } \\
+\vdots \\
+0
+\end{pmatrix}=A_{ij}
 $$
+## Proposition: Completeness Relation
+This is a useful identity
+$$
+\sum_{ i=1} ^{ n}  \ket{i} \bra{i} =\mathbb{1}
+$$
+#### Proof
+### Proposition
+We can write operators in terms of matrix elements as
+$$
+\hat{A}=\sum_{ i=1} ^{ n}  \sum_{ j=1} ^{ n}  A_{ij}\ket{i} \bra{j} 
+$$
+
 
 
 #Mathematics #LinAlg #Definition #Theorem 
