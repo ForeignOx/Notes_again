@@ -118,5 +118,17 @@ V^{\mu}=\frac{d \lambda^{\mu}}{d\lambda} =\dot{x}^{\mu}
 $$
 Under a change of coordinates this transforms [[linear maps|linearly]]
 $$
-\tilde{V}^{\mu}=\frac{d \tilde{x}^{\mu}}{d\lambda} =\frac{ \partial \tilde{x}^{\mu} }{ \partial x^{\nu} } \frac{ \partial x^{\nu} }{ \partial \lambda } =\frac{ \partial \tilde{x} }{ \partial x } 
+\tilde{V}^{\mu}=\frac{d \tilde{x}^{\mu}}{d\lambda} =\frac{ \partial \tilde{x}^{\mu} }{ \partial x^{\nu} } \frac{ \partial x^{\nu} }{ \partial \lambda } =\frac{ \partial \tilde{x}^{\mu} }{ \partial x^{\nu} } V^{\nu}
 $$
+By the chain rule
+In special relativity, only Lorentz transformations are allowed:
+$$
+\tilde{x}^{\mu}=\Lambda^{\mu}_{~ ~\nu}x^{\nu}
+$$
+So $\frac{ \partial \tilde{x}^{\mu} }{ \partial x }=\Lambda^{\mu}_{~ ~\nu}$ is a constant matrix
+___
+- Curves are timelike if $(V,V)=\eta_{\mu \nu}V^{\mu}V^{\nu}<0$ (the worldlines of massive particles will be)
+- Spacelike if $(V,V)>0$
+- Lightlike or null if $(V,V)=0$
+I.e. if the tangent vector lies inside/outside/points along the light cone
+
