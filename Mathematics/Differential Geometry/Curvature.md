@@ -64,3 +64,21 @@ $$
 $$
   =\frac{1}{((x')^{2}+(y')^{2})^{\frac{1}{2}}} \frac{d }{du} \left( \frac{(x'(u),y'(u))}{\sqrt{ (x'(u)^{2}+y'(u)^{2}) }} \right)
 $$
+$$
+= \frac{1}{\sqrt{ (x')^{2}+(y')^{2} }}\left( \frac{(x''(u),y''(u))}{\sqrt{ (x')^{2}+(y')^{2} }}-\frac{1}{2}(2x'x''+2y'y'') \frac{(x',y')}{ ((x')^{2}+(y')^{2})^{\frac{3}{2}}} \right) 
+$$
+$$
+= \frac{((x')^{2}+(y')^{2})(x'',y'')-(x'x''+y'y'')(x',y')}{((x')^{2}+(y')^{2})^{2}} 
+$$
+$$
+= \frac{((y')^{2}x''-x'y'y'',(x')^{2}y''-x'y'x'')}{((x')^{2}+(y')^{2})^{2}} 
+$$
+$$
+= \frac{(x'y''-y'x'')}{((x')^{2}+(y')^{2})^{\frac{3}{2}}} \underbrace{ \frac{(-y',x')}{((x')^{2}+(y')^{2})^{\frac{1}{2}}} }_{ = \underline{n}(s) }
+$$
+Soooo
+$$
+\kappa=\frac{x'y''-y'x''}{\sqrt{ (x')^{2}+(y')^{2} }}
+$$
+## Example
+Take an ellipse $\underline{\alpha}(u)=(a\cos u,b\sin u)$
