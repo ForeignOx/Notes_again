@@ -35,3 +35,12 @@ $$
 0 & 0 & \psi 
 \end{pmatrix} =\frac{1}{r}\frac{ \partial \psi }{ \partial \theta } \underline{e}_{r}-\frac{ \partial \psi }{ \partial r } \underline{e}_{\theta}
 $$
+So our equivalent equations to the ones above where $\underline{u}=u_{r}\underline{e}_{r}+u_{\theta}\underline{e}_{\theta}$,
+$$
+u_{r}=\frac{1}{r}\frac{ \partial \psi }{ \partial \theta } ,~u_{\theta}=-\frac{ \partial \psi }{ \partial r } 
+$$
+Another bonus function of the stream function is that
+$$
+\underline{u}\cdot \underline{\nabla } \psi=-uv+uv=0
+$$
+So $\underline{u}$ is perpendicular to $\underline{\nabla }\psi$, which means that lines of $\psi=c$ for $c$ constant are [[streamlines|streamlines]]
