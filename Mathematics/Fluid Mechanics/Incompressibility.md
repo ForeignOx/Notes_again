@@ -14,5 +14,8 @@ $$
 \implies \int _{V}\underline{\nabla} \cdot \underline{u}  \, dV =0 
 $$
 $$
-\implies \int _{S}\underline{u}\cdot \, dx 
+\implies \int _{S}\underline{u}\cdot \hat{\underline{n}} \, dS=0 
+$$
+$$
+\implies \sum_{i \in \text{inlet}} u_{i}S_{i}= \sum_{i\in \text{outlet}}u_{i} S_{i}
 $$
