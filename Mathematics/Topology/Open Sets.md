@@ -227,4 +227,15 @@ $$
 f(V)\subseteq B(f(a); \varepsilon)\subseteq U
 $$
 Now asssume that for every open subset $U\subseteq N$ with $f(x) \in U$, there is an open subset $V\subseteq M$ with $a\in V$ and $f(V)\subseteq U$. Let $\varepsilon>0$ and set $U=B(f(a);\varepsilon)$
-By assumption there is an open set $V$ containing $a$ with $f(V)\subseteq U$, hence there is a $\delta>0$ with $B(a;\delta)\subseteq V$. This $\delta$ is the one needed for the $\varepsilon$ to get continuity at $$
+By assumption there is an open set $V$ containing $a$ with $f(V)\subseteq U$, hence there is a $\delta>0$ with $B(a;\delta)\subseteq V$. This $\delta$ is the one needed for the $\varepsilon$ to get continuity at $a$
+For the second part, assume $f$ is continuous, that is, continuous $\forall a\in M$
+Let $U\subseteq N$ be open. Let $a\in f^{-1}(U)$. Since $f$ is continuous at $a$, this ensures an open set $V_{a}$ containing $f(V_{a})\subseteq U$, hence
+$$
+f^{-1}(U)=\bigcup_{a\in  f^{-1}(U)}V_{a}
+$$
+Is open as a union of open sets
+Now assume that $f^{-1}(U)$ is open in $M$ whenever $U\subseteq N$ is open. Let $a\in M$
+To check that $f$ is continuous at $a$, we can check the condition from the first part. So, let $U\subseteq M$ be open and contain $f(a)$. With $V=f^{-1}(U)$, we get an open set with $a\in V$
+Since $f(f^{-1}(U))\subseteq U$, we get continuity at $a$
+
+
