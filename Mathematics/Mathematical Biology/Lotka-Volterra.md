@@ -39,3 +39,23 @@ $$
 \frac{d \hat{y}}{d\hat{t}} =\gamma(-\hat{y}+\hat{x}\hat{y})
 $$
 Where $\gamma=\frac{c}{a}$, and these equations are known as the non-dimensional Lotka-Volterra model, so there is only 1 independent parameter which is pretty cool, every other solution is a scaling in $X,Y$ or $T$ 
+## Solutions
+In the non-dimensional system, if we divide the second equation by the first we get:
+$$
+\frac{d y}{dx} =\frac{\gamma(-y+xy)}{x-xy}=\frac{\gamma y(-1+x)}{x(1-y)} 
+$$
+$$
+\implies \int \frac{1-y}{y} \, dy=-\gamma \int \frac{1-x}{x} \, dx 
+$$
+$$
+\implies \log y-y=-\gamma(\log x-x)+c  
+$$
+## Equilibria
+We have equilibrium when
+$$
+\frac{d x}{dt} =\frac{d y}{dt} =0
+$$
+$$
+\implies x(1-y)=0,  y(x-1)=0
+$$
+So $(0,0)$ and $(1,1)$ are the two equilibria. The first represents extinction, 
