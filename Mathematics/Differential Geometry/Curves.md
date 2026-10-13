@@ -131,4 +131,32 @@ ___
 - Spacelike if $(V,V)>0$
 - Lightlike or null if $(V,V)=0$
 I.e. if the tangent vector lies inside/outside/points along the light cone
+## Lengths of Curves
+In 2D plane geometry, given curve $(x^{1}(\lambda),x^{2}(\lambda))$, we use pythagoras and count all the things up innit
+![[Curves 2026-10-13 16.25.21.excalidraw]]
+Then 
+$$
+ds^{2}=d(x^{1})^{2}+d(x^{2})^{2}=((\dot{x}^{1})^{2}+(\dot{x}^{2})^{2})d\lambda^{2} 
+$$
+$$
+= \sum_{i=1}^{2}(\dot{x}^{i})^{2} d\lambda^{2}
+$$
+We call $ds^{2}=\sum_{i=1}^{2}(\dot{x}^{i})^{2}$ the line element
+$$
+\int \sqrt{ ds^{2} } \,=\int \sqrt{ (\dot{x}^{1})^{2}+(\dot{x}^{2})^{2} } \, d\lambda 
+$$
+In special relativity, our line element is actually:
+$$
+ds^{2}=\eta_{\mu \nu}dx^{\mu}dx^{\nu}=\eta_{\mu \nu}\dot{x}^{\mu}\dot{x}^{\nu}d\lambda^{2}
+$$
+For a spacelike curve, we thus define the proper length
+$$
+\ell=\int \sqrt{ ds^{2} }=\int \sqrt{ \eta_{\mu \nu}\dot{x}^{\mu}\dot{x}^{\nu} } \, d\lambda  =\int \sqrt{ (V,V )} \, d\lambda
+$$
+For a timelike curve, we define the proper time
+$$
+c\tau=\int \sqrt{ -ds^{2} } =\int \sqrt{ -(V,V) } \, d\lambda  
+$$
+As $(V,V)<0$, this is the time measured by the observer fo
+
 
