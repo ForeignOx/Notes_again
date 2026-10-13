@@ -110,3 +110,13 @@ These look like:
 (t^3-t,t^2-1)
 
 ```
+## In General Relativity
+A curve $x^{\mu}(\lambda)$ is a parametrised path in spacetime which defines a map from $\lambda \in \mathbb{R}$ to spacetime
+The tangent vector to the curve at some point is
+$$
+V^{\mu}=\frac{d \lambda^{\mu}}{d\lambda} =\dot{x}^{\mu}
+$$
+Under a change of coordinates this transforms [[linear maps|linearly]]
+$$
+\tilde{V}^{\mu}=\frac{d \tilde{x}^{\mu}}{d\lambda} =\frac{ \partial \tilde{x}^{\mu} }{ \partial x^{\nu} } \frac{ \partial x^{\nu} }{ \partial \lambda } =\frac{ \partial \tilde{x} }{ \partial x } 
+$$
