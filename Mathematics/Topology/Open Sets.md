@@ -221,4 +221,10 @@ Let $M,N$ be metric spaces and $f:M\to N$ a function.
 - $f$ is continuous iff $f^{-1}(U)$ is open in $M$ for every open $U\subseteq N$
 ### Proof
 Let's first assume $f$ is continuous at $a$, and let $U\subseteq  N$ be an open set with $f(x)\in U$, this means there is an $\varepsilon>0$ with $B(f(a);\varepsilon)\subseteq U$ 
-Because of continuity, there is a $\delta>0$ such that
+Because of continuity, there is a $\delta>0$ such that $d(x,a)<\delta$ implies $d(f(x),f(a))<\varepsilon$
+But htis means that for $x\in B(A; \delta)$ we get $f(x)\in B(f(a); \varepsilon)$, or with $V=B(a;\delta)$, 
+$$
+f(V)\subseteq B(f(a); \varepsilon)\subseteq U
+$$
+Now asssume that for every open subset $U\subseteq N$ with $f(x) \in U$, there is an open subset $V\subseteq M$ with $a\in V$ and $f(V)\subseteq U$. Let $\varepsilon>0$ and set $U=B(f(a);\varepsilon)$
+By assumption there is an open set $V$ containing $a$ with $f(V)\subseteq U$, hence there is a $\delta>0$ with $B(a;\delta)\subseteq V$. This $\delta$ is the one needed for the $\varepsilon$ to get continuity at $$
