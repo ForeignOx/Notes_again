@@ -81,4 +81,25 @@ $$
 \kappa=\frac{x'y''-y'x''}{\sqrt{ (x')^{2}+(y')^{2} }}
 $$
 ## Example
-Take an ellipse $\underline{\alpha}(u)=(a\cos u,b\sin u)$
+Take an ellipse $\underline{\alpha}(u)=(a\cos u,b\sin u)$, so
+$$
+\underline{\alpha}'(u)=(-a\sin u,b\cos u),~~\underline{\alpha}''(u)=(-a\cos(u),-b\sin(u))
+$$
+We can't work out the arclength, since, choosing $u_{0}=0$, it is equal to the elliptic integral:
+$$
+\int _{0}^{u}\sqrt{ a^{2}\sin ^{2}u+b^{2}\cos ^{2}u } \, du 
+$$
+Which cannot be expressed in closed form, so to find it's curvature, we can use the proposition
+So
+$$
+\kappa(u)=\frac{x'y''-x''y'}{((x')^{2}+(y')^{2})^{\frac{3}{2}}} = \frac{(-a\sin u)(-b\sin u)-(-a\cos u)(b\cos u)}{((-a\sin(u))^{2}+(b\cos(u))^{2})^{\frac{3}{2}}} 
+$$
+$$
+= \frac{ab\sin ^{2}(u)+ab \cos ^{2} u}{(a^{2}\sin ^{2} u+b^{2}\cos ^{2} u)^{\frac{3}{2}}} 
+$$
+$$
+= \frac{ab}{(a^{2}\sin ^{2}u+b^{2}\cos ^{2}u)^{\frac{3}{2}}}
+$$
+Note that this expression simplifies to $\frac{r^{2}}{r^{3}}=\frac{1}{r}$ in the special case $a=b=r$, so that fits with curvature of circle
+## Remark
+A geometric interpretation of curvature $\kappa(u)$ of a smooth regular plane curve $\underline{\alpha}$ at $\underline{\alpha}(u)$ is that $\left| \kappa(u) \right|$ is the reciprocal of the radius of a circle approximating a small neighbourhood $\underline{\alpha}([u-\varepsilon,u+\varepsilon])$ as best as possible (the circle has at least 3-point contact with the curve), and the sign of $\kappa(u)$ determines whether the circle is on the left or right of $\underline{\alpha}(u)$. This approximating circle is called the c
