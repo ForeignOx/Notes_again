@@ -179,3 +179,29 @@ $$
 d(x,z)\geq d(x,y)-d(z,y)>d(x,y)-(d(x,y)-r)=r
 $$
 
+## Definition
+Let $M$ be a metric space. $U\subset M$ is called open if $\forall x\in U,\exists\varepsilon>0$ with $B(x; \varepsilon)\subset U$ 
+$A\subseteq M$ is called closed is $M\setminus A$ is open
+## Lemma
+Let $M$ be a metric space then the following are true:
+- $B(x; r)$ is open $\forall x\in M,r>0$
+- $D(x; r)$ is closed $\forall x\in M,r>0$
+- $M$ and $\emptyset$ are both open and closed
+- An arbitrary union of open sets is open
+- A finite intersection of open sets is open
+- A finite union of closed sets is closed
+- An arbitrary intersection of closed sets is closed
+### Proof
+For the first part, let $y\in B(x; r)$, we needd to find an $s>0$ such that $B(y; r)\subseteq B(x; r)$. Note that $s=r-d(x,y)>0$, now if $z\in B(y; s)$, then
+$$
+d(x,z)\leq d(x,y)+d(y,z)<d(x,y)+s=r
+$$
+So $z\in B(x; r)$
+For the second part, let $y\not\in D(x; r)$ and $s=d(x,y)-r>0$, if $d(z,y)<s$, then
+$$
+d(x,z)\geq d(x,y)-d(z,y)>d(x,y)-s=r
+$$
+Which means that $B(y;s)\subseteq M\setminus D(x; r)$ so that $D(x; r)$ is closed
+For the third, we have $M$ is open by definition, while $\emptyset$ is open as there is nothing to check. By definition, it follows that $\emptyset$ and $M$ are also closed
+For the fourth if $x$ is in an open set $U_{i}$ for all $i=1,\dots,n$, we get $\varepsilon_{i}>0$ with $B(x; \varepsilon_{i})\subseteq U_{i}$, letting $\varepsilon=\min\left\{ \varepsilon_{1},\dots,\varepsilon_{n} \right\}>0$ shsows that the finite intersection of the $U_{i}$ is open
+For the fifth if $x$ is in an arbitrary union of open sets, it has to be in one of those open sets. Then there is $\varepsilon>0$ with $$
