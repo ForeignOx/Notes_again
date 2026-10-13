@@ -58,4 +58,7 @@ $$
 $$
 \implies x(1-y)=0,  y(x-1)=0
 $$
-So $(0,0)$ and $(1,1)$ are the two equilibria. The first represents extinction, 
+So $(0,0)$ and $(1,1)$ are the two equilibria. The first represents extinction, but the other represents the species coexisting and the populations remaining fixed and represents the limit of the phase diagram:
+![[Pasted image 20261013132258.png]]
+___
+Can a species die out? Can a population ever settle??
