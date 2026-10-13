@@ -67,4 +67,17 @@ t_{y} \\
 -t_{x}
 \end{pmatrix}
 $$
-Which points clockwise relative to $\underline{x}_{1}$
+Which points clockwise relative to $\underline{x}_{1}$, the flux through $C$ in this direction is
+$$
+\int _{C} \underline{u}\cdot \hat{\underline{n}} \, ds=\int _{C}\begin{pmatrix}
+\frac{ \partial \psi }{ \partial y }  \\
+-\frac{ \partial \psi }{ \partial x } 
+\end{pmatrix} \cdot \frac{1}{\left| \underline{t} \right| }\begin{pmatrix}
+t_{y} \\
+-t_{x} 
+\end{pmatrix} \, ds 
+$$
+$$
+= \int _{C} \frac{\underline{\nabla } \psi\cdot \underline{t}}{\left| \underline{t} \right| } \, ds=\int _{C}\underline{\nabla } \psi \cdot d\underline{x} =\psi(\underline{x}_{2})-\psi(\underline{x}_{1})
+$$
+Which is path independent
