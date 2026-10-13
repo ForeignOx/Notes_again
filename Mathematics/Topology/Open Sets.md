@@ -215,3 +215,10 @@ So the arbitrary intersection of open sets need not be open
 The closed disc $D(0; 1)$ is closed, but not open in $\mathbb{R}^{2}$
 ___
 If $(X,d)$ is discrete, then any $A\subseteq X$ is clopen
+## Proposition
+Let $M,N$ be metric spaces and $f:M\to N$ a function.
+- Let $a\in M$, then $f$ is continuous at $a$ iff $\forall$ open subsets $U\subseteq N$ with $f(x)\in U$, $\exists$ an open subset $V\subseteq M$ with $a\in V$, and $f(V)\subseteq U$
+- $f$ is continuous iff $f^{-1}(U)$ is open in $M$ for every open $U\subseteq N$
+### Proof
+Let's first assume $f$ is continuous at $a$, and let $U\subseteq  N$ be an open set with $f(x)\in U$, this means there is an $\varepsilon>0$ with $B(f(a);\varepsilon)\subseteq U$ 
+Because of continuity, there is a $\delta>0$ such that
