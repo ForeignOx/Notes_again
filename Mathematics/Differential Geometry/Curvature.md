@@ -29,6 +29,38 @@ $$
 ### Proof
 The idea is that curv ature does not depend on parametrisation, so we need to do a change of variable. Let $u_{0}\in I$,
 $$
-S=\ell(u)=\int _{u_{0}}^{u}\lvert \lvert \underline{\alpha}'(t) \rvert \rvert  \, dt 
+s=\ell(u)=\int _{u_{0}}^{u}\lvert \lvert \underline{\alpha}'(t) \rvert \rvert  \, dt 
 $$
-Write $\underline{\beta}=\underline{\alpha}$
+Write $\underline{\beta}=\underline{\alpha}\circ \ell ^{-1}$ to get a unit speed parametrisation, so $\kappa_{\underline{\alpha}}(u)=\kappa_{\underline{\beta}}(s)$, where $s=\ell(u)$, so
+$$
+t'(s)=\kappa_{\underline{\beta}}(s) \underline{n}(s)\iff \underline{t}'(\ell(u))=\kappa_{\underline{\beta}}(\ell(u))  \underline{n}(\ell(u))
+$$
+Then
+$$
+\underline{t}(s)=\underline{\beta}'(s)=(\underline{\alpha}\circ \ell ^{-1})'(s)=\underline{\alpha}'(\ell ^{-1}(s))(\ell ^{-1})'(s)
+$$
+We know that
+$$
+(\ell ^{-1})'(s)=\frac{1}{\lvert \lvert \underline{\alpha}'(\ell ^{-1}(s)) \rvert \rvert }
+$$
+So
+$$
+\underline{\alpha}(u)=(x(u),y(u))
+$$
+$$
+\implies\underline{\alpha}'(u)=(x'(u),y'(u))
+$$
+$$
+ \underline{t}(s)=\frac{(x'(u),y'(u))}{\lvert \lvert \underline{\alpha}'(u) \rvert \rvert } 
+$$
+$$
+ \underline{n}(s)=\frac{(-y'(u),x'(u))}{\lvert \lvert \underline{\alpha}'(u) \rvert \rvert }
+$$
+
+We now want to find
+$$
+\frac{d \underline{t}}{ds} =\frac{d \underline{t}}{du} \frac{d u}{ds} =\frac{1}{\lvert \lvert \underline{\alpha}'(\ell ^{-1}(s)) \rvert \rvert }\frac{d \underline{t}(u)}{du}
+$$
+$$
+  =\frac{1}{((x')^{2}+(y')^{2})^{\frac{1}{2}}} \frac{d }{du} \left( \frac{(x'(u),y'(u))}{\sqrt{ (x'(u)^{2}+y'(u)^{2}) }} \right)
+$$
