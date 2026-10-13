@@ -157,6 +157,29 @@ For a timelike curve, we define the proper time
 $$
 c\tau=\int \sqrt{ -ds^{2} } =\int \sqrt{ -(V,V) } \, d\lambda  
 $$
-As $(V,V)<0$, this is the time measured by the observer fo
+As $(V,V)<0$, this is the time measured by the observer following this curve
+### Remark
+- Proper lengths and times are invariant under Lorentz transformations as $(V,V)$ is invariant
+- Proper lengths and times are invariant under reparametrisations; if we change $\tilde{\lambda}=\tilde{\lambda}(\lambda)$:
+$$
+\tilde{\ell}=\int \sqrt{ \eta_{\mu \nu}\frac{d x^{\mu}}{d\tilde{\lambda}} \frac{d x^{\nu}}{d\tilde{\lambda}}  } \, d\tilde{\lambda} 
+$$
+$$
+= \int \frac{d \tilde{\lambda}}{d\lambda} \sqrt{ \eta_{\mu \nu}\left( \frac{d x^{\mu}}{d\lambda } \frac{d \lambda}{d\tilde{\lambda}}  \right)\left( \frac{d x^{\nu}}{d\lambda} \frac{d {\lambda}}{d\tilde{\lambda}}  \right) } \, d\lambda  
+$$
+$$
+= \int \sqrt{ \eta_{\mu \nu}\frac{d x^{\mu}}{d\lambda} \frac{d x^{\nu}}{d\lambda}  } \, d\lambda=\ell 
+$$
+Nevertheless, a natural choice of parameter exists: the proper length/time itself $\lambda=\ell$ or $\tau$
+This requires $V^{\mu}$ to be a unit space/timelike vector:
+For example for timelike, if $(V,V)=-1$, then
+$$
+\tau=\int \sqrt{ -(V,V) } \, d\lambda =\int  \, d\lambda =\lambda
+$$
+___
+Note for null curves where $(V,V)=0$ so there's no natural parametrisation, and all spacetime distances are just 0
+## Free Motion
+
+
 
 
