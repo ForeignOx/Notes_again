@@ -179,7 +179,20 @@ $$
 ___
 Note for null curves where $(V,V)=0$ so there's no natural parametrisation, and all spacetime distances are just 0
 ## Free Motion
-
-
-
-
+A free particle in special relativity follows a straight line in spacetime. We want to understand this in a language that generalises to general spacetimes, where the analogous curves are called geodesics
+There are two different ways to think of a straight line, we can say that there's a choice of parameter such that $x^{\mu}(\lambda)$ are linear functions. This implies the tangent vector $V^{\mu}=\frac{d x^{\mu}}{d\lambda}=\dot{x}^{\mu}$ is constant
+Constancy of the tangent vector is an equation of motion for the coordinates as functions of the parameter $a^{\mu}=\frac{d ^{2}x^{\mu}}{d\lambda^{2}}=\ddot{x}^{\mu}=0$
+For comparison to later analysis, note that we can write this chain rule as
+$$
+a^{\mu}=\frac{d x^{\nu}}{d\lambda} \partial_{\nu}\left( \frac{d x^{\mu}}{d\lambda}  \right)=V^{\nu}\partial_{\nu}V^{\mu}=0
+$$
+Note that $V^{\mu}$ being constant means that $(V,V)$ is constant, so $\tau=\int \sqrt{ -(V,V) } \, d\lambda$ means $\tau$ is linear in $\lambda$ and vice-versa:
+$$
+\lambda=a\tau+b
+$$
+So we say that $\lambda$ is an affine paramter, which is one that is linearly related to proper time
+The other way of thinking of a straight line is as a shortest distance, or in this case, an extremal proper time
+$$
+\tau=\int \mathcal{L}\, d\lambda 
+$$
+Where $\mathcal{L}=\sqrt{ -(V,V) }=\sqrt{ -\eta_{\mu \nu}\dot{x}^{\mu}\dot{x}^{\nu} }$, so $\delta \tau=0$ under arbitrary small v
