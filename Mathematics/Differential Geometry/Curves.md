@@ -195,4 +195,8 @@ The other way of thinking of a straight line is as a shortest distance, or in th
 $$
 \tau=\int \mathcal{L}\, d\lambda 
 $$
-Where $\mathcal{L}=\sqrt{ -(V,V) }=\sqrt{ -\eta_{\mu \nu}\dot{x}^{\mu}\dot{x}^{\nu} }$, so $\delta \tau=0$ under arbitrary small v
+Where $\mathcal{L}=\sqrt{ -(V,V) }=\sqrt{ -\eta_{\mu \nu}\dot{x}^{\mu}\dot{x}^{\nu} }$, so $\delta \tau=0$ under arbitrary small variations of path $\delta x^{\mu}(\lambda)$, so using the [[Euler-Lagrange Equations|Euler-Lagrange equations]],
+$$
+\frac{d }{d\lambda} \left( \frac{ \partial \mathcal{L} }{ \partial \dot{x}^{\mu} }  \right)=\frac{d }{d\lambda} \left( \frac{1}{2\sqrt{ -\eta_{\rho\sigma}\dot{x}^{\rho}\dot{x}^{\sigma} }}(-\eta_{\mu \nu}\dot{x}^{\nu}) \right)=0
+$$
+Solving this for general parameter choices is quite messy, however, we're trying to solve for the spacetime position of the path, so we don't really care about the choice of parameter to the proper time, this simplifies to
