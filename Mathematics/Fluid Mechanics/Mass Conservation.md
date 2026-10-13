@@ -23,4 +23,4 @@ We can write the continuity equation:
 $$
 \frac{ \partial \rho }{ \partial t } +\rho \underline{\nabla} \cdot \underline{u} +\underline{u}\cdot \underline{\nabla } \rho=\frac{D\rho}{Dt}+\rho \underline{\nabla} \cdot \underline{u} =0
 $$
-This whole deriva
+This whole derivation was done in the Eulerian perspective. In the Lagrangian perspective we follow a fluid particle and fix the mass, so the surface can deform with the flow. Differentiating under the integral needs different handling using the Reynolds transport theorem
