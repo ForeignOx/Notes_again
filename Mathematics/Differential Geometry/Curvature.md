@@ -26,3 +26,9 @@ Let $\underline{\alpha}:I\to \mathbb{R}^{2}$ be a smooth regular plane curve wit
 $$
 \kappa=\frac{x'y''-x''y'}{((x')^{2}+(y')^{2})^{\frac{3}{2}}}
 $$
+### Proof
+The idea is that curv ature does not depend on parametrisation, so we need to do a change of variable. Let $u_{0}\in I$,
+$$
+S=\ell(u)=\int _{u_{0}}^{u}\lvert \lvert \underline{\alpha}'(t) \rvert \rvert  \, dt 
+$$
+Write $\underline{\beta}=\underline{\alpha}$
