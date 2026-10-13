@@ -102,4 +102,17 @@ $$
 $$
 Note that this expression simplifies to $\frac{r^{2}}{r^{3}}=\frac{1}{r}$ in the special case $a=b=r$, so that fits with curvature of circle
 ## Remark
-A geometric interpretation of curvature $\kappa(u)$ of a smooth regular plane curve $\underline{\alpha}$ at $\underline{\alpha}(u)$ is that $\left| \kappa(u) \right|$ is the reciprocal of the radius of a circle approximating a small neighbourhood $\underline{\alpha}([u-\varepsilon,u+\varepsilon])$ as best as possible (the circle has at least 3-point contact with the curve), and the sign of $\kappa(u)$ determines whether the circle is on the left or right of $\underline{\alpha}(u)$. This approximating circle is called the c
+A geometric interpretation of curvature $\kappa(u)$ of a smooth regular plane curve $\underline{\alpha}$ at $\underline{\alpha}(u)$ is that $\left| \kappa(u) \right|$ is the reciprocal of the radius of a circle approximating a small neighbourhood $\underline{\alpha}([u-\varepsilon,u+\varepsilon])$ as best as possible (the circle has at least 3-point contact with the curve), and the sign of $\kappa(u)$ determines whether the circle is on the left or right of $\underline{\alpha}(u)$. This approximating circle is called the curvature circle at $\underline{\alpha}(u)$
+## Definition
+Let $\underline{\alpha}:I\to \mathbb{R}^{2}$ be asmooth regular plane curve, $\kappa:I\to \mathbb{R}$ be its curvature function and $\underline{n}:I\to \mathbb{R}^{2}$ be its unit normal vector. Assume $\kappa(u)\neq 0$, then the radius of curvature is given by
+$$
+r(u)=\frac{1}{\left| \kappa(u) \right| }
+$$
+And
+$$
+e(u)=\underline{\alpha}(u)+\frac{1}{\kappa(u)} \underline{n}(u)\in  \mathbb{R}^{2}
+$$
+Is called the centre of curvature of $\underline{\alpha}$ at $\underline{\alpha}(u)$. The corresponding curvature circle of $\underline{\alpha}$ at $\underline{\alpha}(u)$ is given by
+$$
+\left\{ P \in \mathbb{R}^{2}:\middle|: \lvert \lvert P-e(u) \rvert \rvert =r(u) \right\}
+$$
