@@ -203,5 +203,15 @@ d(x,z)\geq d(x,y)-d(z,y)>d(x,y)-s=r
 $$
 Which means that $B(y;s)\subseteq M\setminus D(x; r)$ so that $D(x; r)$ is closed
 For the third, we have $M$ is open by definition, while $\emptyset$ is open as there is nothing to check. By definition, it follows that $\emptyset$ and $M$ are also closed
-For the fourth if $x$ is in an open set $U_{i}$ for all $i=1,\dots,n$, we get $\varepsilon_{i}>0$ with $B(x; \varepsilon_{i})\subseteq U_{i}$, letting $\varepsilon=\min\left\{ \varepsilon_{1},\dots,\varepsilon_{n} \right\}>0$ shsows that the finite intersection of the $U_{i}$ is open
-For the fifth if $x$ is in an arbitrary union of open sets, it has to be in one of those open sets. Then there is $\varepsilon>0$ with $$
+For the fourth if $x$ is in an arbitrary union of open sets, it has to be in one of those open sets. Then there is $\varepsilon>0$ with $B(x; \varepsilon)$ contained in this one open set, but then $B(x;\varepsilon)$ is also in the union of open sets
+For the fifth if $x$ is in an open set $U_{i}$ for all $i=1,\dots,n$, we get $\varepsilon_{i}>0$ with $B(x; \varepsilon_{i})\subseteq U_{i}$, letting $\varepsilon=\min\left\{ \varepsilon_{1},\dots,\varepsilon_{n} \right\}>0$ shsows that the finite intersection of the $U_{i}$ is open
+The last two follow by De Morgan's laws
+## Example
+Let $M=\mathbb{R}^{2}$ with the Euclidean metric, then $\left\{ 0 \right\}$ is closed, but not open, but also
+$$
+\left\{ 0 \right\}=\bigcap_{i=1}^{\infty}B\left( 0; \frac{1}{i} \right)
+$$
+So the arbitrary intersection of open sets need not be open
+The closed disc $D(0; 1)$ is closed, but not open in $\mathbb{R}^{2}$
+___
+If $(X,d)$ is discrete, then any $A\subseteq X$ is clopen
