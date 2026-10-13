@@ -119,7 +119,7 @@ Can we ay that $u^{\varepsilon}(x,t)\to 0$ $\varepsilon\to 0$ for any fixed poin
 $$
 \lim_{ n \to \infty } \varepsilon^{2}\sin\left( \frac{x_{n}}{\varepsilon} \right)\sinh\left( \frac{t_{n}}{\varepsilon} \right)
 $$
-Taking $t_{n}=\varepsilon\sinh ^{-1}\left( \frac{1}{n} \right)$ we should be ok
+Taking $t_{n}=\varepsilon\sinh ^{-1}\left( \frac{1}{n} \right)$ we should be ok, but that's multiple $t$ values so that's not ok either that or the fact that they tend to 0 which is not valid $t$ is not ok
 
 
 
