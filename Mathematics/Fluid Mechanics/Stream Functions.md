@@ -7,4 +7,31 @@ u \\
 v
 \end{pmatrix}
 $$
-We take an ansatz $\underline{F}=$
+We take an ansatz $\underline{F}=\begin{pmatrix}-u \\ v\end{pmatrix}$ which is conservative which we can see by showing that its integral over a closed curve is 0, so
+$$
+\oint_{C}\underline{F}\cdot d\underline{x}=\oint-vdx+udy 
+$$
+$$
+= \iint_{R}\frac{ \partial u }{ \partial x } +\frac{ \partial v }{ \partial y } ~dx~dy
+$$
+By Green's theorem
+$$
+=\iint_{R}\underline{\nabla} \cdot \underline{u} ~dx~dy=0
+$$
+As $\underline{u}$ is divergence free (as it's incompressible)
+Now recall that conservative vector fields can always be written as the gradient of a scalar field, so $\exists \psi: \underline{F}=\underline{\nabla }\psi$, so
+$$
+\frac{ \partial \psi }{ \partial x } =-v,\frac{ \partial \psi }{ \partial y } =u
+$$
+We call $\psi$ the streamfunction, and
+$$
+\underline{u}=\underline{\nabla} \times \psi\underline{e}_{z} 
+$$
+In [[Curvilinear Coordinates|cylindrical coordinates]], 
+$$
+\underline{u}=\frac{1}{r}\det \begin{pmatrix}
+\underline{e}_{r} & r\underline{e}_{\theta} & \underline{e}_{z} \\
+\frac{ \partial  }{ \partial r }  & \frac{ \partial  }{ \partial \theta }  & \frac{ \partial  }{ \partial z }  \\
+0 & 0 & \psi 
+\end{pmatrix} =\frac{1}{r}\frac{ \partial \psi }{ \partial \theta } \underline{e}_{r}-\frac{ \partial \psi }{ \partial r } \underline{e}_{\theta}
+$$
