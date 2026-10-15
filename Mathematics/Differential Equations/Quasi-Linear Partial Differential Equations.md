@@ -70,4 +70,9 @@ $$
 The solution of which is $x(\tau)=x_{0}+c\tau$
 Consequently if $x(t)=x$ then $x_{0}=x_{0}(x,t)=x-ct$, so $\rho(x,t)=\rho_{0}(x_{0}(x,t))=\rho_{0}(x-ct)$
 In this case essentially $x_{0}$ is acting as a coordinate system, so we can think of our physical coordinates $(x,t)=(c\tau+x_{0},\tau)$ are equal to the new coodinates, so we need $t=\tau$ and $x=c\tau+x_{0}\implies x_{0}=x-ct$
-So we have our so
+So we have our solution and traced back to the initial state
+## Definition
+The previou8s ODE system parametrised by $x_{0}$ is the so called system of characteristics associated to the PDE
+## Remark
+In general the solutio might not be constant along simple chaacteristics and also the velocity field in a quasi-linear 1st order PDE depends on the solution
+Therefore one needs to study the solutions along each characteristic together with the system of characteristics
