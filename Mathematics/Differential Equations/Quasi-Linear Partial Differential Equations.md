@@ -7,7 +7,7 @@ $$
 ### Goal
 The objective is for $\Omega \subseteq \mathbb{R}^{n}$ open, $a:\Omega \times \mathbb{R}\to \mathbb{R}^{n}$, $b:\Omega \times \mathbb{R}\to \mathbb{R}$ are both given, we want a method to solve
 $$
-a(x,u(x))\cdot \underline{\nabla } u(x)=b(x,u(x))
+\underline{a}(\underline{x},u(\underline{x}))\cdot \underline{\nabla } u(\underline{x})=b(\underline{x},u(\underline{x}))
 $$
 For $x\in\Omega$ solving for the unknown $u:\Omega\to \mathbb{R}$
 We take a given $n-1$-dimensionsal hypersurface $\Gamma \subset \overline{\Omega}$ where we have $u(x)=u_{0}(x)$ for $x\in \Gamma$ is called the Cauchy condition
@@ -60,3 +60,14 @@ $$
 \rho(x,0)=\rho_{0}(g) 
 \end{cases}
 $$
+In this case $\beta(x)=c$ and our ODE system reads as
+$$
+\begin{cases}
+\frac{d x}{d\tau} (\tau)=c & \tau \in (0,t) \\
+x(0)=x_{0}
+\end{cases}
+$$
+The solution of which is $x(\tau)=x_{0}+c\tau$
+Consequently if $x(t)=x$ then $x_{0}=x_{0}(x,t)=x-ct$, so $\rho(x,t)=\rho_{0}(x_{0}(x,t))=\rho_{0}(x-ct)$
+In this case essentially $x_{0}$ is acting as a coordinate system, so we can think of our physical coordinates $(x,t)=(c\tau+x_{0},\tau)$ are equal to the new coodinates, so we need $t=\tau$ and $x=c\tau+x_{0}\implies x_{0}=x-ct$
+So we have our so
