@@ -37,5 +37,26 @@ $$
 $$
 \implies \partial_{\tau}\rho(X(\tau),\tau)+\underline{\nabla } \rho(X(\tau),\tau)\cdot \underbrace{ X(\tau) }_{ =\beta(X(\tau)) }=0
 $$
-The heart of the method of characteristics is to convert these ODEs into PDEs
+The heart of the method of characteristics is to convert these ODEs into PDEs, the way it works is that you have taken a total derivative and split it up into partials
+And if we are interested only in stationary tates, we set
+$$
+\underline{\nabla } \rho(X,\tau)\cdot \underline{\beta}(X)=0
+$$
 
+We consider some fictitious particles on $\Gamma$, and observe their motion due to the vector field
+We want to know if we take a particle in $\Omega$ whether there is a curve that originated on $\Gamma$
+We need to introduce
+### Remark
+If the fluid is not icompressible, then the governing PDE is the so called continuity equation
+$$
+\partial_{t}\rho+\underline{\nabla} \cdot\rho(x,t) \underline{\beta} (x)=0
+$$
+In this case, the density is not constant along the particle trajectory
+___
+Here is the transport equation for $n=1$:
+$$
+\begin{cases}
+\partial_{t}\rho(x,t)+c\partial_{x}\rho(x,t)=0 & x\in  \mathbb{R},t>0,c\in \mathbb{R} \\
+\rho(x,0)=\rho_{0}(g) 
+\end{cases}
+$$
