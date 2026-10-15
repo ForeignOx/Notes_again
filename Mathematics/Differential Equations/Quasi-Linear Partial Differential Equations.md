@@ -15,8 +15,27 @@ $\Gamma$ is called a cauchy surface/curve, $u_{0}$ is called the Cauchy datum, a
 ### Example
 Let $\beta:\Omega\to \mathbb{R}^{n}$ is given and consider
 $$
-\frac{d }{d\tau} X(\tau)=\beta(X(\tau))
+\begin{cases}
+\frac{d }{d\tau} X(\tau)=\beta(X(\tau))  & T>0\\
+X(0)=X_{0}\in  \Omega 
+\end{cases}
+$$
+With 
+$$
+X:(0,T)\to\Omega \subseteq \mathbb{R}^{n}
+$$
+Suppose this is describing the motion of a fluid and has a classical solution, suppose also that $\rho(x,t)$ classifies the density of a material in $\Omega$ at $(x,t)\in\Omega \times(0,T)$
+And we wanted to understand the evolution in time of the density $\rho$
+If individual particles are evolving using the ODE
+Here $\beta$ is a prescribed velocity field acting on the particles, one can think of wind or something
+If you start at $X_{0}$, we get some path with tangent vectors in $\beta$
+If the fluid/material is incompressible, this implies $\rho(X(\tau),\tau)=\rho(X_{0},0)=\rho_{0}(X_{0})$
+Which imples
+$$
+\frac{d }{d\tau} \rho(X(\tau),\tau)=0
 $$
 $$
-X(0)=X_{0}\in  \Omega
+\implies \partial_{\tau}\rho(X(\tau),\tau)+\underline{\nabla } \rho(X(\tau),\tau)\cdot \underbrace{ X(\tau) }_{ =\beta(X(\tau)) }=0
 $$
+The heart of the method of characteristics is to convert these ODEs into PDEs
+
