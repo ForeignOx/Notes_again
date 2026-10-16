@@ -22,6 +22,7 @@ And
 $$
 \bigcap_{i\in I}(U_{i}\cap A)=\left( \bigcap_{i\in I}U_{i} \right)\cap A
 $$
-For any collection of subsets of $X$. The resulting topology is called the induced topoloy or the subspace topology on $A$
-
-
+For any collection of subsets of $X$. The resulting topology is called the induced topology or the subspace topology on $A$
+Subexammple:
+Let $X=\mathbb{R},A\subseteq X, A=[-1,1]$, then $V\subseteq A$ being open means that $V=U\cap A$ is open
+So $(0,1]$ is open in $[-1,1]$ by taking $V=(0,2)$ (which is open in $\mathbb{R}$)

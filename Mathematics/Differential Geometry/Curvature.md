@@ -78,7 +78,7 @@ $$
 $$
 Soooo
 $$
-\kappa=\frac{x'y''-y'x''}{\sqrt{ (x')^{2}+(y')^{2} }}
+\kappa=\frac{x'y''-y'x''}{ ((x')^{2}+(y')^{2} )^{\frac{3}{2}}}
 $$
 ## Example
 Take an ellipse $\underline{\alpha}(u)=(a\cos u,b\sin u)$, so
