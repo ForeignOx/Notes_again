@@ -126,7 +126,8 @@ $$
 ## Quantum Notation
 $\ket{a}\neq 0$ is an eigenvector of $\hat{A}$ if $\hat{A}\ket{a}=a\ket{a}$,
 We often label the eigenvectors by their eigenvalue
-If eigenspace has dimension bigger than 1, choose an orthonormal basis and label it $\ket{a,i}$
+If eigenspace has dimension bigger than 1, choose an orthonormal basis and label it $\ket{a,i}$ Where $i=1,\dots,n$ where $n$ is the dimension of the eigenspace
+
 
 
 #Mathematics #LinAlg #Definition #Theorem 
