@@ -64,4 +64,12 @@ And if $\ket{w}\bot V$, then every $\braket{ v_{k} | w }=0$, and so
 $$
 \hat{P}_{V}\ket{w} =\sum_{k}\ket{v_{k}} \braket{ v_{k} | w } =0
 $$
+## Proposition
+Let $\hat{A}$ be a [[Hermitian Matrices|Hermitian]] operator with distinct eigenvalues $a_{1},\dots,a_{m}$, the projectors $\hat{P}_{a_{k}}$ onto its eigenspaces $V_{a_{k}}$ satisfy
+$$
+\hat{P}_{a_{j}}\hat{P}_{a_{k}}=\delta_{jk}\hat{P}_{a_{k}},~ \sum_{k=1}^{m}\hat{P}_{a_{k}}=\mathbb{1}
+$$
+
+### Proof
+The first holds because different eigenspaces are orthogonal. The second is the the completeness relation for an orthonormal basis of eigenvectors
 
