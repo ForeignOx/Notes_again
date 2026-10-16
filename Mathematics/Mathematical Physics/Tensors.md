@@ -83,3 +83,10 @@ is the Alembertian, it is the $\triangle$ for space-time
 ___
 If a physical law is expressed as an equality between tensors, then it holds for all frames
 So if the qhysical quantities we study are tensors, their components will depend on the frame and the equation they satisfy is frame independent
+## 
+So far we have $x^{\mu}=(ct,\underline{x})$ which is a coordinate 4-vector, then $V^{\mu}=\frac{d x^{\mu}}{d\lambda}$ is a tangent vector
+Under a coordinate change, the components of a vector become
+$$
+\tilde{V}^{\mu}=\frac{ \partial \tilde{x}^{\mu} }{ \partial x^{\nu} } V^{\nu}
+$$
+Which holds for any vector. We call this the transformation 
