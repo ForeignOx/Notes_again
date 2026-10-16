@@ -83,10 +83,22 @@ is the Alembertian, it is the $\triangle$ for space-time
 ___
 If a physical law is expressed as an equality between tensors, then it holds for all frames
 So if the qhysical quantities we study are tensors, their components will depend on the frame and the equation they satisfy is frame independent
-## 
+## Transformation Rule
 So far we have $x^{\mu}=(ct,\underline{x})$ which is a coordinate 4-vector, then $V^{\mu}=\frac{d x^{\mu}}{d\lambda}$ is a tangent vector
 Under a coordinate change, the components of a vector become
 $$
-\tilde{V}^{\mu}=\frac{ \partial \tilde{x}^{\mu} }{ \partial x^{\nu} } V^{\nu}
+\tilde{v}^{\mu}=\frac{ \partial \tilde{x}^{\mu} }{ \partial x^{\nu} } v^{\nu}
 $$
-Which holds for any vector. We call this the transformation 
+Which holds for any vector. We call this the transformation rule
+Consider instead the gradient of some function $f(x^{\mu})$, 
+$$
+\partial_{\mu}f=\frac{ \partial f }{ \partial x^{\mu} } 
+$$
+Under a change of coordinates:
+$$
+\tilde{\partial}_{\mu}f=\frac{ \partial f }{ \partial \tilde{x}^{\mu} } =\frac{ \partial x^{\nu} }{ \partial \tilde{x}^{\mu} } \frac{ \partial f }{ \partial x^{\nu} } =\frac{ \partial x^{\nu} }{ \partial \tilde{x}^{\mu} }\partial_{\nu}f 
+$$
+This is not the transformation of a vector, this is because it is using a covector, so for covector $w_{\mu}$, the transformation rule is
+$$
+\tilde{w}_{\mu}=\frac{ \partial x^{\nu} }{ \partial \tilde{x}^{\mu} } w_{\nu}
+$$

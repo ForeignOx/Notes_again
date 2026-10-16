@@ -1,0 +1,2 @@
+The tangent space is the [[Vectorspaces|vectorspace]] formed by the tangent vectors, $V^{}$ of all possible [[curves|curves]] through some point
+We similarly define the cotangent space: the space of covectors formed from the gradients of all possible $f(x^{\mu})$ at some point

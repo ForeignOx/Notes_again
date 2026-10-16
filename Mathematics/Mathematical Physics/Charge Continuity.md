@@ -4,7 +4,7 @@ $$
 \frac{ \partial \rho }{ \partial t } +\underline{\nabla} \cdot \underline{J} =0
 $$
 And has to be frame independent
-We can express this as a [[tensors|tensor]] equation to make it compatable with [[special relativity|special relativity]] 
+We can express this as a [[Tensors|tensor]] equation to make it compatable with [[special relativity|special relativity]] 
 We know $x^{0}=ct$, so
 $$
 \frac{ \partial c\rho }{ \partial ct } +\underline{\nabla} \cdot \underline{J} =0 
