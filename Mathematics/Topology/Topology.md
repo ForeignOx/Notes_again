@@ -17,4 +17,6 @@ Let $X$ be a topological space, then
 - An arbitrary intersection of closed sets is closed
 We tend to simply call $X$ a topological space
 ## Example
-If $X$ is a set and $\mathcal{T}=2^{X}$, then $(X,\mathcal{T})$ is a topological space. In this case, $\mathcal{T}$ is called
+If $X$ is a set and $\mathcal{T}=2^{X}$, then $(X,\mathcal{T})$ is a topological space. In this case, $\mathcal{T}$ is called the discrete topology. This is metrizable via the discrete metric
+For a topology that is not metrizable, we can go to the other extreme, the minimal topology that can be put on a set:
+Let $X$ be a set and let $\mathcal{T}=\left\{ \emptyset,X \right\}$, this topology is called the indiscrete topology and if $X$ has more than 1 element, then $X$ with the indiscrete topology is not metrizable
