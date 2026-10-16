@@ -226,6 +226,17 @@ We say $f$ is continuous if $f$ is continuous $\forall a\in M$
 Let $X$ be a set and $d_{X}$ the discrete metric. Any $f:X\to M$ with $M$ a metric space is continuous. To ee see this take $a\in X$, given $\varepsilon>0$, we can take $\delta=1$
 If $d_{X}(x,a)<1$, then $x=a$, then $d_{M}(f(x),f(a))=d_{M}(f(a),f(a))=0<\varepsilon$
 On the other hand the identity function is not continuous. To see this, let $a\in\mathbb{R}^{n}$ and $\varepsilon=1$, for any $\delta>0$, we can find $x\in\mathbb{R}^{n}$ with $d_{2}(x,a)<\delta$, but as long as $x\neq a$, we get $d(x,a)=1$
+# For a Topology
+## Definition
+Let $X$ and $Y$ be topological spaces and $f:X\to Y$ a function. Let $x\in X$, we say that $f$ is continuous at $x$, if for every open subset $U\subseteq Y$ with $f(x)\in U$, there is an open set $V\subseteq X$ containing $x$ such that $f(V)\subseteq U$
+We say that $f$ is continuous if for every open set $U\subset Y$, the preimage $f^{-1}(U)$ is open in $X$
+$f$ is continuous iff $f$ i constant at every $x\in X$
+## Example
+Let $X$ be a topological space and $A\subseteq X$, the inclusion $i:A\to X$ i continuous provided we give $A$ the subspace topology (which is the standard thing t do), this is
+$$
+i^{-1}(U)=U\cap A
+$$
+Even if $U\subseteq X$ is not necessariliy open
 
 
 
