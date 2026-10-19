@@ -34,4 +34,21 @@ $$
 \underline{\alpha}(s_{0})=a,~\underline{\alpha}'(s_{0})=v_{0}
 $$
 In other words, the curvature function determines the curve uniquely up to orientation presserving isometries, that is, up to a map of the form $f_{A,\underline{b}}(\underline{x})=\underline{x}A+\underline{b}$ with $\underline{x}\in\mathbb{R}^{2}$ a row vector, $A\in SO(2)$ (a rotation), and a row vector $\underline{b}\in\mathbb{R}^{2}$ (a translation)
-Again, in other words, two unit speed plane curves $\underline{\alpha}:I\to \mathbb{R}^{2}$, $\underline{\beta}:I\to \mathbb{R}^{2}$ with the same curvature function $\kappa:I\to \mathbb{R}$ agree up to a map $f_{A,\underline{b}}$, that is $\underline{\beta}$
+Again, in other words, two unit speed plane curves $\underline{\alpha}:I\to \mathbb{R}^{2}$, $\underline{\beta}:I\to \mathbb{R}^{2}$ with the same curvature function $\kappa:I\to \mathbb{R}$ agree up to a map $f_{A,\underline{b}}$, that is $\underline{\beta}=f_{A,\underline{b}}\circ \underline{\alpha}$
+___
+The idea of the proof is to contruct the curve from the curvature function $\kappa$ via integration twice. More precisely, the curve $\underline{\alpha}$ in the theorem can be constructed as follows:
+Let $\theta_{0}\in[0,2\pi)$ be chosen to satisfy $v_{0}=(\cos\theta_{0},\sin\theta_{0})$
+Then we define $\theta:I\to \mathbb{R}$ via
+$$
+\theta(s):=\theta_{0}+\int_{s_{0}}^{s} \kappa(t) \, dt 
+$$
+The unit tangent vector $\underline{t}:I\to \mathbb{R}^{2}$ of the required unit speed curve $\underline{\alpha}$ is then already constructed and given by:
+$$
+\underline{t}(s)=(\cos(\theta(s)),\sin(\theta(s)))
+$$
+We then construct the curve $\underline{\alpha}:I\to \mathbb{R}^{2}$ by the following second integral process:
+$$
+    \underline{\alpha}(s):=a+\left( \int_{s_{0}}^{s}\cos(\theta(t))  \, dt,\int_{s_{0}}^{s} \sin(\theta(t)) \, dt  \right)
+$$
+It is easy to check that $\underline{\alpha}(0)=a$, and $\underline{\alpha}'(s_{0})=v_{0}$
+This provides the existence of a curve $\underline{\alpha}$ for a given curvature function $\kappa$
