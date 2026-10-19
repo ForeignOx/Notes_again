@@ -29,5 +29,21 @@ $$
 ```desmos-graph
 a=3
 b=2
-y=(a*b)/(a^2)
+y=(a*b)/(a^2*(\sin(x))^2+b^2*(\cos(x))^2)|0<x<2*\pi
 ```
+The ellipse has no inflection points since
+$$
+\kappa'(u)=-\frac{3ab(a^{2}-b^{2})\sin(2u)}{2(a\sin ^{2}u+b^{2}\cos ^{2}u)^{\frac{5}{2}}}
+$$
+We conclude in the case that $a\neq b$, that the ellipse has its vertices at $u=\frac{k\pi}{2}$ for $k\in \mathbb{Z}$
+Restricting $\underline{\alpha}:I\to \mathbb{R}^{2}$ to the interval $I=[0,2\pi]$ and using the fact that the ellipse is a closed curve, we see that the ellipse has precisely four vertices at $(\pm a,0)\in\mathbb{R}^{2}$ and $(0,\pm b)\in\mathbb{R}^{2}$
+The curvature at these vertices is:
+$$
+\kappa(0)=\kappa(\pi)=\frac{a}{b^{2}}
+$$
+$$
+ \kappa\left( \frac{\pi}{2} \right)=\kappa\left( \frac{3\pi}{2} \right)=\frac{b}{a^{2}}
+$$
+The fact that an ellipse has at leat 4 vertices is a special case of a general result for simple smooth closed plane curves
+
+

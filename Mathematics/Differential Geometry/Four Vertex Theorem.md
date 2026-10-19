@@ -1,0 +1,2 @@
+## Theorem
+Let $\underline{\alpha}:[a,b]\to \mathbb{R}^{2}$ be a [[Smooth Functions|smooth]] regular simple closed [[Plane Curves|plane]] [[Curves|curve]], then $\underline{\alpha}$ has at least 4 vertices
