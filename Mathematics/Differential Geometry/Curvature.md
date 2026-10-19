@@ -116,3 +116,40 @@ Is called the centre of curvature of $\underline{\alpha}$ at $\underline{\alpha}
 $$
 \left\{ P \in \mathbb{R}^{2}:\middle|: \lvert \lvert P-e(u) \rvert \rvert =r(u) \right\}
 $$
+## Lemma
+Let $\underline{\alpha}:I\to \mathbb{R}^{2}$ be a smooth unit speed plane curve and $\kappa:I\to \mathbb{R}$ be its curvature function, then we have
+$$
+\underline{t}'(s)=\kappa(s) \underline{n}(s)
+$$
+$$
+ \underline{n}'(s)=\underline{t}(s)\begin{pmatrix}
+0 & 1 \\
+-1  & 0
+\end{pmatrix}
+$$
+### Proof
+The first equation is the definition of curvature
+Since we obtain by differentiation and $\underline{n}(s)=\underline{t}(s)\begin{pmatrix}0 & 1 \\-1 & 0 \end{pmatrix}$ 
+$$
+\underline{n}'(s)=\underline{t}'(s)\begin{pmatrix}
+0 & 1 \\
+-1 & 0
+\end{pmatrix}
+$$
+$$
+=\kappa(s)\underline{n}(s)\begin{pmatrix}
+0 & 1 \\
+-1 & 0
+\end{pmatrix}
+$$
+$$
+= \kappa(s)\underline{t}(s)\begin{pmatrix}
+0 & 1 \\
+-1 & 0
+\end{pmatrix}^{2}=-\kappa(s)\underline{t}(s)
+$$
+### Remark
+Geometrically, we can think of the pair $\underline{t}(s), \underline{n} (s)$ as being a frame of two orthornormal basis vectors moving along the plane curve $\underline{\alpha}(s)$ and the above lemma descrive the relation between these two moving vectors
+___
+The orthonormal frame $\underline{t}(u), \underline{n}(u)$ along $\underline{\alpha}(u)$ exists also for smooth regular plane curves which are not unit speed, however, in this case, the frame equations above do not hold without taking the speed of the curve into account
+___
