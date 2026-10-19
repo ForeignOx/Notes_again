@@ -21,3 +21,13 @@ $$
 \kappa'(u)= \frac{5(1-45u^{4})}{(1+9u^{4})^{\frac{5}{2}}}
 $$
 So vertices at the points where $u=_\pm \frac{1}{45}^{\frac{1}{4}}$
+____
+We have seen that the curvature of the ellipse $\underline{\alpha}(u)=(a\cos u,b\sin u)$ with $a,b>0$ is given by:
+$$
+\kappa(u)=\frac{ab}{(a^{2}\sin ^{2}u+b^{2}\cos ^{2}u)^{\frac{3}{2}}}>0
+$$
+```desmos-graph
+a=3
+b=2
+y=(a*b)/(a^2)
+```
