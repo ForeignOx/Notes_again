@@ -28,4 +28,10 @@ $$
 0=\underline{\alpha}''(s)\cdot\underline{\alpha}'(s)+\underline{\alpha}'(s)\cdot\underline{\alpha}''(s)=2\underline{\alpha}''(s)\cdot\underline{\alpha}'(s)=2\underline{t}'(s)\cdot \underline{t}(s)
 $$
 This shows that $\underline{t}'(s)$ is perpendicular to $\underline{t}(s)$ and must be, therefore parallel to the unit normal vector $\underline{n}(s)$
-
+## Fundamental Theorem of Local Theory of Plane Curves
+Given an open interval $I\subset \mathbb{R}$ and a smooth function $\kappa:I\to \mathbb{R}$, $s_{0}\in I,a\in\mathbb{R}^{2},v_{0}\in \mathbb{R}^{2}$ with $\lvert \lvert v_{0} \rvert \rvert=1$, then there exists a unique smooth unit unit speed plane curve $\underline{\alpha}:I\to \mathbb{R}^{2}$ with curvature function $\kappa$ and satisfying 
+$$
+\underline{\alpha}(s_{0})=a,~\underline{\alpha}'(s_{0})=v_{0}
+$$
+In other words, the curvature function determines the curve uniquely up to orientation presserving isometries, that is, up to a map of the form $f_{A,\underline{b}}(\underline{x})=\underline{x}A+\underline{b}$ with $\underline{x}\in\mathbb{R}^{2}$ a row vector, $A\in SO(2)$ (a rotation), and a row vector $\underline{b}\in\mathbb{R}^{2}$ (a translation)
+Again, in other words, two unit speed plane curves $\underline{\alpha}:I\to \mathbb{R}^{2}$, $\underline{\beta}:I\to \mathbb{R}^{2}$ with the same curvature function $\kappa:I\to \mathbb{R}$ agree up to a map $f_{A,\underline{b}}$, that is $\underline{\beta}$
