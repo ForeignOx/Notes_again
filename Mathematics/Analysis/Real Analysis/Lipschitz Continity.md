@@ -45,3 +45,18 @@ $$
 \left| f(x)-f(y) \right| =\left| x^{2}-y^{2} \right| =\left| x+y \right| \left| x-y \right| 
 $$
 This will explode, so cannot be Lipschitz, however it is again locally Lipschitz, clearly
+## Proposition
+$f:A\to \mathbb{R}^{m}$, with $A$ open is continuously differntiable, suppose that $A$ is [[Convex Sets|convex]] ($\forall x,y\in A$, $\theta x+(1-\theta)y\in A\forall\theta \in[0,1]$)
+Then $f$ is $L$-Lipschitz iff $\lvert \lvert Df \rvert \rvert\leq L$
+### Proof
+$$
+f(x)-f(y)=\int_{0}^{1} \partial_{\theta}(f(\theta x+(1-\theta)y)) \, d\theta  
+$$
+$$
+= \int_{0}^{1}||\underbrace{ \underbrace{  Df(\theta x+(1-\theta)y) }_{ \in \mathbb{R}^{m\times n} }\underbrace{ (x-y)  }_{ \in \mathbb{R}^{n} }\, }_{ \in \mathbb{R}^{m} }|| d\theta 
+$$
+With norm given by
+$$
+\lvert \lvert B \rvert \rvert =\sup \frac{\left| B\alpha \right| }{\left| \alpha \right| }
+$$
+

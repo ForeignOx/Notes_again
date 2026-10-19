@@ -48,7 +48,7 @@ f(x)=\lim_{ n \to \infty } f_{n}(x)=\sum_{k=0}^{\infty} a_{k}x^{k}
 $$
 Where $f_{n}(x)=\sum_{ k=0} ^{ n} a_{k}x^{k}$
 ### Power Series are Continuous in Radius of Convergence
-Power series are in fact locally Lipschitz [[Continuity|continuous]], that is, for any $0<r<R$, there exists a constant $M=M_{r}$ such that
+Power series are in fact locally [[Lipschitz Continity|Lipschitz]] [[Continuity|continuous]], that is, for any $0<r<R$, there exists a constant $M=M_{r}$ such that
 $$
 \left| f(x)-f(y) \right| \leq M_{r}\left| x-y \right| \forall x\in [-r,r]
 $$

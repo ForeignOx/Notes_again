@@ -11,7 +11,7 @@ $$
 ## Remarks
 The proof is non-constructive and gives no indication for finding $\delta$. In general this is very difficult
 This is what leads to integration later on…
-A particularly nice class of functions are Lipschitz-continuous
+A particularly nice class of functions are [[Lipschitz Continity|Lipschitz-continuous]]
 - The function $e^{ x }$ is not uniformly continuous on $\mathbb{R}$. However, $\ln x$ is uniformly continuous on $[1,\infty)$ even though both functions diverge as $x\to \infty$
 
 #Mathematics #Analysis #Definition

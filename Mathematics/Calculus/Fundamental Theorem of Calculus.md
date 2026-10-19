@@ -5,7 +5,7 @@ If [[Functions|$f(x)$]] is [[Regulated Functions|regulated]] on [[Intervals|$[a,
 $$
 F(x)=\int ^{x}_{a} f(t) \, dt 
 $$
-Is Lipschitz continuous on $[a,b]$ with $M=\sup(\left| f(x) \right|),x\in[a,b]$, hence $F$ is [[Continuity|continuous]] on 
+Is [[Lipschitz Continity|Lipschitz]] continuous on $[a,b]$ with $M=\sup(\left| f(x) \right|),x\in[a,b]$, hence $F$ is [[Continuity|continuous]] on 
 ### Proof
 $$
 \left| F(x)-F(y) \right| =\left| \int_{a}^{x} f(t) \, dt -\int_{a}^{y} f(t) \, dt  \right|=\left| \int_{y}^{x} f(t) \, dt   \right| 

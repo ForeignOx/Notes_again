@@ -47,7 +47,7 @@ $$
 $$
 ___
 ### Example
-Consider $f(x)=x$ on $[a,b]$, then to define $f_{n}(x)$, take the equidistant partition, $x_{k}=a+k \frac{b-a}{n}$ for $k=0,\dots,n$, and let $x_{k}^{*}=x_{k}$, set $f(x)=f(x_{k}^{*})=f(x_{k})$ for $x\in(x_{k},x_{k+1})$, and since $f_{n}\to f$ are lipschitz as it is bounded, they tend uniformly. Take for example $a=0,b=1$, then
+Consider $f(x)=x$ on $[a,b]$, then to define $f_{n}(x)$, take the equidistant partition, $x_{k}=a+k \frac{b-a}{n}$ for $k=0,\dots,n$, and let $x_{k}^{*}=x_{k}$, set $f(x)=f(x_{k}^{*})=f(x_{k})$ for $x\in(x_{k},x_{k+1})$, and since $f_{n}\to f$ are [[Lipschitz Continity|lipschitz]] as it is bounded, they tend uniformly. Take for example $a=0,b=1$, then
 $$
 I(f_{n})=\sum_{k=0}^{n}\underbrace{ (x_{k+1}-x_{k}) }_{ =\frac{b-a}{n}=\frac{1}{n} }f\left( \underbrace{ x_{k}^{*} }_{ =x_{k}=\frac{k}{n} } \right)=\frac{1}{n^{2}}\sum_{k=0}^{n}k=\frac{1}{n^{2}} \frac{(n+1)n}{2}\to \frac{1}{2}
 $$
