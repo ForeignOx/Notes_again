@@ -16,3 +16,14 @@ $$
 \underline{\omega}(\underline{x})=\underline{\nabla} \times \underline{u} =2k\underline{e}_{z}
 $$
 So we have a rotating flow and we have vorticity, but these could be coincidental, we have to be careful not to judge vorticity (local rotation at every point) based on overall rotation
+___
+Let's find the vorticity for $\underline{u}(\underline{x})=y\underline{e}_{x}$, here,
+$$
+\underline{\omega}=\underline{\nabla} \times \underline{u}=-\underline{e}_{z}
+$$
+so the fluid particles are rotating but the fluid is actually translating
+___
+Next consider $\underline{u}=\frac{k}{r}\underline{e}_{\theta}$ which has a singularity at the origin, things rotating near the origin go faster whereas the further from the origin, the slower they rotate
+$$
+\underline{\omega}(\underline{x})=\underline{\nabla} \times \underline{u} =
+$$
