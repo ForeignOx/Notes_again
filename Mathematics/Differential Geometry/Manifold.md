@@ -15,4 +15,19 @@ And the inverses
 $$
 r=\sqrt{ x^{2}+y^{2} }, ~\theta=\arctan\left( \frac{y}{x} \right)
 $$
-Excpet at $x=y=0$, where polar coordinates
+Excpet at $x=y=0$, where polar coordinates don't work. Also $\theta=-\pi$ is the same line a $\theta=\pi$, o polar coodinates may be good local coordinates and there is a coordinate singularity at $r=0$, but the space itself is actually fine, so thee coordinates map
+$$
+\mathbb{R}^{2}\setminus \left\{ x\geq 0,y=0 \right\}\to \left\{ r>0,0<\theta<2\pi \right\}
+$$
+___
+The circle $\mathbb{S}^{1}$ is a 1D manifold, covered by charts $\left\{ 0<\theta<2\pi \right\}$ and $\left\{ -\pi<\theta<\pi \right\}$, the periodic identification on the circle prevents us from covering it with a single chart; it is locally like $\mathbb{R}$, but globally different
+___
+The two-sphere $\mathbb{S}^{2}$, we can build a coodinate system by first writing $\mathbb{R}^{3}$ in polar coordinates
+$$
+ \begin{cases}
+x=r\sin\theta \cos \phi \\
+y=r\sin\theta \sin \phi \\
+z=r\cos\theta
+\end{cases}
+$$
+If we fix $r$, then $(\theta,\phi)$ are local coordinates on the 2-spheere
