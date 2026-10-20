@@ -85,4 +85,4 @@ The angular velocity,
 $$
 \frac{1}{2}\underline{\omega}=\frac{1}{2}\underline{\nabla} \times \underline{u}=-\frac{1}{2} \underline{e}_{z}
 $$
-The place that the rotation comes from is actually the vorticity
+The place that the rotation comes from is actually the vorticity, 
