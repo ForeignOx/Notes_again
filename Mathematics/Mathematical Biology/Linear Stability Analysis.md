@@ -37,4 +37,23 @@ An equation is aymptotically stable if
 - $\exists\varepsilon$ such that $\left| x(0)-x_{0} \right|<\varepsilon$ then $\lim_{ t \to \infty }\left| x(t)-x_{0} \right|=0$
 I.e. when you start arbitrarily close to $x_{0}$, you end up at $x_{0}$
 It is possible for both criteria to be satisfied independently
-If all $\mathfrak{R}(\lambda_{n})>$
+If all $\mathfrak{R}(\lambda_{n})<0$ in the system, then it will be asymptotically stable
+## Instability
+If any of the $\mathfrak{R}(\lambda_{i})$ are positive, then $x_{1}$ will grow exponentially, we class such equilibria $x_{0}$ for which this $x_{1}$ is our small correction $x_{0}+\varepsilon x_{1}$ as unstable. 
+As this growth continues, the linear approxiamtion become invalid and the nonlinear dynamics take over. All that matters for stability is that the solution cannot approach $x_{0}$ if the initial condition $x(0)$ is not the equilibrium (it is essentially repelled from $x_{0}$)
+## The Degenerate Case
+Sometimes we encounter the case where one of the $\mathfrak{R}(\lambda_{i})=0$, if all other $\mathfrak{R}(\lambda_{i})$ are less than or equal to 0, this fits neither of the previous definitions, it is not unstable as there is no exponential growth, but the solution will not decay, so it is not asymptotically stable
+There is no simple answer as to what this implies, but usually it will be one of three possibilities:
+- The solutions close to equilibrium are periodic limit cycles
+- The equilibrium itself is degenerate i.e. $\frac{d x}{dt}=0$, this solution is any permissible $x_{0}\in \mathbb{R}(>0)$ thus any equilibrium is local to another equilibrium and cannot be stable
+- Equations such as
+$$
+\frac{d x}{dt} +x^{3}=0
+$$
+    Whose equilibrium is $x_{0}=0$, and the expansion of $(x_{0}+\varepsilon x_{1})^{3}$ is just $\varepsilon^{3}x_{1}^{3}$ (all other terms involve $x_{0}=0$), this means the linear equation is simply
+$$
+\frac{d x_{1}}{dt} =0
+$$
+    Such cases are more complex and suggest wwe have ignored some terms in the linearisation that we shouldn't have
+## General Systems of First Order Autonomous ODEs
+    
