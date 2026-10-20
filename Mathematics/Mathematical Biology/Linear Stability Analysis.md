@@ -30,4 +30,11 @@ $$
 x_{1}=c_{1}e^{ \lambda_{1}t }+\dots+c_{n}e^{ \lambda_{n}t }
 $$
 Of course, some of these could be complex giving solutions of the form $e^{ \mu_{i}t }(A\cos(\nu_{i}t)+B\sin(\nu_{i}t))$, for the sake of stability analysis, we know that the imaginary part of $\lambda$ does not control growth, only the real part does
-
+Finally we assess stability...
+### Asymptotic Stability
+An equation is aymptotically stable if
+- It is Lyapunov stable
+- $\exists\varepsilon$ such that $\left| x(0)-x_{0} \right|<\varepsilon$ then $\lim_{ t \to \infty }\left| x(t)-x_{0} \right|=0$
+I.e. when you start arbitrarily close to $x_{0}$, you end up at $x_{0}$
+It is possible for both criteria to be satisfied independently
+If all $\mathfrak{R}(\lambda_{n})>$
