@@ -1,12 +1,22 @@
 The local geometry of a [[Spacecurves|spacecurve]] $\underline{x}$ provides an intrinsic set of basis vectors and coordinates called the Frenet frame
 ## Definition
+Let $\underline{\alpha}:I\to \mathbb{R}^{3}$ be a [[Smooth Functions|smooth]] [[Arclength|unit speed]] [[spacecurves|spacecurve]], then we define the principle normal vector 
+$$
+\underline{n}(s)=\frac{1}{\kappa(s)} \underline{t}'(s)\in \mathbb{R}^{3}
+$$
+We then define the binormal vector $\underline{b}:I\to \mathbb{R}^{3}$ by $\underline{b}(s)=\underline{t}(s)\times   \underline{n}(s)$, we call the ord
+
+
+
+
+## Definition
 Let
 $$
 \kappa\equiv \left| \frac{d \underline{\hat{T}}(s)}{ds}  \right| 
 $$
-Be the curvature of $\underline{x}$ at $s$. The principal normal bector is defined (where $\kappa \neq 0$) as
+Be the curvature of $\underline{x}$ at $s$. The principal normal vector is defined (where $\kappa \neq 0$) as
 $$
-\underline{\hat{H}}=\frac{1}{\kappa}\frac{d \underline{\hat{T}}(s)}{ds} 
+\underline{\hat{N}}=\frac{1}{\kappa}\frac{d \underline{\hat{T}}(s)}{ds} 
 $$
 As $\underline{\hat{T}}(s)$ is always a unit vector, $\underline{\hat{N}}\cdot \underline{\hat{T}}=0$. We define a third vector, the binormal as
 $$
