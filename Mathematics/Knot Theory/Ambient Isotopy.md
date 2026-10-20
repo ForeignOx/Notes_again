@@ -1,4 +1,4 @@
-An ambient [[Isotopy|isotopy]] is a form of isotopy that demands that the [[Homeomorphisms|homeomorphic]] actions act on the space rather than the knot itself. The space is deformed, dragging the knot with it, removing the possibility of shrinking the knot to a single dimensionless point. The remaining set of allowed deformations are smooth non self-crossing deformations of the [[Knots|curve]] or [[Ribbons|ribbon]]
+An ambient [[Isotopy|isotopy]] is a form of isotopy that demands that the [[Homeomorphicity|homeomorphic]] actions act on the space rather than the knot itself. The space is deformed, dragging the knot with it, removing the possibility of shrinking the knot to a single dimensionless point. The remaining set of allowed deformations are smooth non self-crossing deformations of the [[Knots|curve]] or [[Ribbons|ribbon]]
 ## Equivalence of Links
 Suppose that for each $1\leq i\leq n$ we have smooth maps:
 $$

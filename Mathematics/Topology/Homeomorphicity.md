@@ -1,6 +1,12 @@
 ## Definition
 Let $X,Y$ be [[Topology|topological]] spaces. A [[Functions|map]] $f:X\to Y$ is called a homeomorphism if $f$ is a [[Bijective Functions|bijection]], and $f^{-1}:Y\to X$ is [[Continuity|continuous]]
 If a homeomorphism between $X$ and $Y$ exists, we say that $X$ and $Y$ are homeomorphic, and write $X\approx Y$
+___
+Such a function can represent a mapping between two closed [[spacecurves|spacecurves]] $\underline{x}_{1}$ and $\underline{x}_{2}$, $f:\underline{x}_{1}\mapsto \underline{x}_{2}$
+Alternatively this could represent a mapping between two [[ribbons|ribbons]] $f:R_{1}\mapsto R_{2}$
+Both curves are restricted from crossing themselves as this would violate the continuity of $f^{-1}$
+___
+This is not sufficient to preserve the topological properties of the curves
 ## Example
 The interval $(0,1)$ is homeomorphic to $\mathbb{R}$, we can do this in two steps, $h(x)=\frac{1}{x}$ gives us a homeomorphism from $(0,1)\to(1,\infty)$, then $k(x)=\log(x-1)$ gets a homeomorphism from $(1,\infty)\to \mathbb{R}$
 ___
@@ -31,3 +37,7 @@ f^{-1}(Y\setminus U)=X\setminus f^{-1}(U)
 $$
 Which holds for any subset $U\subseteq Y$
 Many intereting sets can be written as pre-images via continuous maps
+## Example
+The set of $n\times m$ [[matrices|matrices]] $M_{n\times m}(\mathbb{R})$ with real entries can be identified with $\mathbb{R}^{mn}$, and therefore has a natural topology coming from this Eulclidean space
+The [[Determinants|determinant]] is a continuous function as it can be thought of as a polynomial in $n^{2}$ variables, thus the [[general linear group|general linear group]] $GL_{n}(\mathbb{R})$ is an open subset of $M_{n}(\mathbb{R})$ as it is the complement of the closed set $\det ^{-1}(\left\{ 0 \right\})$
+Also the special linear 
