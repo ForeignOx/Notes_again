@@ -26,3 +26,33 @@ From this we can dwar the following conclusions:
 - $e:I\to \mathbb{R}$ is in general not arclength parametrised
 - Since $e'(s)=0$ iff $\kappa'(s)=0$, the evolute is regular iff $\underline{\alpha}$ has no vertices and $e(s)$ is singular iff $\underline{\alpha}(s)$ is a vertex
 - If $e$ is regular, then its tangent vector $e'(s)$ is parallel to the unit normal vector $\underline{n}(s)$
+## Example
+Consider the ellipse $\underline{\alpha}:[0,2\pi]\to \mathbb{R}^{2}$ given by
+$$
+\underline{\alpha}(u)=(a\cos u,b\sin u)
+$$
+With $a,b>0$, we have $\underline{\alpha}'(u)=(-a\sin u,b\cos u)$,
+$$
+\lvert \lvert \underline{\alpha}'(u) \rvert \rvert =\sqrt{ a^{2}\sin ^{2}u +b^{2}\cos ^{2}u}
+$$
+And 
+$$
+\underline{n}(u)=\frac{1}{\lvert \lvert \underline{\alpha}'(u) \rvert \rvert }\underline{\alpha}'(u)\begin{pmatrix}
+0 & -1 \\
+1 & 0
+\end{pmatrix} 
+$$
+$$
+= \frac{1}{\sqrt{ a^{2}\sin ^{2}u+b^{2}\cos ^{2}u }}(-b\cos u,-a\sin u)
+$$
+Recall that the curvature of the ellipse is given by
+$$
+\kappa(u)=\frac{ab}{\lvert \lvert \underline{\alpha}' (u)\rvert \rvert ^{3}}
+$$
+So the evolute of $\underline{\alpha}$ is:
+$$
+e(u)=\underline{\alpha}(u)+\frac{1}{\kappa(u)} \underline{ n}(u) 
+$$
+$$
+= (a\cos u,b \sin u)+\frac{a^{2}\sin ^{2}u+b^{2}\cos ^{2}u}{ab}(-b\cos u,-a\sin u)
+$$
