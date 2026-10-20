@@ -59,3 +59,30 @@ So how does a fluid particle at $\underline{x}_{0}$ deform?
 - $\underline{\underline{E}}(\underline{x}_{0},t)\cdot\delta \underline{x}=\frac{1}{2}\begin{pmatrix}\delta y  \\ \delta x\end{pmatrix}$
 - $\underline{\underline{\Omega}}(\underline{x}_{0},t)\cdot\delta \underline{x}=\frac{1}{2}\begin{pmatrix}\delta y \\ -\delta x\end{pmatrix}$
 We can plot these:
+![[Pasted image 20261020103906.png]]Where does this rotation come from?
+Let's find these eigenvalues and eigenvectors:
+$$
+\det(\underline{\underline{E}}-\lambda \mathbb{1})=0 \implies \left| \begin{pmatrix}
+-\lambda &\frac{1}{2} \\
+\frac{1}{2} & -\lambda
+\end{pmatrix} \right|=0 
+$$
+$$
+\implies \lambda_{1,2}=\pm \frac{1}{2}
+$$
+So the normalised eigenvectors are:
+$$
+\underline{v}_{1}=\frac{1}{\sqrt{ 2 }}\begin{pmatrix}
+ 1 \\
+1
+\end{pmatrix},\underline{v}_{2}=\frac{1}{\sqrt{ 2 }}\begin{pmatrix}
+1 \\
+-1
+\end{pmatrix}
+$$
+Which are the principle axes we thought of. Positive eigenvalues stretch, negative eigenvalues compress
+The angular velocity, 
+$$
+\frac{1}{2}\underline{\omega}=\frac{1}{2}\underline{\nabla} \times \underline{u}=-\frac{1}{2} \underline{e}_{z}
+$$
+The place that the rotation comes from is actually the vorticity
