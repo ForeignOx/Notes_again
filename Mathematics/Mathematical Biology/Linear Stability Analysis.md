@@ -56,4 +56,13 @@ $$
 $$
     Such cases are more complex and suggest wwe have ignored some terms in the linearisation that we shouldn't have
 ## General Systems of First Order Autonomous ODEs
-    
+More generally we could consider a systems of $m$ ODEs in $m$ functions $x^{1}(t),\dots,x^{m}(t)$:
+$$
+F^{1}\left( x^{1}(t),\frac{d x^{1}}{dt} ,\dots,\dots,x^{m}(t),\frac{d x^{m}}{dt} ,\dots,\frac{d ^{n}x^{m}}{dt^{n}}  \right)=0 
+$$
+$$
+ \vdots
+$$
+$$
+ F^{m}\left( x^{1}(t),\frac{d x^{1}}{dt} ,\dots,\dots,x^{m}(t),\frac{d x^{m}}{dt} ,\dots,\frac{d ^{n}x^{m}}{dt^{n}}  \right)=0 
+$$

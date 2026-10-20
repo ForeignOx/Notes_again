@@ -62,3 +62,44 @@ So $(0,0)$ and $(1,1)$ are the two equilibria. The first represents extinction, 
 ![[Pasted image 20261013132258.png]]
 ___
 Can a species die out? Can a population ever settle??
+## [[Linear Stability Analysis|Linear Stability Analysis]] for Lotka-Volterra
+We have found the equilibria $(x_{0},y_{0})=(0,0)$ and $(1,1)$
+Now we Linearise the system:
+$$
+x=x_{0}+\varepsilon x_{1},y=y_{0}+\varepsilon y_{1}
+$$
+Then
+$$
+F(x,y)\to \underbrace{ F(x_{0},y_{0}) }_{ =0 }+\varepsilon x_{1}\frac{ \partial F }{ \partial x } (x_{0},y_{0})+\varepsilon y_{1}\frac{ \partial F }{ \partial y } (x_{0},y_{0})
+$$
+$$
+\implies \begin{cases}
+\frac{d x_{1}}{dt} -F_{x}x_{1}-F_{y}y_{1}=0 \\
+\frac{d y_{1}}{dt} -G_{x}x_{1}-G_{y}y_{1}
+\end{cases}
+$$
+Which we can write as a matrix equation:
+$$
+\frac{d }{dt} \begin{pmatrix}
+x_{1} \\
+y_{1} 
+\end{pmatrix}=\begin{pmatrix}
+F_{x} & F_{y} \\
+G_{x} & G_{y}
+\end{pmatrix}\begin{pmatrix}
+x_{1} \\
+y_{1}
+\end{pmatrix}
+$$
+$$
+\frac{d \underline{x}_{1}}{dt} =\underline{\underline{J}}\underline{x}_{1}
+$$
+Where $\underline{\underline{J}}$ is the [[Jacobian Transformation|Jacobian]]
+For Lotka-Volterra, this is
+$$
+\underline{\underline{J}}=\begin{pmatrix}
+1-y_{0} & -x_{0} \\
+\gamma y_{0} & ~g(x_{0}-1)
+\end{pmatrix}
+$$
+Then we solve the linearised system, i
