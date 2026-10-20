@@ -233,7 +233,7 @@ We say that $f$ is continuous if for every open set $U\subset Y$, the preimage $
 $f$ is continuous iff $f$ is continuous at every $x\in X$
 A function that is continuous is also called a map
 ## Example
-Let $X$ be a topological space and $A\subseteq X$, the inclusion $i:A\to X$ i continuous provided we give $A$ the subspace topology (which is the standard thing t do), this is
+Let $X$ be a topological space and $A\subseteq X$, the inclusion $i:A\to X$ is continuous provided we give $A$ the subspace topology (which is the standard thing t do), this is
 $$
 i^{-1}(U)=U\cap A
 $$
