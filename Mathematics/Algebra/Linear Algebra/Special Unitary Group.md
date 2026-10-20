@@ -7,7 +7,7 @@ SU(1)=\left\{ P\in U(1)|\det(P)=1 \right\}=\left\{ \begin{pmatrix}
 1
 \end{pmatrix} \right\}
 $$
-Is a trivial case and [[Special Orthogonal Group|$SU(1)=SO(1)$]]
+Is a trivial case and [[Special Linear Group|$SU(1)=SO(1)$]]
 $$
 SU(2)=\left\{M= \begin{pmatrix}
 a & b\\c & d 

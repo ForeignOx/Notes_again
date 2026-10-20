@@ -40,4 +40,4 @@ Many intereting sets can be written as pre-images via continuous maps
 ## Example
 The set of $n\times m$ [[matrices|matrices]] $M_{n\times m}(\mathbb{R})$ with real entries can be identified with $\mathbb{R}^{mn}$, and therefore has a natural topology coming from this Eulclidean space
 The [[Determinants|determinant]] is a continuous function as it can be thought of as a polynomial in $n^{2}$ variables, thus the [[general linear group|general linear group]] $GL_{n}(\mathbb{R})$ is an open subset of $M_{n}(\mathbb{R})$ as it is the complement of the closed set $\det ^{-1}(\left\{ 0 \right\})$
-Also the special linear 
+Also the [[Special linear Group|special linear group]] 

@@ -11,7 +11,7 @@ A rigid rotation is given by
 $$
 \underline{y}(t)=R\underline{x}(t)
 $$
- with [[Special Orthogonal Group|$R\in SO(3)$]] is a constant rotation matrix, and where $R^{\top} R=I_{3}$
+ with [[Special Linear Group|$R\in SO(3)$]] is a constant rotation matrix, and where $R^{\top} R=I_{3}$
  Differentiating twice gives $\ddot{\underline{y}}=R\ddot{\underline{x}}$ so Newton's llaw holds in the rotated frame as
  $$
  m\underline{\ddot{y}}(t)=\underline{F}',\underline{F}'=R\underline{F}

@@ -11,7 +11,7 @@ $$
 - preserve orientation
 So if [[Orthogonal Group|$M\in O(n)$]], $\det(M)=\pm 1$. When $\det(M)=1$, $M$ is a "pure" reflection, if $\det(M)=-1$, then $M$ also contains a reflection
 ### Rotations
-Rotations have $\det(M)=1$, so correspond to the [[Special Orthogonal Group|$SO(n)$]]
+Rotations have $\det(M)=1$, so correspond to the [[Special Linear Group|$SO(n)$]]
 - $SO(2)$ is [[Abelian Groups|abelian]] and infinite-dimenstional
 - $SO(3)$ is non-abelian
 We find that [[Cyclic Groups|cyclic groups]] are actually finite subgroups of $SO(2)$. They are the clockwise rotation by $\frac{2\pi}{n}j$ for $j=0,1,\dots,n-1$, so
