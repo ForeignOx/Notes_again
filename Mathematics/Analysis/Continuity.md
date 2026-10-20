@@ -230,7 +230,8 @@ On the other hand the identity function is not continuous. To see this, let $a\i
 ## Definition
 Let $X$ and $Y$ be topological spaces and $f:X\to Y$ a function. Let $x\in X$, we say that $f$ is continuous at $x$, if for every open subset $U\subseteq Y$ with $f(x)\in U$, there is an open set $V\subseteq X$ containing $x$ such that $f(V)\subseteq U$
 We say that $f$ is continuous if for every open set $U\subset Y$, the preimage $f^{-1}(U)$ is open in $X$
-$f$ is continuous iff $f$ i constant at every $x\in X$
+$f$ is continuous iff $f$ is continuous at every $x\in X$
+A function that is continuous is also called a map
 ## Example
 Let $X$ be a topological space and $A\subseteq X$, the inclusion $i:A\to X$ i continuous provided we give $A$ the subspace topology (which is the standard thing t do), this is
 $$
