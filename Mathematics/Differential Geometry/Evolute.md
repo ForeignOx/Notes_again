@@ -54,5 +54,17 @@ $$
 e(u)=\underline{\alpha}(u)+\frac{1}{\kappa(u)} \underline{ n}(u) 
 $$
 $$
-= (a\cos u,b \sin u)+\frac{a^{2}\sin ^{2}u+b^{2}\cos ^{2}u}{ab}(-b\cos u,-a\sin u)
+= (a\cos u,b \sin u)+\frac{a^{2}\sin ^{2}u+b^{2}\cos ^{2}u}{ab}(-b\cos u,-a\sin u) 
 $$
+$$
+= (a^{2}-b^{2})\left( \frac{1}{a}\cos ^{3}u,-\frac{1}{b}\sin ^{3}u \right)
+$$
+This curve is called an astroid
+```desmos-graph
+a=3
+b=2
+(a*\cos(t*(2*\pi)),b*\sin(t*(2*\pi)))
+(5/3*(\cos(2*\pi*t))^3,-5/2*(\sin(2*\pi*t))^3)
+```
+
+
