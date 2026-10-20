@@ -9,3 +9,24 @@ $$
 $$
 Is called an involute of $\underline{\alpha}$
 Note that we have $\underline{\beta}(u_{0})=\underline{\alpha}(u_{0})$ and that the definition of the curve $\underline{\beta}$ depend on the choice of $u_{0}\in I$
+## Example
+Consider the catenary
+$$
+\underline{\alpha}(u)=(u,\cosh u)
+$$
+$$
+\underline{\alpha}'(u)=(1,\sinh(u))
+$$
+$$
+ \lvert \lvert \underline{\alpha}'(u) \rvert \rvert =\cosh(u)
+$$
+$$
+\ell(u)=\int_{0}^{u_{0}} \cosh t \, dt=\sinh(u) 
+$$
+$$
+\underline{t}(u)=(\mathrm{sech}(u),\tanh(u))
+$$
+So
+$$
+\underline{\beta}(u)=\underline{\alpha}(u)-\ell(u)\underline{t}(u)=
+$$
