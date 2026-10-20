@@ -102,4 +102,4 @@ $$
 \gamma y_{0} & ~g(x_{0}-1)
 \end{pmatrix}
 $$
-Then we solve the linearised system, i
+Then we solve the linearised system, intuitively, we should be getting exponentials, so solutions of the form $e^{ \lambda t }$, and in fact these $\lambda$'s will be the eigenvalues of $\underline{\underline{J}}$
