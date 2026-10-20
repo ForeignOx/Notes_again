@@ -19,4 +19,15 @@ Is not; there are sets $U\subseteq \mathbb{R}^{n}$ open with the discrete topolo
 ## Lemma
 Let $X,Y,Z$ be topological spaces, and $f:X\to Y$, $g:Y\to Z$ be maps, then $g\circ f:X\to Z$ is a map
 ### Proof
-Let $U\subseteq Z$ be open. Then $(g\circ f)^{-1}(U)=f^{-1}(g^{-1}(U))$, which is an ope
+Let $U\subseteq Z$ be open. Then $(g\circ f)^{-1}(U)=f^{-1}(g^{-1}(U))$, which is an open set, as $f$ and $g$ are continuous
+___
+We can also check continuity using closed sets
+## Lemma
+Let $X,Y$ be topological spaces and $f:X\to Y$ a function. Then $f$ is continuous iff $f^{-1}(A)$ is closed in $X$ for every closed $A\subseteq Y$
+### Proof
+This simply follows from the equality:
+$$
+f^{-1}(Y\setminus U)=X\setminus f^{-1}(U)
+$$
+Which holds for any subset $U\subseteq Y$
+Many intereting sets can be written as pre-images via continuous maps
