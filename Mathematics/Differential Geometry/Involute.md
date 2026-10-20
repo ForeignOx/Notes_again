@@ -28,5 +28,5 @@ $$
 $$
 So
 $$
-\underline{\beta}(u)=\underline{\alpha}(u)-\ell(u)\underline{t}(u)=
+\underline{\beta}(u)=\underline{\alpha}(u)-\ell(u)\underline{t}(u)=(u-\tanh u,\mathrm{sech}(u))
 $$

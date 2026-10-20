@@ -152,4 +152,10 @@ $$
 Geometrically, we can think of the pair $\underline{t}(s), \underline{n} (s)$ as being a frame of two orthornormal basis vectors moving along the plane curve $\underline{\alpha}(s)$ and the above lemma descrive the relation between these two moving vectors
 ___
 The orthonormal frame $\underline{t}(u), \underline{n}(u)$ along $\underline{\alpha}(u)$ exists also for smooth regular plane curves which are not unit speed, however, in this case, the frame equations above do not hold without taking the speed of the curve into account
-___
+## Spacecuves
+Let $\underline{\alpha}:I\to \mathbb{R}^{3}$ be a smooth unit speed spacecurve and $\underline{t}(s)=\underline{\alpha}'(s)$ be its unit tangent vector. The curvature of $\underline{\alpha}$ at $\underline{\alpha}(s)$ is thus defined as:
+$$
+\kappa(s)=\lvert \lvert \underline{t}'(s) \rvert \rvert =\lvert \lvert \underline{\alpha}''(s) \rvert \rvert 
+$$
+### Remark
+Since any plane curve $\underline{\alpha}:I\to \mathbb{R}^{2}$ can be viewed as a spacecurve $\underline{\tilde{\alpha}}(u)=(x(u),y(u),0)$, it is natural to consider the relation between these? and it turns out we have $\kappa_{\underline{\tilde{a}}}=\left| \kappa_{\underline{a}} \right|$ 

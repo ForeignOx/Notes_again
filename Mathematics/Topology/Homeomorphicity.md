@@ -2,7 +2,7 @@
 Let $X,Y$ be [[Topology|topological]] spaces. A [[Functions|map]] $f:X\to Y$ is called a homeomorphism if $f$ is a [[Bijective Functions|bijection]], and $f^{-1}:Y\to X$ is [[Continuity|continuous]]
 If a homeomorphism between $X$ and $Y$ exists, we say that $X$ and $Y$ are homeomorphic, and write $X\approx Y$
 ___
-Such a function can represent a mapping between two closed [[spacecurves|spacecurves]] $\underline{x}_{1}$ and $\underline{x}_{2}$, $f:\underline{x}_{1}\mapsto \underline{x}_{2}$
+Such a function can represent a mapping between two closed [[Spacecurves|spacecurves]] $\underline{x}_{1}$ and $\underline{x}_{2}$, $f:\underline{x}_{1}\mapsto \underline{x}_{2}$
 Alternatively this could represent a mapping between two [[ribbons|ribbons]] $f:R_{1}\mapsto R_{2}$
 Both curves are restricted from crossing themselves as this would violate the continuity of $f^{-1}$
 ___
