@@ -25,5 +25,7 @@ so the fluid particles are rotating but the fluid is actually translating
 ___
 Next consider $\underline{u}=\frac{k}{r}\underline{e}_{\theta}$ which has a singularity at the origin, things rotating near the origin go faster whereas the further from the origin, the slower they rotate
 $$
-\underline{\omega}(\underline{x})=\underline{\nabla} \times \underline{u} =
+\underline{\omega}(\underline{x})=\underline{\nabla} \times \underline{u} =\underline{0}
 $$
+So the vorticity is $0$ away from $r=0$, so the vorticity must just be generated at $r=0$, the fluid is rotating, but not the fluid particles this is curious
+This is apparently a decent model for tornadoes
