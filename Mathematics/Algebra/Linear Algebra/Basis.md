@@ -1,13 +1,24 @@
 # Topological Spaces
 ## Definition
-Let $X$ be a topological space. A basis for the topology of $X$ is a collection $\mathcal{B}$ of open sets such that every open sset of $X$ is the union of elements in $\mathcal{B}$ 
+Let $X$ be a topological space. A basis for the topology of $X$ is a collection $\mathcal{B}$ of open sets such that every open set of $X$ is the union of elements in $\mathcal{B}$ 
 ## Example#
 For a metric space $M$, the sets $B(x;r)$ where $x$ ranges over the points of $M$ and $r>0$ form a basis of the topology $\mathcal{T}_{d}$ of the metric space $M$
 ## Lemma
 Let $X,Y$ be topological spaces, and $\mathcal{B}$ a basis for $Y$. A function $f:X\to Y$ is continuous iff $\forall U\in \mathcal{B}$ we have that $f^{-1}(U)$ is open in $X$
 ### Proof
 If $f$ is continuous, we have $f^{-1}(U)$ is open in $X$ for all open $U\subseteq Y$, irrespective of whether $U\in\mathcal{B}$
-Now assume that $f^{-1}(U)$ is open for all $U\in \mathcal{B}$. Any open 
+Now assume that $f^{-1}(U)$ is open for all $U\in \mathcal{B}$. Any open set $V\subseteq Y$ can be written as 
+$$
+V=\bigcup_{i\in I}U_{i}\text{ with }U_{i}\in  \mathcal{B}
+$$
+
+And since
+$$
+f^{-1}(V)=\bigcup_{i\in I}f^{-1}(U_{i})
+$$
+We get $f^{-1}(V)$ is open in $X$
+### Example
+$\mathbb{R}^{n}$ with standard topology has a countable basis; look at the open balls: $B\left( q; \frac{1}{m} \right)$ where $q\in\mathbb{Q}^{n},m\in\mathbb{N}$
 # Vectorspaces
 ## Definition
 A basis for a [[Vectorspaces|vectorspace]] $V$ is a finite [[Sets|set]] of [[Vectors|vectors]]:
