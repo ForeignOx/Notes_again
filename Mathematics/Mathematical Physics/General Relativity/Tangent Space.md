@@ -22,3 +22,20 @@ So we can view the directional derivative $V=\frac{d }{d\lambda}$ as a coordinat
 The $V^{\mu}=\frac{d x^{\mu}}{d\lambda}$ are now the components of the vector $V$;
 The set of partial derivatives $\left\{ \partial_{\mu} \right\}=\left\{ \frac{ \partial  }{ \partial x^{0} },\frac{ \partial  }{ \partial x^{1} },\frac{ \partial  }{ \partial x^{2} },\dots \right\}$ are the corresponding basis vectors
 Thus $V=V^{\mu}\partial_{\mu}$ is a coordinate independent vector, but our basis vectors are still coordinate dependent
+The space of directional derivative operators along curves through $p \in M$ forms a vectorspace which is the tangent space $T_{p}$
+These satisfy vectorspace axioms, if $V=\frac{d }{d\lambda},W=\frac{d }{d\rho}$, then
+$$
+aV+bW=a\frac{d }{d\lambda} +b\frac{d }{d \rho} =(aV^{\mu}+bW^{\mu})\frac{ \partial  }{ \partial x^{\mu} } 
+$$
+$$
+(aV+bW)(f)=aV(f)+bW(f)
+$$
+Mathematically, a vector is a linear map from the space of smooth functions on $M$ to $\mathbb{R}$
+Leibniz also holds:
+$$
+(aV+bW)(fg)=(aV+bW)(f)+(aV+bW)(g)
+$$
+Note the vectors on $M$ do not live in $M$
+Rather, all the vectors at some point $p \in M$ live in the tangent space $T_{p}$ 
+This is a specific vectorspace associated with the point $p$
+The tangent spaces $t_{p}$ and $T_{q}$
