@@ -1,4 +1,16 @@
-z*A* basis for a [[Vectorspaces|vectorspace]] $V$ is a finite [[Sets|set]] of [[Vectors|vectors]]:
+# Topological Spaces
+## Definition
+Let $X$ be a topological space. A basis for the topology of $X$ is a collection $\mathcal{B}$ of open sets such that every open sset of $X$ is the union of elements in $\mathcal{B}$ 
+## Example#
+For a metric space $M$, the sets $B(x;r)$ where $x$ ranges over the points of $M$ and $r>0$ form a basis of the topology $\mathcal{T}_{d}$ of the metric space $M$
+## Lemma
+Let $X,Y$ be topological spaces, and $\mathcal{B}$ a basis for $Y$. A function $f:X\to Y$ is continuous iff $\forall U\in \mathcal{B}$ we have that $f^{-1}(U)$ is open in $X$
+### Proof
+If $f$ is continuous, we have $f^{-1}(U)$ is open in $X$ for all open $U\subseteq Y$, irrespective of whether $U\in\mathcal{B}$
+Now assume that $f^{-1}(U)$ is open for all $U\in \mathcal{B}$. Any open 
+# Vectorspaces
+## Definition
+A basis for a [[Vectorspaces|vectorspace]] $V$ is a finite [[Sets|set]] of [[Vectors|vectors]]:
 $$
 \{ \underline{v}_{1},\underline{v}_{2},\dots,\underline{v}_{n} \}\subseteq V
 $$
