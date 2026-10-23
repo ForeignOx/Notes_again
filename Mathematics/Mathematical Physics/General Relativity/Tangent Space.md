@@ -5,3 +5,5 @@ $$
 w_{\mu}V^{\mu}=\frac{ \partial f }{ \partial x^{\mu} } \frac{d x^{\mu}}{d\lambda} =\frac{d f}{d\lambda} 
 $$
 Which is the change in $f$ along a curve
+____
+Say we have a coordinate chart $\varphi:M\to \mathbb{R}^{n},p\mapsto x^{\mu}(p)$, a parametrised curve $\gamma:\mathbb{R}\to M$
