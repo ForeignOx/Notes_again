@@ -17,4 +17,9 @@ $$
 P(a)=\left| \braket{ a | \psi }  \right| ^{2}
 $$
 ## Principle 4: Collapse
-> Immediately after the measurement gives the result $a$, the state collapses to the normalised projection onto the 
+> Immediately after the measurement gives the result $a$, the state collapses to the normalised projection of $\ket{\psi}$ onto the eigenspace of $a$:
+$$
+\ket{\psi'} =\frac{\hat{P}_{a}\ket{\psi} }{\sqrt{ \bra{\psi} \hat{P}_{a}\ket{\psi} }}
+$$
+> In particular, $\ket{\psi'}$ is an eigenvector of $\hat{A}$ with measured eigenvalue: $\hat{A}\ket{\psi'}=a\ket{\psi'}$
+
