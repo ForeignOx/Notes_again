@@ -14,4 +14,4 @@ $$
 \overline{A}=A\cup \left\{ a\in  X s:\middle|:a\text{ is a limit point of }A\right\}
 $$
 ### Proof
-Let $x\in \overline{A},$ we need to show that $\times \in A$ or $x$ is a limit pointof $A$, so assume $x\not\in X\setminus N$, but $$
+Let $x\in \overline{A},$ we need to show that $x \in A$ or $x$ is a limit point of $A$, so assume $x\not\in X\setminus N$, so assume
