@@ -21,5 +21,14 @@ $$
 $$
 \ket{\psi'} =\frac{\hat{P}_{a}\ket{\psi} }{\sqrt{ \bra{\psi} \hat{P}_{a}\ket{\psi} }}
 $$
-> In particular, $\ket{\psi'}$ is an eigenvector of $\hat{A}$ with measured eigenvalue: $\hat{A}\ket{\psi'}=a\ket{\psi'}$
-
+> In particular, $\ket{\psi'}$ is an eigenvector of $\hat{A}$ with measured eigenvalue: $\hat{A}\ket{\psi'}=a\ket{\psi'}$, and if $a$ is non-degenerate, this simplifies to
+$$
+\ket{\psi'} =\ket{a} 
+$$
+## Consequences
+- The probabilities add up to one:
+$$
+\sum_{a}P(a)=\bra{\psi}  \sum_{a}\hat{P}_{a}\ket{\psi} =\braket{ \psi | \psi } =1
+$$
+    Using $\sum_{a}\hat{P}_{a}=\mathbb{1}$, this is why states are normalised
+- $P(a)=\bra{\psi}\hat{P}_{a}\ket{\psi}=\bra{\psi}\hat{P}_{a}^{\dagger}\hat{P}$
