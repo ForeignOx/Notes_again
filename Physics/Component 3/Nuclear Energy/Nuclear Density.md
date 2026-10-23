@@ -6,7 +6,7 @@ Assuming the nucleus is spherical, we have a volume:
 $$
 V=\frac{4}{3}\pi r^{3}
 $$
-Using the equation for [[Density]],
+Using the equation for [[Gitt/Physics/Component 1/Basic Physics/Density]],
 $$
 \rho=\frac{M}{V}=\frac{Am}{\frac{4}{3}\pi r^{3}}
 $$

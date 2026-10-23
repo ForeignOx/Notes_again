@@ -1,5 +1,5 @@
 The key assumption of fluid mechanics is that fluid behaves like a continuum. A continuum is effectively a substance that we can take arbitrarily small volumes of, without changing its properties. Our fluid continuum will be describe by two properties or fields:
-- [[Density|density]] $\rho(\underline{x},t)$
+- [[Gitt/Physics/Component 1/Basic Physics/Density|density]] $\rho(\underline{x},t)$
 - [[velocity|velocity]] $\underline{u}(\underline{x},t)$
 Given that density is mass per unit volume, what does it mean to define density $\rho$ at a point? The key is that the continuum hypothesis allows us to say
 $$

@@ -11,7 +11,7 @@ $$
 I=I_{0}e^{ -\mu x }
 $$
 Where $\mu$ is the fraction penetrating per unit distance and $x$ is the distance travelled
-## Importance of [[Density]]
+## Importance of [[Gitt/Physics/Component 1/Basic Physics/Density]]
 Most of the mass of a material is in the nuclei, so the denser the material, the more protons and neutrons there are. The numbers of protons and electrons are the same. Comparing a gas to a solid, there are a lot fewer electrons, and it is these which absorb the radiation. Comparing solids of different elements, atoms are all more or less the same size. As we increase the atomic number, the more the inner electron shells are pulled towards the nucleus, but the radius is hardly changed. This means that the concentration of electrons increases with density
 
 #Physics #Radiation 

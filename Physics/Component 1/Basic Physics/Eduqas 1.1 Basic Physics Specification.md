@@ -13,7 +13,7 @@ There are opportunities within this topic for learners to carry out experimental
 - the difference between [[Scalar Quantities|scalar]] and [[Vectors|vector]] quantities and to give examples of each – displacement, velocity, acceleration, force, speed, time, density, pressure etc
 - the addition and subtraction of coplanar [[Vectors|vectors]], and perform mathematical calculations limited to [[Components of vectors|two perpendicular vectors]]
 - [[Components of vectors|how to resolve a vector into two perpendicular components]]
-- the concept of [[Density]] and how to use the equation $\rho=\frac{m}{V}$ to calculate mass, density and volume
+- the concept of [[Gitt/Physics/Component 1/Basic Physics/Density]] and how to use the equation $\rho=\frac{m}{V}$ to calculate mass, density and volume
 - [[Moments|what is meant by the turning effect of a force]]
 - [[Principle of Moments|the use of the principle of moments]]
 - [[Git?/Physics/Component 1/Basic Physics/Centres of Mass|the use of centre of gravity, for example in problems including stability: identify its position in a cylinder, sphere and cuboid (beam) of uniform density]]
