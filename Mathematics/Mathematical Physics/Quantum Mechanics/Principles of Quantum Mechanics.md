@@ -40,3 +40,11 @@ $$
 $$
 - $\ket{\psi'}$ is normalised; dividing by $\sqrt{ \mathbb{P}(a) }=\lvert \lvert \hat{P}_{a}\ket{\psi} \rvert \rvert$ makes it length 1
 - An overall phase has no physical effect. For real $\alpha$, the states $\ket{\psi}$ and $e^{ i\alpha }\ket{\psi}$ give the same probabilities for every meassurement, since $\bra{\psi}e^{ -i\alpha }\hat{P}_{a}e^{ i\alpha }\ket{\psi}=\bra{\psi}\hat{P}_{a}\ket{\psi}$ and after a measurement they collapse to states that again differ by only the factor $e^{ i\alpha }$, so they describe the same physical state and we are free to multiply by any state or any eigenvector, by a phase
+## Expectation
+If we prepare many copies of the state $\ket{\psi}$, the average result of a measurement $A$ called expectation value:
+$$
+\left< \hat{A} \right> =\sum_{a}a\mathbb{P}(a)=\sum_{a}a\bra{\psi} \hat{P}_{a}\ket{\psi} 
+$$
+$$
+= \bra{\psi} \sum_{a}\hat{P}_{a}\ket{\psi}=\bra{\psi} \hat{A}\ket{\psi}  
+$$
