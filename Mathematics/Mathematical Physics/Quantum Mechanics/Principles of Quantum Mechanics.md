@@ -10,7 +10,7 @@ Notes:
 ## Principle 3: The Born Rule
 > If the system is in state $\ket{\psi}$ and the observable $A$ i measured, the probability of obtaining the result $a$ is:
 $$
-P(a)=\bra{\psi} \hat{P}_{a}\ket{\psi} 
+\mathbb{P}(a)=\bra{\psi} \hat{P}_{a}\ket{\psi} 
 $$
 > Where $\hat{P}_{a}$ is the projector onto the eigenspace of $a$. If $a$ is non-degenerate, with normalised eigenvector $\ket{a}$, this is
 $$
@@ -28,7 +28,10 @@ $$
 ## Consequences
 - The probabilities add up to one:
 $$
-\sum_{a}P(a)=\bra{\psi}  \sum_{a}\hat{P}_{a}\ket{\psi} =\braket{ \psi | \psi } =1
+\sum_{a}\mathbb{P}(a)=\bra{\psi}  \sum_{a}\hat{P}_{a}\ket{\psi} =\braket{ \psi | \psi } =1
 $$
     Using $\sum_{a}\hat{P}_{a}=\mathbb{1}$, this is why states are normalised
-- $P(a)=\bra{\psi}\hat{P}_{a}\ket{\psi}=\bra{\psi}\hat{P}_{a}^{\dagger}\hat{P}$
+- $\mathbb{P}(a)=\bra{\psi}\hat{P}_{a}\ket{\psi}=\bra{\psi}\hat{P}_{a}^{\dagger}\hat{P}_{a}\ket{\psi}=\lvert \lvert \hat{P}_{a}\ket{\psi} \rvert \rvert ^{2}$ is the squared length of the projection of $\psi$ onto the eigenspace, so $0\leq \mathbb{P}(a)\leq 1$
+![[Pasted image 20261023092528.png]]
+- If the eigenspace has an orthonormal basis $\ket{a,1},\dots,\ket{a,d}$, then $\hat{P}_{a}=\sum_{k}\ket{a,k}\bra{a,k}$ and $\mathbb{P}(a)=\sum_{k}\left| \braket{ a,k | \psi } \right|^{2}$
+- Repeating measurement gives the ssame result: Since $\hat{A}\ket{\psi'}=a\ket{\psi'}$
