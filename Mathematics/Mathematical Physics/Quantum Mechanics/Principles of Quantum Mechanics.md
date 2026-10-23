@@ -34,4 +34,9 @@ $$
 - $\mathbb{P}(a)=\bra{\psi}\hat{P}_{a}\ket{\psi}=\bra{\psi}\hat{P}_{a}^{\dagger}\hat{P}_{a}\ket{\psi}=\lvert \lvert \hat{P}_{a}\ket{\psi} \rvert \rvert ^{2}$ is the squared length of the projection of $\psi$ onto the eigenspace, so $0\leq \mathbb{P}(a)\leq 1$
 ![[Pasted image 20261023092528.png]]
 - If the eigenspace has an orthonormal basis $\ket{a,1},\dots,\ket{a,d}$, then $\hat{P}_{a}=\sum_{k}\ket{a,k}\bra{a,k}$ and $\mathbb{P}(a)=\sum_{k}\left| \braket{ a,k | \psi } \right|^{2}$
-- Repeating measurement gives the ssame result: Since $\hat{A}\ket{\psi'}=a\ket{\psi'}$
+- Repeating measurement gives the ssame result: Since $\hat{A}\ket{\psi'}=a\ket{\psi'}$ and $\ket{\psi'}$ lies in the eigenspace of $a$, so $\hat{P}_{a}\ket{\psi'}=\ket{\psi'}$ and measusring $A$ again gives $a$ with probability
+$$
+\bra{\psi'}  \hat{P}_{a}\ket{\psi'} =\frac{\bra{\psi} \hat{P}_{a}^{\dagger}\hat{P}_{a}\hat{P}_{a}\ket{\psi} }{\bra{\psi} \hat{P}_{a}\ket{\psi} }=1
+$$
+- $\ket{\psi'}$ is normalised; dividing by $\sqrt{ \mathbb{P}(a) }=\lvert \lvert \hat{P}_{a}\ket{\psi} \rvert \rvert$ makes it length 1
+- An overall phase has no physical effect. For real $\alpha$, the states $\ket{\psi}$ and $e^{ i\alpha }\ket{\psi}$ give the same probabilities for every meassurement, since $\bra{\psi}e^{ -i\alpha }\hat{P}_{a}e^{ i\alpha }\ket{\psi}=\bra{\psi}\hat{P}_{a}\ket{\psi}$ and after a measurement they collapse to states that again differ by only the factor $e^{ i\alpha }$, so they describe the same physical state and we are free to multiply by any state or any eigenvector, by a phase
