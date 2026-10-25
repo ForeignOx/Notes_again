@@ -17,7 +17,7 @@ $$
 \frac{d x}{dt} =1,~x(\tau)=a
 $$
 $$
-\frac{d x}{dt} =t~y(\tau)=b
+\frac{d y}{dt} =t~y(\tau)=b
 $$
 Integrating, then fixing $t=t_{0}$, gives
 $$
