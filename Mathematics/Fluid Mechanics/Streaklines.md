@@ -1,7 +1,7 @@
 A streakline is a curve made up of all fluid elements that have passed through a given point in the past, it's a snapshot at a given time
 Conider smoke from a chimney where the wind initially blows west and later shifts to the east, then the streakline is the trail of the smoke. But the smoke particles emitted at the beginning, middle and end of the story, the particle paths do not always coincide with the streakline:
 ![[Pasted image 20261006151308.png]]
-To determine a streakline at a particular time, we need to find the particles that previously passed through, or were released from, some iven point, $\underline{a}$. That's the same problem as finding [[Particle Paths|particle paths]], but with different initial condition. If we name the release time $\tau$, we have to solve;
+To determine a streakline at a particular time, we need to find the particles that previously passed through, or were released from, some given point, $\underline{a}$. That's the same problem as finding [[Particle Paths|particle paths]], but with different initial condition. If we name the release time $\tau$, we have to solve;
 $$
 \frac{d \underline{x}}{dt} =\underline{u}(\underline{x},t),~\underline{x}(\tau)=\underline{a}
 $$
