@@ -3,7 +3,7 @@ A streamline is a line parallel to the velocity vector $\underline{u}(\underline
 $$
 \frac{d \underline{x}}{ds} =\underline{u}(\underline{x}(s),t_{0})
 $$
-So the main difference is that $\underline{x}$ is a function oof $s$ and not $t$ with initial condition $\underline{x}(0)=\underline{x}_{0}$
+So the main difference is that $\underline{x}$ is a function of $s$ and not $t$ with initial condition $\underline{x}(0)=\underline{x}_{0}$
 ## Example
 Find the streamlines at $t=t_{0}$ of the velocity field:
 $$
