@@ -4,7 +4,7 @@ Let $\underline{\alpha}:I\to \mathbb{R}^{3}$ be a [[Smooth Functions|smooth]] [[
 $$
 \underline{n}(s)=\frac{1}{\kappa(s)} \underline{t}'(s)\in \mathbb{R}^{3}
 $$
-We then define the binormal vector $\underline{b}:I\to \mathbb{R}^{3}$ by $\underline{b}(s)=\underline{t}(s)\times   \underline{n}(s)$, we call the ordered orthonormal basis $(\underline{t}(s), \underline{n}(s), \underline{b}(s))$ the freten frame of $\underline{\alpha}$ at $\underline{\alpha}(s)$
+We then define the binormal vector $\underline{b}:I\to \mathbb{R}^{3}$ by $\underline{b}(s)=\underline{t}(s)\times   \underline{n}(s)$, we call the ordered orthonormal basis $(\underline{t}(s), \underline{n}(s), \underline{b}(s))$ the frenet frame of $\underline{\alpha}$ at $\underline{\alpha}(s)$
 
 
 
