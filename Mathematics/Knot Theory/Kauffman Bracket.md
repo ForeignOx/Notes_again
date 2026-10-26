@@ -18,4 +18,5 @@ And
 ### Proof
 Note that by applying the third rule repeatedly we arribe at a crossingless diagram and then can use the first and second rules to determine their bracket polynomials
 We need to check that the bracket polynomial satisfies all of these as they are both unique objects
-The first is trivially satisfied
+The first is trivially satisfied, for the second we note that adding a crossingless loop to $D$ increases $b(S)$ by 1 for each state of $D$, so that's fine
+For the final one, it is a bit wackier but you can just trust me tbh
