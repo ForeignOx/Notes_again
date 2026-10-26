@@ -96,7 +96,7 @@ $$
 \end{pmatrix}
 $$
 $$
- \hat{P}_{0}=\ket{a_{3}} \bra{a_{3}}\begin{pmatrix}
+ \hat{P}_{0}=\ket{a_{3}} \bra{a_{3}}=\begin{pmatrix}
 0 & 0 & 0 \\
 0 & \frac{1}{2} & \frac{i}{2} \\
 0 & -\frac{i}{2} & \frac{1}{2}
