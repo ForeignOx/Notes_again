@@ -119,5 +119,6 @@ $$
 \mathbb{P}(2)=\lvert \lvert \hat{P}_{2}\ket{\psi}  \rvert \rvert ^{2}=\frac{1}{2}\left( 1+\left( \frac{1}{2} \right)^{2}+\left( \frac{1}{2} \right)^{2} \right)=\frac{3}{4}
 $$
 $$
-\mathbb{P}(0)=\lvert \lvert \hat{P} \rvert \rvert 
+\mathbb{P}(0)=\lvert \lvert \hat{P}_{0}\ket{\psi}  \rvert \rvert ^{2}=\frac{1}{2}\left( 0^{2}+\left( \frac{1}{2} \right)^{2}+\left( \frac{1}{2} \right)^{2} \right)=\frac{1}{4}
 $$
+This is good as the probabilities add to 1
