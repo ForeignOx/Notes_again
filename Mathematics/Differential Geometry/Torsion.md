@@ -42,16 +42,6 @@ $$
 = \underline{t}_{\underline{\alpha}}(u)\times \left( \frac{1}{\lvert \lvert \underline{t}'_{\underline{\alpha}}(u) \rvert \rvert } \left( \frac{\underline{\alpha}'}{\lvert \lvert \underline{\alpha} \rvert \rvert } \right)'\underline{\alpha}' \right)
 $$
 
-=]
-
-
-
-
-
-
-
-
-
 
 
 
