@@ -48,3 +48,76 @@ $$
 $$
 = \bra{\psi} \sum_{a}\hat{P}_{a}\ket{\psi}=\bra{\psi} \hat{A}\ket{\psi}  
 $$
+## Exaple
+A degenerate example. Suppose $A$ has matrix
+$$
+A=\begin{pmatrix}
+2 & 0 & 0 \\
+0 & 1 & -i \\
+0 & i & 1
+\end{pmatrix}
+$$
+And the system is in state
+$$
+\ket{\psi} =\frac{1}{\sqrt{ 2 }}\begin{pmatrix}
+1 \\
+1 \\
+0
+\end{pmatrix}
+$$
+What are the posible results and probabilitie of measuring $A$?
+If the result is 2, what is the state afterwards, and what is $\left< \hat{A} \right>$?
+This ha eigenvalues $2$ and $0$, with the $2$ eigenvalue having eigenvectors:
+$$
+\ket{a_{1}}=\ket{2,1} =\begin{pmatrix}
+1 \\
+0 \\
+0
+\end{pmatrix},~\ket{a_{2}}=\ket{2,2}  =\frac{1}{\sqrt{ 2 }}\begin{pmatrix}
+0 \\
+1 \\
+i
+\end{pmatrix}
+$$
+And the $0$ eigenvalue having
+$$
+\ket{a_{3}} =\ket{0} =\frac{1}{\sqrt{ 2 }}  \begin{pmatrix}
+0 \\
+1 \\
+-i
+\end{pmatrix}
+$$
+So the projectors are
+$$
+\hat{P}_{2}=\ket{a_{1}} \bra{a_{1}} +\ket{a_{2}} \bra{a_{2}} =\begin{pmatrix}
+1 & 0 & 0 \\
+0 & \frac{1}{2} & -\frac{i}{2} \\
+0 & \frac{i}{2} & \frac{1}{2}
+\end{pmatrix}
+$$
+$$
+ \hat{P}_{0}=\ket{a_{3}} \bra{a_{3}}\begin{pmatrix}
+0 & 0 & 0 \\
+0 & \frac{1}{2} & \frac{i}{2} \\
+0 & -\frac{i}{2} & \frac{1}{2}
+\end{pmatrix}
+$$
+So
+$$
+\hat{P}_{2}\ket{\psi} =\frac{1}{\sqrt{ 2 }}\begin{pmatrix}
+1 \\
+\frac{1}{2} \\
+\frac{i}{2}
+\end{pmatrix},~ \hat{P}_{0}\ket{\psi} = \frac{1}{\sqrt{ 2 }}\begin{pmatrix}
+0 \\
+\frac{1}{2} \\
+-\frac{i}{2}
+\end{pmatrix}
+$$
+Soooo
+$$
+\mathbb{P}(2)=\lvert \lvert \hat{P}_{2}\ket{\psi}  \rvert \rvert ^{2}=\frac{1}{2}\left( 1+\left( \frac{1}{2} \right)^{2}+\left( \frac{1}{2} \right)^{2} \right)=\frac{3}{4}
+$$
+$$
+\mathbb{P}(0)=\lvert \lvert \hat{P} \rvert \rvert 
+$$
