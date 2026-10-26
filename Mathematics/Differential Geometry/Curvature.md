@@ -5,7 +5,7 @@ We want a quantitative characterisation of the shape of a curve at every point. 
 - $\kappa\to0$ for points on increasing circles
 - $\kappa=\pm \frac{1}{r}$ for points on circles of radius $r$
 It happens that curvature is related to the change of unit vector
-## [[Plane Curves|Plane Curves]]
+# [[Plane Curves|Plane Curves]]
 Since for a unit speed plane curve $\underline{\alpha}$, $\underline{t}'(s)$ is a multiple of $\underline{n}(s)$, we define the curvature of $\underline{\alpha}$ at $s$ as the proportionality factor.
 ### Definition
 The (signed) curvature $\kappa(s)$ of a unit speed plane curve $\underline{\alpha}:I\to \mathbb{R}^{2}$ at $s \in I$ is defined by
@@ -152,10 +152,24 @@ $$
 Geometrically, we can think of the pair $\underline{t}(s), \underline{n} (s)$ as being a frame of two orthornormal basis vectors moving along the plane curve $\underline{\alpha}(s)$ and the above lemma descrive the relation between these two moving vectors
 ___
 The orthonormal frame $\underline{t}(u), \underline{n}(u)$ along $\underline{\alpha}(u)$ exists also for smooth regular plane curves which are not unit speed, however, in this case, the frame equations above do not hold without taking the speed of the curve into account
-## Spacecuves
+# Spacecuves
 Let $\underline{\alpha}:I\to \mathbb{R}^{3}$ be a smooth unit speed spacecurve and $\underline{t}(s)=\underline{\alpha}'(s)$ be its unit tangent vector. The curvature of $\underline{\alpha}$ at $\underline{\alpha}(s)$ is thus defined as:
 $$
 \kappa(s)=\lvert \lvert \underline{t}'(s) \rvert \rvert =\lvert \lvert \underline{\alpha}''(s) \rvert \rvert 
 $$
-### Remark
+## Remark
 Since any plane curve $\underline{\alpha}:I\to \mathbb{R}^{2}$ can be viewed as a spacecurve $\underline{\tilde{\alpha}}(u)=(x(u),y(u),0)$, it is natural to consider the relation between these? and it turns out we have $\kappa_{\underline{\tilde{a}}}=\left| \kappa_{\underline{a}} \right|$ 
+## Proposition
+Let $\underline{\alpha}:I\to \mathbb{R}^{3}$ be a smooth regular spacecurve, then 
+$$
+\kappa(u)=\frac{\lvert \lvert \underline{\alpha}'\times\underline{\alpha}'' \rvert \rvert }{\lvert \lvert \underline{\alpha}' \rvert \rvert ^{3}}
+$$
+### Proof
+Let $u_{0}\in I$, 
+$$
+s=\ell(u)=\int_{u_{0}}^{u} \lvert \lvert \underline{\alpha}'(t) \rvert \rvert \, dt
+$$
+$u=\ell ^{-1}(s)$, define $\underline{\beta}=\underline{\alpha}\circ\ell ^{-1}:J\to \mathbb{R}^{3}$ be a unit speed parametrisation with same trace as $\underline{\alpha}$. Then
+$$
+\frac{d u}{ds} =(\ell ^{-1})'(s)=\frac{1}{\lvert \lvert \underline{\alpha}'(u) \rvert \rvert }
+$$

@@ -35,9 +35,17 @@ $$
 ### Proof
 The first and third are actually the definition of curvature and torsion, so that's fine, for the second, we have $\underline{b}= \underline{t}\times  \underline{n}$ and $\underline{n}=\underline{b}\times \underline{t}$, so
 $$
-
+\underline{n}'(s)=\underline{b}'(s)\times \underline{t}(s)+\underline{b}(s)\times \underline{t}'(s) 
 $$
-
+$$
+= \tau(s)  \underline{n}(s)\times \underline{t}(s)+\kappa(s) \underline{b}(s)\times  \underline{n}(s)
+$$
+$$
+= -\tau(s)\underline{t}(x)\times    \underline{n}(s)-\kappa(s)   \underline{n}(s)\times \underline{b}(s)
+$$
+$$
+= -\tau(s)  \underline{b}(s)-\kappa(s) \underline{t}(s)
+$$
 ## Issues
 If $\kappa=0$, this frame is poorly defined. 
 Another issue is as follows, if we have a helix shaped curve defined as

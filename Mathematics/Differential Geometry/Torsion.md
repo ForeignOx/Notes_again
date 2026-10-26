@@ -5,3 +5,8 @@ $$
 \underline{b}'(s)=\tau(s)\underline{n}(s)
 $$
 Note that $\tau$ can be positive or negative, and only exists if $\kappa \neq 0$, as then we can't define $\underline{n}$
+## Proposition
+Let $\underline{\alpha}:I\to \mathbb{R}^{3}$ be a smooth regular curve. Assume that $\kappa(u)\neq 0$, so $\tau(u)$ exists and is given by
+$$
+\tau(u)=\frac{-(\underline{\alpha}'\times\underline{\alpha}'')\cdot\underline{\alpha}'''}{\lvert \lvert \underline{\alpha}'\times\underline{\alpha}'' \rvert \rvert ^{2}}
+$$
