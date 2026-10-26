@@ -173,3 +173,23 @@ $u=\ell ^{-1}(s)$, define $\underline{\beta}=\underline{\alpha}\circ\ell ^{-1}:J
 $$
 \frac{d u}{ds} =(\ell ^{-1})'(s)=\frac{1}{\lvert \lvert \underline{\alpha}'(u) \rvert \rvert }
 $$
+From [[Frenet-Serret Equations|frenet-serret equations]], we have
+$$
+\underline{t}'_{\underline{\beta}}(s)=\kappa_{\underline{b}}(s)  \underline{n}_{\underline{\beta}}(s)
+$$
+And note
+$$
+\underline{t}_{\underline{\beta}}(s)=  \underline{t}_{\underline{\alpha}}(s)= \frac{\underline{\alpha}'(\ell ^{-1}(s))}{\lvert \lvert \underline{\alpha}'(\ell ^{-1}(s)) \rvert \rvert }
+$$
+Then
+$$
+\underline{t}_{\underline{\beta}}(s)=\underline{\beta}'(s)=(\underline{\alpha}\circ \ell ^{-1})(s) 
+$$
+$$
+= \underline{\alpha}(\ell ^{-1}(s))(\ell ^{-1})'(s)=\frac{\underline{\alpha}(u)}{\lvert \lvert \underline{\alpha}(u) \rvert \rvert }=\underline{t}_{\underline{\alpha}}(u)
+$$
+So
+$$
+\underline{t}_{\underline{\beta}}'(s)=\frac{d }{ds} \underline{t}_{\underline{\alpha}}(u(s))=\underline{t}'_{\underline{\alpha}}(u)\frac{d u}{ds} =\frac{\underline{t}_{\underline{\alpha}}'(u)}{\lvert \lvert \underline{\alpha}'(u) \rvert \rvert }
+$$
+And
