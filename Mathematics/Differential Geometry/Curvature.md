@@ -193,3 +193,25 @@ $$
 \underline{t}_{\underline{\beta}}'(s)=\frac{d }{ds} \underline{t}_{\underline{\alpha}}(u(s))=\underline{t}'_{\underline{\alpha}}(u)\frac{d u}{ds} =\frac{\underline{t}_{\underline{\alpha}}'(u)}{\lvert \lvert \underline{\alpha}'(u) \rvert \rvert }
 $$
 And
+$$
+\kappa_{\underline{\beta}}(s)\underline{b}_{\underline{\beta}}(s)=\kappa_{\underline{\beta}}(s)(\underline{t}_{\underline{\beta}}(s)\times   \underline{n}_{\underline{\beta}}(s)) 
+$$
+$$
+= \underline{t}_{\underline{\beta}}(s)\times \underline{t}_{\underline{\beta}}'(s) 
+$$
+$$
+= \underline{t}_{\underline{\alpha}}(u)\times  \frac{\underline{t}'_{\underline{\alpha}}(u)}{\lvert \lvert \underline{\alpha}'(u) \rvert \rvert }
+$$
+But
+$$
+\left( \frac{\underline{\alpha}'}{\lvert \lvert \underline{\alpha}' \rvert \rvert } \right)'=\frac{\underline{\alpha}''}{\lvert \lvert \underline{\alpha}' \rvert \rvert }-\frac{\underline{\alpha}'\lvert \lvert \underline{\alpha}' \rvert \rvert '}{\lvert \lvert \underline{\alpha}' \rvert \rvert ^{2}}
+$$
+So
+$$
+\underline{\alpha}'\times    \left( \frac{\underline{\alpha}'}{\lvert \lvert \underline{\alpha}' \rvert \rvert } \right)'=\frac{\underline{\alpha}'\times \underline{\alpha}''}{\lvert \lvert \underline{\alpha}' \rvert \rvert }- \frac{\underline{\alpha}'\times\underline{\alpha}'\lvert \lvert \underline{\alpha}' \rvert \rvert '}{\lvert \lvert \underline{\alpha}' \rvert \rvert ^{2}}
+$$
+Soo
+$$
+\kappa_{\underline{\alpha}}(u)= \frac{\left\lvert  \left\lvert  \underline{\alpha}' \times\left( \frac{\underline{\alpha}'}{\lvert \lvert \underline{\alpha}' \rvert \rvert } \right)'  \right\rvert  \right\rvert }{\lvert \lvert \underline{\alpha}' \rvert \rvert ^{2}}=\frac{\lvert \lvert \underline{\alpha}'\times\underline{\alpha}'' \rvert \rvert }{\lvert \lvert \underline{\alpha}' \rvert \rvert ^{3}}
+$$
+Which was what we wanted yayyyy

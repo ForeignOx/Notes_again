@@ -10,3 +10,27 @@ Let $\underline{\alpha}:I\to \mathbb{R}^{3}$ be a smooth regular curve. Assume t
 $$
 \tau(u)=\frac{-(\underline{\alpha}'\times\underline{\alpha}'')\cdot\underline{\alpha}'''}{\lvert \lvert \underline{\alpha}'\times\underline{\alpha}'' \rvert \rvert ^{2}}
 $$
+### Proof
+Let $u_{0}\in I$, 
+$$
+s=\ell(u)=\int_{u_{0}}^{u} \lvert \lvert \underline{\alpha}'(t) \rvert \rvert \, dt
+$$
+$u=\ell ^{-1}(s)$, define $\underline{\beta}=\underline{\alpha}\circ\ell ^{-1}:J\to \mathbb{R}^{3}$ be a unit speed parametrisation with same trace as $\underline{\alpha}$. Then
+$$
+\frac{d u}{ds} =(\ell ^{-1})'(s)=\frac{1}{\lvert \lvert \underline{\alpha}'(u) \rvert \rvert }
+$$
+For torsion:
+$$
+\tau_{\underline{\alpha}}(u)=\tau_\underline{\beta}(s)=\underline{b}_{\underline{\beta}}'(s)\times  \underline{n}_{\underline{\beta}}(s)
+$$
+As it should be independent of parametrisation. We then have
+$$
+\underline{n}_{\underline{\beta}}(s)=\frac{1}{\lvert \lvert \underline{t}_{\underline{\alpha}}'(u) \rvert \rvert }\underline{t}_{\underline{\alpha}}'(u)=\frac{1}{\lvert \lvert \underline{t}'_{\underline{\alpha}}(u) \rvert \rvert }\left( \frac{\underline{\alpha}'}{\lvert \lvert \underline{\alpha} \rvert \rvert } \right)'(u)
+$$
+And
+$$
+\underline{b}_{\underline{\beta}}'(s)=\frac{d }{ds} \underline{b}_{\underline{\alpha}}(u(s)) 
+$$
+$$
+= \underline{b}'_{\underline{\alpha}}\frac{d u}{ds} =  \frac{\underline{b}_{\underline{\alpha}}'(u)}{\lvert \lvert \underline{\alpha}' \rvert \rvert }
+$$
