@@ -57,10 +57,24 @@ $$
 $$
 Bringing everything together, we conclude that
 $$
-\tau_{\underline{\alpha}}(u)=\underline{b}
+\tau_{\underline{\alpha}}(u)=\underline{b}_{\beta}'(s)\cdot  \underline{n}_{\underline{\beta}}(s) 
 $$
-
-
+$$
+= \frac{1}{\lvert \lvert \underline{\alpha}'(u) \rvert \rvert }\left( \frac{\underline{\alpha}'\times\underline{\alpha}''}{\lvert \lvert \underline{\alpha}' \rvert \rvert ^{2}\lvert \lvert \underline{t}'_{\underline{\alpha}} \rvert \rvert } \right)'(u)\cdot \frac{1}{\lvert \lvert \underline{t}'_{\underline{\alpha}}(u) \rvert \rvert }\left( \frac{\underline{\alpha}'}{\lvert \lvert \underline{\alpha}' \rvert \rvert } \right)'(u) 
+$$
+$$
+= \frac{(\underline{\alpha}'(u)\times\underline{\alpha}'''(u))\cdot\underline{\alpha}''(u)}{\lvert \lvert \underline{\alpha}'(u) \rvert \rvert ^{4}\lvert \lvert \underline{t}'_{\underline{\alpha}}(u) \rvert \rvert ^{2}}
+$$
+Because computing the derivatives of $\frac{\underline{\alpha}'\times\underline{\alpha}''}{\lvert \lvert \underline{\alpha}' \rvert \rvert^{2}\lvert \lvert \underline{t}'_{\underline{\alpha}} \rvert \rvert}$ and $\frac{\underline{\alpha}'}{\lvert \lvert \underline{\alpha}' \rvert \rvert}$, we obtain a sum of expressions of the form $C(\underline{\alpha}^{(i)}\times\underline{\alpha}^{(j)})\cdot\underline{\alpha}^{(k)}$, this is essentially a [[scalar triple product|scalar triple product]], and if any $i,j,k\in\left\{ 1,2,3 \right\}$ agree, then the triple product is 0, so there is only one combination which provides a possibly non-zero contribution, which is that of $(\underline{\alpha}'\times\underline{\alpha}''')\cdot\underline{\alpha}''$
+The final step is to rewrite the denominator using the formula for curvature
+$$
+\kappa_{\underline{\alpha}}= \frac{\lvert \lvert \underline{\alpha}'\times\underline{\alpha}'' \rvert \rvert }{\lvert \lvert \underline{\alpha}' \rvert \rvert ^{3}}
+$$
+So since
+$$
+\kappa_{\underline{\beta}}(s)  \underline{n}_{\underline{\beta}}()=\underline{t}'_{\underline{\beta}}(s)=\frac{\underline{t}'_{\underline{\alpha}}(u)}{\lvert \lvert \underline{\alpha}'(u) \rvert \rvert }
+$$
+And taking the norm on both sides and using the fact that $\kappa_{\underline{\beta}}(s)=\kappa_{\underline{\alpha}}(u)\geq 0$ and $\lvert \lvert  \underline{n}_{\underline{\beta}}(s) \rvert \rvert = 1$, we obt
 
 
 
