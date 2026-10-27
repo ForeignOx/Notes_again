@@ -29,3 +29,4 @@ $$
 $$
 So the vorticity is $0$ away from $r=0$, so the vorticity must just be generated at $r=0$, the fluid is rotating, but not the fluid particles this is curious
 This is apparently a decent model for tornadoes
+Let's calculate the circulation
