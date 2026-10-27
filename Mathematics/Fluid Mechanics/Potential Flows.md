@@ -14,3 +14,13 @@ $$
 $$
 Which is [[Laplace's Equation|Laplace's equation]], which is very easy (but note only for irrotational and incompressible)
 Note that constant $\psi$ lines are streamlines, constant $\phi$ lines are equipotential line
+Since Laplace's equation is linear, we can combine 2 valid solutions to get another by the [[Principle of Superposition|principle of superposition]], so we can build more complex flows from elementary ones
+___
+Note that in 2D, $\underline{u}=(u,v)$ satisfies:
+$$
+u=\frac{ \partial \phi }{ \partial x } =\frac{ \partial \psi }{ \partial y } ,v=\frac{ \partial \phi }{ \partial y } =-\frac{ \partial \psi }{ \partial x } 
+$$
+So $\phi$ and $\psi$ satisfy the [[Cauchy-Riemann equations|Cauchy-Riemann equations]], so we can analyse the flow by considering
+$$
+\omega=\phi+i\psi
+$$
