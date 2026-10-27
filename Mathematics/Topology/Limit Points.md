@@ -11,7 +11,13 @@ $$
 ## Lemma
 Let $X$ be a topological space and $A\subset X$, then
 $$
-\overline{A}=A\cup \left\{ a\in  X s:\middle|:a\text{ is a limit point of }A\right\}
+\overline{A}=A\cup \left\{ a\in  X :\middle|:a\text{ is a limit point of }A\right\}
 $$
 ### Proof
-Let $x\in \overline{A},$ we need to show that $x \in A$ or $x$ is a limit point of $A$, so assume $x\not\in A$, let $N$ be an open [[Neighbourhoods|neighbourhood]]
+Let $x\in \overline{A},$ we need to show that $x \in A$ or $x$ is a limit point of $A$, so assume $x\not\in A$, let $N$ be an open [[Neighbourhoods|neighbourhood]] of $x$. If $N\setminus \left\{ x \right\}\cap A=\emptyset$, then $A\subseteq X\setminus N$
+But $X\setminus N$ is a closed set, which implies $\overline{A}\subseteq X\setminus N$, since $x\in N$, we have $x\not\in \overline{A}$, giving a contradiction
+For the other inclusion, note that $A\subseteq \overline{A}$ by construction, so it only remains to show that any limit points of $A$ are also contained in $\overline{A}$
+So let $x$ be a limit point of $A$, if $x\not\in \overline{A}$, then $N=X\setminus \overline{A}$ is an open neighbourhood of $x$
+But since $A\subseteq \overline{A}$, we must have $N\cap A=\emptyset$, contradicting that $x$ is a limit point of $A$
+## Proposition
+Let $X,Y$ be topological spaces and $f:X\to Y$ be a function
