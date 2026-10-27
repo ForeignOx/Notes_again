@@ -74,4 +74,7 @@ Note that this torsion has a sign, while the curvature while the curvature is al
 Let $\underline{\alpha}:I\to \mathbb{R}^{3}$ be a smooth regular spacecurve with nowhere vanishing curvature, $\kappa(u)\neq 0$ for all $u\in I$
 Assume that the trace of $\underline{\alpha}$ lies in an affine plane $\underline{x}+E$, where $\underline{x}\in \mathbb{R}^{3}$ and $E\subset \mathbb{R}^{3}$ is a plane through the origin. Then we have $\tau (u)=0$ for all $u\in I$
 ### Proof
-Since $\underline{\alpha}\subset \underline{x}+E$, we ha
+Since $\underline{\alpha}\subset \underline{x}+E$, we have $\underline{\alpha}',\underline{\alpha}'',\underline{\alpha}'''$ are all in $E$, from linear algebra, we see that they're linearly independent, so
+$$
+\tau=0~\forall u
+$$
