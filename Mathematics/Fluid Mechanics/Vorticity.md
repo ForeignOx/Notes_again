@@ -84,6 +84,32 @@ $$
     = \int _{S_{2}} \omega\cdot \hat{\underline{n}} \, dS+\int _{S_{1}}\underline{\omega}\cdot \hat{\underline{n}} \, dS+\int _{S_{3}}\underbrace{ \underline{\omega}\cdot \hat{\underline{n}}  }_{ =0 }\, dS   
 $$
 $$
-= \int _{S_{1}\cup S_{2}\cup S_{3}}\underline{\omega}\cdot \hat{\underline{n}} \, dS=\int _{V}\underline{\nabla} \cdot \underline{\omega}  \, dV  
+= \int _{S_{1}\cup S_{2}\cup S_{3}}\underline{\omega}\cdot \hat{\underline{n}} \, dS=\int _{V}\underline{\nabla} \cdot \underline{\omega}  \, dV  =0
 $$
-By the divergence theorem
+By the divergence theorem, and this is equal tozero as
+$$
+\underline{\nabla} \cdot \underline{\omega} =\underline{\nabla} \cdot (\underline{\nabla} \times \underline{u} )\equiv0 
+$$
+## Consequences
+The fact that vortex tubes have a conserved strength means that wwhen a tuve narrows, the vorticity must increase. This is known as vortex stretching and should be intuitive
+## Flow Reconstruction 
+As vortex rings demonstrate, it can often be easier to think about fluid flow in terms of the vorticity structures present rather than the flow itself. This leads us to wonder: if we prescribe $\underline{\omega}$, can we recover $\underline{u}$?
+If the fluid is incompressible, $\underline{\nabla} \cdot \underline{u}=0$, then there exists a vector function $\underline{A}$ such that
+$$
+\underline{u}=\underline{\nabla} \times \underline{A} 
+$$
+The vorticity is therefore:
+$$
+\underline{\omega}=\underline{\nabla} \times \underline{u} =-\Delta \underline{A}
+$$
+Which is Poisson's equation for each component of the vector equation
+This can be solved using the Green's function, giving:
+$$
+\underline{A}=\frac{1}{4\pi}\int _{V} \frac{\underline{\omega}(\underline{x}')}{\left| \underline{x}-\underline{x}' \right| } \, dV' 
+$$
+So the velocity is
+$$
+    \underline{u}=\underline{\nabla} \times \underline{A} =\frac{1}{4\pi} \int _{V} \frac{\underline{\omega}(\underline{x}')\times(\underline{x}-\underline{x}')}{\left| \underline{x}-\underline{x}' \right| ^{3}} \, dV'
+$$
+Which we define to be $\underline{u}_{v}$ 
+(we could bring the curl into the integral as $\underline{\nabla}$ is $d\underline{x}$, but the integral is $d\underline{x}'$)
