@@ -52,3 +52,8 @@ $$
 $$
 ## Vortex Tubes
 The line vortex is pretty good, but let's consider a vortex with thickness, is circulation conserved in some way?
+Conider a rigid body flow with lines parallel to $\underline{\omega}$ at each point on the curve, just lilke how we can define streamlines to be parallel to velocity, but this time parallel to vorticity instead. If we consider our rigid body planar flow from before, for example, where $\underline{\omega}(\underline{x})=2k \underline{e}_{z}$, it would look like:
+![[Pasted image 20261027103206.png]]
+We can make these s long as we like, exactly like streamlines but for vorticity.
+These are called vortex lines or filaments, not to be confused with the line vortex
+Taking the bundle of lines going through $C$, we end up with a wall of lines called a vortex tube
