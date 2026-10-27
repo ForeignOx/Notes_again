@@ -69,4 +69,9 @@ Where the tangent line at $\underline{\alpha}(s)$ is given by $\underline{\alpha
 Since $\underline{b}(s)$ is a unit normal to this osculating plane, $\underline{b}'$ meaures the rate of chhange of the osculating plane. ince $\underline{\beta}'=\tau  \underline{n}$, by the definition, we have $\left| \tau(s) \right| =\lvert \lvert \underline{b}'(s) \rvert \rvert$, so
 > $\tau(s)$ measures the rate at which $\underline{\alpha}(s)$ is twisting away from its osculating plane
 
-Note that this twist has a sign, while the curvature 
+Note that this torsion has a sign, while the curvature while the curvature is always non-negative. In short, curvature measures how much a spacecurve is bending and torsion measures how much a spacecurve is twisting
+## Corollary
+Let $\underline{\alpha}:I\to \mathbb{R}^{3}$ be a smooth regular spacecurve with nowhere vanishing curvature, $\kappa(u)\neq 0$ for all $u\in I$
+Assume that the trace of $\underline{\alpha}$ lies in an affine plane $\underline{x}+E$, where $\underline{x}\in \mathbb{R}^{3}$ and $E\subset \mathbb{R}^{3}$ is a plane through the origin. Then we have $\tau (u)=0$ for all $u\in I$
+### Proof
+Since $\underline{\alpha}\subset \underline{x}+E$, we ha
