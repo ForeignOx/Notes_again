@@ -74,7 +74,23 @@ So since
 $$
 \kappa_{\underline{\beta}}(s)  \underline{n}_{\underline{\beta}}()=\underline{t}'_{\underline{\beta}}(s)=\frac{\underline{t}'_{\underline{\alpha}}(u)}{\lvert \lvert \underline{\alpha}'(u) \rvert \rvert }
 $$
-And taking the norm on both sides and using the fact that $\kappa_{\underline{\beta}}(s)=\kappa_{\underline{\alpha}}(u)\geq 0$ and $\lvert \lvert  \underline{n}_{\underline{\beta}}(s) \rvert \rvert = 1$, we obt
+And taking the norm on both sides and using the fact that $\kappa_{\underline{\beta}}(s)=\kappa_{\underline{\alpha}}(u)\geq 0$ and $\lvert \lvert  \underline{n}_{\underline{\beta}}(s) \rvert \rvert = 1$, we obtain
+$$
+\kappa_{\underline{\alpha}}(u)=\kappa_{\underline{\beta}}(s)\lvert \lvert   \underline{n}_{\underline{\beta}}(s) \rvert \rvert =\frac{\lvert \lvert \underline{t}'_{\underline{\alpha}}(u) \rvert \rvert }{\lvert \lvert \underline{\alpha}'(u) \rvert \rvert }
+$$
+That is
+$$
+\frac{\lvert \lvert \underline{\alpha}'\times\underline{\alpha}'' \rvert \rvert }{\lvert \lvert \underline{\alpha}' \rvert \rvert ^{3}}=\kappa_{\underline{\alpha}}=\frac{\lvert \lvert \underline{t}_{\underline{\alpha}}' \rvert \rvert }{\lvert \lvert \underline{\alpha}' \rvert \rvert }
+$$
+So
+$$
+\lvert \lvert \underline{\alpha}' \rvert \rvert r\lvert \lvert  \underline{t}_{\underline{\alpha}}' \rvert \rvert =\lvert \lvert \underline{\alpha}'\times\underline{\alpha}'' \rvert \rvert 
+$$
+Soo all in all we get:
+$$
+\tau_{\underline{\alpha}}=- \frac{(\underline{\alpha}'\times\underline{\alpha}'')\cdot\underline{\alpha}'''}{\lvert \lvert \underline{\alpha}'\times\underline{\alpha}'' \rvert \rvert ^{2}}
+$$
+
 
 
 

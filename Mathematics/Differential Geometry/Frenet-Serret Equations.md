@@ -61,3 +61,12 @@ $$
 $$
 As $r\to 0$, the helix becomes a straight line and the curvature vanishes. The torsion does not however, but a straight line cannot have torsion
 Writhe is invariant of choice of framing, further, for $\mathcal{C}^{3}$ differentiable curves, there is always a choice of framing which is non-vanishing
+## Geometric Interpretation
+Assuming we have a smooth unit speed spacecurve $\underline{\alpha}:I\to \mathbb{R}^{3}$, then $\underline{t}=\underline{\alpha}':I\to \mathbb{R}^{3}$ is the unit tangent vector to $\underline{\alpha}$, and since $\kappa=\lvert \lvert \underline{t}' \rvert \rvert$, 
+> $\kappa(s)$ measures the rate at which $\underline{\alpha}(s)$ is bending away from its straight tangent line
+
+Where the tangent line at $\underline{\alpha}(s)$ is given by $\underline{\alpha}(s)+\mathbb{R} \underline{t}(s)$. In the case of $\kappa(s)\neq 0$, the plane though $\underline{\alpha}(s)$ i spanned by $\underline{t}(s)$ and $\underline{n}(s)$ called the ==🟣osculating plane== at $\underline{\alpha}(s)$
+Since $\underline{b}(s)$ is a unit normal to this osculating plane, $\underline{b}'$ meaures the rate of chhange of the osculating plane. ince $\underline{\beta}'=\tau  \underline{n}$, by the definition, we have $\left| \tau(s) \right| =\lvert \lvert \underline{b}'(s) \rvert \rvert$, so
+> $\tau(s)$ measures the rate at which $\underline{\alpha}(s)$ is twisting away from its osculating plane
+
+Note that this twist has a sign, while the curvature 
