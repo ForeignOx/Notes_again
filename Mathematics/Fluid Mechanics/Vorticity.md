@@ -113,3 +113,9 @@ $$
 $$
 Which we define to be $\underline{u}_{v}$ 
 (we could bring the curl into the integral as $\underline{\nabla}$ is $d\underline{x}$, but the integral is $d\underline{x}'$)
+Notice that $\underline{u}$ and $\underline{u}+\underline{\nabla}\phi$ for some $\phi$ have the same curl, since
+$$
+\underline{\nabla} \times \underline{\nabla} \phi\equiv 0~\forall \phi 
+$$
+This additional component $\underline{\nabla}\phi$ is called a potential flow with its defining characteristic being lacking vorticity
+This is a case of Biot-Savart, $\underline{u}_{v}$ carries vorticity information and $\phi$ solves the boundary conditions
