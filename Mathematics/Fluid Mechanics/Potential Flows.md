@@ -7,3 +7,10 @@ $$
 \underline{u}=\underline{\nabla}\phi
 $$
 This scalar $\phi$ can encode our velocity and is known as the velocity potential
+The difference between this and the stream function is that stream functions are for incompressible fluids and only in 2D, whereas velocity potential is for irrotational fields and works in both 2D and 3D
+If $\underline{u}$ is also incompressible, then
+$$
+\underline{\nabla} \cdot \underline{u} =\underline{\nabla} \cdot (\underline{\nabla} \phi)=\Delta \phi=0 
+$$
+Which is [[Laplace's Equation|Laplace's equation]], which is very easy (but note only for irrotational and incompressible)
+Note that constant $\psi$ lines are streamlines, constant $\phi$ lines are equipotential line
