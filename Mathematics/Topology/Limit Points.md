@@ -23,4 +23,6 @@ But since $A\subseteq \overline{A}$, we must have $N\cap A=\emptyset$, contradic
 Let $X,Y$ be topological spaces and $f:X\to Y$ be a function, the following are equivalent:
 - $f$ is continuous
 - We have $f(\overline{A})\subseteq \overline{f(A)}$ for all $A\subseteq X$
-- We have $\overline{f^{-1}(B)}\subseteq f^{-1}(\overline{B})$ for all $$
+- We have $\overline{f^{-1}(B)}\subseteq f^{-1}(\overline{B})$ for all $B\subseteq Y$
+### Proof
+
