@@ -57,3 +57,33 @@ Conider a rigid body flow with lines parallel to $\underline{\omega}$ at each po
 We can make these s long as we like, exactly like streamlines but for vorticity.
 These are called vortex lines or filaments, not to be confused with the line vortex
 Taking the bundle of lines going through $C$, we end up with a wall of lines called a vortex tube
+### Example
+Consider the rigid body planar flow, bur scaled by $z$, $\underline{u}(\underline{x})=zr\underline{e}_{\theta}$, the further from $z=0$ you go, the faster you spin. The vorticity is:
+$$
+\underline{\omega}=\frac{1}{r}\left| \begin{pmatrix}
+\underline{e}_{r} & r\underline{e}_{\theta} & \underline{e}_{z} \\
+\frac{ \partial  }{ \partial r }  & \frac{ \partial  }{ \partial \theta }  & \frac{ \partial  }{ \partial z }  \\
+0 & zr^{2} & 0
+\end{pmatrix} \right| =-r\underline{e}_{r}+2z\underline{e}_{z}
+$$
+Drawing a curve $C$ at the bottom and following the vortex lines, our vortex tube is:
+![[Pasted image 20261027104204.png]]
+An upside-down tornado!
+___
+The circulation around the original $C$ is actually the same for all closed $C$ around the tube, allowing us to define the vortex tube's strength by this circulation $\Gamma$
+To confirm this, picking two closed curves $C_{1}$ and $C_{2}$ around the same vortex tube:
+![[Pasted image 20261027104334.png]]
+Labelling the surface at the ends of the tube $S_{1}$ and $S_{2}$ and the tubular surface $S_{3}$, we can consider the difference between the two circulations:
+$$
+\Gamma_{2}-\Gamma_{1}=\int _{S_{2}}\underline{\omega}\cdot \, d\underline{S}-\int _{S_{1}}\underline{\omega} \cdot\, d\underline{S}  
+$$
+$$
+        = \int _{S_{2}} \underline{\omega}\cdot \hat{\underline{n}} \, dS+\int _{S_{1}}\underline{\omega} \cdot \hat{\underline{n}} \, dS  
+$$
+$$
+    = \int _{S_{2}} \omega\cdot \hat{\underline{n}} \, dS+\int _{S_{1}}\underline{\omega}\cdot \hat{\underline{n}} \, dS+\int _{S_{3}}\underbrace{ \underline{\omega}\cdot \hat{\underline{n}}  }_{ =0 }\, dS   
+$$
+$$
+= \int _{S_{1}\cup S_{2}\cup S_{3}}\underline{\omega}\cdot \hat{\underline{n}} \, dS=\int _{V}\underline{\nabla} \cdot \underline{\omega}  \, dV  
+$$
+By the divergence theorem
