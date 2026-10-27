@@ -66,7 +66,7 @@ $$
 $$
 = \delta_{\rho}^{\sigma}\Lambda_{\gamma}\,^{\tau}T^{\rho}\,_{\sigma \tau}=\Lambda_{\gamma}\,^{\tau}T^{\rho}\,_{\sigma \tau}=\Lambda_{\gamma}\,^{\tau}V_{\tau}
 $$
-Thus it does indeed transforam as a ${ 0 \choose 1 }$ tensor
+Thus it does indeed transform as a ${ 0 \choose 1 }$ tensor
 ___
 The spacetime divergence $\partial_{\mu}V^{\mu}$ of a vector $V^{\mu}$ is Lorentz invariant
 $$
