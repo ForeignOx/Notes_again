@@ -26,3 +26,7 @@ df(V)=V(f)=dx^{\nu}\partial_{\mu}=\partial_{\mu}x^{\nu}=\frac{ \partial x^{\nu} 
 $$
 Sooooo the $\left\{ dx^{\mu} \right\}$ form a basis for $T_{p}^{*}$. This basis is dual to that for $T_{p}$ formed by the partial derivatives $\left\{ \partial_{\mu} \right\}$
 By linearlity, we can decompose $\omega=\omega_{\nu}dx^{\nu}$
+This is consistent as 
+$$
+\omega(\partial_{\mu})=(\omega_{\nu}dx^{\nu})(\partial_{\mu})=\omega_{\nu}(dx^{\nu})(\partial_{\mu})=\omega_{\nu}\delta^{\nu}_{\mu}=\omega_{\mu}
+$$
